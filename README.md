@@ -97,11 +97,9 @@ Have questions or need assistance? Our dedicated team is here to help. Reach out
 
 <br>
   
-**Blogs Page**
+**AI Chat Bot**
 
-Welcome to our Blog section! Here, you'll find a collection of informative and engaging articles covering a variety of useful topics. Our blog pages are packed with valuable insights, tips, and resources to help you stay informed and inspired. Explore our diverse range of blog posts to expand your knowledge and find practical solutions to enhance your lifestyle.
-
-
+Introducing our AI-powered chatbot, your virtual agricultural assistant. Have questions about farming techniques, crop management, or agricultural practices? Simply chat with our AI bot, and get instant answers to all your agriculture-related queries. Experience the convenience of personalized support at your fingertips, 24/7.
 
 <br>
   
