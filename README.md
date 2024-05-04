@@ -117,8 +117,6 @@ Have questions or need assistance? Our dedicated team is here to help. Reach out
 
 Introducing our AI-powered chatbot, your virtual agricultural assistant. Have questions about farming techniques, crop management, or agricultural practices? Simply chat with our AI bot, and get instant answers to all your agriculture-related queries. Experience the convenience of personalized support at your fingertips, 24/7.
 
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210438.png)
-
 <br>
 
 ## License 🪪
