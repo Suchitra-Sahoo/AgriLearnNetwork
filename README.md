@@ -78,18 +78,23 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
  
  Welcome to AgriLearnNetwork! Step into a world where agriculture meets innovation. Our captivating landing page invites you to embark on a journey towards agricultural excellence. Be inspired to take the first step towards a prosperous and sustainable farming future.
  
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20205856.png)
 
 <br>
 
 **About Us**
  
  Discover the heart and soul of AgriLearnNetwork. Learn about our mission to revolutionize agriculture education and support farmers worldwide. Explore how our platform equips you with the tools and knowledge needed to thrive in the ever-evolving world of farming.
+
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210028.png)
  
 <br>
 
 **Blogs Page**
  
 Dive into a treasure trove of insightful blog posts covering a myriad of topics relevant to modern agriculture. Our curated collection of articles delves into various aspects of farming, offering valuable advice, tips, and solutions to common challenges faced by farmers today.
+
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210125.png)
  
 <br>
   
@@ -98,18 +103,22 @@ Dive into a treasure trove of insightful blog posts covering a myriad of topics 
  
  Explore our extensive collection of tutorials covering a wide range of crucial topics in agriculture and farming. Our resource library is your go-to destination for in-depth guidance and expert insights on various aspects of agricultural practices. Whether you're looking to enhance your knowledge in crop management, soil health, pest control, irrigation techniques, or livestock care, our tutorials offer comprehensive information to help you succeed in your farming endeavors. 
 
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210212.png)
+
 <br>
 
 **Contact Us**
 
 Have questions or need assistance? Our dedicated team is here to help. Reach out to us through our contact page, and we'll be happy to provide support and guidance tailored to your needs.
 
-
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210257.png)
 <br>
   
 **AI Chat Bot**
 
 Introducing our AI-powered chatbot, your virtual agricultural assistant. Have questions about farming techniques, crop management, or agricultural practices? Simply chat with our AI bot, and get instant answers to all your agriculture-related queries. Experience the convenience of personalized support at your fingertips, 24/7.
+
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210438.png)
 
 <br>
 
