@@ -1,109 +1,92 @@
-# Contributing to AgriLearnNetwork
+# Learn
 
-First of all thanks for taking time to contribute!
+## Table of Contents
 
-The following is a set of guidelines for contributing to firstspot.
+- [Introduction](#introduction)
+- [Contributing Guidelines](#contributing-guidelines)
+- [Getting Started](#getting-started)
+- [Issue Management](#issue-management)
+- [Communication and Collaboration](#communication-and-collaboration)
+- [Pull Requests (PRs)](#pull-requests-prs)
+- [Deadline and Completion](#deadline-and-completion)
+- [Quality and Learning](#quality-and-learning)
 
-### Table Of Contents
-1. [Code of Conduct](#code-of-conduct)
-2. [Ways to Contribute](#ways-to-contribute)
-3. [How to Contribute](#how-to-contribute)
-4. [Submitting Pull Requests](#submitting-pull-requests)
+## Introduction
 
+Welcome to the Agrilearn Network open-source project! Whether you're a seasoned developer or new to open-source contribution, this guide will provide you with the essential information to get started and contribute effectively to the project.
 
-## Code of Conduct
-This project and everyone participating in it is governed by the [AgriLearnNetwork Code of Conduct](CODE_OF_CONDUCT.md).
+## Contributing Guidelines
 
-## Ways to Contribute
+Before diving into the learning resources, please familiarize yourself with the following contributing guidelines:
 
-### Code Contributions
+- Participants/contributors must comment on issues they wish to work on.
+- Issues will be assigned on a first-come, first-serve basis by mentors or the Project Administrator (PA).
+- Participants can open new issues using the provided template, but these need verification and labeling by a mentor or PA.
+- Ensure issues are assigned to you before starting work.
+- Each participant can work on a maximum of one issue at a time.
+- Don't work on issues already assigned to others.
+- Discuss issues with the team before starting work.
+- Explain your approach to solving any issue in the comments for better understanding.
+- Pull requests will be merged after review by a mentor or PA.
+- Create PRs from branches other than `main`.
+- Include a descriptive summary of your work in the PR description.
+- Use the format `Fixes: issue number` in your commit message when creating a pull request.
+- Complete assigned issues within the specified deadline. Failure to do so may result in reassignment.
+- Follow project guidelines and coding style.
+- Aim for structured and optimized code.
+- Mistakes are allowed and part of the learning process!
 
-- **Fix Bugs:** Identify and fix bugs by submitting pull requests with code changes.
-- **Add Features:** Contribute new features or enhancements to improve the project.
-- **Optimize Code:** Optimize existing code for better performance or readability.
+## Getting Started
 
-### Documentation
+To contribute to the Agrilearn Network project, follow these steps:
 
-- **Update Documentation:** Improve and update project documentation, including README files, guides, and inline code comments.
+1. **Fork the Repository**: Start by forking the repository to your GitHub account.
+2. **Clone the Repository**: Clone your forked repository to your local machine.
+3. **Choose an Issue**: Comment on an issue you'd like to work on or open a new one following the guidelines.
+4. **Set Up Development Environment**: Refer to the project's development guidelines for setting up your development environment.
+5. **Start Working**: Once the issue is assigned to you, start working on it following your chosen approach.
+6. **Submit a Pull Request**: After completing your work, submit a pull request from your branch for review.
 
-### Issue Reporting
+## Issue Management
 
-- **Bug Reporting:** Report bugs by creating clear and reproducible bug reports.
-- **Feature Requests:** Share ideas and request new features by opening well-documented issues.
+Issues are managed as follows:
 
+- Participants must comment on issues they wish to work on.
+- Issues will be assigned on a first-come, first-serve basis.
+- Participants can open new issues using the provided template, but these need verification and labeling by a mentor or PA.
+- Ensure issues are assigned to you before starting work.
+- Each participant can work on a maximum of one issue at a time.
+- Don't work on issues already assigned to others.
+- Discuss issues with the team before starting work.
 
-## How to Contribute
+## Communication and Collaboration
 
-### 1. Explore existing [Issues](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/issues) or [create a new issue](https://github.com/Suchitra-Sahoo/AgriLearnNetworkt/issues/new/choose).
-**Note**: Only start work on the issue after getting assigned by the repository maintainer.
+Effective communication and collaboration are crucial for successful contributions:
 
-### 2. Fork the Repository.
-Click the "Fork" button on the GitHub repository to create your own copy of the project.
+- Discuss issues with the team before starting work.
+- Explain your approach to solving any issue in the comments for better understanding.
 
-### 3. Clone Your Fork
-```bash
-git clone https://github.com/<yourusername>/AgriLearnNetwork.git
-```
+## Pull Requests (PRs)
 
-### 4. Navigate to the newly created firstspot project directory:
-```bash
-cd AgriLearnNetwork
-```
+Pull requests are managed as follows:
 
-### 5. Set upstream command
-Set the upstream to synchronize your forked repository with the original repository.
-```bash
-git remote add upstream https://github.com/Suchitra-Sahoo/AgriLearnNetwork
-```
+- PRs will be merged after review by a mentor or PA.
+- Create PRs from branches other than `main`.
+- Include a descriptive summary of your work in the PR description.
+- Use the format `Fixes: issue number` in your commit message when creating a pull request.
 
-### 6. Create a new branch
-```bash
-git checkout -b YourBranchName
-```
+## Deadline and Completion
 
-### 7. Sync your fork or your local repository with the origin repository
+Ensure timely completion of assigned tasks:
 
-#### Method 1:
-using the Command Line Interface.
-```bash
-git fetch upstream
+- Complete assigned issues within the specified deadline.
+- Failure to meet the deadline may result in reassignment.
 
-git merge upstream/main
-```
+## Quality and Learning
 
-#### Method 2:
-Using the github Graphical User Interface.
-- In your forked repository, click on "Fetch upstream"
-- Click "Fetch and merge"
+Focus on quality and continuous learning:
 
-### 8. Make your changes to the source code.
+- Follow project guidelines and coding style.
+- Aim for structured and optimized code.
+- Mistakes are allowed and part of the learning process!
 
-### 9. Stage your changes and commit
-⚠️ Make sure not to run the commands git add . or git add *. Instead, stage your changes for each file/folder
-
-```bash
-git add <file/folder_you_made_changes_to>
-```
-
-```bash
-git commit -m  "<your_commit_message>"
-```
-
-### 10. Push your local commits to the remote repository
-```bash
-git push origin yourBranchName
-```
-
-### 11. In your forked repository create a Pull Request(PR)
-See the Pull Requests guidelines [here](#submitting-pull-requests).
-
-**Note:** After making PR wait for the PR to be reviewed and make changes if required.
-
-### 12. Congratulations!🎉 You've made your first contribution to firstspot! 🙌🏼
-
-## Submitting Pull Requests
-When submitting a pull request, please ensure the following:
-
-- You have added necessary tests for your changes.
-- The pull request description clearly explains the changes made and the reasoning behind them.
-- Screenshot of the change
