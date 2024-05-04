@@ -7,6 +7,18 @@
   
 **Check the Website [here](https://suchitra-sahoo.github.io/AgriLearnNetwork//)**.
 
+## TABLE OF CONTENTS
+
+- [About our project](#About-our-project)
+- [Tech Stack Used](#Tech-Stack-Used)
+- [Website Overview](#Website-Overview)
+- [Key Features ✨](#Key-Features-✨)
+- [Components of Website](#Components-of-Website)
+- [🔖Steps to Contribute ✅](#🔖Steps-to-Contribute-✅)
+- [🔑Guidelines✨](#🔑Guidelines✨)
+- [Thanks to all the Contributors ❤️](#Thanks-to-all-the-Contributors-❤️)
+
+
 Welcome to AgriLearnNetwork, your premier destination for comprehensive agricultural education and an abundance of invaluable resources. Whether you're a seasoned farmer, a budding agricultural enthusiast, or simply curious about the world of farming, we're here to empower you with knowledge and tools to thrive in the field. Explore our diverse range of courses, delve into expert insights, and discover the latest advancements in agricultural practices. Join us in cultivating a brighter future for agriculture together.
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
@@ -102,6 +114,16 @@ Have questions or need assistance? Our dedicated team is here to help. Reach out
 Introducing our AI-powered chatbot, your virtual agricultural assistant. Have questions about farming techniques, crop management, or agricultural practices? Simply chat with our AI bot, and get instant answers to all your agriculture-related queries. Experience the convenience of personalized support at your fingertips, 24/7.
 
 <br>
-  
+
+## License 🪪
+
+ [MIT license](https://opensource.org/license/mit/)
+
+
+## Thanks to all the Contributors ❤️
+
+<a href="https://github.com/Suchitra-Sahoo/your-repo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Suchitra-Sahoo/your-repo" />
+</a>
 
 
