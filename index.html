@@ -180,22 +180,19 @@
     </section>
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Us!</span></h2>
-        <form action="#">
-
+      <form action="http://localhost:5500/form" method="POST">
         <div class="input-box">
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email Address">
+            <input type="text" name="fullName" placeholder="Full Name">
+            <input type="text" name="email" placeholder="Email Address">
         </div>
-
         <div class="input-box">
-          <input type="Number" placeholder="Mobile Number">
-          <input type="text" placeholder="Email Subject">
+            <input type="number" name="mobileNumber" placeholder="Mobile Number">
+            <input type="text" name="subject" placeholder="Email Subject">
         </div>
-
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
         <input type="submit" value="Send Message" class="btn"> 
-
-        </form>
+    </form>
+    
 
     </section>
     <footer class="footer">

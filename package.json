@@ -1,0 +1,14 @@
+{
+  "name": "agrilearnnetwork",
+  "version": "1.0.0",
+  "description": "<div align = \"center\">  <img src=\"https://emojiisland.com/cdn/shop/products/26_large.png?v=1571606116\" >  <div>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

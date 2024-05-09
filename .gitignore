@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Generated files
+build/
+dist/
+coverage/
+
+# Environment variables
+.env
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Logs and debugging
+*.log
+npm-debug.log*
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# OS generated files
+.DS_Store
+Thumbs.db
