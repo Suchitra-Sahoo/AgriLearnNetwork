@@ -190,6 +190,81 @@
   margin-right: 15px;
 }
 
+footer {
+    background: var(--second-color);
+  padding: 20px;
+  text-align: center;
+} 
+footer .footer-iconTop{
+  width: 50px;
+  
+  
+  
+  margin-left:85vw;
+ 
+}
+
+footer p{
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  text-decoration: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+.contact-icons a i {
+  font-size: 36px;
+  color: #ebe7e7;
+}
+
+.contact-icons a span {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  font-size: 16px;
+  transition: opacity 0.3s;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.footer-iconTop a
+{
+
+  
+  padding:.8rem;
+  background: var(--main-color);
+  border-radius: 5rem;
+  transition: .5s ease;
+
+}
+.footer-iconTop a:hover
+{
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.footer-iconTop a i
+{
+  font-size: 2.4rem;
+  color: var(--second-color);
+}
+
+.contact-icons a:hover span {
+  opacity: 1;
+}
 
 
  .btn2
@@ -452,6 +527,7 @@
 
 .footer-text p
 {
+  margin-bottom: 10px;
   font-size: 1.6rem;
 }
 
@@ -464,6 +540,7 @@
   background: var(--main-color);
   border-radius: .8rem;
   transition: .5s ease;
+  margin-bottom: 30px;
 
 }
 .footer-iconTop a:hover
