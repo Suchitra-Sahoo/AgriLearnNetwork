@@ -73,11 +73,17 @@
  .navbar a.active
  {
     color:var(--main-color);
-    font-size:3rem;
+    font-size:2rem;
     
  }
   .navbar.active {
   display: block;
+}
+logoImg {
+  width: 80px;
+  height: auto; /* Use auto to maintain aspect ratio */
+  max-width: 100%;
+  margin-right:5px; /* Adjust margin as needed */
 }
 
  #menu-icon
@@ -86,7 +92,7 @@
     color:var(--txt-color);
     display:none;
  }
-
+ 
  .home
  {
    display: grid;
