@@ -231,10 +231,14 @@
 .heading
 {
   text-align: center;
-  font-size: 4.5rem;
-
+  font-size: 4.0rem;
+  margin-bottom: 30px;
 }
-
+.resource{
+  font-size: 4rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
 .about-content h2
 {
   text-align: left;
