@@ -89,9 +89,10 @@
 
  .home
  {
-   display: flex;
+   display: grid;
    justify-content: center;
    align-items: center;
+   grid-template-columns: 600px 300px;
  }
  .home-img img
  {
