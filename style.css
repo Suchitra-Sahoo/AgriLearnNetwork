@@ -79,7 +79,7 @@
   .navbar.active {
   display: block;
 }
-logoImg {
+.logoImg {
   width: 80px;
   height: auto; /* Use auto to maintain aspect ratio */
   max-width: 100%;
