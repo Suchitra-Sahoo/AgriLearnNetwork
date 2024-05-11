@@ -15,6 +15,7 @@
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
     crossorigin="anonymous"></script>
@@ -190,23 +191,22 @@
     </section>
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Us!</span></h2>
-        <form action="#">
-
+        <form id="contact-form" action="#" method="post">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email Address" required>
+          <input type="text" id="fullName" placeholder="Full Name"  required>
+          <input type="email"  id="emailAddress" placeholder="Email Address" required>
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" required>
-          <input type="text" placeholder="Email Subject" required>
+          <input type="tel" maxlength="10"   placeholder="Mobile Number" id="mobileNumber" required>
+          <input type="text" id="subject" placeholder="Email Subject" required>
         </div>
 
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"  required></textarea>
         <input type="submit" value="Send Message" class="btn"> 
 
         </form>
-
+        <div id="messageSent" style="display:none;">Message Sent!</div>
     </section>
     <footer class="footer">
       <div class="footerUpperPart">
@@ -247,9 +247,11 @@
   <script src="script.js"></script>
   <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/1cfb7415-d4fc-4477-8d00-3717d30c975b/webchat/config.js" defer></script> -->
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
 </body>
 
 </html>

@@ -79,12 +79,28 @@ const typed=new Typed('.multiple-text',{
     loop:true
 
 });
+// Select the form and submit button
 const form = document.getElementById('contact-form');
+const submitBtn = document.getElementById('submit-btn');
 
+// Add event listener to the form submit event
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
-
+  event.preventDefault(); // Prevent the default form submission
   
+  // Display SweetAlert dialog
+  swal({
+    title: "Success!",
+    text: "Your form has been submitted.",
+    icon: "success",
+    button: "OK",
+  });
+});
+
+// Alternatively, if you want the SweetAlert dialog to appear when a specific button is clicked,
+// you can add an event listener to that button
+submitBtn.addEventListener('click', () => {
+  swal("Hello, world!");
+=======
   form.reset();
 });
 
