@@ -8,7 +8,8 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: 'Playfair Display', serif;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   }
 
   :root
@@ -403,9 +404,12 @@ logoImg {
 .contact form
 {
   max-width: 70rem;
-  margin: 1rem auto;
-  text-align: center;
-  margin-bottom: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    border: 2px solid #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
 
 }
 .contact form .input-box
@@ -427,6 +431,12 @@ logoImg {
   margin: .7rem 0;
 }
 
+.contact form .input-box input::placeholder,
+.contact form textarea::placeholder{
+  color: #999999 !important; /* Placeholder text color */ /* Placeholder text opacity */
+}
+
+
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -445,6 +455,67 @@ logoImg {
 {
   margin-top: 2rem;
   cursor: pointer;
+}
+
+
+
+.contact {
+  background-color: #053314; /* Green background color for the form */
+  padding: 10rem 9% 2rem;
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #ffffff; /* White color for headings */
+}
+
+
+
+
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #ffffff; /* White color for text */
+  background: #064b10; /* Dark green background color for input fields */
+  border: 1px solid #ffffff; /* White border */
+  border-radius: .8rem;
+  margin: .7rem 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: #ffffff; /* White color for button background */
+  color: #053314; /* Dark color for button text */
+  border: none;
+  border-radius: 4rem;
+  padding: 1rem 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  transition: .5s ease;
+}
+
+.contact form .btn:hover {
+  background-color: #f9f9f9; /* Lighter color on hover */
 }
 
 
@@ -619,6 +690,14 @@ logoImg {
   .footerUpperPart{
     flex-direction: column-reverse;
    
+ }
+ .contact form .input-box input
+ {
+  width: 100%;
+ }
+ .contact
+ {
+  padding: 10rem 5% 2rem;
  }
  
 }
