@@ -1,6 +1,7 @@
 let menuIcon = document.querySelectorAll('#menu-icon');
 let navbar = document.querySelectorAll('.navbar');
-
+let Contact = document.querySelectorAll('#contact');
+let navContact = document.querySelectorAll('#nav--contact');
 menuIcon.forEach(icon => {
   icon.onclick = () => {
     icon.classList.toggle('bx-x');
@@ -11,7 +12,7 @@ menuIcon.forEach(icon => {
 
 // Add an "active" class to the clicked link
 $('a[href*="#"]')
-  .not('[href="#"]')
+.not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
     // Remove any existing "active" class from links
@@ -19,7 +20,7 @@ $('a[href*="#"]')
 
     // Add "active" class to clicked link
     $(this).addClass('active');
-
+    
     // Smooth scroll to target as before
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -28,7 +29,7 @@ $('a[href*="#"]')
     ) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
+      
       if (target.length) {
 
         event.preventDefault();
@@ -48,7 +49,18 @@ $('a[href*="#"]')
     }
   });
 
-// Set initial active link based on URL hash
+//when scroll on any section that section's corresponding hyperlink will be active and
+// the previous activated hyperlink will be deactivated
+$('section[id]').mouseover(function() {
+var sectionId = $(this).attr('id');
+var correspondingLink = $('a[href="#' + sectionId + '"]');
+// Remove active class from all links
+$('a').removeClass('active');
+// Add active class to the corresponding link
+correspondingLink.addClass('active');
+});
+  
+  // Set initial active link based on URL hash
 $(document).ready(function() {
   var hash = window.location.hash;
   if (hash) {
@@ -87,4 +99,3 @@ form.addEventListener('submit', (event) => {
   
   form.reset();
 });
-
