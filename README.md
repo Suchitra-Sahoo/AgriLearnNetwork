@@ -47,7 +47,7 @@ Welcome to **AgriLearnNetwork**, your premier destination for comprehensive agri
 <br>
 
 <!-- Lets get started -->
-# Let's Get Started 🚀
+# 🚀 Let's Get Started
 
 <p>Welcome to AgriLearnNetwork ! If you're interested in contributing, here's how you can get started:</p>
 
@@ -97,7 +97,7 @@ Welcome to **AgriLearnNetwork**, your premier destination for comprehensive agri
 </div>
 <!-- Code of conduct -->
 <div>
-<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h2>
+<h1><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h1>
 </div>
 
 Please note that this project is released with a [Contributor Code of Conduct](./CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
