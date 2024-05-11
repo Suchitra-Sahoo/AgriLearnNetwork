@@ -16,7 +16,9 @@
 - [Components of Website](#Components-of-Website)
 
 
-Welcome to AgriLearnNetwork, your premier destination for comprehensive agricultural education and an abundance of invaluable resources. Whether you're a seasoned farmer, a budding agricultural enthusiast, or simply curious about the world of farming, we're here to empower you with knowledge and tools to thrive in the field. Explore our diverse range of courses, delve into expert insights, and discover the latest advancements in agricultural practices. Join us in cultivating a brighter future for agriculture together.
+# About our project
+
+Welcome to **AgriLearnNetwork**, your premier destination for <u>comprehensive agricultural education and an abundance of invaluable resources</u>. Whether you're a seasoned farmer, a budding agricultural enthusiast, or simply curious about the world of farming, we're here to empower you with knowledge and tools to thrive in the field. Explore our diverse range of courses, delve into expert insights, and discover the latest advancements in agricultural practices. Join us in cultivating a brighter future for agriculture together🤝.
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
 <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
@@ -42,7 +44,64 @@ Welcome to AgriLearnNetwork, your premier destination for comprehensive agricult
 <br>
 <br>
 
-**Tech Stack Used**
+<!-- Lets get started -->
+<div>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="35" height="35"> Let's Get Started</h2>
+</div>
+
+<p>Welcome to AgriLearnNetwork! If you're interested in contributing, here's how you can get started:</p>
+
+1. **Fork the repository:** Click on the "Fork" button at the top-right corner of the repository's page on GitHub to create your own copy of the project.
+
+2. **Clone the repository:** After forking, clone the repository to your local machine using the following command in your terminal:
+
+   ```bash
+   git clone https://github.com/<your-github-username>/AgriLearnNetwork.git
+   ```
+
+3. **Add a remote upstream:** Set up a remote upstream to the original repository by running the following command in your terminal:
+
+   ```bash
+   git remote add upstream https://github.com/<original-owner>/AgriLearnNetwork/
+   ```
+
+4. **Create a new branch:** Switch to a new branch for your contributions:
+
+   ```bash
+   git checkout -b <your-branch-name>
+   ```
+
+5. **Make changes:** Start making your changes to the source code.
+
+6. **Add your changes:** Stage your changes for commit:
+
+   ```bash
+   git add <changed-file1> <changed-file2> ...
+   ```
+
+7. **Commit your changes:** Commit your changes with a descriptive message:
+
+   ```bash
+   git commit -m "<your-commit-message>"
+   ```
+
+8. **Push your changes:** Push your changes to your forked repository:
+
+   ```bash
+   git push origin <your-branch-name>
+   ```
+
+9. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
+
+<!-- Code of conduct -->
+<div>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h2>
+</div>
+
+Please note that this project is released with a [Contributor Code of Conduct](./CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+
+# Tech Stack Used
 
 <div align="center">
  <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white">
@@ -52,28 +111,31 @@ Welcome to AgriLearnNetwork, your premier destination for comprehensive agricult
 
 </div>
 
+
 # Website Overview
 
-Agrilearn Network serves as an indispensable resource, offering farmers a holistic platform enriched with essential insights spanning the diverse landscape of agriculture. Delving into the core of farming practices, our platform provides detailed guidance on agriculture techniques, in-depth knowledge on seed varieties, recommendations for optimal tool usage, streamlined harvesting methods, best practices for sowing, and strategic farm management approaches. By encompassing a wide spectrum of topics, Agrilearn Network aims to empower farmers with the comprehensive understanding needed to navigate the complexities of modern agriculture successfully.
+**Agrilearn Network** serves as an indispensable resource, offering farmers a holistic platform enriched with essential insights spanning the diverse landscape of agriculture. Delving into the core of farming practices, our platform provides <u>detailed guidance on agriculture techniques, in-depth knowledge on seed varieties, recommendations for optimal tool usage, streamlined harvesting methods, best practices for sowing, and strategic farm management approaches</u>. By encompassing a wide spectrum of topics, Agrilearn Network aims to empower farmers with the comprehensive understanding needed to navigate the complexities of modern agriculture successfully.
+
+
 # Key Features ✨
 
-- Landing Page: Experience agriculture's future today with AgriLearnNetwork's innovative platform.
+- **Landing Page**: Experience agriculture's future today with AgriLearnNetwork's innovative platform.
 
-- About Us: Discover how AgriLearnNetwork is reshaping agriculture education and support worldwide.
+- **About Us**: Discover how AgriLearnNetwork is reshaping agriculture education and support worldwide.
 
-- Blogs Page: Dive into a wealth of agricultural knowledge with our curated blog posts.
+- **Blogs Page**: Dive into a wealth of agricultural knowledge with our curated blog posts.
   
-- Resource Library: Access essential tutorials covering crucial topics in agriculture and farming.
+- **Resource Library**: Access essential tutorials covering crucial topics in agriculture and farming.
 
-- Contact Us: Reach out to our dedicated team for personalized assistance and guidance.
+- **Contact Us**: Reach out to our dedicated team for personalized assistance and guidance.
 
-- AI Chat Bot: Get instant answers to all your agriculture-related queries with our AI-powered chatbot.
+- **AI Chat Bot**: Get instant answers to all your agriculture-related queries with our AI-powered chatbot.
 
  
-**Components of Website**
+# Components of Website
 ---
  
-**Landing Page**
+## Landing Page
  
  Welcome to AgriLearnNetwork! Step into a world where agriculture meets innovation. Our captivating landing page invites you to embark on a journey towards agricultural excellence. Be inspired to take the first step towards a prosperous and sustainable farming future.
  
@@ -81,7 +143,7 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
 
 <br>
 
-**About Us**
+## About Us
  
  Discover the heart and soul of AgriLearnNetwork. Learn about our mission to revolutionize agriculture education and support farmers worldwide. Explore how our platform equips you with the tools and knowledge needed to thrive in the ever-evolving world of farming.
 
@@ -89,7 +151,7 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
  
 <br>
 
-**Blogs Page**
+## Blogs Page
  
 Dive into a treasure trove of insightful blog posts covering a myriad of topics relevant to modern agriculture. Our curated collection of articles delves into various aspects of farming, offering valuable advice, tips, and solutions to common challenges faced by farmers today.
 
@@ -98,7 +160,7 @@ Dive into a treasure trove of insightful blog posts covering a myriad of topics 
 <br>
   
   
-**Resource Library**
+## Resource Library
  
  Explore our extensive collection of tutorials covering a wide range of crucial topics in agriculture and farming. Our resource library is your go-to destination for in-depth guidance and expert insights on various aspects of agricultural practices. Whether you're looking to enhance your knowledge in crop management, soil health, pest control, irrigation techniques, or livestock care, our tutorials offer comprehensive information to help you succeed in your farming endeavors. 
 
@@ -106,14 +168,14 @@ Dive into a treasure trove of insightful blog posts covering a myriad of topics 
 
 <br>
 
-**Contact Us**
+## Contact Us
 
 Have questions or need assistance? Our dedicated team is here to help. Reach out to us through our contact page, and we'll be happy to provide support and guidance tailored to your needs.
 
 ![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210257.png)
 <br>
   
-**AI Chat Bot**
+## AI Chat Bot
 
 Introducing our AI-powered chatbot, your virtual agricultural assistant. Have questions about farming techniques, crop management, or agricultural practices? Simply chat with our AI bot, and get instant answers to all your agriculture-related queries. Experience the convenience of personalized support at your fingertips, 24/7.
 
