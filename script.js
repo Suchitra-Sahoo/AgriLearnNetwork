@@ -100,5 +100,7 @@ form.addEventListener('submit', (event) => {
 // you can add an event listener to that button
 submitBtn.addEventListener('click', () => {
   swal("Hello, world!");
+=======
+  form.reset();
 });
 

@@ -63,24 +63,30 @@
     font-weight: 600;
     cursor: default;
  }
- .navbar a
- {
-    font-size: 2rem;
-    color:var(--txt-color);
-    margin-left:4rem;
-    transition: .3s;
- }
- .navbar a:hover,
+ .navbar a {
+  font-size: 2rem;
+  color: var(--txt-color);
+  margin-left: 4rem;
+  transition: .3s;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar a:not(.active):hover {
+  color: var(--main-color);
+}
+
+
  .navbar a.active
  {
-    color:var(--main-color);
+    color:var(--txt-color);
     font-size:2rem;
     
  }
   .navbar.active {
   display: block;
 }
-logoImg {
+.logoImg {
   width: 80px;
   height: auto; /* Use auto to maintain aspect ratio */
   max-width: 100%;
