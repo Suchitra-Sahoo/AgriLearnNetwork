@@ -74,22 +74,34 @@
     font-weight: 600;
     cursor: default;
  }
- .navbar a
- {
-    font-size: 2rem;
-    color:var(--txt-color);
-    margin-left:4rem;
-    transition: .3s;
- }
- .navbar a:hover,
+ .navbar a {
+  font-size: 2rem;
+  color: var(--txt-color);
+  margin-left: 4rem;
+  transition: .3s;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar a:not(.active):hover {
+  color: var(--main-color);
+}
+
+
  .navbar a.active
  {
-    color:var(--main-color);
-    font-size:3rem;
+    color:var(--txt-color);
+    font-size:2rem;
     
  }
   .navbar.active {
   display: block;
+}
+.logoImg {
+  width: 80px;
+  height: auto; /* Use auto to maintain aspect ratio */
+  max-width: 100%;
+  margin-right:5px; /* Adjust margin as needed */
 }
 
  #menu-icon
@@ -98,7 +110,7 @@
     color:var(--txt-color);
     display:none;
  }
-
+ 
  .home
  {
    display: grid;
@@ -185,7 +197,32 @@
   transition: .5sec ease;
 }
 
+.email-link {
+  position: relative;
+  display: inline-block;
+}
 
+.email-link::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.email-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
 .btn-cv-res
 {
   display: inline-block;
@@ -446,6 +483,11 @@
   margin: .7rem 0;
 }
 
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 .contact form .input-box input
 {
   width: 49%;
@@ -470,16 +512,26 @@
   justify-content: space-between;
   align-items: center;
   flex: wrap;
+  flex-direction: column;
   padding: 2rem 9%;
   background:#0e4b16;
-
+    min-height: 25rem;
 }
 
-.footer-text p
+.footer p
 {
   font-size: 1.6rem;
 }
-
+.footerUpperPart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width:78vw;
+  min-height:15rem;
+  margin-top:15px;
+  
+}
 .footer-iconTop a
 {
   display: grid;
@@ -514,6 +566,9 @@
   html{
     font-size: 55%;
   }
+  .header{
+    padding: 3rem 3%;
+  }
 }
 
 @media(max-width:991px)
@@ -540,10 +595,7 @@
   .footer
   {
     padding:2rem 3%;
-  }
-}
-
-@media (max-width:768px)
+  }}@media(max-width:991px)
 {
   #menu-icon
   {
@@ -555,13 +607,13 @@
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 1rem 3%;
+    padding: 1rem 1%;
     background: var(--bg-color);
     border-top: .1rem solid rgba(0,0,0,.2);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
     display: none;
   }
-
+  
   .navbar :active
   {
     display: block;
@@ -572,6 +624,7 @@
     font-size: 2rem;
     margin: 3rem 0 ;
 
+    
   }
   .home
   {
@@ -615,6 +668,9 @@
   {
     grid-template-columns: repeat(2,1fr);
   }
+  .footer-left{
+    margin-top: .8rem;
+   }
 
 }
 
@@ -624,6 +680,11 @@
   {
     grid-template-columns: 1fr;
   }
+  .footerUpperPart{
+    flex-direction: column-reverse;
+   
+ }
+ 
 }
 
 
@@ -639,7 +700,12 @@
   }
   .footer
   {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+    flex-direction: column;
+  }
+  .footerUpperPart{
+     flex-direction: column-reverse;
+    
   }
   .footer p
 {
@@ -648,15 +714,50 @@
 }
 }
 .footer-left {
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.socialIcons{
+  padding:1.2rem;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.socialIcons i{
+  color: var(--second-color);
+ font-size:22px;
+ /* margin-left:25px;
+ margin-right:25px; */
+ 
+}
+.socialIcons a{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding:1.3rem;
+  background: var(--main-color);
+  border-radius:100%;
+  transition: .5s ease;
+  margin:15px;
 }
 .footer-right {
-  text-align: right;
+  text-align: center;
 }
+<<<<<<< HEAD
      .services-box a {
        text-decoration: none; /* Remove underline */
        color: inherit; /* Inherit the color from the parent */
        cursor: pointer; /* Show pointer cursor on hover */
+=======
+
+    .services-box a {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Inherit the color from the parent */
+        cursor: pointer; /* Show pointer cursor on hover */
+>>>>>>> ca8098e07d4600ac281492e8addb0dbe0d197107
     }
 
     .services-box a:hover {
