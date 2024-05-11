@@ -47,6 +47,7 @@ section {
   border-bottom: 0.1rem solid rgb(252, 187, 223);
 }
 
+
 .logo {
   font-size: 2.5rem;
   color: var(--txt-color);
@@ -65,7 +66,73 @@ section {
   font-size: 3rem;
 }
 .navbar.active {
+  }
+  
+ body
+ {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+
+ }
+ section
+ {
+   min-height: 100vh;
+   padding: 10rem 9% 2rem;
+ }
+ .header
+ {
+    position: fixed;
+   top: 0;
+   left: 0;
+   width:100%;
+   padding:2rem 9%;
+   background-color: var(--bg-color);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+ }
+ .header.sticky
+ {
+  border-bottom: .1rem solid rgb(252, 187, 223);
+ }
+
+ .logo
+ {
+    font-size: 2.5rem;
+    color: var(--txt-color);
+    font-weight: 600;
+    cursor: default;
+ }
+ .navbar a {
+  font-size: 2rem;
+  color: var(--txt-color);
+  margin-left: 4rem;
+  transition: .3s;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar a:not(.active):hover {
+  color: var(--main-color);
+}
+
+
+ .navbar a.active
+ {
+    color:var(--txt-color);
+    font-size:2rem;
+    
+ }
+  .navbar.active {
+
   display: block;
+}
+.logoImg {
+  width: 80px;
+  height: auto; /* Use auto to maintain aspect ratio */
+  max-width: 100%;
+  margin-right:5px; /* Adjust margin as needed */
 }
 
 #menu-icon {
@@ -81,6 +148,24 @@ section {
   grid-template-columns: 600px 300px;
 }
 .home-img img {
+
+ #menu-icon
+ {
+    font-size: 3.6rem;
+    color:var(--txt-color);
+    display:none;
+ }
+ 
+ .home
+ {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   grid-template-columns: 600px 300px;
+ }
+ .home-img img
+ {
+
   width: 20vw;
   animation: floatImage 4s ease-in-out infinite;
 }
@@ -353,7 +438,17 @@ span {
   margin: 0.7rem 0;
 }
 
+
 .contact form .input-box input {
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+.contact form .input-box input
+{
+
   width: 49%;
 }
 
@@ -370,7 +465,9 @@ span {
   justify-content: space-between;
   align-items: center;
   flex: wrap;
+  flex-direction: column;
   padding: 2rem 9%;
+
   background: #0e4b16;
 }
 
@@ -379,6 +476,28 @@ span {
 }
 
 .footer-iconTop a {
+
+  background:#0e4b16;
+    min-height: 25rem;
+}
+
+.footer p
+{
+  font-size: 1.6rem;
+}
+.footerUpperPart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width:78vw;
+  min-height:15rem;
+  margin-top:15px;
+  
+}
+.footer-iconTop a
+{
+
   display: grid;
   justify-content: center;
   align-items: center;
@@ -479,12 +598,23 @@ span {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer-left{
+    margin-top: .8rem;
+   }
+
+
 }
 
 @media (max-width: 617px) {
   .portfolio-container {
     grid-template-columns: 1fr;
   }
+  .footerUpperPart{
+    flex-direction: column-reverse;
+   
+ }
+ 
 }
 
 @media (max-width: 365px) {
@@ -494,8 +624,19 @@ span {
   .about-img {
     width: 90vw;
   }
+
   .footer {
     flex-direction: column-reverse;
+
+  .footer
+  {
+    /* flex-direction: column-reverse; */
+    flex-direction: column;
+  }
+  .footerUpperPart{
+     flex-direction: column-reverse;
+    
+
   }
   .footer p {
     text-align: center;
@@ -503,16 +644,52 @@ span {
   }
 }
 .footer-left {
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.socialIcons{
+  padding:1.2rem;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.socialIcons i{
+  color: var(--second-color);
+ font-size:22px;
+ /* margin-left:25px;
+ margin-right:25px; */
+ 
+}
+.socialIcons a{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding:1.3rem;
+  background: var(--main-color);
+  border-radius:100%;
+  transition: .5s ease;
+  margin:15px;
 }
 .footer-right {
-  text-align: right;
+  text-align: center;
 }
+
 .services-box a {
   text-decoration: none; /* Remove underline */
   color: inherit; /* Inherit the color from the parent */
   cursor: pointer; /* Show pointer cursor on hover */
 }
+
+
+    .services-box a {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Inherit the color from the parent */
+        cursor: pointer; /* Show pointer cursor on hover */
+    }
+
 
 .services-box a:hover {
   text-decoration: underline; 
