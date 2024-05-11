@@ -11,6 +11,16 @@
   font-family: 'Playfair Display', serif;
   }
 
+.blogs-list{
+    display: grid;
+    gap:var(--size-3);
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+  
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  
+  }
   :root
   {
     --bg-color:#053314;
@@ -32,11 +42,13 @@
     color: var(--txt-color);
 
  }
- section
+  section
  {
    min-height: 100vh;
    padding: 10rem 9% 2rem;
  }
+
+ 
  .header
  {
     position: fixed;
@@ -249,18 +261,18 @@
   margin: 2rem 0 3rem;
 }
 
-.services h2 
+ .services h2 
 {
   margin-bottom: 5rem;
 
 }
 .services-container
-{
-  display: flex;
+ {
+ /* display: flex; */
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap:2rem;
+  flex-wrap: wrap; 
+  gap: 10px;
 }
 
 .services-container .services-box
@@ -270,18 +282,20 @@
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border:.2rem solid var(--bg-color);
-  transition: .5s ease;
+   border:.2rem solid var(--bg-color); 
+  transition: .3s ease;
+  gap: 100px;
+  grid-auto-flow: column;
 }
-.services-container .services-box:hover
+ .services-container .services-box:hover
 {
-  border-color: var(--main-color);
-  transform: scale(1.02);
-}
+  /* border-color: var(--main-color);
+  transform: scale(1.02); */
+} 
 
 .services-box i
 {
-  font-size: 7rem;
+  font-size: 5rem;
   color: var(--main-color);
 }
 
@@ -294,7 +308,18 @@
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
 
-}
+} 
+
+ /* .blogs-list{
+   display: grid; 
+    gap:var(--size-30); 
+    grid-auto-flow: column; 
+   grid-auto-columns: 25%;  
+ 
+    overflow-x: auto;
+  overscroll-behavior-inline: contain;    
+}  */
+
 .portfolio
 {
   background-color: var(--second-color);
@@ -476,6 +501,13 @@
   color: var(--second-color);
 }
 
+.blogs-list{
+  display: grid;
+  gap:var(--size-3);
+  grid-auto-flow: column;
+
+}
+
 
 @media(max-width:1200px)
 {
@@ -621,12 +653,25 @@
 .footer-right {
   text-align: right;
 }
-    .services-box a {
-        text-decoration: none; /* Remove underline */
-        color: inherit; /* Inherit the color from the parent */
-        cursor: pointer; /* Show pointer cursor on hover */
+     .services-box a {
+       text-decoration: none; /* Remove underline */
+       color: inherit; /* Inherit the color from the parent */
+       cursor: pointer; /* Show pointer cursor on hover */
     }
 
     .services-box a:hover {
         text-decoration: underline; /* Add underline on hover if needed */
     }
+
+    .services-container .services-box
+{
+
+  background: var(--second-color);
+  padding: 1rem 1rem 4rem;
+  
+}
+
+    .blogs-list {
+      grid-auto-columns: 33.3%;
+    }
+    
