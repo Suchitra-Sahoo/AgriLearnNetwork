@@ -17,7 +17,7 @@
 - [Key Features ✨](#Key-Features-✨)
 - [Components of Website](#Components-of-Website)
 
-
+<br>
 
 # About our project
 
@@ -25,7 +25,7 @@
 
 Welcome to **AgriLearnNetwork**, your premier destination for comprehensive agricultural education and an abundance of invaluable resources. Whether you're a seasoned farmer, a budding agricultural enthusiast, or simply curious about the world of farming, we're here to empower you with knowledge and tools to thrive in the field. Explore our diverse range of courses, delve into expert insights, and discover the latest advancements in agricultural practices. Join us in cultivating a brighter future for agriculture together🤝.</div>
 
-
+<br>
 
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
@@ -102,13 +102,14 @@ Welcome to **AgriLearnNetwork**, your premier destination for comprehensive agri
 9. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
 </div>
 
+<br>
 
 <!-- Code of conduct -->
 # Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct](./CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-
+<br>
 
 # Tech Stack Used
 
@@ -120,7 +121,7 @@ Please note that this project is released with a [Contributor Code of Conduct](.
 
 </div>
 
-
+<br>
 
 # Website Overview
 
@@ -128,6 +129,8 @@ Please note that this project is released with a [Contributor Code of Conduct](.
 
 **Agrilearn Network** serves as an indispensable resource, offering farmers a holistic platform enriched with essential insights spanning the diverse landscape of agriculture. Delving into the core of farming practices, our platform provides <u>detailed guidance on agriculture techniques, in-depth knowledge on seed varieties, recommendations for optimal tool usage, streamlined harvesting methods, best practices for sowing, and strategic farm management approaches</u>. By encompassing a wide spectrum of topics, Agrilearn Network aims to empower farmers with the comprehensive understanding needed to navigate the complexities of modern agriculture successfully.
 </div>
+
+<br>
 
 # Key Features ✨
 
@@ -146,6 +149,8 @@ Please note that this project is released with a [Contributor Code of Conduct](.
 - **AI Chat Bot**: Get instant answers to all your agriculture-related queries with our AI-powered chatbot.
 
 </div>
+
+<br>
 
 # Components of Website
 ---
