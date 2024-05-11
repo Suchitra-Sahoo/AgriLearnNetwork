@@ -127,3 +127,4 @@ Introducing our AI-powered chatbot, your virtual agricultural assistant. Have qu
 <a href="https://github.com/Suchitra-Sahoo/AgriLearnNetwork/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Suchitra-Sahoo/AgriLearnNetwork"/>
 </a>
+[![Contributors](https://contrib.rocks/image?repo=Suchitra-Sahoo/AgriLearnNetwork)](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/graphs/contributors)
