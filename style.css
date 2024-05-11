@@ -129,7 +129,6 @@
   color:var(--main-color);
  }
 
-
  .home-content h1
  {
    font-size: 5.6rem;
@@ -190,8 +189,6 @@
   margin-right: 15px;
 }
 
-
-
  .btn2
  {
   margin-left: 9px;
@@ -228,6 +225,7 @@
 .about-img img{
   width:35vw;
 }
+
 .heading
 {
   text-align: center;
@@ -247,6 +245,7 @@
 .about-content p{
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+  line-height: 2.5rem;
 }
 
 .services h2 
