@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Hind Vadodara
+- Font Author: Copyright (c) 2015 Indian Type Foundry (info@indiantypefoundry.com)
+- Font Source: https://fonts.gstatic.com/s/hindvadodara/v13/neINzCKvrIcn5pbuuuriV9tTcJXfrXsfvSo.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
