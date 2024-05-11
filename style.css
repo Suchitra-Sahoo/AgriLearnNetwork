@@ -421,6 +421,11 @@
   margin: .7rem 0;
 }
 
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 .contact form .input-box input
 {
   width: 49%;
