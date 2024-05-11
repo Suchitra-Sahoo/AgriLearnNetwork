@@ -11,6 +11,7 @@
 
 - [About our project](#About-our-project)
 - [Let's get started!](#Let's-get-started)
+- [Code of Conduct](#Code-of-Conduct)
 - [Tech Stack Used](#Tech-Stack-Used)
 - [Website Overview](#Website-Overview)
 - [Key Features ✨](#Key-Features-✨)
