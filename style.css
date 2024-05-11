@@ -324,11 +324,11 @@
   gap: 100px;
   grid-auto-flow: column;
 }
- .services-container .services-box:hover
+ /* .services-container .services-box:hover
 {
-  /* border-color: var(--main-color);
-  transform: scale(1.02); */
-} 
+  border-color: var(--main-color);
+  transform: scale(1.02); 
+}  */
 
 .services-box i
 {
@@ -347,15 +347,15 @@
 
 } 
 
- /* .blogs-list{
+ .blogs-list{
    display: grid; 
-    gap:var(--size-30); 
+    gap:var(--size-3); 
     grid-auto-flow: column; 
-   grid-auto-columns: 25%;  
+   grid-auto-columns: 33.3%;  
  
     overflow-x: auto;
   overscroll-behavior-inline: contain;    
-}  */
+}  
 
 .portfolio
 {
@@ -746,19 +746,11 @@
 .footer-right {
   text-align: center;
 }
-<<<<<<< HEAD
      .services-box a {
        text-decoration: none; /* Remove underline */
        color: inherit; /* Inherit the color from the parent */
        cursor: pointer; /* Show pointer cursor on hover */
-=======
-
-    .services-box a {
-        text-decoration: none; /* Remove underline */
-        color: inherit; /* Inherit the color from the parent */
-        cursor: pointer; /* Show pointer cursor on hover */
->>>>>>> ca8098e07d4600ac281492e8addb0dbe0d197107
-    }
+     }
 
     .services-box a:hover {
         text-decoration: underline; /* Add underline on hover if needed */
