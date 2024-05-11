@@ -179,7 +179,32 @@ logoImg {
   transition: .5sec ease;
 }
 
+.email-link {
+  position: relative;
+  display: inline-block;
+}
 
+.email-link::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.email-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
 .btn-cv-res
 {
   display: inline-block;
