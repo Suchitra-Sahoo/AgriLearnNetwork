@@ -10,15 +10,17 @@
 ## TABLE OF CONTENTS
 
 - [About our project](#About-our-project)
+- [Let's get started!](#Let's-get-started)
 - [Tech Stack Used](#Tech-Stack-Used)
 - [Website Overview](#Website-Overview)
 - [Key Features ✨](#Key-Features-✨)
 - [Components of Website](#Components-of-Website)
 
 
+
 # About our project
 
-Welcome to **AgriLearnNetwork**, your premier destination for <u>comprehensive agricultural education and an abundance of invaluable resources</u>. Whether you're a seasoned farmer, a budding agricultural enthusiast, or simply curious about the world of farming, we're here to empower you with knowledge and tools to thrive in the field. Explore our diverse range of courses, delve into expert insights, and discover the latest advancements in agricultural practices. Join us in cultivating a brighter future for agriculture together🤝.
+Welcome to **AgriLearnNetwork**, your premier destination for comprehensive agricultural education and an abundance of invaluable resources. Whether you're a seasoned farmer, a budding agricultural enthusiast, or simply curious about the world of farming, we're here to empower you with knowledge and tools to thrive in the field. Explore our diverse range of courses, delve into expert insights, and discover the latest advancements in agricultural practices. Join us in cultivating a brighter future for agriculture together🤝.
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
 <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
@@ -46,10 +48,10 @@ Welcome to **AgriLearnNetwork**, your premier destination for <u>comprehensive a
 
 <!-- Lets get started -->
 <div>
-<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="35" height="35"> Let's Get Started</h2>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="35" height="35"> # Let's Get Started</h2>
 </div>
 
-<p>Welcome to **AgriLearnNetwork** ! If you're interested in contributing, here's how you can get started:</p>
+<p>Welcome to AgriLearnNetwork ! If you're interested in contributing, here's how you can get started:</p>
 
 <div align="left">
 
