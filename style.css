@@ -32,6 +32,12 @@
     color: var(--txt-color);
 
  }
+ body::-webkit-scrollbar{
+  display: none;
+ }
+ body{
+  scrollbar-width: none;
+ }
  section
  {
    min-height: 100vh;

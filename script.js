@@ -131,6 +131,7 @@ form.addEventListener('submit', (event) => {
     return;
   }
 
+  // form reset
   form.reset();
   alert('Your message has been sent. Thank you!');
 });
