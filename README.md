@@ -10,7 +10,7 @@
 ## TABLE OF CONTENTS
 
 - [About our project](#About-our-project)
-- [Let's get started!](#Let's-get-started)
+- [Let's Get Started!](#Let's-Get-Started)
 - [Code of Conduct](#Code-of-Conduct)
 - [Tech Stack Used](#Tech-Stack-Used)
 - [Website Overview](#Website-Overview)
