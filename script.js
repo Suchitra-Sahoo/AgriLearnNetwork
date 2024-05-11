@@ -80,10 +80,10 @@ const typed=new Typed('.multiple-text',{
 
 });
 const form = document.getElementById('contact-form');
-
 form.addEventListener('submit', (event) => {
+  
   event.preventDefault();
-
+  alert('Your form has been submitted!');
   
   form.reset();
 });
