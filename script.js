@@ -49,6 +49,8 @@ $('a[href*="#"]')
     }
   });
 
+//when scroll on any section that section's corresponding hyperlink will be active and
+// the previous activated hyperlink will be deactivated
 $('section[id]').mouseover(function() {
 var sectionId = $(this).attr('id');
 var correspondingLink = $('a[href="#' + sectionId + '"]');
