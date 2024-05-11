@@ -49,8 +49,9 @@ Welcome to **AgriLearnNetwork**, your premier destination for <u>comprehensive a
 <h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="35" height="35"> Let's Get Started</h2>
 </div>
 
-<p>Welcome to AgriLearnNetwork! If you're interested in contributing, here's how you can get started:</p>
+<p>Welcome to **AgriLearnNetwork**! If you're interested in contributing, here's how you can get started:</p>
 
+<div align="left">
 1. **Fork the repository:** Click on the "Fork" button at the top-right corner of the repository's page on GitHub to create your own copy of the project.
 
 2. **Clone the repository:** After forking, clone the repository to your local machine using the following command in your terminal:
@@ -92,7 +93,7 @@ Welcome to **AgriLearnNetwork**, your premier destination for <u>comprehensive a
    ```
 
 9. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
-
+</div>
 <!-- Code of conduct -->
 <div>
 <h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h2>
