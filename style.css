@@ -38,8 +38,8 @@
    padding: 10rem 9% 2rem;
  }
  .header
- {
-    position: fixed;
+ { 
+  position: relative;
    top: 0;
    left: 0;
    width:100%;
@@ -49,6 +49,9 @@
    justify-content: space-between;
    align-items: center;
    z-index: 100;
+   padding-left:65px;
+   padding-right:65px;
+   text-align: center;
  }
  .header.sticky
  {
@@ -79,12 +82,7 @@
   .navbar.active {
   display: block;
 }
-logoImg {
-  width: 80px;
-  height: auto; /* Use auto to maintain aspect ratio */
-  max-width: 100%;
-  margin-right:5px; /* Adjust margin as needed */
-}
+
 
  #menu-icon
  {
@@ -92,13 +90,16 @@ logoImg {
     color:var(--txt-color);
     display:none;
  }
- 
+ .home-content{
+  max-width: 600px;
+ }
  .home
  {
-   display: grid;
+   display: flex;
    justify-content: center;
    align-items: center;
-   grid-template-columns: 600px 300px;
+   grid-template-columns: auto;
+   text-align: center;
  }
  .home-img img
  {
@@ -566,6 +567,9 @@ logoImg {
   {
     font-size: 2.6rem;
   }
+  .home-content{
+    max-width: 300px;
+  }
   .home-content h1
   {
     font-size: 5rem;
@@ -621,6 +625,10 @@ logoImg {
 
 @media (max-width: 365px)
 {
+
+  .home-content{
+    min-width: 200px;
+  }
   .home-img
   {
     width: 90vw;
