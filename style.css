@@ -456,12 +456,20 @@
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: var(--txt-color);
+  color: rgb(206, 255, 206);
   background: var(--second-color);
   border-radius: .8rem;
   margin: .7rem 0;
+  border-radius: 20px;
+background: #053314;
+box-shadow: inset 23px 23px 21px #04240e,
+            inset -23px -23px 21px #07421a;
 }
-
+.contact form .input-box input::placeholder,
+.contact form textarea::placeholder
+{
+  color: rgb(206, 255, 206);
+}
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
