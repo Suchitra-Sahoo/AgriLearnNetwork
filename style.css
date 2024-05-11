@@ -62,24 +62,30 @@
     font-weight: 600;
     cursor: default;
  }
- .navbar a
- {
-    font-size: 2rem;
-    color:var(--txt-color);
-    margin-left:4rem;
-    transition: .3s;
- }
- .navbar a:hover,
+ .navbar a {
+  font-size: 2rem;
+  color: var(--txt-color);
+  margin-left: 4rem;
+  transition: .3s;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar a:not(.active):hover {
+  color: var(--main-color);
+}
+
+
  .navbar a.active
  {
-    color:var(--main-color);
+    color:var(--txt-color);
     font-size:2rem;
     
  }
   .navbar.active {
   display: block;
 }
-logoImg {
+.logoImg {
   width: 80px;
   height: auto; /* Use auto to maintain aspect ratio */
   max-width: 100%;
@@ -179,7 +185,32 @@ logoImg {
   transition: .5sec ease;
 }
 
+.email-link {
+  position: relative;
+  display: inline-block;
+}
 
+.email-link::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.email-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
 .btn-cv-res
 {
   display: inline-block;
@@ -503,6 +534,9 @@ logoImg {
   html{
     font-size: 55%;
   }
+  .header{
+    padding: 3rem 3%;
+  }
 }
 
 @media(max-width:991px)
@@ -529,10 +563,7 @@ logoImg {
   .footer
   {
     padding:2rem 3%;
-  }
-}
-
-@media (max-width:768px)
+  }}@media(max-width:991px)
 {
   #menu-icon
   {
@@ -544,13 +575,13 @@ logoImg {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 1rem 3%;
+    padding: 1rem 1%;
     background: var(--bg-color);
     border-top: .1rem solid rgba(0,0,0,.2);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
     display: none;
   }
-
+  
   .navbar :active
   {
     display: block;
@@ -561,6 +592,7 @@ logoImg {
     font-size: 2rem;
     margin: 3rem 0 ;
 
+    
   }
   .home
   {
