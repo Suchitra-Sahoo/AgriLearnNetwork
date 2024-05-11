@@ -687,3 +687,18 @@ logoImg {
     .services-box a:hover {
         text-decoration: underline; /* Add underline on hover if needed */
     }
+.footer-left p{
+  border:2px solid rgb(117, 160, 48);
+  border-radius: 22px;
+  padding:11px;
+  background-color: var(--main-color);
+
+}
+
+.footer-left p:hover{
+  cursor:pointer;
+   color:var(--main-color);
+   background:var(--second-color);
+   box-shadow: 0 0 1rem var(--main-color);
+   font-weight: bold;
+}
