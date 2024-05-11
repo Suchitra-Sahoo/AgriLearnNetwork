@@ -47,11 +47,8 @@ Welcome to **AgriLearnNetwork**, your premier destination for comprehensive agri
 <br>
 
 <!-- Lets get started -->
-<div>
-<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="35" height="35"></h2>
-</div>
+# Let's Get Started 🚀
 
-# Let's Get Started
 <p>Welcome to AgriLearnNetwork ! If you're interested in contributing, here's how you can get started:</p>
 
 <div align="left">
