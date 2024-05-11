@@ -351,7 +351,11 @@
   padding: 0 4rem;
   transform: translateY(100%);
   transition: .5s ease;
-  color:rgb(227, 233, 211);
+  /* color:rgb(227, 233, 211); */
+  color:var(--txt-color);
+  /* text-shadow : 1px 1px 2px black !important; */
+  text-shadow: var(--second-color) 1px 0 10px;
+  
 }
 
 .portfolio-box:hover .portfolio-layer
