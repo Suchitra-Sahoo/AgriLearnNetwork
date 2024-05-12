@@ -1,5 +1,10 @@
-
-?>!DOCTYPE html>
+<<?php
+session_start();
+if (isset($_SESSION["user"])) {
+   header("Location: registration.php");
+}
+?>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -34,8 +39,7 @@
       <a href="#Farm Management"> <i class="fa-solid fa-blog"></i>  Blogs</a>
       <a href="#Resource Library"><i class="fa-solid fa-book"></i>  Resource Library</a>
       <a href="#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
-      <a href="registration.php"><i class="fa-regular fa-user"></i>
-Login</a>
+      <a href="registration.php"><i class="fa-regular fa-user"></i>Login</a>
 
     </nav>
   </header>
