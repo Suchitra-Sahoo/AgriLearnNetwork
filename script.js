@@ -96,6 +96,42 @@ const form = document.getElementById('contact-form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  
+  // Access form fields
+  const fullName = form.querySelector('input[placeholder="Full Name"]').value.trim();
+  const email = form.querySelector('input[placeholder="Email Address"]').value.trim();
+  const mobileNumber = form.querySelector('input[placeholder="Mobile Number"]').value.trim();
+  const emailSubject = form.querySelector('input[placeholder="Email Subject"]').value.trim();
+  const message = form.querySelector('textarea').value.trim();
+
+  // Validation
+  if (!fullName) {
+    alert('Please enter your full name.');
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  const mobilePattern = /^\d+$/;
+  if (!mobilePattern.test(mobileNumber)) {
+    alert('Please enter a valid mobile number.');
+    return;
+  }
+
+  if (!emailSubject) {
+    alert('Please enter the email subject.');
+    return;
+  }
+
+  if (!message) {
+    alert('Please enter your message.');
+    return;
+  }
+
+  // form reset
   form.reset();
+  alert('Your message has been sent. Thank you!');
 });
