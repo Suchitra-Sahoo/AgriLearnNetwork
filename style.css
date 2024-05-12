@@ -729,6 +729,9 @@ box-shadow: inset 23px 23px 21px #04240e,
   transition: .5s ease;
   margin:15px;
 }
+.socialIcons a:hover{
+   transform: scale(1.2);
+}
 .footer-right {
   text-align: center;
 }
