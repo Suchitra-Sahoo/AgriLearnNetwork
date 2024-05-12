@@ -111,11 +111,16 @@
    justify-content: center;
    align-items: center;
    grid-template-columns: 600px 300px;
+   background-image: url('images/sowing.webp');
+   background-repeat: none;
+   background-size: 100% 100%;
+   opacity:60%; 
  }
- .home-img img
+ /*.home-img img
  {
   width: 20vw;
   animation:floatImage 4s ease-in-out infinite;
+
  }
 
  @keyframes floatImage{
@@ -132,7 +137,7 @@
     transform:translateY(0);
   }
  }
-
+*/
  .home-content h3
  {
    font-size: 4.2rem;
