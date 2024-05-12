@@ -726,8 +726,12 @@ box-shadow: inset 23px 23px 21px #04240e,
   padding:1.3rem;
   background: var(--main-color);
   border-radius:100%;
-  transition: .5s ease;
+  transition: .03s ease;
   margin:15px;
+}
+.socialIcons a:hover
+{
+  box-shadow: 0 0 1rem var(--main-color);
 }
 .footer-right {
   text-align: center;
