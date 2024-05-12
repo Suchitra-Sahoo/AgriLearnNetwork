@@ -67,12 +67,25 @@
   color: var(--txt-color);
   margin-left: 4rem;
   transition: .3s;
+  text-decoration: none;
+  position: relative; 
 }
 .navbar a:hover {
   color: var(--main-color);
 }
 .navbar a:not(.active):hover {
   color: var(--main-color);
+}
+
+
+.navbar a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.2rem; /* Adjust the position of the underline */
+  left: 0;
+  width: 100%;
+  height: 3px; /* Thickness of the underline */
+  background-color: var(--main-color);
 }
 
 
