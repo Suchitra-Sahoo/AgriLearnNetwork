@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 *{
   margin:0;
   padding:0;
@@ -8,7 +9,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: 'Playfair Display', serif;
+  font-family: "Poppins", sans-serif;
   }
 
   :root
@@ -55,6 +56,7 @@
    justify-content: space-between;
    align-items: center;
    z-index: 100;
+   font-weight: 400;
  }
  .header.sticky
  {
@@ -73,7 +75,10 @@
   color: var(--txt-color);
   margin-left: 4rem;
   transition: .3s;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
 }
+
 .navbar a:hover {
   color: var(--main-color);
 }
@@ -84,7 +89,7 @@
 
  .navbar a.active
  {
-    color:var(--txt-color);
+    color:var(--main-color);
     font-size:2rem;
     
  }
@@ -103,14 +108,16 @@
     font-size: 3.6rem;
     color:var(--txt-color);
     display:none;
+    cursor: pointer;
  }
  
  .home
  {
-   display: grid;
+   display: flex;
    justify-content: center;
    align-items: center;
    grid-template-columns: 600px 300px;
+   font-weight: 500;
  }
  .home-img img
  {
@@ -141,6 +148,7 @@
  .home-content h3:nth-of-type(2)
  {
   margin-bottom: 2rem;
+  margin-top: 1.7rem;
  }
  span
  {
@@ -153,6 +161,7 @@
    font-size: 5.6rem;
    font-weight: 700;
    line-height: 1.3;
+   color: var(--main-color);
  }
 .social-media a
 {
@@ -556,7 +565,6 @@ box-shadow: inset 23px 23px 21px #04240e,
     padding: 3rem 3%;
   }
 }
-
 @media(max-width:991px)
 {
   .header{
@@ -612,11 +620,6 @@ box-shadow: inset 23px 23px 21px #04240e,
 
     
   }
-  .home
-  {
-    flex-direction: column;
-
-  }
   .home-content h3
   {
     font-size: 2.6rem;
@@ -627,7 +630,7 @@ box-shadow: inset 23px 23px 21px #04240e,
   }
   .home-img img
   {
-    width:70vw;
+    width:43vw;
     margin-top: 4rem;
 
   }
@@ -637,7 +640,7 @@ box-shadow: inset 23px 23px 21px #04240e,
   }
   .about img
   {
-    width: 70vw;
+    width: 43vw;
     margin-top: 4rem;
 
   }
@@ -659,7 +662,11 @@ box-shadow: inset 23px 23px 21px #04240e,
    }
 
 }
-
+@media(max-width:716px){
+  .home{
+    flex-direction: column;
+  }
+}
 @media (max-width: 617px)
 {
   .portfolio-container
@@ -668,9 +675,17 @@ box-shadow: inset 23px 23px 21px #04240e,
   }
   .footerUpperPart{
     flex-direction: column-reverse;
-   
- }
- 
+    
+  }
+  
+}
+@media(max-width:401px){
+  .home-content h1{
+    font-size: 4rem;
+  }
+  .home-content h3{
+    font-size: 2rem;
+  }
 }
 
 
