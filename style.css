@@ -443,10 +443,13 @@
 
 .contact form
 {
+  background-color: white;
   max-width: 70rem;
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
+  padding: 50px;
+  border-radius: 20%;
 
 }
 .contact form .input-box
@@ -464,12 +467,16 @@
   font-size: 1.6rem;
   color: rgb(206, 255, 206);
   background: var(--second-color);
+  
   border-radius: .8rem;
   margin: .7rem 0;
   border-radius: 20px;
-background: #053314;
+  /*background: #053314;*/
+  box-shadow: inset 23px 23px 21px #04240e,
+  inset -23px -23px 21px #07421a;
 box-shadow: inset 23px 23px 21px #04240e,
             inset -23px -23px 21px #07421a;
+  
 }
 .contact form .input-box input::placeholder,
 .contact form textarea::placeholder
