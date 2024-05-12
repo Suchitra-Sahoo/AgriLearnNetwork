@@ -46,6 +46,7 @@
  .header
  {
     position: fixed;
+    opacity: 0.8;
    top: 0;
    left: 0;
    width:100%;
@@ -122,6 +123,12 @@
   animation:floatImage 4s ease-in-out infinite;
 
  }
+ } 
+ .home-img img
+ {
+  width: 20vw;
+  animation:floatImage 4s ease-in-out infinite;
+}
 
  @keyframes floatImage{
   0%
@@ -160,7 +167,7 @@
    line-height: 1.3;
  }
 .social-media a
-{
+ {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -172,15 +179,16 @@
   font-size: 2rem;
   color: var(--main-color);
   margin: 3rem 1.5rem 3rem 0;
-  transition: .5sec ease;
+  transition: all .3sec ease;
+}
 
+.socialIcons a:hover {
+  background: var(--main-color); /* Change background color on hover */
+  color: var(--second-color); /* Change text color on hover */
+  transform: scale(1.1); /* Scale up the icon slightly on hover */
+  box-shadow: 0 0 1rem var(--main-color); /* Add box shadow on hover */
 }
-.social-media a:hover
-{
-  background: var(--main-color);
-  color: var(--second-color);
-  box-shadow: 0 0 1rem var(--main-color);
-}
+
 
 .btn
 {
@@ -616,26 +624,34 @@ box-shadow: inset 23px 23px 21px #04240e,
     margin: 3rem 0 ;
 
     
-  }
-  .home
-  {
-    flex-direction: column;
+  } 
+.home{  
+  height: 200px;
+  overflow: hidden;
+  background: url(./images/hom2.jpg) center;
+  position: relative;
+  padding: 0;
+}  
+ .slider {
+  display: none; 
+ } 
+ .home-content{ 
+  position: fixed; 
+  margin-left: -20px;
+  margin-top: 15px;  
+  filter: blur(0.5px); 
+  color:rgb(255, 247, 232); 
+}
+.home-content h1
+ {
+   font-size: 5rem; 
+ }
+ .home-content h3
+ {
+   font-size: 3rem;
+   font-weight: 700;
+ }
 
-  }
-  .home-content h3
-  {
-    font-size: 2.6rem;
-  }
-  .home-content h1
-  {
-    font-size: 5rem;
-  }
-  .home-img img
-  {
-    width:70vw;
-    margin-top: 4rem;
-
-  }
   .about
   {
     flex-direction: column-reverse;
@@ -675,6 +691,23 @@ box-shadow: inset 23px 23px 21px #04240e,
     flex-direction: column-reverse;
    
  }
+
+ .home-content{ 
+  position: fixed; 
+  margin-left: -140px;
+  margin-top: 15px;  
+  filter: blur(0.5px); 
+  color:rgb(255, 247, 232); 
+}
+.home-content h1
+ {
+   font-size: 3.5rem; 
+ }
+ .home-content h3
+ {
+   font-size: 2.2rem;
+   font-weight: 700;
+ }
  
 }
 
@@ -689,9 +722,25 @@ box-shadow: inset 23px 23px 21px #04240e,
   {
     width:90vw;
   }
+  .home-content{ 
+    position: fixed; 
+    margin-left: -190px;
+    margin-top: 0px;  
+    filter: blur(0.5px); 
+    color:rgb(255, 247, 232); 
+  }
+  .home-content h1
+   {
+     font-size: 2.5rem; 
+   }
+   .home-content h3
+   {
+     font-size: 1.8rem;
+     font-weight: 700;
+   }
+
   .footer
-  {
-    /* flex-direction: column-reverse; */
+  { 
     flex-direction: column;
   }
   .footerUpperPart{
@@ -719,9 +768,7 @@ box-shadow: inset 23px 23px 21px #04240e,
 }
 .socialIcons i{
   color: var(--second-color);
- font-size:22px;
- /* margin-left:25px;
- margin-right:25px; */
+ font-size:22px; 
  
 }
 .socialIcons a{
@@ -774,3 +821,51 @@ box-shadow: inset 23px 23px 21px #04240e,
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(192, 223, 100); 
 }
+
+
+/* ---------SLIDER CSS------------------------ */
+
+/*
+.home {
+  width: 100%;
+  /* border: 2px solid blue;  */
+  padding: 0;
+  margin: 0;
+  position: relative;
+} 
+.slider {
+  margin: 0;
+  min-width: 100%;
+  /* border: 2px solid red; */
+  min-height: 100vh;  
+}
+
+.slide_viewer {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group { 
+  height: 100%;
+  position: relative;
+  width: 500%; /* Updated width to accommodate all slides */
+  transition: left 0.5s ease; /* Transition effect for smooth slide changes */
+}
+
+.slide {
+  display: inline-block; /* Display slides in a row */
+  height: 100%;
+  width: 20%; /* Each slide occupies 20% width */
+  background-size: cover;
+}
+
+.home-content{
+  position: absolute;
+  top: 380px;
+  left: 200px;
+  background: rgba(0, 42, 0, 0.441);
+  border-radius: 50px;
+  padding: 15px; 
+  filter: blur(0.8px);
+}*/
