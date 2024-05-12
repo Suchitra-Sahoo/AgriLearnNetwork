@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    padding:50px;
+    min-height: 100vh;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  }
+.container{
+    max-width: 600px;
+    margin:0 auto;
+    padding:50px;
+    
+}
+.form-group{
+    margin-bottom:30px;
+}
+.font-btn {
+    font-size: 15.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+  color: #fff;
+    
+    
+}
+
+.font-btn p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }

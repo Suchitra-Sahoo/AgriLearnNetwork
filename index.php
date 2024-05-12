@@ -1,0 +1,260 @@
+
+?>!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriLearnNetwork</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css" />
+  
+  <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+  <header class="header">
+    <a href="#" class="logo" style="margin-inline-end:auto;">AgriLearnNetwork  </a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      
+      <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#about"><i class="fa-solid fa-circle-info"></i>  About</a>
+      <a href="#Farm Management"> <i class="fa-solid fa-blog"></i>  Blogs</a>
+      <a href="#Resource Library"><i class="fa-solid fa-book"></i>  Resource Library</a>
+      <a href="#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
+      <a href="registration.php"><i class="fa-regular fa-user"></i>
+Login</a>
+
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      
+      <h3 class="home--welcome">Welcome to</h3>
+      <h1 class="home--welcome">AgriLearnNetwork</h1>
+      <h3 class="home--welcome">Your Agricultural Knowledge Hub to <span class="multiple-text"></span></h3>
+
+    </div>
+    <div class="home-img">
+      <img src="images/Screenshot 2023-12-26 165533.png" alt="MY-IMAGE" />
+    </div>
+  </section>
+
+
+
+
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/png-transparent-farmer-agriculture-wheat-straw-agriculture-fictional-character-cartoon-thumbnail-fotor-bg-remover-2023122619381.png" alt="MY-IMAGE" />
+
+    </div>
+
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>AgriLearnNetwork</span></h2>
+
+      <p>Agrilearn Network serves as an indispensable resource, offering farmers a holistic platform enriched with essential insights spanning the diverse landscape of agriculture. Delving into the core of farming practices, our platform provides detailed guidance on agriculture techniques, in-depth knowledge on seed varieties, recommendations for optimal tool usage, streamlined harvesting methods, best practices for sowing, and strategic farm management approaches. By encompassing a wide spectrum of topics, Agrilearn Network aims to empower farmers with the comprehensive understanding needed to navigate the complexities of modern agriculture successfully.
+
+      </p>
+
+    </div>
+  </section>
+
+  <section class="farm" id="Farm Management">
+    <h2 class="heading">Agro<span>Blogs</span></h2>
+
+    <div class="services-container">
+
+      <div class="services-box">
+        <a href="https://tractorkarvan.com/blog/how-to-sow-seeds">
+            <i class='bx bx-leaf'></i>
+            <h3>Sowing Techniques</h3></a>
+            <p>Uncover the significance of precise seed placement, optimal spacing, and appropriate depth in enhancing crop yields. From promoting germination to managing weeds and pests, explore the critical aspects of sowing that shape successful cultivation. Glean valuable insights into modern sowing practices and cultivate a deeper understanding of this fundamental process in agriculture. </p>
+        
+    </div>
+    
+    
+
+      <div class="services-box">
+        <a href="https://www.groundsguys.com/blog/2015/july/irrigation-different-techniques-and-benefits/">
+        <i class='bx bx-water'></i>
+        <h3>Irrigation Techniques</h3></a>
+        <p>Learn about the crucial role of precise watering methods, optimal distribution, and strategic timing in nurturing thriving crops. From supporting germination to efficient water management, uncover essential aspects that contribute to successful cultivation. Gain valuable insights into modern irrigation practices, offering a deeper understanding of this fundamental process in agriculture. </p>
+
+      </div>
+
+
+
+      <div class="services-box">
+        <a href="https://www.worldbank.org/en/topic/climate-smart-agriculture">
+        <i class='bx bx-sun'></i>
+        <h3>Climate Smart Agriculture</h3></a>
+        <br>
+        <p>Explore the dynamic interplay between climate change and agriculture, navigating the challenges posed by shifting weather patterns and extreme events.Learn about innovative strategies empowering farmers to not only withstand the impacts but also seize opportunities for sustainable and resilient food production.</p>
+      </div>
+
+</section>
+
+
+  
+  <section class="resource" id="Resource Library">
+    <h2 class="heading">Resource<span> Library</span></h2>
+
+    <div class="portfolio-container">
+
+      <div class="portfolio-box">
+        <img src="images/25803500_1621011873.jpg" alt="PROJECT-IMG" border="0" />
+        <div class="portfolio-layer">
+          <h4>Sowing Techniques</h4>
+          <a href="https://www.youtube.com/watch?v=Z3HApiFKwb4&pp=ygUdc293aW5nIHRlY2huaXF1ZXMgYWdyaWN1bHR1cmU%3D" target="_blank"><i
+              class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/Best-Hand-Operated-Seeding-Machines-in-India4.jpg" alt="PROJECT-IMG" border="0" />
+        <div class="portfolio-layer">
+          <h4>Essential tools for sowing</h4>
+          <a href="https://www.youtube.com/watch?v=UiLixTOSo6Y&pp=ygUQdG9vbHMgZm9yIHNvd2luZw%3D%3D"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/Farm-Management.png" alt="PROJECT-IMG" />
+        <div class="portfolio-layer">
+          <h4>Farm management</h4>
+         
+          <a href="https://youtu.be/L1qZ_-cBdgM?si=-hZGedS2J2_M2yl_"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/iStock-1179642020-1024x683.jpg" alt="PROJECT-IMG" />
+        <div class="portfolio-layer">
+          <h4>Seasonal plant guide</h4>
+          
+
+          <a href="https://youtu.be/exfgg_2WCts?si=Z8KnPrrAmd-eYmil"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/insects-on-a-field.jpg" alt="PROJECT-IMG" />
+        <div class="portfolio-layer">
+          <h4>Crop care & maintainance</h4>
+
+          <a href="https://youtu.be/juzHupSvWcw?si=5iqoJbhhoRQYqm4B"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/tab-04.jpg" alt="PROJECT-IMG" />
+        <div class="portfolio-layer">
+          <h4>Livestock management</h4>
+
+          <a href="https://youtu.be/uvN8HCs8low?si=4saTxm7wM8gkrzi9"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/Methods-of-Irrigation.jpg" alt="PROJECT-IMG" />
+        <div class="portfolio-layer">
+          <h4>Irrigation Techniques</h4>
+          
+
+          <a href="https://youtu.be/Z9HAy9EYKKs?si=HXzX2fMJDhMc_-nQ"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/organic-farming-definition-examples-.jpg" alt="PROJECT-IMG" />
+        <div class="portfolio-layer">
+          <h4>Organic farming</h4>
+          
+
+          <a href="https://youtu.be/iPeBBw5WxZo?si=e0B2g-OMdQb7-KOH"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/Things-You-Should-Know-About-Smart-Agriculture.jpeg" alt="PROJECT-IMG" />
+        <div class="portfolio-layer">
+          <h4>Climate smart Farming</h4>
+
+          <a href="https://youtu.be/g0wkT3mf80U?si=I9VfWYFumZW03lnB"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Us!</span></h2>
+        <form action="#">
+
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" required>
+          <input type="text" placeholder="Email Subject" required>
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn"> 
+
+        </form>
+
+    </section>
+    <footer class="footer">
+      <div class="footerUpperPart">
+        <div class="footer-left">
+          <p>Contact Us</p>
+          <div class="socialIcons">
+            
+
+            <a href="mailto:AgriLearnNetwork@gmail.com" class="email-link" data-tooltip="AgriLearnNetwork@gmail.com"><i class="fas fa-envelope"></i></a>
+            
+            <a href="https://www.instagram.com/your_username_here" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/your_username_here" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/your_page_or_profile_here" target="_blank"><i class="fab fa-facebook"></i></a>
+  
+  
+          </div>
+         
+          
+          </div>
+
+          <div class="footer-iconTop">
+            <a href="#home" ><i class='bx bx-up-arrow-alt'></i></a>
+          </div>
+      </div>
+      
+        
+      <!-- </div> -->
+
+      
+      <div class="footer-text footer-right">
+        <p style="font-weight: 600; font-size: 20px;">Copyright &copy; 2023 by AgriLearnNetwork | All Rights Reserved.</p>
+        </div>
+    </footer>  
+    
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script src="script.js"></script>
+  <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/1cfb7415-d4fc-4477-8d00-3717d30c975b/webchat/config.js" defer></script> -->
+
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script>
+</body>
+
+</html>

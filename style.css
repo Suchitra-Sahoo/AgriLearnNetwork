@@ -65,7 +65,7 @@
  .navbar a {
   font-size: 2rem;
   color: var(--txt-color);
-  margin-left: 4rem;
+  margin-left: 3rem;
   transition: .3s;
 }
 .navbar a:hover {
@@ -724,3 +724,4 @@
     .services-box a:hover {
         text-decoration: underline; /* Add underline on hover if needed */
     }
+    
