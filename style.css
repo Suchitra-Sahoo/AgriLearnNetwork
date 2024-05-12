@@ -276,7 +276,7 @@
 {
   text-align: center;
   font-size: 4.5rem;
-
+  margin-bottom: 4rem;
 }
 
 .about-content h2
@@ -810,6 +810,96 @@ box-shadow: inset 23px 23px 21px #04240e,
   background: rgb(192, 223, 100); 
 }
 
+/* agro blogs */
+
+.blogs {
+  background-color: #faf6fd;
+}
+
+.heading-blogs {
+  color: var(--second-color);
+}
+
+.blog__container {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(auto, 6rem));
+  grid-gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.blog__card {
+  grid-column-end: span 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #39393b;
+  cursor: pointer;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: transform 0.3s linear;
+}
+
+.blog__card:hover {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--bg-color);
+  transform: scale(1.05);
+}
+
+.blog__card-header {
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  margin-bottom: 2rem;
+}
+
+.blog__card-header-icon {
+  min-width: 5rem;
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  background-color: rgba(5, 51, 20, 1);
+  border-radius: 10rem;
+}
+
+.blog__card-header-icon i {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.blog__card-header h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 2.4rem;
+  color: black;
+}
+
+.card__content {
+  font-size: 1.4rem;
+  color: black;
+  text-align: justify;
+  font-family: 'Poppins';
+}
+
+@media only screen and (max-width: 1000px) {
+  .blog__card {
+    grid-column-end: span 6;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .blog__cards {
+    grid-gap: 2rem;
+  }
+
+  .blog__card {
+    grid-column-end: span 12;
+  }
+=======
 
 /* ---------SLIDER CSS------------------------ */
 
