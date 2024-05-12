@@ -21,9 +21,7 @@
 
 # About our project
 
-<div align="justify">
-
-Welcome to **AgriLearnNetwork**, your premier destination for comprehensive agricultural education and an abundance of invaluable resources. Whether you're a seasoned farmer, a budding agricultural enthusiast, or simply curious about the world of farming, we're here to empower you with knowledge and tools to thrive in the field. Explore our diverse range of courses, delve into expert insights, and discover the latest advancements in agricultural practices. Join us in cultivating a brighter future for agriculture together🤝.</div>
+Welcome to **AgriLearnNetwork**, your premier destination for comprehensive agricultural education and an abundance of invaluable resources. Whether you're a seasoned farmer, a budding agricultural enthusiast, or simply curious about the world of farming, we're here to empower you with knowledge and tools to thrive in the field. Explore our diverse range of courses, delve into expert insights, and discover the latest advancements in agricultural practices. Join us in cultivating a brighter future for agriculture together🤝.
 
 <br>
 
@@ -125,16 +123,12 @@ Please note that this project is released with a [Contributor Code of Conduct](.
 
 # Website Overview
 
-<div align="justify">
-
-**Agrilearn Network** serves as an indispensable resource, offering farmers a holistic platform enriched with essential insights spanning the diverse landscape of agriculture. Delving into the core of farming practices, our platform provides <u>detailed guidance on agriculture techniques, in-depth knowledge on seed varieties, recommendations for optimal tool usage, streamlined harvesting methods, best practices for sowing, and strategic farm management approaches</u>. By encompassing a wide spectrum of topics, Agrilearn Network aims to empower farmers with the comprehensive understanding needed to navigate the complexities of modern agriculture successfully.
-</div>
+**Agrilearn Network** serves as an indispensable resource, offering farmers a holistic platform enriched with essential insights spanning the diverse landscape of agriculture. Delving into the core of farming practices, our platform provides detailed guidance on agriculture techniques, in-depth knowledge on seed varieties, recommendations for optimal tool usage, streamlined harvesting methods, best practices for sowing, and strategic farm management approaches. By encompassing a wide spectrum of topics, Agrilearn Network aims to empower farmers with the comprehensive understanding needed to navigate the complexities of modern agriculture successfully.
 
 <br>
 
 # Key Features ✨
 
-<div align="left">
 
 - **Landing Page**: Experience agriculture's future today with AgriLearnNetwork's innovative platform.
 
@@ -147,8 +141,6 @@ Please note that this project is released with a [Contributor Code of Conduct](.
 - **Contact Us**: Reach out to our dedicated team for personalized assistance and guidance.
 
 - **AI Chat Bot**: Get instant answers to all your agriculture-related queries with our AI-powered chatbot.
-
-</div>
 
 <br>
 
