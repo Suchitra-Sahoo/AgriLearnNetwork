@@ -19,6 +19,7 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
     crossorigin="anonymous"></script>
     <link rel="icon" href="./agriculture-icon-png-2804.png" type="'image/png">
+   
 </head>
 
 <body>
@@ -295,11 +296,49 @@
         </div>
 
         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <button id="review-btn" >Give Feedback</button>
         <input type="submit" value="Send Message" class="btn" id="contact-btn"> 
-
+         
         </form>
+        
 
     </section>
+  <!-- Modal  -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Feedback Form</h2>
+          <form id="feedback-form">
+              <input type="text" placeholder="Full Name" required>
+              <input type="email" placeholder="Email Address" required>
+              <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+              <div class="card">
+                <h1>Rate us:</h1>
+                
+                <span onclick="starR(1)"
+                      class="star">★
+                </span>
+                <span onclick="starR(2)"
+                      class="star">★
+                </span>
+                <span onclick="starR(3)"
+                      class="star">★
+                </span>
+                <span onclick="starR(4)"
+                      class="star">★
+                </span>
+                <span onclick="starR(5)"
+                      class="star">★
+                </span>
+                
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</div>
+
+
+
     <footer class="footer">
       <div class="footerUpperPart">
         <div class="footer-left">

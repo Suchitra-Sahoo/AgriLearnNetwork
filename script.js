@@ -131,7 +131,91 @@ form.addEventListener('submit', (event) => {
     return;
   }
 
-  // form reset
+
   form.reset();
   alert('Your message has been sent. Thank you!');
 });
+
+
+let modal = document.getElementById("modal");
+
+
+let reviewBtn = document.getElementById("review-btn");
+
+let span = document.getElementsByClassName("close")[0];
+
+
+reviewBtn.onclick = function(e) {
+  e.preventDefault();
+    modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+const feedbackForm = document.getElementById("feedback-form");
+const submitButton = document.querySelector("#feedback-form button[type='submit']");
+
+
+function allFieldsFilled() {
+    const inputs = feedbackForm.querySelectorAll("input[type='text'], input[type='email'], textarea");
+    for (let input of inputs) {
+        if (!input.value.trim()) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Event listener for form submission
+feedbackForm.addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent the default form submission behavior
+    if (allFieldsFilled()) {
+        alert("Thank you for your feedback! Your message has been submitted.");
+    } else {
+        alert("Please fill in all fields before submitting.");
+    }
+});
+
+// Event listener for form input fields
+feedbackForm.addEventListener("input", function() {
+    if (allFieldsFilled()) {
+        submitButton.removeAttribute("disabled");
+    } else {
+        submitButton.setAttribute("disabled", "disabled");
+    }
+});
+
+let stars = 
+    document.getElementsByClassName("star");
+ 
+// Funtion for rating
+function starR(n) {
+    remove();
+    for (let i = 0; i < n; i++) {
+        if (n == 1) cls = "one";
+        else if (n == 2) cls = "two";
+        else if (n == 3) cls = "three";
+        else if (n == 4) cls = "four";
+        else if (n == 5) cls = "five";
+        stars[i].className = "star " + cls;
+    }
+    
+}
+// To remove rating
+function remove() {
+    let i = 0;
+    while (i < 5) {
+        stars[i].className = "star";
+        i++;
+    }
+}
