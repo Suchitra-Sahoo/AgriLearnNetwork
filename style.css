@@ -273,12 +273,22 @@ span {
   height: 30vmax;
 }
 
+
 .home-content h1 {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3;
 }
 .social-media a {
+ .home-content h1
+ {
+   font-size: 5.6rem;
+   font-weight: 700;
+   line-height: 1.3;
+ }
+.social-media a
+ {
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -290,6 +300,7 @@ span {
   font-size: 2rem;
   color: var(--main-color);
   margin: 3rem 1.5rem 3rem 0;
+
   transition: 0.5sec ease;
 }
 .social-media a:hover {
@@ -299,6 +310,21 @@ span {
 }
 
 .btn {
+
+  transition: all .3sec ease;
+}
+
+.socialIcons a:hover {
+  background: var(--main-color); /* Change background color on hover */
+  color: var(--second-color); /* Change text color on hover */
+  transform: scale(1.1); /* Scale up the icon slightly on hover */
+  box-shadow: 0 0 1rem var(--main-color); /* Add box shadow on hover */
+}
+
+
+.btn
+{
+
   display: inline-block;
   padding: 1rem 2.8rem;
   background: var(--main-color);
