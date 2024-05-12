@@ -43,7 +43,7 @@
    top: 0;
    left: 0;
    width:100%;
-   padding:2rem 9%;
+   padding:2rem 5%;
    background-color: var(--bg-color);
    display: flex;
    justify-content: space-between;
@@ -53,6 +53,11 @@
  .header.sticky
  {
   border-bottom: .1rem solid rgb(252, 187, 223);
+ }
+
+ .header img{
+  height: 7rem;
+  margin-right: 2rem;
  }
 
  .logo
