@@ -82,12 +82,10 @@
 }
 
 
- .navbar a.active
- {
-    color:var(--txt-color);
-    font-size:2rem;
-    
- }
+.navbar a.active,
+.navbar a.active:hover {
+  color: var(--main-color);
+}
   .navbar.active {
   display: block;
 }
