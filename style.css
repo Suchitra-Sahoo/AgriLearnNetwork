@@ -61,13 +61,6 @@
   border-bottom: .1rem solid rgb(252, 187, 223);
  }
 
- .logo
- {
-    font-size: 2.5rem;
-    color: var(--txt-color);
-    font-weight: 600;
-    cursor: default;
- }
  .navbar a {
   font-size: 2rem;
   color: var(--txt-color);
@@ -91,12 +84,22 @@
   .navbar.active {
   display: block;
 }
-.logoImg {
-  width: 80px;
-  height: auto; /* Use auto to maintain aspect ratio */
-  max-width: 100%;
-  margin-right:5px; /* Adjust margin as needed */
+.logo {
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
+
+.logo img {
+  max-width: 100px; /* Set maximum width for the images */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px;
+}
+
+.second-logo {
+  max-width: 150px; /* Set maximum width for the second image */
+  height: auto; /* Maintain aspect ratio */
+}
+
 
  #menu-icon
  {
