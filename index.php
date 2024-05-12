@@ -16,7 +16,7 @@ if (isset($_SESSION["user"])) {
   <link rel="stylesheet" href="style.css" />
   
   <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./stylo.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
