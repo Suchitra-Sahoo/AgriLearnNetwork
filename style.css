@@ -783,6 +783,22 @@ box-shadow: inset 23px 23px 21px #04240e,
         text-decoration: underline; /* Add underline on hover if needed */
     }
 
+.footer-left p{
+  border:2px solid rgb(117, 160, 48);
+  border-radius: 22px;
+  padding:11px;
+  background-color: var(--main-color);
+
+}
+
+.footer-left p:hover{
+  cursor:pointer;
+   background:var(--second-color);
+   box-shadow: 0 0 1rem var(--main-color);
+   font-weight: bold;
+  border-radius:2px solid var(--main-color);
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -808,6 +824,7 @@ box-shadow: inset 23px 23px 21px #04240e,
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(192, 223, 100); 
+
 }
 
 
