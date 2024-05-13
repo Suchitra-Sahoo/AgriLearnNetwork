@@ -583,7 +583,7 @@ input::placeholder{
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-
+  border:2px solid white;
   color: rgb(249, 249, 253);
   /*background: var(--second-color);*/
   background: #468536;
