@@ -121,9 +121,3 @@ Introducing our AI-powered chatbot, your virtual agricultural assistant. Have qu
 
 ## License 🪪
 [MIT license](https://opensource.org/license/mit/)
-
-
-## Thanks to all the Contributors ❤️
-<a href="https://github.com/Suchitra-Sahoo/AgriLearnNetwork/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Suchitra-Sahoo/AgriLearnNetwork"/>
-</a>

@@ -40,6 +40,12 @@
 
   <section class="home" id="home">
     <div class="slider">
+      <div class="home-content">
+        <h3 class="home--welcome">Welcome to</h3>
+        <h1 class="home--welcome">AgriLearnNetwork</h1>
+        <h3 class="home--welcome">Your Agricultural Knowledge Hub to <span class="multiple-text"></span></h3>
+  
+      </div>
       <div class="slide_viewer">
         <div class="slide_group">
           <div class="slide" style="background-image: url(./images/bg2.jpg)"></div>
@@ -50,6 +56,7 @@
         </div>
       </div>
     </div>
+
     <div class="home-content">
       
       <h1 class="home--welcome">Welcome to</h1>
@@ -57,6 +64,7 @@
       <h3 class="home--welcome">Your Agricultural Knowledge Hub to <span class="multiple-text"></span></h3>
 
     </div>
+
 
   </section>
 
@@ -84,7 +92,7 @@
   <section class="farm" id="Farm Management">
     <h2 class="heading">Agro<span>Blogs</span></h2>
   
-    <div class="services-container">
+   <div class="services-container">
       <div class="services-box" onclick="window.location.href='blog.html';">
         <i class='bx bx-leaf'></i>
         <h3>Sowing Techniques</h3>
@@ -168,7 +176,8 @@
       </div>
     </div>
   </section>
-  
+<section class="resource" id="Resource Library">
+  <h2 class="heading">Resource<span> Library</span></h2>
 
 <section class="resource" id="Resource Library">
   <h2 class="heading">Resource<span> Library</span></h2>
@@ -249,7 +258,6 @@
 
   </div>
 </section>
-
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Us!</span></h2>
         <form action="#" id="contact-form">
@@ -264,11 +272,39 @@
         </div>
 
         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <button id="review-btn">Give feedback</button>
         <input type="submit" value="Send Message" class="btn" id="contact-btn"> 
 
         </form>
-
+     
     </section>
+
+<!-- Modal  -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Feedback Form</h2>
+      <form id="feedback-form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+          
+            
+            <div class="rating">
+              <h2>rate us:</h2>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+        </div>
+            
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+</div>
+
     <footer class="footer">
       <div class="footerUpperPart">
         <div class="footer-left">
@@ -298,7 +334,7 @@
 
       
       <div class="footer-text footer-right">
-        <p style="font-weight: 600; font-size: 20px;">Copyright &copy; 2024 by AgriLearnNetwork | All Rights Reserved.</p>
+        <p style="font-weight: 600; font-size: 20px;">Copyright &copy; <script>document.write(new Date().getFullYear())</script> by AgriLearnNetwork | All Rights Reserved.</p>
         </div>
     </footer>  
     
@@ -337,7 +373,8 @@
   });
 });
 </script>
-<script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script>
+<!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
+<script async data-id="6114274622" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 </body>
 
 </html>
