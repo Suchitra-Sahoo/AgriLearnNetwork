@@ -26,6 +26,7 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--txt-color);
+  cursor: none;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -918,4 +919,22 @@ input[type="number"]::-webkit-inner-spin-button {
   background: rgb(192, 223, 100);
 }
 
+#follower-seedling {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  cursor: default;
+  pointer-events: none;
+  width: 60px;
+  height: 60px;
+}
 
+@keyframes sprout {
+  from { transform: translateY(0px); }
+  to { transform: translateY(2px); }
+}
+
+#sprout {
+  animation: sprout 1s ease-in-out infinite alternate;
+}

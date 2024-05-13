@@ -136,4 +136,22 @@ form.addEventListener('submit', (event) => {
   alert('Your message has been sent. Thank you!');
 });
  
+// Functionality for followerSeedling 
+const seedling = document.getElementById('follower-seedling');
+const podTop = document.getElementById('pod-top');
+const sprout = document.getElementById('sprout');
 
+document.addEventListener('mousemove', (event) => {
+  const x = event.clientX;
+  const y = event.clientY;
+
+  const offsetX = seedling.clientWidth / 2;
+  const offsetY = seedling.clientHeight / 2;
+
+  seedling.style.transform = `translate(${x - offsetX}px, ${y - offsetY}px) rotate(${Math.atan2(y - window.innerHeight / 2, x - window.innerWidth / 2) * (180 / Math.PI)}deg)`;
+  
+  const distance = Math.sqrt(Math.pow(x - window.innerWidth / 2, 2) + Math.pow(y - window.innerHeight / 2, 2));
+  const opacity = Math.min(1, distance / 100);  
+  podTop.style.opacity = opacity;
+  sprout.style.opacity = opacity;
+});
