@@ -49,6 +49,7 @@
     <!--<div class="home-img">
       <img src="images/Screenshot 2023-12-26 165533.png" alt="MY-IMAGE" />
     </div>-->
+    
   </section>
 
 
@@ -342,7 +343,34 @@
 <script src="https://mediafiles.botpress.cloud/1cfb7415-d4fc-4477-8d00-3717d30c975b/webchat/config.js" defer></script> -->
 
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const slideGroup = document.querySelector('.slide_group');
+  let currentSlide = 0;
+  const images = ['./images/carousel-img-2.jpg', './images/carousel-img-1.jpg', './images/carousel-img-3.jpg', './images/carousel-img-4.jpg'];
+
+  function showSlide(n) {
+    slideGroup.style.left = `${-n * 100}%`; // Adjust left property based on current slide
+    currentSlide = n;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % images.length; // Move to the next slide
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 2000); // Automatically change slide every 2 seconds
+
+  // Preload images for smoother transition
+  images.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+});
+</script>
+<!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
+<script async data-id="6114274622" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 </body>
 
 </html>
