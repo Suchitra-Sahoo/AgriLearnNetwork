@@ -423,15 +423,23 @@ span {
 .services-container .services-box {
   flex: 1 1 30rem;
   background: var(--second-color);
-  padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
 }
+
+.services-container .card {
+  padding: 3rem 2rem 4rem;
+}
+
 .services-container .services-box:hover {
   border-color: var(--main-color);
   transform: scale(1.02);
+  cursor: pointer;
+  a{
+    text-decoration: none;
+  }
 }
 
 .services-box i {
