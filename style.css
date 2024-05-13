@@ -719,7 +719,7 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   flex: wrap;
   flex-direction: column;
-  padding: 2rem 9%;
+  padding: 1rem 0;
   background: #0e4b16;
   min-height: 25rem;
 }
@@ -729,13 +729,25 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .footerUpperPart {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 78vw;
+  width: 90vw;
   min-height: 15rem;
   margin-top: 15px;
 }
+
+.footer-title{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .footer-iconTop a {
   display: grid;
   justify-content: center;
@@ -990,6 +1002,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-top: 2rem;
   }
 }
+
 .footer-left {
   display: flex;
   align-items: center;
@@ -1038,6 +1051,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: underline; /* Add underline on hover if needed */
 }
 
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -1064,3 +1078,57 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
+.footer {
+  padding: 20px;
+  background: #0e4b16;
+}
+
+.footer-grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.footer-title,
+.footer-icons,
+.footer-iconTop {
+  text-align: center;
+}
+.footer-iconTop a{
+  display: inline-block;
+  width: max-content;
+  padding: 0.8rem;
+  background: var(--main-color);
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--second-color);
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+  .footer-iconTop {
+    order: -1; /* Places these items above the icons in the single column layout */
+  }
+}
