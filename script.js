@@ -2,11 +2,26 @@ let menuIcon = document.querySelectorAll('#menu-icon');
 let navbar = document.querySelectorAll('.navbar');
 let Contact = document.querySelectorAll('#contact');
 let navContact = document.querySelectorAll('#nav--contact');
+
 menuIcon.forEach(icon => {
   icon.onclick = () => {
     icon.classList.toggle('bx-x');
     navbar.forEach(nav => nav.classList.toggle('active'));
   }
+});
+
+// Add an event listener to navbar links
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', () => {
+    // Remove 'active' class from navbar
+    document.querySelectorAll('.navbar').forEach(nav => {
+      nav.classList.remove('active');
+    });
+    // Toggle the menu icon
+    document.querySelectorAll('#menu-icon').forEach(icon => {
+      icon.classList.remove('bx-x'); // Remove the 'bx-x' class to close the hamburger menu
+    });
+  });
 });
 
 
@@ -137,3 +152,89 @@ form.addEventListener('submit', (event) => {
 });
  
 
+
+(function(){
+  let modal = document.getElementById("modal");
+  
+  
+  let reviewBtn = document.getElementById("review-btn");
+  
+  let span = document.getElementsByClassName("close")[0];
+  
+  
+  reviewBtn.onclick = function(e) {
+    e.preventDefault();
+      modal.style.display = "block";
+  }
+  
+  
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+  
+  
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  
+  const feedbackForm = document.getElementById("feedback-form");
+  const submitButton = document.querySelector("#feedback-form button[type='submit']");
+  
+  
+  function allFieldsFilled() {
+      const inputs = feedbackForm.querySelectorAll("input[type='text'], input[type='email'], textarea");
+      for (let input of inputs) {
+          if (!input.value.trim()) {
+              return false;
+          }
+      }
+      return true;
+  }
+  
+  // Event listener for form submission
+  feedbackForm.addEventListener("submit", function(e) {
+      e.preventDefault(); // Prevent the default form submission behavior
+      if (allFieldsFilled()) {
+          alert("Thank you for your feedback! Your message has been submitted.");
+      } else {
+          alert("Please fill in all fields before submitting.");
+      }
+  });
+  
+  // Event listener for form input fields
+  feedbackForm.addEventListener("input", function() {
+      if (allFieldsFilled()) {
+          submitButton.removeAttribute("disabled");
+      } else {
+          submitButton.setAttribute("disabled", "disabled");
+      }
+  });
+
+
+  const ratingStars = [...document.getElementsByClassName("rating__star")];
+
+function executeRating(stars) {
+  const starClassActive = "rating__star fas fa-star";
+  const starClassInactive = "rating__star far fa-star";
+  const starsLength = stars.length;
+  let i;
+  stars.map((star) => {
+    star.onclick = () => {
+      i = stars.indexOf(star);
+
+      if (star.className===starClassInactive) {
+        for (i; i >= 0; --i) stars[i].className = starClassActive;
+      } else {
+        for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
+      }
+    };
+  });
+}
+executeRating(ratingStars);
+  
+ 
+
+
+  })();
