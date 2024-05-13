@@ -316,6 +316,7 @@
   text-align: center;
   border:.2rem solid var(--bg-color);
   transition: .5s ease;
+  height: 370px;
 }
 .services-container .services-box:hover
 {
