@@ -304,11 +304,39 @@
         </div>
 
         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <button id="review-btn">Give feedback</button>
         <input type="submit" value="Send Message" class="btn" id="contact-btn"> 
 
         </form>
-
+     
     </section>
+
+<!-- Modal  -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Feedback Form</h2>
+      <form id="feedback-form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+          
+            
+            <div class="rating">
+              <h2>rate us:</h2>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+        </div>
+            
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+</div>
+
     <footer class="footer">
       <div class="footerUpperPart">
         <div class="footer-left">
@@ -338,7 +366,7 @@
 
       
       <div class="footer-text footer-right">
-        <p style="font-weight: 600; font-size: 20px;">Copyright &copy; 2024 by AgriLearnNetwork | All Rights Reserved.</p>
+        <p style="font-weight: 600; font-size: 20px;">Copyright &copy; <script>document.write(new Date().getFullYear())</script> by AgriLearnNetwork | All Rights Reserved.</p>
         </div>
     </footer>  
     
