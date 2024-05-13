@@ -310,13 +310,17 @@
 
 .services-container .services-box
 {
+  width: 23%;
+  min-width: 250px;
   flex: 1 1 30rem;
   background: var(--second-color);
-  padding: 3rem 2rem 4rem;
+  padding: 1rem 1rem;
   border-radius: 2rem;
   text-align: center;
   border:.2rem solid var(--bg-color);
   transition: .5s ease;
+  align-self: normal;
+  
 }
 .services-container .services-box:hover
 {
