@@ -571,6 +571,143 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
+#review-btn{
+  border: none;
+  border-radius: 20px;
+  color:yellowgreen;
+  background-color: #053314;
+  margin-top: 0;
+  display: block; 
+  margin-top: 10px;
+  margin-left: 20px;
+  text-decoration: underline;
+  font-size: 14px;
+  
+  
+
+}
+#review-btn:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(183, 253, 6, 0.1); 
+}
+
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color:black;
+  font-size: 20px;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  max-width: 100%;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="email"]:focus,
+.modal-content textarea:focus {
+  outline: none;
+  border-color: #66afe9;
+}
+
+.modal-content button[type="submit"] {
+  background-color:#0e4b16;
+  color: white;
+  padding: 12px 20px;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color:#053314;
+}
+
+.modal-content button[type="submit"]:focus {
+  outline: none;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* rating stars */
+.rating {
+  width: 180px;
+  margin-left: 130px;
+  justify-content: center;
+}
+
+.rating__star {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 14px;
+  cursor: pointer;
+  color: #dabd18b2;
+}
+ 
+
 .footer {
   display: flex;
   justify-content: space-between;
