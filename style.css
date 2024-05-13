@@ -293,7 +293,7 @@ span {
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5sec ease;
 }
-.social-media a:hover {
+.socialIcons a:hover {
   background: var(--main-color);
   color: var(--second-color);
   box-shadow: 0 0 1rem var(--main-color);
@@ -993,6 +993,10 @@ input[type="number"]::-webkit-inner-spin-button {
   { 
 
     flex-direction: column;
+
+    p{
+      font-weight: bold;
+    }
   }
   .footerUpperPart {
     flex-direction: column-reverse;
@@ -1080,8 +1084,14 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .footer {
   padding: 20px;
-  background: #0e4b16;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/istockphoto-1465642013-170667a.webp');
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  color: #fff;
 }
+
+
 
 .footer-grid {
   display: grid;
@@ -1108,12 +1118,15 @@ input[type="number"]::-webkit-inner-spin-button {
   box-shadow: 0 0 1rem var(--main-color);
 }
 
+
 .footer-iconTop a i {
   font-size: 2.4rem;
   color: var(--second-color);
 }
 .socialIcons {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 10px;
 }
@@ -1123,6 +1136,43 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 10px;
 }
 
+.quick-links {
+ text-align: center;
+ width: 50vw;
+ padding: 20px;
+ p{
+  font-weight: bold;
+}
+}
+
+.quick-links h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.quick-links ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quick-links li {
+  margin-bottom: 8px;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.quick-links a:hover {
+  color: #f0f0f0; /* Change color on hover */
+  text-decoration: underline;
+}
 
 @media (max-width: 768px) {
   .footer-grid {
@@ -1131,4 +1181,15 @@ input[type="number"]::-webkit-inner-spin-button {
   .footer-iconTop {
     order: -1; /* Places these items above the icons in the single column layout */
   }
+  .socialIcons{
+    gap:0;
+    padding: 1rem;
+  }
+  .quick-links li {
+    margin-bottom: 0;
+  }
+  .quick-links ul{
+    flex-direction: column;
+  }
 }
+
