@@ -422,7 +422,7 @@ span {
 
 .services-container .services-box {
   flex: 1 1 30rem;
-  background: var(--second-color);
+  /* background: var(--second-color); */
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
