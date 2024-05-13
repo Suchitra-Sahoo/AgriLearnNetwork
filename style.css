@@ -347,6 +347,8 @@
      position: relative;
      margin-top: 100px;
      width: 100%;
+     margin-left: -88px;
+
      height: 450px;
      overflow: hidden;
    /* gap: 2rem; */
@@ -371,12 +373,12 @@
  
  #next{
      position: absolute;
-     right: 30px;
+     right: 0px;
      top: 40%;
  }
  #prev{
      position: absolute;
-     left: 30px;
+     left: 75px;
      top: 40%;
  }
  #prev, #next{
