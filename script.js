@@ -141,6 +141,7 @@ const seedling = document.getElementById('follower-seedling');
 const podTop = document.getElementById('pod-top');
 const sprout = document.getElementById('sprout');
 
+<<<<<<< feature/addmousefolllower
 document.addEventListener('mousemove', (event) => {
   const x = event.clientX;
   const y = event.clientY;
@@ -155,3 +156,91 @@ document.addEventListener('mousemove', (event) => {
   podTop.style.opacity = opacity;
   sprout.style.opacity = opacity;
 });
+=======
+
+(function(){
+  let modal = document.getElementById("modal");
+  
+  
+  let reviewBtn = document.getElementById("review-btn");
+  
+  let span = document.getElementsByClassName("close")[0];
+  
+  
+  reviewBtn.onclick = function(e) {
+    e.preventDefault();
+      modal.style.display = "block";
+  }
+  
+  
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+  
+  
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  
+  const feedbackForm = document.getElementById("feedback-form");
+  const submitButton = document.querySelector("#feedback-form button[type='submit']");
+  
+  
+  function allFieldsFilled() {
+      const inputs = feedbackForm.querySelectorAll("input[type='text'], input[type='email'], textarea");
+      for (let input of inputs) {
+          if (!input.value.trim()) {
+              return false;
+          }
+      }
+      return true;
+  }
+  
+  // Event listener for form submission
+  feedbackForm.addEventListener("submit", function(e) {
+      e.preventDefault(); // Prevent the default form submission behavior
+      if (allFieldsFilled()) {
+          alert("Thank you for your feedback! Your message has been submitted.");
+      } else {
+          alert("Please fill in all fields before submitting.");
+      }
+  });
+  
+  // Event listener for form input fields
+  feedbackForm.addEventListener("input", function() {
+      if (allFieldsFilled()) {
+          submitButton.removeAttribute("disabled");
+      } else {
+          submitButton.setAttribute("disabled", "disabled");
+      }
+  });
+
+
+  const ratingStars = [...document.getElementsByClassName("rating__star")];
+
+function executeRating(stars) {
+  const starClassActive = "rating__star fas fa-star";
+  const starClassInactive = "rating__star far fa-star";
+  const starsLength = stars.length;
+  let i;
+  stars.map((star) => {
+    star.onclick = () => {
+      i = stars.indexOf(star);
+
+      if (star.className===starClassInactive) {
+        for (i; i >= 0; --i) stars[i].className = starClassActive;
+      } else {
+        for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
+      }
+    };
+  });
+}
+executeRating(ratingStars);
+  
+ 
+
+
+  })();
+>>>>>>> main
