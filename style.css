@@ -402,7 +402,12 @@ span {
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
+
 
 .services h2 {
   margin-bottom: 5rem;
@@ -908,7 +913,9 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-left: 4vmax;
     height: fit-content;
   } */
-
+  .about-content p{
+    text-align: center;
+  }
   .portfolio-container {
     grid-template-columns: 1fr;
   }
