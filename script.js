@@ -1,6 +1,7 @@
 let menuIcon = document.querySelectorAll('#menu-icon');
 let navbar = document.querySelectorAll('.navbar');
-
+let Contact = document.querySelectorAll('#contact');
+let navContact = document.querySelectorAll('#nav--contact');
 menuIcon.forEach(icon => {
   icon.onclick = () => {
     icon.classList.toggle('bx-x');
@@ -11,7 +12,7 @@ menuIcon.forEach(icon => {
 
 // Add an "active" class to the clicked link
 $('a[href*="#"]')
-  .not('[href="#"]')
+.not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
     // Remove any existing "active" class from links
@@ -19,7 +20,7 @@ $('a[href*="#"]')
 
     // Add "active" class to clicked link
     $(this).addClass('active');
-
+    
     // Smooth scroll to target as before
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -28,7 +29,7 @@ $('a[href*="#"]')
     ) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
+      
       if (target.length) {
 
         event.preventDefault();
@@ -48,7 +49,18 @@ $('a[href*="#"]')
     }
   });
 
-// Set initial active link based on URL hash
+//when scroll on any section that section's corresponding hyperlink will be active and
+// the previous activated hyperlink will be deactivated
+$('section[id]').mouseover(function() {
+var sectionId = $(this).attr('id');
+var correspondingLink = $('a[href="#' + sectionId + '"]');
+// Remove active class from all links
+$('a').removeClass('active');
+// Add active class to the corresponding link
+correspondingLink.addClass('active');
+});
+  
+  // Set initial active link based on URL hash
 $(document).ready(function() {
   var hash = window.location.hash;
   if (hash) {
@@ -84,7 +96,44 @@ const form = document.getElementById('contact-form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  
+  // Access form fields
+  const fullName = form.querySelector('input[placeholder="Full Name"]').value.trim();
+  const email = form.querySelector('input[placeholder="Email Address"]').value.trim();
+  const mobileNumber = form.querySelector('input[placeholder="Mobile Number"]').value.trim();
+  const emailSubject = form.querySelector('input[placeholder="Email Subject"]').value.trim();
+  const message = form.querySelector('textarea').value.trim();
+
+  // Validation
+  if (!fullName) {
+    alert('Please enter your full name.');
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  const mobilePattern = /^\d+$/;
+  if (!mobilePattern.test(mobileNumber)) {
+    alert('Please enter a valid mobile number.');
+    return;
+  }
+
+  if (!emailSubject) {
+    alert('Please enter the email subject.');
+    return;
+  }
+
+  if (!message) {
+    alert('Please enter your message.');
+    return;
+  }
+
+  // form reset
   form.reset();
+  alert('Your message has been sent. Thank you!');
 });
+ 
 
