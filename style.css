@@ -110,11 +110,12 @@ section {
   color: var(--main-color);
 }
 
-.navbar a.active {
-  color: var(--txt-color);
-  font-size: 1.5vmax;
+
+.navbar a.active,
+.navbar a.active:hover {
+  color: var(--main-color);
 }
-.navbar.active {
+  .navbar.active {
   display: block;
 }
 .logoImg {
