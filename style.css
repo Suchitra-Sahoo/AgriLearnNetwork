@@ -1068,4 +1068,18 @@ input[type="number"]::-webkit-inner-spin-button {
   background: rgb(192, 223, 100);
 }
 
+/*progress bar*/
+.progress-bar{
+  position:fixed;
+  width:100%;
+  height:10px;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+.filled{
+  width:0;
+  height:100%;
+  background: rgb(228, 208, 25);
+}
+
 

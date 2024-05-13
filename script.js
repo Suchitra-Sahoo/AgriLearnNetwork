@@ -238,3 +238,11 @@ executeRating(ratingStars);
 
 
   })();
+
+/*script for progress bar*/
+const a=document.querySelector('.filled');
+function update(){
+  a.style.width = `${((window.scrollY)/(document.body.scrollHeight - window.innerHeight) * 100)}%`
+  requestAnimationFrame(update);
+}
+update();
