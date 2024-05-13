@@ -422,6 +422,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  margin: 7px;
 }
 
 .services-container .services-box {
