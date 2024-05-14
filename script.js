@@ -24,6 +24,22 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
+const rainContainer = document.querySelector(".rain");
+
+function createDrop() {
+  const drop = document.createElement("div");
+  drop.classList.add("drop");
+  drop.style.left = Math.random() * 100 + "%";
+  drop.style.animationDelay = Math.random() * -20 + "s";
+  rainContainer.appendChild(drop);
+
+  setTimeout(() => {
+    drop.remove();
+  }, 5000);
+}
+
+setInterval(createDrop, 100);
+
 
 // Add an "active" class to the clicked link
 $('a[href*="#"]')

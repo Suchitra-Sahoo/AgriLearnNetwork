@@ -34,6 +34,26 @@ body {
   scrollbar-width: none;
 
 }
+    .drop {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 2px;
+      height: 25px;
+      animation: fall 4s linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100%);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(550vh);
+        opacity: 0;
+      }
+    }
+
+
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
