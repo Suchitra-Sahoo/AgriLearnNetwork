@@ -426,7 +426,10 @@ span {
   margin: 7px;
 }
 
-.services-container .services-box {
+.services-box {
+  height:400px;
+  width: 200px;
+  cursor: pointer;
   flex: 1 1 30rem;
   background: var(--second-color);
   padding: 3rem 2rem 4rem;
@@ -435,9 +438,9 @@ span {
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
 }
-.services-container .services-box:hover {
+ .services-box:hover {
   border-color: var(--main-color);
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .services-box i {
