@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -65,10 +64,7 @@ section {
   margin-right: 0;
   cursor: default;
 }
-.navbar a {
-  font-size: 1.5vmax;
 
- }
  section
  {
    min-height: 100vh;
@@ -76,17 +72,17 @@ section {
  }
  .header
  {
-    position: fixed;
-    opacity: 0.8;
-   top: 0;
-   left: 0;
-   width:100%;
-   padding:2rem 9%;
-   background-color: var(--bg-color);
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   z-index: 100;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  width:100%;
+  padding:2rem 9%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
  }
  .header.sticky
  {
@@ -101,8 +97,7 @@ section {
     cursor: default;
  }
  .navbar a {
-  font-size: 2rem;
-
+  font-size: 1.8rem;
   color: var(--txt-color);
   margin-left: 4rem;
   transition: 0.3s;
@@ -208,17 +203,13 @@ section {
   border-radius: 50px;
   padding: 3vmax 3vmax 3vmax 3vmax; 
   filter: blur(0.8px);
-  width: 55%;
-  height: 25vmax;
-  font-size: 4vmax;
+  width: 49%;
+  height: 20vmax;
 }
 
-
-
-
 .home-content h3 {
-  font-size: 4.2rem;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 600;
 }
 .home-content h3:nth-of-type(2) {
 
@@ -260,11 +251,7 @@ section {
   }
  }
 
- .home-content h3
- {
-   font-size: 4.2rem;
-   font-weight: 700;
- }
+
  .home-content h3:nth-of-type(2)
  {
   margin-bottom: 2rem;
@@ -279,8 +266,9 @@ span {
 }
 
 .home-content h1 {
-  font-size: 5.6rem;
-  font-weight: 700;
+  font-size: 5.5rem;
+  font-weight: 800;
+  color: rgb(192, 223, 100);
   line-height: 1.3;
 }
 .social-media a {
@@ -400,11 +388,11 @@ span {
   text-align: left;
   line-height: 1.2;
 }
-.about-content h3 {
-  font-size: 2.6rem;
-}
+
 .about-content p {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 2rem;
   margin: 2rem 0 3rem;
   text-align: justify;
   display: -webkit-box;
@@ -446,9 +434,11 @@ span {
 
 .services-box h3 {
   font-size: 2.6rem;
+  font-weight: 400;
 }
 .services-box p {
   font-size: 1.6rem;
+  font-weight: 300;
   margin: 1rem 0 3rem;
 }
 .portfolio {
@@ -509,6 +499,7 @@ span {
 }
 .portfolio-layer h4 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 .portfolio-layer p {
@@ -731,6 +722,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .footer p {
   font-size: 1.6rem;
+  font-weight: 300;
 }
 .footerUpperPart {
   display: flex;
