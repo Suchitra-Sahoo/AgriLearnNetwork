@@ -451,131 +451,6 @@ span {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
 }
-
- /* Image Gallery  Start*/
- span
- {
-  color:var(--main-color);
- }
- .heading
- {
-   text-align: center;
-   font-size: 4.5rem;
- 
- }
- .slider{
-     position: relative;
-     margin-top: 100px;
-     width: 100%;
-     margin-left: -88px;
-
-     height: 450px;
-     overflow: hidden;
-   /* gap: 2rem; */
- }
- .item{
-     position: absolute;
-     width: 407px;
-     height: 320px;
-     text-align: justify;
-     /* background-color: #fff; */
-     border-radius: 2rem;
-     /* padding: 10px; */
-     transition:  0.5s;
-     left: calc(50% - 110px);
-     top: 0;
-   gap: 2rem;
- }
- .item img{
-   border-radius: 2rem;
- }
- 
- 
- #next{
-     position: absolute;
-     right: 0px;
-     top: 40%;
- }
- #prev{
-     position: absolute;
-     left: 75px;
-     top: 40%;
- }
- #prev, #next{
-     color: #fff;
-     background: none;
-     border: none;
-     font-size: xxx-large;
-     font-family: monospace;
-     font-weight: bold;
-     opacity: 0.5;
-     transition: opacity 0.5s;
- }
- #prev:hover,
- #next:hover{
-     opacity: 10;
- }
- 
- .item .portfolio-layer
- {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   height: 110%;
-    
-   background: linear-gradient(rgba(0, 0, 0, 0.1),var(--main-color));
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   text-align: center;
-   padding: 0 4rem;
-   transform: translateY(100%);
-   transition: .85s ease;
-   color:rgb(227, 233, 211);
-   border-radius: 2rem;
- }
- 
- .item:hover .portfolio-layer
- {
-   transform: translateY(0);
- }
- .portfolio-layer h4
- {
-   font-size: 3em;
- 
- }
- 
- .portfolio-layer p
- {
-   font-size: 1.6rem;
-   margin: .3rem 0 1rem;
- }
- 
- .portfolio-layer a
- {
-   display: inline-flex;
-   justify-content: center;
-   align-items: center;
-   width:4rem;
-   height: 4rem;
-   background: var(--txt-color);
-   border-radius: 50%;
-   gap: 2rem;
- 
- }
- 
- .portfolio-layer a i
- {
-   font-size: 2rem;
-   color: var(--second-color);
- }
-
-/* Image Gallery styling End  */
-.contact h2
-{
-=======
 .portfolio {
   background-color: var(--second-color);
 }
@@ -657,7 +532,6 @@ span {
 }
 
 .contact h2 {
-
   margin-bottom: 3rem;
 }
 
