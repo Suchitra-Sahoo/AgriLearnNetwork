@@ -1059,8 +1059,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .scroll-to-top {
 	position: fixed;
-	bottom: 9rem;
-	right: 2.5rem;
+	bottom: 2rem;
+	right: 62rem;
 }
 
 .scroll-to-top a {
