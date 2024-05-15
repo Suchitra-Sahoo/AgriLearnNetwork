@@ -279,7 +279,7 @@
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" required>
+          <input type="number" placeholder="Mobile Number" required id="mobileNumber">
           <input type="text" placeholder="Email Subject" required>
         </div>
 
@@ -386,6 +386,18 @@
     img.src = src;
   });
 });
+
+// mobile no validation @dhruv8433
+const mobileNumberInput = document.getElementById('mobileNumber');
+
+    mobileNumberInput.addEventListener('input', () => {
+      const maxLength = 10;
+      const value = mobileNumberInput.value;
+      
+      if (value.length > maxLength) {
+        mobileNumberInput.value = value.slice(0, maxLength);
+      }
+    });
 </script>
 <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
 <script async data-id="6114274622" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
