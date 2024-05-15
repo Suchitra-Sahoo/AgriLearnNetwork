@@ -47,7 +47,7 @@
  .header
  {
     position: fixed;
-   
+    opacity: 0.8;
    top: 0;
    left: 0;
    width:100%;
@@ -120,31 +120,25 @@
   animation:floatImage 4s ease-in-out infinite;
  } */
 
- @keyframes floatImage {
-  0% {
-    transform: translateY(0);
+ @keyframes floatImage{
+  0%
+  {
+    transform:translateY(0);
   }
-  25% {
-    transform: translateY(-1.2rem); /* Adjusted halfway point */
+  50%
+  {
+    transform:translateY(-2.4rem);
   }
-  50% {
-    transform: translateY(-2.4rem);
+  100%
+  {
+    transform:translateY(0);
   }
-  75% {
-    transform: translateY(-1.2rem); /* Adjusted halfway point */
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
+ }
 
  .home-content h3
  {
-  font-size:48px;
+   font-size: 4.2rem;
    font-weight: 700;
-   font-family: 'Roboto', sans-serif;
-   -webkit-text-stroke: 1px #04240e;
  }
  .home-content h3:nth-of-type(2)
  {
@@ -156,19 +150,12 @@
  }
 
 
- .home-content h1 {
-  
-  font-size: 108px;
-  font-weight:2000px;
-  letter-spacing: 4px;
-  
-  -webkit-text-fill-color: #ffffff;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 3px #04240e;
-  font-family: 'Roboto', sans-serif;
-
-}
-
+ .home-content h1
+ {
+   font-size: 5.6rem;
+   font-weight: 700;
+   line-height: 1.3;
+ }
 .social-media a
  {
   display: inline-flex;
@@ -853,7 +840,7 @@ box-shadow: inset 23px 23px 21px #04240e,
   height: 100%;
   position: relative;
   width: 500%; /* Updated width to accommodate all slides */
-  transition: left 1s ease; /* Transition effect for smooth slide changes */
+  transition: left 0.5s ease; /* Transition effect for smooth slide changes */
 }
 
 .slide {
@@ -865,27 +852,14 @@ box-shadow: inset 23px 23px 21px #04240e,
 
 .home-content{
   position: absolute;
-  top: 30%; /*changed the position of the text*/
-  left: 5%;
+  top: 380px;
+  left: 200px;
+  background: rgba(0, 42, 0, 0.441);
+  border-radius: 50px;
   padding: 15px; 
-  font-family: 'Roboto', sans-serif;
-
+  filter: blur(0.8px);
 }
 
-.services h2 
-{
-  margin-bottom: 5rem;
-
-}
-.services-container
-{ 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap:2rem;
- 
-}
 
 .services1-container .services1-box
 {
@@ -905,7 +879,6 @@ box-shadow: inset 23px 23px 21px #04240e,
   border-color: var(--main-color);
   transform: scale(1.02);
 }
-
 .services1-box i
 {
   font-size: 1.2rem;
@@ -929,6 +902,7 @@ box-shadow: inset 23px 23px 21px #04240e,
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Montserrat';
   font:'Montserrat';
 }
+
 
 .services1-box p
 {
