@@ -24,8 +24,9 @@
 <body>
   
   <header class="header">
-    <img src="images/favicon.png" alt="logo">
-    <a href="#" class="logo" style="margin-inline-end:auto;">AgriLearnNetwork  </a>
+    <img src="images/favicon.png" alt="logo" style="height:50px; width:50px; margin-right:10px;" >
+    <a href="#" class="logo" style="margin-inline-end:auto;"><h3>AgriLearnNetwork</h3>  </a>
+
 
     <i class='bx bx-menu' id="menu-icon"></i>
     <nav class="navbar">
@@ -84,6 +85,9 @@
 
   <section class="farm" id="Farm Management">
     <h2 class="heading">Agro<span>Blogs</span></h2>
+
+    <br>
+    <br>
      <div class="services-container">
       <div class="services-box" onclick="window.location.href='https://tractorkarvan.com/blog/how-to-sow-seeds';">
         <i class='bx bx-leaf'></i>
@@ -278,10 +282,12 @@
         </div>
 
         <div class="input-box">
+
           <i class='icon-3 bx bxs-phone-call' style="font-size:30px;"></i>
           <input type="number" placeholder="Mobile Number" style="padding-left:10%;" required>
           <i class='icon-4 bx bxs-envelope' style="font-size: 30px;"></i>
           <input type="text" placeholder="Email Subject" style="padding-left:10%;" required>
+
         </div>
 
         <i class='icon-5 bx bxs-message-rounded-dots' style="font-size: 30px;"></i>
@@ -387,6 +393,18 @@
     img.src = src;
   });
 });
+
+// mobile no validation @dhruv8433
+const mobileNumberInput = document.getElementById('mobileNumber');
+
+    mobileNumberInput.addEventListener('input', () => {
+      const maxLength = 10;
+      const value = mobileNumberInput.value;
+      
+      if (value.length > maxLength) {
+        mobileNumberInput.value = value.slice(0, maxLength);
+      }
+    });
 </script>
 <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
 <script async data-id="6114274622" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
