@@ -65,10 +65,14 @@ section {
   margin-right: 0;
   cursor: default;
 }
-.navbar a {
-  font-size: 1.5vmax;
 
- }
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 60px;
+}
+
  section
  {
    min-height: 100vh;
@@ -88,6 +92,7 @@ section {
    align-items: center;
    z-index: 100;
  }
+
  .header.sticky
  {
   border-bottom: .1rem solid rgb(252, 187, 223);
@@ -102,11 +107,14 @@ section {
  }
  .navbar a {
   position: relative;
-  font-size: 2rem;
-  left: 118px;
+  font-size: 100px;
+  /* left: 118px; */
   color: var(--txt-color);
   margin-left: 4rem;
   transition: 0.3s;
+  /* font-size: 1.2vmax; */
+  margin-right: 0%;
+  width: 10px;
 }
 .navbar a:hover {
   color: var(--main-color);
@@ -150,6 +158,7 @@ section {
   padding-left: 5vmax
   animation: floatImage 4s ease-in-out infinite;
 } */
+
 
 @keyframes floatImage {
   0% {
