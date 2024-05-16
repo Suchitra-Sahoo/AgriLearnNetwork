@@ -135,6 +135,10 @@ form.addEventListener('submit', (event) => {
     alert('Please enter a valid mobile number.');
     return;
   }
+  if(mobileNumber.length > 10 || mobileNumber.length <10){
+    alert('Please enter a valid mobile number ');
+    return;
+  }
 
   if (!emailSubject) {
     alert('Please enter the email subject.');
