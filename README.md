@@ -126,7 +126,7 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
  
  Welcome to AgriLearnNetwork! Step into a world where agriculture meets innovation. Our captivating landing page invites you to embark on a journey towards agricultural excellence. Be inspired to take the first step towards a prosperous and sustainable farming future.
  
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20205856.png)
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/522bc4a9-f54c-48ba-92fb-7d54b4a22c9a)
 
 <br>
 
@@ -159,7 +159,8 @@ Dive into a treasure trove of insightful blog posts covering a myriad of topics 
 
 Have questions or need assistance? Our dedicated team is here to help. Reach out to us through our contact page, and we'll be happy to provide support and guidance tailored to your needs.
 
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210257.png)
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/e0def232-335e-4b4d-881f-5494f5679c64)
+
 <br>
   
 **AI Chat Bot**
