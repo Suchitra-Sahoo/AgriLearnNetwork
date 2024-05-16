@@ -43,7 +43,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 5%;
+  padding: 2rem 1rem;
   background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
@@ -85,7 +85,7 @@ section {
    top: 0;
    left: 0;
    width:100%;
-   padding:2rem 9%;
+   padding:2rem 3%;
    background-color: var(--bg-color);
    display: flex;
    justify-content: space-between;
@@ -817,13 +817,13 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (max-width:1284px){
   .navbar a {
-    display: inline;
+    /* display: inline; */
     font-size: 1.8vmax;
-    margin: 1.2rem 9.3rem 2.2rem;
-    margin-left: 0.8vmax;
+    /* margin: 1.2rem 9.3rem 2.2rem; */
+    /* margin-left: 0.8vmax; */
   }
   .navbar a i {
-    margin-right: 4vmax;
+    /* margin-right: 4vmax; */
   }
 }
 @media (max-width: 1216px) {
