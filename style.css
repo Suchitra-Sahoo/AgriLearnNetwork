@@ -977,6 +977,9 @@ input[type="number"]::-webkit-inner-spin-button {
    font-size: 2.2rem;
    font-weight: 700;
 }
+.slide_viewer {
+    display: block; /* Ensure the slide viewer is visible on smaller screens */
+  }
 }
 
 
