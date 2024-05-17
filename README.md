@@ -61,6 +61,8 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
 
 <p>Welcome to AgriLearnNetwork! If you're interested in contributing, here's how you can get started:</p>
 
+<div align="left">
+
 1. **Fork the repository:** Click on the "Fork" button at the top-right corner of the repository's page on GitHub to create your own copy of the project.
 
 2. **Clone the repository:** After forking, clone the repository to your local machine using the following command in your terminal:
@@ -103,6 +105,7 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
 
 9. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
 
+</div>
 
 # Key Features ✨
 
