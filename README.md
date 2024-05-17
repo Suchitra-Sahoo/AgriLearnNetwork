@@ -134,8 +134,8 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
  
  Discover the heart and soul of AgriLearnNetwork. Learn about our mission to revolutionize agriculture education and support farmers worldwide. Explore how our platform equips you with the tools and knowledge needed to thrive in the ever-evolving world of farming.
 
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210028.png)
- 
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/2392b9e9-0954-48c5-9a57-b806bd099b09)
+
 <br>
 
 **Blogs Page**
