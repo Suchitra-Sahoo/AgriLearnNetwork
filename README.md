@@ -109,7 +109,7 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
 
 # Key Features ✨
 
-<div align="justify">
+<div align="left">
 
 - **Landing Page**: Experience agriculture's future today with AgriLearnNetwork's innovative platform.
 
