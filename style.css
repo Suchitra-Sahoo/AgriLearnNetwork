@@ -1260,6 +1260,13 @@ input[type="number"]::-webkit-inner-spin-button {
 .footer-iconTop a:hover {
   box-shadow: 0 0 1rem var(--main-color);
 }
+/*making footer-iconTop button sticky  */
+.footer-iconTop{
+  position:fixed;
+  right: 3.5rem;
+  bottom: 10rem;
+  display: flex;
+}
 
 
 .footer-iconTop a i {
