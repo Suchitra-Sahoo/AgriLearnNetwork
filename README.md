@@ -109,6 +109,8 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
 
 # Key Features ✨
 
+<div align="left">
+
 - **Landing Page**: Experience agriculture's future today with AgriLearnNetwork's innovative platform.
 
 - **About Us**: Discover how AgriLearnNetwork is reshaping agriculture education and support worldwide.
@@ -121,6 +123,7 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
 
 - **AI Chat Bot**: Get instant answers to all your agriculture-related queries with our AI-powered chatbot.
 
+</div>
 
 **Components of Website**
 ---
