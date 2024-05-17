@@ -95,11 +95,6 @@ section {
   border-bottom: .1rem solid rgb(252, 187, 223);
  }
 
- .carousel {
-    margin: 0;
-    padding: 0;
-  }
-
  .logo
  {
     font-size: 2.5rem;
