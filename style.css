@@ -744,6 +744,18 @@ span {
 } */ 
 
 
+@keyframes slideInFromBelow {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 /* Cards */
 .services-box{
@@ -757,6 +769,7 @@ span {
   display:flex;
   margin-top: auto;
   flex-direction:column;
+  position: relative;
   width:290px;
   /* height:fit-content; */
   background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
@@ -765,11 +778,16 @@ span {
   margin:10px;  
   align-self:stretch ;
   flex: 1 1 21%;
+  opacity:0;
   cursor: pointer;
+
+  transform: translateY(100px); 
+  animation: slideInFromBelow 0.8s ease-in-out forwards;
+  
 }
 
 .fcard-content {
-  padding: 10px; /* Padding inside the flex item */
+  padding: 10px; 
 }
 
 
