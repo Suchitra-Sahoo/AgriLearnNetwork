@@ -61,6 +61,8 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
 
 <p>Welcome to AgriLearnNetwork! If you're interested in contributing, here's how you can get started:</p>
 
+<div align="left">
+
 1. **Fork the repository:** Click on the "Fork" button at the top-right corner of the repository's page on GitHub to create your own copy of the project.
 
 2. **Clone the repository:** After forking, clone the repository to your local machine using the following command in your terminal:
@@ -103,20 +105,21 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
 
 9. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
 
+</div>
 
 # Key Features ✨
 
-- Landing Page: Experience agriculture's future today with AgriLearnNetwork's innovative platform.
+- **Landing Page**: Experience agriculture's future today with AgriLearnNetwork's innovative platform.
 
-- About Us: Discover how AgriLearnNetwork is reshaping agriculture education and support worldwide.
+- **About Us**: Discover how AgriLearnNetwork is reshaping agriculture education and support worldwide.
 
-- Blogs Page: Dive into a wealth of agricultural knowledge with our curated blog posts.
+- **Blogs Page**: Dive into a wealth of agricultural knowledge with our curated blog posts.
   
-- Resource Library: Access essential tutorials covering crucial topics in agriculture and farming.
+- **Resource Library**: Access essential tutorials covering crucial topics in agriculture and farming.
 
-- Contact Us: Reach out to our dedicated team for personalized assistance and guidance.
+- **Contact Us**: Reach out to our dedicated team for personalized assistance and guidance.
 
-- AI Chat Bot: Get instant answers to all your agriculture-related queries with our AI-powered chatbot.
+- **AI Chat Bot**: Get instant answers to all your agriculture-related queries with our AI-powered chatbot.
 
 
 **Components of Website**
