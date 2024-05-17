@@ -58,6 +58,11 @@ section {
   margin-right: 2rem;
 }
 
+.header a{
+  text-decoration: none;
+}
+
+
 .logo {
   font-size: 2vmax;
   color: var(--txt-color);
@@ -65,9 +70,10 @@ section {
   margin-right: 0;
   cursor: default;
 }
+
 .navbar a {
   font-size: 1.5vmax;
-
+  
  }
  section
  {
@@ -100,6 +106,15 @@ section {
     font-weight: 600;
     cursor: default;
  }
+
+.header .logo h3{
+  font-size: 3.5rem;
+  
+}
+
+h3{
+  font-weight: bold;
+}
  .navbar a {
   position: relative;
   font-size: 2rem;
@@ -180,7 +195,7 @@ section {
   min-height: 100vh;  
 }
 
-.slide_viewer {
+/* .slide_viewer {
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -188,17 +203,18 @@ section {
 
 .slide_group { 
   height: 100%;
-  position: relative;
+  position: relative; */
+  /* 
   width: 500%; /* Updated width to accommodate all slides */
-  transition: left 0.5s ease; /* Transition effect for smooth slide changes */
-}
+  /*transition: left 0.5s ease; /* Transition effect for smooth slide changes */
+/*}
 
 .slide {
   display: inline-block; /* Display slides in a row */
-  height: 100%;
+  /*height: 100%;
   width: 20%; /* Each slide occupies 20% width */
-  background-size: cover;
-}
+  /* background-size: cover;
+} */
 
 .home-content{
   z-index: 1;
@@ -462,6 +478,7 @@ span {
 .heading {
   text-align: center;
   font-size: 4.5rem;
+  font-weight: bold;
 }
 
 .about-content h2 {
