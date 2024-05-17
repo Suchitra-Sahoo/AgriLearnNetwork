@@ -537,11 +537,15 @@ span {
 }
 .services-container {
   display: flex;
-  justify-content: center;
+
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
   margin: 7px;
+  align-self:stretch ;
+  flex-basis: 100%;
+
 }
 
 .services-container .services-box {
@@ -581,6 +585,7 @@ span {
   transition: .5s ease;
   position: relative;
   overflow: hidden;
+  align-self:stretch ;
 
 
 }
@@ -626,7 +631,7 @@ span {
   border-radius: 10px;
   }
 
-/* Background images for cards */
+/* Background images for cards
 .services-container .services-box:nth-child(1) {
   background-image: url('images/sow.jpeg');
   background-size: cover;
@@ -675,7 +680,7 @@ span {
 .services-container .services-box:nth-child(6) {
   background-image: url('/images/seasonn.jpg');
   /* filter: opacity(0.6); */
-  background-size: cover;  
+  /* background-size: cover;  
 }
 .services-container .services-box:nth-child(6):hover {
   background-image: none;
@@ -736,6 +741,79 @@ span {
 .services-container .services-box:nth-child(12):hover {
   background-image: none;
   background-size: cover;  
+} */ 
+
+
+
+/* Cards */
+.services-box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  font-family:"Inter", sanserif;
+  padding:30px;
+}
+.fcard{
+  display:flex;
+  margin-top: auto;
+  flex-direction:column;
+  width:290px;
+  /* height:fit-content; */
+  background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
+  background:-webkit-linear-gradient(90deg,rgb(31,102,31),rgb(231,231,121));  
+  border-radius:10px;
+  margin:10px;  
+  align-self:stretch ;
+  flex: 1 1 21%;
+  cursor: pointer;
+}
+
+.fcard-content {
+  padding: 10px; /* Padding inside the flex item */
+}
+
+
+.fcard:hover{
+  box-shadow: 2px 2px rgb(185, 185, 106);
+}
+.article h2{
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-shadow: 1.5px 1px green;
+}
+
+.article p{
+  font-size: 12px;
+  color:rgb(255, 255, 199);
+}
+
+.agrblg{
+  height:290px;
+  width:100%;  
+  overflow:hidden;
+  object-fit:cover;  
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  filter: drop-shadow(0px 2px 2px #133813aa);
+}
+.article{
+  padding:22px;  
+  text-align:justify;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+a{
+  text-decoration:none;
+}
+.day{
+  display:flex; 
+  justify-content:space-between;
+}
+
+.day p{
+  color:rgb(230, 226, 226);
 }
 
 .portfolio {
