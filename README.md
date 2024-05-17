@@ -12,6 +12,7 @@
 - [About our project](#About-our-project)
 - [Tech Stack Used](#Tech-Stack-Used)
 - [Website Overview](#Website-Overview)
+- [Let's Get Started](#lets-get-started)
 - [Key Features ✨](#Key-Features-✨)
 - [Components of Website](#Components-of-Website)
 
@@ -55,6 +56,54 @@ Welcome to AgriLearnNetwork, your premier destination for comprehensive agricult
 # Website Overview
 
 Agrilearn Network serves as an indispensable resource, offering farmers a holistic platform enriched with essential insights spanning the diverse landscape of agriculture. Delving into the core of farming practices, our platform provides detailed guidance on agriculture techniques, in-depth knowledge on seed varieties, recommendations for optimal tool usage, streamlined harvesting methods, best practices for sowing, and strategic farm management approaches. By encompassing a wide spectrum of topics, Agrilearn Network aims to empower farmers with the comprehensive understanding needed to navigate the complexities of modern agriculture successfully.
+
+# Let's Get Started
+
+<p>Welcome to AgriLearnNetwork! If you're interested in contributing, here's how you can get started:</p>
+
+1. **Fork the repository:** Click on the "Fork" button at the top-right corner of the repository's page on GitHub to create your own copy of the project.
+
+2. **Clone the repository:** After forking, clone the repository to your local machine using the following command in your terminal:
+
+   ```bash
+   git clone https://github.com/<your-github-username>/AgriLearnNetwork.git
+   ```
+
+3. **Add a remote upstream:** Set up a remote upstream to the original repository by running the following command in your terminal:
+
+   ```bash
+   git remote add upstream https://github.com/<original-owner>/AgriLearnNetwork/
+   ```
+
+4. **Create a new branch:** Switch to a new branch for your contributions:
+
+   ```bash
+   git checkout -b <your-branch-name>
+   ```
+
+5. **Make changes:** Start making your changes to the source code.
+
+6. **Add your changes:** Stage your changes for commit:
+
+   ```bash
+   git add <changed-file1> <changed-file2> ...
+   ```
+
+7. **Commit your changes:** Commit your changes with a descriptive message:
+
+   ```bash
+   git commit -m "<your-commit-message>"
+   ```
+
+8. **Push your changes:** Push your changes to your forked repository:
+
+   ```bash
+   git push origin <your-branch-name>
+   ```
+
+9. **Create a Pull Request:** Go to the GitHub repository, select your branch, and click on the "New pull request" button to create a new pull request.
+
+
 # Key Features ✨
 
 - Landing Page: Experience agriculture's future today with AgriLearnNetwork's innovative platform.
@@ -69,7 +118,7 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
 
 - AI Chat Bot: Get instant answers to all your agriculture-related queries with our AI-powered chatbot.
 
- 
+
 **Components of Website**
 ---
  
@@ -77,7 +126,7 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
  
  Welcome to AgriLearnNetwork! Step into a world where agriculture meets innovation. Our captivating landing page invites you to embark on a journey towards agricultural excellence. Be inspired to take the first step towards a prosperous and sustainable farming future.
  
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20205856.png)
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/522bc4a9-f54c-48ba-92fb-7d54b4a22c9a)
 
 <br>
 
@@ -85,8 +134,8 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
  
  Discover the heart and soul of AgriLearnNetwork. Learn about our mission to revolutionize agriculture education and support farmers worldwide. Explore how our platform equips you with the tools and knowledge needed to thrive in the ever-evolving world of farming.
 
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210028.png)
- 
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/2392b9e9-0954-48c5-9a57-b806bd099b09)
+
 <br>
 
 **Blogs Page**
@@ -110,7 +159,8 @@ Dive into a treasure trove of insightful blog posts covering a myriad of topics 
 
 Have questions or need assistance? Our dedicated team is here to help. Reach out to us through our contact page, and we'll be happy to provide support and guidance tailored to your needs.
 
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210257.png)
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/e0def232-335e-4b4d-881f-5494f5679c64)
+
 <br>
   
 **AI Chat Bot**
