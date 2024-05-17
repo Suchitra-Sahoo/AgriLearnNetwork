@@ -410,6 +410,21 @@ span {
   object-fit: cover;
 }
 
+.video-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0,0.5);
+  z-index: 1;
+}
+
+.background-video{
+  filter: contrast(1.5) brightness(1.4);
+  z-index:0;
+}
+
 .overlay {
   position: absolute;
   top: 0;
