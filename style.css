@@ -26,8 +26,6 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--txt-color);
-  margin: 0;
-  padding: 0;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -39,7 +37,6 @@ body {
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
-  margin: 0;
 }
 .header {
   position: fixed;
@@ -52,7 +49,6 @@ section {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  margin-bottom: 0;
 }
 .header.sticky {
   border-bottom: 0.1rem solid rgb(252, 187, 223);
@@ -71,8 +67,9 @@ section {
 }
 .navbar a {
   font-size: 1.5vmax;
+
  }
- /*section
+ section
  {
    min-height: 100vh;
    padding: 10rem 9% 2rem;
@@ -91,15 +88,10 @@ section {
    align-items: center;
    z-index: 100;
  }
-
- .header.sticky{
+ .header.sticky
+ {
   border-bottom: .1rem solid rgb(252, 187, 223);
- }*/
-
- .carousel {
-    margin: 0;
-    padding: 0;
-  }
+ }
 
  .logo
  {
@@ -135,6 +127,7 @@ section {
   width: 80px;
   height: auto; /* Use auto to maintain aspect ratio */
   max-width: 100%;
+
   margin-right: 5px; /* Adjust margin as needed */
 }
 
@@ -177,10 +170,9 @@ section {
   width: 100%;
   /* border: 2px solid blue;  */
   padding: 0;
+  margin: 0;
   position: relative;
-  margin-bottom: 0;
 } 
-
 .slider {
   margin: 0;
   min-width: 100%;
@@ -220,15 +212,17 @@ section {
   width: 55%;
   height: 25vmax;
   font-size: 4vmax;
-  margin-bottom: 0;
 }
+
+
+
 
 .home-content h3 {
   font-size: 4.2rem;
   font-weight: 700;
 }
-
 .home-content h3:nth-of-type(2) {
+
   margin-right:5px; /* Adjust margin as needed */
 }
 
@@ -390,13 +384,11 @@ span {
 
 .about {
   position: relative;
-  min-height: 100vh; 
+  height: 100vh; 
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin:0;
-  padding:0;
 }
 
 /*.about-img img {
@@ -410,16 +402,12 @@ span {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin:0;
-  padding: 0;
 }
 
 .video-wrapper video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin:0;
-  padding: 0;
 }
 
 .video-overlay{
@@ -433,11 +421,8 @@ span {
 }
 
 .background-video{
-  width:100%;
-  height:100%;
   filter: contrast(1.5) brightness(1.4);
   z-index:0;
-  object-fit: auto;
 }
 
 .overlay {
@@ -450,8 +435,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  z-index: 2;
+  padding: 20px;
 }
 
 .about-content {
@@ -467,6 +451,8 @@ span {
 .about-content .heading {
   text-align: center;
   font-size: 9rem;
+  margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 .about-content .heading span {
@@ -481,11 +467,9 @@ span {
 .about-content h2 {
   text-align: left;
   line-height: 1.2;
-  margin:0;
 }
 .about-content h3 {
   font-size: 2.6rem;
-  margin:0;
 }
 .about-content p {
   font-size: 1.9rem;
@@ -499,90 +483,53 @@ span {
 }
 
 @media (max-width: 1024px) {
-  .home {
-    margin: 0; 
-    padding: 0;
-  }
-  .about{
-    margin:0;
-    padding: 0;
-  }
-
   .about-content {
     flex-direction: column; 
   }
 
   .about-content .heading {
-    font-size: 5.5rem;
+    font-size: 2.5rem;
   }
 
   .about-content .heading span {
-    font-size: 5.5rem; 
+    font-size: 2.5rem; 
   }
 
   .about-content p {
-    font-size: 1.9rem;
-    text-align: justify;
-    margin-left: 0;
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 768px) {
-  .home {
-    margin: 0; 
-    padding: 0;
-  }
-  .about{
-    margin:0;
-    padding: 0;
-  }
-
   .about-content .heading {
-    font-size: 4.5rem;
+    font-size: 2rem;
   }
 
   .about-content .heading span {
-    font-size: 4.5rem; 
+    font-size: 2rem; 
   }
 
   .about-content p {
-    font-size: 1.9rem;
-    text-align: justify;
-    margin-left: 0; 
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
-  .home {
-    margin: 0;
-    padding: 0; 
-  }
-  .about{
-    margin:0;
-    padding: 0;
-  }
-
   .about-content .heading {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 
   .about-content .heading span {
-    font-size: 3.5rem; 
+    font-size: 1.5rem; 
   }
 
   .about-content p {
-    font-size: 1.5rem;
-    text-align: justify;
-    margin-left: 0;
+    font-size: 0.5rem;
   }
 
   .overlay {
     padding: 10px;
   }
-
-.carousel, .about-section {
-  margin-bottom: 0;
-}
 }
 
 .services h2 {
