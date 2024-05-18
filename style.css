@@ -900,16 +900,28 @@ a{
 
 .safe-alert {
   display: block;
-  background-color: #dff0d8; 
-  border: 1px solid #d6e9c6; 
-  color: #3c763d; 
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: max(70rem);
+  margin: auto;
+  background-color: #3c763d; 
+  color: white;
 }
 
 .danger-alert {
   display: block;
-  background-color: #f2dede; 
-  border: 1px solid #ebccd1;
-  color: hsl(1, 85%, 34%);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: max(70rem);
+  margin: auto;
+  background-color: hsl(1, 85%, 34%);
+  color: white;
 }
 
 /* Add animation for alert appearance */
