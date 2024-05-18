@@ -1155,7 +1155,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: var(--second-color);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   html {
     font-size: 55%;
   }
@@ -1185,18 +1185,13 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-@media (max-width:1284px){
-  .navbar a {
-    display: inline;
-    font-size: 1.8vmax;
-    margin: 1.2rem 9.3rem 2.2rem;
-    margin-left: 0.8vmax;
-  }
-  .navbar a i {
-    margin-right: 4vmax;
-  }
-}
+
+
+
 @media (max-width: 1216px) {
+  .about-content {
+    flex-direction: column; 
+  }
   .logo {
     font-size: 2.6vmax;
   }
