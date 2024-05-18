@@ -92,10 +92,11 @@ ScrollReveal({
     delay:200
 });
 
-ScrollReveal().reveal('.home-content, .heading',{ origin:'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form',{ origin:'bottom' });
+ScrollReveal().reveal('.home-content, .heading ,.calculator .heading',{ origin:'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, ', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img',{ origin:'left' });
 ScrollReveal().reveal('.home-content p, .about-content',{ origin:'left' });
+
 
 
 const typed=new Typed('.multiple-text',{
@@ -236,34 +237,3 @@ executeRating(ratingStars);
   })();
   
   
-  function calculateYield() {
-    var crop = document.getElementById('crop').value;
-    var area = parseFloat(document.getElementById('area').value);
-    var yieldPerAcre = parseFloat(document.getElementById('yield').value);
-    var weather = parseFloat(document.getElementById('weather').value);
-    var soil = parseFloat(document.getElementById('soil').value);
-    var cropRotation = parseFloat(document.getElementById('crop-rotation').value);
-    var management = parseFloat(document.getElementById('management').value);
-  
-    if (crop === "") {
-      document.getElementById('result').innerText = "Please enter a crop type.";
-      return;
-    }
-  
-    if (isNaN(area) || isNaN(yieldPerAcre) || isNaN(weather) || isNaN(soil) || isNaN(cropRotation) || isNaN(management)) {
-      document.getElementById('result').innerText = "Please enter valid numbers for all inputs.";
-      return;
-    }
-  
-    var totalYield = area * yieldPerAcre * weather * soil * cropRotation * management;
-  
-    if (totalYield > 100) {
-      document.getElementById('result').innerText = "Expected yield is above average.";
-    } else if (totalYield < 50) {
-      document.getElementById('result').innerText = "Expected yield is below average.";
-    } else {
-      document.getElementById('result').innerText = "Expected yield is average.";
-    }
-  
-    document.getElementById('result').innerText += " " + totalYield.toFixed(2) + " units.";
-  }
