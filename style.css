@@ -918,17 +918,50 @@ a{
   margin-bottom: 3rem;
 }
 
+
 .contact form {
   max-width: 70rem;
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
+  padding: 4%;
+  border: 2px solid white;
+ 
 }
 .contact form .input-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
+
 }
+
+.icon1{
+  position:absolute;
+  top:calc(28%);
+  left:1.4%;
+}
+.icon2{
+  position:absolute;
+  top:calc(23%);
+  left:1.4%;
+}
+.icon3{
+  position:absolute;
+  top:calc(8%);
+  left:1.5%;
+}
+.icon4{
+  position: absolute;
+  top:calc(19%);
+  left:52%;
+}
+.icon5{
+  position:absolute;
+  top:calc(23%);
+  left:52%;
+}
+
 
 .contact form .input-box input,
 .contact form textarea {
@@ -942,6 +975,7 @@ a{
   border-radius: 20px;
   background: #053314;
   box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #07421a;
+  border: 2px solid white;
 }
 .contact form .input-box input::placeholder,
 .contact form textarea::placeholder {
