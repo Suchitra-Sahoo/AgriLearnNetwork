@@ -999,17 +999,18 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 #review-btn{
-  border: none;
+  border: 2px solid;
   border-radius: 20px;
-  color:yellowgreen;
-  background-color: #053314;
+  padding: 10px;
+  color:#0e4b16;
+  background-color:rgb(192, 223, 100);
   margin-top: 0;
   display: block; 
   margin-top: 10px;
   margin-left: 20px;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 14px;
-  
+  cursor: pointer;
   
 
 }
