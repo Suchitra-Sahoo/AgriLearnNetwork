@@ -625,7 +625,47 @@ span {
   /* text-shadow : 1px 1px 2px black !important; */
   text-shadow: var(--second-color) 1px 0 10px;
 }
+/* Alert opption strat by @visioncoding021 */
+.alert {
+  display: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: max(70rem);
+  margin: auto;
+}
 
+.safe-alert {
+  display: block;
+  background-color: #dff0d8; 
+  border: 1px solid #d6e9c6; 
+  color: #3c763d; 
+}
+
+.danger-alert {
+  display: block;
+  background-color: #f2dede; 
+  border: 1px solid #ebccd1;
+  color: hsl(1, 85%, 34%);
+}
+
+/* Add animation for alert appearance */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.alert.slide-in {
+  animation: slideIn 0.5s forwards;
+}
+
+/* Alert End by @visioncoidng021 */
 .portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
@@ -674,17 +714,17 @@ span {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: rgb(206, 255, 206);
-  background: var(--second-color);
+  color: rgb(1, 36, 1);
+  background: white;
   border-radius: 0.8rem;
   margin: 0.7rem 0;
-  border-radius: 20px;
-  background: #053314;
-  box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #07421a;
+  border-radius: 10px;
+  border:2px solid yellowgreen;
+  font-weight: 600;
 }
 .contact form .input-box input::placeholder,
 .contact form textarea::placeholder {
-  color: rgb(206, 255, 206);
+  color: rgb(2, 37, 2);;
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -695,12 +735,15 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 49%;
 }
 
-.contact form textarea {
+ textarea {
   resize: none;
 }
 .contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+  background-color: #053314;
+  color: white;
+  border: 2px solid yellowgreen;
 }
 
 #review-btn{
@@ -765,7 +808,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
-  color:black;
+  color:darkgreen;
   font-size: 20px;
 }
 
@@ -786,14 +829,34 @@ input[type="number"]::-webkit-inner-spin-button {
   box-sizing: border-box;
   font-size: 16px;
   max-width: 100%;
+  border : 2px solid darkgreen;
 }
 
 .modal-content input[type="text"]:focus,
 .modal-content input[type="email"]:focus,
 .modal-content textarea:focus {
   outline: none;
-  border-color: #66afe9;
+  border-color: #033b0b;
 }
+.modal-content input[type="text"]::placeholder,
+.modal-content input[type="email"]::placeholder,
+.modal-content textarea::placeholder {
+  color: rgb(9, 32, 9);
+  font-weight: 600;}
+
+/* Vendor prefixes for better browser support */
+.modal-content input[type="text"]::-webkit-input-placeholder,
+.modal-content input[type="email"]::-webkit-input-placeholder,
+.modal-content textarea::-webkit-input-placeholder {
+  color: rgb(9, 32, 9);
+  font-weight: 600;
+}
+
+.modal-content input[type="text"]:-moz-placeholder,
+.modal-content input[type="email"]:-moz-placeholder,
+.modal-content textarea:-moz-placeholder {
+  color: rgb(9, 32, 9);
+  font-weight: 600;}
 
 .modal-content button[type="submit"] {
   background-color:#0e4b16;

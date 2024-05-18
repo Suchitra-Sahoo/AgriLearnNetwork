@@ -2,6 +2,26 @@ let menuIcon = document.querySelectorAll('#menu-icon');
 let navbar = document.querySelectorAll('.navbar');
 let Contact = document.querySelectorAll('#contact');
 let navContact = document.querySelectorAll('#nav--contact');
+// alert div selecting 
+const alertBox = document.getElementById("alert");
+const dangerAlert = (message)=>{
+  alertBox.setAttribute("class", "danger-alert");
+  alertBox.innerText = message;
+    console.log(alertBox);
+    setTimeout(() => {
+      alertBox.setAttribute("class", "alert");
+
+    }, 2000);
+}
+const safeAlert = (message)=>{
+  alertBox.setAttribute("class", "safe-alert");
+  alertBox.innerText = message;
+    console.log(alertBox);
+    setTimeout(() => {
+      alertBox.setAttribute("class", "alert");
+
+    }, 2000);
+}
 
 menuIcon.forEach(icon => {
   icon.onclick = () => {
@@ -99,7 +119,7 @@ ScrollReveal().reveal('.home-content p, .about-content',{ origin:'left' });
 
 
 const typed=new Typed('.multiple-text',{
-    strings:['Sow','Learn','Grow' ],
+    strings:['Sowing','Learning','Growing' ],
     typeSpeed:100,
     backSpped:100,
     backDelay:1000,
@@ -117,40 +137,48 @@ form.addEventListener('submit', (event) => {
   const mobileNumber = form.querySelector('input[placeholder="Mobile Number"]').value.trim();
   const emailSubject = form.querySelector('input[placeholder="Email Subject"]').value.trim();
   const message = form.querySelector('textarea').value.trim();
+// alert by @visioncoding021
 
   // Validation
   if (!fullName) {
-    alert('Please enter your full name.');
+   dangerAlert('Please enter your full name.');
+
+    // alert('Please enter your full name.');
     return;
   }
 
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(email)) {
-    alert('Please enter a valid email address.');
+    // alert('Please enter a valid email address.');
+    dangerAlert('Please enter a valid email address.');
     return;
   }
 
   const mobilePattern = /^\d+$/;
   if (!mobilePattern.test(mobileNumber)) {
-    alert('Please enter a valid mobile number.');
+    // alert('Please enter a valid mobile number.');/
+    dangerAlert('Please enter a valid mobile number.');
     return;
   }
 
   if (!emailSubject) {
-    alert('Please enter the email subject.');
+    // alert('Please enter the email subject.');
+    dangerAlert('Please enter the email subject.');
     return;
   }
 
   if (!message) {
-    alert('Please enter your message.');
+    // alert('Please enter your message.');
+    dangerAlert('Please enter your message.');
     return;
   }
 
   // form reset
   form.reset();
-  alert('Your message has been sent. Thank you!');
+  // alert('Your message has been sent. Thank you!');
+  safeAlert('Your message has been sent. Thank you!');
+
 });
- 
 
 
 (function(){
@@ -197,8 +225,10 @@ form.addEventListener('submit', (event) => {
   feedbackForm.addEventListener("submit", function(e) {
       e.preventDefault(); // Prevent the default form submission behavior
       if (allFieldsFilled()) {
+        safeAlert("Thank you for your feedback! Your message has been submitted.");
           alert("Thank you for your feedback! Your message has been submitted.");
       } else {
+        dangerAlert("Please fill in all fields before submitting.");
           alert("Please fill in all fields before submitting.");
       }
   });
