@@ -1,5 +1,7 @@
 let menuIcon = document.querySelectorAll('#menu-icon');
 let navbar = document.querySelectorAll('.navbar');
+let Contact = document.querySelectorAll('#contact');
+let navContact = document.querySelectorAll('#nav--contact');
 
 menuIcon.forEach(icon => {
   icon.onclick = () => {
@@ -8,10 +10,24 @@ menuIcon.forEach(icon => {
   }
 });
 
+// Add an event listener to navbar links
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', () => {
+    // Remove 'active' class from navbar
+    document.querySelectorAll('.navbar').forEach(nav => {
+      nav.classList.remove('active');
+    });
+    // Toggle the menu icon
+    document.querySelectorAll('#menu-icon').forEach(icon => {
+      icon.classList.remove('bx-x'); // Remove the 'bx-x' class to close the hamburger menu
+    });
+  });
+});
+
 
 // Add an "active" class to the clicked link
 $('a[href*="#"]')
-  .not('[href="#"]')
+.not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
     // Remove any existing "active" class from links
@@ -19,7 +35,7 @@ $('a[href*="#"]')
 
     // Add "active" class to clicked link
     $(this).addClass('active');
-
+    
     // Smooth scroll to target as before
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -28,7 +44,7 @@ $('a[href*="#"]')
     ) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
+      
       if (target.length) {
 
         event.preventDefault();
@@ -48,7 +64,18 @@ $('a[href*="#"]')
     }
   });
 
-// Set initial active link based on URL hash
+//when scroll on any section that section's corresponding hyperlink will be active and
+// the previous activated hyperlink will be deactivated
+$('section[id]').mouseover(function() {
+var sectionId = $(this).attr('id');
+var correspondingLink = $('a[href="#' + sectionId + '"]');
+// Remove active class from all links
+$('a').removeClass('active');
+// Add active class to the corresponding link
+correspondingLink.addClass('active');
+});
+  
+  // Set initial active link based on URL hash
 $(document).ready(function() {
   var hash = window.location.hash;
   if (hash) {
@@ -85,6 +112,7 @@ const typed=new Typed('.multiple-text',{
 // form.addEventListener('submit', (event) => {
 //   event.preventDefault();
 
+
   
 //   form.reset();
 // });
@@ -115,4 +143,133 @@ for(let i=0;i<box.length;i++){
 }
 
 
+
+
+  // Access form fields
+  const fullName = form.querySelector('input[placeholder="Full Name"]').value.trim();
+  const email = form.querySelector('input[placeholder="Email Address"]').value.trim();
+  const mobileNumber = form.querySelector('input[placeholder="Mobile Number"]').value.trim();
+  const emailSubject = form.querySelector('input[placeholder="Email Subject"]').value.trim();
+  const message = form.querySelector('textarea').value.trim();
+
+  // Validation
+  if (!fullName) {
+    alert('Please enter your full name.');
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  const mobilePattern = /^\d+$/;
+  if (!mobilePattern.test(mobileNumber)) {
+    alert('Please enter a valid mobile number.');
+    return;
+  }
+
+  if (!emailSubject) {
+    alert('Please enter the email subject.');
+    return;
+  }
+
+  if (!message) {
+    alert('Please enter your message.');
+    return;
+  }
+
+  // form reset
+  form.reset();
+  alert('Your message has been sent. Thank you!');
+});
+ 
+
+
+(function(){
+  let modal = document.getElementById("modal");
+  
+  
+  let reviewBtn = document.getElementById("review-btn");
+  
+  let span = document.getElementsByClassName("close")[0];
+  
+  
+  reviewBtn.onclick = function(e) {
+    e.preventDefault();
+      modal.style.display = "block";
+  }
+  
+  
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+  
+  
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  
+  const feedbackForm = document.getElementById("feedback-form");
+  const submitButton = document.querySelector("#feedback-form button[type='submit']");
+  
+  
+  function allFieldsFilled() {
+      const inputs = feedbackForm.querySelectorAll("input[type='text'], input[type='email'], textarea");
+      for (let input of inputs) {
+          if (!input.value.trim()) {
+              return false;
+          }
+      }
+      return true;
+  }
+  
+  // Event listener for form submission
+  feedbackForm.addEventListener("submit", function(e) {
+      e.preventDefault(); // Prevent the default form submission behavior
+      if (allFieldsFilled()) {
+          alert("Thank you for your feedback! Your message has been submitted.");
+      } else {
+          alert("Please fill in all fields before submitting.");
+      }
+  });
+  
+  // Event listener for form input fields
+  feedbackForm.addEventListener("input", function() {
+      if (allFieldsFilled()) {
+          submitButton.removeAttribute("disabled");
+      } else {
+          submitButton.setAttribute("disabled", "disabled");
+      }
+  });
+
+
+  const ratingStars = [...document.getElementsByClassName("rating__star")];
+
+function executeRating(stars) {
+  const starClassActive = "rating__star fas fa-star";
+  const starClassInactive = "rating__star far fa-star";
+  const starsLength = stars.length;
+  let i;
+  stars.map((star) => {
+    star.onclick = () => {
+      i = stars.indexOf(star);
+
+      if (star.className===starClassInactive) {
+        for (i; i >= 0; --i) stars[i].className = starClassActive;
+      } else {
+        for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
+      }
+    };
+  });
+}
+executeRating(ratingStars);
+  
+ 
+
+
+  })();
 
