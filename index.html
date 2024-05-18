@@ -357,56 +357,50 @@
 </section>
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Us!</span></h2>
-      
         <form action="#" id="contact-form">
         <div class="input-box">
-          <i class='icon-1 bx bxs-user' style="font-size: 30px;"></i>
-          <input type="text" class="formcontrol" placeholder="Full Name" style="padding-left:10%;" required>
-          <i class='icon-2 bx bxl-gmail' style="font-size: 30px;"></i>
-          <input type="email" placeholder="Email Address" style="padding-left:10%;" required>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
         </div>
 
         <div class="input-box">
-
-          <i class='icon-3 bx bxs-phone-call' style="font-size:30px;"></i>
-          <input type="number" placeholder="Mobile Number" style="padding-left:10%;" required>
-          <i class='icon-4 bx bxs-envelope' style="font-size: 30px;"></i>
-          <input type="text" placeholder="Email Subject" style="padding-left:10%;" required>
-
+          <input type="number" placeholder="Mobile Number" required id="mobileNumber">
+          <input type="text" placeholder="Email Subject" required>
         </div>
 
-        <i class='icon-5 bx bxs-message-rounded-dots' style="font-size: 30px;"></i>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required style="padding-left:10%;"></textarea>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <button id="review-btn">Give feedback</button>
         <input type="submit" value="Send Message" class="btn" id="contact-btn"> 
 
         </form>
+     
     </section>
 
-
-
-   
-    <footer class="footer">
-      <div class="footerUpperPart">
-        <div class="footer-left">
-          <p>Follow us on our socials:</p>
-          <div class="socialIcons">
-            
-
-            <a href="mailto:AgriLearnNetwork@gmail.com" class="email-link" data-tooltip="AgriLearnNetwork@gmail.com"><i class="fas fa-envelope"></i></a>
-            
-            <a href="https://www.instagram.com/your_username_here" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/your_username_here" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com/your_page_or_profile_here" target="_blank"><i class="fab fa-facebook"></i></a>
-  
-  
-          </div>
-         
+<!-- Modal  -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Feedback Form</h2>
+      <form id="feedback-form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
           
-          </div>
-
-          <div class="footer-iconTop">
-            <a href="#home" ><i class='bx bx-up-arrow-alt'></i></a>
-          </div>
+            
+            <div class="rating">
+              <h2>rate us:</h2>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+        </div>
+            
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+</div>
 
 <footer class="footer">
   <div class="footer-grid">
@@ -420,7 +414,6 @@
         <a href="https://www.instagram.com/your_username_here" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://twitter.com/your_username_here" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="https://www.facebook.com/your_page_or_profile_here" target="_blank"><i class="fab fa-facebook"></i></a>
-
       </div>
     </div>
     <div class="footer-iconTop">

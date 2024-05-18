@@ -918,58 +918,16 @@ a{
   margin-bottom: 3rem;
 }
 
-
-
 .contact form {
-
   max-width: 70rem;
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
-
-  padding: 50px;
-  border-radius: 2%;
-  border:2px solid white;
-  background: transparent;
-  /*background-color: #a9f396;*/
 }
 .contact form .input-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  position:relative;
-}
-.icon-1{
-  position:absolute;
-  top:calc(30%);
-  left:1.25rem;
-}
-.icon-2{
-  position: absolute;
-  top: calc(30%);
-  left:32.24rem;
-}
-.icon-3{
-  position: absolute;
-  top:calc(30%);
-  left:1.25rem;
-}
-.icon-4{
-  position: absolute;
-  top: calc(30%);
-  left:32.24rem;
-}
-.icon-5{
-  position:absolute;
-  top:calc(36%);
-  left:6.24rem;
-}
-textarea::placeholder{
-  padding-left: 7%;
-}
-input::placeholder{
-  padding-left:15%;
 }
 
 .contact form .input-box input,
@@ -977,37 +935,13 @@ input::placeholder{
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  border:2px solid white;
-  color: rgb(249, 249, 253);
-  background: var(--second-color);
-  background: #04240e;
-
-  border-radius: .8rem;
-  margin: .7rem 0;
-  border-radius: 20px;
-  /*background: #053314;*/
-  box-shadow: inset 23px 23px 21px #04240e,
-  inset -23px -23px 21px #04240e;
-box-shadow: inset 23px 23px 21px #04240e,
-            inset -23px -23px 21px #04240e;
-            /*box-shadow: inset 23px 23px 21px #468536,
-            inset -23px -23px 21px #468536;
-          box-shadow: inset 23px 23px 21px #468536,
-                      inset -23px -23px 21px #468536;*/
-  
-}
-.contact form .input-box input::placeholder,
-.contact form textarea::placeholder
-{
-  color:antiquewhite;
-  font-family: 'Courier New', Courier, monospace;
   color: rgb(206, 255, 206);
   background: var(--second-color);
   border-radius: 0.8rem;
   margin: 0.7rem 0;
   border-radius: 20px;
-  background: #04240e;
-  box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #04240e;
+  background: #053314;
+  box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #07421a;
 }
 .contact form .input-box input::placeholder,
 .contact form textarea::placeholder {
