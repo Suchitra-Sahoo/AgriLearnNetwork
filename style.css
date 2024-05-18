@@ -65,12 +65,6 @@ section {
   margin-right: 0;
   cursor: default;
 }
-h2{
-  font-weight: bold;
-}
-h3{
-  font-weight: bold;
-}
 .navbar a {
   font-size: 1.5vmax;
 
@@ -98,19 +92,13 @@ h3{
  {
   border-bottom: .1rem solid rgb(252, 187, 223);
  }
- .header a{
-  text-decoration: none;
-}
+
  .logo
  {
     font-size: 2.5rem;
     color: var(--txt-color);
     font-weight: 600;
     cursor: default;
- }
- .header .logo h3{
-  font-size: 2.75rem;
-  font-weight: bold;
  }
  .navbar a {
   position: relative;
@@ -192,7 +180,7 @@ h3{
   min-height: 100vh;  
 }
 
-/* .slide_viewer {
+.slide_viewer {
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -200,21 +188,17 @@ h3{
 
 .slide_group { 
   height: 100%;
-  position: relative; */
-  /* width: 500%;  */
-  /* Updated width to accommodate all slides */
-  /* transition: left 0.5s ease;  */
-  /* Transition effect for smooth slide changes */
-/* }
+  position: relative;
+  width: 500%; /* Updated width to accommodate all slides */
+  transition: left 0.5s ease; /* Transition effect for smooth slide changes */
+}
 
 .slide {
-  display: inline-block; */
-   /* Display slides in a row */
-  /* height: 100%;
-  width: 20%; */
-   /* Each slide occupies 20% width */
-  /* background-size: cover;
-} */
+  display: inline-block; /* Display slides in a row */
+  height: 100%;
+  width: 20%; /* Each slide occupies 20% width */
+  background-size: cover;
+}
 
 .home-content{
   z-index: 1;
@@ -229,7 +213,6 @@ h3{
   height: 25vmax;
   font-size: 4vmax;
 }
-
 
 
 
