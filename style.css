@@ -800,9 +800,12 @@ span {
   text-shadow: 1.5px 1px green;
 }
 
-.article p{
+.article-body{
   font-size: 12px;
   color:rgb(255, 255, 199);
+}
+.blog-head{
+  height: 80%;
 }
 
 .agrblg{
