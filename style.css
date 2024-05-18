@@ -137,7 +137,34 @@ section {
   display: none;
 }
 
-/* .home {
+/* search bar*/
+.search{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+ }
+ #search-icon{
+   width: 45px;
+   border-radius: 6px;
+ }
+ #search-icon:hover{
+   cursor: pointer;
+ }
+ .search-bar{
+   margin: 10px;
+   padding: 5px;
+   width: 40%;
+   height: 40px;
+   /* border-radius: 10px; */
+ }
+ .hide{
+   display: none;
+ }
+
+/* .home {why
   display: flex;
   justify-content: flex-end;
   align-items: end;
@@ -641,46 +668,13 @@ span {
   background-size: cover;  
 }
 
-
-/* search bar*/
-.search{
- display: flex;
- text-align: center;
- justify-content: center;
- align-items: center;
- flex-direction: row;
- 
-}
-#search-icon{
-  width: 45px;
-  border-radius: 6px;
-}
-#search-icon:hover{
-  cursor: pointer;
-}
-.search-bar{
-  margin: 10px;
-  padding: 5px;
-  width: 40%;
-  height: 40px;
-  /* border-radius: 10px; */
-}
-.hide{
-  display: none;
-}
-
-.contact h2
-{
-  margin-bottom: 3rem;
-
-=======
 .services-container .services-box:nth-child(2) {
   background-image: url('images/irrigation.jpg');
   background-size: cover;
 }
 .services-container .services-box:nth-child(2):hover {
   background-image: none;
-  background-size: cover; 
+  background-size: cover;  
 }
 
 .services-container .services-box:nth-child(3) {
@@ -1629,4 +1623,3 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-direction: column;
   }
 }
-

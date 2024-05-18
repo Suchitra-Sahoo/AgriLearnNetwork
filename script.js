@@ -106,44 +106,10 @@ const typed=new Typed('.multiple-text',{
     loop:true
 
 });
+const form = document.getElementById('contact-form');
 
-// const form = document.querySelectorAll('#submit-btn');
-
-// form.addEventListener('submit', (event) => {
-//   event.preventDefault();
-
-
-  
-//   form.reset();
-// });
-
-// search-bar feature
-
-function search(){
-let box=[...document.querySelectorAll(".services-box")]
-let val=document.getElementById('input');
-
-
-let filter=val.value.toUpperCase().trim();
-console.log(filter)
-console.log(box)
-
-for(let i=0;i<box.length;i++){
-  let component=box[i];
-  let h3=component.querySelector('h3');
-  let componentName=h3.textContent || h3.innerText;
-
-  if(componentName.toUpperCase().indexOf(filter)>-1){
-    component.classList.remove('hide')
-  }
-  else{
-    component.classList.add('hide')
-  }
-}
-}
-
-
-
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
   // Access form fields
   const fullName = form.querySelector('input[placeholder="Full Name"]').value.trim();
@@ -273,3 +239,30 @@ executeRating(ratingStars);
 
   })();
 
+  function search(){
+    let box=[...document.querySelectorAll(".fcard")]
+    let val=document.getElementById('input');
+    
+    
+    let filter=val.value.toUpperCase().trim();
+    console.log(filter)
+    console.log(box)
+    
+    for(let i=0;i<box.length;i++){
+      let component=box[i];
+      let h2=component.querySelector('h2');
+      let componentName=h2.textContent|| h2.innerText;
+      console.log(componentName)
+      console.log((componentName.toUpperCase().indexOf(filter)))
+    
+      if(componentName.toUpperCase().indexOf(filter)>-1){
+        console.log(`Showing card ${i}: ${componentName}`);
+        component.style.display="flex";
+      }
+      else{
+        console.log(`Hiding card ${i}: ${componentName}`);
+        component.style.display="none";
+      }
+    }
+    }
+    
