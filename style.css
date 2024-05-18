@@ -537,17 +537,18 @@ span {
 }
 .services-container {
   display: flex;
-  justify-content: center;
+
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
   margin: 7px;
+  align-self:stretch ;
+  flex-basis: 100%;
+
 }
 
-.services-box {
-  height:400px;
-  width: 200px;
-  cursor: pointer;
+.services-container .services-box {
   flex: 1 1 30rem;
   background: var(--second-color);
   padding: 3rem 2rem 4rem;
@@ -572,7 +573,267 @@ span {
 .services-box p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
+} */
+
+.services-container .services-box {
+  flex: 1 1 30rem;
+  background: var(--second-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid var(--bg-color);
+  transition: .5s ease;
+  position: relative;
+  overflow: hidden;
+  align-self:stretch ;
+
+
 }
+
+/* .services-container .services-box::before {
+  backdrop-filter: blur(10px); /* Apply blur effect to the background only */
+
+
+.services-container .services-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+  background-color: #064b10;
+
+}
+
+.services-box i {
+  font-size: 7rem;
+  color: var(--main-color);
+}
+
+.services-box h3 {
+  font-size: 2.6rem;
+  color:white;
+  text-shadow: #07421a;
+  text-shadow: 0 0 5px rgb(192, 223, 100);
+}
+
+.services-box h3:hover {
+  font-size: 2.6rem;
+  text-shadow: #07421a;
+}
+
+.services-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+}
+
+.with-blur-backdrop {
+  background-color: none;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  padding: 10px ;
+  border-radius: 10px;
+  }
+
+/* Background images for cards
+.services-container .services-box:nth-child(1) {
+  background-image: url('images/sow.jpeg');
+  background-size: cover;
+}
+.services-container .services-box:nth-child(1):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(2) {
+  background-image: url('images/irrigation.jpg');
+  background-size: cover;
+}
+.services-container .services-box:nth-child(2):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(3) {
+  background-image: url('/images/smart-farming-with-agriculture-iot.jpg');
+  background-size: cover;  
+}
+.services-container .services-box:nth-child(3):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(4) {
+  background-image: url('/images/sustain.jpg');
+  background-size: cover;  
+}
+.services-container .services-box:nth-child(4):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(5) {
+  background-image: url('/images/croprota.jpg');
+  background-size: cover;  
+}
+.services-container .services-box:nth-child(5):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(6) {
+  background-image: url('/images/seasonn.jpg');
+  /* filter: opacity(0.6); */
+  /* background-size: cover;  
+}
+.services-container .services-box:nth-child(6):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(7) {
+  background-image: url('/images/soil.jpg');
+  background-size: cover;  
+}
+.services-container .services-box:nth-child(7):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(8) {
+  background-image: url('/images/pest.jpg');
+  background-size: cover;  
+}
+.services-container .services-box:nth-child(8):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(9) {
+  background-image: url('/images/farmtech.png');
+  background-size: cover;  
+}
+.services-container .services-box:nth-child(9):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(10) {
+  background-image: url('/images/econ.jpg');
+  background-size: cover;  
+}
+.services-container .services-box:nth-child(10):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(11) {
+  background-image: url('/images/livestocks.jpg');
+  background-size: cover;  
+  filter: contrast(5px);
+}
+.services-container .services-box:nth-child(11):hover {
+  background-image: none;
+  background-size: cover;  
+}
+
+.services-container .services-box:nth-child(12) {
+  background-image: url('/images/tourism.jpg');
+  background-size: cover;  
+  
+}
+.services-container .services-box:nth-child(12):hover {
+  background-image: none;
+  background-size: cover;  
+} */ 
+
+
+@keyframes slideInFromBelow {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Cards */
+.services-box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  font-family:"Inter", sanserif;
+  padding:30px;
+}
+.fcard{
+  display:flex;
+  margin-top: auto;
+  flex-direction:column;
+  position: relative;
+  width:290px;
+  /* height:fit-content; */
+  background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
+  background:-webkit-linear-gradient(90deg,rgb(31,102,31),rgb(231,231,121));  
+  border-radius:10px;
+  margin:10px;  
+  align-self:stretch ;
+  flex: 1 1 21%;
+  opacity:0;
+  cursor: pointer;
+
+  transform: translateY(100px); 
+  animation: slideInFromBelow 0.8s ease-in-out forwards;
+  
+}
+
+.fcard-content {
+  padding: 10px; 
+}
+
+
+.fcard:hover{
+  box-shadow: 2px 2px rgb(185, 185, 106);
+}
+.article h2{
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-shadow: 1.5px 1px green;
+}
+
+.article p{
+  font-size: 12px;
+  color:rgb(255, 255, 199);
+}
+
+.agrblg{
+  height:290px;
+  width:100%;  
+  overflow:hidden;
+  object-fit:cover;  
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  filter: drop-shadow(0px 2px 2px #133813aa);
+}
+.article{
+  padding:22px;  
+  text-align:justify;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+a{
+  text-decoration:none;
+}
+.day{
+  display:flex; 
+  justify-content:space-between;
+}
+
+.day p{
+  color:rgb(230, 226, 226);
+}
+
 .portfolio {
   background-color: var(--second-color);
 }
