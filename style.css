@@ -101,9 +101,9 @@ section {
     cursor: default;
  }
  .navbar a {
-  position: relative;
+  /* position: relative; */
   font-size: 2rem;
-  left: 118px;
+  /* left: 118px; */
   color: var(--txt-color);
   margin-left: 4rem;
   transition: 0.3s;
