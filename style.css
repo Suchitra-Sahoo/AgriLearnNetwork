@@ -208,7 +208,7 @@ section {
   background: rgba(0, 42, 0, 0.441);
   border-radius: 50px;
   padding: 3vmax 3vmax 3vmax 3vmax; 
-  filter: blur(0.8px);
+  filter: blur(0.3px);
   width: 55%;
   height: 25vmax;
   font-size: 4vmax;
@@ -820,7 +820,7 @@ span {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100%;
+ 
 }
 a{
   text-decoration:none;
