@@ -79,11 +79,40 @@ const typed=new Typed('.multiple-text',{
     loop:true
 
 });
-const form = document.getElementById('contact-form');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+// const form = document.querySelectorAll('#submit-btn');
+
+// form.addEventListener('submit', (event) => {
+//   event.preventDefault();
 
   
-  form.reset();
-});
+//   form.reset();
+// });
+
+// search-bar feature
+
+function search(){
+let box=[...document.querySelectorAll(".services-box")]
+let val=document.getElementById('input');
+
+
+let filter=val.value.toUpperCase().trim();
+console.log(filter)
+console.log(box)
+
+for(let i=0;i<box.length;i++){
+  let component=box[i];
+  let h3=component.querySelector('h3');
+  let componentName=h3.textContent || h3.innerText;
+
+  if(componentName.toUpperCase().indexOf(filter)>-1){
+    component.classList.remove('hide')
+  }
+  else{
+    component.classList.add('hide')
+  }
+}
+}
+
+
+

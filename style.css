@@ -394,6 +394,33 @@ logoImg {
   color: var(--second-color);
 }
 
+/* search bar*/
+.search{
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ flex-direction: row;
+ 
+}
+#search-icon{
+  width: 45px;
+  border-radius: 6px;
+}
+#search-icon:hover{
+  cursor: pointer;
+}
+.search-bar{
+  margin: 10px;
+  padding: 5px;
+  width: 40%;
+  height: 40px;
+  /* border-radius: 10px; */
+}
+.hide{
+  display: none;
+}
+
 .contact h2
 {
   margin-bottom: 3rem;
