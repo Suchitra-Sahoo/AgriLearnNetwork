@@ -11,6 +11,26 @@
   font-family: "Playfair Display", serif;
 }
 
+/* Customizing the title */
+.swal-title {
+  color: #000000 !important; /* Change title color */
+}
+
+/* Customizing the text */
+.swal-text {
+  color: #000000 !important; /* Change text color */
+}
+
+/* Customizing the button */
+.swal-button {
+  background-color:#053314 !important; /* Change button background color */
+  color: #ffffff !important; /* Change button text color */
+}
+
+/* Customizing the button on hover */
+.swal-button:hover {
+  background-color:#0e4b16 !important; /* Change button hover background color */
+}
 :root {
   --bg-color: #053314;
   --second-color: #064b10;
