@@ -765,45 +765,19 @@ span {
   font-family:"Inter", sanserif;
   padding:30px;
 }
-.fcard{
-  display:flex;
-  margin-top: auto;
-  flex-direction:column;
-  position: relative;
-  width:290px;
-  /* height:fit-content; */
-  background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
-  background:-webkit-linear-gradient(90deg,rgb(31,102,31),rgb(231,231,121));  
-  border-radius:10px;
-  margin:10px;  
-  align-self:stretch ;
-  flex: 1 1 21%;
-  opacity:0;
-  cursor: pointer;
 
-  transform: translateY(100px); 
-  animation: slideInFromBelow 0.8s ease-in-out forwards;
-  
-}
 
 .fcard-content {
   padding: 10px; 
 }
 
 
-.fcard:hover{
-  box-shadow: 2px 2px rgb(185, 185, 106);
-}
-.article h2{
+.contnt h2{
   font-size: 22px;
   letter-spacing: 1px;
   text-shadow: 1.5px 1px green;
 }
 
-.article p{
-  font-size: 12px;
-  color:rgb(255, 255, 199);
-}
 
 .agrblg{
   height:290px;
@@ -814,7 +788,7 @@ span {
   border-top-right-radius:10px;
   filter: drop-shadow(0px 2px 2px #133813aa);
 }
-.article{
+.contnt{
   padding:22px;  
   text-align:justify;
   display: flex;
@@ -824,6 +798,8 @@ span {
 }
 a{
   text-decoration:none;
+  color: #89e607;
+  font-size: 20px;
 }
 .day{
   display:flex; 

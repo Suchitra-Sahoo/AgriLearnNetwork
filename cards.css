@@ -1,0 +1,77 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+
+.container
+{
+    position: relative;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    cursor:pointer;
+    
+}
+.container .card
+{
+    position: relative;
+    max-width: 300px;
+    height: 255px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    background: url("./images/OIP.jpg") ;
+}
+.container .card:hover
+{
+    height: 500px;
+}
+.container .card .imgbx
+{
+    position: relative;
+    top: -60px;
+    left: 10px;
+    z-index: 1;
+    box-shaow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    height:210px;
+    width:100%;  
+    overflow:hidden;
+    object-fit:cover;  
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    filter: drop-shadow(0px 2px 2px #133813aa);
+
+}
+.container .card .imgbx img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #c7d3c0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+    transition-delay: 0.3s;
+    font-size: 14.4px;
+}
