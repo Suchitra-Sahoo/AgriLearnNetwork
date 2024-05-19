@@ -92,7 +92,7 @@ section {
  section
  {
    min-height: 100vh;
-   padding: 10rem 9% 2rem;
+   padding: 100rem 9% 2rem;
  }
  .header
  {
@@ -122,10 +122,10 @@ section {
  }
  .navbar a {
   position: relative;
-  font-size: 2rem;
-  left: 118px;
+  font-size: 1.9rem;
+  left: 95px;
   color: var(--txt-color);
-  margin-left: 4rem;
+  margin-left: 1.5rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -1667,4 +1667,77 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-direction: column;
   }
 }
+.calculator {
+  padding: 110px 20px 20px; 
+}
+
+
+.calculator-container {
+  background: linear-gradient(135deg, #3c8554, #038617);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+.calculator-container h2 {
+  margin-bottom: 30px;
+  color:  #ffffff;
+  font-size: 28px;
+  font-weight: bolder;
+
+}
+
+.calculator-container .form-group {
+  margin-bottom: 20px;
+}
+
+.calculator-container label {
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bolder;
+
+}
+
+.calculator-container select,
+.calculator-container input[type="text"],
+.calculator-container input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid ;
+  background-color: #064b10;
+  color:#ffffff;
+  margin-top: 0.5rem;
+
+}
+
+.calculator-container button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #064b10;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight:bolder;
+  margin-left: 95px;
+}
+
+.calculator-container button:hover {
+  background-color: #216d2c;
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 20px;
+  color:#ffffff;
+  font-weight: bolder;
+}
+
 
