@@ -81,7 +81,7 @@ section {
    top: 0;
    left: 0;
    width:100%;
-   padding:2rem 7%;
+   padding:2rem 9%;
    background-color: var(--bg-color);
    display: flex;
    justify-content: space-between;
@@ -102,9 +102,8 @@ section {
  }
  .navbar a {
   position: relative;
-  font-size:1.7rem;
-  font-weight:bolder;
-  left: 20px;
+  font-size: 2rem;
+  left: 118px;
   color: var(--txt-color);
   margin-left: 4rem;
   transition: 0.3s;
@@ -382,17 +381,84 @@ span {
 .space {
   display: block;
 }
+
 .about {
+  position: relative;
+  height: 100vh; 
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 2rem;
-  background: var(--second-color);
+  justify-content: center;
+  overflow: hidden;
 }
 
-.about-img img {
+/*.about-img img {
   width: 35vw;
+}*/
+
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0,0.5);
+  z-index: 1;
+}
+
+.background-video{
+  filter: contrast(1.5) brightness(1.4);
+  z-index:0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-content {
+  color: white;
+  text-align: left;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+}
+
+.about-content .heading {
+  text-align: center;
+  font-size: 9rem;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.about-content .heading span {
+  font-size: 7rem; 
+}
+
 .heading {
   text-align: center;
   font-size: 4.5rem;
@@ -406,31 +472,83 @@ span {
   font-size: 2.6rem;
 }
 .about-content p {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
+  line-height: 1.6;
   margin: 2rem 0 3rem;
   text-align: justify;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-left: 30px;
 }
 
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column; 
+  }
+
+  .about-content .heading {
+    font-size: 2.5rem;
+  }
+
+  .about-content .heading span {
+    font-size: 2.5rem; 
+  }
+
+  .about-content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content .heading {
+    font-size: 2rem;
+  }
+
+  .about-content .heading span {
+    font-size: 2rem; 
+  }
+
+  .about-content p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content .heading {
+    font-size: 1.5rem;
+  }
+
+  .about-content .heading span {
+    font-size: 1.5rem; 
+  }
+
+  .about-content p {
+    font-size: 0.5rem;
+  }
+
+  .overlay {
+    padding: 10px;
+  }
+}
 
 .services h2 {
   margin-bottom: 5rem;
 }
 .services-container {
   display: flex;
-  justify-content: center;
+
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
   margin: 7px;
+  align-self:stretch ;
+  flex-basis: 100%;
+
 }
 
-.services-box {
-  height:400px;
-  width: 200px;
-  cursor: pointer;
+.services-container .services-box {
   flex: 1 1 30rem;
   background: var(--second-color);
   padding: 3rem 2rem 4rem;
@@ -452,6 +570,54 @@ span {
 .services-box h3 {
   font-size: 2.6rem;
 }
+.services-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+} */
+
+.services-container .services-box {
+  flex: 1 1 30rem;
+  background: var(--second-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid var(--bg-color);
+  transition: .5s ease;
+  position: relative;
+  overflow: hidden;
+  align-self:stretch ;
+
+
+}
+
+/* .services-container .services-box::before {
+  backdrop-filter: blur(10px); /* Apply blur effect to the background only */
+
+
+.services-container .services-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+  background-color: #064b10;
+
+}
+
+.services-box i {
+  font-size: 7rem;
+  color: var(--main-color);
+}
+
+.services-box h3 {
+  font-size: 2.6rem;
+  color:white;
+  text-shadow: #07421a;
+  text-shadow: 0 0 5px rgb(192, 223, 100);
+}
+
+.services-box h3:hover {
+  font-size: 2.6rem;
+  text-shadow: #07421a;
+}
+
 .services-box p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
@@ -1055,7 +1221,7 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 2rem 3%;
   }
 }
-  
+
 @media (max-width:1284px){
   .navbar a {
     display: inline;
@@ -1227,7 +1393,16 @@ input[type="number"]::-webkit-inner-spin-button {
    font-size: 2.2rem;
    font-weight: 700;
 }
+.slide_viewer {
+    display: block; /* Ensure the slide viewer is visible on smaller screens */
+  }
 }
+
+
+
+
+
+
 
 @media (max-width: 365px) {
   .home-img {
@@ -1459,76 +1634,3 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-
-.calculator {
-  padding: 110px 20px 20px; 
-}
-
-
-.calculator-container {
-  background: linear-gradient(135deg, #3c8554, #038617);
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-
-.calculator-container h2 {
-  margin-bottom: 30px;
-  color:  #ffffff;
-  font-size: 28px;
-  font-weight: bolder;
-
-}
-
-.calculator-container .form-group {
-  margin-bottom: 20px;
-}
-
-.calculator-container label {
-  display: block;
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: bolder;
-
-}
-
-.calculator-container select,
-.calculator-container input[type="text"],
-.calculator-container input[type="number"] {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid ;
-  background-color: #064b10;
-  color:#ffffff;
-  margin-top: 0.5rem;
-
-}
-
-.calculator-container button {
-  padding: 12px 24px;
-  font-size: 18px;
-  background-color: #064b10;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-weight:bolder;
-  margin-left: 95px;
-}
-
-.calculator-container button:hover {
-  background-color: #216d2c;
-}
-
-#result {
-  font-size: 20px;
-  margin-top: 20px;
-  color:#ffffff;
-  font-weight: bolder;
-}
