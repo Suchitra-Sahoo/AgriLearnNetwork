@@ -927,8 +927,21 @@ a{
 .portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
-.portfolio-layer h4 {
+.portfolio-box h4 {
   font-size: 3rem;
+  
+}
+.portfolio-heading {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .portfolio-layer p {
@@ -937,6 +950,7 @@ a{
 }
 
 .portfolio-layer a {
+  position: absolute;
   display: inline-flex;
   justify-content: center;
   align-items: center;
