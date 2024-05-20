@@ -10,10 +10,31 @@
   scroll-behavior: smooth;
   font-family: "Playfair Display", serif;
 }
+
 #changemode{
   cursor: pointer;
   width:30px;
   height:30px;
+
+/* Customizing the title */
+.swal-title {
+  color: #000000 !important; /* Change title color */
+}
+
+/* Customizing the text */
+.swal-text {
+  color: #000000 !important; /* Change text color */
+}
+
+/* Customizing the button */
+.swal-button {
+  background-color:#053314 !important; /* Change button background color */
+  color: #ffffff !important; /* Change button text color */
+}
+
+/* Customizing the button on hover */
+.swal-button:hover {
+  background-color:#0e4b16 !important; /* Change button hover background color */
 }
 :root {
   --primary-color: #053314;
@@ -123,9 +144,9 @@ section {
     cursor: default;
  }
  .navbar a {
-  position: relative;
+  /* position: relative; */
   font-size: 2rem;
-  left: 118px;
+  /* left: 118px; */
   color: var(--txt-color);
   margin-left: 4rem;
   transition: 0.3s;
@@ -949,8 +970,21 @@ a{
 .portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
-.portfolio-layer h4 {
+.portfolio-box h4 {
   font-size: 3rem;
+  
+}
+.portfolio-heading {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .portfolio-layer p {
@@ -959,6 +993,7 @@ a{
 }
 
 .portfolio-layer a {
+  position: absolute;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1214,7 +1249,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: var(--second-color);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   html {
     font-size: 55%;
   }
@@ -1244,18 +1279,13 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-@media (max-width:1284px){
-  .navbar a {
-    display: inline;
-    font-size: 1.8vmax;
-    margin: 1.2rem 9.3rem 2.2rem;
-    margin-left: 0.8vmax;
-  }
-  .navbar a i {
-    margin-right: 4vmax;
-  }
-}
+
+
+
 @media (max-width: 1216px) {
+  .about-content {
+    flex-direction: column; 
+  }
   .logo {
     font-size: 2.6vmax;
   }
