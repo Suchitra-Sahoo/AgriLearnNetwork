@@ -10,19 +10,40 @@
   scroll-behavior: smooth;
   font-family: "Playfair Display", serif;
 }
-
-:root {
-  --bg-color: #053314;
-  --second-color: #064b10;
-  --txt-color: #fff;
-  --main-color: rgb(192, 223, 100);
+#changemode{
+  cursor: pointer;
+  width:30px;
+  height:30px;
 }
-
+:root {
+  --primary-color: #053314;
+  --secondary-color: #064b10;
+  --txt-color: #fff;
+  --main-color: rgb(150, 249, 117);
+  --contact-color:rgb(174, 207, 156);
+  --contact-text:#053314;
+}
+.light-theme{
+  --primary-color: #e6f7e6;
+  --secondary-color: #204826;
+  --txt-color: #053314;
+  --main-color: rgb(189, 137, 64);
+  --contact-color:rgb(174, 207, 156);
+  --contact-text:#070807;
+  
+}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-
+nav ul{
+  flex:1;
+  text-align: right;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+}
 body {
   background-color: var(--bg-color);
   color: var(--txt-color);
@@ -42,9 +63,10 @@ section {
   position: fixed;
   top: 0;
   left: 0;
+  margin-left: 0px;
   width: 100%;
   padding: 2rem 5%;
-  background-color: var(--bg-color);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +104,7 @@ section {
    left: 0;
    width:100%;
    padding:2rem 9%;
-   background-color: var(--bg-color);
+   background-color: var(--primary-color);
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -205,7 +227,7 @@ section {
   position: absolute;
   top: 30%;
   left: 25.0%;
-  background: rgba(0, 42, 0, 0.441);
+  background: var(--primary-color);
   border-radius: 50px;
   padding: 3vmax 3vmax 3vmax 3vmax; 
   filter: blur(0.8px);
@@ -300,7 +322,7 @@ span {
 }
 .socialIcons a:hover {
   background: var(--main-color);
-  color: var(--second-color);
+  color: var(--secondary-color);
   box-shadow: 0 0 1rem var(--main-color);
 }
 
@@ -311,7 +333,7 @@ span {
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
-  color: var(--second-color);
+  color: var(--secondary-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5sec ease;
@@ -350,7 +372,7 @@ span {
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
-  color: var(--second-color);
+  color: var(--secondary-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5sec ease;
@@ -366,7 +388,7 @@ span {
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
-  color: var(--second-color);
+  color: var(--secondary-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5sec ease;
@@ -550,11 +572,11 @@ span {
 
 .services-container .services-box {
   flex: 1 1 30rem;
-  background: var(--second-color);
+  background: var(--secondary-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.2rem solid var(--bg-color);
+  border: 0.2rem solid var(--primary-color);
   transition: 0.5s ease;
 }
  .services-box:hover {
@@ -577,11 +599,11 @@ span {
 
 .services-container .services-box {
   flex: 1 1 30rem;
-  background: var(--second-color);
+  background: var(--secondary-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: .2rem solid var(--bg-color);
+  border: .2rem solid var(--primary-color);
   transition: .5s ease;
   position: relative;
   overflow: hidden;
@@ -597,7 +619,7 @@ span {
 .services-container .services-box:hover {
   border-color: var(--main-color);
   transform: scale(1.02);
-  background-color: #064b10;
+  background-color: var(--secondary-color);
 
 }
 
@@ -872,7 +894,7 @@ a{
 }
 
 .portfolio {
-  background-color: var(--second-color);
+  background-color: var(--secondary-color);
 }
 .portfolio h2 {
   margin-bottom: 4rem;
@@ -888,7 +910,7 @@ a{
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--bg-color);
+  box-shadow: 0 0 1rem var(--primary-color);
   overflow: hidden;
   display: flex;
 }
@@ -948,7 +970,7 @@ a{
 
 .portfolio-layer a i {
   font-size: 2rem;
-  color: var(--second-color);
+  color: var(--secondary-color);
 }
 
 .contact h2 {
@@ -972,17 +994,17 @@ a{
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: rgb(206, 255, 206);
-  background: var(--second-color);
+  color: black;
+  background: var(--secondary-color);
   border-radius: 0.8rem;
   margin: 0.7rem 0;
   border-radius: 20px;
-  background: #053314;
-  box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #07421a;
+  background: var(--contact-color); 
+  /* box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #07421a; */
 }
 .contact form .input-box input::placeholder,
 .contact form textarea::placeholder {
-  color: rgb(206, 255, 206);
+  color: var(--contact-text);
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -1005,7 +1027,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   border-radius: 20px;
   color:yellowgreen;
-  background-color: #053314;
+  background-color: var(--primary-color);
   margin-top: 0;
   display: block; 
   margin-top: 10px;
@@ -1108,7 +1130,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-content button[type="submit"]:hover {
-  background-color:#053314;
+  background-color:var(--primary-color);
 }
 
 .modal-content button[type="submit"]:focus {
@@ -1247,7 +1269,7 @@ input[type="number"]::-webkit-inner-spin-button {
     left: 0;
     width: 100%;
     padding: 1rem 1%;
-    background: var(--bg-color);
+    background: var(--primary-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
@@ -1462,7 +1484,7 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: center;
 }
 .socialIcons i {
-  color: var(--second-color);
+  color: var(--secondary-color);
 
   font-size: 22px;
   /* margin-left:25px;
@@ -1562,7 +1584,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .footer-iconTop a i {
   font-size: 2.4rem;
-  color: var(--second-color);
+  color: var(--secondary-color);
 }
 .socialIcons {
   display: flex;
@@ -1607,11 +1629,11 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s ease;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .quick-links a:hover {
-  color: #f0f0f0; /* Change color on hover */
+  color: #bafb86; /* Change color on hover */
   text-decoration: underline;
 }
 
