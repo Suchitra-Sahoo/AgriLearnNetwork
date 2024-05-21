@@ -176,7 +176,7 @@ form.addEventListener('submit', (event) => {
   
   reviewBtn.onclick = function(e) {
     e.preventDefault();
-      modal.style.display = "block";
+      modal.style.display = "flex";
   }
   
   
