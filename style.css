@@ -11,11 +11,6 @@
   font-family: "Playfair Display", serif;
 }
 
-#changemode{
-  cursor: pointer;
-  width:30px;
-  height:30px;
-
 /* Customizing the title */
 .swal-title {
   color: #000000 !important; /* Change title color */
@@ -36,6 +31,13 @@
 .swal-button:hover {
   background-color:#0e4b16 !important; /* Change button hover background color */
 }
+
+#changemode{
+  cursor: pointer;
+  width:30px;
+  height:30px;
+}
+
 :root {
   --primary-color: #053314;
   --secondary-color: #064b10;
@@ -43,6 +45,7 @@
   --main-color: rgb(150, 249, 117);
   --contact-color:rgb(174, 207, 156);
   --contact-text:#053314;
+  --head-text:#053314;
 }
 .light-theme{
   --primary-color: #e6f7e6;
@@ -51,6 +54,7 @@
   --main-color: rgb(189, 137, 64);
   --contact-color:rgb(174, 207, 156);
   --contact-text:#070807;
+  --head-text:#053314;
   
 }
 html {
@@ -505,8 +509,8 @@ span {
 .heading {
   text-align: center;
   font-size: 4.5rem;
+  color:var(--head-text)
 }
-
 .about-content h2 {
   text-align: left;
   line-height: 1.2;
