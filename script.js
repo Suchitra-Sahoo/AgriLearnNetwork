@@ -61,7 +61,12 @@ $('a[href*="#"]')
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
+
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+
+=======
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      
 
       if (target.length) {
         event.preventDefault();
@@ -85,8 +90,9 @@ $('a[href*="#"]')
     }
   });
 
-//when scroll on any section that section's corresponding hyperlink will be active and
+// When scroll on any section that section's corresponding hyperlink will be active and
 // the previous activated hyperlink will be deactivated
+
 $("section[id]").mouseover(function () {
   var sectionId = $(this).attr("id");
   var correspondingLink = $('a[href="#' + sectionId + '"]');
@@ -94,6 +100,15 @@ $("section[id]").mouseover(function () {
   $("a").removeClass("active");
   // Add active class to the corresponding link
   correspondingLink.addClass("active");
+
+$('section[id]').mouseover(function() {
+  var sectionId = $(this).attr('id');
+  var correspondingLink = $('a[href="#' + sectionId + '"]');
+  // Remove active class from all links
+  $('a').removeClass('active');
+  // Add active class to the corresponding link
+  correspondingLink.addClass('active');
+
 });
 
 // Set initial active link based on URL hash
@@ -253,6 +268,7 @@ form.addEventListener("submit", (event) => {
 
   const ratingStars = [...document.getElementsByClassName("rating__star")];
 
+
   function executeRating(stars) {
     const starClassActive = "rating__star fas fa-star";
     const starClassInactive = "rating__star far fa-star";
@@ -272,3 +288,26 @@ form.addEventListener("submit", (event) => {
   }
   executeRating(ratingStars);
 })();
+=======
+function executeRating(stars) {
+  const starClassActive = "rating__star fas fa-star";
+  const starClassInactive = "rating__star far fa-star";
+  const starsLength = stars.length;
+  let i;
+  stars.map((star) => {
+    star.onclick = () => {
+      i = stars.indexOf(star);
+
+      if (star.className===starClassInactive) {
+        for (i; i >= 0; --i) stars[i].className = starClassActive;
+      } else {
+        for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
+      }
+    };
+  });
+}
+executeRating(ratingStars);
+  
+ 
+})();
+
