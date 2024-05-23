@@ -1,0 +1,47 @@
+body {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  background-size: cover;
+  width: 80%;
+  /*border: 20px solid ;*/
+  font-family: sans-serif;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.blog {
+  margin-bottom: 20px;
+}
+
+.date {
+  color: black;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.paragraph {
+  border-left: 5px solid #f3cfb2;
+  padding-left: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+}
+img {
+  max-width: 320px;
+  border: #e2d1c3;
+  float: right;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+li {
+  font-weight: 400;
+  margin: 6px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
