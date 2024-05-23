@@ -258,10 +258,13 @@ executeRating(ratingStars);
       if(componentName.toUpperCase().indexOf(filter)>-1){
         console.log(`Showing card ${i}: ${componentName}`);
         component.style.display="flex";
+      
+       
       }
       else{
         console.log(`Hiding card ${i}: ${componentName}`);
         component.style.display="none";
+       
       }
     }
     }

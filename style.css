@@ -792,12 +792,14 @@ span {
   font-family:"Inter", sanserif;
   padding:30px;
 }
+
 .fcard{
   display:flex;
   margin-top: auto;
   flex-direction:column;
   position: relative;
-  width:290px;
+  max-width:290px;
+  max-height:500px;
   /* height:fit-content; */
   background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
   background:-webkit-linear-gradient(90deg,rgb(31,102,31),rgb(231,231,121));  
@@ -823,7 +825,7 @@ span {
 }
 .article h2{
   font-size: 22px;
-  letter-spacing: 1px;
+  letter-spacing: 1px; 
   text-shadow: 1.5px 1px green;
 }
 
