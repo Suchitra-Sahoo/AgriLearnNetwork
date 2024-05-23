@@ -2,6 +2,41 @@ let menuIcon = document.querySelectorAll('#menu-icon');
 let navbar = document.querySelectorAll('.navbar');
 let Contact = document.querySelectorAll('#contact');
 let navContact = document.querySelectorAll('#nav--contact');
+// Dark mode toggle functionality
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+const header = document.querySelector('.header');
+// const navbar = document.querySelector('.navbar');
+const footer = document.querySelector('.footer');
+
+// Load dark mode state from localStorage
+if (localStorage.getItem('darkMode') === 'enabled') {
+  enableDarkMode();
+}
+
+darkModeToggle.addEventListener('change', () => {
+  if (darkModeToggle.checked) {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
+
+function enableDarkMode() {
+  body.classList.add('dark-mode');
+  header.classList.add('dark-mode');
+  navbar.classList.add('dark-mode');
+  footer.classList.add('dark-mode');
+  localStorage.setItem('darkMode', 'enabled');
+}
+
+function disableDarkMode() {
+  body.classList.remove('dark-mode');
+  header.classList.remove('dark-mode');
+  navbar.classList.remove('dark-mode');
+  footer.classList.remove('dark-mode');
+  localStorage.setItem('darkMode', 'disabled');
+}
 
 menuIcon.forEach(icon => {
   icon.onclick = () => {

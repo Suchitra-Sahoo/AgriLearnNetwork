@@ -10,6 +10,164 @@
   scroll-behavior: smooth;
   font-family: "Playfair Display", serif;
 }
+/* General styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff; /* Adjust as necessary */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add space between links */
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push toggle to the right */
+}
+
+.dark-mode-checkbox {
+  display: none; /* Hide the actual checkbox */
+}
+
+.dark-mode-label {
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dark-mode-ball {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  transition: transform 0.3s;
+}
+
+.dark-mode-checkbox:checked + .dark-mode-label {
+  background-color: #666;
+}
+
+.dark-mode-checkbox:checked + .dark-mode-label .dark-mode-ball {
+  transform: translateX(25px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.header.dark-mode,
+.navbar.dark-mode,
+.footer.dark-mode {
+  background-color: #1e1e1e;
+}
+
+.header.dark-mode a,
+.navbar.dark-mode a,
+.footer.dark-mode a {
+  color: #ffffff;
+}
+
+/* Add other dark mode styles for elements */
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.header.dark-mode,
+.navbar.dark-mode,
+.footer.dark-mode {
+  background-color: #1e1e1e;
+}
+
+.header.dark-mode a,
+.navbar.dark-mode a,
+.footer.dark-mode a {
+  color: #ffffff;
+}
+/* Styles for the dark mode toggle switch */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Adjust as needed to align with other elements */
+}
+
+.dark-mode-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.dark-mode-label {
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dark-mode-ball {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  transition: transform 0.3s;
+}
+
+.dark-mode-checkbox:checked + .dark-mode-label {
+  background-color: #666;
+}
+
+.dark-mode-checkbox:checked + .dark-mode-label .dark-mode-ball {
+  transform: translateX(25px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.header.dark-mode,
+.navbar.dark-mode,
+.footer.dark-mode {
+  background-color: #1e1e1e;
+}
+
+.header.dark-mode a,
+.navbar.dark-mode a,
+.footer.dark-mode a {
+  color: #ffffff;
+}
+
+/* Add other dark mode styles for elements */
+
+/* Add other dark mode styles for elements */
 
 /* Customizing the title */
 .swal-title {
