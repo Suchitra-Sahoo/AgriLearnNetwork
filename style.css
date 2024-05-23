@@ -1455,7 +1455,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .quick-links {
  text-align: center;
- width: 50vw;
+ width: 45vw;
  padding: 20px;
  p{
   font-weight: bold;
@@ -1463,13 +1463,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .quick-links h2 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 15px;
 }
 
 .quick-links ul {
   list-style-type: none;
-  padding: 0;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
