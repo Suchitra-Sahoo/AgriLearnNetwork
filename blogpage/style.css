@@ -24,7 +24,11 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
+  background-image: url("/blogpage/backgroundimg.avif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
   color: var(--txt-color);
 }
 body::-webkit-scrollbar {
@@ -43,9 +47,30 @@ section {
   padding: 10rem 9% 2rem;
 }
 
-.heading {
+.navbar {
+  padding: 20px;
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 3rem;
+  background-color: aliceblue;
+  width: 100%;
+  background: var(--bg-color);
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: left;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span {
+  color: var(--main-color);
+}
+.addblog {
+  color: azure;
 }
 
 .services-container .services-box {
