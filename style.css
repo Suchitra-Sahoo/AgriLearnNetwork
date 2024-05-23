@@ -566,6 +566,11 @@ span {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
 }
+.more-blogs {
+  float: right;
+  font-size: medium;
+  color: white;
+}
 
 .with-blur-backdrop {
   background-color: none;
