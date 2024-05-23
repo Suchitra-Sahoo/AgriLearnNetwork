@@ -155,6 +155,7 @@ section {
   font-size: 3.6rem;
   color: var(--txt-color);
   display: none;
+  cursor: pointer;
 }
 
 /* .home {
@@ -1121,19 +1122,19 @@ input[type="number"]::-webkit-inner-spin-button {
     top: 100%;
     left: 0;
     width: 100%;
+    height: 0;
     padding: 1rem 1%;
     background: var(--bg-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    display: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);   
+    overflow: hidden;
+    transition:height 0.3s ease-in-out ; 
   }
 
-  .navbar :active {
-    display: block;
-  }
+
   .navbar a {
     display: block;
-    font-size: 2.8vmax;
+    font-size: 20px;
     margin: 3rem 0;
     margin-left: 8vmax;
   }
