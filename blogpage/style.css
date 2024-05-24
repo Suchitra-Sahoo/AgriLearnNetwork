@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background-image: url("/blogpage/backgroundimg.avif");
+  background-image: url("/blogpage/bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
