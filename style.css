@@ -843,7 +843,7 @@ a {
 
 .contact form .input-box input,
 .contact form textarea {
-  width: 100%;
+  width: 40%;
   padding: 1.5rem;
   font-size: 1.6rem;
   color: rgb(206, 255, 206);
@@ -873,9 +873,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+  align-self: left;
 }
 
-#review-btn{
+#review-btn {
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -884,16 +885,19 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  
-  
-
+  display: inline-block; /* Ensure it behaves like a button */
 }
-#review-btn:hover{
+
+#review-btn:hover {
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(183, 253, 6, 0.1); 
   background-color: #FF6347;
 }
 
+.button-container {
+  text-align: left; /* Ensure the container aligns its children to the left */
+  margin-top: 10px;
+}
 
 /* Modal styles */
 .modal {
