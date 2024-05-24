@@ -36,7 +36,6 @@
       <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
       <a href="#about"><i class="fa-solid fa-circle-info"></i>  About</a>
       <a href="#Farm Management"> <i class="fa-solid fa-blog"></i>  Blogs</a>
-      <a href="#Expert Guidance"> <i class="fa-solid fa-users"></i> Experts</a>
       <a href="#Resource Library"><i class="fa-solid fa-book"></i>  Resource Library</a>
       <a href="#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
 
@@ -292,45 +291,6 @@
 
 
 </section>
-   
-<!-- Experts Guidance -->
-<section class="experts" id="Expert Guidance">
-  <h2 class="heading">Expert<span> Guidance</span></h2>
-  <h3 class="expert-h3"> Expert guidance and advice from agricultural specialists and experienced farmers. </h3>
-  <div class="topic-buttons">
-    <button class="topic-button">Crop Selection</button>
-    <button class="topic-button">Soil Health</button>
-    <button class="topic-button">Pest Management</button>
-    <button class="topic-button">Irrigation Techniques</button>
-    <button class="topic-button">Livestock Care</button>
-  </div>
-  
-  <div class="expert-section">
-    <div class="expert-card">
-        <img src="images/expert1.jpg" alt="expert Image 1">
-        <h3>Crop Selection</h3>
-        <p>Choosing the right crops for your soil type and climate can significantly impact your farm's productivity. Learn how to select crops that will thrive in your conditions.</p>
-    </div>
-    <div class="expert-card">
-        <img src="images/expert2.jpg" alt="expert Image 2">
-        <h3>Soil Health </h3>
-        <p>Maintaining soil health is crucial for sustainable farming. Discover techniques for enhancing soil fertility and structure to promote robust crop growth.</p>
-    </div>
-    <div class="expert-card">
-        <img src="images/expert3.jpg" alt="expert Image 3">
-        <h3>Pest Management</h3>
-        <p>Effective pest management strategies can protect your crops from damage. Learn about integrated pest management practices that minimize the use of chemicals.</p>
-    </div>
-    <div class="expert-card">
-        <img src="images/expert4.jpg" alt="expert Image 4">
-        <h3>Irrigation Techniques </h3>
-        <p>Efficient irrigation is key to conserving water and ensuring crops receive adequate moisture. Explore various irrigation methods to optimize water use on your farm.</p>
-    </div>
-  </div>
-  <div class="view-more-container">
-    <button class="view-more-button">View More</button>
-  </div>
-</section>
 
 
 <section class="resource" id="Resource Library">
@@ -560,39 +520,6 @@ const mobileNumberInput = document.getElementById('mobileNumber');
       }
       v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
   })(document, 'script');
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-  const topicButtons = document.querySelectorAll(".topic-button");
-  const expertCards = document.querySelectorAll(".expert-card");
-
-  // Add click event listeners to each topic button
-  topicButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      const selectedTopic = button.textContent.trim();
-      
-      // Change background color of clicked button
-      topicButtons.forEach(btn => {
-        btn.classList.remove("active");
-      });
-      button.classList.add("active");
-
-      // Hide all cards
-      expertCards.forEach(card => {
-        card.style.display = "none";
-      });
-      // Show cards with matching topic
-      expertCards.forEach(card => {
-        const cardTopic = card.querySelector("h3").textContent.trim();
-        if (cardTopic === selectedTopic) {
-          card.style.display = "block";
-        }
-      });
-    });
-  });
-});
-
 </script>
 </body>
 
