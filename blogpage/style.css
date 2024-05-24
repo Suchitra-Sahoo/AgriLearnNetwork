@@ -47,10 +47,10 @@ section {
   padding: 10rem 9% 2rem;
 }
 
-.navbar {
+.heading {
   padding: 20px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   background-color: aliceblue;
   width: 100%;
   background: var(--bg-color);
@@ -62,9 +62,7 @@ section {
   top: 0;
   left: 0;
   z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 span {
   color: var(--main-color);
