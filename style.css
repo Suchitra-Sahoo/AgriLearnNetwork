@@ -742,19 +742,17 @@ a {
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.portfolio-container .portfolio-box {
+.portfolio-box {
   position: relative;
-  border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
-  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
-
 .portfolio-box img {
   width: 407px;
   height: 300px;
@@ -786,8 +784,8 @@ a {
   text-shadow: var(--second-color) 1px 0 10px;
 }
 
-.portfolio-box:hover .portfolio-layer {
-  transform: translateY(0);
+.portfolio-box:hover {
+  transform: translateY(-5px);
 }
 .portfolio-box h4 {
   font-size: 3rem;
@@ -832,11 +830,11 @@ a {
 }
 
 .contact form {
-  max-width: 70rem;
-  margin: 1rem auto;
-  text-align: center;
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .contact form .input-box {
   display: flex;
   justify-content: space-between;
@@ -878,16 +876,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 #review-btn{
+  padding: 12px 20px;
   border: none;
-  border-radius: 20px;
-  color:yellowgreen;
-  background-color: #053314;
-  margin-top: 0;
-  display: block; 
-  margin-top: 10px;
-  margin-left: 20px;
-  text-decoration: underline;
-  font-size: 14px;
+  border-radius: 5px;
+  background-color: #FFA07A;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   
   
 
@@ -895,6 +891,7 @@ input[type="number"]::-webkit-inner-spin-button {
 #review-btn:hover{
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(183, 253, 6, 0.1); 
+  background-color: #FF6347;
 }
 
 
