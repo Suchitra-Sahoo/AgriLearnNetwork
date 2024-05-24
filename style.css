@@ -900,8 +900,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Modal styles */
 .modal {
-  display: none;
-  flex-direction: row;
+  
+  display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
@@ -915,15 +916,23 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+
 .modal-content {
   background-color: #ffffff;
   margin: 10% auto;
   padding: 30px;
   border-radius: 10px;
-  width: 70%;
+  height: 100%;
+  width: 100%;
   max-width: 500px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  
+/* Background image styles */
+  background-image: url('image.jpg');
+  background-size: cover; /* Ensures the image covers the entire modal */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  position: relative; /* Ensure proper stacking contex */
+
 }
 
 .close {
@@ -957,13 +966,17 @@ input[type="number"]::-webkit-inner-spin-button {
 .modal-content input[type="email"],
 .modal-content textarea {
   width: 100%;
-  padding: 12px;
+  padding: 10px ;
+  height: 4%;
+  width: 100%;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1vw;
+  border: none;
+  background-color: rgb(238, 236, 236);
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 16px;
-  max-width: 100%;
+  border-bottom: 2px solid black;
 }
 
 .modal-content input[type="text"]:focus,
@@ -974,17 +987,19 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-content button[type="submit"] {
-  background-color:#0e4b16;
-  color: white;
-  padding: 12px 20px;
-  justify-content: center;
-  border: none;
-  border-radius: 5px;
+  padding: 10px;
+  height: 15%;
+  width: 50%;
+  margin-top: 10px;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  font-size: 1.2vw;
+  border-radius: 15px;
+  color: aliceblue;
+  border: none;
+  background-color: rgb(20, 138, 55);
+  text-align: center;
   display: block;
-  margin: auto;
+  margin-left: 30%;
 }
 
 .modal-content button[type="submit"]:hover {

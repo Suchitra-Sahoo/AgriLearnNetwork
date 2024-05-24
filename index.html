@@ -402,16 +402,17 @@
 <!-- Modal  -->
 <div id="modal" class="modal">
   <div class="modal-content">
+    <div class="left-content">
       <span class="close">&times;</span>
       <h2>Feedback Form</h2>
       <form id="feedback-form">
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email Address" required>
-          <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+          <input type="text" placeholder="Enter Name" name="name" required>
+          <input type="email" placeholder="Enter Email" required>
+          <textarea cols="30" rows="5" placeholder=" Elaborate your Feedback" required></textarea>
           
             
             <div class="rating">
-              <h2>rate us:</h2>
+              <h2>Rate us:</h2>
               <i class="rating__star far fa-star"></i>
               <i class="rating__star far fa-star"></i>
               <i class="rating__star far fa-star"></i>
@@ -420,8 +421,10 @@
         </div>
             
         
-        <button type="submit">Submit Feedback</button>
+        <button type="submit">Submit</button>
     </form>
+</div>
+<div class="right-content"></div>
 </div>
 </div>
 
