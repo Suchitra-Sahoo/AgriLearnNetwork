@@ -492,7 +492,7 @@ span {
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 80%;
+  width: 90%;
 }
 
 .about-content .heading {
@@ -535,29 +535,29 @@ span {
   }
 
   .about-content .heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .about-content .heading span {
-    font-size: 2.5rem; 
+    font-size: 4rem; 
   }
 
   .about-content p {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .about-content .heading {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .about-content .heading span {
-    font-size: 2rem; 
+    font-size: 4rem; 
   }
 
   .about-content p {
-    font-size: 0.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -567,11 +567,11 @@ span {
   }
 
   .about-content .heading span {
-    font-size: 1.5rem; 
+    font-size: 2rem; 
   }
 
   .about-content p {
-    font-size: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .overlay {
@@ -579,9 +579,14 @@ span {
   }
 }
 
+
 .services h2 {
   margin-bottom: 5rem;
 }
+
+
+
+
 .services-container {
   display: flex;
 
