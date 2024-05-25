@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriLearn Network</title>
+  <style>
+    .h2{
+        color: #08671a;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color:#08671a;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .newsletter {
+      text-align: center;
+      padding: 20px;
+      background-color:#ffffff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(178, 174, 174, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    .newsletter h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    .newsletter form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #08671a;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .newsletter button:hover {
+      background-color: #ffffff;
+      color: #08671a;
+
+    }
+    #response-message {
+      margin-top: 10px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <section class="newsletter" id="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <form action="subscribe.html" id="newsletter-form" method="post">
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+    <p id="response-message" style="display:none;"></p>
+  </section>
+  <script>
+    document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var email = document.getElementById('email').value;
+      var responseMessage = document.getElementById('response-message');
+
+      // Here, you would typically send the email to your server or a service like Mailchimp
+      // For demonstration, we are just showing a success message
+      responseMessage.style.display = 'block';
+      responseMessage.textContent = 'Thank you for subscribing!';
+
+      // Clear the form
+      document.getElementById('email').value = '';
+    });
+  </script>
+</body>
+</html>
