@@ -252,14 +252,14 @@ section {
   position: absolute;
   top: 30%;
   left: 25.0%;
-  background: #053314;
+  background: rgba(0, 42, 0, 0.441);
   border-radius: 50px;
   padding: 3vmax 3vmax 3vmax 3vmax; 
   filter: blur(0.8px);
   width: 55%;
   height: 25vmax;
   font-size: 4vmax;
-  opacity: 0.8;
+  /* opacity: 0.4; */
   color: white;
 }
 
