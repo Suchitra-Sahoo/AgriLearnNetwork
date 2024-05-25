@@ -9,7 +9,7 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css" />
   
-  <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
@@ -18,548 +18,386 @@
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
     crossorigin="anonymous"></script>
-    <link rel="icon" href="./agriculture-icon-png-2804.png" type="'image/png">
-    <style>
-      .preloader {
-		  position: fixed;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  background: black; 
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		  z-index: 9999; /* Ensure the preloader is above all other content */
-		}
-      .wheel-and-hamster {
-  --dur: 1s;
-  position: relative;
-  width: 12em;
-  height: 12em;
-  font-size: 14px;
-}
 
-.wheel,
-.hamster,
-.hamster div,
-.spoke {
-  position: absolute;
-}
-
-.wheel,
-.spoke {
-  border-radius: 50%;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.wheel {
-  background: radial-gradient(100% 100% at center,hsla(0,0%,60%,0) 47.8%,hsl(0,0%,60%) 48%);
-  z-index: 2;
-}
-
-.hamster {
-  animation: hamster var(--dur) ease-in-out infinite;
-  top: 50%;
-  left: calc(50% - 3.5em);
-  width: 7em;
-  height: 3.75em;
-  transform: rotate(4deg) translate(-0.8em,1.85em);
-  transform-origin: 50% 0;
-  z-index: 1;
-}
-
-.hamster__head {
-  animation: hamsterHead var(--dur) ease-in-out infinite;
-  background: hsl(30,90%,55%);
-  border-radius: 70% 30% 0 100% / 40% 25% 25% 60%;
-  box-shadow: 0 -0.25em 0 hsl(30,90%,80%) inset,
-		0.75em -1.55em 0 hsl(30,90%,90%) inset;
-  top: 0;
-  left: -2em;
-  width: 2.75em;
-  height: 2.5em;
-  transform-origin: 100% 50%;
-}
-
-.hamster__ear {
-  animation: hamsterEar var(--dur) ease-in-out infinite;
-  background: hsl(0,90%,85%);
-  border-radius: 50%;
-  box-shadow: -0.25em 0 hsl(30,90%,55%) inset;
-  top: -0.25em;
-  right: -0.25em;
-  width: 0.75em;
-  height: 0.75em;
-  transform-origin: 50% 75%;
-}
-
-.hamster__eye {
-  animation: hamsterEye var(--dur) linear infinite;
-  background-color: hsl(0,0%,0%);
-  border-radius: 50%;
-  top: 0.375em;
-  left: 1.25em;
-  width: 0.5em;
-  height: 0.5em;
-}
-
-.hamster__nose {
-  background: hsl(0,90%,75%);
-  border-radius: 35% 65% 85% 15% / 70% 50% 50% 30%;
-  top: 0.75em;
-  left: 0;
-  width: 0.2em;
-  height: 0.25em;
-}
-
-.hamster__body {
-  animation: hamsterBody var(--dur) ease-in-out infinite;
-  background: hsl(30,90%,90%);
-  border-radius: 50% 30% 50% 30% / 15% 60% 40% 40%;
-  box-shadow: 0.1em 0.75em 0 hsl(30,90%,55%) inset,
-		0.15em -0.5em 0 hsl(30,90%,80%) inset;
-  top: 0.25em;
-  left: 2em;
-  width: 4.5em;
-  height: 3em;
-  transform-origin: 17% 50%;
-  transform-style: preserve-3d;
-}
-
-.hamster__limb--fr,
-.hamster__limb--fl {
-  clip-path: polygon(0 0,100% 0,70% 80%,60% 100%,0% 100%,40% 80%);
-  top: 2em;
-  left: 0.5em;
-  width: 1em;
-  height: 1.5em;
-  transform-origin: 50% 0;
-}
-
-.hamster__limb--fr {
-  animation: hamsterFRLimb var(--dur) linear infinite;
-  background: linear-gradient(hsl(30,90%,80%) 80%,hsl(0,90%,75%) 80%);
-  transform: rotate(15deg) translateZ(-1px);
-}
-
-.hamster__limb--fl {
-  animation: hamsterFLLimb var(--dur) linear infinite;
-  background: linear-gradient(hsl(30,90%,90%) 80%,hsl(0,90%,85%) 80%);
-  transform: rotate(15deg);
-}
-
-.hamster__limb--br,
-.hamster__limb--bl {
-  border-radius: 0.75em 0.75em 0 0;
-  clip-path: polygon(0 0,100% 0,100% 30%,70% 90%,70% 100%,30% 100%,40% 90%,0% 30%);
-  top: 1em;
-  left: 2.8em;
-  width: 1.5em;
-  height: 2.5em;
-  transform-origin: 50% 30%;
-}
-
-.hamster__limb--br {
-  animation: hamsterBRLimb var(--dur) linear infinite;
-  background: linear-gradient(hsl(30,90%,80%) 90%,hsl(0,90%,75%) 90%);
-  transform: rotate(-25deg) translateZ(-1px);
-}
-
-.hamster__limb--bl {
-  animation: hamsterBLLimb var(--dur) linear infinite;
-  background: linear-gradient(hsl(30,90%,90%) 90%,hsl(0,90%,85%) 90%);
-  transform: rotate(-25deg);
-}
-
-.hamster__tail {
-  animation: hamsterTail var(--dur) linear infinite;
-  background: hsl(0,90%,85%);
-  border-radius: 0.25em 50% 50% 0.25em;
-  box-shadow: 0 -0.2em 0 hsl(0,90%,75%) inset;
-  top: 1.5em;
-  right: -0.5em;
-  width: 1em;
-  height: 0.5em;
-  transform: rotate(30deg) translateZ(-1px);
-  transform-origin: 0.25em 0.25em;
-}
-
-.spoke {
-  animation: spoke var(--dur) linear infinite;
-  background: radial-gradient(100% 100% at center,hsl(0,0%,60%) 4.8%,hsla(0,0%,60%,0) 5%),
-		linear-gradient(hsla(0,0%,55%,0) 46.9%,hsl(0,0%,65%) 47% 52.9%,hsla(0,0%,65%,0) 53%) 50% 50% / 99% 99% no-repeat;
-}
-
-/* Animations */
-@keyframes hamster {
-  from, to {
-    transform: rotate(4deg) translate(-0.8em,1.85em);
-  }
-
-  50% {
-    transform: rotate(0) translate(-0.8em,1.85em);
-  }
-}
-
-@keyframes hamsterHead {
-  from, 25%, 50%, 75%, to {
-    transform: rotate(0);
-  }
-
-  12.5%, 37.5%, 62.5%, 87.5% {
-    transform: rotate(8deg);
-  }
-}
-
-@keyframes hamsterEye {
-  from, 90%, to {
-    transform: scaleY(1);
-  }
-
-  95% {
-    transform: scaleY(0);
-  }
-}
-
-@keyframes hamsterEar {
-  from, 25%, 50%, 75%, to {
-    transform: rotate(0);
-  }
-
-  12.5%, 37.5%, 62.5%, 87.5% {
-    transform: rotate(12deg);
-  }
-}
-
-@keyframes hamsterBody {
-  from, 25%, 50%, 75%, to {
-    transform: rotate(0);
-  }
-
-  12.5%, 37.5%, 62.5%, 87.5% {
-    transform: rotate(-2deg);
-  }
-}
-
-@keyframes hamsterFRLimb {
-  from, 25%, 50%, 75%, to {
-    transform: rotate(50deg) translateZ(-1px);
-  }
-
-  12.5%, 37.5%, 62.5%, 87.5% {
-    transform: rotate(-30deg) translateZ(-1px);
-  }
-}
-
-@keyframes hamsterFLLimb {
-  from, 25%, 50%, 75%, to {
-    transform: rotate(-30deg);
-  }
-
-  12.5%, 37.5%, 62.5%, 87.5% {
-    transform: rotate(50deg);
-  }
-}
-
-@keyframes hamsterBRLimb {
-  from, 25%, 50%, 75%, to {
-    transform: rotate(-60deg) translateZ(-1px);
-  }
-
-  12.5%, 37.5%, 62.5%, 87.5% {
-    transform: rotate(20deg) translateZ(-1px);
-  }
-}
-
-@keyframes hamsterBLLimb {
-  from, 25%, 50%, 75%, to {
-    transform: rotate(20deg);
-  }
-
-  12.5%, 37.5%, 62.5%, 87.5% {
-    transform: rotate(-60deg);
-  }
-}
-
-@keyframes hamsterTail {
-  from, 25%, 50%, 75%, to {
-    transform: rotate(30deg) translateZ(-1px);
-  }
-
-  12.5%, 37.5%, 62.5%, 87.5% {
-    transform: rotate(10deg) translateZ(-1px);
-  }
-}
-
-@keyframes spoke {
-  from {
-    transform: rotate(0);
-  }
-
-  to {
-    transform: rotate(-1turn);
-  }
-}
-    </style>
-    
-</head>
-
-<body>
-  <div class="preloader">
-		<div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
-      <div class="wheel"></div>
-      <div class="hamster">
-        <div class="hamster__body">
-          <div class="hamster__head">
-            <div class="hamster__ear"></div>
-            <div class="hamster__eye"></div>
-            <div class="hamster__nose"></div>
-          </div>
-          <div class="hamster__limb hamster__limb--fr"></div>
-          <div class="hamster__limb hamster__limb--fl"></div>
-          <div class="hamster__limb hamster__limb--br"></div>
-          <div class="hamster__limb hamster__limb--bl"></div>
-          <div class="hamster__tail"></div>
-        </div>
-      </div>
-      <div class="spoke"></div>
-    </div>
-	  </div>
-	
-	  <script>
-		window.addEventListener("load", () => {
-      setTimeout(() => {
-        const preloader = document.querySelector(".preloader");
-        preloader.style.opacity = "0";
-        preloader.style.visibility = "hidden";
-
-        setTimeout(() => {
-          preloader.remove();
-        }, 1000);
-      }, 2000); // Delay of 5 seconds before fading out the preloader
-    });
-	  </script>
-    <header class="header">
-      <a href="#" class="logo" style="margin-inline-end:auto;">AgriLearnNetwork  </a>
-  
-      <i class='bx bx-menu' id="menu-icon"></i>
-      <nav class="navbar">
-        
-        <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="#about"><i class="fa-solid fa-circle-info"></i>  About</a>
-        <a href="#Farm Management"> <i class="fa-solid fa-blog"></i>  Blogs</a>
-        <a href="#Resource Library"><i class="fa-solid fa-book"></i>  Resource Library</a>
-        <a href="#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
-  
-      </nav>
-    </header>
-  
-    <section class="home" id="home">
-      <div class="home-content">
-        
-        <h3 class="home--welcome">Welcome to</h3>
-        <h1 class="home--welcome">AgriLearnNetwork</h1>
-        <h3 class="home--welcome">Your Agricultural Knowledge Hub to <span class="multiple-text"></span></h3>
-  
-      </div>
-      <div class="home-img">
-        <img src="images/Screenshot 2023-12-26 165533.png" alt="MY-IMAGE" />
-      </div>
-    </section>
-  
-  
-  
-  
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/png-transparent-farmer-agriculture-wheat-straw-agriculture-fictional-character-cartoon-thumbnail-fotor-bg-remover-2023122619381.png" alt="MY-IMAGE" />
-  
-      </div>
-  
     <div class="about-content">
       <h2 class="heading">About <span>AgriLearnNetwork</span></h2>
-
       <p>Agrilearn Network serves as an indispensable resource, offering farmers a holistic platform enriched with essential insights spanning the diverse landscape of agriculture. Delving into the core of farming practices, our platform provides detailed guidance on agriculture techniques, in-depth knowledge on seed varieties, recommendations for optimal tool usage, streamlined harvesting methods, best practices for sowing, and strategic farm management approaches. By encompassing a wide spectrum of topics, Agrilearn Network aims to empower farmers with the comprehensive understanding needed to navigate the complexities of modern agriculture successfully.
 
       </p>
 
+    </div>
     </div>
   </section>
 
   <section class="farm" id="Farm Management">
     <h2 class="heading">Agro<span>Blogs</span></h2>
 
-    <div class="services-container">
+    <br>
+    <br>
+      
+<div class="services-box">
+  <div class="fcard"onclick="window.location.href='https://tractorkarvan.com/blog/how-to-sow-seeds';">
+    <img class="agrblg" src="./images/sow.jpeg">
+    <div class="article">
+      <a href="">Blog</a>
+      <h2>Sowning Techniques</h2>
+      <p>Uncover the significance of precise seed placement, optimal spacing, and appropriate depth in enhancing crop yields. From promoting germination to managing weeds and pests, explore the critical aspects of sowing that shape successful cultivation. Glean valuable insights into modern sowing practices and cultivate a deeper understanding of this fundamental process in agriculture. </p>
+    </p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>  
 
-      <div class="services-box">
-        <a href="https://tractorkarvan.com/blog/how-to-sow-seeds">
-            <i class='bx bx-leaf'></i>
-            <h3>Sowing Techniques</h3></a>
-            <p>Uncover the significance of precise seed placement, optimal spacing, and appropriate depth in enhancing crop yields. From promoting germination to managing weeds and pests, explore the critical aspects of sowing that shape successful cultivation. Glean valuable insights into modern sowing practices and cultivate a deeper understanding of this fundamental process in agriculture. </p>
-        
-    </div>
-    
-    
+    <div class="fcard" onclick="window.location.href='https://www.groundsguys.com/blog/2015/july/irrigation-different-techniques-and-benefits/';">
+    <img class="agrblg" src="./images/irrigation.jpg">
+    <div class="article">
+      <a href="">Technique</a>
+      <h2>Irrigation Techniques</h2>
+      <p>Learn about the crucial role of precise watering methods, optimal distribution, and strategic timing in nurturing thriving crops. From supporting germination to efficient water management, uncover essential aspects that contribute to successful cultivation. Gain valuable insights into modern irrigation practices, offering a deeper understanding of this fundamental process in agriculture. </p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>  
+     <div class="fcard" onclick="window.location.href='https://www.worldbank.org/en/topic/climate-smart-agriculture';">
+    <img class="agrblg" src="./images/climate.jpeg">
+    <div class="article">
+      <a href="">Blog</a>
+      <h2>Climate Smart Agriculture</h2>
+      <p>Explore the dynamic interplay between climate change and agriculture, navigating the challenges posed by shifting weather patterns and extreme events.Learn about innovative strategies empowering farmers to not only withstand the impacts but also seize opportunities for sustainable and resilient food production.</p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>
 
-      <div class="services-box">
-        <a href="https://www.groundsguys.com/blog/2015/july/irrigation-different-techniques-and-benefits/">
-        <i class='bx bx-water'></i>
-        <h3>Irrigation Techniques</h3></a>
-        <p>Learn about the crucial role of precise watering methods, optimal distribution, and strategic timing in nurturing thriving crops. From supporting germination to efficient water management, uncover essential aspects that contribute to successful cultivation. Gain valuable insights into modern irrigation practices, offering a deeper understanding of this fundamental process in agriculture. </p>
+  <div class="fcard" onclick="window.location.href='https://www.ucsusa.org/resources/what-sustainable-agriculture';">
+    <img class="agrblg" src="./images/sustain.jpg">
+    <div class="article">
+      <a href="">Blog</a>
+      <h2>Sustainable Agriculture Research & Education (SARE)</h2>
+      <p>Explore different methods and techniques for sustainable agriculture, such as organic farming, permaculture, or agroforestry. Explore the latest innovations and techniques in sustainable agriculture, including organic farming methods, permaculture, and regenerative agriculture.</p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>
 
+  <div class="fcard" onclick="window.location.href='https://rodaleinstitute.org/why-organic/organic-farming-practices/crop-rotations/';">
+    <img class="agrblg" src="./images/croprota.jpg">
+    <div class="article">
+      <a href="">Blog</a>
+      <h2>Crop Rotation</h2>
+      <p>Discusses the importance of crop rotation in maintaining soil fertility, preventing pests and diseases, and improving crop yield. Delve into the importance of crop rotation in maintaining soil fertility and preventing pest and disease outbreaks. Discover various crop rotation methods, their benefits, and how they contribute to improving yield and reducing the reliance on chemical inputs in modern agricultural systems.</p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>
+
+
+  <div class="fcard" onclick="window.location.href='https://plantic.in/learngrow/vegetable-growing-season-chart';">
+    <img class="agrblg" src="./images/seasonn.jpg">
+    <div class="article">
+      <a href="">Technique</a>
+      <h2>Seasonal Planting Guide</h2>
+      <p>Provides tips and advice on what crops to plant during different seasons, along with information on optimal planting times and growing conditions.A seasonal planting guide serves as a roadmap for gardeners, offering invaluable insights into optimal planting times and techniques tailored to specific seasons.By following such a guide, gardeners can optimize their efforts and cultivate thriving gardens year-round.</p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>
+
+
+  <div class="fcard" onclick="window.location.href='https://extension.psu.edu/managing-soil-health-concepts-and-practices';">
+    <img class="agrblg" src="./images/soil.jpg">
+    <div class="article">
+      <a href="">Blog</a>
+      <h2>Soil Health and Management</h2>
+      <p>Covers topics related to soil fertility, soil testing, nutrient management, and techniques for improving soil health, such as composting and cover cropping.</p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>
+
+
+  <div class="fcard" onclick="window.location.href='https://www.epa.gov/safepestcontrol/integrated-pest-management-ipm-principles';">
+    <img class="agrblg" src="./images/pest.jpg">
+    <div class="article">
+      <a href="">Techniques</a>
+      <h2>Integrated Pest Management</h2>
+      <p>Explains the principles of IPM and how farmers can use a combination of cultural, biological, and chemical methods to control pests while minimizing environmental impact.</p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>
+
+
+  <div class="fcard" onclick="window.location.href='https://eos.com/blog/agricultural-technology/#:~:text=Agricultural%20technology%2C%20also%20known%20as,%2C%20mobile%20devices%2C%20and%20software.';">
+    <img class="agrblg" src="./images/farmtech.png">
+    <div class="article">
+      <a href="">Blog</a>
+      <h2>Farming Technology</h2>
+      <p>Explore the latest advancements in agricultural technology, such as precision agriculture, drones, smart irrigation systems, and automated farm machinery.</p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>
+
+
+  <div class="fcard" onclick="window.location.href='https://www.britannica.com/money/agricultural-economics';">
+    <img class="agrblg" src="./images/econ.jpg">
+    <div class="article">
+      <a href="">Blog</a>
+      <h2>Farming Economics</h2>
+      <p>Discusses economic aspects of farming, including market trends, pricing strategies, financial management, and government policies affecting the agriculture sector.</p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>
+
+
+ 
+  <div class="fcard" onclick="window.location.href= 'https://icar.org.in/sites/default/files/inline-files/livestock-management-AR-2011-12_2.pdf';">
+    <img class="agrblg" src="./images/livestocks.jpg">
+    <div class="article">
+      <a href="">Blog</a>
+      <h2>Livestock Management</h2>
+      <p>Provides guidance on raising and managing livestock, including topics such as animal health, breeding, nutrition, housing, and pasture management</p>
+      <div class="day">
+        <ul>
+      <li class="date"><p class="tim">April 19, 2022</p> </li>
+       <li class="time"><p class="tim">11 minutes ago</p></li>
+      </ul>
       </div>
+     
+    </div>    
+  </div>
+
+
+   
+  <div class="fcard" onclick="window.location.href= 'https://nationalaglawcenter.org/overview/agritourism/';">
+    <img class="agrblg" src="./images/aritourism.png">
+    <div class="article">
+      <a href="">Blog</a>
+      <h2>Agri-Tourism</h2>
+      <p>Explore opportunities for farmers to diversify their income through agri-tourism activities such as farm tours, farm stays, pick-your-own operations, or on-farm events.</p>
+      <div class="day">
+        <ul>
+          <li class="date"><p class="tim">April 19, 2022</p> </li>
+           <li class="time"><p class="tim">11 minutes ago</p></li>
+          </ul>
+        </div>
+    </div>    
+  </div>
 
 
 
-      <div class="services-box">
-        <a href="https://www.worldbank.org/en/topic/climate-smart-agriculture">
-        <i class='bx bx-sun'></i>
-        <h3>Climate Smart Agriculture</h3></a>
-        <br>
-        <p>Explore the dynamic interplay between climate change and agriculture, navigating the challenges posed by shifting weather patterns and extreme events.Learn about innovative strategies empowering farmers to not only withstand the impacts but also seize opportunities for sustainable and resilient food production.</p>
-      </div>
 
 </section>
 
 
-  
-  <section class="resource" id="Resource Library">
-    <h2 class="heading">Resource<span> Library</span></h2>
+<section class="resource" id="Resource Library">
+  <h2 class="heading">Resource<span> Library</span></h2>
 
-    <div class="portfolio-container">
+  <div class="portfolio-container">
 
-      <div class="portfolio-box">
-        <img src="images/25803500_1621011873.jpg" alt="PROJECT-IMG" border="0" />
-        <div class="portfolio-layer">
-          <h4>Sowing Techniques</h4>
-          <a href="https://www.youtube.com/watch?v=Z3HApiFKwb4&pp=ygUdc293aW5nIHRlY2huaXF1ZXMgYWdyaWN1bHR1cmU%3D" target="_blank"><i
-              class='bx bx-link-external'></i></a>
-        </div>
+    <div class="portfolio-box">
+      <h4 class="portfolio-heading">Sowing Techniques</h4>
+      <img src="images/25803500_1621011873.jpg" alt="PROJECT-IMG" border="0"  />
+      
+      <div class="portfolio-layer">
+        
+        <iframe width="407" height="300" src="https://www.youtube.com/embed/xIe2EjQNols?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="portfolio-box">
-        <img src="images/Best-Hand-Operated-Seeding-Machines-in-India4.jpg" alt="PROJECT-IMG" border="0" />
-        <div class="portfolio-layer">
-          <h4>Essential tools for sowing</h4>
-          <a href="https://www.youtube.com/watch?v=UiLixTOSo6Y&pp=ygUQdG9vbHMgZm9yIHNvd2luZw%3D%3D"><i class='bx bx-link-external'></i></a>
-        </div>
-      </div>
-      <div class="portfolio-box">
-        <img src="images/Farm-Management.png" alt="PROJECT-IMG" />
-        <div class="portfolio-layer">
-          <h4>Farm management</h4>
-         
-          <a href="https://youtu.be/L1qZ_-cBdgM?si=-hZGedS2J2_M2yl_"><i class='bx bx-link-external'></i></a>
-        </div>
-      </div>
-      <div class="portfolio-box">
-        <img src="images/iStock-1179642020-1024x683.jpg" alt="PROJECT-IMG" />
-        <div class="portfolio-layer">
-          <h4>Seasonal plant guide</h4>
-          
+    </div>
 
-          <a href="https://youtu.be/exfgg_2WCts?si=Z8KnPrrAmd-eYmil"><i class='bx bx-link-external'></i></a>
-        </div>
+    <div class="portfolio-box">
+      <h4 class="portfolio-heading">Essential tools for sowing</h4>
+      <img src="images/Best-Hand-Operated-Seeding-Machines-in-India4.jpg" alt="PROJECT-IMG" border="0" />
+      <div class="portfolio-layer">
+        <iframe width="407" height="300" src="https://www.youtube.com/embed/UiLixTOSo6Y?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="portfolio-box">
-        <img src="images/insects-on-a-field.jpg" alt="PROJECT-IMG" />
-        <div class="portfolio-layer">
-          <h4>Crop care & maintainance</h4>
+    </div>
 
-          <a href="https://youtu.be/juzHupSvWcw?si=5iqoJbhhoRQYqm4B"><i class='bx bx-link-external'></i></a>
-        </div>
+    <div class="portfolio-box">
+      <h4 class="portfolio-heading">Farm management</h4>
+      <img src="images/Farm-Management.png" alt="PROJECT-IMG" />
+      <div class="portfolio-layer">
+
+        <iframe width="407" height="300" src="https://www.youtube.com/embed/L1qZ_-cBdgM?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="portfolio-box">
-        <img src="images/tab-04.jpg" alt="PROJECT-IMG" />
-        <div class="portfolio-layer">
-          <h4>Livestock management</h4>
+    </div>
 
-          <a href="https://youtu.be/uvN8HCs8low?si=4saTxm7wM8gkrzi9"><i class='bx bx-link-external'></i></a>
-        </div>
+    <div class="portfolio-box">
+      <h4 class="portfolio-heading">Seasonal plant guide</h4>
+      <img src="images/iStock-1179642020-1024x683.jpg" alt="PROJECT-IMG" />
+      <div class="portfolio-layer">
+        <iframe width="407" height="300" src="https://www.youtube.com/embed/exfgg_2WCts?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="portfolio-box">
-        <img src="images/Methods-of-Irrigation.jpg" alt="PROJECT-IMG" />
-        <div class="portfolio-layer">
-          <h4>Irrigation Techniques</h4>
-          
+    </div>
 
-          <a href="https://youtu.be/Z9HAy9EYKKs?si=HXzX2fMJDhMc_-nQ"><i class='bx bx-link-external'></i></a>
-        </div>
+    <div class="portfolio-box">
+      <h4 class="portfolio-heading">Crop care & maintainance</h4>
+      <img src="images/insects-on-a-field.jpg" alt="PROJECT-IMG" />
+      <div class="portfolio-layer">
+        <iframe width="407" height="300" src="https://www.youtube.com/embed/juzHupSvWcw?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="portfolio-box">
-        <img src="images/organic-farming-definition-examples-.jpg" alt="PROJECT-IMG" />
-        <div class="portfolio-layer">
-          <h4>Organic farming</h4>
-          
+    </div>
 
-          <a href="https://youtu.be/iPeBBw5WxZo?si=e0B2g-OMdQb7-KOH"><i class='bx bx-link-external'></i></a>
-        </div>
+    <div class="portfolio-box">
+      <h4 class="portfolio-heading">Livestock management</h4>
+      <img src="images/tab-04.jpg" alt="PROJECT-IMG" />
+      <div class="portfolio-layer">
+        <iframe width="407" height="300" src="https://www.youtube.com/embed/uvN8HCs8low?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="portfolio-box">
-        <img src="images/Things-You-Should-Know-About-Smart-Agriculture.jpeg" alt="PROJECT-IMG" />
-        <div class="portfolio-layer">
-          <h4>Climate smart Farming</h4>
+    </div>
 
-          <a href="https://youtu.be/g0wkT3mf80U?si=I9VfWYFumZW03lnB"><i class='bx bx-link-external'></i></a>
-        </div>
+    <div class="portfolio-box">
+      <h4 class="portfolio-heading">Irrigation Techniques</h4>
+      <img src="images/Methods-of-Irrigation.jpg" alt="PROJECT-IMG" />
+      <div class="portfolio-layer">
+        <iframe width="407" height="300" src="https://www.youtube.com/embed/Z9HAy9EYKKs?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
+    </div>
 
-    </section>
+    <div class="portfolio-box">
+      <h4 class="portfolio-heading">Organic farming</h4>
+      <img src="images/organic-farming-definition-examples-.jpg" alt="PROJECT-IMG" />
+      <div class="portfolio-layer">
+        <iframe width="407" height="300" src="https://www.youtube.com/embed/iPeBBw5WxZo?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="portfolio-box">
+      <h4 class="portfolio-heading">Climate smart Farming</h4>
+      <img src="images/Things-You-Should-Know-About-Smart-Agriculture.jpeg" alt="PROJECT-IMG" />
+      <div class="portfolio-layer">
+        <iframe width="407" height="300" src="https://www.youtube.com/embed/g0wkT3mf80U?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Us!</span></h2>
-        <form action="#">
-
+        <form action="#" id="contact-form">
         <div class="input-box">
           <input type="text" placeholder="Full Name" required>
           <input type="email" placeholder="Email Address" required>
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" required>
+          <input type="number" placeholder="Mobile Number" required id="mobileNumber">
           <input type="text" placeholder="Email Subject" required>
         </div>
 
         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <input type="submit" value="Send Message" class="btn"> 
+        <button id="review-btn">Give feedback</button>
+        <input type="submit" class="btn" id="contact-btn">
+
 
         </form>
-
+     
     </section>
-    <footer class="footer">
-      <div class="footerUpperPart">
-        <div class="footer-left">
-          <p>Contact Us</p>
-          <div class="socialIcons">
-            
 
-            <a href="mailto:AgriLearnNetwork@gmail.com" class="email-link" data-tooltip="AgriLearnNetwork@gmail.com"><i class="fas fa-envelope"></i></a>
-            
-            <a href="https://www.instagram.com/your_username_here" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/your_username_here" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com/your_page_or_profile_here" target="_blank"><i class="fab fa-facebook"></i></a>
-  
-  
-          </div>
-         
+<!-- Modal  -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Feedback Form</h2>
+      <form id="feedback-form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
           
-          </div>
-
-          <div class="footer-iconTop">
-            <a href="#home" ><i class='bx bx-up-arrow-alt'></i></a>
-          </div>
-      </div>
-      
-        
-      <!-- </div> -->
-
-      
-      <div class="footer-text footer-right">
-        <p style="font-weight: 600; font-size: 20px;">Copyright &copy; 2023 by AgriLearnNetwork | All Rights Reserved.</p>
+            
+            <div class="rating">
+              <h2>rate us:</h2>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
         </div>
-    </footer>  
+            
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-title">
+      <h2>AgriLearnNetwork</h2>
+    </div>
+    <div class="footer-icons">
+      <p><b>Follow us on our socials:</b></p>
+      <div class="socialIcons">
+        <a href="mailto:AgriLearnNetwork@gmail.com" class="email-link" data-tooltip="AgriLearnNetwork@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/your_username_here" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/your_username_here" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/your_page_or_profile_here" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </div>
+  <div class="quick-links">
+    <h2>Quick Links</h2>
+    <ul>
+      <li><a href="#home"><p>Home</p></a></li>
+      <li><a href="#about"><p>About Us</p></a></li>
+      <li><a href="#Farm Management"><p>Blogs</p></a></li>
+      <li><a href="#Resource Library"><p>Resource Library</p></a></li>
+      <li><a href="#contact"><p>Contact Us</p></a></li>
+    </ul>
+  </div>
+  <div class="footer-text footer-right">
+    <p style="font-weight: 600; font-size: 15px;">Copyright &copy; <script>document.write(new Date().getFullYear())</script> by AgriLearnNetwork | All Rights Reserved.</p>
+  </div>
+</footer>
+
+  
     
 
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -570,7 +408,58 @@
 <script src="https://mediafiles.botpress.cloud/1cfb7415-d4fc-4477-8d00-3717d30c975b/webchat/config.js" defer></script> -->
 
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const slideGroup = document.querySelector('.slide_group');
+  let currentSlide = 0;
+  const images = ['./images/carousel-img-2.jpg', './images/carousel-img-1.jpg', './images/carousel-img-3.jpg', './images/carousel-img-4.jpg'];
+
+  function showSlide(n) {
+    slideGroup.style.left = `${-n * 100}%`; // Adjust left property based on current slide
+    currentSlide = n;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % images.length; // Move to the next slide
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 2000); // Automatically change slide every 2 seconds
+
+  // Preload images for smoother transition
+  images.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+});
+
+// mobile no validation @dhruv8433
+const mobileNumberInput = document.getElementById('mobileNumber');
+
+    mobileNumberInput.addEventListener('input', () => {
+      const maxLength = 10;
+      const value = mobileNumberInput.value;
+      
+      if (value.length > maxLength) {
+        mobileNumberInput.value = value.slice(0, maxLength);
+      }
+    });
+</script>
+<!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '664632efd181ce0921d32ed5' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
 </body>
 
 </html>
