@@ -123,8 +123,8 @@ section {
  }
  .header
  {
-    position: fixed;
-    opacity: 0.8;
+  position: fixed;
+  opacity: 0.8;
    top: 0;
    left: 0;
    width:100%;
@@ -252,13 +252,15 @@ section {
   position: absolute;
   top: 30%;
   left: 25.0%;
-  background: var(--primary-color);
+  background: #053314;
   border-radius: 50px;
   padding: 3vmax 3vmax 3vmax 3vmax; 
   filter: blur(0.8px);
   width: 55%;
   height: 25vmax;
   font-size: 4vmax;
+  opacity: 0.8;
+  color: white;
 }
 
 
@@ -267,6 +269,7 @@ section {
 .home-content h3 {
   font-size: 4.2rem;
   font-weight: 700;
+  color: white;
 }
 .home-content h3:nth-of-type(2) {
 
