@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AgriLearnNetwork</title>
+  <title padding">AgriLearnNetwork</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css" />
   
@@ -26,8 +26,8 @@
 <body>
   
   <header class="header">
-    <img src="images/favicon.png" alt="logo" class="logo">
-    <a href="#" class="logo"><h3>AgriLearnNetwork</h3></a>
+    <img src="images/favicon.png" style="padding-left:32px;" alt="logo" class="logo">
+    <a href="#" class="logo" ><h3>AgriLearnNetwork</h3></a>
     <i class='bx bx-menu' id="menu-icon"></i>
     <nav class="navbar">
       <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
@@ -35,16 +35,29 @@
       <a href="#Farm Management"><i class="fa-solid fa-blog"></i> Blogs</a>
       <a href="#Resource Library"><i class="fa-solid fa-book"></i> Resource Library</a>
       <a href="#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
-      <div class="dark-mode-toggle">
-        <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
-        <label for="dark-mode-toggle" class="dark-mode-label">
-          <span class="dark-mode-ball"></span>
+      <div class="dark-mode-toggle" style="margin-left: 20px; position: relative; display: flex; align-items: center;">
+        <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox" style="display: none;">
+        <label for="dark-mode-toggle" class="dark-mode-label" style="position: relative; width: 50px; height: 25px; background: #ccc; border-radius: 25px; cursor: pointer;">
+          <span class="dark-mode-ball" style="position: absolute; top: 2px; left: 2px; width: 21px; height: 21px; background: #fff; border-radius: 50%; transition: left 0.3s;"></span>
+          <span class="sun-icon" style="position: absolute; top: 50%; left: 5px; transform: translateY(-50%); font-size: 12px; color: yellow;">☀️</span>
+          <span class="moon-icon" style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%); font-size: 12px; color: #000;">🌙</span>
         </label>
       </div>
     </nav>
   </header>
   
-  
+  <script>
+    document.getElementById('dark-mode-toggle').addEventListener('change', function() {
+      const ball = document.querySelector('.dark-mode-ball');
+      if (this.checked) {
+        ball.style.left = '2px';
+        document.body.classList.add('dark-mode');
+      } else {
+        ball.style.left = '2px';
+        document.body.classList.remove('dark-mode');
+      }
+    });
+  </script>
 
   <section class="home" id="home">
     <div class="slider">
