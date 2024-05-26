@@ -903,7 +903,7 @@ input[type="number"]::-webkit-inner-spin-button {
   
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -919,20 +919,14 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-content {
   background-color: #ffffff;
-  margin: 10% auto;
-  padding: 30px;
+  /* margin: 10% auto; */
+  padding: 50px;
   border-radius: 10px;
-  height: 100%;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-/* Background image styles */
-  background-image: url('image.jpg');
-  background-size: cover; /* Ensures the image covers the entire modal */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  position: relative; /* Ensure proper stacking contex */
-
+  position: relative;
+    text-align: center;
 }
 
 .close {
@@ -950,60 +944,73 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-content h2 {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   color:black;
-  font-size: 20px;
+  font-size: 24px;
 }
 
-.modal-content label {
+/* .modal-content label {
   display: block;
   margin-bottom: 8px;
   color: #666;
-}
+} */
 
-.modal-content input[type="text"],
-.modal-content input[type="email"],
-.modal-content textarea {
-  width: 100%;
-  padding: 10px ;
-  height: 4%;
-  width: 100%;
-  font-family: "Pathway Gothic One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1vw;
-  border: none;
-  background-color: rgb(238, 236, 236);
+.form-group {
+  position: relative;
   margin-bottom: 20px;
-  border-bottom: 2px solid black;
 }
 
-.modal-content input[type="text"]:focus,
-.modal-content input[type="email"]:focus,
-.modal-content textarea:focus {
-  outline: none;
-  border-color: #66afe9;
+
+.form-group .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background-color: #8a2be2;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #bbb;
+}
+
+
+.form-group textarea {
+  height: 80px;
+  padding: 10px;
 }
 
 .modal-content button[type="submit"] {
-  padding: 10px;
-  height: 15%;
-  width: 50%;
-  margin-top: 10px;
-  cursor: pointer;
-  font-size: 1.2vw;
-  border-radius: 15px;
-  color: aliceblue;
-  border: none;
-  background-color: rgb(20, 138, 55);
-  text-align: center;
-  display: block;
-  margin-left: 30%;
+  background: linear-gradient(to right, #8a2be2, #f163ed);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
 }
 
 .modal-content button[type="submit"]:hover {
-  background-color:#053314;
+  background: linear-gradient(to right, #f55ef0, #8a2be2);
 }
 
 .modal-content button[type="submit"]:focus {
@@ -1020,18 +1027,31 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 /* rating stars */
+
 .rating {
-  width: 180px;
-  margin:auto;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rating h2 {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 18px;
 }
 
 .rating__star {
-  font-size: 16px;
-  margin-bottom: 20px;
-  margin-left: 14px;
+  font-size: 24px;
+  margin: 0 5px;
   cursor: pointer;
   color: #dabd18b2;
+}
+
+
+.rating__star:hover,
+.rating__star.active {
+    color: #ffc107;
 }
  
 
