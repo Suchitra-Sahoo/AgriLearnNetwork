@@ -33,40 +33,38 @@
     <i class='bx bx-menu' id="menu-icon"></i>
     <nav class="navbar">
       
-      <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
       <a href="about.html"><i class="fa-solid fa-circle-info"></i>  About</a>
       <a href="blogs.html"> <i class="fa-solid fa-blog"></i>  Blogs</a>
       <a href="library.html"><i class="fa-solid fa-book"></i>  Resource Library</a>
-      <a href="contact.html" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
+      <a href="#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
 
     </nav>
   </header>
 
-  <section class="home" id="home">
-    <div class="slider">
-      <div class="home-content">
-        <h3 class="home--welcome">Welcome to</h3>
-        <h1 class="home--welcome">AgriLearnNetwork</h1>
-        <h3 class="home--welcome">Your Agricultural Knowledge Hub to <span class="multiple-text"></span></h3>
-  
-      </div>
-      <div class="slide_viewer">
-        <div class="slide_group">
-          <div class="slide" style="background-image: url(./images/carousel-img-2.jpg)"></div>
-          <div class="slide" style="background-image: url(./images/carousel-img-1.jpg)"></div>
-          <div class="slide" style="background-image: url(./images/carousel-img-3.jpg)"></div>
-          <div class="slide" style="background-image: url(./images/carousel-img-4.jpg)"></div>
-          <!-- <div class="slide" style="background-image: url(./images/carousel-img-5.jpg)"></div> -->
+
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Us!</span></h2>
+        <form action="#" id="contact-form">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
         </div>
-      </div>
-    </div>
-    
 
-  </section>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" required id="mobileNumber">
+          <input type="text" placeholder="Email Subject" required>
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <button id="review-btn">Give feedback</button>
+        <input type="submit" class="btn" id="contact-btn">
 
 
-
-
+        </form>
+     
+    </section>
 
 <!-- Modal  -->
 <div id="modal" class="modal">
