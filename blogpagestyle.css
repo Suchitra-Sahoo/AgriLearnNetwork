@@ -50,7 +50,7 @@ section {
 .heading {
   padding: 20px;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: aliceblue;
   width: 100%;
   background: var(--bg-color);
@@ -63,7 +63,20 @@ section {
   left: 0;
   z-index: 100;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.navoptions a {
+  display: flex;
+  font-size: medium;
+  color: #fff;
+}
+.navtitle {
+  flex-grow: 1;
+  text-align: center;
+}
+
 span {
   color: var(--main-color);
 }
@@ -128,6 +141,7 @@ span {
   );
   border-radius: 10px;
   margin: 10px;
+  margin-bottom: 30px;
   align-self: stretch;
   flex: 1 1 21%;
   opacity: 1;
