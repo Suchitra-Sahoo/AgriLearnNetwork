@@ -24,10 +24,9 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
-
 // Add an "active" class to the clicked link
 $('a[href*="#"]')
-.not('[href="#"]')
+  .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
     // Remove any existing "active" class from links
@@ -46,7 +45,6 @@ $('a[href*="#"]')
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       
       if (target.length) {
-
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
@@ -64,15 +62,15 @@ $('a[href*="#"]')
     }
   });
 
-//when scroll on any section that section's corresponding hyperlink will be active and
+// When scroll on any section that section's corresponding hyperlink will be active and
 // the previous activated hyperlink will be deactivated
 $('section[id]').mouseover(function() {
-var sectionId = $(this).attr('id');
-var correspondingLink = $('a[href="#' + sectionId + '"]');
-// Remove active class from all links
-$('a').removeClass('active');
-// Add active class to the corresponding link
-correspondingLink.addClass('active');
+  var sectionId = $(this).attr('id');
+  var correspondingLink = $('a[href="#' + sectionId + '"]');
+  // Remove active class from all links
+  $('a').removeClass('active');
+  // Add active class to the corresponding link
+  correspondingLink.addClass('active');
 });
   
   // Set initial active link based on URL hash
@@ -265,6 +263,4 @@ function executeRating(stars) {
 executeRating(ratingStars);
   
  
-
-
-  })();
+})();
