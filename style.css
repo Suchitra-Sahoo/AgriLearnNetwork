@@ -1512,3 +1512,26 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+.subscribe-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.subscribe-button {
+  display: inline-block;
+  padding: 35px 70px;
+  font-size: 40px;
+  color: #22570f;
+  background-color: #e3e9f0;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #023f0f;
+  color: white;
+}
+
+
