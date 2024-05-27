@@ -9,17 +9,6 @@ menuIcon.forEach(icon => {
     navbar.forEach(nav => nav.classList.toggle('active'));
   }
 });
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    const preloader = document.querySelector(".preloader");
-    preloader.style.opacity = "0";
-    preloader.style.visibility = "hidden";
-
-    setTimeout(() => {
-      preloader.remove();
-    }, 1000);
-  }, 2000); // Delay of 5 seconds before fading out the preloader
-});
 
 // Add an event listener to navbar links
 document.querySelectorAll('.navbar a').forEach(link => {
