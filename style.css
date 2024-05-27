@@ -340,8 +340,7 @@ span {
   cursor: not-allowed;
   pointer-events: none;
   transition: none;
-  background-color: #666;
-  color: #000;
+  opacity: 0.5;
   box-shadow: none;
 }
 
