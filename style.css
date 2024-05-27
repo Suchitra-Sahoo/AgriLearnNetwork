@@ -967,7 +967,7 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  background-color: #8a2be2;
+  background-color: rgb(75, 179, 75);
   color: white;
   border-radius: 50%;
   width: 24px;
@@ -999,7 +999,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-content button[type="submit"] {
-  background: linear-gradient(to right, #8a2be2, #f163ed);
+  background: linear-gradient(to right, rgb(75, 179, 75), rgb(42, 228, 42));
     color: white;
     border: none;
     border-radius: 5px;
@@ -1010,8 +1010,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-content button[type="submit"]:hover {
-  background: linear-gradient(to right, #f55ef0, #8a2be2);
+  background: linear-gradient(to right, rgb(63, 220, 63), rgb(20, 124, 20));
 }
+
 
 .modal-content button[type="submit"]:focus {
   outline: none;
