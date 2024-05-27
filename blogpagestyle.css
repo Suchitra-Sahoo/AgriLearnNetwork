@@ -69,12 +69,12 @@ section {
 }
 .navoptions a {
   display: flex;
-  font-size: medium;
   color: #fff;
 }
 .navtitle {
   flex-grow: 1;
   text-align: center;
+  font-size: 25px;
 }
 
 span {
