@@ -31,44 +31,18 @@
 .swal-button:hover {
   background-color:#0e4b16 !important; /* Change button hover background color */
 }
-
-#changemode{
-  cursor: pointer;
-  width:30px;
-  height:30px;
-}
-
 :root {
-  --primary-color: #053314;
-  --secondary-color: #064b10;
+  --bg-color: #053314;
+  --second-color: #064b10;
   --txt-color: #fff;
-  --main-color: rgb(150, 249, 117);
-  --contact-color:rgb(174, 207, 156);
-  --contact-text:#053314;
-  --head-text:#053314;
+  --main-color: rgb(192, 223, 100);
 }
-.light-theme{
-  --primary-color: #e6f7e6;
-  --secondary-color: #204826;
-  --txt-color: #053314;
-  --main-color: rgb(189, 137, 64);
-  --contact-color:rgb(174, 207, 156);
-  --contact-text:#070807;
-  --head-text:#053314;
-  
-}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-nav ul{
-  flex:1;
-  text-align: right;
-}
-nav ul li{
-  display: inline-block;
-  list-style: none;
-}
+
 body {
   background-color: var(--bg-color);
   color: var(--txt-color);
@@ -88,10 +62,9 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  margin-left: 0px;
   width: 100%;
   padding: 2rem 5%;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,13 +96,13 @@ section {
  }
  .header
  {
-  position: fixed;
-  opacity: 0.8;
+    position: fixed;
+    opacity: 0.8;
    top: 0;
    left: 0;
    width:100%;
    padding:2rem 9%;
-   background-color: var(--primary-color);
+   background-color: var(--bg-color);
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -259,8 +232,6 @@ section {
   width: 55%;
   height: 25vmax;
   font-size: 4vmax;
-  /* opacity: 0.4; */
-  color: white;
 }
 
 
@@ -269,7 +240,6 @@ section {
 .home-content h3 {
   font-size: 4.2rem;
   font-weight: 700;
-  color: white;
 }
 .home-content h3:nth-of-type(2) {
 
@@ -350,7 +320,7 @@ span {
 }
 .socialIcons a:hover {
   background: var(--main-color);
-  color: var(--secondary-color);
+  color: var(--second-color);
   box-shadow: 0 0 1rem var(--main-color);
 }
 
@@ -361,7 +331,7 @@ span {
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
-  color: var(--secondary-color);
+  color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5sec ease;
@@ -400,7 +370,7 @@ span {
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
-  color: var(--secondary-color);
+  color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5sec ease;
@@ -416,7 +386,7 @@ span {
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
-  color: var(--secondary-color);
+  color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5sec ease;
@@ -494,6 +464,7 @@ span {
   z-index: 2;
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 20px;
   width: 90%;
 }
@@ -501,8 +472,6 @@ span {
 .about-content .heading {
   text-align: center;
   font-size: 9rem;
-  margin-bottom: 30px;
-  margin-right: 30px;
 }
 
 .about-content .heading span {
@@ -512,8 +481,8 @@ span {
 .heading {
   text-align: center;
   font-size: 4.5rem;
-  color:var(--head-text)
 }
+
 .about-content h2 {
   text-align: left;
   line-height: 1.2;
@@ -529,7 +498,6 @@ span {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  margin-left: 30px;
 }
 
 @media (max-width: 1024px) {
@@ -583,77 +551,29 @@ span {
 }
 
 
-.services h2 {
-  margin-bottom: 5rem;
-}
-
-
-
 
 .services-container {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
   margin: 7px;
-  align-self:stretch ;
+  align-self: stretch;
   flex-basis: 100%;
-
 }
 
 .services-container .services-box {
   flex: 1 1 30rem;
-  background: var(--secondary-color);
+  background: var(--second-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.2rem solid var(--primary-color);
+  border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
-}
- .services-box:hover {
-  border-color: var(--main-color);
-  transform: scale(1.03);
-}
-
-.services-box i {
-  font-size: 7rem;
-  color: var(--main-color);
-}
-
-.services-box h3 {
-  font-size: 2.6rem;
-}
-.services-box p {
-  font-size: 1.6rem;
-  margin: 1rem 0 3rem;
-} */
-
-.services-container .services-box {
-  flex: 1 1 30rem;
-  background: var(--secondary-color);
-  padding: 3rem 2rem 4rem;
-  border-radius: 2rem;
-  text-align: center;
-  border: .2rem solid var(--primary-color);
-  transition: .5s ease;
   position: relative;
   overflow: hidden;
-  align-self:stretch ;
-
-
-}
-
-/* .services-container .services-box::before {
-  backdrop-filter: blur(10px); /* Apply blur effect to the background only */
-
-
-.services-container .services-box:hover {
-  border-color: var(--main-color);
-  transform: scale(1.02);
-  background-color: var(--secondary-color);
-
+  align-self: stretch;
 }
 
 .services-box i {
@@ -663,7 +583,7 @@ span {
 
 .services-box h3 {
   font-size: 2.6rem;
-  color:white;
+  color: white;
   text-shadow: #07421a;
   text-shadow: 0 0 5px rgb(192, 223, 100);
 }
@@ -682,122 +602,9 @@ span {
   background-color: none;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  padding: 10px ;
+  padding: 10px;
   border-radius: 10px;
-  }
-
-/* Background images for cards
-.services-container .services-box:nth-child(1) {
-  background-image: url('images/sow.jpeg');
-  background-size: cover;
 }
-.services-container .services-box:nth-child(1):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(2) {
-  background-image: url('images/irrigation.jpg');
-  background-size: cover;
-}
-.services-container .services-box:nth-child(2):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(3) {
-  background-image: url('/images/smart-farming-with-agriculture-iot.jpg');
-  background-size: cover;  
-}
-.services-container .services-box:nth-child(3):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(4) {
-  background-image: url('/images/sustain.jpg');
-  background-size: cover;  
-}
-.services-container .services-box:nth-child(4):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(5) {
-  background-image: url('/images/croprota.jpg');
-  background-size: cover;  
-}
-.services-container .services-box:nth-child(5):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(6) {
-  background-image: url('/images/seasonn.jpg');
-  /* filter: opacity(0.6); */
-  /* background-size: cover;  
-}
-.services-container .services-box:nth-child(6):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(7) {
-  background-image: url('/images/soil.jpg');
-  background-size: cover;  
-}
-.services-container .services-box:nth-child(7):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(8) {
-  background-image: url('/images/pest.jpg');
-  background-size: cover;  
-}
-.services-container .services-box:nth-child(8):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(9) {
-  background-image: url('/images/farmtech.png');
-  background-size: cover;  
-}
-.services-container .services-box:nth-child(9):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(10) {
-  background-image: url('/images/econ.jpg');
-  background-size: cover;  
-}
-.services-container .services-box:nth-child(10):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(11) {
-  background-image: url('/images/livestocks.jpg');
-  background-size: cover;  
-  filter: contrast(5px);
-}
-.services-container .services-box:nth-child(11):hover {
-  background-image: none;
-  background-size: cover;  
-}
-
-.services-container .services-box:nth-child(12) {
-  background-image: url('/images/tourism.jpg');
-  background-size: cover;  
-  
-}
-.services-container .services-box:nth-child(12):hover {
-  background-image: none;
-  background-size: cover;  
-} */ 
-
 
 @keyframes slideInFromBelow {
   from {
@@ -810,124 +617,126 @@ span {
   }
 }
 
-
-
-/* Cards */
-.services-box{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  font-family:"Inter", sanserif;
-  padding:30px;
+.services-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  padding: 30px;
 }
-.fcard{
-  display:flex;
-  margin-top: auto;
-  flex-direction:column;
-  position: relative;
-  width:290px;
-  /* height:fit-content; */
-  background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
-  background:-webkit-linear-gradient(90deg,rgb(31,102,31),rgb(231,231,121));  
-  border-radius:10px;
-  margin:10px;  
-  align-self:stretch ;
-  flex: 1 1 21%;
-  opacity:0;
-  cursor: pointer;
 
-  transform: translateY(100px); 
-  animation: slideInFromBelow 0.8s ease-in-out forwards;
-  
+.fcard {
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  position: relative;
+  width: 290px;
+  background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
+  background: -webkit-linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
+  border-radius: 10px;
+  margin: 10px;
+  align-self: stretch;
+  flex: 1 1 21%;
+  opacity: 1; 
+  cursor: pointer;
+  transform: translateY(0px); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; 
 }
 
 .fcard-content {
   padding: 10px;
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
 }
 
-
-.fcard:hover{
-  box-shadow: 2px 2px rgb(185, 185, 106);
+.fcard:hover {
+  box-shadow: 2px 2px 10px rgba(185, 185, 106, 0.8); 
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
 }
-.article h2{
+
+/* Animation keyframes */
+@keyframes slideInFromBelow {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.article h2 {
   font-size: 22px;
   letter-spacing: 1px;
   text-shadow: 1.5px 1px green;
   text-align: left;
 }
 
-.article p{
+.article p {
   font-size: 12px;
-  color:rgb(255, 255, 199);
+  color: rgb(255, 255, 199);
 }
 
-.agrblg{
-  height:290px;
-  width:100%;  
-  overflow:hidden;
-  /* object-fit:cover;   */
-  border-top-left-radius:10px;
-  border-top-right-radius:10px;
+.agrblg {
+  height: 290px;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   filter: drop-shadow(0px 2px 2px #133813aa);
 }
-.article{
-  padding:22px;  
-  text-align:justify;
+
+.article {
+  padding: 22px;
+  text-align: justify;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
 }
-a{
-  text-decoration:none;
+
+a {
+  text-decoration: none;
 }
-.day{
-  display:flex; 
-  flex-direction:column;
-  /* flex-wrap: wrap; */
+
+.day {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  justify-content:space-between;
+  justify-content: space-between;
   bottom: 0;
   padding: 0;
-
 }
-.day ul{
+
+.day ul {
   list-style: none;
   display: flex;
-  flex: row ;
   justify-content: space-between;
-  
-
 }
-/* .day li{
-  padding: 0px 30px; 
-} */
 
-.date{
+.date {
   margin-right: 5px;
   text-align: left;
   padding-right: 30px;
 }
-.time{
- text-align: right;
- padding-left:50px;
- align-self:flex-end;
+
+.time {
+  text-align: right;
+  padding-left: 50px;
+  align-self: flex-end;
 }
 
-
-.day p{
-  color:rgb(230, 226, 226);
-  /* position: relative;
-  display: flex;
-   */
+.day p {
+  color: rgb(230, 226, 226);
 }
+
 .pos{
   position: relative;
 }
 
 .portfolio {
-  background-color: var(--secondary-color);
+  background-color: var(--second-color);
 }
 .portfolio h2 {
   margin-bottom: 4rem;
@@ -943,7 +752,7 @@ a{
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--primary-color);
+  box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
   display: flex;
 }
@@ -984,7 +793,7 @@ a{
 }
 .portfolio-box h4 {
   font-size: 3rem;
-  
+
 }
 .portfolio-heading {
   position: absolute;
@@ -1017,7 +826,7 @@ a{
 
 .portfolio-layer a i {
   font-size: 2rem;
-  color: var(--secondary-color);
+  color: var(--second-color);
 }
 
 .contact h2 {
@@ -1041,17 +850,17 @@ a{
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: black;
-  background: var(--secondary-color);
+  color: rgb(206, 255, 206);
+  background: var(--second-color);
   border-radius: 0.8rem;
   margin: 0.7rem 0;
   border-radius: 20px;
-  background: var(--contact-color); 
-  /* box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #07421a; */
+  background: #053314;
+  box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #07421a;
 }
 .contact form .input-box input::placeholder,
 .contact form textarea::placeholder {
-  color: var(--contact-text);
+  color: rgb(206, 255, 206);
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -1074,7 +883,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   border-radius: 20px;
   color:yellowgreen;
-  background-color: var(--primary-color);
+  background-color: #053314;
   margin-top: 0;
   display: block; 
   margin-top: 10px;
@@ -1094,13 +903,17 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Modal styles */
 .modal {
   display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 101;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  /*overflow: auto;*/
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -1177,7 +990,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-content button[type="submit"]:hover {
-  background-color:var(--primary-color);
+  background-color:#053314;
 }
 
 .modal-content button[type="submit"]:focus {
@@ -1311,7 +1124,7 @@ input[type="number"]::-webkit-inner-spin-button {
     left: 0;
     width: 100%;
     padding: 1rem 1%;
-    background: var(--primary-color);
+    background: var(--bg-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
@@ -1432,6 +1245,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .portfolio-container {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
   
   .footerUpperPart {
@@ -1526,7 +1340,7 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: center;
 }
 .socialIcons i {
-  color: var(--secondary-color);
+  color: var(--second-color);
 
   font-size: 22px;
   /* margin-left:25px;
@@ -1626,7 +1440,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .footer-iconTop a i {
   font-size: 2.4rem;
-  color: var(--secondary-color);
+  color: var(--second-color);
 }
 .socialIcons {
   display: flex;
@@ -1671,11 +1485,11 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s ease;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .quick-links a:hover {
-  color: #bafb86; /* Change color on hover */
+  color: #f0f0f0; /* Change color on hover */
   text-decoration: underline;
 }
 
