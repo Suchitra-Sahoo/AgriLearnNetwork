@@ -224,6 +224,24 @@ form.addEventListener('submit', (event) => {
       }
   });
 
+//Disable submit button if the message field is empty
+const message=document.querySelector("#message");
+const btn=document.querySelector("#contact-btn");
+const name=document.querySelector("#name");
+const mail=document.querySelector("#mail");
+const number=document.querySelector("#number");
+const subject=document.querySelector("#subject");
+
+message.addEventListener("input",validate);
+function validate(){
+    if (message.value==="" || name.value==="" || mail.value==="" || number.value==="" || subject.value===""){
+        btn.setAttribute("disabled","disabled");
+    } else {
+      btn.removeAttribute("disabled");  
+    }
+}
+
+
 
   const ratingStars = [...document.getElementsByClassName("rating__star")];
 

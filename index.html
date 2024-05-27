@@ -381,20 +381,18 @@
       <h2 class="heading">Contact <span>Us!</span></h2>
         <form action="#" id="contact-form">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email Address" required>
+          <input type="text" id="name" placeholder="Full Name" required>
+          <input type="email" id="mail" placeholder="Email Address" required>
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" required id="mobileNumber">
-          <input type="text" placeholder="Email Subject" required>
+          <input type="number" id="number" placeholder="Mobile Number" required id="mobileNumber">
+          <input type="text" id="subject" placeholder="Email Subject" required>
         </div>
 
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <button id="review-btn">Give feedback</button>
-        <input type="submit" class="btn" id="contact-btn">
-
-
+        <button type="submit" id="contact-btn" class="btn" disabled>Submit</button>
         </form>
      
     </section>

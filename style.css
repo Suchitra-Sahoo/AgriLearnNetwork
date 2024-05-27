@@ -336,6 +336,14 @@ span {
   font-weight: 600;
   transition: 0.5sec ease;
 }
+.btn:disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: none;
+  background-color: #666;
+  color: #000;
+  box-shadow: none;
+}
 
 .email-link {
   position: relative;
@@ -1052,7 +1060,6 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(183, 253, 6, 0.1); 
 }
-
 
 /* Modal styles */
 .modal {
