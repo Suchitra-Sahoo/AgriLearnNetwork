@@ -58,7 +58,7 @@ section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
-.header {
+/* .header {
   position: fixed;
   top: 0;
   left: 0;
@@ -72,7 +72,7 @@ section {
 }
 .header.sticky {
   border-bottom: 0.1rem solid rgb(252, 187, 223);
-}
+} */
 .header img{
   height: 6rem;
   margin-right: 2rem;
@@ -96,8 +96,8 @@ section {
  }
  .header
  {
-    position: fixed;
-    opacity: 0.8;
+  position: fixed;
+  opacity: 0.8;
    top: 0;
    left: 0;
    width:100%;
@@ -106,11 +106,15 @@ section {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   z-index: 100;
+   z-index: 10000;
+   transition: all 0.8s;
  }
  .header.sticky
  {
-  border-bottom: .1rem solid rgb(252, 187, 223);
+  opacity: 0.9;
+  padding: 2rem 5%;
+  background-color: rgb(4, 125, 18);
+  box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
  }
 
  .logo
