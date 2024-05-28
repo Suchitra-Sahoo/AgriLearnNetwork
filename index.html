@@ -376,6 +376,7 @@
             </p>
           </div>
         </div>
+
         <div class="newsletter">
           <h2 style="font-size: 16px;" >Subscribe to Our Newsletter</h2>
           <form id="newsletter-form">
@@ -391,10 +392,9 @@
         </div>
       </div>
     </footer>
-    
-    
-    
-
+    <div  id="backtoTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
 
           
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -407,6 +407,18 @@
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 
     <script>
+
+      window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var backToTopButton = document.getElementById('backtoTop');
+
+  if (scrollPosition > 300) { // Adjust this value as needed to show the button at the desired scroll position
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
       document.addEventListener("DOMContentLoaded", function () {
         const slideGroup = document.querySelector(".slide_group");
         let currentSlide = 0;

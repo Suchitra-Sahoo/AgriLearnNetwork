@@ -1422,9 +1422,49 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: bold;
 }
 
+
 .quick-links ul {
   list-style: none;
   padding: 0;
+.footer-title,
+.footer-icons,
+.footer-iconTop {
+  text-align: center;
+ 
+}
+#backtoTop{
+  position :fixed;
+  bottom: 90px;
+  right: 24px;
+  height: 60px;
+  width: 60px;
+  background-color: #B19222;
+  border-radius:50%;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none; 
+  transition: background-color 0.5s ease-in 0.3s;
+}
+#backtoTop a{
+  display: inline-block;
+height: 100%;
+width: 100%;
+ border-radius: 50%;
+ justify-content: center;
+ align-items: center;
+  transition: 0.5s ease;
+  padding: 1.2rem;
+
+}
+#backtoTop a:hover{
+background-color: #a48613;
+}
+#backtoTop a i {
+font-size: 36px;
+  color: white;
+
 }
 
 .quick-links ul li {
@@ -1513,6 +1553,23 @@ input[type="number"]::-webkit-inner-spin-button {
 .container {
   display: flex;
   justify-content: space-between; /* Aligns the newsletter section to the right */
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+  * Places these items above the icons in the single column layout */
+  
+  .socialIcons{
+    gap:0;
+    padding: 1rem;
+  }
+  .quick-links li {
+    margin-bottom: 0;
+  }
+  .quick-links ul{
+    flex-direction: column;
+  }
 }
 
 #thank-you-message {

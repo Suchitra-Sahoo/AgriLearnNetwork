@@ -207,7 +207,7 @@ a {
 .day ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .date {
@@ -217,8 +217,8 @@ a {
 }
 
 .time {
-  text-align: right;
-  padding-left: 50px;
+  text-align: left;
+  padding-right: 20px;
   align-self: flex-end;
 }
 
