@@ -370,9 +370,6 @@
             ></a>
           </div>
         </div>
-        <div class="footer-iconTop">
-          <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
       </div>
       <div class="quick-links">
         <h2>Quick Links</h2>
@@ -404,6 +401,9 @@
         </p>
       </div>
     </footer>
+    <div  id="backtoTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -415,6 +415,18 @@
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 
     <script>
+
+      window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var backToTopButton = document.getElementById('backtoTop');
+
+  if (scrollPosition > 300) { // Adjust this value as needed to show the button at the desired scroll position
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
       document.addEventListener("DOMContentLoaded", function () {
         const slideGroup = document.querySelector(".slide_group");
         let currentSlide = 0;
