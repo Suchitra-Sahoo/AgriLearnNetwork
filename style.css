@@ -902,9 +902,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Modal styles */
 .modal {
+
+  
   display: none;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+
   justify-content: center;
   align-items: center;
   position: fixed;
