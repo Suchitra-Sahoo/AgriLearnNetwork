@@ -882,7 +882,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px 0 0 5px;
-  background-color: #00BFFF;
+  background-color:  #B19222;
   color: white;
   font-size: 16px;
   writing-mode: vertical-rl;
@@ -896,7 +896,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 #review-btn:hover {
-  background-color: #1E90FF;
+  background-color:#B19222 ;
 }
 
 .button-container {
