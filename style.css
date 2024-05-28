@@ -1430,6 +1430,40 @@ input[type="number"]::-webkit-inner-spin-button {
 .footer-icons,
 .footer-iconTop {
   text-align: center;
+ 
+}
+#backtoTop{
+  position :fixed;
+  bottom: 90px;
+  right: 24px;
+  height: 60px;
+  width: 60px;
+  background-color: #B19222;
+  border-radius:50%;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none; 
+  transition: background-color 0.5s ease-in 0.3s;
+}
+#backtoTop a{
+  display: inline-block;
+height: 100%;
+width: 100%;
+ border-radius: 50%;
+ justify-content: center;
+ align-items: center;
+  transition: 0.5s ease;
+  padding: 1.2rem;
+
+}
+#backtoTop a:hover{
+background-color: #a48613;
+}
+#backtoTop a i {
+font-size: 36px;
+  color: white;
 }
 .footer-iconTop a{
   display: inline-block;
@@ -1503,9 +1537,8 @@ input[type="number"]::-webkit-inner-spin-button {
   .footer-grid {
     grid-template-columns: 1fr; /* Single column layout for smaller screens */
   }
-  .footer-iconTop {
-    order: -1; /* Places these items above the icons in the single column layout */
-  }
+  * Places these items above the icons in the single column layout */
+  
   .socialIcons{
     gap:0;
     padding: 1rem;
