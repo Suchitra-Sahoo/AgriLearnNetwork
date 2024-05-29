@@ -832,9 +832,10 @@ a {
 }
 
 .contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .contact form .input-box {
@@ -845,7 +846,7 @@ a {
 
 .contact form .input-box input,
 .contact form textarea {
-  width: 40%;
+  width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
   color: rgb(206, 255, 206);
