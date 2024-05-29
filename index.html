@@ -178,7 +178,7 @@
             <a href="#about"><p>About Us</p></a>
           </li>
           <li>
-            <a href="#Farm Management"><p>Blogs</p></a>
+            <a href="blogpage.html"><p>Blogs</p></a>
           </li>
           <li>
             <a href="#Resource Library"><p>Resource Library</p></a>
@@ -281,6 +281,13 @@
         v.type = "text/javascript";
         s.parentNode.insertBefore(v, s);
       })(document, "script");
+    </script>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header= document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY >10)
+      })
     </script>
   </body>
 </html>
