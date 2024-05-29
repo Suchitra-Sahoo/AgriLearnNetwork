@@ -142,9 +142,25 @@ body {
 
 .day {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
+
+  justify-content: space-evenly;
+}
+
+.date {
+  margin-right: 5px;
+  text-align: left;
+  padding-right: 30px;
+}
+
+.time {
+  text-align: left;
+  padding-right: 20px;
+  align-self: flex-end;
+
 }
 
 .day p {
