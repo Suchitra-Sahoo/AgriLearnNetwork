@@ -884,25 +884,34 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 #review-btn{
+  padding: 10px 20px;
   border: none;
-  border-radius: 20px;
-  color:yellowgreen;
-  background-color: #053314;
-  margin-top: 0;
-  display: block; 
-  margin-top: 10px;
-  margin-left: 20px;
-  text-decoration: underline;
-  font-size: 14px;
+  border-radius: 5px 0 0 5px;
+  background-color:  #B19222;
+  color: white;
+  font-size: 16px;
+  writing-mode: vertical-rl;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  right: 0; /* Attach to the right edge */
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%); /* Adjust for centering */
+  white-space: nowrap; /* Prevent text from wrapping */
   
   
 
 }
 #review-btn:hover{
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(183, 253, 6, 0.1); 
+  background-color:#B19222 ;
 }
-
+.button-container {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 200; /* Ensure it stays on top */
+}
 
 /* Modal styles */
 .modal {
