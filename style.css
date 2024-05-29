@@ -38,6 +38,33 @@ section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
+
+.resource{
+  height: 30vh;
+}
+
+.see-more{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: -400px;
+}
+
+.see-more button{
+  background-color:#0e4b16;
+  color: white;
+  padding: 12px 20px;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: block;
+  margin: auto;
+
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -1215,3 +1242,205 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+
+/* @dhruv8433 */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Header Section */
+.header-section {
+  background-color: #2d3e50;
+  background: url('https://i.pinimg.com/564x/1b/82/c4/1b82c40df7af10c5c68be2a366e4a6da.jpg') no-repeat ;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  color: white;
+  padding: 150px 200px;
+  margin-top: 100px;
+}
+
+.header-section h1 {
+  font-size: 5.5rem;
+  margin-bottom: 10px;
+}
+
+.header-section p {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.header-section ul {
+  font-size: 2rem;
+}
+
+.header-section ul li {
+  margin-bottom: 10px;
+}
+
+/* Benefits Section */
+.benefits-section {
+  background-color: #a4c639;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.benefits-section .content {
+  max-width: 100%;
+  text-align: center;
+}
+
+.benefits-section h1{
+  font-size: 5.5rem;
+}
+
+.benefits-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.benefits-section ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Farming Time Section */
+.farming-time-section {
+  background-color: #e3f2fd;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.farming-time-section .content {
+  max-width: 600px;
+}
+
+.farming-time-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.farming-time-section p {
+  font-size: 1.2rem;
+}
+
+/* Traditional Farming Section */
+.traditional-farming-section {
+  background-color: #4e342e;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.traditional-farming-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.traditional-farming-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.comparison {
+  display: flex;
+  justify-content: space-around;
+}
+
+.comparison .traditional,
+.comparison .modern {
+  max-width: 45%;
+}
+
+.comparison img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.news-section{
+  text-align: center;
+}
+
+.news-section h1{
+  font-size: 5.5rem;
+}
+
+.news-section p {
+  font-size: 2rem;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.news-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.news-content .read-more {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.news-content .read-more:hover {
+  color: #004080;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .news-container {
+      grid-template-columns: 1fr;
+  }
+
+  .news-card img {
+      height: 150px;
+  }
+
+  .news-content h2 {
+      font-size: 1.2rem;
+  }
+
+  .news-content p {
+      font-size: 0.9rem;
+  }
+}
