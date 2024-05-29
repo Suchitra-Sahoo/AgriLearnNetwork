@@ -160,6 +160,22 @@ form.addEventListener('submit', (event) => {
     
   }
 });
+
+document.getElementById('subscribe-btn').addEventListener('click', function() {
+  var email = document.getElementById('email').value;
+  if(validateEmail(email)) {
+      // Here you would typically send the email to your server
+      alert('Thank you for subscribing!');
+  } else {
+      alert('Please enter a valid email address.');
+  }
+});
+
+function validateEmail(email) {
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(String(email).toLowerCase());
+}
+
  
 
 
