@@ -24,10 +24,9 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
-
 // Add an "active" class to the clicked link
 $('a[href*="#"]')
-.not('[href="#"]')
+  .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
     // Remove any existing "active" class from links
@@ -46,7 +45,6 @@ $('a[href*="#"]')
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       
       if (target.length) {
-
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
@@ -64,15 +62,15 @@ $('a[href*="#"]')
     }
   });
 
-//when scroll on any section that section's corresponding hyperlink will be active and
+// When scroll on any section that section's corresponding hyperlink will be active and
 // the previous activated hyperlink will be deactivated
 $('section[id]').mouseover(function() {
-var sectionId = $(this).attr('id');
-var correspondingLink = $('a[href="#' + sectionId + '"]');
-// Remove active class from all links
-$('a').removeClass('active');
-// Add active class to the corresponding link
-correspondingLink.addClass('active');
+  var sectionId = $(this).attr('id');
+  var correspondingLink = $('a[href="#' + sectionId + '"]');
+  // Remove active class from all links
+  $('a').removeClass('active');
+  // Add active class to the corresponding link
+  correspondingLink.addClass('active');
 });
   
   // Set initial active link based on URL hash
@@ -117,38 +115,50 @@ form.addEventListener('submit', (event) => {
   const mobileNumber = form.querySelector('input[placeholder="Mobile Number"]').value.trim();
   const emailSubject = form.querySelector('input[placeholder="Email Subject"]').value.trim();
   const message = form.querySelector('textarea').value.trim();
-
+  // const alertBox = document.getElementById('alertBox');
+  // alertBox.classList.remove('hidden');
   // Validation
-  if (!fullName) {
-    alert('Please enter your full name.');
+  const nameRegex = /^[A-Za-z]{2,50}(?: [A-Za-z]{2,50})*$/;
+  if (!nameRegex.test(fullName)) {
+    swal({
+      title: "Custom Styled Alert",
+      text: "This alert has been styled with custom CSS.",
+      icon: "info",
+      button: "Awesome!"
+    })
+    swal("Try Again!","Please enter your full name.","warning");
     return;
   }
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) {
-    alert('Please enter a valid email address.');
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    swal("Try Again!","Please enter a valid email.","warning");
     return;
   }
 
-  const mobilePattern = /^\d+$/;
-  if (!mobilePattern.test(mobileNumber)) {
-    alert('Please enter a valid mobile number.');
+  const mobileRegex = /^\+?(\d{1,3})?[-.\s]?(\(?\d{3,4}\)?[-.\s]?)?\d{3}[-.\s]?\d{3,4}$/;
+  if (!mobileRegex.test(mobileNumber)) {
+    swal("Try Again!","Please enter a valid mobile number.","warning");
     return;
   }
 
-  if (!emailSubject) {
-    alert('Please enter the email subject.');
+  const emailSubjectRegex = /^[\w\s\p{P}]{10,90}$/;
+  if (!emailSubjectRegex.test(emailSubject)) {
+    swal("Try Again!","Please enter email subject.","warning");
     return;
   }
 
   if (!message) {
-    alert('Please enter your message.');
+    swal("Try Again!","Please enter your message.","warning");
     return;
   }
 
   // form reset
-  form.reset();
-  alert('Your message has been sent. Thank you!');
+  else {
+    form.reset();
+    swal("Message received!", "We will get back to you in no time.","success");
+    
+  }
 });
  
 
@@ -164,7 +174,7 @@ form.addEventListener('submit', (event) => {
   
   reviewBtn.onclick = function(e) {
     e.preventDefault();
-      modal.style.display = "block";
+      modal.style.display = "flex";
   }
   
   
@@ -235,6 +245,4 @@ function executeRating(stars) {
 executeRating(ratingStars);
   
  
-
-
-  })();
+})();
