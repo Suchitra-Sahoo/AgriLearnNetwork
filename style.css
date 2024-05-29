@@ -1432,32 +1432,23 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .footer {
   padding: 20px;
-  background-color: #191c19;
-  color: #9aa1a3;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/istockphoto-1465642013-170667a.webp');
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  color: #fff;
 }
+
+
 
 .footer-grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.quick-links, .newsletter, .footer-text {
-  flex: 1;
-  min-width: 200px;
-}
-
-.quick-links h2, .newsletter h2 {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-
-.quick-links ul {
-  list-style: none;
-  padding: 0;
-}
 .footer-title,
 .footer-icons,
 .footer-iconTop {
@@ -1496,98 +1487,73 @@ background-color: #a48613;
 #backtoTop a i {
 font-size: 36px;
   color: white;
-
+}
+.footer-iconTop a{
+  display: inline-block;
+  width: max-content;
+  padding: 0.8rem;
+  background: var(--main-color);
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
-.quick-links ul li {
-  margin: 10px 0;
-}
 
-.quick-links ul li a {
-  color: #eefcff;
-  text-decoration: none;
-  transition: color 0.3s;
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--second-color);
 }
-
-.quick-links ul li a:hover {
-  color: #026512;
-}
-
-.newsletter {
-  max-width: 275px;
-  margin-bottom: 40px;
-  margin-left: 75px; /* Existing margin */
-  margin-right: 60px; /* Added margin to push the section to the right */
-  font-size: 8px;
-}
-
-.newsletter form {
+.socialIcons {
   display: flex;
-  flex-direction: column;
-  margin: 10px 0;
-}
-
-.newsletter input[type="email"] {
-  width: 100%; /* Adjust the width as needed */
-  margin-bottom: 20px;
-  padding: 10px; /* Adjusted padding */
-  padding-left: 80px;
-  border: 2px solid #3fb547;
-  border-radius: 50px;
-  text-align: start;
-  outline: none;
-}
-
-.newsletter .subscribe-btn {
-  width: 100%; /* Adjust the width as needed */
-  padding: 10px;
-  padding-left: 10px;
-  background-color: #053314;
-  color: white;
-  border: 1px solid;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.newsletter .subscribe-btn:hover {
-  background-color: #080808;
-}
-
-.newsletter p {
-  margin: 10px 0 0;
-  font-size: 10px;
-  max-width: 300px;
-}
-
-.socialIcons a {
-  margin: 0 10px;
-  font-size: 20px;
-  color: #ecf0f1;
-  transition: color 0.3s;
-  align-content: center;
-  margin-top: 40px;
-}
-
-.socialIcons a:hover {
-  color: #3498db;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .footer-text {
   text-align: center;
-  margin: 20px 0;
-  margin-top: 40px; /* Adds space above the footer text section */
-}
-
-.footer-text p {
-  padding-top: 20px;
   margin-top: 10px;
-  margin-right: auto;
 }
 
-.container {
+.quick-links {
+ text-align: center;
+ width: 50vw;
+ padding: 20px;
+ p{
+  font-weight: bold;
+}
+}
+
+.quick-links h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.quick-links ul {
+  list-style-type: none;
+  padding: 0;
   display: flex;
-  justify-content: space-between; /* Aligns the newsletter section to the right */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quick-links li {
+  margin-bottom: 8px;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.quick-links a:hover {
+  color: #f0f0f0; /* Change color on hover */
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -1607,11 +1573,4 @@ font-size: 36px;
     flex-direction: column;
   }
 }
-
-#thank-you-message {
-  color: #ffffff; /* Optional: Customize the color of the thank you message */
-  font-weight: bold;
-  padding-left: 75px;
-}
-
 
