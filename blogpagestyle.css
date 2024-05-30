@@ -200,14 +200,21 @@ a {
   flex-direction: column;
   position: absolute;
   justify-content: space-between;
-  bottom: 0;
-  padding: 0;
+  bottom: 30px; /* Added unit */
+  padding: 20px; /* Added unit */
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px; /* Add space below date-time */
 }
 
 .day ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 50px; /* Add space above the "more" button */
 }
 
 .date {
@@ -229,3 +236,26 @@ a {
 .pos {
   position: relative;
 }
+.more-info-btn {
+  background-color: var(--main-color);
+  color: var(--txt-color);
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+
+  border: none;
+  padding: 10px 0; /* Adjust padding for equal spacing */
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+
+  transition: background-color 0.3s ease;
+  width: calc(100% - 20px); /* Ensure button fits within container padding */
+  margin: 0 10px; /* Align with padding of container */
+}
+
+.more-info-btn:hover {
+  background-color: var(--second-color);
+}
+
