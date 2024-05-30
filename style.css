@@ -1810,8 +1810,3 @@ ul {
       font-size: 0.9rem;
   }
 }
-#thank-you-message {
-  color: #ffffff; /* Optional: Customize the color of the thank you message */
-  font-weight: bold;
-  padding-left: 75px;
-}
