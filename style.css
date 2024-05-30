@@ -344,6 +344,13 @@ span {
   box-shadow: none;
 }
 
+.btn:disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: none;
+  opacity: 0.5;
+}
+
 .email-link {
   position: relative;
   display: inline-block;

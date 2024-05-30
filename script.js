@@ -24,6 +24,24 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
+//Re-enable submit button if all details are fiiled
+const fname=document.querySelector("#name");
+const mail=document.querySelector("#mail");
+const mobile=document.querySelector("#mobile");
+const subject=document.querySelector("#subject");
+const message=document.querySelector("#message");
+const btn=document.querySelector("#contact-btn");
+message.addEventListener("input",validate);
+function validate(){
+    if (message.value==="" || subject.value==="" || mobile.value==="" || mail.value==="" || fname.value===""){
+      btn.setAttribute("disabled","disabled");
+    }
+    else {
+      btn.removeAttribute("disabled");  
+    }
+}
+
+
 // Add an "active" class to the clicked link
 $('a[href*="#"]')
   .not('[href="#"]')
