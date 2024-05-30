@@ -840,20 +840,59 @@ a {
   color: var(--second-color);
 }
 
+:root {
+  --primary-color: #25a045;
+  --secondary-color: #0e4b16;
+ 
+  --text-color: #333;
+  --placeholder-color: #888;
+  --input-background: #f1f1f1;
+  --button-background: linear-gradient(45deg, #053314, #0e6b28);
+  --button-hover-background: linear-gradient(45deg, #0e6b28, #1b8f41);
+}
+
+.contact {
+  background:linear-gradient(184deg, #053314, #1e1e1c);
+
+  padding: 4rem 2rem;
+}
+
 .contact h2 {
   margin-bottom: 3rem;
-  color: #ffffff; /* Change heading color */
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.contact h2 span {
+  color: var(--primary-color);
+}
+
+.contact h2::after {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background: var(--primary-color);
+  display: block;
+  margin: 1rem auto;
+  border-radius: 2px;
 }
 
 .contact form {
   max-width: 70rem;
   margin: 1rem auto;
   text-align: center;
-  margin-bottom: 3rem;
-  /* background-color: rgba(5, 51, 20, 0.8); */
-  padding: 3rem; /* Add padding for better spacing */
-  border-radius: 20px; /* Add border radius for rounded corners */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add box shadow for depth */
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact form:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 }
 
 .contact form .input-box {
@@ -864,91 +903,75 @@ a {
 
 .contact form .input-box input,
 .contact form textarea {
-  width: calc(50% - 1rem); /* Make input fields occupy 50% of the width */
+  width: calc(50% - 1rem);
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: #ffffff;
-  background: var(--second-color);
-  border-radius: 10px; /* Add border radius for rounded corners */
-  border: none;
-  margin-bottom: 1rem; /* Add margin between input fields */
-  transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for smoother hover effect */
+  color: var(--text-color);
+  background: var(--input-background);
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+  background-color: #e0f7e9;
+  box-shadow: 0 0 10px rgba(37, 160, 69, 0.2);
+  outline: none;
 }
 
 .contact form .input-box input::placeholder,
 .contact form textarea::placeholder {
-  color: #ffffff;
+  color: var(--placeholder-color);
 }
 
 .contact form textarea {
-  width: 100%; /* Make textarea full-width */
-  height: 12rem; /* Set a fixed height for the textarea */
+  width: 100%;
+  height: 12rem;
 }
 
-.contact form .btn {
+.contact form .btn,
+#review-btn {
   margin-top: 2rem;
   cursor: pointer;
-  padding: 1rem 2rem; /* Add padding to the button */
+  padding: 1rem 2rem;
   font-size: 1.6rem;
-  background-color: #0e4b16; /* Change button background color */
-  color: #ffffff; /* Change button text color */
+  background: var(--button-background);
+  color: #ffffff;
   border: none;
-  border-radius: 10px; /* Add border radius for rounded corners */
-  transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for smoother hover effect */
+  border-radius: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
-.contact form .btn:hover {
-  background-color: #064b10; /* Darken button color on hover */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+.contact form .btn:hover,
+#review-btn:hover {
+  background: var(--button-hover-background);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
 }
-
 
 #review-btn {
-  border: none;
-  border-radius: 50px; /* More rounded corners for a modern look */
-  color: #ffffff; /* Change text color to white for better contrast */
-  background: linear-gradient(45deg, #053314, #0e6b28); /* Add a gradient background */
-  margin: 10px 20px; /* Simplify margin properties */
-  display: block;
-  text-decoration: none; /* Remove underline for a cleaner look */
-  font-size: 18px; /* Increase font size for better readability */
-  padding: 15px 30px; /* Add padding for a better button size */
+  display: inline-block;
+  text-decoration: none;
   position: relative;
-  overflow: hidden; /* Ensure gradient animation stays within the button */
-  z-index: 0;
-  transition: all 0.4s ease; /* Smooth transitions for hover effects */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  overflow: hidden;
 }
 
 #review-btn::before {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(60deg, #053314, #0e6b28, #1b8f41, #25a045); /* Animated gradient colors */
-  background-size: 400% 400%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--button-background);
   z-index: -1;
-  transition: opacity 0.3s ease;
-  opacity: 0.5;
+  transition: transform 0.3s;
 }
 
 #review-btn:hover::before {
-  animation: gradientShift 4s infinite; /* Animation on hover */
-  opacity: 1;
-}
-
-#review-btn span {
-  position: relative;
-  z-index: 1; /* Ensure text stays on top */
-}
-
-#review-btn:hover {
-  cursor: pointer;
-  box-shadow: 0 8px 15px rgba(183, 253, 6, 0.3); /* Increase shadow on hover */
-  transform: scale(1.1); /* Slightly increase size on hover */
-  border: 2px solid #1b8f41; /* Add border on hover */
+  transform: scale(1.1);
 }
 
 @keyframes gradientShift {
@@ -956,6 +979,7 @@ a {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
 
 
 
