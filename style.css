@@ -503,6 +503,10 @@ span {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.buy-btn{
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width: 1024px) {
   .about-content {

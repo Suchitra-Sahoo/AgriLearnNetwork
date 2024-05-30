@@ -1,0 +1,60 @@
+.box{
+    margin: 100px;
+   display: flex;
+   flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    color: black;
+ 
+    
+    /* padding: 20px 10px; */
+}
+
+.card{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+img{
+    height: 208px;
+    width: 242px;
+}
+
+.card:hover{
+    padding: 20px;
+    position: relative;
+    
+    border: 4px dashed transparent;
+    transition: padding .3s;
+    box-shadow: 5px 10px 10px 1px yellowgreen;
+}
+
+.button{
+    display: flex;
+    gap: 4px;
+}
+
+select{
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+
+.description{
+    float: left;
+}
