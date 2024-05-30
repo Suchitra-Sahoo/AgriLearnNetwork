@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="blogpagestyle.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/fb940be696.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -20,13 +21,36 @@
             </span>
         </a>
         
+
         </div> 
-        <div class="navtitle">
-          <h2>Agro<span>Blogs</span></h2>
-    </div>
-        </div>
+
         
-     
+
+        <div class="navtitle">
+
+          <h2>Agro<span>Blogs</span></h2>
+
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html#home" class="active"
+        ><i class="fa-solid fa-house"></i> Home</a
+      >
+      <a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a href="blogpage.html" target="_self">
+        <i class="fa-solid fa-blog"></i> Blogs</a
+      >
+      <a href="index.html#Resource Library"
+        ><i class="fa-solid fa-book"></i> Resource Library</a4
+      >
+      <a href="index.html#contact" id="nav--contact"
+        ><i class="fa-solid fa-phone"></i> Contact</a
+      >
+    </nav>
+
+        </div>
+  
+        
 
     <section class="farm">
         <br>
@@ -38,7 +62,9 @@
         <input id="input" class="search-bar" placeholder="Search Blogs" oninput="search()"/>
         <img id="search-icon" src="./images/search icon.jpg"/>
         </div>
+
         
+
     <div class="services-box">
       <div class="fcard"onclick="window.location.href='https://tractorkarvan.com/blog/how-to-sow-seeds';">
         <img class="agrblg" src="./images/sow.jpeg">
