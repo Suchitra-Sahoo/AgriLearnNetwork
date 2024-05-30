@@ -833,16 +833,96 @@ a {
   color: var(--second-color);
 }
 
-.contact h2 {
-  margin-bottom: 3rem;
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 4rem;
+  transition: max-width 0.5s ease;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 40%; 
+margin-left: 3%;
+}
+
+.contact-info h2 {
+  margin-bottom: 2rem;
+  font-size: 78px;
+  margin-left: 8%;
+  transition: font-size 0.5s ease;
+  text-align: left;
+}
+
+.contact-info .heading{
+  font-size: 56px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
+  margin-left: 5%;
+  text-align: left;
+  transition: align-items 1s;
+}
+.contact-info.help .heading{
+  font-size: 34px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
+  margin-left: 5%;
+  text-align: left;
+  transition: align-items 1s;
+}
+
+.about-content.items {
+  margin-top: 2rem;
+  text-align: left;
+  transition: align-items 1s;
+  margin-left: -3%;
+}
+
+.about-content.row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; 
+  text-align: left;
+  transition: align-items 1s;
+  margin-left: -3%;
+}
+
+.card {
+  
+  color: rgb(192, 223, 100);
+  padding: 1.5rem;
+  text-align: left;
+  margin-left: -3%;
+
+}
+.card p {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 10px 0 0;
+  margin-left: -3%;
+  transition: align-items 1s;
+}
+
+.card .line {
+  display: flex;
+  text-align:left ;
+  font-size: 36px;
+  margin-bottom: 0.5rem;
+  margin-left: -3%;
+
 }
 
 .contact form {
-  max-width: 70rem;
-  margin: 1rem auto;
+  flex: 1.5; 
   text-align: center;
-  margin-bottom: 3rem;
+  max-width: 700px;
+  transition: max-width 0.5s ease;
 }
+
 .contact form .input-box {
   display: flex;
   justify-content: space-between;
@@ -852,7 +932,7 @@ a {
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
-  padding: 1.5rem;
+  padding: 2rem;
   font-size: 1.6rem;
   color: rgb(206, 255, 206);
   background: var(--second-color);
@@ -862,15 +942,18 @@ a {
   background: #053314;
   box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #07421a;
 }
+
 .contact form .input-box input::placeholder,
 .contact form textarea::placeholder {
   color: rgb(206, 255, 206);
 }
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 .contact form .input-box input {
   width: 49%;
 }
@@ -878,39 +961,31 @@ input[type="number"]::-webkit-inner-spin-button {
 .contact form textarea {
   resize: none;
 }
+
 .contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+  font-size: 1.6rem; 
+  padding: 1rem 2rem; 
+  width:700px;
 }
 
-#review-btn{
-  padding: 10px 20px;
+#review-btn {
   border: none;
-  border-radius: 5px 0 0 5px;
-  background-color:  #B19222;
-  color: white;
-  font-size: 16px;
-  writing-mode: vertical-rl;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  position: absolute;
-  right: 0; /* Attach to the right edge */
-  top: 50%; /* Vertically center */
-  transform: translateY(-50%); /* Adjust for centering */
-  white-space: nowrap; /* Prevent text from wrapping */
-  
-  
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  background-color: #053314;
+  margin-top: 0;
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-decoration: underline;
+  font-size: 1.4rem; 
+}
 
-}
-#review-btn:hover{
-  background-color:#B19222 ;
-}
-.button-container {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  z-index: 200; /* Ensure it stays on top */
+#review-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(183, 253, 6, 0.1);
 }
 
 /* Modal styles */
