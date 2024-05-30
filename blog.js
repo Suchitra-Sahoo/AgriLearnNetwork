@@ -27,4 +27,67 @@ function search(){
       }
     }
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('blog-posts.json')
+        .then(response => response.json())
+        .then(data => {
+          const servicesBox = document.getElementById('services-box');
+          data.forEach(post => {
+            const fcard = document.createElement('div');
+            fcard.classList.add('fcard');
+            fcard.onclick = () => window.location.href = post.link;
     
+            const img = document.createElement('img');
+            img.classList.add('agrblg');
+            img.src = post.image;
+            fcard.appendChild(img);
+    
+            const articleDiv = document.createElement('div');
+            articleDiv.classList.add('article');
+    
+            const blogLink = document.createElement('a');
+            blogLink.href = "#";
+            blogLink.textContent = "Blog";
+            articleDiv.appendChild(blogLink);
+    
+            const title = document.createElement('h2');
+            title.textContent = post.title;
+            articleDiv.appendChild(title);
+    
+            const content = document.createElement('p');
+            content.textContent = post.content.substring(0, 100) + '...'; // Shorten content for preview
+            articleDiv.appendChild(content);
+    
+            const dayDiv = document.createElement('div');
+            dayDiv.classList.add('day');
+    
+            const ul = document.createElement('ul');
+    
+            const dateLi = document.createElement('li');
+            dateLi.classList.add('date');
+            const dateP = document.createElement('p');
+            dateP.classList.add('tim');
+            dateP.textContent = post.date;
+            dateLi.appendChild(dateP);
+            ul.appendChild(dateLi);
+    
+            const timeLi = document.createElement('li');
+            timeLi.classList.add('time');
+            const timeP = document.createElement('p');
+            timeP.classList.add('tim');
+            timeP.textContent = post.time;
+            timeLi.appendChild(timeP);
+            ul.appendChild(timeLi);
+    
+            dayDiv.appendChild(ul);
+            articleDiv.appendChild(dayDiv);
+    
+            fcard.appendChild(articleDiv);
+            servicesBox.appendChild(fcard);
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching or parsing blog posts:', error);
+        });
+    });

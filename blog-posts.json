@@ -1,0 +1,72 @@
+[
+        {
+            "id":"1",
+            "title": "Harvesting Tips",
+            "date": "June 12, 2024",
+            "time": "11 months ago",
+            "author": "Jane Smith",
+            "content": "Learn about the best practices for harvesting crops to maximize yield and quality. Discover the importance of timing, technique, and post-harvest handling in ensuring that your crops reach their full potential.",
+            "image": "./images/Methods-of-Irrigation.jpg",
+            "link": "./blogs/blog1.html?id=1"
+        },
+        {
+            "id":"2",
+            "title": "Organic Farming Benefits",
+            "date": "July 15, 2023",
+            "time": "10 month ago",
+            "author": "Emily Johnson",
+            "content": "Explore the benefits of organic farming for the environment and human health. Understand the practices that differentiate organic farming from conventional farming and how it contributes to sustainable agriculture.",
+            "image": "./images/tourism.jpg",
+            "link": "./blogs/blog2.html?id=2"
+        },
+        {
+            "id":"3",
+            "title": "Irrigation Systems for Efficient Water Use",
+            "date": "March 10, 2024",
+            "time": "1 year ago",
+            "author": "Michael Lee",
+            "content": "Discover various irrigation systems and techniques that help in conserving water while ensuring optimal crop growth. Learn about drip irrigation, sprinkler systems, and other modern irrigation methods.",
+            "image": "./images/irrigation.jpeg",
+            "link": "./blogs/blog3.html?id=3"
+        },
+        {
+            "id":"4",
+            "title": "Integrated Pest Management",
+            "date": "May 5, 2023",
+            "time": "1 year ago",
+            "author": "Sarah Brown",
+            "content": "Integrated Pest Management (IPM) is a sustainable approach to managing pests by combining biological, cultural, physical, and chemical tools. Learn how IPM can help reduce pest damage while minimizing environmental impact.",
+            "image": "./images/pest.jpg",
+            "link": "./blogs/blog4.html?id=4"
+        },
+        {
+            "id":"5",
+            "title": "Advances in Agricultural Technology",
+            "date": "February 25, 2024",
+            "time": "3 months ago",
+            "author": "David Clark",
+            "content": "Explore the latest advancements in agricultural technology, including precision farming, drones, and automation. Understand how these technologies are revolutionizing farming practices and improving efficiency.",
+            "image": "./images/farmtech.png",
+            "link": "./blogs/blog5.html?id=5"
+        },
+        {
+            "id":"6",
+            "title": "Soil Health and Management",
+            "date": "October 18, 2023",
+            "time": "6 months ago",
+            "author": "Linda Martinez",
+            "content": "Learn about the importance of soil health and management practices that enhance soil fertility. Discover techniques for maintaining soil structure, nutrient balance, and biodiversity.",
+            "image": "./images/soil.jpg",
+            "link": "./blogs/blog6.html?id=6"
+        },
+        {
+            "id":"7",
+            "title": "Urban Agriculture Innovations",
+            "date": "January 22, 2024",
+            "time": "5 months ago",
+            "author": "Robert Wilson",
+            "content": "Urban agriculture is transforming how we grow food in cities. Explore innovative methods such as vertical farming, hydroponics, and rooftop gardens that are making urban farming feasible and productive.",
+            "image": "./images/tourism.jpg",
+            "link": "./blogs/blog7.html?id=7"
+        }
+]
