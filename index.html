@@ -300,36 +300,7 @@
         <input type="submit" class="btn" id="contact-btn" value="Submit" />
       </form>
     </section>
-    
-    
-    <!-- Modal  -->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Feedback Form</h2>
-        <form id="feedback-form">
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <textarea
-            cols="30"
-            rows="5"
-            placeholder="Your Feedback"
-            required
-          ></textarea>
-
-          <div class="rating">
-            <h2>rate us:</h2>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-          </div>
-
-          <button type="submit">Submit Feedback</button>
-        </form>
-      </div>
-    </div>
+         
 
     <footer class="footer">
       <div class="footer-grid">
@@ -360,9 +331,6 @@
             ></a>
           </div>
         </div>
-        <div class="footer-iconTop">
-          <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
       </div>
       <div class="quick-links">
         <h2>Quick Links</h2>
@@ -374,7 +342,7 @@
             <a href="#about"><p>About Us</p></a>
           </li>
           <li>
-            <a href="#Farm Management"><p>Blogs</p></a>
+            <a href="blogpage.html"><p>Blogs</p></a>
           </li>
           <li>
             <a href="#Resource Library"><p>Resource Library</p></a>
@@ -394,6 +362,9 @@
         </p>
       </div>
     </footer>
+    <div  id="backtoTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -405,6 +376,18 @@
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 
     <script>
+
+      window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var backToTopButton = document.getElementById('backtoTop');
+
+  if (scrollPosition > 300) { // Adjust this value as needed to show the button at the desired scroll position
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
       document.addEventListener("DOMContentLoaded", function () {
         const slideGroup = document.querySelector(".slide_group");
         let currentSlide = 0;
@@ -462,6 +445,13 @@
         v.type = "text/javascript";
         s.parentNode.insertBefore(v, s);
       })(document, "script");
+    </script>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header= document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY >10)
+      })
     </script>
   </body>
 </html>
