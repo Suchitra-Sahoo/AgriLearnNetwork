@@ -884,25 +884,34 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 #review-btn{
+  padding: 10px 20px;
   border: none;
-  border-radius: 20px;
-  color:yellowgreen;
-  background-color: #053314;
-  margin-top: 0;
-  display: block; 
-  margin-top: 10px;
-  margin-left: 20px;
-  text-decoration: underline;
-  font-size: 14px;
+  border-radius: 5px 0 0 5px;
+  background-color:  #B19222;
+  color: white;
+  font-size: 16px;
+  writing-mode: vertical-rl;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  right: 0; /* Attach to the right edge */
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%); /* Adjust for centering */
+  white-space: nowrap; /* Prevent text from wrapping */
   
   
 
 }
 #review-btn:hover{
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(183, 253, 6, 0.1); 
+  background-color:#B19222 ;
 }
-
+.button-container {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 200; /* Ensure it stays on top */
+}
 .agri-learn-faq-button-container{
   margin: 8px;
   display: flex;
@@ -911,90 +920,91 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .agri-learn-faq-button{
-background-color: rgb(0, 255, 55);
-color:#ffffff;
-border-radius: 5px;
-height:26px;
-width:100px;
-border-width: 0px;
-font-family: sans-serif;
+  background-color: rgb(0, 255, 55);
+  color: #ffffff;
+  border-radius: 5px;
+  height: 26px;
+  width: 100px;
+  border-width: 0px;
+  font-family: sans-serif;
 }
 
 .agri-learn-faq-top-section{
   background-color: #ffffff;
-  height:40vh;
-  display:flex;
+  height: 40vh;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
 .agri-learn-faq-top-section-image{
-  height:200px;
-  width:300px;
+  height: 200px;
+  width: 300px;
 }
 
 .agri-learn-faq-section-heading{
-  color:black;
+  color: black;
   font-size: 24px;
   font-family: sans-serif;
 }
 
 .agri-learn-faq-section-para{
-  color:black;
+  color: black;
   font-size: 14px;
   font-family: sans-serif;
 }
 
 .agri-learn-faq-icon-image{
-  fill:#ffffff;
+  fill: #ffffff;
   width: 34px;
   height: 34px;
 }
+
 .agri-learn-faq-section{
-  min-height:80vh;
-  width:100%;
-  margin:0 auto;
-  display:flex;
+  min-height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 
 .agri-learn-faq-title{
-  font-size:30px;
-  margin:5px;
-  margin-bottom:14px;
-  font-family:'Montserrat', sans-serif;
+  font-size: 30px;
+  margin: 5px;
+  margin-bottom: 14px;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 
 .agri-learn-faq-heading{
-  font-size:26px;
-  font-family:sans-serif;
+  font-size: 26px;
+  font-family: sans-serif;
 }
 
 .agri-learn-faq-para{
-  margin-top:5px;
-  font-size:18px;
-  font-family:"Roboto";
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: "Roboto";
 }
 
 .agri-learn-faq{
-  width:90%;
+  width: 90%;
   max-width: 80%;
-  margin-top:2 rem;
+  margin-top: 2rem;
   margin-bottom: 10px;
-padding-bottom:1 rem;
-border-bottom:2px solid #ffffff;
-cursor:pointer;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ffffff;
+  cursor: pointer;
 }
 
 .agri-learn-faq-question{
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  align-items:flex-start;
+  align-items: flex-start;
   margin-top: 5px;
-  width:100%;
+  width: 100%;
 }
 
 .agri-learn-faq-answer{
@@ -1002,20 +1012,21 @@ cursor:pointer;
   margin-bottom: 8px;
   max-height: 0;
   overflow: hidden;
-  width:100%;
+  width: 100%;
 }
 
 .agri-learn-faq.agri-learn-faq-active .agri-learn-faq-answer{
-max-height: 300px;
+  max-height: 300px;
 }
 
 .agri-learn-faq.agri-learn-faq-active .agri-learn-faq-icon-image{
-transform:rotate(180deg);
-
+  transform: rotate(180deg);
 }
+
 .agri-learn-faq-svg{
   transition: transform 0.5s ease-in;
 }
+
 
 /* Modal styles */
 .modal {
