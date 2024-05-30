@@ -11,17 +11,6 @@
   font-family: "Playfair Display", serif;
 }
 
-.home .slider .home-content{
-  color: white;
-  background-color:rgba(5, 51, 20,0.2);
-  backface-visibility: hidden;
-}
-
-.slide_viewer .slide_group .slide{
-  filter: blur(2px);
-  
-}
-
 /* Customizing the title */
 .swal-title {
   color: #000000 !important; /* Change title color */
