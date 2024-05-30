@@ -6,32 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/fb940be696.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   
     <title>AgroBlogs</title>
   </head>
   <body>
 
       <div class="heading">
         <div class="navoptions">
-          <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+          <a href="index.html">
+            <span class="material-symbols-outlined" style="font-size: 36px;">
+                arrow_back
+            </span>
+        </a>
+        
         </div> 
         <div class="navtitle">
           <h2>Agro<span>Blogs</span></h2>
     </div>
         </div>
         
-    
+     
 
     <section class="farm">
         <br>
         <br>
         <br>
-          
+        
+         <!--search bar-->
+      <div class="search">
+        <input id="input" class="search-bar" placeholder="Search Blogs" oninput="search()"/>
+        <img id="search-icon" src="./images/search icon.jpg"/>
+        </div>
+        
     <div class="services-box">
       <div class="fcard"onclick="window.location.href='https://tractorkarvan.com/blog/how-to-sow-seeds';">
         <img class="agrblg" src="./images/sow.jpeg">
         <div class="article">
           <a href="">Blog</a>
-          <h2>Sowning Techniques</h2>
+          <h2>Sowing Techniques</h2>
           <p>Uncover the significance of precise seed placement, optimal spacing, and appropriate depth in enhancing crop yields. From promoting germination to managing weeds and pests, explore the critical aspects of sowing that shape successful cultivation. Glean valuable insights into modern sowing practices and cultivate a deeper understanding of this fundamental process in agriculture. </p>
         </p>
           <div class="day">
@@ -222,6 +235,6 @@
       
     
     </section>
-    
+    <script src="blog.js"></script>
   </body>
 </html>

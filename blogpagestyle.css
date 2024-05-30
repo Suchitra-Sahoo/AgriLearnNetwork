@@ -132,7 +132,9 @@ span {
   margin-top: auto;
   flex-direction: column;
   position: relative;
-  width: 290px;
+  /* width: 290px; */
+  max-width:290px;
+  max-height:500px;
   background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
   background: -webkit-linear-gradient(
     90deg,
@@ -207,7 +209,7 @@ a {
 .day ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .date {
@@ -217,8 +219,8 @@ a {
 }
 
 .time {
-  text-align: right;
-  padding-left: 50px;
+  text-align: left;
+  padding-right: 20px;
   align-self: flex-end;
 }
 
@@ -229,3 +231,30 @@ a {
 .pos {
   position: relative;
 }
+
+/* search bar*/
+.search{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+ }
+ #search-icon{
+   width: 45px;
+   border-radius: 6px;
+ }
+ #search-icon:hover{
+   cursor: pointer;
+ }
+ .search-bar{
+   margin: 10px;
+   padding: 5px;
+   width: 40%;
+   height: 40px;
+   /* border-radius: 10px; */
+ }
+ .hide{
+   display: none;
+ }
