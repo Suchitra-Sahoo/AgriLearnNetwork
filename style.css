@@ -864,8 +864,9 @@ a {
 .contact-form h2 {
   margin-top: 0;
   color: #000;
-  font-size: xx-large;
+  font-size: 35px;
   margin-bottom: 20px;
+  margin-left: 35% ;
 }
 
 .contact-form label {
@@ -879,7 +880,7 @@ a {
   padding: 15px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: #efefef;
 }
 
@@ -905,7 +906,7 @@ a {
 .contact-form button {
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -917,15 +918,6 @@ a {
 .contact-form button[type="submit"]:hover {
   background-color: rgb(0, 0, 137);
   color: #fff;
-}
-
-.contact-form button[type="button"] {
-  background-color: rgb(148, 148, 148);
-  color: white;
-}
-
-.contact-form button[type="button"]:hover {
-  background-color: grey;
 }
 
 
