@@ -163,7 +163,7 @@ span {
 }
 
 .article h2 {
-  font-size: 22px;
+  font-size: 1px;
   letter-spacing: 1px;
   text-shadow: 1.5px 1px green;
   text-align: left;
@@ -209,6 +209,10 @@ a {
   flex-direction: column;
   margin-bottom: 50px; /* Add space below date-time */
 }
+.date,
+.time {
+  font-size: 20px; /* Adjust the font size as needed */
+}
 
 .day ul {
   list-style: none;
@@ -218,9 +222,9 @@ a {
 }
 
 .date {
-  margin-right: 5px;
+  margin-right: 10px;
   text-align: left;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 .time {
