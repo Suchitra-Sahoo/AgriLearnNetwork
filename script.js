@@ -2,7 +2,12 @@ let menuIcon = document.querySelectorAll('#menu-icon');
 let navbar = document.querySelectorAll('.navbar');
 let Contact = document.querySelectorAll('#contact');
 let navContact = document.querySelectorAll('#nav--contact');
-
+let faqs=document.querySelectorAll(".agri-learn-faq");
+faqs.forEach(faq=>{
+  faq.addEventListener("click",()=>{
+      faq.classList.toggle("agri-learn-faq-active");
+  })
+  })
 menuIcon.forEach(icon => {
   icon.onclick = () => {
     icon.classList.toggle('bx-x');
