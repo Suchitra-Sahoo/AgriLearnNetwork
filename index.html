@@ -38,6 +38,11 @@
   </head>
 
   <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
     <header class="header">
       <img
         src="images/favicon.png"
@@ -299,58 +304,56 @@
           <input type="text" placeholder="Email Subject" required />
         </div>
 
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <button id="review-btn">Give feedback</button>
-        <input type="submit" class="btn" id="contact-btn" />
-      </form>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" class="btn" id="contact-btn"><br>
+        </form>
+        <div class="button-container">
+          <button id="review-btn">Give feedback</button>
+        </div>
     </section>
 
     <!-- Modal -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>FEEDBACK FORM</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      <form id="feedback-form">
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>FEEDBACK FORM</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <form id="feedback-form">
           <div class="form-group">
-              <div class="icon">
-                  <i class="fas fa-user"></i>
-              </div>
-              <input type="text" placeholder="Your Name" name="name" required>
+            <div class="icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <input type="text" placeholder="Your Name" name="name" required>
           </div>
           <div class="form-group">
-              <div class="icon">
-                  <i class="fas fa-envelope"></i>
-              </div>
-              <input type="email" placeholder="Email Id" required>
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <input type="email" placeholder="Email Id" required>
           </div>
           <div class="form-group">
-              <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+            <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
           </div>
           <div class="rating">
-              <h2>Rate us:</h2>
-              <i class="rating__star far fa-star"></i>
-              <i class="rating__star far fa-star"></i>
-              <i class="rating__star far fa-star"></i>
-              <i class="rating__star far fa-star"></i>
-              <i class="rating__star far fa-star"></i>
-
+            <h2>Rate us:</h2>
+            <i class="rating__star far fa-star"></i>
+            <i class="rating__star far fa-star"></i>
+            <i class="rating__star far fa-star"></i>
+            <i class="rating__star far fa-star"></i>
+            <i class="rating__star far fa-star"></i>
           </div>
           <button type="submit">Submit</button>
-      </form>
-  </div>
-</div>
-
-
-      
-
+        </form>
+        <div id="thank-you-message" style="display:none; font-size:20px; color: green; margin-top: 20px;">
+          Thank you for your feedback!
+        </div>
+        <div id="error-message" style="display:none; color: red;font-size:20px; margin-top: 20px;">
+          Please fill in all fields before submitting.
+        </div>
+      </div>
+    </div>
+    
     <footer class="footer">
       <div class="footer-grid">
         <div class="footer-title">

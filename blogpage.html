@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="images/favicon.png"  type="image/png"/>
     <link rel="stylesheet" href="blogpagestyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/fb940be696.js" crossorigin="anonymous"></script>
@@ -26,13 +27,19 @@
     </div>
         </div>
         
-    
+     
 
     <section class="farm">
         <br>
         <br>
         <br>
-          
+        
+         <!--search bar-->
+      <div class="search">
+        <input id="input" class="search-bar" placeholder="Search Blogs" oninput="search()"/>
+        <img id="search-icon" src="./images/search icon.jpg"/>
+        </div>
+        
     <div class="services-box">
       <div class="fcard">
         <img class="agrblg" src="./images/sow.jpeg">
@@ -248,6 +255,6 @@
       </div>
     </div>
     </section>
-    
+    <script src="blog.js"></script>
   </body>
 </html>

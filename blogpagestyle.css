@@ -247,13 +247,11 @@ a {
   bottom: 20px;
   left: 0;
   right: 0;
-
   border: none;
   padding: 10px 0; /* Adjust padding for equal spacing */
   font-size: 1.5rem;
   cursor: pointer;
   border-radius: 5px;
-
   transition: background-color 0.3s ease;
   width: calc(100% - 20px); /* Ensure button fits within container padding */
   margin: 0 10px; /* Align with padding of container */
@@ -262,4 +260,3 @@ a {
 .more-info-btn:hover {
   background-color: var(--second-color);
 }
-
