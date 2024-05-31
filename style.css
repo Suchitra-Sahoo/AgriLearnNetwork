@@ -340,20 +340,6 @@ span {
   font-weight: 600;
   transition: 0.5sec ease;
 }
-.btn:disabled{
-  cursor: not-allowed;
-  pointer-events: none;
-  transition: none;
-  opacity: 0.5;
-  box-shadow: none;
-}
-
-.btn:disabled{
-  cursor: not-allowed;
-  pointer-events: none;
-  transition: none;
-  opacity: 0.5;
-}
 
 .email-link {
   position: relative;
