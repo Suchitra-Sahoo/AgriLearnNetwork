@@ -234,6 +234,7 @@ a {
 
 /* search bar*/
 .search {
+
   display: flex;
   justify-content: center;
   align-items: center;
