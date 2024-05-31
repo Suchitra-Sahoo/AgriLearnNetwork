@@ -34,6 +34,11 @@
   </head>
 
   <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
     <header class="header">
       <img
         src="images/favicon.png"
@@ -311,25 +316,35 @@
     </section>
 
     <!-- Modal -->
+
     <div id="modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2>FEEDBACK FORM</h2>
+
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </p>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
         <form id="feedback-form">
           <div class="form-group">
             <div class="icon">
               <i class="fas fa-user"></i>
             </div>
+
             <input type="text" placeholder="Your Name" name="name" required />
+
+            <input type="text" placeholder="Your Name" name="name" required>
+
           </div>
           <div class="form-group">
             <div class="icon">
               <i class="fas fa-envelope"></i>
             </div>
+
             <input type="email" placeholder="Email Id" required />
           </div>
           <div class="form-group">
@@ -339,6 +354,12 @@
               placeholder="Your Feedback"
               required
             ></textarea>
+
+            <input type="email" placeholder="Email Id" required>
+          </div>
+          <div class="form-group">
+            <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+
           </div>
           <div class="rating">
             <h2>Rate us:</h2>
@@ -350,8 +371,20 @@
           </div>
           <button type="submit">Submit</button>
         </form>
+
       </div>
     </div>
+
+
+        <div id="thank-you-message" style="display:none; font-size:20px; color: green; margin-top: 20px;">
+          Thank you for your feedback!
+        </div>
+        <div id="error-message" style="display:none; color: red;font-size:20px; margin-top: 20px;">
+          Please fill in all fields before submitting.
+        </div>
+      </div>
+    </div>
+    
 
     <footer class="footer">
       <div class="footer-grid">
