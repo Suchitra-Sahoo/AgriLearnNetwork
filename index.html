@@ -49,21 +49,46 @@
       </a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home" class="active"
-          ><i class="fa-solid fa-house"></i> Home</a
-        >
+     <nav class="navbar">
+        <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
         <a href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
-        <a href="blogpage.html" target="_self">
-          <i class="fa-solid fa-blog"></i> Blogs</a
-        >
-        <a href="#Resource Library"
-          ><i class="fa-solid fa-book"></i> Resource Library</a
-        >
-        <a href="#contact" id="nav--contact"
-          ><i class="fa-solid fa-phone"></i> Contact</a
-        >
-      </nav>
+        <a href="blogpage.html" target="_self"><i class="fa-solid fa-blog"></i> Blogs</a>
+        <a href="#Resource Library"><i class="fa-solid fa-book"></i> Resource Library</a>
+        <a href="#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+    <li class="nav-item px-3" style="width: 20px;">
+          <!-- Google Translator HTML Code Start -->
+    <select onchange="languageChanger()" id="language_selector">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+  </select>
+  <div id="google_translate_element"></div>
+  <!-- Google Translator HTML Code End -->
+    </li>
+    
+     <!-- Google Translator JS Code Start -->
+     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+     <script type="text/javascript">
+         function googleTranslateElementInit() {
+             new google.translate.TranslateElement({
+                 pageLanguage: 'en',
+                 includedLanguages: 'en,hi'
+             }, 'google_translate_element');
+         }
+ 
+         function languageChanger() {
+             var language = document.getElementById("language_selector").value;
+             var selectField = document.querySelector("#google_translate_element select");
+             for (var i = 0; i < selectField.children.length; i++) {
+                 var option = selectField.children[i];
+                 if (option.value == language) {
+                     selectField.selectedIndex = i;
+                     selectField.dispatchEvent(new Event('change'));
+                 }
+             }
+         }
+     </script>
+     <!-- Google Translator JS Code End -->
     </header>
 
     <section class="home" id="home">
