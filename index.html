@@ -286,31 +286,29 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Us!</span></h2>
-      <form action="#" id="contact-form">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-        </div>
-
-        <div class="input-box">
-          <input
-            type="number"
-            placeholder="Mobile Number"
-            required
-            id="mobileNumber"
-          />
-          <input type="text" placeholder="Email Subject" required />
-        </div>
-
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <input type="submit" class="btn" id="contact-btn"><br>
+    <div class="contact-container">
+      <div class="contact-image">
+          <img src="images/contactForm_img.jpg" alt="Contact Image">
+      </div>
+      <div class="contact-form">
+          <h2><b>Contact Us!</b></h2>
+          <form>
+            <div class="input-group">
+                <input type="text" id="first-name" name="first-name" required placeholder="First Name">
+                <input type="text" id="last-name" name="last-name" required placeholder="Last Name">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" required placeholder="Email">
+                <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+            </div>
+            <textarea id="message" name="message" rows="4" required placeholder="Message"></textarea>
+            
+            <div class="buttons">
+                <button type="submit">Submit</button>
+            </div>
         </form>
-        <div class="button-container">
-          <button id="review-btn">Give feedback</button>
-        </div>
-    </section>
+      </div>
+  </div>
 
     <!-- Modal -->
 
