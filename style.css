@@ -234,7 +234,7 @@ section {
   padding: 3vmax 3vmax 3vmax 3vmax; 
   filter: blur(0.8px);
   width: 55%;
-  height: 25vmax;
+  height: 40%;
   font-size: 4vmax;
 }
 
@@ -762,7 +762,7 @@ a {
 }
 
 .portfolio-box img {
-  width: 407px;
+  width: 500px;
   height: 300px;
   transition: 0.5s ease;
 }
