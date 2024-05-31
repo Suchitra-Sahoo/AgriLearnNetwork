@@ -75,10 +75,30 @@ section {
   flex-grow: 1;
   text-align: center;
   font-size: 25px;
+  margin-top: 150px;
+}
+
+.navtitle h2{
+  color: #053314;
+  font-size: 50px;
+}
+
+.header span{
+  color: var(--main-color);
+}
+.header .arrow{
+  float:left;
+  left:0;
+  /* margin: 0 70px; */
+  margin-right: 90px;
+}
+.header span :hover{
+    color: #087000 !important;
+    scale: 1.2;
 }
 
 span {
-  color: var(--main-color);
+  color: #0c891f;
 }
 .addblog {
   color: azure;
