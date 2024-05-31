@@ -912,6 +912,140 @@ input[type="number"]::-webkit-inner-spin-button {
   transform: translateY(-50%);
   z-index: 200; /* Ensure it stays on top */
 }
+.agri-learn-faq-button-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.agri-learn-faq-nav-item{
+ display:flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ 
+}
+
+.agri-learn-faq-nav-heading{
+  font-size: 28px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+flex-grow: 1;
+}
+
+.agri-learn-faq-button{
+  background-color: rgb(113, 172, 126);
+  color: #ffffff;
+  border-radius: 5px;
+  height: 26px;
+  width: 100px;
+  border-width: 0px;
+  font-family: sans-serif;
+}
+
+.agri-learn-faq-top-section{
+  background-color: #c7b9ff;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.agri-learn-faq-top-section-image{
+  height: 200px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.agri-learn-faq-section-heading{
+  color:#ffffff;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.agri-learn-faq-section-para{
+  color: black;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.agri-learn-faq-icon-image{
+  fill: #ffffff;
+  width: 34px;
+  height: 34px;
+}
+
+.agri-learn-faq-section{
+  background-image: url("https://a.slack-edge.com/94c06/helpcenter/img/help-center-homepage-hero-2x.png");
+  background-size: cover;
+  min-height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agri-learn-faq-title{
+  font-size: 30px;
+  margin: 5px;
+  margin-bottom: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.agri-learn-faq-heading{
+  font-size: 26px;
+  font-family: sans-serif;
+}
+
+.agri-learn-faq-para{
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: "Roboto";
+}
+
+.agri-learn-faq{
+  width: 90%;
+  max-width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.agri-learn-faq-question{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.agri-learn-faq-answer{
+  margin-top: 0px;
+  margin-bottom: 8px;
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.agri-learn-faq.agri-learn-faq-active .agri-learn-faq-answer{
+  max-height: 300px;
+}
+
+.agri-learn-faq.agri-learn-faq-active .agri-learn-faq-icon-image{
+  transform: rotate(180deg);
+}
+
+.agri-learn-faq-svg{
+  transition: transform 0.5s ease-in;
+}
+
 
 /* Modal styles */
 .modal {
@@ -1487,6 +1621,21 @@ background-color: #a48613;
 #backtoTop a i {
 font-size: 36px;
   color: white;
+}
+#faq{
+  position :fixed;
+  bottom: 90px;
+  right: 24px;
+  height: 60px;
+  width: 60px;
+  background-color: #B19222;
+  border-radius:50%;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none; 
+  transition: background-color 0.5s ease-in 0.3s;
 }
 .footer-iconTop a{
   display: inline-block;
