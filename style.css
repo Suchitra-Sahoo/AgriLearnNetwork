@@ -1205,7 +1205,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .home{  
   height: 20vmax;
   overflow: hidden;
-  background: url(./images/hom2.jpg) center;
+  background: url(./images/home2.jpg) center;
   position: relative;
   padding: 0;
 }  
