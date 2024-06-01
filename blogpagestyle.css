@@ -289,16 +289,16 @@ a {
 
 .footer {
   padding: 20px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/istockphoto-1465642013-170667a.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("./images/istockphoto-1465642013-170667a.webp");
   background-size: cover; /* Ensure the background image covers the entire container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   color: #fff;
 }
 
-.footer-title{
+.footer-title {
   text-align: center;
- 
 }
 .footer-icons {
   text-align: center;
@@ -312,7 +312,7 @@ a {
     padding: 2rem 3%;
   }
 }
-.socialIcons a{
+.socialIcons a {
   padding: 1.3rem;
   background: var(--main-color);
   border-radius: 100%;
@@ -327,10 +327,10 @@ a {
 .socialIcons i {
   color: var(--second-color);
   font-size: 22px;
-  font-size:22px; 
+  font-size: 22px;
 }
 
-.socialIcons{
+.socialIcons {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -350,9 +350,8 @@ a {
   text-align: center;
   width: 50vw;
   padding: 20px;
-   font-weight: 700;
- }
-
+  font-weight: 700;
+}
 
 .quick-links h2 {
   font-size: 20px;
@@ -367,7 +366,6 @@ a {
 }
 .quick-links li {
   margin-bottom: 8px;
-  
 }
 
 .quick-links a {
@@ -375,8 +373,6 @@ a {
   color: #fff;
   transition: color 0.3s ease;
   font-size: 1.5rem;
-
-  
 }
 
 .quick-links a:hover {
@@ -388,14 +384,15 @@ a {
   .footer-grid {
     grid-template-columns: 1fr;
 
-  .socialIcons{
-    gap:0;
-    padding: 1rem;
-  }
-  .quick-links li {
-    margin-bottom: 0;
-  }
-  .quick-links ul{
-    flex-direction: column;
+    .socialIcons {
+      gap: 0;
+      padding: 1rem;
+    }
+    .quick-links li {
+      margin-bottom: 0;
+    }
+    .quick-links ul {
+      flex-direction: column;
+    }
   }
 }
