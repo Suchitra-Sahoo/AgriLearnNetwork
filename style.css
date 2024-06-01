@@ -116,6 +116,9 @@ section {
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
  }
 
+ nav{
+  margin-right: 20px;
+}
  .logo
  {
     font-size: 2.5rem;
