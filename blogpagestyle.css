@@ -31,11 +31,26 @@ body {
   margin-top: 60px;
   color: var(--txt-color);
 }
-body::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 10px; 
 }
-body {
-  scrollbar-width: none;
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0e4b16; 
+   
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgray;    
+  border-radius: 10px;   
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgrey;
+  
 }
 section {
   min-height: 100vh;
