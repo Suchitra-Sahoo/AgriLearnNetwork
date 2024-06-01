@@ -112,6 +112,7 @@ section {
   position: fixed;
   margin-top: -5px;
   margin-left:auto;
+  margin-right: 10px;
 }
 .login-btn:hover {
   box-shadow: none;
