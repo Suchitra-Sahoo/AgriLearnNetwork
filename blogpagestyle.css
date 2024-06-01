@@ -98,6 +98,25 @@ section {
   font-size: 50px;
 }
 
+.login-btn{
+  display:inline-block;
+  padding: 1rem 2rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+  position: fixed;
+  margin-top: -5px;
+  margin-left:auto;
+}
+.login-btn:hover {
+  box-shadow: none;
+}
+
 .header span{
   color: var(--main-color);
 }
