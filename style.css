@@ -58,7 +58,7 @@ section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
-/* .header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -72,19 +72,20 @@ section {
 }
 .header.sticky {
   border-bottom: 0.1rem solid rgb(252, 187, 223);
-} */
+}
 .header img{
   height: 6rem;
   margin-right: 2rem;
 }
 
 .logo {
-  font-size: 2vmax;
+  font-size: 2.3rem;
   color: var(--txt-color);
   font-weight: 600;
   margin-right: 0;
   cursor: default;
 }
+
 .navbar a {
   font-size: 1.5vmax;
 
@@ -96,8 +97,8 @@ section {
  }
  .header
  {
-  position: fixed;
-  opacity: 0.8;
+    position: fixed;
+    opacity: 0.8;
    top: 0;
    left: 0;
    width:100%;
@@ -107,19 +108,15 @@ section {
    justify-content: space-between;
    align-items: center;
    z-index: 100;
-   transition: all 0.8s;
  }
  .header.sticky
  {
-  opacity: 0.9;
-  padding: 2rem 5%;
-  background-color: rgb(4, 125, 18);
-  box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
+  border-bottom: .1rem solid rgb(252, 187, 223);
  }
 
  .logo
  {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: var(--txt-color);
     font-weight: 600;
     cursor: default;
@@ -485,6 +482,7 @@ span {
 .heading {
   text-align: center;
   font-size: 4.5rem;
+  margin-bottom: 3rem;
 }
 
 .about-content h2 {
@@ -884,41 +882,31 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 #review-btn{
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px 0 0 5px;
-  background-color:  #B19222;
-  color: white;
-  font-size: 16px;
-  writing-mode: vertical-rl;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  position: absolute;
-  right: 0; /* Attach to the right edge */
-  top: 50%; /* Vertically center */
-  transform: translateY(-50%); /* Adjust for centering */
-  white-space: nowrap; /* Prevent text from wrapping */
+  border-radius: 20px;
+  color:yellowgreen;
+  background-color: #053314;
+  margin-top: 0;
+  display: block; 
+  margin-top: 10px;
+  margin-left: 20px;
+  text-decoration: underline;
+  font-size: 14px;
   
   
 
 }
 #review-btn:hover{
-  background-color:#B19222 ;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(183, 253, 6, 0.1); 
 }
-.button-container {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  z-index: 200; /* Ensure it stays on top */
-}
+
 
 /* Modal styles */
 .modal {
-  
   display: none;
-  flex-direction: column;
-  /* flex-wrap: nowrap; */
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -930,17 +918,18 @@ input[type="number"]::-webkit-inner-spin-button {
   /*overflow: auto;*/
   background-color: rgba(0, 0, 0, 0.4);
 }
+
 .modal-content {
   background-color: #ffffff;
-  /* margin: 10% auto; */
-  padding: 50px;
+  margin: 10% auto;
+  padding: 30px;
   border-radius: 10px;
-  width: 90%;
+  width: 70%;
   max-width: 500px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  position: relative;
-    text-align: center;
+  
 }
+
 .close {
   color: #aaa;
   float: right;
@@ -948,82 +937,72 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: bold;
   cursor: pointer;
 }
+
 .close:hover,
 .close:focus {
   color: #000;
 }
+
 .modal-content h2 {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
   color:black;
-  font-size: 24px;
+  font-size: 20px;
 }
-/* .modal-content label {
+
+.modal-content label {
   display: block;
   margin-bottom: 8px;
   color: #666;
-} */
-.form-group {
-  position: relative;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content textarea {
+  width: 100%;
+  padding: 12px;
   margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  max-width: 100%;
 }
-.form-group .icon {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  background-color: #8a2be2;
-  background-color: rgb(75, 179, 75);
-  color: white;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px 10px 10px 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: #bbb;
-}
-.form-group textarea {
-  height: 80px;
-  padding: 10px;
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="email"]:focus,
+.modal-content textarea:focus {
+  outline: none;
+  border-color: #66afe9;
 }
 
 .modal-content button[type="submit"] {
-  background: linear-gradient(to right, #8a2be2, #f163ed);
-  background: linear-gradient(to right, rgb(75, 179, 75), rgb(42, 228, 42));
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
+  background-color:#0e4b16;
+  color: white;
+  padding: 12px 20px;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: block;
+  margin: auto;
 }
 
 .modal-content button[type="submit"]:hover {
-  background: linear-gradient(to right, #f55ef0, #8a2be2);
-  background: linear-gradient(to right, rgb(63, 220, 63), rgb(20, 124, 20));
+  background-color:#053314;
 }
-
 
 .modal-content button[type="submit"]:focus {
   outline: none;
 }
+
 .close:hover {
   color: #000;
 }
+
 .close:focus {
   color: #000;
   text-decoration: none;
@@ -1031,26 +1010,20 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* rating stars */
 .rating {
-  display: flex;
+  width: 180px;
+  margin:auto;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
 }
-.rating h2 {
-  margin: 0;
-  margin-right: 10px;
-  font-size: 18px;
-}
+
 .rating__star {
-  font-size: 24px;
-  margin: 0 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 14px;
   cursor: pointer;
   color: #dabd18b2;
 }
-.rating__star:hover,
-.rating__star.active {
-    color: #ffc107;
-}
+ 
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -1152,7 +1125,7 @@ input[type="number"]::-webkit-inner-spin-button {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 1rem 1%;
+    padding: 0.5rem 1%;
     background: var(--bg-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -1453,40 +1426,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .footer-icons,
 .footer-iconTop {
   text-align: center;
- 
-}
-#backtoTop{
-  position :fixed;
-  bottom: 90px;
-  right: 24px;
-  height: 60px;
-  width: 60px;
-  background-color: #B19222;
-  border-radius:50%;
-  margin-bottom: 10px;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  display: none; 
-  transition: background-color 0.5s ease-in 0.3s;
-}
-#backtoTop a{
-  display: inline-block;
-height: 100%;
-width: 100%;
- border-radius: 50%;
- justify-content: center;
- align-items: center;
-  transition: 0.5s ease;
-  padding: 1.2rem;
-
-}
-#backtoTop a:hover{
-background-color: #a48613;
-}
-#backtoTop a i {
-font-size: 36px;
-  color: white;
 }
 .footer-iconTop a{
   display: inline-block;
@@ -1560,8 +1499,9 @@ font-size: 36px;
   .footer-grid {
     grid-template-columns: 1fr; /* Single column layout for smaller screens */
   }
-  * Places these items above the icons in the single column layout */
-  
+  .footer-iconTop {
+    order: -1; /* Places these items above the icons in the single column layout */
+  }
   .socialIcons{
     gap:0;
     padding: 1rem;
