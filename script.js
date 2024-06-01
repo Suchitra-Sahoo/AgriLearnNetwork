@@ -99,7 +99,7 @@ ScrollReveal().reveal('.home-content p, .about-content',{ origin:'left' });
 const typed=new Typed('.multiple-text',{
     strings:['Sow','Learn','Grow' ],
     typeSpeed:100,
-    backSpped:100,
+    backSpeed:100,
     backDelay:1000,
     loop:true
 
