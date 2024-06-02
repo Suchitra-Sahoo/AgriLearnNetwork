@@ -5,8 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to AgriLearnNetwork</title>
   <link rel="stylesheet" href="login.css">
+  <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b08b6de27e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
+  <header class="header">
+    <img
+      src="images/favicon.png"
+      alt="logo"
+      style="height: 50px; width: 50px; margin-right: 10px;"
+    />
+    <a href="#" class="logo" style="margin-inline-end: auto"
+      ><h3>AgriLearnNetwork</h3>
+    </a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="index.html #home" 
+        ><i class="fa-solid fa-house"></i> Home</a
+      >
+      <a href="index.html #about"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a href="blogpage.html" target="_self">
+        <i class="fa-solid fa-blog"></i> Blogs</a
+      >
+      <a href="index.html #Resource Library"
+        ><i class="fa-solid fa-book"></i> Resource Library</a
+      >
+      <a href="index.html#contact" id="nav--contact"
+        ><i class="fa-solid fa-phone"></i> Contact</a
+      >
+      <a href="login.html" class="active">
+        <button id="log-in-btn" class="login-btn">Login</button>
+      </a>
+    </nav>
+  </header>
   <div class="wrapper">
     <form id="login-form">
       <h2>Login</h2>
@@ -42,9 +101,68 @@
       </div>
       <button type="submit">Register</button>
     </form>
-    <br>
-    <a href="index.html"><button class="home-btn">Return Home</button></a>
   </div>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-title">
+        <h2>AgriLearnNetwork</h2>
+      </div>
+      <div class="footer-icons">
+        <p><b>Follow us on our socials:</b></p>
+        <div class="socialIcons">
+          <a
+            href="mailto:AgriLearnNetwork@gmail.com"
+            class="email-link"
+            data-tooltip="AgriLearnNetwork@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/your_username_here"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/your_username_here" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/your_page_or_profile_here"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="quick-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li>
+          <a href="index.html #home"><p>Home</p></a>
+        </li>
+        <li>
+          <a href="index.html #about"><p>About Us</p></a>
+        </li>
+        <li>
+          <a href="blogpage.html"><p>Blogs</p></a>
+        </li>
+        <li>
+          <a href="index.html #Resource Library"><p>Resource Library</p></a>
+        </li>
+        <li>
+          <a href="index.html #contact"><p>Contact Us</p></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-text footer-right">
+      <p style="font-weight: 600; font-size: 15px">
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        by AgriLearnNetwork | All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
   <script src="login.js"></script>
 </body>
 </html>
