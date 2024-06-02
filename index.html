@@ -81,6 +81,7 @@
           <h1 class="home--welcome">AgriLearnNetwork</h1>
           <h3 class="home--welcome">
             Your Agricultural Knowledge Hub to
+            <br />
             <span class="multiple-text"></span>
           </h3>
         </div>
@@ -288,74 +289,36 @@
         </div>
       </div>
     </section>
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Us!</span></h2>
-      <form action="#" id="contact-form">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-        </div>
-
-        <div class="input-box">
-          <input
-            type="number"
-            placeholder="Mobile Number"
-            required
-            id="mobileNumber"
+    <div class="contactFormHead">
+      <div class="contact" id="contact">
+        <div class="contact-header">
+          <img
+            src="/images/contact-header.jpg"
+            alt="Contact Header Image"
+            class="header-image"
           />
-          <input type="text" placeholder="Email Subject" required />
+          <h2 class="heading">Contact Us</h2>
+          <p class="subheading">Feel free to drop us a line below!</p>
         </div>
-
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <input type="submit" class="btn" id="contact-btn"><br>
+        <form action="#" id="contact-form">
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="input-box">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="input-box">
+            <textarea placeholder="Your Comment" required></textarea>
+          </div>
+          <input type="submit" class="btn" value="Submit" />
         </form>
-        <div class="button-container">
-          <button id="review-btn">Give feedback</button>
-        </div>
-    </section>
-
-    <!-- Modal -->
-
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>FEEDBACK FORM</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <form id="feedback-form">
-          <div class="form-group">
-            <div class="icon">
-              <i class="fas fa-user"></i>
-            </div>
-            <input type="text" placeholder="Your Name" name="name" required>
-          </div>
-          <div class="form-group">
-            <div class="icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <input type="email" placeholder="Email Id" required>
-          </div>
-          <div class="form-group">
-            <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
-          </div>
-          <div class="rating">
-            <h2>Rate us:</h2>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-        <div id="thank-you-message" style="display:none; font-size:20px; color: green; margin-top: 20px;">
-          Thank you for your feedback!
-        </div>
-        <div id="error-message" style="display:none; color: red;font-size:20px; margin-top: 20px;">
-          Please fill in all fields before submitting.
-        </div>
       </div>
     </div>
+
+
     
     <footer class="footer">
       <div class="footer-grid">
