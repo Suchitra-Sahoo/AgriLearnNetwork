@@ -124,6 +124,7 @@ section {
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14, 0.8);
 }
 
+
 .logo {
   font-size: 2.5rem;
   color: var(--txt-color);
@@ -131,6 +132,19 @@ section {
   cursor: default;
 }
 .navbar a {
+
+ nav{
+  margin-right: 30px;
+}
+ .logo
+ {
+    font-size: 2.5rem;
+    color: var(--txt-color);
+    font-weight: 600;
+    cursor: default;
+ }
+ .navbar a {
+
   /* position: relative; */
   font-size: 2rem;
   /* left: 118px; */
