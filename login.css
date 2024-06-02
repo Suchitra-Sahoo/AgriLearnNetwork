@@ -25,7 +25,98 @@ body::before {
   background-position: center;
   background-size: cover;
 }
+.navoptions a {
+  display: flex;
+  color: #fff;
+}
+.navtitle {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 25px;
+}
+:root {
+  --bg-color: #053314;
+  --second-color: #064b10;
+  --txt-color: #fff;
+  --main-color: rgb(192, 223, 100);
+}
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: var(--txt-color);
+}
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0e4b16; 
+   
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgray;    
+  border-radius: 10px;   
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgrey;
+  
+}
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+.heading {
+  padding: 19px;
+  text-align: center;
+  font-size: 3rem;
+  background-color: aliceblue;
+  width: 100%;
+  background: var(--bg-color);
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: left;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navtitle img.favicon-img {
+  margin-right: 9px;
+  width: 50px; 
+  height: 50px; 
+  margin-left: 110px;
+}
+
+.navtitle h2 {
+  margin-left: 0.1px; 
+}
 .wrapper {
   width: 400px;
   border-radius: 8px;
@@ -42,9 +133,13 @@ form {
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 32px;
   color: #fff;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  
 }
 
 .input-field {

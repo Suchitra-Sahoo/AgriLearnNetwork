@@ -63,7 +63,7 @@ section {
 }
 
 .heading {
-  padding: 15px;
+  padding: 19px;
   text-align: center;
   font-size: 3rem;
   background-color: aliceblue;
@@ -87,53 +87,19 @@ section {
   color: #fff;
 }
 .navtitle {
+  display: flex;
+  align-items: center;
   flex-grow: 1;
   text-align: center;
   font-size: 25px;
   margin-top: 150px;
 }
 
-.navtitle h2{
-  color: #053314;
-  font-size: 50px;
+.navtitle h2 {
+  margin-left: 522px;
 }
-
-.login-btn{
-  display:inline-block;
-  padding: 1rem 2rem;
-  background: var(--main-color);
-  border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
-  color: var(--second-color);
-  letter-spacing: 0.1rem;
-  font-weight: 600;
-  transition: 0.5s ease;
-  position: fixed;
-  margin-top: -5px;
-  margin-left:auto;
-  margin-right: 10px;
-}
-.login-btn:hover {
-  box-shadow: none;
-}
-
-.header span{
-  color: var(--main-color);
-}
-.header .arrow{
-  float:left;
-  left:0;
-  /* margin: 0 70px; */
-  margin-right: 90px;
-}
-.header span :hover{
-    color: #087000 !important;
-    scale: 1.2;
-}
-
 span {
-  color: #0c891f;
+  color: var(--main-color);
 }
 .addblog {
   color: azure;
@@ -353,67 +319,4 @@ a {
 }
 .hide {
   display: none;
-}
-/* navbar */
-.header
- {
-  position: fixed;
-  opacity: 0.8;
-   top: 0;
-   left: 0;
-   width:100%;
-   padding:2rem 9%;
-   background-color: var(--bg-color);
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   z-index: 10000;
-   transition: all 0.8s;
- }
- .header.sticky
- {
-  opacity: 0.9;
-  padding: 2rem 5%;
-  background-color: rgb(4, 125, 18);
-  box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
- }
-nav{
-  margin-right: 30px;
-}
- .logo
- {
-    font-size: 2.5rem;
-    color: var(--txt-color);
-    font-weight: 600;
-    cursor: default;
- }
- .navbar a {
-  /* position: relative; */
-  font-size: 2rem;
-  /* left: 118px; */
-  color: var(--txt-color);
-  margin-left: 4rem;
-  transition: 0.3s;
-}
-.navbar a:hover {
-  color: var(--main-color);
-}
-.navbar a:not(.active):hover {
-  color: var(--main-color);
-}
-
-
-.navbar a.active,
-.navbar a.active:hover {
-  color: var(--main-color);
-}
-  .navbar.active {
-  display: block;
-}
-.logoImg {
-  width: 80px;
-  height: auto; /* Use auto to maintain aspect ratio */
-  max-width: 100%;
-
-  margin-right: 5px; /* Adjust margin as needed */
 }
