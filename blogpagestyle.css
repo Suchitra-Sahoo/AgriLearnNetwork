@@ -28,7 +28,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
+  margin-top: 60px;
   color: var(--txt-color);
 }
 ::-webkit-scrollbar {
@@ -73,10 +73,10 @@ section {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: left;
   opacity: 0.8;
-  position: fixed;
-  top: 0;
+  position:relative;
+  top: 60px;
   left: 0;
-  z-index: 100;
+  /* z-index: 100; */
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -92,19 +92,12 @@ section {
   flex-grow: 1;
   text-align: center;
   font-size: 25px;
-}
-
-.navtitle img.favicon-img {
-  margin-right: 0px; 
-  width: 60px;
-  height: 60px; 
-  margin-left: 503px;
+  margin-top: 150px;
 }
 
 .navtitle h2 {
-  margin-left: 10px;
+  margin-left: 522px;
 }
-
 span {
   color: var(--main-color);
 }
