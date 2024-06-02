@@ -20,10 +20,10 @@
   
         <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
-          <a href="#home" class="active"
+          <a href="index.html" class="active"
             ><i class="fa-solid fa-house"></i> Home</a
           >
-          <a href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
+          <a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a>
           <a href="blogpage.html" target="_self">
             <i class="fa-solid fa-blog"></i> Blogs</a
           >
@@ -38,56 +38,65 @@
 
       <!--Carousal-->
       <div class="slider">
-        <div class="home-content">
-        
+        <div class="info">
+        <h1>Buy Agricultural Products at best Price!</h1><br>
+        <a id="link" href="#categories">Explore More!</a>
         </div>
         <div class="slide_viewer">
           <div class="slide_group">
             <div
               class="slide"
-              style="background-image: url(./images/carousel-img-2.jpg)"
+              style="background-image: url(./images/product\ back.jpg)"
             ></div>
             <div
               class="slide"
-              style="background-image: url(./images/carousel-img-1.jpg)"
+              style="background-image: url(./images/harvest.jpg)"
             ></div>
             <div
               class="slide"
-              style="background-image: url(./images/carousel-img-3.jpg)"
+              style="background-image: url(./images/trackter.jpg)"
             ></div>
-            <div
+            <!-- <div
               class="slide"
               style="background-image: url(./images/carousel-img-4.jpg)"
-            ></div>
+            ></div> -->
           </div>
         </div>
       </div>
 
      <!--Categories-->
-     <h1 class="heading">Categories</h1>
+    
+     <div class="m1">
+     <h1 class="heading" id="categories">Categories</h1>
       <div class="container">
         <div class="category">
+          <a href="#herbicides">
           <img class="img1" src="./images/Herbicides.png" alt="">
+          </a>
           <h3>Herbicides</h3>
         </div>
 
         <div class="category">
-          <img class="img1" src="./images/growth promoter1.png" alt="">
+          <a href="#grow">
+          <img class="img1" src="./images/growth promoter1.png" alt=""></a>
           <h3>Growth Promoter</h3>
         </div>
 
         <div class="category">
-          <img class="img1" src="./images/fungicides1.png" alt="">
+          <a href="#fungi">
+          <img class="img1" src="./images/fungicides1.png" alt=""></a>
           <h3>Fungicides</h3>
         </div>
 
         <div class="category">
-          <img class="img1" src="./images/viricides.png" alt="">
+          <a href="#viri">
+          <img class="img1" src="./images/viricides.png" alt=""></a>
           <h3>Viricides</h3>
         </div>
 
         <div class="category">
-          <img class="img1" src="./images/farm machines.png" alt="">
+          <a href="#farm">
+          <img class="img1" src="./images/farm machines.png" alt=""></a>
           <h3>Farm Machinery</h3>
         </div>
 
@@ -116,9 +125,12 @@
           <h3>Animal Husbandry</h3>
         </div>
       </div>
+
+      </div>
       
       <!--Products-->
-      <h1 class="heading">Herbicides</h1>
+      <div class="m2">
+      <h1 class="heading" id="herbicides">Herbicides</h1>
       <div class="box">
       <div class="card">
         <img src="./images/Herbicide1.png"/>
@@ -267,8 +279,10 @@
 
       </div>
 
+      </div>
 
-      <h1 class="heading">Growth Promoters</h1>
+      <div class="m3">
+      <h1 class="heading" id="grow">Growth Promoters</h1>
       <div class="box">
       <div class="card">
         <img src="./images/grow1.png"/>
@@ -416,9 +430,11 @@
       </div>
 
       </div>
+      </div>
 
 
-      <h1 class="heading">Fungicides</h1>
+      <div class="m1">
+      <h1 class="heading" id="fungi">Fungicides</h1>
       <div class="box">
       <div class="card">
         <img src="./images/fungicide1.png"/>
@@ -566,8 +582,239 @@
       </div>
 
       </div>
+      </div>
 
 
+      <div class="m2">
+      <h1 class="heading" id="viri">Viricides</h1>
+      <div class="box">
+      <div class="card">
+        <img src="./images/viricides1.png"/>
+        <div class="desciption">
+        <h1>Geollife</h1>
+        <p>Viricide</p>
+        <h2>Rs. 250/-</h2>
+        Size:<select>
+        <option>500ml</option>
+        <option>1L</option>
+        <option>2L</option>
+      </select><br><br>
+      <div class="button">
+     <button class="btn" id="contact-btn">Buy Now</button>
+        <button class="btn" id="contact-btn">Add to cart</button>
+      </div>
+      </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/viricides2.png"/>
+        <div class="desciption">
+        <h1>V-bind</h1>
+        <p>Viricide</p>
+        <h2>Rs. 250/-</h2>
+        Size:<select>
+        <option>500 ml</option>
+        <option>1L</option>
+        <option>2L</option>
+      </select><br><br>
+      <div class="button">
+        <button class="btn" id="contact-btn">Buy Now</button>
+           <button class="btn" id="contact-btn">Add to cart</button>
+         </div>
+      </div>
+      </div>
+
+
+      <div class="card">
+        <img src="./images/viricides3.png"/>
+        <div class="desciption">
+        <h1>Geollife</h1>
+        <p>viricide</p>
+        <h2>Rs. 250/-</h2>
+        Size:<select>
+        <option>500ml</option>
+        <option>1L</option>
+        <option>2L</option>
+      </select><br><br>
+      <div class="button">
+        <button class="btn" id="contact-btn">Buy Now</button>
+           <button class="btn" id="contact-btn">Add to cart</button>
+         </div>
+      </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/viricides4.png"/>
+        <div class="desciption">
+        <h1>Geollife</h1>
+        <p>Viricide</p>
+        <h2>Rs. 250/-</h2>
+        Size:<select>
+        <option>500ml</option>
+        <option>1L</option>
+        <option>2L</option>
+      </select><br><br>
+      <div class="button">
+        <button class="btn" id="contact-btn">Buy Now</button>
+           <button class="btn" id="contact-btn">Add to cart</button>
+         </div>
+     </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/viricides.5.png"/>
+        <div class="desciption">
+        <h1>Viro Raze</h1>
+        <p>Viricide</p>
+        <h2>Rs. 250/-</h2>
+        Size:<select>
+        <option>500ml</option>
+        <option>1L</option>
+        <option>2L</option>
+      </select><br><br>
+      <div class="button">
+        <button class="btn" id="contact-btn">Buy Now</button>
+           <button class="btn" id="contact-btn">Add to cart</button>
+         </div>
+     </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/viricides6.png"/>
+        <div class="desciption">
+        <h1>Virus-G</h1>
+        <p>Viricide</p>
+        <h2>Rs. 250/-</h2>
+        Size:<select>
+        <option>500 ml</option>
+        <option>1L</option>
+        <option>2L</option>
+      </select><br><br>
+      <div class="button">
+        <button class="btn" id="contact-btn">Buy Now</button>
+           <button class="btn" id="contact-btn">Add to cart</button>
+         </div>
+     </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/viricides7.png"/>
+        <div class="desciption">
+        <h1>Viroban</h1>
+        <p>Viricide</p>
+        <h2>Rs. 250/-</h2>
+        Size:<select>
+        <option>500 gm</option>
+        <option>1kg</option>
+        <option>2kg</option>
+      </select><br><br>
+      <div class="button">
+        <button class="btn" id="contact-btn">Buy Now</button>
+           <button class="btn" id="contact-btn">Add to cart</button>
+         </div>
+     </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/viricides8.png"/>
+        <div class="desciption">
+        <h1>Anti Virus</h1>
+        <p>Viricide</p>
+        <h2>Rs. 250/-</h2>
+        Size:<select>
+        <option>500 gm</option>
+        <option>1kg</option>
+        <option>2kg</option>
+      </select><br><br>
+      <div class="button">
+        <button class="btn" id="contact-btn">Buy Now</button>
+           <button class="btn" id="contact-btn">Add to cart</button>
+         </div>
+     </div>
+      </div>
+
+    </div>
+    </div>
+
+
+    <div class="m3">
+    <h1 class="heading" id="farm">Farm Machinery</h1>
+      <div class="box">
+      <div class="card">
+        <img src="./images/fm1.png"/>
+        <div class="desciption">
+        <h1>Hectare Mango Harvester</h1>
+        <p>Farm Machinery</p>
+        <h2>Rs. 250/-</h2><br>
+        <!-- Size:<select>
+        <option>500gm</option>
+        <option>1Kg</option>
+        <option>2Kg</option>
+      </select><br><br> -->
+      <div class="button">
+     <button class="btn" id="contact-btn">Buy Now</button>
+        <button class="btn" id="contact-btn">Add to cart</button>
+      </div>
+      </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/fm2.png"/>
+        <div class="desciption">
+        <h1>Hand Weeder</h1>
+        <p>Farm Machinery</p>
+        <h2>Rs. 250/-</h2><br>
+        <!-- Size:<select>
+        <option>500 gm</option>
+        <option>1kg</option>
+        <option>2kg</option>
+      </select><br><br> -->
+      <div class="button">
+        <button class="btn" id="contact-btn">Buy Now</button>
+           <button class="btn" id="contact-btn">Add to cart</button>
+         </div>
+      </div>
+      </div>
+
+
+      <div class="card">
+        <img src="/images/fm3.png"/>
+        <div class="desciption">
+        <h1>Spraye</h1>
+        <p>Farm Machinery</p>
+        <h2>Rs. 250/-</h2><br>
+        <!-- Size:<select>
+        <option>500gm</option>
+        <option>1kg</option>
+        <option>2kg</option>
+      </select><br><br> -->
+      <div class="button">
+        <button class="btn" id="contact-btn">Buy Now</button>
+           <button class="btn" id="contact-btn">Add to cart</button>
+         </div>
+      </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/fm4.png"/>
+        <div class="desciption">
+        <h1>Tourch</h1>
+        <p>Farm Machinery</p>
+        <h2>Rs. 250/-</h2><br>
+        <!-- Size:<select>
+        <option>500gm</option>
+        <option>1Kg</option>
+        <option>2kg</option>
+      </select><br><br> -->
+      <div class="button">
+        <button class="btn" id="contact-btn">Buy Now</button>
+           <button class="btn" id="contact-btn">Add to cart</button>
+         </div>
+     </div>
+      </div>
+
+    </div>
+    </div>
 
 
 

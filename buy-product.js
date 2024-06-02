@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const slideGroup = document.querySelector(".slide_group");
     let currentSlide = 0;
     const images = [
-      "./images/carousel-img-2.jpg",
-      "./images/carousel-img-1.jpg",
-      "./images/carousel-img-3.jpg",
-      "./images/carousel-img-4.jpg",
+      "./images/product\ back.jpg",
+      "./images/harvest.jpg",
+      "./images/trackter.jpg",
+      // "./images/carousel-img-4.jpg",
     ];
 
     function showSlide(n) {

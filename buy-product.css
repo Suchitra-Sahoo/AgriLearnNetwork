@@ -1,8 +1,27 @@
-body{
+.m1{
+    background-image: url("./images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+   
+}
+
+.m2{
     background-image: url("./images/sow.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px;
+
 }
+
+.m3{
+    background-image: url("./images/carousel-img-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+
+}
+
 
 .box{
     margin: 100px;
@@ -18,6 +37,8 @@ body{
     
     /* padding: 20px 10px; */
 }
+
+
 
 .card{
     border: 2px solid white;
@@ -106,4 +127,31 @@ select{
 }
 
 
+.info{
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    /* left: 25.0%; */
+    background: rgba(0, 42, 0, 0.441);
+    border-radius: 50px;
+    padding: 3vmax 3vmax 3vmax 3vmax; 
+    filter: blur(0.8px);
+    width: 55%;
+    height: 25vmax;
+    font-size: 30px;
+    float: left;
+    margin-left: 5%;
+}
 
+#link{
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px;
+  
+}
+
+#link:hover{
+    color: white;
+    background-color: green;
+}
