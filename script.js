@@ -99,7 +99,7 @@ ScrollReveal().reveal('.home-content p, .about-content',{ origin:'left' });
 const typed=new Typed('.multiple-text',{
     strings:['Sow','Learn','Grow' ],
     typeSpeed:100,
-    backSpped:100,
+    backSpeed:100,
     backDelay:1000,
     loop:true
 
@@ -285,4 +285,24 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
       document.querySelector("body").classList.add("loaded");
   }, 500)
+});
+
+const loginRegisterBtn = document.getElementById('log-in-btn');
+  let islogInMode = true;
+
+  // Change text on hover
+loginRegisterBtn.addEventListener('mouseover', () => {
+  if (islogInMode) {
+    loginRegisterBtn.textContent = 'Register';
+  } else {
+    loginRegisterBtn.textContent = 'Login In';
+  }
+});
+
+loginRegisterBtn.addEventListener('mouseout', () => {
+  if (islogInMode) {
+    loginRegisterBtn.textContent = 'Login';
+  } else {
+    loginRegisterBtn.textContent = 'Register';
+  }
 });

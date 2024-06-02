@@ -31,11 +31,26 @@ body {
 
   color: var(--txt-color);
 }
-body::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 10px; 
 }
-body {
-  scrollbar-width: none;
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0e4b16; 
+   
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgray;    
+  border-radius: 10px;   
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgrey;
+  
 }
 section {
   min-height: 100vh;
@@ -48,7 +63,7 @@ section {
 }
 
 .heading {
-  padding: 20px;
+  padding: 19px;
   text-align: center;
   font-size: 3rem;
   background-color: aliceblue;
@@ -72,9 +87,22 @@ section {
   color: #fff;
 }
 .navtitle {
+  display: flex;
+  align-items: center;
   flex-grow: 1;
   text-align: center;
   font-size: 25px;
+}
+
+.navtitle img.favicon-img {
+  margin-right: 0px; 
+  width: 60px;
+  height: 60px; 
+  margin-left: 503px;
+}
+
+.navtitle h2 {
+  margin-left: 10px;
 }
 
 span {
