@@ -1216,6 +1216,7 @@ input[type="number"]::-webkit-inner-spin-button {
   } */
   .about {
     font-size: 2rem;
+
     margin: 3rem 0;
   }
   .home {
@@ -1246,6 +1247,46 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 3rem;
     font-weight: 700;
   }
+
+    margin: 3rem 0 ;
+
+    
+  } 
+.home{  
+  height: 20vmax;
+  overflow: hidden;
+  background: url(./images/home2.jpg) center;
+  position: relative;
+  padding: 0;
+}  
+ .slide_viewer {
+  display: none; 
+ } 
+ .home-content{ 
+  /* position: fixed;  */
+  top: 30%;
+  left: 18.0%;
+  filter: blur(0.5px); 
+  color:rgb(255, 247, 232); 
+  width: 70%;
+  height: fit-content;
+  padding: 4vmax 11vmax 4vmax 2vmax;
+  overflow: hidden;
+ 
+}
+.home-content h1
+ {
+   font-size: 5rem; 
+ }
+ .home-content h3
+ {
+   font-size: 3rem;
+   font-weight: 700;
+ }
+
+  .about
+  {
+
 
   .about {
     flex-direction: column-reverse;
