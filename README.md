@@ -145,7 +145,8 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
  
 Dive into a treasure trove of insightful blog posts covering a myriad of topics relevant to modern agriculture. Our curated collection of articles delves into various aspects of farming, offering valuable advice, tips, and solutions to common challenges faced by farmers today.
 
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210125.png)
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/f9860021-eb7b-4b2e-a459-d8f77f2e5dbc)
+
  
 <br>
   
