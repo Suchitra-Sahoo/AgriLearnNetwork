@@ -76,6 +76,7 @@ section {
   height: 6rem;
   margin-right: 2rem;
 }
+
 .logo {
   font-size: 2vmax;
   color: var(--txt-color);
@@ -119,11 +120,10 @@ section {
 }
 .header.sticky {
   opacity: 0.9;
-  padding: 2rem 10% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
+  padding: 2rem 5%;
   background-color: rgb(4, 125, 18);
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14, 0.8);
 }
-
 
 .logo {
   font-size: 2.5rem;
@@ -132,19 +132,6 @@ section {
   cursor: default;
 }
 .navbar a {
-
- nav{
-  margin-right: 30px;
-}
- .logo
- {
-    font-size: 2.5rem;
-    color: var(--txt-color);
-    font-weight: 600;
-    cursor: default;
- }
- .navbar a {
-
   /* position: relative; */
   font-size: 2rem;
   /* left: 118px; */
@@ -1230,7 +1217,6 @@ input[type="number"]::-webkit-inner-spin-button {
   } */
   .about {
     font-size: 2rem;
-
     margin: 3rem 0;
   }
   .home {
@@ -1261,46 +1247,6 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 3rem;
     font-weight: 700;
   }
-
-    margin: 3rem 0 ;
-
-    
-  } 
-.home{  
-  height: 20vmax;
-  overflow: hidden;
-  background: url(./images/home2.jpg) center;
-  position: relative;
-  padding: 0;
-}  
- .slide_viewer {
-  display: none; 
- } 
- .home-content{ 
-  /* position: fixed;  */
-  top: 30%;
-  left: 18.0%;
-  filter: blur(0.5px); 
-  color:rgb(255, 247, 232); 
-  width: 70%;
-  height: fit-content;
-  padding: 4vmax 11vmax 4vmax 2vmax;
-  overflow: hidden;
- 
-}
-.home-content h1
- {
-   font-size: 5rem; 
- }
- .home-content h3
- {
-   font-size: 3rem;
-   font-weight: 700;
- }
-
-  .about
-  {
-
 
   .about {
     flex-direction: column-reverse;
@@ -1623,26 +1569,6 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-direction: column;
   }
 }
-/*login/register button css starts*/
-.login-btn{
-  display:inline-block;
-  padding: 1rem 2rem;
-  background: var(--main-color);
-  border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
-  color: var(--second-color);
-  letter-spacing: 0.1rem;
-  font-weight: 600;
-  transition: 0.5s ease;
-  position: fixed;
-  margin-top: -5px;
-  margin-left:auto;
-}
-.login-btn:hover {
-  box-shadow: none;
-}
-/*login/register button css ends*/
 
 /* Preloader Css */
 
