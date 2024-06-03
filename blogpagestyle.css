@@ -350,17 +350,22 @@ nav {
 }
 .logo {
   font-size: 2.5rem;
+  
+  
+  
   color: var(--txt-color);
   font-weight: 600;
   cursor: default;
 }
 .navbar a {
-  /* position: relative; */
+  position: relative;
   font-size: 2rem;
   /* left: 118px; */
   color: var(--txt-color);
-  margin-left: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   transition: 0.3s;
+  justify-content: space-between;
 }
 .navbar a:hover {
   color: var(--main-color);
@@ -377,12 +382,17 @@ nav {
   display: block;
 }
 .logoImg {
+  left: 0%;
+  
   width: 80px;
   height: auto; /* Use auto to maintain aspect ratio */
   max-width: 100%;
+  
 
   margin-right: 5px; /* Adjust margin as needed */
 }
+
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -521,3 +531,19 @@ nav {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
