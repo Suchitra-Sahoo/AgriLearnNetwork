@@ -19,6 +19,18 @@ git remote update
 ```py
 cd AgriLearn
 ```
+6. Install node modules.
+```css
+npm install 
+```
+7. To run server.
+```css
+npm run dev
+```
+8. To check build.
+```css
+npm run build
+```
 5. Set an upstream with the parent repository and local repository.
 ```css
 git remote add upstream https://github.com/Suchitra-Sahoo/AgriLearnNetwork.git

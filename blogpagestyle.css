@@ -141,6 +141,9 @@ span {
 
 .services-container .services-box {
   flex: 1 1 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   background: var(--second-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
@@ -204,7 +207,7 @@ span {
   opacity: 1;
   cursor: pointer;
   transform: translateY(0px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .fcard-content {
@@ -213,8 +216,9 @@ span {
 }
 
 .fcard:hover {
-  box-shadow: 2px 2px 10px rgba(185, 185, 106, 0.8);
-  transform: scale(1.1);
+  /* box-shadow: 2px 2px 10px rgba(185, 185, 106, 0.8); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
 }
@@ -245,7 +249,11 @@ span {
   text-align: justify;
   display: flex;
   flex-direction: column;
+  transition: color 0.3s ease-in-out;
   height: 100%;
+}
+.article:hover {
+  color: #006400; /* Change to your desired color on hover */
 }
 
 a {
@@ -299,13 +307,29 @@ a {
 
 .search {
   display: flex;
+
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 20px 0;
+  /* flex-direction: row; */
+
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 8px;
+
 }
 
 #search-icon {
+
+  width: 45px;
+  margin-left: 10px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+  
+
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -316,6 +340,7 @@ a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden; 
   transition: background-color 0.3s, transform 0.1s, border-color 0.3s;
+
 }
 
 #search-icon img {
@@ -327,8 +352,12 @@ a {
 
 #search-icon:hover {
   cursor: pointer;
+
+  transform: scale(1.1);
+
   background-color: white;
   border: 2px solid blue;
+
 }
 
 #search-icon:active {
@@ -336,6 +365,21 @@ a {
 }
 
 .search-bar {
+
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
+  border: 2px solid #064b10;
+  height: 40px;
+  border-radius: 5px; 
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+.search-bar:focus {
+  outline: none;
+  border-color: #c0df64;
+  box-shadow: 0 0 10px rgba(192, 223, 100, 0.5);
+
   margin: 0;
   padding: 10px 15px;
   width: 40%;
@@ -350,6 +394,7 @@ a {
   border-color: blue;
   box-shadow: 0 2px 5px rgba(0, 123, 255, 0.5);
   outline: none;
+
 }
 .hide {
   display: none;
