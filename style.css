@@ -125,7 +125,7 @@ section {
  }
  .navbar a {
   /* position: relative; */
-  font-size: 2rem;
+  font-size: 1.5rem;
   /* left: 118px; */
   color: var(--txt-color);
   margin-left: 4rem;

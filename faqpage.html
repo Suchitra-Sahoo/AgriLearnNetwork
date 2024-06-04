@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+  <title>Hello, world!</title>
+  <style>
+    .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .nav-link .nav-icon:hover {
+    transform: scale(1.8); 
+  }
+
+     .accordian_container {
+      margin-top: 20px;
+      margin-left: 90px; 
+      margin-right: 90px; 
+      padding: 15px; 
+      background-color: #f8f9fa; 
+      border: 1px solid #dee2e6;
+      display: flex;
+      flex-wrap: wrap; 
+      gap: 20px;
+    }
+    .image-container img {
+      padding-top: 50%;
+      max-width: 100%; 
+      height: auto;
+      position: relative;
+    animation: upDown 3s infinite alternate;
+    }
+    @keyframes upDown {
+    0% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+    .accordion {
+      flex: 1 1 300px; 
+    }
+    .accordion-item {
+      background-color: #ffffff; 
+      border: 1px solid #dee2e6; 
+      margin-bottom: 10px; 
+    }
+    .accordion-button {
+      color: #caba2c; 
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #e0e0e0;; 
+      color: rgb(8, 8, 8); 
+    }
+    .accordion-button:focus {
+      box-shadow: none; 
+    }
+    .accordion-button.collapsed {
+      background-color: #e0e0e0;
+      color: #343a40; 
+    }
+    .accordion-body:hover {
+      color: rgb(4, 150, 155);
+    }
+    .accordion-item .accordion-header button:hover {
+    color: #494845;
+    text-decoration: underline;
+  }
+  /* Responsive styles */
+@media (max-width: 576px) {
+  .accordion-button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .accordion-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .accordian_container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .accordion-button {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+
+  .accordian_container {
+    padding: 0.5rem;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .image-container  {
+    max-width: 100%;
+      height: auto;
+      position: relative;
+    animation: upDown 3s infinite alternate;
+
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="nav_container sticky-top ">
+    <nav class="navbar navbar-expand-lg 
+    navbar-dark  bg-success ">
+      <div class="container-fluid">
+        <img src="images/favicon.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px;" />
+        <a class="navbar-brand fs-5" href="#">AgriLearnNetwork</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item me-3 p-3">
+              <a class="nav-link active fs-5" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item me-3 p-3">
+              <a class="nav-link fs-5" href="/">About</a>
+            </li>
+            <li class="nav-item me-3 p-3">
+              <a class="nav-link fs-5" href="/blogpage.html">Blogs</a>
+            </li>
+            <li class="nav-item me-3 p-3">
+              <a class="nav-link fs-5" href="/">Resource Library</a>
+            </li>
+            <li class="nav-item me-3 p-3">
+              <a class="nav-link fs-5" href="/faqpage.html">FAQs</a>
+            </li>
+            <li class="nav-item ms-auto p-3">
+              <a class="nav-link fs-5" href="/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="mx-auto fw-bold fs-1 py-5 text-center">
+    Frequently Asked Questions (FAQs)
+</div>
+
+
+  <div class="accordian_container  shadow p-3 mb-5 bg-body rounded">
+    <div class="image-container ">
+      <img src="./faq/FAQ.png" alt="Descriptive Alt Text" width="300" height="300">
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            What is Agrilearn Network?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body ">Agrilearn Network is a comprehensive platform dedicated to empowering farmers by providing
+            essential
+            insights, resources, and strategic management approaches for successful agriculture
+            practices. Our
+            platform offers detailed guidance and in-depth knowledge across various facets of farming.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Who can benefit from Agrilearn Network?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Agrilearn Network is designed for farmers of all scales, agricultural enthusiasts,
+            researchers, and
+            anyone involved in the agriculture industry. It caters to both beginners and experienced
+            farmers looking
+            to enhance their farming practices.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            What features does Agrilearn Network offer?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Agrilearn Network offers a wide range of features, including:
+            1.Detailed farming guides
+            2.Crop and livestock management tips
+            3.Weather forecasting tools
+            4.Market price updates
+            5.Expert advice and consultancy services
+            6.Community forums for peer support
+            7.Access to research and best practices in agriculture</div>
+        </div>
+      </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              What types of farming does Agrilearn Network support?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Agrilearn Network supports a wide range of farming practices, including crop farming,
+              livestock farming,
+              aquaculture, and agroforestry. We provide tailored resources and guidance for each type of
+              farming.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Is Agrilearn Network free to use?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Yes, Agrilearn Network offers free access to most of our resources and tools. However, we
+              also provide
+              premium content and services which are available for a subscription fee.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Can I get personalized advice from experts on Agrilearn Network?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Yes, Agrilearn Network offers personalized advice from agricultural experts. You can book
+              one-on-one
+              consultation sessions to discuss specific issues and get tailored solutions.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              How can I stay updated with the latest agricultural trends and news?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">To stay updated with the latest agricultural trends and news, you can subscribe to our
+              newsletter.
+              Additionally, our platform regularly updates its blog and news section with relevant
+              articles and
+              information.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Does Agrilearn Network offer any training programs or courses?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Yes, Agrilearn Network offers a variety of training programs and courses covering different
+              aspects of
+              farming. These programs are designed to enhance your knowledge and skills in agriculture.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              How do I participate in community forums on Agrilearn Network?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">To participate in community forums, you need to log in to your Agrilearn Network account and
+              navigate to
+              the forums section. You can post questions, share experiences, and engage with other
+              community members.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              How do I create an account on Agrilearn Network and Where can I submit feedback about my experience with Agrilearn Network?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Simply click on the "Sign Up" button on the homepage and fill out the required information, including your email address and password.You can use the feedback form located on the "Contact Us" page to share your thoughts and suggestions with us.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer bg-success text-white py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <p class="fs-5 fw-bold mb-4">Follow us on our socials:</p>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p class="text-start fs-2 fw-bold">AgriLearnNetwork</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="d-flex justify-content-end">
+                <a href="mailto:AgriLearnNetwork@gmail.com" class="btn btn-outline-light btn-floating m-1"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/your_username_here" class="btn btn-outline-light btn-floating m-1" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/your_username_here" class="btn btn-outline-light btn-floating m-1" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/your_page_or_profile_here" class="btn btn-outline-light btn-floating m-1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-12 text-center">
+          <p class="fs-5 fw-bold mb-4">Quick Links</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
+            <li class="list-inline-item"><a href="/" class="text-white">About Us</a></li>
+            <li class="list-inline-item"><a href="/blogpage.html" class="text-white">Blogs</a></li>
+            <li class="list-inline-item"><a href="/" class="text-white">Resource Library</a></li>
+            <li class="list-inline-item"><a href="/faqpage.html" class="text-white">FAQs</a></li>
+            <li class="list-inline-item"><a href="/" class="text-white">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      &copy; <script>document.write(new Date().getFullYear())</script> AgriLearnNetwork | All Rights Reserved.
+    </div>
+  </footer>
+  
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
