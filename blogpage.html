@@ -39,35 +39,30 @@
 
   <body>
     
-    <header class="header">
-      <img
-        src="favicon_new.png"
-        alt="logo"
-        style="height: 50px; width: 50px; margin-right: 10px;"
-      />
-      <a href="#" class="logo" style="margin-inline-end: auto"
-        ><h3>AgriLearnNetwork</h3>
-      </a>
-
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="index.html#home" 
-          ><i class="fa-solid fa-house"></i> Home</a
-        >
-        <a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a>
-        <a href="blogpage.html" class="active" target="_self">
-          <i class="fa-solid fa-blog"></i> Blogs</a
-        >
-        <a href="index.html#Resource Library"
-          ><i class="fa-solid fa-book"></i> Resource Library</a
-        >
-        <a href="index.html#contact" id="nav--contact"
-          ><i class="fa-solid fa-phone"></i> Contact</a
-        >
-        <a href="login.html">
-          <button id="log-in-btn" class="login-btn">Login</button>
+    <header class="header" style="column-gap: 0%;" >
+      
+        <img src="favicon_new.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px" />
+        <a href="#" class="logo" style="margin-inline-end: auto">
+          <h3>AgriLearnNetwork</h3>
         </a>
-      </nav>
+      
+        <i class="bx bx-menu" id="menu-icon"></i>
+      
+        <nav class="navbar" style="margin-right: 80px;">
+      
+          <a href="index.html#home" style="height: 1px;"><i class="fa-solid fa-house" style="column-gap: 0%;"></i> Home</a>
+          <a href="index.html#about" style="height: 1px;"><i class="fa-solid fa-circle-info"  style="column-gap: 0%;"></i> About</a>
+          <a href="blogpage.html" class="active" target="_self" style="height: 1px;">
+            <i class="fa-solid fa-blog"></i> Blogs</a>
+          <a href="index.html#Resource Library" style="height: 1px;"><i class="fa-solid fa-book"  style="column-gap: 0%;"></i> Resource Library</a>
+          <a href="index.html#contact" id="nav--contact" style="height: 1px;"><i class="fa-solid fa-phone"  style="column-gap: 0%;"></i> Contact</a>
+          <a href="login.html" style="height: 1px;">
+            <button id="log-in-btn" class="login-btn" style="margin-left: -1px;"  style="column-gap: 0%;">Login</button>
+          </a>
+      
+        </nav>
+      
+     
     </header>
 
     <body>
@@ -78,7 +73,7 @@
 
   <section class="farm" style="align-items: center;align-content: center;"> 
        <!--search bar-->
-    <div class="search" style="padding-left: 25%;display: flex;">
+    <div class="search" style="display: flex;align-self: center;place-content: center;">
       <input id="input" class="search-bar" style="width: 500px;height: 30px;"     placeholder="Search Blogs" oninput="search()"/>
       <img id="search-icon" style="height:  30px;width: 30px;margin-bottom: -10px;border-radius: 100%;" src="./images/search icon.jpg"/>
     </div>

@@ -9,6 +9,7 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "Playfair Display", serif;
+  gap:0;
 }
 
 :root {
@@ -37,18 +38,18 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: none;
 }
-section {
+/* section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
-}
+} */
 
-section {
+/* section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
-}
+} */
 
 .heading {
-  padding: 15px;
+  /* padding: 15px; */
   text-align: center;
   font-size: 3rem;
   background-color: aliceblue;
@@ -58,21 +59,22 @@ section {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: left;
   opacity: 0.8;
-  position: relative;
-  top: 60px;
+  /* position: relative; */
+  /* top: 60px; */
   left: 0;
   /* z-index: 100; */
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 0;
 }
 .navoptions a {
   display: flex;
   color: #fff;
 }
 .navtitle {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   text-align: center;
   font-size: 25px;
   margin-top: 150px;
@@ -84,20 +86,22 @@ section {
 }
 
 .login-btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: var(--main-color);
+  /* display: inline-block; */
+  /* padding: 1rem 2rem; */
+  /* background: var(--main-color); */
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: var(--second-color);
-  letter-spacing: 0.1rem;
+  letter-spacing: 0rem;
   font-weight: 600;
+  padding:0;
+  
   transition: 0.5s ease;
-  position: fixed;
-  margin-top: -5px;
+  /* position: relative; */
+  /* margin-top: -5px;
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 10px; */
 }
 .login-btn:hover {
   box-shadow: none;
