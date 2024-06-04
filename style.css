@@ -1154,6 +1154,15 @@ input[type="number"]::-webkit-inner-spin-button {
     display: none;
   }
 
+  .drop{
+   color: white;
+   background-color: #064b10;
+   border: 10px solid white;
+   position: absolute;
+   bottom: 20%;
+   display: block;
+  }
+
   .navbar :active {
     display: block;
   }
