@@ -118,6 +118,8 @@ section {
 
  nav{
   margin-right: 30px;
+  display: flex;
+  
 }
  .logo
  {
