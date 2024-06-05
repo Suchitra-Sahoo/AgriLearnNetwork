@@ -1,78 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AgriLearnNetwork</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriLearnNetwork</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon_new.png" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296" crossorigin="anonymous"></script>
+  <style>
+    .profile {
+      position: relative;
+      display: none;
+      align-items: center;
+      cursor: pointer;
+      margin-left: 30px;
+    }
 
-    <link rel="icon" href="favicon_new.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/b08b6de27e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    .profile-icon {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
 
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
-      crossorigin="anonymous"
-    ></script>
+    .profile-dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- <link rel="icon" href="./agriculture-icon-png-2804.png" type="'image/png"> -->
-  </head>
+    .profile:hover .profile-dropdown {
+      display: block;
+    }
 
-  <body>
-    <div id="loader-wrapper">
-      <div id="loader"></div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
+    .profile-dropdown p {
+      padding: 10px;
+      margin: 0;
+    }
+    @media (min-width: 1220px) {
+    #logout-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    #user-name {
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+    }
+
+    .login-btn {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      margin-top:-20px;
+    }
+
+    .navbar a {
+      margin-right: 20px;
+      text-decoration: none;
+      }}
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const userEmail = localStorage.getItem('userEmail');
+
+      function getUserDetails() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            if (userEmail) {
+              resolve({
+                isLoggedIn: true,
+                email: userEmail,
+                profilePic: "image.png"
+              });
+            } else {
+              resolve({
+                isLoggedIn: false
+              });
+            }
+          }, 1000);
+        });
+      }
+
+      function handleLogout() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            localStorage.removeItem('userEmail');
+            resolve(true);
+          }, 500);
+        });
+      }
+
+      function updateUI(user) {
+        if (user.isLoggedIn) {
+          document.getElementById("login-link").style.display = "none";
+          const profileIcon = document.getElementById("profile-icon");
+          profileIcon.style.display = "inline-flex";
+          const userName = user.email.split("@")[0];
+          document.getElementById("user-name").textContent = userName;
+          profileIcon.querySelector("img").src = "image.png";
+        } else {
+          document.getElementById("login-link").style.display = "block";
+          document.getElementById("profile-icon").style.display = "none";
+        }
+      }
+
+      getUserDetails().then((user) => {
+        updateUI(user);
+      });
+
+      document.getElementById("logout-btn").addEventListener("click", () => {
+        handleLogout().then(() => {
+          updateUI({ isLoggedIn: false });
+        });
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
   </div>
-    <header class="header">
-      <img
-        src="favicon_new.png"
-        alt="logo"
-        style="height: 50px; width: 50px; margin-right: 10px;"
-      />
-      <a href="#" class="logo" style="margin-inline-end: auto"
-        ><h3>AgriLearnNetwork</h3>
+  <header class="header">
+    <img src="favicon_new.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px;">
+    <a href="#" class="logo" style="margin-inline-end: auto"><h3>AgriLearnNetwork</h3></a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar" style="margin-left:auto">
+      <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a href="blogpage.html" target="_self"><i class="fa-solid fa-blog"></i> Blogs</a>
+      <a href="#Resource Library"><i class="fa-solid fa-book"></i> Resource Library</a>
+      <a href="#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
+      <a href="login.html" id="login-link">
+        <button id="log-in-btn" class="login-btn">Login</button>
       </a>
-
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home" class="active"
-          ><i class="fa-solid fa-house"></i> Home</a
-        >
-        <a href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
-        <a href="blogpage.html" target="_self">
-          <i class="fa-solid fa-blog"></i> Blogs</a
-        >
-        <a href="#Resource Library"
-          ><i class="fa-solid fa-book"></i> Resource Library</a
-        >
-        <a href="#contact" id="nav--contact"
-          ><i class="fa-solid fa-phone"></i> Contact</a
-        >
-        <a href="login.html">
-          <button id="log-in-btn" class="login-btn">Login</button>
-        </a>
-      </nav>
-    </header>
+      <div id="profile-icon" class="profile" style="display: none;">
+        <img src="image.png" class="profile-icon" alt="PROFILE">
+        <span id="user-name">User Name</span>
+        <div class="profile-dropdown">
+          <button id="logout-btn">Logout</button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <section class="home" id="home">
       <div class="slider">

@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -17,20 +17,18 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 document.addEventListener("DOMContentLoaded", () => {
-  const loginForm = document.getElementById('login-form');
-  loginForm.addEventListener("submit", function(event) {
+  const registerForm = document.getElementById('register-form');
+  registerForm.addEventListener("submit", function(event) {
     event.preventDefault();
-    const email = document.getElementById('email-login').value;
-    const password = document.getElementById('password-login').value;
+    const email = document.getElementById('email-register').value;
+    const password = document.getElementById('password-register').value;
 
-    signInWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Logged in
+        // Signed up
         const user = userCredential.user;
-        // Save the email to local storage
-    localStorage.setItem('userEmail', email);
-        alert("Login successful! Redirecting to home page...");
-        window.location.href = "index.html";
+        alert("Account created successfully! Redirecting to login page...");
+        window.location.href = "login.html";
       })
       .catch((error) => {
         const errorMessage = error.message;
