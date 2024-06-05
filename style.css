@@ -56,7 +56,7 @@ body {
 }
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 2rem 9% 2rem;
 }
 /* .header {
   position: fixed;
@@ -74,8 +74,8 @@ section {
   border-bottom: 0.1rem solid rgb(252, 187, 223);
 } */
 .header img{
-  height: 6rem;
-  margin-right: 2rem;
+  height: 15rem;
+  margin-right: 0.1rem;
 }
 .logo {
   font-size: 2vmax;
@@ -100,7 +100,7 @@ section {
    top: 0;
    left: 0;
    width:100%;
-   padding:2rem 9%;
+   padding:1rem 6%;
    background-color: var(--bg-color);
    display: flex;
    justify-content: space-between;
