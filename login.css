@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   width: 100%;
   padding: 0 10px;
+  background: #000;
 }
 
 body::before {
@@ -24,6 +25,9 @@ body::before {
   background: url("signin-registration images/bgpic.jpg");
   background-position: center;
   background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+  opacity: 0.7;
 }
 
 .wrapper {
@@ -34,6 +38,18 @@ body::before {
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 form {
@@ -45,12 +61,25 @@ h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #fff;
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .input-field {
   position: relative;
   border-bottom: 2px solid #ccc;
   margin: 15px 0;
+  transition: border-color 0.3s;
 }
 
 .input-field label {
@@ -61,7 +90,7 @@ h2 {
   color: #fff;
   font-size: 16px;
   pointer-events: none;
-  transition: 0.15s ease;
+  transition: 0.3s ease;
 }
 
 .input-field input {
@@ -72,6 +101,12 @@ h2 {
   outline: none;
   font-size: 16px;
   color: #fff;
+  transition: border-color 0.3s;
+}
+
+.input-field input:focus,
+.input-field input:valid {
+  border-color: #fff;
 }
 
 .input-field input:focus~label,
@@ -81,12 +116,17 @@ h2 {
   transform: translateY(-120%);
 }
 
+.input-field:hover {
+  border-color: #fff;
+}
+
 .forget {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 25px 0 35px 0;
   color: #fff;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 #remember {
@@ -105,10 +145,12 @@ h2 {
 .wrapper a {
   color: #efefef;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .wrapper a:hover {
   text-decoration: underline;
+  color: #fff;
 }
 
 button {
@@ -128,11 +170,12 @@ button:hover {
   color: #fff;
   border-color: #fff;
   background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
 }
 
 .register {
   text-align: center;
   margin-top: 30px;
   color: #fff;
+  animation: fadeIn 1.5s ease-in-out;
 }
-
