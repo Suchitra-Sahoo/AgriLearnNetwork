@@ -5,20 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to AgriLearnNetwork</title>
   <link rel="stylesheet" href="login.css">
-  <link rel="icon" href="favicon_new.png" type="image/x-icon">
-  <script type="module" src="register.js" defer></script>
-  <script type="module" src="login.js" defer></script>
+  <link rel="icon" href="favicon_new.png" type="image/x-icon" />
 </head>
 <body>
   <div class="wrapper">
     <form id="login-form">
       <h2>Login</h2>
       <div class="input-field">
-        <input type="text" id="email-login" required>
+        <input type="text" required>
         <label>Enter your email</label>
       </div>
       <div class="input-field">
-        <input type="password" id="password-login" required>
+        <input type="password" required>
         <label>Enter your password</label>
       </div>
       <div class="forget">
@@ -30,28 +28,23 @@
       </div>
       <button type="submit">Log In</button>
       <div class="register">
-        <p>Don't have an account? <a href="#" id="switch-to-register">Register</a></p>
+        <p>Don't have an account? <a href="#register-form">Register</a></p>
       </div>
     </form>
     <form id="register-form" style="display: none;">
       <h2>Register</h2>
       <div class="input-field">
-        <input type="email" id="email-register" required>
+        <input type="text" required>
         <label>Enter your email</label>
       </div>
       <div class="input-field">
-        <input type="password" id="password-register" required>
+        <input type="password" required>
         <label>Choose a password</label>
       </div>
-      <button type="submit" id="submit-register">Register</button>
+      <button type="submit">Register</button>
     </form>
   </div>
-  <script>
-    document.getElementById('switch-to-register').addEventListener('click', function(event) {
-      event.preventDefault();
-      document.getElementById('login-form').style.display = 'none';
-      document.getElementById('register-form').style.display = 'block';
-    });
-  </script>
+  <script src="login.js"></script>
 </body>
 </html>
+
