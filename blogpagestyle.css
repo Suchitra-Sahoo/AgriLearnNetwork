@@ -521,3 +521,151 @@ nav {
     }
   }
 }
+
+
+.header img{
+  height: 6rem;
+  margin-right: 2rem;
+}
+.logo {
+  font-size: 2vmax;
+  color: var(--txt-color);
+  font-weight: 600;
+  margin-right: 0;
+  cursor: default;
+}
+.navbar a {
+  font-size: 1.5vmax;
+
+ }
+ section
+ {
+   min-height: 100vh;
+   padding: 10rem 9% 2rem;
+ }
+ .header
+ {
+  position: fixed;
+  opacity: 0.8;
+   top: 0;
+   left: 0;
+   width:100%;
+   padding:2rem 9%;
+   background-color: var(--bg-color);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+   transition: all 0.8s;
+ }
+ .header.sticky
+ {
+  opacity: 0.9;
+  padding: 2rem 10% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
+  background-color: rgb(4, 125, 18);
+  box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
+ }
+
+ nav{
+  margin-right: 30px;
+}
+ .logo
+ {
+    font-size: 2.5rem;
+    color: var(--txt-color);
+    font-weight: 600;
+    cursor: default;
+ }
+ .navbar a {
+  /* position: relative; */
+  font-size: 2rem;
+  /* left: 118px; */
+  color: var(--txt-color);
+  margin-left: 4rem;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar a:not(.active):hover {
+  color: var(--main-color);
+}
+
+
+.navbar a.active,
+.navbar a.active:hover {
+  color: var(--main-color);
+}
+  .navbar.active {
+  display: block;
+}
+.logoImg {
+  width: 80px;
+  height: auto; /* Use auto to maintain aspect ratio */
+  max-width: 100%;
+
+  margin-right: 5px; /* Adjust margin as needed */
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--txt-color);
+  display: none;
+}
+
+@media (max-width: 1216px) {
+  .header{
+    padding: 2px;
+    justify-content: center;
+    gap: 0;
+  }
+  .about-content {
+    flex-direction: column; 
+  }
+  .logo {
+    font-size: 2vmax;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 4.5vmax;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    padding: 1rem 1%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar :active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2.8vmax;
+    margin: 3rem 0;
+    margin-left: 8vmax;
+  }
+  .navbar a i {
+    margin-right: 2vmax;
+  }
+  .navbar a.active {
+    color: var(--txt-color);
+    font-size: 2.5vmax;
+  }
+  /* .home {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: start;
+    gap: 0;
+    height: 100vh;
+
+  } */
+
+
+}

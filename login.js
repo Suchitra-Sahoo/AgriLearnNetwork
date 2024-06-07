@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
       const password = loginForm.querySelector('input[type="password"]').value;
       console.log("Login Email:", email);
       console.log("Login Password:", password);
+      if (email && password) { 
+        window.location.href = 'index.html'; 
+      } else {
+        alert('Please enter valid credentials'); 
+    }
       loginForm.reset();
     });
   
@@ -30,5 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
       registerForm.style.display = "block";
     });
   });
+  
   
   
