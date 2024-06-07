@@ -4,19 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to AgriLearnNetwork</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="login.css">
   <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" href="favicon_new.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b08b6de27e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-  <header class="header">
+  <header class="header sticky">
     <img
-      src="favicon_new.png"
+      src="images/favicon.png"
       alt="logo"
       style="height: 50px; width: 50px; margin-right: 10px;"
     />
@@ -26,23 +48,24 @@
 
     <i class="bx bx-menu" id="menu-icon"></i>
     <nav class="navbar">
-      <a href="index.html#home" class="active"
+      <a href="index.html #home" 
         ><i class="fa-solid fa-house"></i> Home</a
       >
-      <a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a href="index.html #about"><i class="fa-solid fa-circle-info"></i> About</a>
       <a href="blogpage.html" target="_self">
         <i class="fa-solid fa-blog"></i> Blogs</a
       >
-      <a href="index.html#Resource Library"
+      <a href="index.html #Resource Library"
         ><i class="fa-solid fa-book"></i> Resource Library</a
       >
-      <a href="faqpage.html" target="_self"><i class="fas fa-question-circle"></i>FAQ</a>
-      <a href="index.html#contact" id="nav--contact"
+      <a href="index.html #contact" id="nav--contact"
         ><i class="fa-solid fa-phone"></i> Contact</a
       >
+      <a href="login.html" class="active">
+        <button id="log-in-btn" class="login-btn">Login</button>
+      </a>
     </nav>
   </header>
-  
   <div class="wrapper">
     <form id="login-form">
       <h2>Login</h2>
@@ -66,8 +89,6 @@
         <p>Don't have an account? <a href="#register-form">Register</a></p>
       </div>
     </form>
-
-
     <form id="register-form" style="display: none;">
       <h2>Register</h2>
       <div class="input-field">
@@ -81,7 +102,6 @@
       <button type="submit">Register</button>
     </form>
   </div>
-  
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-title">
@@ -116,19 +136,19 @@
       <h2>Quick Links</h2>
       <ul>
         <li>
-          <a href="index.html#home"><p>Home</p></a>
+          <a href="index.html #home"><p>Home</p></a>
         </li>
         <li>
-          <a href="index.html#about"><p>About Us</p></a>
+          <a href="index.html #about"><p>About Us</p></a>
         </li>
         <li>
           <a href="blogpage.html"><p>Blogs</p></a>
         </li>
         <li>
-          <a href="index.html#Resource Library"><p>Resource Library</p></a>
+          <a href="index.html #Resource Library"><p>Resource Library</p></a>
         </li>
         <li>
-          <a href="index.html#contact"><p>Contact Us</p></a>
+          <a href="index.html #contact"><p>Contact Us</p></a>
         </li>
       </ul>
     </div>
@@ -142,8 +162,8 @@
       </p>
     </div>
   </footer>
+
   <script src="login.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
 
