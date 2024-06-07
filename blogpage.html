@@ -2,38 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="images/favicon.png"  type="image/png"/>
+    <link rel="icon" href="favicon_new.png"  type="image/png"/>
     <link rel="stylesheet" href="blogpagestyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/fb940be696.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
    
     <title>AgroBlogs</title>
+
+    
   </head>
   <body>
 
-      <div class="heading">
-        <div class="navoptions">
-          <a href="index.html">
-            <span class="material-symbols-outlined" style="font-size: 36px;">
-                arrow_back
-            </span>
+
+    <header class="header">
+      <!-- <a href="index.html">
+        <span class="material-symbols-outlined arrow" style="font-size: 36px;">
+            arrow_back
+        </span>
+    </a> -->
+      <img
+        src="favicon_new.png"
+        alt="logo"
+        style="height: 50px; width: 50px; margin-right: 10px"
+      />
+      <a href="#" class="logo" style="margin-inline-end: auto"
+        ><h3>AgriLearnNetwork</h3>
+      </a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="index.html#home" 
+          ><i class="fa-solid fa-house"></i> Home</a
+        >
+        <a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="blogpage.html" class="active">
+          <i class="fa-solid fa-blog"></i> Blogs</a
+        >
+        <a href="index.html#Resource Library"
+          ><i class="fa-solid fa-book"></i> Resource Library</a
+        >
+        <a href="index.html#contact" id="nav--contact"
+          ><i class="fa-solid fa-phone"></i> Contact</a
+        >
+        <a href="login.html">
+          <button id="log-in-btn" class="login-btn">Login</button>
         </a>
-        
-        </div> 
+      </nav>
+     
+    </header>
+    
         <div class="navtitle">
           <h2>Agro<span>Blogs</span></h2>
-    </div>
         </div>
-        
-     
 
-    <section class="farm">
-        <br>
-        <br>
-        <br>
-        
+    <section class="farm"> 
          <!--search bar-->
       <div class="search">
         <input id="input" class="search-bar" placeholder="Search Blogs" oninput="search()"/>
@@ -229,13 +257,76 @@
               </ul>
             </div>
         </div>    
-      </div>
-    
-
-
-      
-    
+      </div>    
     </section>
+    <footer class="footer">
+      <div  class="footer-grid">
+        <div class="footer-title">
+          <h2>AgriLearnNetwork</h2>
+        </div>
+        <div class="footer-icons">
+          <p><b>Follow us on our socials:</b></p>
+          <div class="socialIcons">
+            <a
+              href="mailto:AgriLearnNetwork@gmail.com"
+              class="email-link"
+              data-tooltip="AgriLearnNetwork@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/your_username_here"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/your_username_here" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/your_page_or_profile_here"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="quick-links">
+      <h2>Quick Links</h2>
+        <ul>
+          <li>
+            <a href="index.html"><p>Home</p></a>
+          </li>
+          <li>
+            <a href="#about"><p>About Us</p></a>
+          </li>
+          <li>
+            <a href="blogpage.html"><p>Blogs</p></a>
+          </li>
+          <li>
+            <a href="#Resource Library"><p>Resource Library</p></a>
+          </li>
+          <li>
+            <a href="#contact"><p>Contact Us</p></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-text footer-right">
+        <p style="font-weight: 600; font-size: 15px"> Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          by AgriLearnNetwork | All Rights Reserved.
+        </p>
+      </div>
+    </footer>
     <script src="blog.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header= document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY >10)
+      })
+    </script>
+
+   
   </body>
 </html>

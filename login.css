@@ -8,15 +8,13 @@
 }
 
 body {
-  display: block;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  min-height: 120vh;
-  width: 100%;
-  height: 100%;
-  padding: 0 0px;
-  background: url("images/bgpic_new.jpg");
-/*   background: url(images/logninpage.jpg); */
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
 }
 
 body::before {
@@ -24,38 +22,64 @@ body::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* background: url("signin-registration images/bgpic.jpg"); */
+  background: url("signin-registration images/bgpic.jpg");
   background-position: center;
   background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+  opacity: 0.7;
 }
 
 .wrapper {
-  margin-left: 450px;
-  margin-top: 130px;
   width: 400px;
   border-radius: 8px;
   padding: 30px;
   text-align: center;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 form {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #fff;
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .input-field {
   position: relative;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ccc;
   margin: 15px 0;
+  transition: border-color 0.3s;
 }
 
 .input-field label {
@@ -66,7 +90,7 @@ h2 {
   color: #fff;
   font-size: 16px;
   pointer-events: none;
-  transition: 0.15s ease;
+  transition: 0.3s ease;
 }
 
 .input-field input {
@@ -77,6 +101,12 @@ h2 {
   outline: none;
   font-size: 16px;
   color: #fff;
+  transition: border-color 0.3s;
+}
+
+.input-field input:focus,
+.input-field input:valid {
+  border-color: #fff;
 }
 
 .input-field input:focus~label,
@@ -86,12 +116,17 @@ h2 {
   transform: translateY(-120%);
 }
 
+.input-field:hover {
+  border-color: #fff;
+}
+
 .forget {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 25px 0 35px 0;
   color: #fff;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 #remember {
@@ -108,12 +143,14 @@ h2 {
 }
 
 .wrapper a {
-  color: #fff;
+  color: #efefef;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .wrapper a:hover {
   text-decoration: underline;
+  color: #fff;
 }
 
 button {
@@ -133,14 +170,18 @@ button:hover {
   color: #fff;
   border-color: #fff;
   background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
 }
 
 .register {
   text-align: center;
   margin-top: 30px;
   color: #fff;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-.footer{
-  margin-top: 220px;;
+.footer {
+  position: absolute;
+  bottom: -40%;
+  width: 100%;
 }

@@ -99,7 +99,7 @@ ScrollReveal().reveal('.home-content p, .about-content',{ origin:'left' });
 const typed=new Typed('.multiple-text',{
     strings:['Sow','Learn','Grow' ],
     typeSpeed:100,
-    backSpped:100,
+    backSpeed:100,
     backDelay:1000,
     loop:true
 
@@ -306,3 +306,66 @@ loginRegisterBtn.addEventListener('mouseout', () => {
     loginRegisterBtn.textContent = 'Register';
   }
 });
+
+
+// new faq
+function toggleAccordion(header) {
+  const accordion = header.parentNode;
+
+  closeAllAccordions(accordion);
+
+  accordion.classList.toggle('active');
+
+  const body = accordion.querySelector('.accordion-body');
+
+  if (body.style.display === 'block') {
+      body.style.display = 'none';
+      header.querySelector('img').src = './faq/Expand-more.svg';
+  } else {
+      body.style.display = 'block';
+      header.querySelector('img').src = './faq/Expand-less.svg';
+  }
+}
+
+function closeAllAccordions(clickedAccordion) {
+  const accordions = document.querySelectorAll('.accordion');
+  accordions.forEach(accordion => {
+      if (accordion !== clickedAccordion) {
+          accordion.classList.remove('active');
+          accordion.querySelector('.accordion-body').style.display = 'none';
+          accordion.querySelector('.accordion-header img').src = './faq/Expand-more.svg';
+      }
+  });
+}
+function closeAllAccordions(clickedAccordion) {
+  const accordions = document.querySelectorAll('.accordion');
+  accordions.forEach(accordion => {
+      if (accordion !== clickedAccordion) {
+          accordion.classList.remove('active');
+          accordion.querySelector('.accordion-body').style.display = 'none';
+          accordion.querySelector('.accordion-header img').src = './faq/Expand-more.svg';
+      }
+  });
+}
+function toggleAccordion(element) {
+  element.parentElement.classList.toggle('active');
+}
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const faqSection = document.querySelector('.faq .section-heading');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        faqSection.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+  observer.observe(faqSection);
+});
+
