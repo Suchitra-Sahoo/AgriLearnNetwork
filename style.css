@@ -13,18 +13,18 @@
 
 /* Customizing the title */
 .swal-title {
-  color: #000000 !important; /* Change title color */
+  color: #000000d2 !important; /* Change title color */
 }
 
 /* Customizing the text */
 .swal-text {
-  color: #000000 !important; /* Change text color */
+  color: #00000070 !important; /* Change text color */
 }
 
 /* Customizing the button */
 .swal-button {
-  background-color:#053314 !important; /* Change button background color */
-  color: #ffffff !important; /* Change button text color */
+  background-color:#052e33 !important; /* Change button background color */
+  color: #ffffff80 !important; /* Change button text color */
 }
 
 /* Customizing the button on hover */
@@ -32,14 +32,14 @@
   background-color:#0e4b16 !important; /* Change button hover background color */
 }
 :root {
-  --bg-color: #053314;
-  --second-color: #064b10;
-  --txt-color: #fff;
+  --bg-color: #05331c;
+  --second-color: #064b28;
+  --txt-color: #ffffffe3;
   --main-color: rgb(192, 223, 100);
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 64%;
   overflow-x: hidden;
 }
 
@@ -157,7 +157,7 @@ section {
   display: none;
 }
 
-/* .home {
+ /* .home {
   display: flex;
   justify-content: flex-end;
   align-items: end;
@@ -165,7 +165,7 @@ section {
   flex-wrap: wrap;
   padding-top: 14vmax;
 } */
-/* .home-img img {
+ /* .home-img img {
   width: 70%;
   padding-left: 5vmax
   animation: floatImage 4s ease-in-out infinite;
@@ -253,14 +253,14 @@ section {
     display:none;
  }
  
- /* .home
+  /* .home
  {
    display: grid;
    justify-content: center;
    align-items: center;
    grid-template-columns: 600px 300px;
  } */
- /* .home-img img
+  /* .home-img img
  {
   width: 20vw;
   animation:floatImage 4s ease-in-out infinite;
@@ -610,7 +610,7 @@ span {
 
 }
 
-/* .services-container .services-box::before {
+ /* .services-container .services-box::before {
   backdrop-filter: blur(10px); /* Apply blur effect to the background only */
 
 
@@ -629,7 +629,7 @@ span {
 .services-box h3 {
   font-size: 2.6rem;
   color:white;
-  text-shadow: #07421a;
+  text-shadow: #408f59;
   text-shadow: 0 0 5px rgb(192, 223, 100);
 }
 
@@ -645,13 +645,13 @@ span {
 
 .with-blur-backdrop {
   background-color: none;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   padding: 10px ;
   border-radius: 10px;
   }
 
-/* Background images for cards
+ /* Background images for cards
 .services-container .services-box:nth-child(1) {
   background-image: url('images/sow.jpeg');
   background-size: cover;
@@ -699,8 +699,8 @@ span {
 
 .services-container .services-box:nth-child(6) {
   background-image: url('/images/seasonn.jpg');
-  /* filter: opacity(0.6); */
-  /* background-size: cover;  
+   /* filter: opacity(0.6); */
+   /* background-size: cover;  
 }
 .services-container .services-box:nth-child(6):hover {
   background-image: none;
@@ -764,7 +764,7 @@ span {
 } */ 
 
 
-@keyframes slideInFromBelow {
+ @keyframes slideInFromBelow {
   from {
     opacity: 0;
     transform: translateY(50px);
@@ -773,7 +773,7 @@ span {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} 
 
 
 
