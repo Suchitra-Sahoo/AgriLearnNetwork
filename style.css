@@ -507,10 +507,6 @@ span {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.buy-btn{
-  display: flex;
-  justify-content: center;
-}
 
 @media (max-width: 1024px) {
   .about-content {
@@ -1165,15 +1161,6 @@ input[type="number"]::-webkit-inner-spin-button {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
-  }
-
-  .drop{
-   color: white;
-   background-color: #064b10;
-   border: 10px solid white;
-   position: absolute;
-   bottom: 20%;
-   display: block;
   }
 
   .navbar :active {
