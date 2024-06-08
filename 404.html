@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404:Page not found</title>
+    <link rel="icon" href="favicon_new.png" type="image/x-icon" />
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #eafeee;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+
+    }
+
+    .pic {
+        width: 900px;
+        height: 800px;
+        animation: updown 2s ease-in-out infinite alternate;
+        transition: all 0.3s ease-in-out;
+    }
+    @keyframes updown {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(20px);
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #353535;
+    }
+
+    .btn {
+        position: absolute;
+        padding: 10px 20px;
+        background-color: #32dd99c9;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        top: 600px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .pic {
+            width: 400px;
+            height: 450px;
+        }
+
+        .btn {
+            top: 600px;
+        }
+    }
+</style>
+
+<body>
+    <div class="center">
+        <img src="images/404.png" alt="404 pic" class="pic">
+        <button class="btn"><a href="index.html">Home</a></button>
+    </div>
+</body>
+
+</html>
