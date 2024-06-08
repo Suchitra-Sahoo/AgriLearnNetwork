@@ -9,12 +9,13 @@
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
-  margin: 0;
-  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  background: #000;
+  overflow: hidden;
 }
 
 body::before {
@@ -25,20 +26,31 @@ body::before {
   background: url("signin-registration images/bgpic.jpg");
   background-position: center;
   background-size: cover;
-  filter: blur(5px);
+  filter: blur(8px);
   z-index: -1;
   opacity: 0.7;
+  animation: zoomIn 10s infinite;
+}
+
+@keyframes zoomIn {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .wrapper {
   width: 400px;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 30px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeIn {
@@ -55,6 +67,7 @@ body::before {
 form {
   display: flex;
   flex-direction: column;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 h2 {
@@ -79,7 +92,7 @@ h2 {
   position: relative;
   border-bottom: 2px solid #ccc;
   margin: 15px 0;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .input-field label {
@@ -101,12 +114,13 @@ h2 {
   outline: none;
   font-size: 16px;
   color: #fff;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .input-field input:focus,
 .input-field input:valid {
   border-color: #fff;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
 }
 
 .input-field input:focus~label,
@@ -126,7 +140,7 @@ h2 {
   justify-content: space-between;
   margin: 25px 0 35px 0;
   color: #fff;
-  animation: fadeIn 1.2s ease-in-out;
+  animation: fadeIn 1.4s ease-in-out;
 }
 
 #remember {
@@ -163,7 +177,7 @@ button {
   border-radius: 3px;
   font-size: 16px;
   border: 2px solid transparent;
-  transition: 0.3s ease;
+  transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
@@ -171,17 +185,12 @@ button:hover {
   border-color: #fff;
   background: rgba(255, 255, 255, 0.15);
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
 .register {
   text-align: center;
   margin-top: 30px;
   color: #fff;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-.footer {
-  position: absolute;
-  bottom: -40%;
-  width: 100%;
+  animation: fadeIn 1.6s ease-in-out;
 }
