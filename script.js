@@ -3,6 +3,8 @@ let navbar = document.querySelectorAll('.navbar');
 let Contact = document.querySelectorAll('#contact');
 let navContact = document.querySelectorAll('#nav--contact');
 
+const password = document.getElementById('password');
+
 menuIcon.forEach(icon => {
   icon.onclick = () => {
     icon.classList.toggle('bx-x');
