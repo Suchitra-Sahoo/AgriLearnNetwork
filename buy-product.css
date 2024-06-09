@@ -1,0 +1,157 @@
+.m1{
+    background-image: url("./images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+   
+}
+
+.m2{
+    background-image: url("./images/sow.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+
+}
+
+.m3{
+    background-image: url("./images/carousel-img-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+
+}
+
+
+.box{
+    margin: 100px;
+   display: flex;
+   flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    color: black;
+ 
+    
+    /* padding: 20px 10px; */
+}
+
+
+
+.card{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+img{
+    height: 208px;
+    width: 242px;
+}
+
+.card:hover{
+    padding: 20px;
+    position: relative;
+    
+    border: 4px dashed transparent;
+    transition: padding .3s;
+    box-shadow: 5px 10px 10px 1px yellowgreen;
+}
+
+.button{
+    display: flex;
+    gap: 4px;
+}
+
+select{
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+
+.description{
+    float: left;
+}
+
+.container{
+    margin: 150px;
+    display: flex;
+    flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     max-width: 1400px;
+     color: black;
+     background-color: white;
+     padding: 10px;
+     border-radius: 10px;
+     text-align: center;
+   
+}
+
+.img1:hover{
+    cursor: pointer;
+     
+    padding: 20px;
+    position: relative;
+    border-radius: 6px;
+    border: 4px dashed transparent;
+    transition: padding .3s;
+    box-shadow: 5px 10px 10px 1px yellowgreen;
+}
+
+.img1{
+    width: 200px;
+    height: 200px;
+}
+
+
+.heading{
+    color: black;
+    position: relative;
+    top:90px;
+}
+
+
+.info{
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    /* left: 25.0%; */
+    background: rgba(0, 42, 0, 0.441);
+    border-radius: 50px;
+    padding: 3vmax 3vmax 3vmax 3vmax; 
+    filter: blur(0.8px);
+    width: 55%;
+    height: 25vmax;
+    font-size: 30px;
+    float: left;
+    margin-left: 5%;
+}
+
+#link{
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px;
+  
+}
+
+#link:hover{
+    color: white;
+    background-color: green;
+}
