@@ -341,7 +341,7 @@ a {
 }
 .header.sticky {
   opacity: 0.9;
-  /* padding: 2rem 10% 2rem 5; */
+  padding: 2rem 5%;
   background-color: rgb(4, 125, 18);
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14, 0.8);
 }
@@ -578,10 +578,10 @@ nav {
  }
  .navbar a {
   /* position: relative; */
-  /* font-size: 1.5rem; */
+  font-size: 2rem;
   /* left: 118px; */
   color: var(--txt-color);
-  /* margin-left: 2rem; */
+  margin-left: 4rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -629,7 +629,7 @@ nav {
     display: block;
     font-size: 4.5vmax;
   }
-  /* .navbar {
+  .navbar {
     position: absolute;
     top: 100%;
     left: 0;
@@ -657,7 +657,7 @@ nav {
   .navbar a.active {
     color: var(--txt-color);
     font-size: 2.5vmax;
-  } */
+  }
   /* .home {
     flex-direction: column-reverse;
     justify-content: space-around;
