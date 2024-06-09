@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       event.preventDefault();
       const email = loginForm.querySelector('input[type="text"]').value;
       const password = loginForm.querySelector('input[type="password"]').value;
+      console.log(password)
       console.log("Login Email:", email);
       console.log("Login Password:", password);
       if (email && password) { 
@@ -34,7 +35,21 @@ document.addEventListener("DOMContentLoaded", function() {
       loginForm.style.display = "none";
       registerForm.style.display = "block";
     });
-  });
-  
+
+    const togglePasswordVisibility = (inputId, buttonId) => {
+      const passwordInput = document.getElementById(inputId);
+      const toggleButton = document.getElementById(buttonId);
+
+      toggleButton.addEventListener('click', function() {
+          const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+          passwordInput.setAttribute('type', type);
+          this.innerHTML = type === 'password' ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
+      });
+  };
+
+  togglePasswordVisibility('login-password', 'toggle-login-password');
+  togglePasswordVisibility('register-password', 'toggle-register-password');
+});
+
   
   

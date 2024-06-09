@@ -3,6 +3,8 @@ let navbar = document.querySelectorAll('.navbar');
 let Contact = document.querySelectorAll('#contact');
 let navContact = document.querySelectorAll('#nav--contact');
 
+const password = document.getElementById('password');
+
 menuIcon.forEach(icon => {
   icon.onclick = () => {
     icon.classList.toggle('bx-x');
@@ -73,15 +75,17 @@ $('section[id]').mouseover(function() {
   correspondingLink.addClass('active');
 });
   
-  // Set initial active link based on URL hash
+// Set initial active link based on URL hash
 $(document).ready(function() {
   var hash = window.location.hash;
   if (hash) {
     $('a[href="' + hash + '"]').addClass('active');
   }
-  let header=document.querySelectorAll('header');
-header.classList.toggle('sticky',window.scrollY >100);
+  // Change this line from selecting all headers to selecting one header
+  let header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 100);
 });
+
 
 ScrollReveal({
     reset:true,
