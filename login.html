@@ -6,6 +6,8 @@
   <script src="https://accounts.google.com/gsi/client" async defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to AgriLearnNetwork</title>
+  <script src="https://kit.fontawesome.com/f2e55912f8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="login.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -43,7 +45,8 @@
         <label>Enter your email</label>
       </div>
       <div class="input-field">
-        <input type="password" required>
+        <input type="password" id="login-password" required>
+        <button type="button" id="toggle-login-password"><i class="fas fa-eye"></i></button>
         <label>Enter your password</label>
       </div>
       <div class="forget">
@@ -73,7 +76,9 @@
         <label>Enter your email</label>
       </div>
       <div class="input-field">
-        <input type="password" required>
+        <input type="password" id="register-password" required>
+        <button type="button" id="toggle-register-password"><i class="fas fa-eye"></i></button>
+        <!-- <button type="button" class="toggle-password" id="togglePassword"><i class="fas fa-eye"></i></button> -->
         <label>Choose a password</label>
       </div>
       <button type="submit">Register</button>
