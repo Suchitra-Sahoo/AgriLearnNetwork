@@ -14,7 +14,30 @@
     />
    
     <title>AgroBlogs</title>
+    <style>
+      #scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position at the bottom right */
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; /* Ensure it is above other elements */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ff7d1f; /* Orange background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: background-color 0.3s; /* Smooth transition */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow */
+}
 
+#scrollToTopBtn:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #ff7d1f; /* Change text color on hover */
+}
+    </style>
     
   </head>
   <body>
@@ -320,6 +343,31 @@
     </footer>
     <button id="scrollToTopBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <script src="blog.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // Get the button
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    scrollToTopBtn.onclick = function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    };
+});
+    </script>
     <script src="script.js"></script>
     <script type="text/javascript">
       window.addEventListener("scroll", function(){
