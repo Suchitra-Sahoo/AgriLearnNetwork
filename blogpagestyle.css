@@ -644,7 +644,7 @@ nav {
     display: block;
     font-size: 4.5vmax;
   }
-/*
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -673,7 +673,8 @@ nav {
   .navbar a.active {
     color: var(--txt-color);
     font-size: 2.5vmax;
-  } */
+  } 
+  
   /* .home {
     flex-direction: column-reverse;
     justify-content: space-around;
