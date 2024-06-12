@@ -363,11 +363,13 @@ nav {
   text-align: center;
 }
 .footer-grid {
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .footer {
@@ -684,12 +686,11 @@ nav {
   cursor: pointer;
 }
 
-/* Active carousel indicator dot */
-.carousel-indicators li.active {
-  background-color: #333333;
-}
 
-  
+  .quick-links ul{
+    flex-direction: column;
+  }
 
 
 }
+
