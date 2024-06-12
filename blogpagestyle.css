@@ -649,7 +649,7 @@ nav {
     top: 100%;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 48vh;
     padding: 1rem 1%;
     background: var(--bg-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -662,7 +662,7 @@ nav {
   }
   .navbar a {
     display: block;
-    font-size: 2.8vmax;
+    font-size: 2.5vmax;
     margin: 3rem 0;
     margin-left: 8vmax;
   }
