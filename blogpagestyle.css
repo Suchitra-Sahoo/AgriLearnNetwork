@@ -89,7 +89,7 @@ section {
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
@@ -341,7 +341,7 @@ a {
 }
 .header.sticky {
   opacity: 0.9;
-  /* padding: 2rem 10% 2rem 5; */
+  padding: 2rem 10% 2rem 5;
   background-color: rgb(4, 125, 18);
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14, 0.8);
 }
@@ -433,6 +433,21 @@ nav {
   margin-top: 10px;
 }
 @media (max-width: 991px) {
+  .header {
+    padding: 3vmax 4vmax;
+  }
+  .section {
+    padding: 10rem 3% 2rem;
+  }
+  .services {
+    padding-bottom: 7rem;
+  }
+  .portfolio {
+    padding-bottom: 7rem;
+  }
+  .contact {
+    min-width: auto;
+  }
   .footer {
     padding: 2rem 3%;
   }
@@ -578,10 +593,10 @@ nav {
  }
  .navbar a {
   /* position: relative; */
-  /* font-size: 1.5rem; */
+  font-size: 1.5rem;
   /* left: 118px; */
   color: var(--txt-color);
-  /* margin-left: 2rem; */
+  margin-left: 2rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -629,12 +644,12 @@ nav {
     display: block;
     font-size: 4.5vmax;
   }
-  /* .navbar {
+  .navbar {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 48vh;
     padding: 1rem 1%;
     background: var(--bg-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -647,7 +662,7 @@ nav {
   }
   .navbar a {
     display: block;
-    font-size: 2.8vmax;
+    font-size: 2.5vmax;
     margin: 3rem 0;
     margin-left: 8vmax;
   }
@@ -657,7 +672,7 @@ nav {
   .navbar a.active {
     color: var(--txt-color);
     font-size: 2.5vmax;
-  } */
+  } 
   /* .home {
     flex-direction: column-reverse;
     justify-content: space-around;
