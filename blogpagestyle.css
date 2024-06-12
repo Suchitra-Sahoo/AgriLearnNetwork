@@ -433,7 +433,7 @@ nav {
   margin-top: 10px;
 }
 @media (max-width: 991px) {
-  /* .header {
+  .header {
     padding: 3vmax 4vmax;
   }
   .section {
@@ -447,7 +447,7 @@ nav {
   }
   .contact {
     min-width: auto;
-  } */
+  }
   .footer {
     padding: 2rem 3%;
   }
