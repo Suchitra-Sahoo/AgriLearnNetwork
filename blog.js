@@ -27,4 +27,14 @@ function search(){
       }
     }
     }
+    function prevSlide() {
+      const carousel = document.querySelector('.carousel-slide');
+      carousel.scrollBy(-carousel.offsetWidth, 0);
+  }
+  
+  function nextSlide() {
+      const carousel = document.querySelector('.carousel-slide');
+      carousel.scrollBy(carousel.offsetWidth, 0);
+  }
+  
     

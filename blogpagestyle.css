@@ -124,49 +124,6 @@ span {
   color: azure;
 }
 
-.services-container .services-box {
-  flex: 1 1 30rem;
-  background: var(--second-color);
-  padding: 3rem 2rem 4rem;
-  border-radius: 2rem;
-  text-align: center;
-  border: 0.2rem solid var(--bg-color);
-  transition: 0.5s ease;
-  position: relative;
-  overflow: hidden;
-  align-self: stretch;
-}
-
-.services-box i {
-  font-size: 7rem;
-  color: var(--main-color);
-}
-
-.services-box h3 {
-  font-size: 2.6rem;
-  color: white;
-  text-shadow: #07421a;
-  text-shadow: 0 0 5px rgb(192, 223, 100);
-}
-
-.services-box h3:hover {
-  font-size: 2.6rem;
-  text-shadow: #07421a;
-}
-
-.services-box p {
-  font-size: 1.6rem;
-  margin: 1rem 0 3rem;
-}
-
-.services-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: "Inter", sans-serif;
-  padding: 30px;
-}
-
 .fcard {
   display: flex;
   margin-top: auto;
@@ -279,6 +236,7 @@ a {
   align-items: center;
   flex-direction: row;
   gap: 8px;
+  margin-bottom: 30px;
 }
 #search-icon {
   width: 35px;
@@ -658,14 +616,80 @@ nav {
     color: var(--txt-color);
     font-size: 2.5vmax;
   }
-  /* .home {
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    align-items: start;
-    gap: 0;
-    height: 100vh;
+ /* Carousel container */
+.carousel {
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-  } */
+/* Carousel item */
+.carousel-item {
+  position: relative;
+  display: none;
+}
+
+/* Show the active carousel item */
+.carousel-item.active {
+  display: block;
+}
+
+/* Carousel image */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Carousel article content */
+.carousel-item .article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #ffffff;
+  max-width: 70%;
+}
+
+/* Carousel article title */
+.carousel-item .article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Carousel article text */
+.carousel-item .article p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Carousel article date and time */
+.carousel-item .article .day {
+  font-size: 14px;
+}
+
+/* Carousel indicators */
+.carousel-indicators {
+  margin-top: 20px;
+}
+
+/* Carousel indicator dots */
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+/* Active carousel indicator dot */
+.carousel-indicators li.active {
+  background-color: #333333;
+}
+
+  
 
 
 }
