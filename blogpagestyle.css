@@ -672,8 +672,9 @@ nav {
   .navbar a.active {
     color: var(--txt-color);
     font-size: 2.5vmax;
+
   } 
-  /*  */
+  
   /* .home {
     flex-direction: column-reverse;
     justify-content: space-around;
