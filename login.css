@@ -9,6 +9,221 @@
 
 body {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("signin-registration images/bgpic.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.wrapper {
+  width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+  transition: border-color 0.3s;
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  transition: border-color 0.3s;
+}
+
+.input-field input:focus,
+.input-field input:valid {
+  border-color: #fff;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+
+.input-field:hover {
+  border-color: #fff;
+}
+
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  color: #fff;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+#remember {
+  accent-color: #fff;
+}
+
+.forget label {
+  display: flex;
+  align-items: center;
+}
+
+.forget label p {
+  margin-left: 8px;
+}
+
+.wrapper a {
+  color: #efefef;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.footer {
+  position: absolute;
+  bottom: -40%;
+  width: 100%;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+}
+
+#toggle-login-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  margin-left: -30px;
+}
+
+#toggle-register-password{
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  margin-left: -30px;
+}
+
+#password {
+  padding-right: 30px;
+}
+=======
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
