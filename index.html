@@ -479,14 +479,33 @@
       // mobile no validation @dhruv8433
       const mobileNumberInput = document.getElementById("mobileNumber");
 
-      mobileNumberInput.addEventListener("input", () => {
-        const maxLength = 10;
-        const value = mobileNumberInput.value;
+mobileNumberInput.addEventListener("input", () => {
+    const requiredLength = 10;
+    const value = mobileNumberInput.value;
 
-        if (value.length > maxLength) {
-          mobileNumberInput.value = value.slice(0, maxLength);
+    if (value.length < requiredLength) {
+        // Display an error message or handle the validation error appropriately
+        // For example, you can show an error message below the input field
+        // Create a span element for the error message
+        let errorMessageElement = document.getElementById("mobileNumberErrorMessage");
+        
+        if (!errorMessageElement) {
+            errorMessageElement = document.createElement("span");
+            errorMessageElement.id = "mobileNumberErrorMessage";
+            errorMessageElement.style.color = "red";
+            mobileNumberInput.parentNode.appendChild(errorMessageElement);
         }
-      });
+        
+        errorMessageElement.textContent = "Please enter at least 10 digits.";
+    } else {
+        // If the input is valid (at least 10 digits), clear any existing error message
+        const errorMessageElement = document.getElementById("mobileNumberErrorMessage");
+        if (errorMessageElement) {
+            errorMessageElement.textContent = "";
+        }
+    }
+});
+
     </script>
     <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
     <script type="text/javascript">
