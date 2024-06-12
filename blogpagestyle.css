@@ -681,8 +681,6 @@ nav {
     height: 100vh;
 
   } */
-  .quick-links ul{
-    flex-direction: column;
-  }
+
 
 }
