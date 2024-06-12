@@ -351,9 +351,7 @@ function closeAllAccordions(clickedAccordion) {
       }
   });
 }
-function toggleAccordion(element) {
-  element.parentElement.classList.toggle('active');
-}
+
 
 
 
