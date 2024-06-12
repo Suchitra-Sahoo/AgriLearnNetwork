@@ -65,6 +65,12 @@
         <a href="#Resource Library"
           ><i class="fa-solid fa-book"></i> Resource Library</a
         >
+
+        <li class="services" ><a href="#" class="dropbtn">Services<i class="fa-solid fa-concierge-bell"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="CropYieldCalculator.html">Crop Yield Calculator<i class="fa fa-fw fa-calculator"></i></a></li>
+          </ul>
+        </li>
         <a href="#contact" id="nav--contact"
           ><i class="fa-solid fa-phone"></i> Contact</a
         >
@@ -452,6 +458,11 @@
           "./images/carousel-img-3.jpg",
           "./images/carousel-img-4.jpg",
         ];
+
+        $('.dropdown').click(function() {
+        $(this).children('.dropdown-content').toggle();
+        });
+
 
         function showSlide(n) {
           slideGroup.style.left = `${-n * 100}%`; // Adjust left property based on current slide
