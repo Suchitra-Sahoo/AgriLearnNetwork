@@ -197,31 +197,29 @@ button:hover {
   width: 100%;
 }
 
-.nsm7Bb-HzV7m-LgbsSe {
-  margin-top: 15px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: background-color .218s, border-color .218s;
-  transition: background-color .218s, border-color .218s;
-  -webkit-user-select: none;
-  -webkit-appearance: none;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #dadce0;
-  color: #3c4043;
+.input-field {
+  display: flex;
+  align-items: center;
+}
+
+#toggle-login-password {
+  background: none;
+  border: none;
   cursor: pointer;
-  font-family: "Google Sans", arial, sans-serif;
-  font-size: 14px;
-  height: 40px;
-  letter-spacing: 0.25px;
   outline: none;
-  overflow: hidden;
-  padding: 0 12px;
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: auto;
+  color: #ffffff;
+  margin-left: -30px;
+}
+
+#toggle-register-password{
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  margin-left: -30px;
+}
+
+#password {
+  padding-right: 30px;
 }
