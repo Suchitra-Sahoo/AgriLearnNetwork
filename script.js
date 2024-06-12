@@ -3,6 +3,8 @@ let navbar = document.querySelectorAll('.navbar');
 let Contact = document.querySelectorAll('#contact');
 let navContact = document.querySelectorAll('#nav--contact');
 
+const password = document.getElementById('password');
+
 menuIcon.forEach(icon => {
   icon.onclick = () => {
     icon.classList.toggle('bx-x');
@@ -24,10 +26,9 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
-
 // Add an "active" class to the clicked link
 $('a[href*="#"]')
-.not('[href="#"]')
+  .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
     // Remove any existing "active" class from links
@@ -46,7 +47,6 @@ $('a[href*="#"]')
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       
       if (target.length) {
-
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
@@ -64,26 +64,28 @@ $('a[href*="#"]')
     }
   });
 
-//when scroll on any section that section's corresponding hyperlink will be active and
+// When scroll on any section that section's corresponding hyperlink will be active and
 // the previous activated hyperlink will be deactivated
 $('section[id]').mouseover(function() {
-var sectionId = $(this).attr('id');
-var correspondingLink = $('a[href="#' + sectionId + '"]');
-// Remove active class from all links
-$('a').removeClass('active');
-// Add active class to the corresponding link
-correspondingLink.addClass('active');
+  var sectionId = $(this).attr('id');
+  var correspondingLink = $('a[href="#' + sectionId + '"]');
+  // Remove active class from all links
+  $('a').removeClass('active');
+  // Add active class to the corresponding link
+  correspondingLink.addClass('active');
 });
   
-  // Set initial active link based on URL hash
+// Set initial active link based on URL hash
 $(document).ready(function() {
   var hash = window.location.hash;
   if (hash) {
     $('a[href="' + hash + '"]').addClass('active');
   }
-  let header=document.querySelectorAll('header');
-header.classList.toggle('sticky',window.scrollY >100);
+  // Change this line from selecting all headers to selecting one header
+  let header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 100);
 });
+
 
 ScrollReveal({
     reset:true,
@@ -101,7 +103,7 @@ ScrollReveal().reveal('.home-content p, .about-content',{ origin:'left' });
 const typed=new Typed('.multiple-text',{
     strings:['Sow','Learn','Grow' ],
     typeSpeed:100,
-    backSpped:100,
+    backSpeed:100,
     backDelay:1000,
     loop:true
 
@@ -176,7 +178,7 @@ form.addEventListener('submit', (event) => {
   
   reviewBtn.onclick = function(e) {
     e.preventDefault();
-      modal.style.display = "block";
+      modal.style.display = "flex";
   }
   
   
@@ -194,26 +196,61 @@ form.addEventListener('submit', (event) => {
   const feedbackForm = document.getElementById("feedback-form");
   const submitButton = document.querySelector("#feedback-form button[type='submit']");
   
-  
-  function allFieldsFilled() {
+  // Event listener for form submission
+  document.addEventListener('DOMContentLoaded', function() {
+    function allFieldsFilled() {
       const inputs = feedbackForm.querySelectorAll("input[type='text'], input[type='email'], textarea");
       for (let input of inputs) {
-          if (!input.value.trim()) {
-              return false;
-          }
+        if (!input.value.trim()) {
+          return false;
+        }
       }
       return true;
-  }
+    }
   
-  // Event listener for form submission
-  feedbackForm.addEventListener("submit", function(e) {
-      e.preventDefault(); // Prevent the default form submission behavior
-      if (allFieldsFilled()) {
-          alert("Thank you for your feedback! Your message has been submitted.");
-      } else {
-          alert("Please fill in all fields before submitting.");
+    function ratingSelected() {
+      const stars = document.querySelectorAll('.rating__star');
+      for (let star of stars) {
+        if (star.classList.contains('fas')) { 
+          return true;
+        }
       }
+      return false;
+    }
+  
+    const feedbackForm = document.getElementById('feedback-form');
+  
+    feedbackForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const thankYouMessage = document.getElementById('thank-you-message');
+      const errorMessage = document.getElementById('error-message');
+      if (allFieldsFilled() && ratingSelected()) {
+        thankYouMessage.style.display = 'block';
+        errorMessage.style.display = 'none';
+        setTimeout(function() {
+          thankYouMessage.style.display = 'none';
+        },3000);
+        feedbackForm.reset();
+      } else {
+        thankYouMessage.style.display = 'none';
+        errorMessage.style.display = 'block';
+        setTimeout(function() {
+          errorMessage.style.display = 'none';
+        },3000);
+        feedbackForm.reset();
+      }
+    });
+    document.querySelector('.close').addEventListener('click', function() {
+      document.getElementById('modal').style.display = 'none';
+    });
+    // Optional: if you want to close the modal when clicking outside of it
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('modal')) {
+        document.getElementById('modal').style.display = 'none';
+      }
+    };
   });
+  
   
   // Event listener for form input fields
   feedbackForm.addEventListener("input", function() {
@@ -247,6 +284,92 @@ function executeRating(stars) {
 executeRating(ratingStars);
   
  
+})();
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+      document.querySelector("body").classList.add("loaded");
+  }, 500)
+});
+
+const loginRegisterBtn = document.getElementById('log-in-btn');
+  let islogInMode = true;
+
+  // Change text on hover
+loginRegisterBtn.addEventListener('mouseover', () => {
+  if (islogInMode) {
+    loginRegisterBtn.textContent = 'Register';
+  } else {
+    loginRegisterBtn.textContent = 'Login In';
+  }
+});
+
+loginRegisterBtn.addEventListener('mouseout', () => {
+  if (islogInMode) {
+    loginRegisterBtn.textContent = 'Login';
+  } else {
+    loginRegisterBtn.textContent = 'Register';
+  }
+});
 
 
-  })();
+// new faq
+function toggleAccordion(header) {
+  const accordion = header.parentNode;
+
+  closeAllAccordions(accordion);
+
+  accordion.classList.toggle('active');
+
+  const body = accordion.querySelector('.accordion-body');
+
+  if (body.style.display === 'block') {
+      body.style.display = 'none';
+      header.querySelector('img').src = './faq/Expand-more.svg';
+  } else {
+      body.style.display = 'block';
+      header.querySelector('img').src = './faq/Expand-less.svg';
+  }
+}
+
+function closeAllAccordions(clickedAccordion) {
+  const accordions = document.querySelectorAll('.accordion');
+  accordions.forEach(accordion => {
+      if (accordion !== clickedAccordion) {
+          accordion.classList.remove('active');
+          accordion.querySelector('.accordion-body').style.display = 'none';
+          accordion.querySelector('.accordion-header img').src = './faq/Expand-more.svg';
+      }
+  });
+}
+function closeAllAccordions(clickedAccordion) {
+  const accordions = document.querySelectorAll('.accordion');
+  accordions.forEach(accordion => {
+      if (accordion !== clickedAccordion) {
+          accordion.classList.remove('active');
+          accordion.querySelector('.accordion-body').style.display = 'none';
+          accordion.querySelector('.accordion-header img').src = './faq/Expand-more.svg';
+      }
+  });
+}
+function toggleAccordion(element) {
+  element.parentElement.classList.toggle('active');
+}
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const faqSection = document.querySelector('.faq .section-heading');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        faqSection.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+  observer.observe(faqSection);
+});
+
