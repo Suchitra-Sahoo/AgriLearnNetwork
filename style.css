@@ -148,13 +148,8 @@ section {
 .navbar a.active:hover {
   color: var(--main-color);
 }
-.navbar.active {
+  .navbar.active {
   display: block;
-
-
-  height: 50vh;
-  
-
 }
 .logoImg {
   width: 80px;
