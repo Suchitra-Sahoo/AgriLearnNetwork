@@ -50,7 +50,7 @@ $('a[href*="#"]')
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 900, function() {
+        }, 10, function() {
           var $target = $(target);
           $target.focus();
           if ($target.is(":focus")) { 
