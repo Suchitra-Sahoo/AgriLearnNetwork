@@ -71,10 +71,14 @@
             ></a>
           </div>
           <span>or use your email for registeration</span>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
+          <input type="text" id="signup-Name" placeholder="Enter your Name" required/>
+          <input type="email" id="signup-email" title="email format: abc.d123@yahoo.com" pattern="^[a-zA-Z0-9._]+@[a-zA-Z]+\.[a-zA-Z]{2,}$" placeholder="Enter your Email" required/>
+          <input type="tel" id="signup-phone" title="10 digits number: 9876543210" pattern="^[0-9]{10}$" placeholder="Enter your Phone Number" />
+
+          <input type="password" id="signup-password" title="password format: alteast 8 chars length, should contain 1 Capital, 1 small letter, 1 number, 1 special symbol" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$&])[A-Za-z\d@$&]{8,}" placeholder="Enter Password" required/>
+          <input type="password" id="signup-confirm-password" title="password format: alteast 8 chars length, should contain 1 Capital, 1 small letter, 1 number, 1 special symbol" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$&])[A-Za-z\d@$&]{8,}" placeholder="Re-Enter Password" required/>
+          <span id="signup-password-match-error" style="color: red; display: none;">Passwords don't match</span>
+          <button id="signup-button" onclick="alert('Successfully Registered! Welcome to AgriLearnNetwork!')" disabled>Sign Up</button>
         </form>
       </div>
       <div class="form-container sign-in">
@@ -96,14 +100,15 @@
           <button>Sign In</button>
         </form>
       </div>
+
       <div class="toggle-container">
         <div class="toggle">
           <div class="toggle-panel toggle-left">
-            <h1 style="color: white; padding: 20px">Hello, Friend!</h1>
+            <h1 style="color: white; padding: 20px">Welcome Back!</h1>
             <button class="hidden" id="login">Sign In</button>
           </div>
           <div class="toggle-panel toggle-right">
-            <h1 style="color: white; padding: 20px">Welcome Back!</h1>
+            <h1 style="color: white; padding: 20px">Hello, Friend!</h1>
             <button class="hidden" id="register">Sign Up</button>
           </div>
         </div>
