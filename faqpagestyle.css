@@ -37,6 +37,28 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: none;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #064b10;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  color: none;
+  background-color: none;
+  display: none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(192, 223, 100);
+}
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
