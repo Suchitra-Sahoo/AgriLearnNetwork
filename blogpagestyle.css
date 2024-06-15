@@ -89,7 +89,7 @@ section {
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
@@ -580,10 +580,10 @@ nav {
  }
  .navbar a {
   /* position: relative; */
-  font-size: 2rem;
+  font-size: 1.4rem;
   /* left: 118px; */
   color: var(--txt-color);
-  margin-left: 4rem;
+  margin-left: 3rem;
   transition: 0.3s;
 }
 .navbar a:hover {
