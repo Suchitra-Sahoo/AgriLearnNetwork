@@ -898,10 +898,10 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: absolute;
-  right: 0; 
-  top: 50%; 
-  transform: translateY(-50%); 
-  white-space: nowrap; 
+  right: 0; /* Attach to the right edge */
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%); /* Adjust for centering */
+  white-space: nowrap; /* Prevent text from wrapping */
   
   
 
@@ -1444,9 +1444,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .footer {
   padding: 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/istockphoto-1465642013-170667a.webp');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
   color: #fff;
 }
 
@@ -1545,12 +1545,10 @@ font-size: 36px;
 
 .quick-links ul {
   list-style-type: none;
-  padding-left: 15%;
+  padding: 0;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
-  gap: 3.5rem;
+  justify-content: space-between;
 }
 
 .quick-links li {
@@ -1565,13 +1563,13 @@ font-size: 36px;
 }
 
 .quick-links a:hover {
-  color: greenyellow; 
+  color: #f0f0f0; /* Change color on hover */
   text-decoration: underline;
 }
 
 @media (max-width: 768px) {
   .footer-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
   }
   * Places these items above the icons in the single column layout */
   
