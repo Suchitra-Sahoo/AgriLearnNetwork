@@ -133,7 +133,7 @@ section {
   font-size: 1.5rem;
   /* left: 118px; */
   color: var(--txt-color);
-  margin-left: 4rem;
+  margin-right: 4rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -1231,10 +1231,12 @@ input[type="number"]::-webkit-inner-spin-button {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
+    height: 420px;
   }
 
   .navbar :active {
     display: block;
+    
   }
   .navbar a {
     display: block;
