@@ -264,8 +264,8 @@ section {
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 30px;
-  right: 3px;
+  top: 26px;
+  right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,10 +296,13 @@ body.dark-theme {
 
 body.dark-theme .header,
 body.dark-theme .footer,
-body.dark-theme .navbar {
-  background-color: #333333;
+body.dark-theme .navbar,
+body.dark-theme .home-content {
+  background-color: black;
   color: #ffffff;
 }
+
+
 
 body.dark-theme .theme-toggle {
   background-color: rgb(3, 3, 38);
@@ -320,17 +323,16 @@ body.dark-theme a {
 }
 
 body.dark-theme button {
-  background-color: #444;
+  background-color: black;
   color: #ffffff;
 }
 
 body.dark-theme input, body.dark-theme textarea {
-  background-color: #555;
+  background-color: black;
   color: #ffffff;
-  border: 1px solid #777;
+  border: 1px solid black;
 }
 
- 
  /* .home
  {
    display: grid;
@@ -1216,6 +1218,9 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .logo {
     font-size: 2.6vmax;
+  }
+  .theme-toggle {
+    margin-top: 10rem; /* Ensure theme toggle is below the menu icon */
   }
   #menu-icon {
     display: block;
