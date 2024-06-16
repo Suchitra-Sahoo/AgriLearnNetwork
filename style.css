@@ -261,6 +261,76 @@ section {
     display:none;
  }
  
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 30px;
+  right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.theme-toggle i {
+  font-size: 20px;
+  color: rgb(3, 3, 38);
+}
+
+.theme-toggle .fa-moon {
+  display: none;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-theme .header,
+body.dark-theme .footer,
+body.dark-theme .navbar {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-theme .theme-toggle {
+  background-color: rgb(3, 3, 38);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .theme-toggle .fa-sun {
+  display: none;
+}
+
+body.dark-theme .theme-toggle .fa-moon {
+  display: inline;
+  color: #f1c40f;
+}
+
+body.dark-theme a {
+  color: #f1c40f;
+}
+
+body.dark-theme button {
+  background-color: #444;
+  color: #ffffff;
+}
+
+body.dark-theme input, body.dark-theme textarea {
+  background-color: #555;
+  color: #ffffff;
+  border: 1px solid #777;
+}
+
+ 
  /* .home
  {
    display: grid;
