@@ -261,6 +261,7 @@ section {
     display:none;
  }
  
+
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
@@ -1638,8 +1639,22 @@ font-size: 36px;
 }
 
 .quick-links a:hover {
-  color: #f0f0f0; /* Change color on hover */
-  text-decoration: underline;
+  color: #056a22; /* Change color on hover */
+  /* text-decoration: underline; */
+  animation: blink 1s step-start infinite;
+  text-shadow: 0 0 5px currentColor;
+}
+
+@keyframes blink {
+  50% {
+    text-shadow: 
+      0 0 10px rgba(255, 255, 255, 0.8), /* White glow */
+      0 0 20px rgba(255, 0, 0, 0.7),     /* Red glow */
+      0 0 30px rgba(255, 0, 255, 0.6);   /* Pink glow */
+  }
+  100% {
+    text-shadow: none;
+  }
 }
 
 @media (max-width: 768px) {
