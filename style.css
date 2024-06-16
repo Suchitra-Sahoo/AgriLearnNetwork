@@ -264,8 +264,8 @@ section {
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 25px;
-  right: 25px;
+  top: 30px;
+  right: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
