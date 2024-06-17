@@ -832,13 +832,10 @@ a {
   border-radius: 50%;
 }
 
-.portfolio-layer a i {
-  font-size: 2rem;
-  color: var(--second-color);
-}
-
+/* Contact Section */
 .contact h2 {
   margin-bottom: 3rem;
+  color: #ffffff;
 }
 
 .contact form {
@@ -846,7 +843,12 @@ a {
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.42);
+  border-radius: 1rem; 
+  box-shadow: 0 0 15px rgba(235, 232, 232, 0.5); 
 }
+
 .contact form .input-box {
   display: flex;
   justify-content: space-between;
@@ -858,23 +860,25 @@ a {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: rgb(206, 255, 206);
-  background: var(--second-color);
-  border-radius: 0.8rem;
-  margin: 0.7rem 0;
-  border-radius: 20px;
+  color: white !important;
   background: #053314;
+  border-radius: 20px;
+  margin: 0.7rem 0;
+  border: 1px solid #B19222;
   box-shadow: inset 23px 23px 21px #04240e, inset -23px -23px 21px #07421a;
 }
+
 .contact form .input-box input::placeholder,
 .contact form textarea::placeholder {
-  color: rgb(206, 255, 206);
+  color: rgba(206, 255, 206, 0.7) !important;
 }
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 .contact form .input-box input {
   width: 49%;
 }
@@ -882,16 +886,27 @@ input[type="number"]::-webkit-inner-spin-button {
 .contact form textarea {
   resize: none;
 }
+
 .contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+  padding: 1rem 2rem;
+  background: #B19222;
+  color: #fff; 
+  border: none; 
+  border-radius: 0.8rem;
+  transition: background 0.3s; 
 }
 
-#review-btn{
+.contact form .btn:hover {
+  background: #997016;
+}
+
+#review-btn {
   padding: 10px 20px;
   border: none;
   border-radius: 20px 0 0 20px;
-  background-color:  #B19222;
+  background-color: #B19222;
   color: white;
   font-size: 16px;
   writing-mode: vertical-rl;
@@ -902,13 +917,12 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 50%; /* Vertically center */
   transform: translateY(-50%); /* Adjust for centering */
   white-space: nowrap; /* Prevent text from wrapping */
-  
-  
+}
 
+#review-btn:hover {
+  background-color: #997016;
 }
-#review-btn:hover{
-  background-color:#B19222 ;
-}
+
 .button-container {
   position: fixed;
   top: 50%;
