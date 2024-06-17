@@ -53,6 +53,14 @@
         ><h3>AgriLearnNetwork</h3>
       </a>
 
+      <!-- adding the toggle mode button -->
+      <a>
+        <div class="theme-toggle">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </div>
+       </a>
+
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active"
@@ -512,6 +520,31 @@
         var header= document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY >10)
       })
+    </script>
+
+    <!-- mode toggle function -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeToggle = document.querySelector(".theme-toggle");
+        const body = document.body;
+
+        // Load the saved theme from local storage and apply it
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme && savedTheme === "dark") {
+          body.classList.add("dark-theme");
+        }
+
+        themeToggle.addEventListener("click", function () {
+          body.classList.toggle("dark-theme");
+
+          // Save the current theme in local storage
+          if (body.classList.contains("dark-theme")) {
+            localStorage.setItem("theme", "dark");
+          } else {
+            localStorage.setItem("theme", "light");
+          }
+        });
+      });
     </script>
   </body>
 </html>
