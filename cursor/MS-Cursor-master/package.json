@@ -1,0 +1,29 @@
+{
+  "name": "ms-cursor",
+  "version": "1.2.1",
+  "description": "🐁 Modern and Simple cursor design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillaume-rygn/MS-Cursor.git"
+  },
+  "keywords": [
+    "cursor",
+    "mouse",
+    "animation",
+    "design"
+  ],
+  "author": "Guillaume Reygner",
+  "license": "Hippocratic-2.1",
+  "bugs": {
+    "url": "https://github.com/guillaume-rygn/MS-Cursor/issues"
+  },
+  "homepage": "https://github.com/guillaume-rygn/MS-Cursor#readme",
+  "files": [
+    "index.js",
+    "style.css"
+  ]
+}
