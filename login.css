@@ -105,7 +105,7 @@ body::before {
   background-color: #0e4b16;
   color: #fff;
   font-size: 12px;
-  padding: 10px 45px;
+  padding: 10px 15px;
   border: 1px solid transparent;
   border-radius: 8px;
   font-weight: 600;
@@ -263,4 +263,21 @@ body::before {
   position: absolute;
   bottom: -40%;
   width: 100%;
+}
+
+.input-password {
+  display: flex;
+  width: 100%;
+  /* align-items: center; */
+
+}
+
+#toggle-signup-password,
+#toggle-signup-confirm-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #666;
+  margin-left: -50px;
 }

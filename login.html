@@ -72,13 +72,23 @@
           </div>
           <span>or use your email for registeration</span>
           <input type="text" id="signup-Name" placeholder="Enter your Name" required/>
-          <input type="email" id="signup-email" title="email format: abc.d123@yahoo.com" pattern="^[a-zA-Z0-9._]+@[a-zA-Z]+\.[a-zA-Z]{2,}$" placeholder="Enter your Email" required/>
-          <input type="tel" id="signup-phone" title="10 digits number: 9876543210" pattern="^[0-9]{10}$" placeholder="Enter your Phone Number" />
-
-          <input type="password" id="signup-password" title="password format: alteast 8 chars length, should contain 1 Capital, 1 small letter, 1 number, 1 special symbol" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$&])[A-Za-z\d@$&]{8,}" placeholder="Enter Password" required/>
-          <input type="password" id="signup-confirm-password" title="password format: alteast 8 chars length, should contain 1 Capital, 1 small letter, 1 number, 1 special symbol" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$&])[A-Za-z\d@$&]{8,}" placeholder="Re-Enter Password" required/>
+          <input type="email" id="signup-email" title="email: abcd123@yahoo.com" pattern="^[a-zA-Z0-9._]+@[a-zA-Z]+\.[a-zA-Z]{2,}$" placeholder="Enter your Email" required/>
+          
+          <div class="input-password">
+            <input type="password" id="signup-password" title="password format: alteast 8 chars length, should contain 1 Capital, 1 small letter, 1 number, 1 special symbol" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$&])[A-Za-z\d@$&]{8,}" placeholder="Enter Password" required/>
+            <button type="button" id="toggle-signup-password">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+          
+          <div class="input-password">
+            <input type="password" id="signup-confirm-password" title="password format: alteast 8 chars length, should contain 1 Capital, 1 small letter, 1 number, 1 special symbol" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$&])[A-Za-z\d@$&]{8,}" placeholder="Re-Enter Password" required/>
+            <button type="button" id="toggle-signup-confirm-password">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
           <span id="signup-password-match-error" style="color: red; display: none;">Passwords don't match</span>
-          <button id="signup-button" onclick="alert('Successfully Registered! Welcome to AgriLearnNetwork!')" disabled>Sign Up</button>
+          <button id="signup-button" disabled>Sign Up</button>
         </form>
       </div>
       <div class="form-container sign-in">
