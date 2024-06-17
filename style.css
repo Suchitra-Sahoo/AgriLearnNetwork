@@ -1563,7 +1563,7 @@ font-size: 36px;
 }
 
 .quick-links a:hover {
-  color: #056a22; /* Change color on hover */
+  color: #abf5c0; /* Change color on hover */
   /* text-decoration: underline; */
   animation: blink 1s step-start infinite;
   text-shadow: 0 0 5px currentColor;
