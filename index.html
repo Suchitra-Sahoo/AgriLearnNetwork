@@ -52,6 +52,14 @@
       <a href="#" class="logo" style="margin-inline-end: auto"
         ><h3>AgriLearnNetwork</h3>
       </a>
+      
+      <!-- adding the toggle mode button -->
+      <a>
+        <div class="theme-toggle">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </div>
+       </a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
@@ -295,8 +303,8 @@
       <h2 class="heading">Contact <span>Us!</span></h2>
       <form action="#" id="contact-form">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
+          <input type="text" placeholder="Full Name" id="fullname" required />
+          <input type="email" placeholder="Email Address" id="emailaddress" required />
         </div>
 
         <div class="input-box">
@@ -306,10 +314,10 @@
             required
             id="mobileNumber"
           />
-          <input type="text" placeholder="Email Subject" required />
+          <input type="text" placeholder="Email Subject" id="emailsubject" required />
         </div>
 
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <input type="submit" class="btn" id="contact-btn"><br>
         </form>
         <div class="button-container">
