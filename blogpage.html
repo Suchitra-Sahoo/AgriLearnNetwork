@@ -13,12 +13,15 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./cursor/style.css">
    
     <title>AgroBlogs</title>
 
     
   </head>
   <body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
 
 
     <header class="header">
@@ -461,7 +464,13 @@
         header.classList.toggle("sticky", window.scrollY >10)
       })
     </script>
-    <script src="./cursor/MS-Cursor-master/index.js"></script>
+     <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove",function(e){
+        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./scrollreveal.js"></script>
 

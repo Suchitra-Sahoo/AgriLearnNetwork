@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQs</title>
-  <link rel="stylesheet" href="./cursor/MS-Cursor-master/style.css" />
+  <link rel="stylesheet" href="./cursor/style.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <!-- <link rel="stylesheet" href="style.css" /> -->
   <link rel="stylesheet" href="faqpagestyle.css" />
   <link rel="icon" href="favicon_new.png" type="image/x-icon" />
-  <script src="./cursor/MS-Cursor-master/index.js"></script>
+ 
   <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
 
 
@@ -235,6 +235,8 @@
   <div id="backtoTop">
     <a href="faqpage.html"><i class="bx bx-up-arrow-alt"></i></a>
   </div>
+  <div class="cursor"></div>
+    <div class="cursor2"></div>
 
 
   <script src="script.js"></script>
@@ -326,6 +328,13 @@
       var header = document.querySelector("header");
       header.classList.toggle("sticky", window.scrollY > 10)
     })
+  </script>
+   <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
   </script>
 </body>
 
