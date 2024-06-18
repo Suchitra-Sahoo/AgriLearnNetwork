@@ -165,6 +165,95 @@ section {
   display: none;
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 26px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.theme-toggle i {
+  font-size: 20px;
+  color: rgb(3, 3, 38);
+}
+
+.theme-toggle .fa-moon {
+  display: none;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-theme .header,
+body.dark-theme .footer,
+body.dark-theme .navbar {
+  background-color: black;
+  color: #ffffff;
+}
+
+
+body.dark-theme .theme-toggle {
+  background-color: rgb(3, 3, 38);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .theme-toggle .fa-sun {
+  display: none;
+}
+
+body.dark-theme .theme-toggle .fa-moon {
+  display: inline;
+  color: #f1c40f;
+}
+
+body.dark-theme a {
+  color: #f1c40f;
+}
+
+body.dark-theme button {
+  background-color: black;
+  color: #ffffff;
+}
+
+body.dark-theme input, body.dark-theme textarea {
+  background-color: black;
+  color: #ffffff;
+  border: 1px solid black;
+}
+
+body.dark-theme .contact #mobileNumber,
+body.dark-theme .contact #fullname,
+body.dark-theme .contact #emailaddress,
+body.dark-theme .contact #emailsubject,
+body.dark-theme .contact #message {
+  background-color: #555555;
+  color: white;
+  border: 1px solid black;
+  box-shadow: 0 4px 6px rgba(100, 100, 100, 0.4);
+}
+
+
+/* body.dark-theme .contact input,
+body.dark-theme .contact textarea {
+  background-color: #555555;
+  color: #000000;
+  border: 1px solid #555555;
+} */
+
 /* .home {
   display: flex;
   justify-content: flex-end;
@@ -1160,6 +1249,9 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .logo {
     font-size: 2.6vmax;
+  }
+  .theme-toggle {
+    margin-top: 10rem; /* Ensure theme toggle is below the menu icon */
   }
   #menu-icon {
     display: block;

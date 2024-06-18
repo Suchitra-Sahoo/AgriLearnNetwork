@@ -371,3 +371,25 @@ document.addEventListener('DOMContentLoaded', () => {
   observer.observe(faqSection);
 });
 
+// mode toggle function
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeToggle = document.querySelector(".theme-toggle");
+        const body = document.body;
+
+        // Load the saved theme from local storage and apply it
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme && savedTheme === "dark") {
+          body.classList.add("dark-theme");
+        }
+
+        themeToggle.addEventListener("click", function () {
+          body.classList.toggle("dark-theme");
+
+          // Save the current theme in local storage
+          if (body.classList.contains("dark-theme")) {
+            localStorage.setItem("theme", "dark");
+          } else {
+            localStorage.setItem("theme", "light");
+          }
+        });
+      });
