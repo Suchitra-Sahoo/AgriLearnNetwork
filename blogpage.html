@@ -6,18 +6,22 @@
     <link rel="stylesheet" href="blogpagestyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/fb940be696.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./cursor/MS-Cursor-master/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./cursor/style.css">
    
     <title>AgroBlogs</title>
 
     
   </head>
   <body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
 
 
     <header class="header">
@@ -459,6 +463,13 @@
         var header= document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY >10)
       })
+    </script>
+     <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove",function(e){
+        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
     </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./scrollreveal.js"></script>
