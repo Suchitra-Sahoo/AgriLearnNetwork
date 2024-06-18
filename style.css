@@ -138,7 +138,20 @@ section {
 }
 .navbar a:hover {
   color: var(--main-color);
+  animation: blink 1s infinite;
+  transform: scale(1.1);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
 }
+
+@keyframes blink {
+  0%, 100% {
+    color: var(--main-color);
+  }
+  50% {
+    color: transparent;
+  }
+}
+
 .navbar a:not(.active):hover {
   color: var(--main-color);
 }
