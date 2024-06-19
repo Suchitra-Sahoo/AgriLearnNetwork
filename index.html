@@ -40,6 +40,9 @@
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- <link rel="icon" href="./agriculture-icon-png-2804.png" type="'image/png"> -->
+
+    <!-- translator scripts -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate" ></script>
   </head>
 
   <body>
@@ -86,7 +89,11 @@
         <a href="login.html">
           <button id="log-in-btn" class="login-btn">Login</button>
         </a>
-      </nav>
+        
+<a>
+  <div id="google_element" align="right" >    </div>
+
+</a>      </nav>
     </header>
 
     <section class="home" id="home">
@@ -452,6 +459,12 @@
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 
     <script>
+
+// Translator script
+function loadGoogleTranslate(){
+                new google.translate.TranslateElement("google_element");
+
+            }
 
       window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;

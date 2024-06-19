@@ -151,7 +151,30 @@ section {
     color: transparent;
   }
 }
-
+#google_element{
+  width: 250px;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+  display: none !important;}
+.VIpgJd-ZVi9od-ORHb-OEVmcd{
+  display: none;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+  display: none;
+}  
+.skiptranslate{
+  font-size: 0 !important;
+}
+.VIpgJd-ZVi9od-ORHb{
+  display: none !important;
+  background: none !important;
+  text:none !important;
+}
+.VIpgJd-ZVi9od-ORHb-OEVmcd .skiptranslate{
+  display: none !important;
+  background: none !important;
+  visibility: hidden !important;}
+  
 .navbar a:not(.active):hover {
   color: var(--main-color);
 }
