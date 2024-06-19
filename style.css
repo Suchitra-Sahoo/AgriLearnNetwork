@@ -1890,11 +1890,3 @@ font-size: 36px;
 }
 
 /* Preloader Css Ends */
-
-#progress{
-  background-color: green;
-  position: fixed;
-  z-index: 5;
-  bottom: 100px;
-  right: 20px;
-}
