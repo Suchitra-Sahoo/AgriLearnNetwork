@@ -50,7 +50,7 @@ $('a[href*="#"]')
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 900, function() {
+        }, 10, function() {
           var $target = $(target);
           $target.focus();
           if ($target.is(":focus")) { 
@@ -90,8 +90,8 @@ $(document).ready(function() {
 ScrollReveal({
     reset:true,
     distance:'80px',
-    duration:2000,
-    delay:200
+    duration:1000,
+    delay:20
 });
 
 ScrollReveal().reveal('.home-content, .heading',{ origin:'top' });
