@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AgriLearnNetwork</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon_new.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./cursor/style.css">
+
+    <!-- <script src="./cursor/script.js"></script> -->
+    
+    <script
+      src="https://kit.fontawesome.com/b08b6de27e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
   <link rel="icon" href="favicon_new.png" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="./style.css" />
@@ -19,15 +32,12 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
     crossorigin="anonymous"></script>
 
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <!-- <link rel="icon" href="./agriculture-icon-png-2804.png" type="'image/png"> -->
-</head>
-
-<body>
-  <div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
+  <body>
+  
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
   </div>
   <header class="header">
     <img src="favicon_new.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px;" />
@@ -378,41 +388,45 @@
 
     // mobile no validation @dhruv8433
     const mobileNumberInput = document.getElementById("mobileNumber");
+      mobileNumberInput.addEventListener("input", () => {
+        const maxLength = 10;
+        const value = mobileNumberInput.value;
 
-    mobileNumberInput.addEventListener("input", () => {
-      const maxLength = 10;
-      const value = mobileNumberInput.value;
+        if (value.length > maxLength) {
+          mobileNumberInput.value = value.slice(0, maxLength);
+        }
+      });
+    </script>
+    <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat.load({
+            verify: { projectID: "664632efd181ce0921d32ed5" },
+            url: "https://general-runtime.voiceflow.com",
+            versionID: "production",
+          });
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
+    </script>
 
-      if (value.length > maxLength) {
-        mobileNumberInput.value = value.slice(0, maxLength);
-      }
-    });
-  </script>
-  
-  <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
-  <script type="text/javascript">
-    (function (d, t) {
-      var v = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-      v.onload = function () {
-        window.voiceflow.chat.load({
-          verify: { projectID: "664632efd181ce0921d32ed5" },
-          url: "https://general-runtime.voiceflow.com",
-          versionID: "production",
-        });
-      };
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-      v.type = "text/javascript";
-      s.parentNode.insertBefore(v, s);
-    })(document, "script");
-  </script>
-
-  <script type="text/javascript">
-    window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 10)
-    })
-  </script>
-</body>
-
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header= document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY >10)
+      })
+    </script>
+     <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove",function(e){
+        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
+  </body>
 </html>
