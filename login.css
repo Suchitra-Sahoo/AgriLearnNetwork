@@ -71,12 +71,15 @@ body::before {
     transform: translateX(0);
   }
 }
-
+.header{
+  z-index: 9999;
+}
 .container {
   background-color: #fff;
   border-radius: 30px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
   position: relative;
+  top: 90px;
   overflow: hidden;
   width: 768px;
   max-width: 100%;
@@ -261,8 +264,9 @@ body::before {
 }
 .footer {
   position: absolute;
-  bottom: -40%;
+  bottom: -44%;
   width: 100%;
+  height: 130px;
 }
 
 .input-password {
