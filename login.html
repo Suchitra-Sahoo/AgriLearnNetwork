@@ -105,8 +105,22 @@
             ></a>
           </div>
           <span>or use your email password</span>
+          <div class="input-password">
           <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          </div>
+          <div class="input-password">
+            <input type="password" id="signin-password" placeholder="Password" />
+            <button type="button" id="toggle-signin-password">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+          
+          <div class="input-password">
+            <input type="password" id="signin-confirm-password" placeholder="Confirm Password" required />
+            <button type="button" id="toggle-signin-confirm-password">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
           <a href="#">Forget Your Password?</a>
           <button>Sign In</button>
         </form>
