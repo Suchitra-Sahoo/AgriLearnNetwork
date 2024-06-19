@@ -78,9 +78,10 @@ body::before {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
   position: relative;
   overflow: hidden;
-  width: 768px;
+  width: 709px;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 385px;
+  top: 39px;
 }
 
 .container p {
@@ -263,6 +264,7 @@ body::before {
   position: absolute;
   bottom: -40%;
   width: 100%;
+  height: 280px;
 }
 
 .input-password {
