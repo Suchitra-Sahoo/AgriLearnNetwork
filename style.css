@@ -338,7 +338,7 @@ body.dark-theme .contact textarea {
   background: rgba(0, 42, 0, 0.441);
   border-radius: 50px;
   padding: 3vmax 3vmax 3vmax 3vmax; 
-  filter: blur(0.8px);
+  /* filter: blur(0.8px); */
   width: 55%;
   height: 25vmax;
   font-size: 4vmax;
@@ -403,6 +403,29 @@ body.dark-theme .contact textarea {
 span {
   color: var(--main-color);
 }
+.glow {    /*Added glow to the welcome div */
+  /* font-size: 80px; */
+  color: #fff;
+  /* text-align: center; */
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: #FC0 1px 0 10px;
+
+  }
+  
+  to {
+    text-shadow: yellowgreen 5px 0 15px;
+  }
+}
+
+.un    /* Added underline to typing cursor*/
+{
+  text-decoration: underline;
+}
+
 
 .home-img {
   width: 45%;
@@ -1342,7 +1365,7 @@ input[type="number"]::-webkit-inner-spin-button {
   /* position: fixed;  */
   top: 30%;
   left: 18.0%;
-  filter: blur(0.5px); 
+  /* filter: blur(0.5px);  */
   color:rgb(255, 247, 232); 
   width: 70%;
   height: fit-content;
@@ -1413,7 +1436,7 @@ input[type="number"]::-webkit-inner-spin-button {
   /* position: fixed;  */
   /* margin-left: -140px;
   margin-top: 15px;   */
-  filter: blur(0.5px); 
+  /* filter: blur(0.5px);  */
   color:rgb(255, 247, 232); 
 }
 .home-content h1
@@ -1449,7 +1472,7 @@ input[type="number"]::-webkit-inner-spin-button {
     /* position: fixed;  */
     /* margin-left: -190px;
     margin-top: 0px;   */
-    filter: blur(0.5px); 
+    /* filter: blur(0.5px);  */
     color:rgb(255, 247, 232); 
   }
   .home-content h1
