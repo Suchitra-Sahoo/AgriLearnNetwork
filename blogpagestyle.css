@@ -453,7 +453,9 @@ nav {
   color: #fff;
 }
 
-.footer-title {
+.footer-title,
+.footer-icons,
+.footer-iconTop {
   text-align: center;
 }
 .footer-icons {
@@ -536,14 +538,15 @@ nav {
 }
 
 .quick-links a:hover {
-  color: #f0f0f0; /* Change color on hover */
+  color: #abf5c0;  /* Change color on hover */
   text-decoration: underline;
+  text-shadow: 0 0 5px currentColor;
 }
 
 @media (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr;
-
+  }
     .socialIcons {
       gap: 0;
       padding: 1rem;
@@ -554,7 +557,6 @@ nav {
     .quick-links ul {
       flex-direction: column;
     }
-  }
 }
 
 
