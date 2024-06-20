@@ -1,26 +1,7 @@
-let menuIcon = document.querySelectorAll('#menu-icon');
-let navbar2 = document.querySelectorAll('.navbar2');
 const container = document.getElementById("container");
 const registerBtn = document.getElementById("register");
 const loginBtn = document.getElementById("login");
-menuIcon.forEach(icon => {
-  icon.onclick = () => {
-    icon.classList.toggle('bx-x');
-    navbar2.forEach(nav => nav.classList.toggle('active'));
-  }
-});
-document.querySelectorAll('.navbar2 a').forEach(link => {
-  link.addEventListener('click', () => {
-    // Remove 'active' class from navbar
-    document.querySelectorAll('.navbar2').forEach(nav => {
-      nav.classList.remove('active');
-    });
-    // Toggle the menu icon
-    document.querySelectorAll('#menu-icon').forEach(icon => {
-      icon.classList.remove('bx-x'); // Remove the 'bx-x' class to close the hamburger menu
-    });
-  });
-});
+
 const togglePasswordVisibility = (inputId, buttonId) => {
   const passwordInput = document.getElementById(inputId);
   const toggleButton = document.getElementById(buttonId);
