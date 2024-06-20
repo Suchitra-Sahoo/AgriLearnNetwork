@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -34,27 +35,34 @@ body::before {
   0% {
     background-image: url(images/carousel-img-1.jpg);
   }
+
   20% {
     background-image: url(images/carousel-img-2.jpg);
   }
+
   40% {
     background-image: url(images/carousel-img-3.jpg);
   }
+
   60% {
     background-image: url(images/carousel-img-4.jpg);
   }
+
   80% {
     background-image: url(images/carousel-img-5.jpg);
   }
+
   100% {
     background-image: url(images/carousel-img-6.jpg);
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -66,9 +74,139 @@ body::before {
     opacity: 0;
     transform: translateX(-100%);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+.navbar1 img {
+  height: 6rem;
+  margin-right: 2rem;
+}
+.navbar1 {
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 2rem 9%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  transition: all 0.8s;
+}
+
+.navbar1.sticky {
+  opacity: 0.9;
+  padding: 2rem 10% 2rem 5%;
+  /* Adjusted padding to ensure space for the sign-in button */
+  background-color: rgb(4, 125, 18);
+  box-shadow: 0 0 1.5px 2px rgb(14, 14, 14, 0.8);
+}
+
+nav {
+  margin-right: 30px;
+  display: flex;
+}
+.logo {
+  font-size: 2vmax;
+  color: var(--txt-color);
+  font-weight: 600;
+  margin-right: 0;
+  cursor: default;
+}
+.navbar2 a {
+  font-size: 1.5rem;
+  /* left: 118px; */
+  color: var(--txt-color);
+  margin-right: 4rem;
+  transition: 0.3s;
+}
+
+.navbar2 a:hover {
+  color: var(--main-color);
+  animation: blink 1s infinite;
+  transform: scale(1.1);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
+}
+@keyframes blink {
+  0%, 100% {
+    color: var(--main-color);
+  }
+  50% {
+    color: transparent;
+  }
+}
+.navbar2 a:not(.active):hover {
+  color: var(--main-color);
+}
+
+.navbar2 a.active,
+.navbar2 a.active:hover {
+  color: var(--main-color);
+}
+
+.navbar2.active {
+  display: block;
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--txt-color);
+  display: none;
+}
+@media only screen and (max-width:1350px) {
+  .navbar1 {
+    padding: 3rem 3%;
+  }
+}
+
+@media (max-width: 1216px) {
+  .logo {
+    font-size: 2.6vmax;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 5vmax;
+  }
+  .navbar2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 1%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+    height: 420px;
+  }
+  .navbar2 :active {
+    display: block;
+    
+  }
+  .navbar2 a {
+    display: block;
+    font-size: 2.8vmax;
+    margin: 3rem 0;
+    margin-left: 8vmax;
+  }
+  .navbar2 a i {
+    margin-right: 2vmax;
+  }
+  .navbar2 a.active {
+    color: var(--txt-color);
+    font-size: 2.5vmax;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar1 {
+    padding: 3vmax 4vmax;
   }
 }
 
@@ -78,9 +216,10 @@ body::before {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
   position: relative;
   overflow: hidden;
-  width: 768px;
+  width: 748px;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 450px;
+  top:30px;
 }
 
 .container p {
@@ -90,10 +229,12 @@ body::before {
   letter-spacing: 0.3px;
   margin: 20px 0;
 }
+
 .container span {
   font-size: 12px;
   color: black;
 }
+
 .container a {
   color: #333;
   font-size: 13px;
@@ -114,10 +255,12 @@ body::before {
   margin-top: 10px;
   cursor: pointer;
 }
+
 .container button.hidden {
   background-color: transparent;
   border-color: #fff;
 }
+
 .container form {
   background-color: #fff;
   display: flex;
@@ -138,6 +281,7 @@ body::before {
   width: 100%;
   outline: none;
 }
+
 .container h1 {
   color: black;
 }
@@ -148,20 +292,24 @@ body::before {
   height: 100%;
   transition: all 0.6s ease-in-out;
 }
+
 .sign-in {
   left: 0;
   width: 50%;
   z-index: 2;
 }
+
 .container.active .sign-in {
   transform: translateX(100%);
 }
+
 .sign-up {
   left: 0;
   width: 50%;
   opacity: 0;
   z-index: 1;
 }
+
 .container.container.active .sign-up {
   transform: translateX(100%);
   opacity: 1;
@@ -170,11 +318,13 @@ body::before {
 }
 
 @keyframes move {
+
   0%,
   49.99% {
     opacity: 0;
     z-index: 1;
   }
+
   50%,
   100% {
     opacity: 1;
@@ -185,6 +335,7 @@ body::before {
 .social-icons {
   margin: 20px 0;
 }
+
 .social-icons a {
   border: 1px solid #ccc;
   border-radius: 20%;
@@ -195,6 +346,7 @@ body::before {
   width: 40px;
   height: 40px;
 }
+
 .social-icons a:hover {
   font-size: 25px;
   background-color: #053314;
@@ -217,6 +369,7 @@ body::before {
   transform: translateX(-100%);
   border-radius: 0px 150px 100px 0px;
 }
+
 .toggle {
   height: 100%;
   background: linear-gradient(to right, #0b8835, #0e4b16);
@@ -228,9 +381,11 @@ body::before {
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
 }
+
 .container.active .toggle {
   transform: translateX(50%);
 }
+
 .toggle-panel {
   position: absolute;
   width: 50%;
@@ -249,16 +404,20 @@ body::before {
 .toggle-left {
   transform: translateX(-200%);
 }
+
 .container.active .toggle-left {
   transform: translateX(0);
 }
+
 .toggle-right {
   right: 0;
   transform: translateX(0);
 }
+
 .container.active .toggle-right {
   transform: translateX(200%);
 }
+
 .footer {
   position: absolute;
   bottom: -40%;
@@ -280,4 +439,10 @@ body::before {
   outline: none;
   color: #666;
   margin-left: -50px;
+}
+
+body.dark-theme .navbar1,
+body.dark-theme .navbar2 {
+  background-color: black;
+  color: #ffffff;
 }
