@@ -837,7 +837,7 @@ a {
   color: var(--second-color);
 }
 
-.contact h2 {
+/* .contact h2 {
   margin-bottom: 3rem;
 }
 
@@ -885,7 +885,128 @@ input[type="number"]::-webkit-inner-spin-button {
 .contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+} */
+
+/* --------------------------------------Anjali's Changes for Contact Us---------------------------------------------- */
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: rgb(206, 255, 206);
+  background: linear-gradient(145deg, #084528, #0b5f3a); /* Gradient for depth */
+  border: 2px solid transparent; /* Transparent border for better focus effect */
+  border-radius: 1rem; /* More rounded corners */
+  margin: 0.7rem 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), inset 0 -2px 4px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all effects */
 }
+
+/* Placeholder Styles */
+.contact form .input-box input::placeholder,
+.contact form textarea::placeholder {
+  color: rgba(206, 255, 206, 0.8); /* Consistent placeholder color */
+  transition: color 0.3s;
+}
+
+/* Focus Styles */
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+  background: linear-gradient(145deg, #0b5f3a, #084528); /* Slightly darker gradient */
+  border-color: #0b7d45; /* Highlighted border on focus */
+  box-shadow: 0 0 10px rgba(0, 255, 150, 0.4); /* Glow effect on focus */
+  outline: none; /* Remove default outline */
+  transform: scale(1.03); /* Slightly enlarge on focus for emphasis */
+}
+
+/* Hover Styles */
+.contact form .input-box input:hover,
+.contact form textarea:hover {
+  border-color: #0b7d45; /* Change border color on hover */
+}
+
+/* Specific Input Styles */
+.contact form .input-box input[type="text"],
+.contact form .input-box input[type="email"],
+.contact form .input-box input[type="number"] {
+  width: 49%; /* Maintain side-by-side layout */
+}
+
+/* Remove Spin Buttons for Number Input */
+.contact form .input-box input[type="number"]::-webkit-outer-spin-button,
+.contact form .input-box input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Hide spin buttons in WebKit browsers */
+  margin: 0;
+}
+.contact form .input-box input[type="number"] {
+  -moz-appearance: textfield; /* Hide spin buttons in Firefox */
+}
+
+/* Textarea Styles */
+.contact form textarea {
+  resize: none; /* Prevent resizing */
+  min-height: 150px; /* Ensure minimum height */
+}
+
+/* Input Container Layout */
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Overall Form and Heading Styles */
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Button Container */
+.contact .button-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Improved Button Hover Effect */
+.contact form .btn:hover {
+  background: #0b7d45; /* Change background on hover */
+  box-shadow: 0 5px 15px rgba(0, 255, 150, 0.4); /* Glow effect on hover */
+  transition: background 0.3s, box-shadow 0.3s; /* Smooth transition for button */
+}
+
+/* Additional Enhancements for Inputs and Textarea */
+.contact form .input-box input,
+.contact form textarea {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 -1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out; /* Smooth transitions for interactive effects */
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+  box-shadow: 0 0 10px rgba(0, 255, 150, 0.4), inset 0 -1px 3px rgba(0, 0, 0, 0.2); /* Enhanced focus effect */
+  transform: scale(1.05); /* Slightly increase scale on focus */
+}
+
+.contact form .input-box input:hover,
+.contact form textarea:hover {
+  border-color: #0b7d45; /* Consistent border color change on hover */
+}
+
+/* Consistent Input Size */
+.contact form .input-box input[type="text"],
+.contact form .input-box input[type="email"],
+.contact form .input-box input[type="number"] {
+  width: 49%; /* Maintain side-by-side layout */
+  min-width: 48%; /* Ensure consistent width */
+}
+
+/* ---------------------------------------------------------------------------------------------- */
 
 #review-btn{
   padding: 10px 20px;
