@@ -237,7 +237,7 @@ section {
   border-radius: 50px;
   padding: 3vmax 3vmax 3vmax 3vmax; 
   filter: blur(0.8px);
-  width: 55%;
+  width: 50%;
   height: 25vmax;
   font-size: 4vmax;
 }
