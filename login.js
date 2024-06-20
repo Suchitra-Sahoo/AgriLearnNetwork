@@ -15,6 +15,7 @@ const togglePasswordVisibility = (inputId, buttonId) => {
 
 togglePasswordVisibility('signup-password', 'toggle-signup-password');
 togglePasswordVisibility('signup-confirm-password', 'toggle-signup-confirm-password');
+togglePasswordVisibility('signin-password', 'toggle-signin-password');
 
 registerBtn.addEventListener("click", () => {
   container.classList.add("active");
