@@ -34,6 +34,28 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #064b10;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  color: none;
+  background-color: none;
+  display: none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(192, 223, 100);
+}
 body {
   scrollbar-width: none;
 }
@@ -89,7 +111,7 @@ section {
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
@@ -279,22 +301,29 @@ a {
   align-items: center;
   flex-direction: row;
   gap: 8px;
+
 }
 #search-icon {
-  width: 35px;
-  height: 35px;
+  
+  position:absolute;
+  right:20% ;
+  width: 37px;
+  height: 37px;
   border-radius: 50%;
   display: flex;
+  padding: 7px;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(192, 223, 100);
+  box-shadow: 0 2px 5px rgba(218, 198, 198, 0.1);
   overflow: hidden;
   transition: background-color 0.3s, transform 0.1s, border-color 0.3s;
 }
 #search-icon img {
   width: 100%;
   height: 100%;
+  filter: invert(1);
+  align-items: center;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -309,7 +338,7 @@ a {
 .search-bar {
   margin: 0;
   padding: 10px 15px;
-  width: 40%;
+  width: 60%;
   height: 40px;
   border-radius: 20px;
   border: 1px solid gray;
@@ -433,6 +462,10 @@ nav {
 .footer-text {
   text-align: center;
   margin-top: 10px;
+}
+.socialIcons a:hover
+{
+  transform: scale(1.3);
 }
 @media (max-width: 991px) {
   .footer {
@@ -580,10 +613,10 @@ nav {
  }
  .navbar a {
   /* position: relative; */
-  font-size: 2rem;
+  font-size: 1.4rem;
   /* left: 118px; */
   color: var(--txt-color);
-  margin-left: 4rem;
+  margin-left: 3rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -642,6 +675,7 @@ nav {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
+    height:440px;
   }
 
   .navbar :active {
