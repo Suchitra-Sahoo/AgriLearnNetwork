@@ -93,7 +93,7 @@ section {
 .navbar a {
   font-size: 1.5rem;
   color: var(--txt-color);
-  margin-right: 5rem;
+  margin-right: 3rem;
   transition: 0.3s;
  }
  .navbar a:hover {

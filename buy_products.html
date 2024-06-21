@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Tools Store</title>
+    <link rel="stylesheet" href="buy_products.css">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <img
+          src="favicon_new.png"
+          alt="logo"
+          style="height: 50px; width: 50px; margin-right: 10px;"
+        />
+        <a href="#" class="logo" style="margin-inline-end: auto"
+          ><h3>AgriLearnNetwork</h3>
+        </a>
+        
+        <!-- adding the toggle mode button -->
+        <a>
+          <div class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </div>
+         </a>
+        <nav class="navbar">
+          <a href="index.html#home" class="active content"
+            ><i class="fa-solid fa-house"></i> Home</a>
+          <a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a>
+          <a href="blogpage.html" target="_self">
+            <i class="fa-solid fa-blog"></i> Blogs</a
+          >
+          <a href="index.html#Resource Library"
+            ><i class="fa-solid fa-book"></i> Resource Library</a
+          >
+          <a href="faqpage.html" target="_self"><i class="fas fa-question-circle"></i>FAQ</a>
+          <a href="index.html#contact" id="nav--contact"
+            ><i class="fa-solid fa-phone"></i> Contact</a
+          >
+          <a href="buy_products.html"
+            ><i class="fa fa-shopping-cart"></i>Buy Products</a
+          >
+          <a href="login.html">
+            <button id="log-in-btn" class="login-btn">Login</button>
+          </a>
+        </nav>
+      </header>
+
+    <div class="container" id="products">
+        <!-- Product Divisions (21 products) -->
+        <div class="product">
+            <img src="https://imgs.search.brave.com/C0kR0ZD3syOLiv-dt8S_Rk6dyKcmB8zVgEXP2uoXa1k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVlcmUuY29tL2Fz/c2V0cy9pbWFnZXMv/aGF5LWZvcmFnZS9i/YWxpbmcvcm91bmQt/YmFsZXIvNTYxLUJh/bGVyLWhheS1mb3Jh/Z2UtYmFsaW5nLXBh/Z2UtMTAyNHg1NzYu/anBn" alt="BALER">
+            <div class="info">
+                <h3>BALER-Hay & Forage Equipment</h3>
+                <br>
+                <p>Rupee 9,000</p>
+                <br>
+                <button class="add-to-cart" data-product="BALLER" data-image="https://imgs.search.brave.com/C0kR0ZD3syOLiv-dt8S_Rk6dyKcmB8zVgEXP2uoXa1k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVlcmUuY29tL2Fz/c2V0cy9pbWFnZXMv/aGF5LWZvcmFnZS9i/YWxpbmcvcm91bmQt/YmFsZXIvNTYxLUJh/bGVyLWhheS1mb3Jh/Z2UtYmFsaW5nLXBh/Z2UtMTAyNHg1NzYu/anBn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://imgs.search.brave.com/g0fGmy5knehlgFMYdjcTu15Ta49Wk89nql-EkNI8AKE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL3ZhZGVyLXBy/b2QuczMuYW1hem9u/YXdzLmNvbS8xNjgy/OTcxNTM3LTE2ODEz/MzE1MTEtZWNoby1k/bG0yMTAwLXNwLTY0/NTAxYjdhMmQzYjgu/anBnP2Nyb3A9MXh3/OjF4aDtjZW50ZXIs/dG9wJnJlc2l6ZT05/ODA6Kg" alt="ELECTRIC LAWN MOWERS">
+            <div class="info">
+                <h3>ELECTRIC LAWN MOWERS-56 Volt 21 in.</h3>
+                <br>
+                <p>Rupee 12,000</p>
+                <br>
+                <button class="add-to-cart" data-product="ELECTRIC LAWN MOWERS" data-image="https://imgs.search.brave.com/g0fGmy5knehlgFMYdjcTu15Ta49Wk89nql-EkNI8AKE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL3ZhZGVyLXBy/b2QuczMuYW1hem9u/YXdzLmNvbS8xNjgy/OTcxNTM3LTE2ODEz/MzE1MTEtZWNoby1k/bG0yMTAwLXNwLTY0/NTAxYjdhMmQzYjgu/anBnP2Nyb3A9MXh3/OjF4aDtjZW50ZXIs/dG9wJnJlc2l6ZT05/ODA6Kg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/660692c512c5eb4895a92c96/garden-sprayer-pump-480x480.jpg" alt="PESTICIDE SPRAY BOTTLES">
+            <div class="info">
+                <h3>PESTICIDE SPRAY BOTTLES- 30 litre</h3>
+                <br>
+                <p>Rupee 2,000 (set of 3)</p>
+                <br>
+                <button class="add-to-cart" data-product="PESTICIDE SPRAY BOTTLES- 30 litre" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/660692c512c5eb4895a92c96/garden-sprayer-pump-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069a53b5380238a1888d6c/bharat-agrotech-mango-plucker-tools-480x480.jpg" alt="FRUIT PLUCKER">
+            <div class="info">
+                <h3>FRUIT PLUCKER</h3>
+                <br>
+                <p>Rupee 800</p>
+                <br>
+                <button class="add-to-cart" data-product="FRUIT PLUCKER" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069a53b5380238a1888d6c/bharat-agrotech-mango-plucker-tools-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/660682ff8cc79cd761d822ca/surf-322c-70-industrial-rubber-gloves-480x480.jpg" alt="RUBBER HAND GLOVES">
+            <div class="info">
+                <h3>RUBBER HAND GLOVES</h3>
+                <br>
+                <p>Rupee 400 (1 set of pair)</p>
+                <br>
+                <button class="add-to-cart" data-product="RUBBER HAND GLOVES" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/660682ff8cc79cd761d822ca/surf-322c-70-industrial-rubber-gloves-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/6638b754950fb25829b96ed8/1_-6-2-480x480.jpg" alt="TORCH LIGHT">
+            <div class="info">
+                <h3>BIG TORCH LIGHT (HAND TORCH)</h3>
+                <br>
+                <p>Rupee 1,500</p>
+                <br>
+                <button class="add-to-cart" data-product="BIG TORCH LIGHT" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/6638b754950fb25829b96ed8/1_-6-2-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/6606a09501405ca92cd58eae/wolf-garten-7-tool-set-480x480.jpg" alt="7 TOOL SET">
+            <div class="info">
+                <h3>WOLF GARDEN 7 TOOL SET </h3>
+                <br>
+                <p>Rupee 3,500</p>
+                <br>
+                <button class="add-to-cart" data-product="WOLF GARDEN 7 TOOL SET" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/6606a09501405ca92cd58eae/wolf-garten-7-tool-set-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/663895e6b0cbcb028f3a3d58/1_-4-1-480x480.jpg" alt="MANUAL AGRICULTURAL SEEDER">
+            <div class="info">
+                <h3>BALWAAN MANUAL AGRICULTURAL SEEDER</h3>
+                <p>Rupee 4,600</p>
+                <br>
+                <button class="add-to-cart" data-product="BALWAAN MANUAL AGRICULTURAL SEEDER" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/663895e6b0cbcb028f3a3d58/1_-4-1-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069b0a14ff5b39380e5691/bharat-agrotech-weeder-soil-crumbler-tools-480x480.jpg" alt="SOIL CRUMBLER TOOL">
+            <div class="info">
+                <h3>SOIL CRUMBLER TOOL</h3>
+                <br>
+                <p>Rupee 2,700</p>
+                <br>
+                <button class="add-to-cart" data-product="SOIL CRUMBLER TOOL" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069b0a14ff5b39380e5691/bharat-agrotech-weeder-soil-crumbler-tools-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/660691e66cb6729449f6db49/earthaugerbit-8-480x480.jpg" alt="EARTH AUGER BIT">
+            <div class="info">
+                <h3>EARTH AUGER BIT</h3>
+                <br>
+                <p>Rupee 1,500</p>
+                <br>
+                <button class="add-to-cart" data-product="EARTH AUGER BIT" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/660691e66cb6729449f6db49/earthaugerbit-8-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069be7cc2819fd0015f4cc/8-5-mmx100-mtr-neptune-pressure-hose-480x480.jpg" alt="NEPTUNE PRESSURE HOSE">
+            <div class="info">
+                <h3>NEPTUNE PRESSURE HOSE</h3>
+                <br>
+                <p>Rupee 4,900</p>
+                <br>
+                <button class="add-to-cart" data-product="NEPTUNE PRESSURE HOSE" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069be7cc2819fd0015f4cc/8-5-mmx100-mtr-neptune-pressure-hose-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069c061d3a4dfcf98aae73/ps-50-neptune-power-sprayers-480x480.jpg" alt="NEPTUNE POWER SPRAYERS">
+            <div class="info">
+                <h3>NEPTUNE POWER SPRAYERS</h3>
+                <br>
+                <p>Rupee 6,000</p>
+                <br>
+                <button class="add-to-cart" data-product="NEPTUNE POWER SPRAYERS" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069c061d3a4dfcf98aae73/ps-50-neptune-power-sprayers-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069c3b15f5fb2b71edbf79/cs-58-neptune-chainsaw-480x480.jpg" alt="NEPTUNE CHAINSAW MACHINE">
+            <div class="info">
+                <h3>NEPTUNE CHAINSAW MACHINE</h3>
+                <br>
+                <p>Rupee 15,000</p>
+                <br>
+                <button class="add-to-cart" data-product="NEPTUNE CHAINSAW MACHINE" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069c3b15f5fb2b71edbf79/cs-58-neptune-chainsaw-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/664ae03d089b67a6b2294ffb/namdhari-ns-surabhi-coriander-seeds-480x480.jpg" alt="CORIANDER SEEDS">
+            <div class="info">
+                <h3>CORIANDER SEEDS </h3>
+                <br>
+                <p>Rupee 400 per KG </p>
+                <br>
+                <button class="add-to-cart" data-product="CORIANDER SEEDS" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/664ae03d089b67a6b2294ffb/namdhari-ns-surabhi-coriander-seeds-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66056a53ba076ce1d82b1a1c/vnr-bottle-gourd-sarita-f1-hybrid-seed-sw-480x480.jpg" alt="BOTTLE GOURD SEEDS">
+            <div class="info">
+                <h3>BOTTLE GOURD SEEDS</h3>
+                <br>
+                <p>Rupee 200 per KG</p>
+                <br>
+                <button class="add-to-cart" data-product="BOTTLE GOURD SEEDS" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66056a53ba076ce1d82b1a1c/vnr-bottle-gourd-sarita-f1-hybrid-seed-sw-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66067447a4305d754cc37c8c/vnr-unnati-_60-13_-hybrid-chilli-seeds-10gm-sw-480x480.jpg" alt="CHILLI SEEDS">
+            <div class="info">
+                <h3>HYBRID CHILLI SEEDS (GREEN CHILLI)</h3>
+                <br>
+                <p>Rupee 550 KG</p>
+                <br>
+                <button class="add-to-cart" data-product="HYBRID CHILLI SEEDS" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66067447a4305d754cc37c8c/vnr-unnati-_60-13_-hybrid-chilli-seeds-10gm-sw-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/663828d3950fb25829b3b7e3/rosy-hybrid-brinjal-seeds-480x480.png" alt="BRINJAL SEEDS">
+            <div class="info">
+                <h3>HYBRID BRINJAL SEEDS</h3>
+                <br>
+                <p>Rupee 400 per KG</p>
+                <br>
+                <button class="add-to-cart" data-product="HYBRID BRINJAL SEEDS" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/663828d3950fb25829b3b7e3/rosy-hybrid-brinjal-seeds-480x480.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/6655626e6841b2b3e9ba3440/1-s-h-e-t-soil-helth-enhancement-technology-1-netsurf-biofit-original-imagkhg5urgwzmdk-480x480.webp" alt=" SOIL ENHANCEMENT">
+            <div class="info">
+                <h3>BIOFIT SOIL ENHANCEMENT </h3>
+                <br>
+                <p>Rupee 500</p>
+                <br>
+                <button class="add-to-cart" data-product="BIOFIT SOIL ENHANCEMENT" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/6655626e6841b2b3e9ba3440/1-s-h-e-t-soil-helth-enhancement-technology-1-netsurf-biofit-original-imagkhg5urgwzmdk-480x480.webp">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66555b0a9625686061186d21/biofit-culture-banner-mobile-480x480.jpg" alt="BIOFIT CULTURE BANNER">
+            <div class="info">
+                <h3>BIOFIT CULTURE BANNER</h3>
+                <br>
+                <p>Rupee 300</p>
+                <br>
+                <button class="add-to-cart" data-product="BIOFIT CULTURE BANNER" data-image="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66555b0a9625686061186d21/biofit-culture-banner-mobile-480x480.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://imgs.search.brave.com/HPIjGhCrGP9FbsXik7v0lSBNloj73bd1urjI5znyAxg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/d3lubnN0YXkuY28u/dWsvbWVkaWEvY2F0/YWxvZy9wcm9kdWN0/L2NhY2hlL2E1ODli/MDBhOTIyYWNlYzcx/MzhiNWU5NmI4ODk3/OTgwLzYvMS82MTUz/Nl9zbHVycnlidWdz/LW5ldy13ZWItMjAy/MS5qcGc" alt="SLURRY BUGS">
+            <div class="info">
+                <h3>SLURRY BUGS</h3>
+                <br>
+                <p>Rupee 399</p>
+                <br>
+                <button class="add-to-cart" data-product="SLURRY BUGS" data-image="https://imgs.search.brave.com/HPIjGhCrGP9FbsXik7v0lSBNloj73bd1urjI5znyAxg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/d3lubnN0YXkuY28u/dWsvbWVkaWEvY2F0/YWxvZy9wcm9kdWN0/L2NhY2hlL2E1ODli/MDBhOTIyYWNlYzcx/MzhiNWU5NmI4ODk3/OTgwLzYvMS82MTUz/Nl9zbHVycnlidWdz/LW5ldy13ZWItMjAy/MS5qcGc">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://imgs.search.brave.com/drHH_fhUJmuxO3TIdIn_HSlkViQJxzCCyoL4KEHszZQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Ym9idmlsYS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MDYvYmVzdF9sYXdu/X2ZlcnRpbGl6ZXJf/Zm9yX3NwcmluZ19v/cHRpb24uanBnP3c9/Njc1" alt="FERTILISERS">
+            <div class="info">
+                <h3>FERTILISERS NATURAL LAWN FOOD</h3>
+                <br>
+                <p>Rupee 1,300</p>
+                <br>
+                <button class="add-to-cart" data-product="FERTILISERS NATURAL LAWN FOOD" data-image="https://imgs.search.brave.com/drHH_fhUJmuxO3TIdIn_HSlkViQJxzCCyoL4KEHszZQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Ym9idmlsYS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MDYvYmVzdF9sYXdu/X2ZlcnRpbGl6ZXJf/Zm9yX3NwcmluZ19v/cHRpb24uanBnP3c9/Njc1">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mini-cart" id="mini-cart">
+        <h1><center>CART</center></h1>
+        <ul id="cart-items"></ul>
+        <br>
+        <center><button id="checkout">Checkout</button></center>
+    </div>
+    <br><br><br><br>
+    <br><br>
+    
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-title">
+          <h2>AgriLearnNetwork</h2>
+        </div>
+        <div class="footer-icons">
+          <p><b>Follow us on our socials:</b></p>
+          <div class="socialIcons">
+            <a
+              href="mailto:AgriLearnNetwork@gmail.com"
+              class="email-link"
+              data-tooltip="AgriLearnNetwork@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/your_username_here"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/your_username_here" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/your_page_or_profile_here"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="quick-links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li>
+            <a href="#home"><p>Home</p></a>
+          </li>
+          <li>
+            <a href="#about"><p>About Us</p></a>
+          </li>
+          <li>
+            <a href="blogpage.html"><p>Blogs</p></a>
+          </li>
+          <li>
+            <a href="faqpage.html"><p>FAQ</p></a>
+          </li>
+          <li>
+            <a href="#Resource Library"><p>Resource Library</p></a>
+          </li>
+          <li>
+            <a href="#contact"><p>Contact Us</p></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-text footer-right">
+        <p style="font-weight: 600; font-size: 15px">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          by AgriLearnNetwork | All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <div  id="backtoTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"  id="go-to-top" title="Go to top"></i></a>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/1cfb7415-d4fc-4477-8d00-3717d30c975b/webchat/config.js" defer></script> -->
+
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+
+    <script>
+
+      window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var backToTopButton = document.getElementById('backtoTop');
+
+  if (scrollPosition > 300) { // Adjust this value as needed to show the button at the desired scroll position
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+    </script>
+    <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat.load({
+            verify: { projectID: "664632efd181ce0921d32ed5" },
+            url: "https://general-runtime.voiceflow.com",
+            versionID: "production",
+          });
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
+    </script>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header= document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY >10)
+      })
+    </script>
+    <script src="buy_products.js"></script>
+</body>
+</html>
