@@ -36,6 +36,28 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: none;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #064b10;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  color: none;
+  background-color: none;
+  display: none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(192, 223, 100);
+}
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
@@ -70,7 +92,7 @@ section {
 .navbar a {
   font-size: 1.5rem;
   color: var(--txt-color);
-  margin-left: 4rem;
+  margin-right: 5rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -671,6 +693,50 @@ section {
   }
   .navbar a.active {
     color: var(--txt-color);
+    font-size: 2.5vmax;
+  }
+  .slide_viewer {
+    display: none;
+  }
+  .footer-left {
+    margin-top: 0.8rem;
+  }
+}
+@media (max-width: 1216px) {
+  .logo {
+    font-size: 2.6vmax;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 5vmax;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 1%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+    height: 420px;
+  }
+
+  .navbar :active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2.8vmax;
+    margin: 3rem 0;
+    margin-left: 8vmax;
+  }
+  .navbar a i {
+    margin-right: 2vmax;
+  }
+  .navbar a.active {
+    color: var(--main-color);
     font-size: 2.5vmax;
   }
   .slide_viewer {

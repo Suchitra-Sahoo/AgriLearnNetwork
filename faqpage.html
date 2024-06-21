@@ -17,6 +17,26 @@
     ></script>
   </head>
 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <link rel="stylesheet" href="./cursor/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="faqpagestyle.css" />
+    <link rel="icon" href="favicon_new.png" type="image/x-icon" />
+
+    <script
+      src="https://kit.fontawesome.com/b08b6de27e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
   <body>
     <header class="header">
       <img
@@ -374,23 +394,6 @@
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 10);
-      });
-    </script>
-
-    <script>
-      document.querySelectorAll(".accordion button").forEach((button) => {
-        button.addEventListener("click", () => {
-          const expanded = button.getAttribute("aria-expanded") === "true";
-          button.setAttribute("aria-expanded", !expanded);
-
-          // Toggle content display
-          const content = button.nextElementSibling;
-          if (!expanded) {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } else {
-            content.style.maxHeight = 0;
-          }
-        });
       });
     </script>
   </body>
