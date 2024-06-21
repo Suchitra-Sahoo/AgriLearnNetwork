@@ -396,5 +396,22 @@
         header.classList.toggle("sticky", window.scrollY > 10);
       });
     </script>
+
+    <script>
+      document.querySelectorAll(".accordion button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const expanded = button.getAttribute("aria-expanded") === "true";
+          button.setAttribute("aria-expanded", !expanded);
+
+          // Toggle content display
+          const content = button.nextElementSibling;
+          if (!expanded) {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            content.style.maxHeight = 0;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
