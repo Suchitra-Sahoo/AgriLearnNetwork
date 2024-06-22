@@ -178,7 +178,6 @@ section {
 }
 
 .faq_container {
-  max-width: 1500px;
   margin: 0 auto;
     background-image: url('./faq/image.jpeg'); 
     background-repeat: no-repeat; 
