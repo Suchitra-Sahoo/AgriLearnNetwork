@@ -132,7 +132,7 @@ section {
   font-size: 1.5rem;
   /* left: 118px; */
   color: var(--txt-color);
-  margin-right: 3.1rem;
+  margin-right: 4rem;
   transition: 0.3s;
 }
 .navbar a:hover {
