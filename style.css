@@ -119,7 +119,6 @@ section {
  nav{
   margin-right: 30px;
   display: flex;
-  
 }
  .logo
  {
@@ -1303,7 +1302,7 @@ input[type="number"]::-webkit-inner-spin-button {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
-    height: 420px;
+    height: 470px;
   }
 
   .navbar :active {

@@ -44,7 +44,8 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
+  background-image: url('https://c1.wallpaperflare.com/preview/456/986/357/pumpkin-vegetable-garden-plant-blurred-background.jpg');
+  background-size:contain;
   color: var(--txt-color);
 }
 body::-webkit-scrollbar {
@@ -106,6 +107,7 @@ section {
   margin-right: 30px;
   display: flex;
 }
+
  .logo
  {
     font-size: 2.5rem;
@@ -157,6 +159,18 @@ section {
   margin-right: 5px; /* Adjust margin as needed */
 }
 
+#menu-icon
+{
+   font-size: 3.6rem;
+   color:var(--txt-color);
+   display:none;
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--txt-color);
+  display: none;
+}
 
 /* Theme Toggle Button */
 .theme-toggle {
@@ -230,7 +244,13 @@ body.dark-theme input, body.dark-theme textarea {
 body.dark-theme .mini-cart{
   background-color: black;
 }
-
+body.dark-theme .product:hover{
+  background-color: #000000;
+}
+body.dark-theme .add-to-cart{
+  background-color: white;
+  color:#000000;
+}
 @keyframes floatImage {
   0% {
     transform: translateY(0);
@@ -383,16 +403,17 @@ body.dark-theme .mini-cart{
 
 
 @media (max-width: 1216px) {
-  .about-content {
-    flex-direction: column; 
-  }
+  
   .logo {
     font-size: 2.6vmax;
   }
   .theme-toggle {
     margin-top: 10rem; /* Ensure theme toggle is below the menu icon */
   }
- 
+  #menu-icon {
+    display: block;
+    font-size: 5vmax;
+  }
   .navbar {
     position: absolute;
     top: 100%;
@@ -402,13 +423,12 @@ body.dark-theme .mini-cart{
     background: var(--bg-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    display: none;
-    height: 420px;
-  }
-
-  .navbar :active {
+    height: 500px;
     display: block;
-    
+  }
+  .navbar.active {
+    display: block;
+    display: none;
   }
   .navbar a {
     display: block;
@@ -423,13 +443,6 @@ body.dark-theme .mini-cart{
     color: var(--txt-color);
     font-size: 2.5vmax;
   }
-.home{  
-  height: 20vmax;
-  overflow: hidden;
-  background: url(./images/home2.jpg) center;
-  position: relative;
-  padding: 0;
-}  
  .slide_viewer {
   display: none; 
  } 
@@ -438,29 +451,7 @@ body.dark-theme .mini-cart{
   }
 }
 @media (max-width: 365px) {
-  .home-img {
-    width: 90vw;
-  }
-  .about-img {
-    width: 90vw;
-  }
-  .home-content{ 
-    /* position: fixed;  */
-    /* margin-left: -190px;
-    margin-top: 0px;   */
-    /* filter: blur(0.5px);  */
-    color:rgb(255, 247, 232); 
-  }
-  .home-content h1
-   {
-     font-size: 2.5rem; 
-   }
-   .home-content h3
-   {
-     font-size: 1.8rem;
-     font-weight: 700;
-   }
-
+  
   .footer
   { 
 
@@ -883,7 +874,7 @@ font-size: 36px;
     width: 420px;
     height:330px;
     text-align: center;
-    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth uplift transition */
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth uplift transition */  
 }
 .product:hover {
     transform: translateY(-10px); /* Uplift effect on hover */
@@ -920,7 +911,7 @@ font-size: 36px;
     bottom: 200px;
     right: 10px;
     border: 1px solid #ddd;
-    background-color: #036733;
+    background-color: #46785f;
     padding: 12px;
     border-radius: 4px;
     width: 300px;

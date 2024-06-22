@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  //adding to cart
   document.addEventListener('DOMContentLoaded', () => {
     const cartItems = [];
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
@@ -120,4 +122,116 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     });
+});
+
+//navbar for small screen
+let menuIcon = document.querySelectorAll('#menu-icon');
+let navbar = document.querySelectorAll('.navbar');
+let Contact = document.querySelectorAll('#contact');
+let navContact = document.querySelectorAll('#nav--contact');
+
+const password = document.getElementById('password');
+
+menuIcon.forEach(icon => {
+  icon.onclick = () => {
+    icon.classList.toggle('bx-x');
+    navbar.forEach(nav => nav.classList.toggle('active'));
+  }
+});
+
+// Add an event listener to navbar links
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', () => {
+    // Remove 'active' class from navbar
+    document.querySelectorAll('.navbar').forEach(nav => {
+      nav.classList.remove('active');
+    });
+    // Toggle the menu icon
+    document.querySelectorAll('#menu-icon').forEach(icon => {
+      icon.classList.remove('bx-x'); // Remove the 'bx-x' class to close the hamburger menu
+    });
+  });
+});
+
+// Add an "active" class to the clicked link
+$('a[href*="#"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // Remove any existing "active" class from links
+    $('a').removeClass('active');
+
+    // Add "active" class to clicked link
+    $(this).addClass('active');
+    
+    // Smooth scroll to target as before
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 900, function() {
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { 
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); 
+            $target.focus(); 
+          };
+        });
+      }
+    }
+  });
+
+// When scroll on any section that section's corresponding hyperlink will be active and
+// the previous activated hyperlink will be deactivated
+$('section[id]').mouseover(function() {
+  var sectionId = $(this).attr('id');
+  var correspondingLink = $('a[href="#' + sectionId + '"]');
+  // Remove active class from all links
+  $('a').removeClass('active');
+  // Add active class to the corresponding link
+  correspondingLink.addClass('active');
+});
+  
+// Set initial active link based on URL hash
+$(document).ready(function() {
+  var hash = window.location.hash;
+  if (hash) {
+    $('a[href="' + hash + '"]').addClass('active');
+  }
+  // Change this line from selecting all headers to selecting one header
+  let header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 100);
+});
+
+
+ScrollReveal({
+    reset:true,
+    distance:'80px',
+    duration:2000,
+    delay:200
+});
+
+ScrollReveal().reveal('.home-content, .heading',{ origin:'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form',{ origin:'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img',{ origin:'left' });
+ScrollReveal().reveal('.home-content p, .about-content',{ origin:'left' });
+
+
+const typed=new Typed('.multiple-text',{
+    strings:['Sow','Learn','Grow' ],
+    typeSpeed:100,
+    backSpeed:100,
+    backDelay:1000,
+    loop:true
+
 });
