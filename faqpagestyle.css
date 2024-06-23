@@ -90,7 +90,7 @@ section {
 .navbar a {
   font-size: 1.5rem;
   color: var(--txt-color);
-  margin-right: 5rem;
+  margin-right: 3.4rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -307,7 +307,6 @@ section {
 }
 
 .faq_container {
-  max-width: 1500px;
   margin: 0 auto;
     background-image: url('./faq/image.jpeg'); 
     background-repeat: no-repeat; 
@@ -513,7 +512,12 @@ section {
     justify-content: center;
     align-items: center;
   }
-} */
+  .faq_box{
+    display: block;
+  }
+}
+
+
 
 /* footer */
 
@@ -653,49 +657,6 @@ section {
   }
 }
 
-@media (max-width: 1216px) {
-  .logo {
-    font-size: 2.6vmax;
-  }
-  #menu-icon {
-    display: block;
-    font-size: 5vmax;
-  }
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 0.5rem 1%;
-    background: var(--bg-color);
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    display: none;
-  }
-
-  .navbar :active {
-    display: block;
-  }
-  .navbar a {
-    display: block;
-    font-size: 2.8vmax;
-    margin: 3rem 0;
-    margin-left: 8vmax;
-  }
-  .navbar a i {
-    margin-right: 2vmax;
-  }
-  .navbar a.active {
-    color: var(--txt-color);
-    font-size: 2.5vmax;
-  }
-  .slide_viewer {
-    display: none;
-  }
-  .footer-left {
-    margin-top: 0.8rem;
-  }
-}
 @media (max-width: 1216px) {
   .logo {
     font-size: 2.6vmax;

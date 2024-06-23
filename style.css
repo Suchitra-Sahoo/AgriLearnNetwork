@@ -119,7 +119,6 @@ section {
  nav{
   margin-right: 30px;
   display: flex;
-  
 }
  .logo
  {
@@ -133,7 +132,7 @@ section {
   font-size: 1.5rem;
   /* left: 118px; */
   color: var(--txt-color);
-  margin-right: 4rem;
+  margin-right: 3.1rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -1303,7 +1302,7 @@ input[type="number"]::-webkit-inner-spin-button {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
-    height: 420px;
+    height: 470px;
   }
 
   .navbar :active {
@@ -1701,7 +1700,7 @@ font-size: 36px;
   text-decoration: none;
   color: #fff;
   transition: color 0.3s ease;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .quick-links a:hover {
