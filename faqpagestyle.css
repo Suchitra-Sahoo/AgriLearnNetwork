@@ -393,6 +393,9 @@ section {
     justify-content: center;
     align-items: center;
   }
+  .faq_box{
+    display: block;
+  }
 }
 
 
@@ -535,6 +538,9 @@ font-size: 36px;
     .footer {
       padding: 2rem 3%;
     }
+    .faq_box{
+      display: block;
+    }
   }
 
   @media (max-width: 1216px) {
@@ -588,6 +594,9 @@ font-size: 36px;
     }
   .slide_viewer {
       display: block; /* Ensure the slide viewer is visible on smaller screens */
+    }
+    .faq_box{
+      display: block;
     }
   }
 
