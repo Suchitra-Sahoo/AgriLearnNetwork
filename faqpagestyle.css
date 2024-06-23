@@ -162,6 +162,15 @@ section {
     transform: translateY(-10px);
   }
 }
+
+.faq_heading {
+  color: black;
+  text-decoration: solid;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 105px;
+  text-align: center;
+}
 .image {
   flex: 1 1 40%;
   display: flex;
@@ -181,7 +190,10 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+.faqqq {
   display: flex;
   align-items: center;
   justify-content: center;
