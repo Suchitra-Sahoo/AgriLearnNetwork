@@ -729,3 +729,51 @@ nav {
     background-color: #555; /* Darker background on hover */
     color: #ff7d1f; /* Change text color on hover */
 }
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust width as needed */
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  #search-icon:hover {
+    transform: scale(1.1); /* Scale up the icon slightly on hover */
+  }
+  
+  .search-bar:focus {
+    border-color: #218838; /* Highlight border color on focus */
+    box-shadow: 0 0 8px rgba(33, 136, 56, 0.4); /* Add a subtle shadow */
+  }
+  #search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease; /* Added color transition */
+  }
+  
+  /* Rotate and change color on hover */
+  #search-icon:hover {
+    transform: rotate(90deg); /* Rotate the icon 90 degrees */
+    color: #218838; /* Change icon color on hover */
+  }
+  
