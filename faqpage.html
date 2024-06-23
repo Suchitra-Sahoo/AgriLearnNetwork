@@ -90,6 +90,7 @@
               <span>What is AgriLearnNetwork?</span>
               <span class="icon">+</span>
             </button>
+            <div class="line"></div>
             <div class="accordion-content">
               <p>
                 AgriLearnNetwork is a comprehensive platform dedicated to
@@ -105,6 +106,7 @@
               <span>Who can benefit from AgriLearnNetwork?</span>
               <span class="icon">+</span>
             </button>
+            <div class="line"></div>
             <div class="accordion-content">
               <p>
                 AgriLearnNetwork is designed for farmers of all scales,
@@ -119,6 +121,8 @@
               <span>What features does AgriLearnNetwork offer?</span>
               <span class="icon">+</span>
             </button>
+            <div class="line"></div>
+
             <div class="accordion-content">
               <p>
                 AgriLearnNetwork offers a wide range of features, including:
@@ -134,6 +138,8 @@
               <span>What types of farming does AgriLearnNetwork support?</span>
               <span class="icon">+</span>
             </button>
+            <div class="line"></div>
+
             <div class="accordion-content">
               <p>
                 AgriLearnNetwork supports a wide range of farming practices,
@@ -148,6 +154,8 @@
               <span>Is AgriLearnNetwork free to use?</span>
               <span class="icon">+</span>
             </button>
+            <div class="line"></div>
+
             <div class="accordion-content">
               <p>
                 Yes, AgriLearnNetwork offers free access to most of our
@@ -164,6 +172,8 @@
               >
               <span class="icon">+</span>
             </button>
+            <div class="line"></div>
+
             <div class="accordion-content">
               <p>
                 Yes, AgriLearnNetwork offers personalized advice from
@@ -180,6 +190,8 @@
               >
               <span class="icon">+</span>
             </button>
+            <div class="line"></div>
+
             <div class="accordion-content">
               <p>
                 To stay updated with the latest agricultural trends and news,
@@ -197,6 +209,8 @@
               >
               <span class="icon">+</span>
             </button>
+            <div class="line"></div>
+
             <div class="accordion-content">
               <p>
                 Yes, AgriLearnNetwork offers a variety of training programs and
@@ -214,6 +228,7 @@
               >
               <span class="icon">+</span>
             </button>
+            <div class="line"></div>
             <div class="accordion-content">
               <p>
                 To participate in community forums, you need to log in to your
@@ -398,18 +413,20 @@
     </script>
 
     <script>
-      document.querySelectorAll(".accordion button").forEach((button) => {
-        button.addEventListener("click", () => {
-          const expanded = button.getAttribute("aria-expanded") === "true";
-          button.setAttribute("aria-expanded", !expanded);
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".accordion button").forEach((button) => {
+          button.addEventListener("click", () => {
+            const expanded = button.getAttribute("aria-expanded") === "true";
+            button.setAttribute("aria-expanded", !expanded);
 
-          // Toggle content display
-          const content = button.nextElementSibling;
-          if (!expanded) {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } else {
-            content.style.maxHeight = 0;
-          }
+            // Toggle content display
+            const content = button.nextElementSibling.nextElementSibling;
+            if (!expanded) {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } else {
+              content.style.maxHeight = 0;
+            }
+          });
         });
       });
     </script>

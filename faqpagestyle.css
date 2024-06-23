@@ -27,8 +27,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
-  color: var(--txt-color);
 }
 body::-webkit-scrollbar {
   display: none;
@@ -190,18 +188,14 @@ section {
 }
 
 .container {
-  margin: 130px auto;
+  margin: 120px auto;
   width: 100%;
-  background: radial-gradient(
-    circle at -1% 57.5%,
-    rgb(100, 170, 82) 0%,
-    rgb(10, 102, 43) 90%
-  );
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   max-width: 70rem;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .accordion {
@@ -242,16 +236,16 @@ section {
 
 .accordion button:hover,
 .accordion button:focus {
-  color: rgb(154, 171, 155);
+  color: rgb(0, 0, 0);
   background-image: linear-gradient(
     to right,
-    #000000a9 0%,
-    #27613ecd 80%,
-    #084a26cd 100%
+    #24864aa9 0%,
+    #396349cd 80%,
+    #6e9a81cd 100%
   );
   border-radius: 12px;
   cursor: pointer;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .accordion button .icon {
@@ -277,20 +271,20 @@ section {
 }
 
 .accordion .accordion-content {
-  opacity: 0;
   max-height: 0;
   overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
   padding: 0 1.5rem;
-  border-bottom: 2px solid black;
+  border-bottom: 1.5px solid black;
+  margin-top: 5px;
 }
 
 .accordion .accordion-content p {
   font-size: 12px;
   line-height: 1.5;
   color: rgb(0, 0, 0);
-  margin: 20px 0;
+  margin: 20px;
 }
 
 /* .section-heading{
