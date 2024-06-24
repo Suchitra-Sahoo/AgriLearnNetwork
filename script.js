@@ -26,6 +26,43 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
+//smooth background sliding images transition 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const slideGroup = document.querySelector('.slide_group');
+  const slides = document.querySelectorAll('.slide');
+  const slideWidth = 100 / slides.length; // Calculate width percentage for each slide
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+  const transitionDuration = 800; // Duration in milliseconds
+
+  function goToSlide(index) {
+    slideGroup.style.transition = `transform ${transitionDuration}ms ease-in-out`;
+    slideGroup.style.transform = `translateX(-${index * slideWidth}%)`;
+    currentIndex = index;
+  }
+
+  function nextSlide() {
+    if (currentIndex < totalSlides - 2) { // Penultimate slide
+      goToSlide(currentIndex + 1);
+    } else if (currentIndex === totalSlides - 2) { // Before last slide (duplicate of the first)
+      goToSlide(currentIndex + 1);
+      slideGroup.addEventListener('transitionend', resetPosition, { once: true });
+    }
+  }
+
+  function resetPosition() {
+    slideGroup.style.transition = 'none';
+    slideGroup.style.transform = 'translateX(0)'; // Reset to the first slide
+    currentIndex = 0; // Reset index to the first slide
+    // Force reflow to make the change immediate
+    slideGroup.offsetHeight; // Reading offsetHeight reflows the DOM
+    slideGroup.style.transition = `transform ${transitionDuration}ms ease-in-out`;
+  }
+
+  setInterval(nextSlide, 3000); // Change slide every 3 seconds
+});
+
 // Add an "active" class to the clicked link
 $('a[href*="#"]')
   .not('[href="#"]')

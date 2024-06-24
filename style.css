@@ -310,23 +310,23 @@ body.dark-theme .contact textarea {
 }
 
 .slide_viewer {
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
 
 .slide_group { 
+  display: flex;
   height: 100%;
-  position: relative;
   width: 500%; /* Updated width to accommodate all slides */
-  transition: left 0.5s ease; /* Transition effect for smooth slide changes */
+  transition: transform 1s ease-in-out; /* Smooth sliding transition */
 }
-
 .slide {
-  display: inline-block; /* Display slides in a row */
-  height: 100%;
-  width: 20%; /* Each slide occupies 20% width */
+  width: 20%; /* Each slide takes up 20% of the width */
+  flex-shrink: 0;
   background-size: cover;
+  background-position: center;
 }
 
 .home-content{
