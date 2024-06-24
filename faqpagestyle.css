@@ -805,3 +805,118 @@ font-size: 36px;
     box-shadow: 0 0 1rem var(--main-color);
   }
   
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 26px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.theme-toggle i {
+  font-size: 20px;
+  color: rgb(3, 3, 38);
+}
+
+.theme-toggle .fa-moon {
+  display: none;
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode .header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .theme-toggle {
+  background-color: #ffffff;
+}
+
+body.dark-mode .theme-toggle .fa-sun {
+  display: none;
+}
+
+body.dark-mode .theme-toggle .fa-moon {
+  display: inline;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-theme .header,
+body.dark-theme .footer,
+body.dark-theme .navbar {
+  background-color: black;
+}
+
+body.dark-theme .theme-toggle {
+  background-color: rgb(3, 3, 38);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .theme-toggle .fa-sun {
+  display: none;
+}
+
+body.dark-theme .theme-toggle .fa-moon {
+  display: inline;
+  color: #f1c40f;
+}
+
+body.dark-theme .navbar a {
+  color: #f1c40f !important; /* Ensure the color is applied */
+}
+
+
+
+@media screen and (max-width: 1216px) {
+  .theme-toggle {
+    margin-top: 10rem; /* Ensure theme toggle is below the menu icon */
+  }
+}
+
+body.dark-theme .faq .accordion-container {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+body.dark-theme .faq .accordion {
+  border: 1px solid #444;
+}
+
+body.dark-theme .faq .accordion-header {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-theme .faq .accordion-header:hover {
+  background-color: #444;
+}
+
+body.dark-theme .faq .accordion-header h3 {
+  color: white;
+}
+
+body.dark-theme .logo {
+  color: #B19222;
+}
+
+body.dark-theme .faq .accordion-body {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+

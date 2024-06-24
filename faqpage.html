@@ -25,6 +25,11 @@
       <h3>AgriLearnNetwork</h3>
     </a>
 
+    <div class="theme-toggle">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </div>
+
     <i class="bx bx-menu" id="menu-icon"></i>
     <nav class="navbar">
       <a href="index.html#home"><i class="fa-solid fa-house"></i> Home</a>
@@ -53,7 +58,7 @@
           <!-- Question-1 -->
           <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="./faq/Expand-more.svg" alt="Expand"></span>
+              <span><img src="./faq/Expand-more.svg" alt="Expand" data-light-icon="./faq/Expand-more.svg" data-dark-icon="./faq/Expand-more-dark.svg"></span>
               <h3>What is AgriLearnNetwork?</h3>
             </div>
             <div class="accordion-body">
@@ -66,7 +71,7 @@
           <!-- Question-2 -->
           <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="./faq/Expand-more.svg" alt="Expand"></span>
+              <span><img src="./faq/Expand-more.svg" alt="Expand" data-light-icon="./faq/Expand-more.svg" data-dark-icon="./faq/Expand-more-dark.svg"></span>
               <h3>Who can benefit from AgriLearnNetwork?</h3>
             </div>
             <div class="accordion-body">
@@ -79,7 +84,7 @@
           <!--Question-3-->
           <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="./faq/Expand-more.svg" alt="Expand"></span>
+              <span><img src="./faq/Expand-more.svg" alt="Expand" data-light-icon="./faq/Expand-more.svg" data-dark-icon="./faq/Expand-more-dark.svg"></span>
               <h3>What features does AgriLearnNetwork offer?</h3>
             </div>
             <div class="accordion-body">
@@ -97,7 +102,7 @@
           <!--Question-6-->
           <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="./faq/Expand-more.svg" alt="Expand"></span>
+              <span><img src="./faq/Expand-more.svg" alt="Expand" data-light-icon="./faq/Expand-more.svg" data-dark-icon="./faq/Expand-more-dark.svg"></span>
               <h3>What types of farming does AgriLearnNetwork support?</h3>
             </div>
             <div class="accordion-body">
@@ -109,7 +114,7 @@
           <!--Question-7-->
           <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="./faq/Expand-more.svg" alt="Expand"></span>
+              <span><img src="./faq/Expand-more.svg" alt="Expand" data-light-icon="./faq/Expand-more.svg" data-dark-icon="./faq/Expand-more-dark.svg"></span>
               <h3>Is AgriLearnNetwork free to use?</h3>
             </div>
             <div class="accordion-body">
@@ -120,7 +125,7 @@
           <!--Question-8-->
           <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="./faq/Expand-more.svg" alt="Expand"></span>
+              <span><img src="./faq/Expand-more.svg" alt="Expand" data-light-icon="./faq/Expand-more.svg" data-dark-icon="./faq/Expand-more-dark.svg"></span>
               <h3>Can I get personalized advice from experts on Agrilearn Network?</h3>
             </div>
             <div class="accordion-body">
@@ -131,7 +136,7 @@
           <!--Question-9-->
           <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="./faq/Expand-more.svg" alt="Expand"></span>
+              <span><img src="./faq/Expand-more.svg" alt="Expand" data-light-icon="./faq/Expand-more.svg" data-dark-icon="./faq/Expand-more-dark.svg"></span>
               <h3>How can I stay updated with the latest agricultural trends and news?</h3>
             </div>
             <div class="accordion-body">
@@ -143,7 +148,7 @@
           <!--Question-10-->
           <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="./faq/Expand-more.svg" alt="Expand"></span>
+              <span><img src="./faq/Expand-more.svg" alt="Expand" data-light-icon="./faq/Expand-more.svg" data-dark-icon="./faq/Expand-more-dark.svg"></span>
               <h3>Does AgriLearnNetwork offer any training programs or courses?</h3>
             </div>
             <div class="accordion-body">
@@ -154,7 +159,7 @@
           <!--Question-11-->
           <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="./faq/Expand-more.svg" alt="Expand"></span>
+              <span><img src="./faq/Expand-more.svg" alt="Expand" data-light-icon="./faq/Expand-more.svg" data-dark-icon="./faq/Expand-more-dark.svg"></span>
               <h3>How do I participate in community forums on AgriLearnNetwork?</h3>
             </div>
             <div class="accordion-body">
@@ -242,6 +247,68 @@
 
   <script src="script.js"></script>
 
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const themeToggle = document.querySelector('.theme-toggle');
+  const body = document.body;
+  const accordions = document.querySelectorAll('.accordion-header img');
+  
+  // Check for saved user preference, if any, on load of the website
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme) {
+    body.classList.add(currentTheme);
+
+    if (currentTheme === 'dark-theme') {
+      themeToggle.querySelector('.fa-sun').style.display = 'none';
+      themeToggle.querySelector('.fa-moon').style.display = 'inline';
+      toggleIcons(true);
+    }
+  }
+
+  themeToggle.addEventListener('click', function () {
+    const isDarkMode = body.classList.toggle('dark-theme');
+
+    if (isDarkMode) {
+      themeToggle.querySelector('.fa-sun').style.display = 'none';
+      themeToggle.querySelector('.fa-moon').style.display = 'inline';
+      localStorage.setItem('theme', 'dark-theme');
+    } else {
+      themeToggle.querySelector('.fa-sun').style.display = 'inline';
+      themeToggle.querySelector('.fa-moon').style.display = 'none';
+      localStorage.setItem('theme', 'light-theme');
+    }
+
+    toggleIcons(isDarkMode);
+  });
+
+  function toggleAccordion(header) {
+    const accordionBody = header.nextElementSibling;
+    const icon = header.querySelector('img');
+    const isOpen = accordionBody.style.display === "block";
+
+    accordionBody.style.display = isOpen ? "none" : "block";
+
+    if (isOpen) {
+      icon.src = icon.getAttribute('data-light-icon');
+    } else {
+      icon.src = icon.getAttribute('data-dark-icon');
+    }
+  }
+
+  function toggleIcons(isDarkMode) {
+    accordions.forEach(icon => {
+      icon.src = isDarkMode ? icon.getAttribute('data-dark-icon') : icon.getAttribute('data-light-icon');
+    });
+  }
+
+  // Initialize the icons based on the current theme
+  toggleIcons(body.classList.contains('dark-theme'));
+});
+
+  </script>
+  
+  
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -337,6 +404,9 @@
       cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
     });
   </script>
+
+
+  
 </body>
 
 </html>
