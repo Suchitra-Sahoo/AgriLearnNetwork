@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header class="header">
+        <img src="favicon_new.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px" />
+        <a href="#" class="logo" style="margin-inline-end: auto">
+          <h3>AgriLearnNetwork</h3>
+        </a>
+    
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+          <a href="index.html#home"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a>
+          <a href="blogpage.html" target="_self"><i class="fa-solid fa-blog"></i> Blogs</a>
+          <a href="index.html#Resource Library"><i class="fa-solid fa-book"></i> Resource Library</a>
+          <a href="faqpage.html"><i class="fas fa-question-circle"></i>FAQs</a>
+          <a href="index.html#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
+          <a href="buy_products.html"><i class="fa fa-shopping-cart"></i>Buy Products</a>
+          <a href="login.html">
+            <button id="log-in-btn" class="login-btn">Login</button>
+          </a>
+
+          <link rel="icon" href="favicon_new.png" type="image/x-icon" />
+ 
+          <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+
+          <link rel="stylesheet" href="./cursor/style.css">
+          <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    
+        </nav>
+      </header>
+
+    <div class="container">
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <div class="cart-item">
+                <div class="item-details">
+                    <img src="https://imgs.search.brave.com/C0kR0ZD3syOLiv-dt8S_Rk6dyKcmB8zVgEXP2uoXa1k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVlcmUuY29tL2Fz/c2V0cy9pbWFnZXMv/aGF5LWZvcmFnZS9i/YWxpbmcvcm91bmQt/YmFsZXIvNTYxLUJh/bGVyLWhheS1mb3Jh/Z2UtYmFsaW5nLXBh/Z2UtMTAyNHg1NzYu/anBn" alt="Henley T-Shirt">
+                    <div class="item-info">
+                        <p>BALER-Hay & Forage Equipment</p>
+                        <p>Quantity: <input type="number" value="2"></p>
+                    </div>
+                </div>
+                <p class="price">₹9000</p>
+            </div>
+            <div class="cart-item">
+                <div class="item-details">
+                    <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/6638b754950fb25829b96ed8/1_-6-2-480x480.jpg" alt="High Top Sneakers">
+                    <div class="item-info">
+                        <p>BIG TORCH LIGHT (HAND TORCH)</p>
+                        <p>Quantity: <input type="number" value="1"></p>
+                    </div>
+                </div>
+                <p class="price">₹1,500</p>
+            </div>
+            <div class="cart-item">
+                <div class="item-details">
+                    <img src="https://www.kisanshop.in/s/65f83b39d13b931b1c1f1a9b/66069c061d3a4dfcf98aae73/ps-50-neptune-power-sprayers-480x480.jpg" alt="Sweater Hooded">
+                    <div class="item-info">
+                        <p>NEPTUNE POWER SPRAYERS</p>
+                        <p>Quantity: <input type="number" value="1"></p>
+                    </div>
+                </div>
+                <p class="price">₹6000</p>
+            </div>
+            <div class="summary">
+                <p>Subtotal: ₹149.96</p>
+                <p>Shipping: ₹0</p>
+                <p>Total: ₹149.96</p>
+            </div>
+            <button class="continue-shopping" style="width: 100%;">Continue Shopping</button>
+        </div>
+        <div class="payment">
+            <h2>Payment Info</h2>
+            <form>
+                <div class="payment-method">
+                    <input type="radio" id="credit-card" name="payment-method" checked>
+                    <label for="credit-card">Credit Card</label>
+                    <input type="radio" id="paypal" name="payment-method">
+                    <label for="paypal">PayPal</label>
+                </div>
+
+                <hr style="color: white;">
+
+                <div class="card-info">
+                    <label for="name-on-card">Name on Card:</label>
+                    <input type="text" id="name-on-card" placeholder="Anton PechetisA">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" placeholder="**** **** **** 3271">
+                    <label for="expiration-date">Expiration Date:</label>
+                    <input type="text" id="expiration-date" placeholder="MM / YYYY">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" placeholder="XXX">
+                </div>
+                <button type="submit" class="check-out">Check Out</button>
+            </form>
+        </div>
+
+        
+
+        <div id="backtoTop">
+            <a href="cart.html"><i class="bx bx-up-arrow-alt"></i></a>
+          </div>
+          <div class="cursor"></div>
+            <div class="cursor2"></div>
+
+          <script src="script.js"></script>
+        
+        
+          <script src="https://unpkg.com/scrollreveal"></script>
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        
+          <script src="script.js"></script>
+          <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        <script src="https://mediafiles.botpress.cloud/1cfb7415-d4fc-4477-8d00-3717d30c975b/webchat/config.js" defer></script> -->
+        
+          <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        
+          <script>
+        
+            window.addEventListener('scroll', function () {
+              var scrollPosition = window.scrollY;
+              var backToTopButton = document.getElementById('backtoTop');
+        
+              if (scrollPosition > 300) { // Adjust this value as needed to show the button at the desired scroll position
+                backToTopButton.style.display = 'block';
+              } else {
+                backToTopButton.style.display = 'none';
+              }
+            });
+        
+            document.addEventListener("DOMContentLoaded", function () {
+              const slideGroup = document.querySelector(".slide_group");
+              let currentSlide = 0;
+              const images = [
+                "./images/carousel-img-2.jpg",
+                "./images/carousel-img-1.jpg",
+                "./images/carousel-img-3.jpg",
+                "./images/carousel-img-4.jpg",
+              ];
+        
+              function showSlide(n) {
+                slideGroup.style.left = `${-n * 100}%`; // Adjust left property based on current slide
+                currentSlide = n;
+              }
+        
+              function nextSlide() {
+                currentSlide = (currentSlide + 1) % images.length; // Move to the next slide
+                showSlide(currentSlide);
+              }
+        
+              setInterval(nextSlide, 2000); // Automatically change slide every 2 seconds
+        
+              // Preload images for smoother transition
+              images.forEach((src) => {
+                const img = new Image();
+                img.src = src;
+              });
+            });
+        
+            // mobile no validation @dhruv8433
+            const mobileNumberInput = document.getElementById("mobileNumber");
+        
+            mobileNumberInput.addEventListener("input", () => {
+              const maxLength = 10;
+              const value = mobileNumberInput.value;
+        
+              if (value.length > maxLength) {
+                mobileNumberInput.value = value.slice(0, maxLength);
+              }
+            });
+          </script>
+          <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
+          <script type="text/javascript">
+            (function (d, t) {
+              var v = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+              v.onload = function () {
+                window.voiceflow.chat.load({
+                  verify: { projectID: "664632efd181ce0921d32ed5" },
+                  url: "https://general-runtime.voiceflow.com",
+                  versionID: "production",
+                });
+              };
+              v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+              v.type = "text/javascript";
+              s.parentNode.insertBefore(v, s);
+            })(document, "script");
+          </script>
+        
+          <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+              var header = document.querySelector("header");
+              header.classList.toggle("sticky", window.scrollY > 10)
+            })
+          </script>
+           <script>
+            var cursor = document.querySelector(".cursor");
+            var cursor2 = document.querySelector(".cursor2");
+            document.addEventListener("mousemove",function(e){
+              cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+            });
+          </script>
+        </body>
+        
+        </html>
+        
