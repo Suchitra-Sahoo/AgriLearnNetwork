@@ -302,7 +302,8 @@ section {
 
 .faq .accordion-header h3 {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  align-content: center;
   color: #000;
   margin: 0;
 }
@@ -311,7 +312,7 @@ section {
   display: none;
   padding: 1rem;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #000;
   background-color: #fff;
   transition: color 0.3s ease;
@@ -331,7 +332,7 @@ section {
 
 .faq .accordion-body:hover {
   color: rgb(26, 131, 66);
-  font-size:small ;
+  font-size:large ;
   font-weight:600 ;
 }
 
