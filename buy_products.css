@@ -650,6 +650,10 @@ font-size: 36px;
 .quick-links h2 {
   font-size: 20px;
   margin-bottom: 15px;
+  position: absolute;
+  left: 1050px;
+  top: 2750px;
+  
 }
 
 .quick-links ul {
