@@ -93,7 +93,7 @@ section {
 .navbar a {
   font-size: 1.5rem;
   color: var(--txt-color);
-  margin-left: 4rem;
+  margin-right: 3.4rem;
   transition: 0.3s;
  }
  .navbar a:hover {
@@ -178,7 +178,6 @@ section {
 }
 
 .faq_container {
-  max-width: 1500px;
   margin: 0 auto;
     background-image: url('./faq/image.jpeg'); 
     background-repeat: no-repeat; 
@@ -303,7 +302,8 @@ section {
 
 .faq .accordion-header h3 {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  align-content: center;
   color: #000;
   margin: 0;
 }
@@ -312,7 +312,7 @@ section {
   display: none;
   padding: 1rem;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #000;
   background-color: #fff;
   transition: color 0.3s ease;
@@ -332,7 +332,7 @@ section {
 
 .faq .accordion-body:hover {
   color: rgb(26, 131, 66);
-  font-size:small ;
+  font-size:large ;
   font-weight:600 ;
 }
 
@@ -393,6 +393,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .faq_box{
+    display: block;
   }
 }
 
@@ -536,6 +539,9 @@ font-size: 36px;
     .footer {
       padding: 2rem 3%;
     }
+    .faq_box{
+      display: block;
+    }
   }
 
   @media (max-width: 1216px) {
@@ -556,7 +562,7 @@ font-size: 36px;
       border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
       display: none;
-      height:420px;
+      height:470px;
     }
   
     .navbar :active {
@@ -572,7 +578,7 @@ font-size: 36px;
       margin-right: 2vmax;
     }
     .navbar a.active {
-      color: var(--txt-color);
+      color: var(--main-color);
       font-size: 2.5vmax;
     }  
    .slide_viewer {
@@ -589,6 +595,9 @@ font-size: 36px;
     }
   .slide_viewer {
       display: block; /* Ensure the slide viewer is visible on smaller screens */
+    }
+    .faq_box{
+      display: block;
     }
   }
 
@@ -703,13 +712,34 @@ font-size: 36px;
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   
-  .quick-links a:hover {
-    color: #f0f0f0; /* Change color on hover */
+  /* .quick-links a:hover {
+    color: #f0f0f0;
     text-decoration: underline;
   }
+   */
+   
+   .quick-links a:hover {
+    color: #abf5c0; /* Change color on hover */
+    /* text-decoration: underline; */
+    animation: blink 1s step-start infinite;
+    text-shadow: 0 0 5px currentColor;
+  }
+
+  @keyframes blink {
+    50% {
+      text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8), /* White glow */
+        0 0 20px rgba(255, 0, 0, 0.7),     /* Red glow */
+        0 0 30px rgba(255, 0, 255, 0.6);   /* Pink glow */
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  
   
   @media (max-width: 768px) {
     .footer-grid {
@@ -775,5 +805,119 @@ font-size: 36px;
     color: var(--second-color);
     box-shadow: 0 0 1rem var(--main-color);
   }
+  
 
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 26px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.theme-toggle i {
+  font-size: 20px;
+  color: rgb(3, 3, 38);
+}
+
+.theme-toggle .fa-moon {
+  display: none;
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode .header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .theme-toggle {
+  background-color: #ffffff;
+}
+
+body.dark-mode .theme-toggle .fa-sun {
+  display: none;
+}
+
+body.dark-mode .theme-toggle .fa-moon {
+  display: inline;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-theme .header,
+body.dark-theme .footer,
+body.dark-theme .navbar {
+  background-color: black;
+}
+
+body.dark-theme .theme-toggle {
+  background-color: rgb(3, 3, 38);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .theme-toggle .fa-sun {
+  display: none;
+}
+
+body.dark-theme .theme-toggle .fa-moon {
+  display: inline;
+  color: #f1c40f;
+}
+
+body.dark-theme .navbar a {
+  color: #f1c40f !important; /* Ensure the color is applied */
+}
+
+
+
+@media screen and (max-width: 1216px) {
+  .theme-toggle {
+    margin-top: 10rem; /* Ensure theme toggle is below the menu icon */
+  }
+}
+
+body.dark-theme .faq .accordion-container {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+body.dark-theme .faq .accordion {
+  border: 1px solid #444;
+}
+
+body.dark-theme .faq .accordion-header {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-theme .faq .accordion-header:hover {
+  background-color: #444;
+}
+
+body.dark-theme .faq .accordion-header h3 {
+  color: white;
+}
+
+body.dark-theme .logo {
+  color: #B19222;
+}
+
+body.dark-theme .faq .accordion-body {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
 

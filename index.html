@@ -11,12 +11,17 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="icon" href="favicon_new.png" type="image/x-icon" />
+    <link rel="icon" href="icon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
+  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="./cursor/style.css">
+
+    <!-- <script src="./cursor/script.js"></script> -->
+    
     <script
       src="https://kit.fontawesome.com/b08b6de27e.js"
       crossorigin="anonymous"
@@ -38,6 +43,7 @@
   </head>
 
   <body>
+  
     <div id="loader-wrapper">
       <div id="loader"></div>
       <div class="loader-section section-left"></div>
@@ -45,17 +51,25 @@
   </div>
     <header class="header">
       <img
-        src="favicon_new.png"
+        src="icon.png"
         alt="logo"
         style="height: 50px; width: 50px; margin-right: 10px;"
       />
       <a href="#" class="logo" style="margin-inline-end: auto"
         ><h3>AgriLearnNetwork</h3>
       </a>
+      
+      <!-- adding the toggle mode button -->
+      <a>
+        <div class="theme-toggle">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </div>
+       </a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
-        <a href="#home" class="active"
+        <a href="#home" class="active content"
           ><i class="fa-solid fa-house"></i> Home</a
         >
         <a href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
@@ -65,10 +79,13 @@
         <a href="#Resource Library"
           ><i class="fa-solid fa-book"></i> Resource Library</a
         >
-        <a href="faqpage.html" target="_self"><i class="fas fa-question-circle"></i>FAQ</a>
+        <a href="faqpage.html" target="_self"><i class="fas fa-question-circle"></i>FAQs</a>
         <a href="#contact" id="nav--contact"
           ><i class="fa-solid fa-phone"></i> Contact</a
         >
+        <a href="buy_products.html"
+            ><i class="fa fa-shopping-cart"></i>Buy Products</a
+          >
         <a href="login.html">
           <button id="log-in-btn" class="login-btn">Login</button>
         </a>
@@ -77,12 +94,12 @@
 
     <section class="home" id="home">
       <div class="slider">
-        <div class="home-content">
+        <div class="home-content content glow">
           <h3 class="home--welcome">Welcome to</h3>
           <h1 class="home--welcome">AgriLearnNetwork</h1>
           <h3 class="home--welcome">
             Your Agricultural Knowledge Hub to
-            <span class="multiple-text"></span>
+            <span class="multiple-text un "></span>
           </h3>
         </div>
         <div class="slide_viewer">
@@ -103,6 +120,10 @@
               class="slide"
               style="background-image: url(./images/carousel-img-4.jpg)"
             ></div>
+            <div
+              class="slide"
+              style="background-image: url(./images/carousel-img-2.jpg)"
+            ></div>  <!--duplicate of the first image-->
             <!-- <div class="slide" style="background-image: url(./images/carousel-img-5.jpg)"></div> -->
           </div>
         </div>
@@ -290,12 +311,13 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Us!</span></h2>
       <form action="#" id="contact-form">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
+          <input type="text" placeholder="Full Name" id="fullname" required />
+          <input type="email" placeholder="Email Address" id="emailaddress" required />
         </div>
 
         <div class="input-box">
@@ -305,10 +327,10 @@
             required
             id="mobileNumber"
           />
-          <input type="text" placeholder="Email Subject" required />
+          <input type="text" placeholder="Email Subject" id="emailsubject" required />
         </div>
 
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <input type="submit" class="btn" id="contact-btn"><br>
         </form>
         <div class="button-container">
@@ -318,45 +340,111 @@
 
     <!-- Modal -->
 
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>FEEDBACK FORM</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <div id="modal" class="modal fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+      <div class="modal-content bg-white p-6 rounded shadow-lg relative">
+        <span class="close cursor-pointer text-gray-500 absolute top-4 right-4 text-xl">&times;</span>
+        <h2 class="text-2xl font-bold mb-4">FEEDBACK FORM</h2>
+        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         <form id="feedback-form">
-          <div class="form-group">
-            <div class="icon">
+          <div class="form-group flex items-center mb-4">
+            <div class="icon mr-2">
               <i class="fas fa-user"></i>
             </div>
-            <input type="text" placeholder="Your Name" name="name" required>
+            <input class="border p-2 w-full" type="text" placeholder="Your Name" name="name" required>
           </div>
-          <div class="form-group">
-            <div class="icon">
+          <div class="form-group flex items-center mb-4">
+            <div class="icon mr-2">
               <i class="fas fa-envelope"></i>
             </div>
-            <input type="email" placeholder="Email Id" required>
+            <input class="border p-2 w-full" type="email" placeholder="Email Id" name="email" required>
           </div>
-          <div class="form-group">
-            <textarea cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+          <div class="form-group mb-4">
+            <textarea class="border p-2 w-full" cols="30" rows="5" placeholder="Your Feedback" required></textarea>
           </div>
-          <div class="rating">
-            <h2>Rate us:</h2>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
-            <i class="rating__star far fa-star"></i>
+          <div class="rating mb-4">
+            <h2 class="text-xl font-semibold mb-2">Rate us:</h2>
+            <div class="flex space-x-2">
+              <span class="emoji" role="img" aria-label="terrible" data-value="😡">😡</span>
+              <span class="emoji" role="img" aria-label="bad" data-value="😞">😞</span>
+              <span class="emoji" role="img" aria-label="okay" data-value="😐">😐</span>
+              <span class="emoji" role="img" aria-label="good" data-value="😊">😊</span>
+              <span class="emoji" role="img" aria-label="excellent" data-value="😍">😍</span>
+            </div>
           </div>
-          <button type="submit">Submit</button>
+          <input type="hidden" name="rating" id="rating-value" required>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded" type="submit">Submit</button>
         </form>
-        <div id="thank-you-message" style="display:none; font-size:20px; color: green; margin-top: 20px;">
+        <div id="thank-you-message" class="text-green-500 text-xl mt-4 hidden">
           Thank you for your feedback!
         </div>
-        <div id="error-message" style="display:none; color: red;font-size:20px; margin-top: 20px;">
+        <div id="error-message" class="text-red-500 text-xl mt-4 hidden">
           Please fill in all fields before submitting.
         </div>
       </div>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script>
+      document.querySelectorAll('.emoji').forEach(emoji => {
+        emoji.addEventListener('click', () => {
+          document.querySelectorAll('.emoji').forEach(e => {
+            e.classList.remove('selected');
+            e.style.backgroundColor = 'transparent'; // Reset all emojis to transparent background
+          });
+          emoji.classList.add('selected');
+          emoji.style.backgroundColor = '#f0f0f0'; // Set selected emoji's background color
+          document.getElementById('rating-value').value = emoji.getAttribute('data-value');
+        });
+      });
+    
+      document.getElementById('feedback-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = this.elements['name'].value.trim();
+        const email = this.elements['email'].value.trim();
+        const feedback = this.querySelector('textarea').value.trim();
+        const rating = this.elements['rating'].value;
+    
+        if (name && email && feedback && rating) {
+          // Show toast notification
+          Toastify({
+            text: 'Thanks for your Feedback',
+            duration: 3000,
+            gravity: 'bottom', // Display toast notifications at the bottom
+            backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
+          }).showToast();
+    
+          // Clear form fields
+          this.reset();
+          document.querySelectorAll('.emoji').forEach(e => {
+            e.classList.remove('selected');
+            e.style.backgroundColor = 'transparent'; // Reset all emojis to transparent background
+          });
+          document.getElementById('rating-value').value = '';
+        } else {
+          document.getElementById('thank-you-message').style.display = 'none';
+          document.getElementById('error-message').style.display = 'block';
+        }
+      });
+    
+      document.querySelector('.close').addEventListener('click', () => {
+        document.getElementById('modal').style.display = 'none';
+      });
+    </script>
+    
+    <style>
+      .emoji {
+        font-size: 3rem;
+        cursor: pointer;
+        transition: transform 0.2s, background-color 0.2s;
+        border-radius: 50%; /* Make emojis circular */
+      }
+      .emoji.selected {
+        transform: scale(1.75);
+        background-color: #f0f0f0; /* Light gray background color for selected emoji */
+        filter: brightness(150%); /* Increase brightness of the emoji */
+        /* You can adjust the brightness percentage to achieve desired brightness */
+      }
+    </style>
     
     <footer class="footer">
       <div class="footer-grid">
@@ -401,7 +489,7 @@
             <a href="blogpage.html"><p>Blogs</p></a>
           </li>
           <li>
-            <a href="faqpage.html"><p>FAQ</p></a>
+            <a href="faqpage.html"><p>FAQs</p></a>
           </li>
           <li>
             <a href="#Resource Library"><p>Resource Library</p></a>
@@ -424,6 +512,8 @@
     <div  id="backtoTop">
       <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
     </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -511,6 +601,13 @@
         var header= document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY >10)
       })
+    </script>
+     <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove",function(e){
+        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
     </script>
   </body>
 </html>
