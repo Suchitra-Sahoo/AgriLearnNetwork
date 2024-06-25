@@ -1601,18 +1601,12 @@ input[type="number"]::-webkit-inner-spin-button {
   gap: 20px;
 }
 
-
+.footer-title,
 .footer-icons,
 .footer-iconTop {
   text-align: center;
-  left: 150px;
-  /* position: absolute;
-  left: 0px; */
+ 
 }
-/* .footer-title
-{ position: absolute;
-  left: 10px;
-} */
 #backtoTop{
   position :fixed;
   bottom: 90px;
@@ -1678,31 +1672,24 @@ font-size: 36px;
 
 .quick-links {
  text-align: center;
- /* position: absolute; */
- /* left: 150px; */
  width: 50vw;
  padding: 20px;
  p{
   font-weight: bold;
 }
-
-
 }
 
 .quick-links h2 {
-  position: absolute;
-  left: 1050px;
   font-size: 20px;
   margin-bottom: 15px;
 }
 
 .quick-links ul {
   list-style-type: none;
-  padding: 2px;
+  padding: 0;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
-  left: 900px ;
 }
 
 .quick-links li {
