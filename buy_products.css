@@ -964,3 +964,27 @@ p{
 h3{
     font-size: large;
 }
+
+@media (max-width: 768px) {
+  .search {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .search-bar {
+    width: 100%;
+  }
+  
+  #search-icon {
+    right: 5px;
+  }
+  .navbar{
+    height: 100vh;
+  }
+  
+  .mini-cart{
+    bottom: 10vh;
+    width: 100%;
+    right: 0px;
+  }
+}
