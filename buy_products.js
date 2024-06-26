@@ -29,25 +29,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const cartItemsList = document.getElementById('cart-items');
     const miniCart = document.getElementById('mini-cart');
     const goToTopButton = document.getElementById('go-to-top');
-
+    const dyna=document.getElementById('dyna');
     addToCartButtons.forEach(button => {
         button.addEventListener('click', () => {
             const product = button.getAttribute('data-product');
             const image = button.getAttribute('data-image');
-            addItemToCart(product, image);
+            const price = button.getAttribute('data-price');
+            addItemToCart(product, image,price);
             updateCart();
+            updatePrice();
         });
     });
 
-    function addItemToCart(product, image) {
+    function addItemToCart(product, image,price) {
         const existingItem = cartItems.find(item => item.product === product);
         if (existingItem) {
             existingItem.quantity += 1;
         } else {
-            cartItems.push({ product, image, quantity: 1 });
+            cartItems.push({ product, image,price, quantity: 1 });
+            dyna.innerHTML-=Number(dyna.innerHTML);
         }
     }
-
+    function updatePrice(){
+        cartItems.forEach(item=>{
+          const itemPrice= Number(item.price);
+          console.log(itemPrice);
+          console.log(dyna.innerHTML);
+          dyna.innerHTML = Number(dyna.innerHTML)+itemPrice;
+          console.log(dyna.innerHTML);
+        })
+    }
     function updateCart() {
         cartItemsList.innerHTML = '';
         cartItems.forEach(item => {
@@ -62,19 +73,24 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             `;
             cartItemsList.appendChild(li);
-
+            // dyna.innerHTML='';
             const minusButton = li.querySelector('.minus');
             const plusButton = li.querySelector('.plus');
             minusButton.addEventListener('click', () => {
                 if (item.quantity > 1) {
                     item.quantity -= 1;
                 } else {
+                    item.quantity=0;
                     cartItems.splice(cartItems.indexOf(item), 1);
                 }
+                const itemSub= Number(item.price);
+                dyna.innerHTML = Number(dyna.innerHTML)-itemSub;
                 updateCart();
             });
             plusButton.addEventListener('click', () => {
                 item.quantity += 1;
+                const itemAdd= Number(item.price);
+                dyna.innerHTML = Number(dyna.innerHTML)+itemAdd;
                 updateCart();
             });
         });
