@@ -1,21 +1,36 @@
 # AgriLearnNetwork
 
 <div align = "center">
+ <img src="https://camo.githubusercontent.com/dd5e3080a7adc2ead8f86cbbd6577cee0a38439c0ebf195021ce41587b0a405f/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a633459675258595161794f5657785633376f757272772e706e67" >
+ <div>
+<table>
+
+   <tr>
+      <th>Event Name</th>
+      <th>Event Description</th>
+   </tr>
+   <tr>
+      <td>GirlScript Summer of Code 2024</td>
+      <td>GirlScript Summer of Code is a three-month-long Open Source Program conducted every summer by GirlScript Foundation. It is an initiative to bring more beginners to Open-Source Software Development.</td>
+   </tr>
+
+</table>
+<div align = "center">
  <img src="https://emojiisland.com/cdn/shop/products/26_large.png?v=1571606116" >
  <div>
-
   
 **Check the Website [here](https://suchitra-sahoo.github.io/AgriLearnNetwork//)**.
 
 ## TABLE OF CONTENTS
 
-- [About our project](#About-our-project)
-- [Tech Stack Used](#Tech-Stack-Used)
-- [Website Overview](#Website-Overview)
+- [About Our Project](#about-our-project)
+- [Tech Stack Used](#tech-stack-used)
+- [Website Overview](#website-overview)
 - [Let's Get Started](#lets-get-started)
-- [Key Features ✨](#Key-Features-✨)
-- [Components of Website](#Components-of-Website)
+- [Key Features ✨](#key-features-)
+- [Components of Website](#components-of-website)
 
+# About Our Project
 
 Welcome to AgriLearnNetwork, your premier destination for comprehensive agricultural education and an abundance of invaluable resources. Whether you're a seasoned farmer, a budding agricultural enthusiast, or simply curious about the world of farming, we're here to empower you with knowledge and tools to thrive in the field. Explore our diverse range of courses, delve into expert insights, and discover the latest advancements in agricultural practices. Join us in cultivating a brighter future for agriculture together.
 <div align="center">
@@ -43,7 +58,7 @@ Welcome to AgriLearnNetwork, your premier destination for comprehensive agricult
 <br>
 <br>
 
-**Tech Stack Used**
+# Tech Stack Used
 
 <div align="center">
  <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white">
