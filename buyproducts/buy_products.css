@@ -552,7 +552,7 @@ body.dark-theme .add-to-cart{
 
 .footer {
   padding: 20px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/istockphoto-1465642013-170667a.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../images/istockphoto-1465642013-170667a.webp');
   background-size: cover; /* Ensure the background image covers the entire container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */

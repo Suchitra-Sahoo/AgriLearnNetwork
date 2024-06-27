@@ -361,10 +361,10 @@ function toggleAccordion(header) {
 
   if (body.style.display === 'block') {
       body.style.display = 'none';
-      header.querySelector('img').src = './faq/Expand-more.svg';
+      header.querySelector('img').src = '../faq/Expand-more.svg';
   } else {
       body.style.display = 'block';
-      header.querySelector('img').src = './faq/Expand-less.svg';
+      header.querySelector('img').src = '../faq/Expand-less.svg';
   }
 }
 
@@ -374,7 +374,7 @@ function closeAllAccordions(clickedAccordion) {
       if (accordion !== clickedAccordion) {
           accordion.classList.remove('active');
           accordion.querySelector('.accordion-body').style.display = 'none';
-          accordion.querySelector('.accordion-header img').src = './faq/Expand-more.svg';
+          accordion.querySelector('.accordion-header img').src = '../faq/Expand-more.svg';
       }
   });
 }
@@ -384,7 +384,7 @@ function closeAllAccordions(clickedAccordion) {
       if (accordion !== clickedAccordion) {
           accordion.classList.remove('active');
           accordion.querySelector('.accordion-body').style.display = 'none';
-          accordion.querySelector('.accordion-header img').src = './faq/Expand-more.svg';
+          accordion.querySelector('.accordion-header img').src = '../faq/Expand-more.svg';
       }
   });
 }
@@ -395,7 +395,7 @@ function closeAllAccordions(clickedAccordion) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const faqSection = document.querySelector('.faq .section-heading');
+  const faqSection = document.querySelector('../faq .section-heading');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
