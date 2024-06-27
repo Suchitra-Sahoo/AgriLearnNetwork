@@ -179,7 +179,7 @@ section {
 
 .faq_container {
   margin: 0 auto;
-    background-image: url('./faq/image.jpeg'); 
+    background-image: url('../faq/image.jpeg'); 
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
@@ -413,7 +413,7 @@ section {
   background: #0e4b16;
   min-height: 25rem;
     padding: 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/istockphoto-1465642013-170667a.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../images/istockphoto-1465642013-170667a.webp');
     background-size: cover; /* Ensure the background image covers the entire container */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
