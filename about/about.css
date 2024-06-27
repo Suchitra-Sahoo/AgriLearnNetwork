@@ -118,11 +118,13 @@
 .right .card {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
 }
 .right .card i {
     font-size: 40px;
     color: var(--main-color);
+    width: 40px;
+    height: 40px
 }
 .right .card h4 {
     font-weight: 600;

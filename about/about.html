@@ -4,18 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | AgriLearnNetwork</title>
-    <link rel="stylesheet" href="../style.css">
 
+    <!-- custom styles -->
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../cursor/style.css">
+
+
+    <!-- font family -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/c732ec9339.js" crossorigin="anonymous"></script>
+
+    <title>About Us | AgriLearnNetwork</title>
 </head>
 
 <body>
 
+    <!-- header -->
     <header class="header">
         <img src="../icon.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px;" />
 
@@ -45,6 +54,7 @@
     </header>
 
 
+    <!-- about us content -->
     <div class="hero">
 
         <video class="hero-video" autoplay muted loop>
@@ -103,6 +113,7 @@
 
     </div>
 
+    <!-- footer -->
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-title">
@@ -183,6 +194,7 @@
 
     <script>
 
+        // back to top control
         window.addEventListener('scroll', function () {
             var scrollPosition = window.scrollY;
             var backToTopButton = document.getElementById('backtoTop');
@@ -194,7 +206,7 @@
             }
         });
 
-        // mode toggle function
+        // theme toggle control
         document.addEventListener("DOMContentLoaded", function () {
             const themeToggle = document.querySelector(".theme-toggle");
             const body = document.body;
@@ -218,7 +230,7 @@
             });
         });
 
-        //navbar for small screen
+        // navbar control
         let menuIcon = document.querySelectorAll('#menu-icon');
         let navbar = document.querySelectorAll('.navbar');
         let navContact = document.querySelectorAll('#nav--contact');
@@ -232,7 +244,7 @@
             }
         });
 
-        // Add an event listener to navbar links
+        // Navbar links control
         document.querySelectorAll('.navbar a').forEach(link => {
             link.addEventListener('click', () => {
                 // Remove 'active' class from navbar
@@ -244,6 +256,12 @@
                     icon.classList.remove('bx-x'); // Remove the 'bx-x' class to close the hamburger menu
                 });
             });
+        });
+
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
         });
 
     </script>
