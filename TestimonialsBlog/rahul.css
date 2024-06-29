@@ -1,0 +1,397 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f0; /* Light green background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #a8d5ba, #2e8b57); /* Green gradient */
+    color: #fff;
+    padding: 50px 20px; /* Increased padding */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em; /* Increased font size */
+    transition: color 0.3s ease;
+}
+
+header h1:hover {
+    color: #e0f0e0; /* Light green on hover */
+}
+
+header p {
+    margin: 15px 0 0; /* Increased margin */
+    font-size: 1.5em; /* Increased font size */
+}
+
+main {
+    padding: 50px 20px; /* Increased padding */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#about {
+    text-align: center;
+}
+
+.profile-img {
+    border-radius: 10px;
+    margin: 20px 0;
+    max-width: 70%; /* Decreased max width */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* Slightly reduced scale */
+}
+
+#agrilearnnetwork {
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Increased margin */
+}
+
+#agrilearnnetwork h2 {
+    color: #2e8b57; /* Green color */
+    margin-bottom: 25px; /* Increased margin */
+    font-size: 2em; /* Increased font size */
+}
+
+.feature {
+    margin-bottom: 30px; /* Increased margin */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature:hover {
+    background-color: #e0f0e0; /* Light green on hover */
+    transform: translateY(-5px);
+}
+
+.feature-img {
+    border-radius: 10px;
+    max-width: 60%; /* Decreased max width */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-img:hover {
+    transform: scale(1.03); /* Slightly reduced scale */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature h3 {
+    margin-top: 10px;
+    color: #2e8b57; /* Green color */
+    font-size: 1.5em; /* Increased font size */
+    transition: color 0.3s ease;
+}
+
+.feature h3:hover {
+    color: #1e6f3d; /* Darker green on hover */
+}
+
+#impact {
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Increased margin */
+}
+
+#impact h2 {
+    color: #2e8b57; /* Green color */
+    margin-bottom: 25px; /* Increased margin */
+    font-size: 2em; /* Increased font size */
+}
+
+#impact ul {
+    padding-left: 20px;
+}
+
+#impact li {
+    margin-bottom: 15px; /* Increased margin */
+    font-size: 1.2em; /* Increased font size */
+}
+
+#success-stories {
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Increased margin */
+}
+
+#success-stories h2 {
+    color: #2e8b57; /* Green color */
+    font-size: 2em; /* Increased font size */
+    margin-bottom: 25px; /* Increased margin */
+}
+
+.story {
+    margin-bottom: 25px; /* Increased margin */
+}
+
+.story-img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.story-img:hover {
+    transform: scale(1.05);
+}
+
+#future-goals {
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Increased margin */
+}
+
+#future-goals h2 {
+    color: #2e8b57; /* Green color */
+    font-size: 2em; /* Increased font size */
+    margin-bottom: 25px; /* Increased margin */
+}
+
+#future-goals ul {
+    padding-left: 20px;
+}
+
+#future-goals li {
+    margin-bottom: 15px; /* Increased margin */
+    font-size: 1.2em; /* Increased font size */
+}
+
+#contact {
+    text-align: center;
+    margin-top: 50px; /* Increased margin */
+}
+
+#contact h2 {
+    color: #2e8b57; /* Green color */
+    font-size: 2em; /* Increased font size */
+    margin-bottom: 20px; /* Increased margin */
+}
+
+#contact p {
+    margin-bottom: 25px; /* Increased margin */
+    font-size: 1.2em; /* Increased font size */
+}
+
+.fancy {
+    background-color: #2e8b57; /* Green color */
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 15px 0; /* Increased margin */
+    padding: 1.5em 2.5em; /* Increased padding */
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 15px; /* Increased font size */
+    position: relative;
+}
+
+.fancy::before {
+    content: " ";
+    width: 1.875rem; /* Increased width */
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+    font-size: 1.2em; /* Increased font size */
+    line-height: 1.4em; /* Increased line height */
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.fancy .top-key {
+    height: 2px;
+    width: 1.875rem; /* Increased width */
+    top: -2px;
+    left: 0.75rem; /* Adjusted position */
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.875rem; /* Increased width */
+    right: 2.125rem; /* Adjusted position */
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.75rem; /* Increased width */
+    right: 0.75rem; /* Adjusted position */
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+    color: white;
+    background: black;
+}
+
+.fancy:hover::before {
+    width: 1.125rem; /* Increased width */
+    background: white;
+}
+
+.fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+}
+
+footer {
+    background-color: #2e8b57; /* Green color */
+    color: #fff;
+    padding: 25px; /* Increased padding */
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #1b5e20; /* Darker green on hover */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em; /* Increased font size */
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; /* Increased font size */
+    }
+
+    header p {
+        font-size: 1.2em; /* Increased font size */
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .feature-img {
+        max-width: 80%; /* Increased max width */
+    }
+
+    .profile-img {
+        max-width: 180px; /* Decreased max width */
+    }
+
+    #agrilearnnetwork .feature {
+        margin-bottom: 20px; /* Increased margin */
+    }
+
+    #contact p {
+        font-size: 1.2em; /* Increased font size */
+    }
+
+    .fancy {
+        font-size: 14px; /* Increased font size */
+        padding: 1em 2em; /* Increased padding */
+    }
+
+    footer {
+        padding: 15px; /* Increased padding */
+    }
+
+    footer p {
+        font-size: 1em; /* Increased font size */
+    }
+
+    .feature-img {
+        max-width: 80%; /* Increased max width */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em; /* Increased font size */
+    }
+
+    header p {
+        font-size: 1em; /* Increased font size */
+    }
+
+    .profile-img {
+        max-width: 150px; /* Decreased max width */
+    }
+
+    #agrilearnnetwork,
+    #impact,
+    #success-stories,
+    #future-goals {
+        padding: 15px; /* Increased padding */
+    }
+
+    .fancy {
+        font-size: 14px; /* Increased font size */
+        padding: 1em 2em; /* Increased padding */
+    }
+
+    footer {
+        padding: 15px; /* Increased padding */
+    }
+
+    footer p {
+        font-size: 1em; /* Increased font size */
+    }
+}

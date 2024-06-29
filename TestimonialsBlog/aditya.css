@@ -1,0 +1,401 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: linear-gradient(to right, #76a763, #3f6c3f);
+    color: #fff;
+    padding: 50px 20px; /* Increased padding */
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3em; /* Increased font size */
+    transition: color 0.3s ease;
+  }
+  
+  header h1:hover {
+    color: #d0f0c0;
+  }
+  
+  header p {
+    margin: 15px 0 0; /* Increased margin */
+    font-size: 1.5em; /* Increased font size */
+  }
+  
+  main {
+    padding: 50px 20px; /* Increased padding */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  #about {
+    text-align: center;
+  }
+  
+  .profile-img {
+    border-radius: 10px;
+    margin: 20px 0;
+    max-width: 80%; /* Decreased max width */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.05); /* Slightly reduced scale */
+  }
+  
+  #sustainable-practices {
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Increased margin */
+  }
+  
+  #sustainable-practices h2 {
+    color: #76a763;
+    margin-bottom: 25px; /* Increased margin */
+    font-size: 2em; /* Increased font size */
+  }
+  
+  .practice {
+    margin-bottom: 25px; /* Increased margin */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .practice:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-5px);
+  }
+  
+  .practice-img {
+    border-radius: 10px;
+    max-width: 60%; /* Decreased max width */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .practice-img:hover {
+    transform: scale(1.03); /* Slightly reduced scale */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .practice h3 {
+    margin-top: 10px;
+    color: #76a763;
+    font-size: 1.5em; /* Increased font size */
+    transition: color 0.3s ease;
+  }
+  
+  .practice h3:hover {
+    color: #5a9a5a;
+  }
+  
+  #farming-process {
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Increased margin */
+  }
+  
+  #farming-process h2 {
+    color: #76a763;
+    font-size: 2em; /* Increased font size */
+  }
+  
+  #farming-process ol {
+    padding-left: 25px; /* Increased padding */
+  }
+  
+  #challenges {
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Increased margin */
+  }
+  
+  #challenges h2 {
+    color: #76a763;
+    font-size: 2em; /* Increased font size */
+  }
+  
+  #challenges ul {
+    padding-left: 25px; /* Increased padding */
+  }
+  
+  #challenges li {
+    margin-bottom: 15px; /* Increased margin */
+  }
+  
+  #future-plans {
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Increased margin */
+  }
+  
+  #future-plans h2 {
+    color: #76a763;
+    font-size: 2em; /* Increased font size */
+  }
+  
+  #future-plans ul {
+    padding-left: 25px; /* Increased padding */
+  }
+  
+  #future-plans li {
+    margin-bottom: 15px; /* Increased margin */
+  }
+  
+  #experience {
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Increased margin */
+  }
+  
+  #experience h2 {
+    color: #76a763;
+    font-size: 2em; /* Increased font size */
+  }
+  
+  blockquote {
+    background: #e0ffe0;
+    padding: 25px; /* Increased padding */
+    border-left: 4px solid #76a763;
+    border-radius: 10px;
+    font-style: italic;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  blockquote:hover {
+    background: #d0f0c0;
+  }
+  
+  #contact {
+    text-align: center;
+    margin-top: 50px; /* Increased margin */
+  }
+  
+  #contact h2 {
+    color: #76a763;
+    font-size: 2em; /* Increased font size */
+  }
+  
+  #contact p {
+    margin-bottom: 25px; /* Increased margin */
+  }
+  
+  .fancy {
+    background-color: #76a763;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 10px 0;
+    padding: 1.5em 2.5em; /* Increased padding */
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 14px; /* Increased font size */
+    position: relative;
+  }
+  
+  .fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+  }
+  
+  .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+  .fancy:hover {
+    color: white;
+    background: black;
+  }
+  
+  .fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+  }
+  
+  .fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+  }
+  
+  .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+  }
+  
+  .fancy:hover .bottom-key-1,
+  .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+  }
+  
+  footer {
+    background-color: #3f6c3f;
+    color: #fff;
+    padding: 25px; /* Increased padding */
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  footer:hover {
+    background-color: #2e4f2e;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1em; /* Increased font size */
+  }
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5em; /* Increased font size */
+    }
+  
+    header p {
+      font-size: 1.2em; /* Increased font size */
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  
+    #sustainable-practices .practice {
+      margin-bottom: 20px; /* Increased margin */
+    }
+  
+    #farming-process ol,
+    #challenges ul,
+    #future-plans ul {
+      padding-left: 20px; /* Increased padding */
+    }
+  
+    #contact p {
+      font-size: 1.2em; /* Increased font size */
+    }
+  
+    .practice-img {
+      max-width: 80%; /* Increased max width */
+    }
+  
+    .profile-img {
+      max-width: 180px; /* Decreased max width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2em; /* Increased font size */
+    }
+  
+    header p {
+      font-size: 1em; /* Increased font size */
+    }
+  
+    .profile-img {
+      max-width: 150px; /* Decreased max width */
+    }
+  
+    #sustainable-practices,
+    #challenges,
+    #future-plans,
+    #farming-process,
+    #experience {
+      padding: 15px; /* Increased padding */
+    }
+  
+    .fancy {
+      font-size: 14px; /* Increased font size */
+      padding: 1em 2em; /* Increased padding */
+    }
+  
+    footer {
+      padding: 15px; /* Increased padding */
+    }
+  
+    footer p {
+      font-size: 1em; /* Increased font size */
+    }
+  
+    .practice-img {
+      max-width: 90%; /* Increased max width */
+    }
+  }
+  

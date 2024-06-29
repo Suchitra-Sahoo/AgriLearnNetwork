@@ -1889,3 +1889,411 @@ font-size: 36px;
 }
 
 /* Preloader Css Ends */
+/* Testimonials Section Started */
+div.niha{
+
+  width: 500px;
+  border: 2px solid #030E24;
+  display: inline-block;
+  color: rgb(27, 72, 9);
+  font-size: small;
+}
+/* Typing Effect CSS */
+/* 
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from , to { border-color: transparent; }
+  50% { border-color: transparent; }
+} */
+
+/* #heading2{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  color: #bd3939;
+  border-right: 0.15em solid #c84d4d;
+  white-space: nowrap;
+  overflow: hidden; */
+  /* width: 0; Ensures the text is hidden initially */
+  /* animation: 
+      typing 10s steps(2000, end) forwards,
+      blink-caret 0.75s step-end infinite; */
+/* } */
+
+
+#container {
+  color: rgb(8, 9, 10);
+  text-align: center;
+  width: 1240px;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 150px;
+  margin-right: 120px;
+  margin-top: 70px;
+  margin-bottom: 110px;
+  align-content: center;
+  
+}
+
+
+#button1 {
+  color: black;
+  margin: 18px 18px 50px 750px;
+  transition: 1s;
+  border: none;
+  background-color:#C07F00;
+  padding: 13px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 20px ;
+  cursor: pointer;
+ 
+}
+
+#button1:hover {
+  background:C07F00;
+  box-shadow: 0 0 90px#C07F00
+  /* transform: scale(1.3); */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(94, 4, 4);
+}
+
+#heading2 {
+  color: #6fc989;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+
+}
+
+
+#container2 {
+  padding-left: 0%;
+  text-align: center;
+  width: 1360px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top:5px;
+  margin-bottom: 110px;
+  border: 10 solid #01050e;
+}
+
+#box5 {
+  background-image: url("https://media.istockphoto.com/id/594449268/photo/agricultural-landscape.jpg?s=612x612&w=0&k=20&c=F6KRfmFjuwx11oQwZ1jIGwa19XKBxXsrXXm2By_eEPE=");
+  background-size: cover;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-right: 10px;
+  position: relative;
+  border: 2px solid #abf5c0;
+}
+
+#box5:hover {
+  transform: scale(1.07);
+  border: 5px solid #abf5c0;
+  transition: 0.9s;
+}
+
+#box6 {
+  background-image: url("https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  top: 45px;
+  border: 2px solid #abf5c0;
+
+}
+
+#box6:hover {
+  transform: scale(1.07);
+  border: 5px solid #abf5c0;
+  transition: 0.9s;
+}
+
+#box7 {
+  background-image: url("https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  top: 80px;
+  text-align: center;
+  border: 2px solid #abf5c0;
+
+
+
+}
+
+#box7:hover {
+  transform: scale(1.07);
+  border: 5px solid #abf5c0;
+  transition: 0.9s;
+}
+
+#box8 {
+  background-image: url("https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-right: 13px;
+  margin-left: 13px;
+  position: relative;
+  top: 45px;
+  border: 2px solid #abf5c0;
+  
+}
+
+#box8:hover {
+  transform: scale(1.07);
+  border: 5px solid #abf5c0;
+  transition: 0.9s;
+}
+
+#box9 {
+  background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  border: 2px solid #abf5c0;
+
+}
+
+#box9:hover {
+  transform: scale(1.07);
+  border: 5px solid #c2f0cf;
+  transition: 0.9s;
+}
+/* #text1{
+  color: rgb(208, 243, 198);
+  align-content: center;
+  padding-top: 10%;
+}
+#text2{
+  color: aliceblue;
+  padding-top: 10%;
+}
+#text3{
+  color: aliceblue;
+  padding-top: 10%;
+} */
+#text0 {
+  color: aliceblue;
+  padding-top: 10%;
+  background: linear-gradient(to bottom, rgb(127, 215, 148), rgb(0, 139, 23));
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px;
+  text-align: center; /* Center the text horizontally */
+  border-radius: 20px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+}
+#text1 {
+  color: aliceblue;
+  padding-top: 10%;
+  background: linear-gradient(to bottom, rgb(127, 215, 148), rgb(0, 139, 23));
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px;
+  text-align: center; /* Center the text horizontally */
+  border-radius: 20px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+}
+#text2 {
+  color: aliceblue;
+  padding-top: 10%;
+  background: linear-gradient(to bottom, rgb(127, 215, 148), rgb(0, 139, 23));
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px;
+  text-align: center; /* Center the text horizontally */
+  border-radius: 20px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+}
+#text3 {
+  color: aliceblue;
+  padding-top: 10%;
+  background: linear-gradient(to bottom, rgb(127, 215, 148), rgb(0, 139, 23));
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px;
+  text-align: center; /* Center the text horizontally */
+  border-radius: 20px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+}
+#text4 {
+  color: aliceblue;
+  padding-top: 10%;
+  background: linear-gradient(to bottom, rgb(127, 215, 148), rgb(0, 139, 23));
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px;
+  text-align: center; /* Center the text horizontally */
+  border-radius: 20px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+}
+
+
+p{
+  color: rgb(2, 22, 11);
+}
+/* Testimonials section ends here */
+/* CSS for review paragraph */
+#review {
+  background-color:rgba(240, 248, 255, 0.6); /* Light blue background for better readability */
+  border: 1px solid transparent; /* Light grey border */
+  border-radius: 10px; /* Slightly more rounded corners */
+  padding: 20px; /* Increased padding for better spacing */
+  margin: 20px 0; /* Margin around the box */
+  font-family: 'Arial', sans-serif; /* Font style */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better depth */
+  line-height: 1.6; /* Slightly increased line height for readability */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#review:hover {
+  background-color: #99bc8b; /* Slightly darker background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+  #review {
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+}
+span{
+  color: #fcfafa;
+}
+.fancy {
+  background-color:#76a763;
+  border: 2px solid #000;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+  position: absolute;
+  bottom: 30px; /* Adjust as needed */
+  left: 20%;
+ }
+ 
+ .fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: black;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+ }
+ 
+ .fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+ }
+ 
+ .fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+ }
+ 
+ .fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+ }
+ 
+ .fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+ }
+ 
+ .fancy:hover {
+  color: white;
+  background: black;
+ }
+ 
+ .fancy:hover::before {
+  width: 0.9375rem;
+  background: white;
+ }
+ 
+ .fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+ }
+ 
+ .fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+ }
+ 
+ .fancy:hover .bottom-key-1,
+  .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+ }
