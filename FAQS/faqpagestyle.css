@@ -90,6 +90,10 @@ section {
   font-weight: 600;
   cursor: default;
 }
+nav{
+  margin-right: 105px;
+  display: flex;
+}
 .navbar a {
   font-size: 1.5rem;
   color: var(--txt-color);
@@ -810,7 +814,7 @@ font-size: 36px;
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 26px;
+  top: 35px;
   right: 30px;
   display: flex;
   align-items: center;
