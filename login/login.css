@@ -311,3 +311,9 @@ body::before {
   height: 100%;
   width: 100%;
 }
+ .social-icons i{
+  transition:transform 0.3s ease-in-out ;
+}
+ .mail:hover i{
+  transform: scale(1.5);
+} 
