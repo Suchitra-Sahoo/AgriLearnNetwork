@@ -1,4 +1,34 @@
 
+
+const notify = document.querySelector(".notify")
+function show() {
+    let note = document.createElement("div");
+    note.classList.add('note');
+    note.innerHTML = '<i class="fa-solid fa-circle-check"></i> Item added to cart';
+    notify.appendChild(note)
+    setTimeout(()=>{
+      note.remove();
+    },2000)
+};
+
+//cart toggle button
+const cartToggle = document.querySelector(".cart");
+const minicart = document.querySelector(".mini-cart")
+const savedTheme = localStorage.getItem("cart");
+if (savedTheme && savedTheme === "see") {
+  minicart.classList.add("cart-see");
+}
+cartToggle.addEventListener("click", function () {
+    minicart.classList.toggle("cart-see");
+
+    // Save the current theme in local storage
+    if (minicart.classList.contains("cart-see")) {
+      localStorage.setItem("cart", "see");
+    } else {
+      localStorage.setItem("cart", "not");
+    }
+});
+
 // mode toggle function
 document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.querySelector(".theme-toggle");

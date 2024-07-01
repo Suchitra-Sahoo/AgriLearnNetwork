@@ -172,6 +172,103 @@ section {
   display: none;
 }
 
+/* cart button  */
+.cart {
+    position: fixed;
+    right: 20px;
+    top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(137, 137, 18);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+.mini-cart {
+  display: none;
+}
+
+.note {
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  color: #000000;
+  font-weight: 500;
+  font-size: large;
+  display: flex;  
+  margin: 15px 0;
+  z-index: 255;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards;
+}
+
+@keyframes moveleft{
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.note i{
+  color: green;
+}
+
+.note::after{
+  content: "";
+  position: absolute;
+  left: 00;
+  bottom: 0;
+  width: 80%;
+  height: 5px;
+  background: green;
+  animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+  100%{
+    width: 0;
+  }
+}
+
+.notify {
+  position: absolute;
+  bottom: 230px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.cart-see {
+  display: block;
+  position: fixed;
+    bottom: 200px;
+    right: 10px;
+    border: 1px solid #ddd;
+    background-color: #46785f;
+    padding: 12px;
+    border-radius: 4px;
+    width: 300px;
+    cursor: move;
+    max-height: 70%;
+    overflow-y: auto;
+    height: 150px;
+    /* Initial height */
+    border-width: 4px;
+    font-size: 13px;
+}
+
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
@@ -906,7 +1003,7 @@ font-size: 36px;
     background-color: #218838;
 }
 
-.mini-cart {
+/* .mini-cart {
     position: fixed;
     bottom: 200px;
     right: 10px;
@@ -918,10 +1015,11 @@ font-size: 36px;
     cursor: move;
     max-height: 70%;
     overflow-y: auto;
-    height: 150px; /* Initial height */
+    height: 150px; 
+    Initial height 
     border-width:4px ;
     font-size: 13px;
-}
+} */
 .mini-cart h3 {
     margin-top: 0;
 }
