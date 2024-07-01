@@ -98,16 +98,15 @@ section {
  .header.sticky
  {
   opacity: 0.9;
-  padding: 2rem 10% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
+  padding: 2rem 4% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
   background-color: rgb(4, 125, 18);
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
  }
 
  nav{
-  margin-right: 30px;
+  margin-right: 105px;
   display: flex;
 }
-
  .logo
  {
     font-size: 2.5rem;
@@ -120,7 +119,7 @@ section {
   font-size: 1.5rem;
   /* left: 118px; */
   color: var(--txt-color);
-  margin-right: 4rem;
+  margin-right: 3.1rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -157,13 +156,6 @@ section {
   max-width: 100%;
 
   margin-right: 5px; /* Adjust margin as needed */
-}
-
-#menu-icon
-{
-   font-size: 3.6rem;
-   color:var(--txt-color);
-   display:none;
 }
 
 #menu-icon {
@@ -720,7 +712,7 @@ font-size: 36px;
   font-weight: 600;
   transition: 0.5s ease;
   position: fixed;
-  margin-top: -5px;
+  margin-top: -11px;
   margin-left:auto;
   cursor: pointer;
   transition: 5s;
