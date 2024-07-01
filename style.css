@@ -1599,6 +1599,7 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  padding-top : 8rem; 
 }
 
 .footer-title,
@@ -1723,6 +1724,11 @@ font-size: 36px;
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px; /* Increase padding to make the footer taller */
+    background-size: cover; /* Ensure the background image covers the entire container */
+  }
+
   .footer-grid {
     grid-template-columns: 1fr; /* Single column layout for smaller screens */
   }
