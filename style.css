@@ -111,13 +111,13 @@ section {
  .header.sticky
  {
   opacity: 0.9;
-  padding: 3rem 2% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
+  padding: 2rem 10% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
   background-color: rgb(4, 125, 18);
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
  }
 
  nav{
-  margin-right: 105px;
+  margin-right: 30px;
   display: flex;
 }
  .logo
@@ -180,7 +180,7 @@ section {
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 35px;
+  top: 26px;
   right: 30px;
   display: flex;
   align-items: center;
