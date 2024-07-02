@@ -795,7 +795,7 @@ font-size: 36px;
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 26px;
+  top: 35px;
   right: 30px;
   display: flex;
   align-items: center;
@@ -864,6 +864,10 @@ body.dark-theme .theme-toggle .fa-moon {
 
 body.dark-theme .navbar a {
   color: #f1c40f !important; /* Ensure the color is applied */
+}
+
+.navbar{
+  margin-right: 100px;
 }
 
 
