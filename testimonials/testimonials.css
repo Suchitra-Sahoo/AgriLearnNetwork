@@ -28,39 +28,29 @@
     transform: translateY(-50%) scale(0.85);
 }
 
-.wrapper i:first-child {
-    left: -22px;
-    /* background-image: url("https://cdn.icon-icons.com/icons2/1238/PNG/512/scrollarrowtoleft_83879.png");
-} */
-}
-#left{
+#left {
     left: 280px;
     background-image: url(https://cdn.icon-icons.com/icons2/1238/PNG/512/scrollarrowtoleft_83879.png);
     color: black;
-   /* background-size: 50%; */
 }
-#right{
-    
-    top: 200px;
+
+#right {
+    right: 6px; /* Moved 4px to the right */
     background-image: url(https://cdn.icon-icons.com/icons2/1238/PNG/512/scrollarrowtoright1_83720.png);
     color: black;
 }
-
-.wrapper i:last-child {
-    right: -22px;
-}
-
 
 .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
-    overflow-x: auto;
+    overflow-x: hidden; /* Hide extra cards */
     scroll-snap-type: x mandatory;
     gap: 16px;
     border-radius: 8px;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    padding-right: 60px; /* Add padding to account for the scroll button */
 }
 
 .carousel::-webkit-scrollbar {
@@ -132,15 +122,69 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+    #left {
+        left: 20px;
+    }
+
+    #right {
+        right: 36px; /* Adjusted for better placement */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 3) - 9px);
+    }
+
+    #left {
+        left: 20px;
+    }
+
+    #right {
+        right: 20px; /* Adjusted for better placement */
     }
 }
 
 @media screen and (max-width: 600px) {
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .wrapper .carousel {
         grid-auto-columns: 100%;
+    }
+
+    #left, #right {
+        display: none;
+    }
+
+    .carousel .card {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .carousel .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .carousel .card span {
+        font-size: 1rem;
     }
 }
 
@@ -180,25 +224,28 @@
         width: 30px;
     }
 }
-#testnames{
+
+#testnames {
     color: black;
     font-weight: 300;
     font-size: x-large;
-    font-family: poppins;
+    font-family: Poppins, sans-serif;
 }
+
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the track */
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the thumb */
-    border-radius: 6px; /* Rounded corners */
+    background: #888;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #431a1a; /* Color of the thumb on hover */
+    background: #431a1a;
 }
+
