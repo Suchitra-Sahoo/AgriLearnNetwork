@@ -98,13 +98,18 @@ section {
  .header.sticky
  {
   opacity: 0.9;
-  padding: 2rem 10% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
+  padding: 2rem 4% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
   background-color: rgb(4, 125, 18);
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
  }
 
+ .navbar{
+  display:flex
+  
+ }
+
  nav{
-  margin-right: 30px;
+  margin-right: 130px;
   display: flex;
 }
 
@@ -120,7 +125,7 @@ section {
   font-size: 1.5rem;
   /* left: 118px; */
   color: var(--txt-color);
-  margin-right: 4rem;
+  /* margin-right: 4rem; */
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -272,7 +277,7 @@ section {
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 26px;
+  top: 35px;
   right: 30px;
   display: flex;
   align-items: center;
