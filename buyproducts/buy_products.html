@@ -616,7 +616,7 @@
       });
     </script>
     <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       (function (d, t) {
         var v = d.createElement(t),
           s = d.getElementsByTagName(t)[0];
@@ -631,8 +631,37 @@
         v.type = "text/javascript";
         s.parentNode.insertBefore(v, s);
       })(document, "script");
-    </script>
-
+    </script> -->
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with AgriBoT",
+      "botConversationDescription": "An Amazing BoT",
+      "botId": "7007f976-116d-48b1-84e5-5160c50e1e16",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "7007f976-116d-48b1-84e5-5160c50e1e16",
+      "webhookId": "42911589-0d61-4608-976e-11a457c01bbc",
+      "lazySocket": true,
+      "themeName": "eggplant",
+      "botName": "AgriBoT",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/72487fb5-1afa-484b-9067-ad230715cbea/v12752/style.css",
+      "frontendVersion": "v0",
+      "useSessionStorage": true,
+      "enableConversationDeletion": false,
+      "enableTranscriptDownload": false,
+      "showConversationsButton": false,
+      "theme": "eggplant",
+      "themeColor": "#b6974a",
+      "allowedOrigins": []
+  });
+  window.botpressWebChat.onEvent(
+        function () {
+            window.botpressWebChat.sendEvent({ type: "show" });
+        },
+        ["LIFECYCLE.LOADED"]
+    );
+</script>
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
