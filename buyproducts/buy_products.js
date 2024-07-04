@@ -77,18 +77,27 @@ document.addEventListener("DOMContentLoaded", function () {
             existingItem.quantity += 1;
         } else {
             cartItems.push({ product, image,price, quantity: 1 });
-            dyna.innerHTML-=Number(dyna.innerHTML);
+            dyna.innerHTML=Number(dyna.innerHTML)+Number(price);
+            // updatePrice();
         }
+        updateCart();
+        // updatePrice();
     }
     function updatePrice(){
-        cartItems.forEach(item=>{
-          const itemPrice= Number(item.price);
-          console.log(itemPrice);
-          console.log(dyna.innerHTML);
-          dyna.innerHTML = Number(dyna.innerHTML)+itemPrice;
-          console.log(dyna.innerHTML);
-        })
-    }
+        // cartItems.forEach(item=>{
+        //   const itemPrice= Number(item.price);
+        //   console.log(itemPrice);
+        //   console.log(dyna.innerHTML);
+        //   dyna.innerHTML = Number(dyna.innerHTML)+itemPrice;
+        //   console.log(dyna.innerHTML);
+        let totalPrice = 0;
+  cartItems.forEach(item => {
+    totalPrice += item.price * item.quantity;
+  });
+  dyna.innerHTML = totalPrice;
+  console.log(dyna.innerHTML);
+        }
+      
     function updateCart() {
         cartItemsList.innerHTML = '';
         cartItems.forEach(item => {
@@ -115,13 +124,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 const itemSub= Number(item.price);
                 dyna.innerHTML = Number(dyna.innerHTML)-itemSub;
-                updateCart();
+                 updateCart();
+                updatePrice();
             });
             plusButton.addEventListener('click', () => {
                 item.quantity += 1;
                 const itemAdd= Number(item.price);
                 dyna.innerHTML = Number(dyna.innerHTML)+itemAdd;
+
                 updateCart();
+                updatePrice();
             });
         });
 
