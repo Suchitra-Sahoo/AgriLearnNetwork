@@ -172,6 +172,7 @@ section {
   padding: 2rem;
   margin-bottom: 0.5rem;
   font-size: 25px;
+  
 }
 
 .faq_container {
@@ -242,6 +243,7 @@ section {
   background-color: #f8f9fa;
   border: 1px solid #dee2e6;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: color 0.5s ease; 
 }
 
 @media screen and (max-width: 426px) {
@@ -274,7 +276,12 @@ section {
   cursor: pointer;
   font-weight: bold;
   background-color: #e0e0e0;
+  transition: color 0.5s ease; 
 }
+
+.faq .accordion-header h3:hover {
+  color: green;
+} 
 
 .faq .accordion-header:hover {
   background-color: #d0d0d0;
@@ -284,6 +291,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color 0.5s ease; 
 }
 
 .faq .accordion-header h3 {
@@ -292,18 +300,30 @@ section {
   align-content: center;
   color: #000;
   margin: 0;
+  transition: color 0.5s ease; 
+}
+
+.faq .accordion.active .accordion-header h3 {
+  color: green; /* Change text color to white when active */
 }
 
 .faq .accordion-body {
-  display: none;
-  padding: 1rem;
-  line-height: 1.5;
-  font-size: 1.6rem;
-  color: #000;
-  background-color: #fff;
-  transition: color 0.3s ease;
-}
+    display: none;
+    padding: 1rem;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    color: #000;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.5s ease;
+  }
 
+.faq .accordion.active .accordion-body {
+  max-height: 1000px; /* Adjust the value based on your content */
+  opacity: 1;
+  transition: max-height 0.5s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.5s ease;
+}
 .faq .accordion-header img {
   transition: transform 0.3s ease;
 }
@@ -311,15 +331,6 @@ section {
 .faq .accordion.active .accordion-header img {
   transform: rotate(360deg);
 }
-
-.faq .accordion.active .accordion-body {
-  display: block;
-}
-
-.faq .accordion-body:hover {
-  color: #1a8342; /* Change text color on hover */
-}
-
 
 .table {
   width: 100%;
