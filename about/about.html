@@ -185,7 +185,7 @@
         </div>
     </footer>
     <div id="backtoTop">
-        <a href="./about.html"><i class="bx bx-up-arrow-alt" id="go-to-top" title="Go to top"></i></a>
+        <a href="#about"><i class="bx bx-up-arrow-alt" id="go-to-top" title="Go to top"></i></a>
     </div>
     <div class="cursor"></div>
     <div class="cursor2"></div>
@@ -199,14 +199,22 @@
         window.addEventListener('scroll', function () {
             var scrollPosition = window.scrollY;
             var backToTopButton = document.getElementById('backtoTop');
-
-            if (scrollPosition > 300) { // Adjust this value as needed to show the button at the desired scroll position
-                backToTopButton.style.display = 'block';
+        
+            if (scrollPosition > 300) { 
+                backToTopButton.style.display = 'flex'; 
             } else {
                 backToTopButton.style.display = 'none';
             }
         });
-
+        
+        // Scroll to top when the button is clicked
+        document.getElementById('backtoTop').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
         // theme toggle control
         document.addEventListener("DOMContentLoaded", function () {
             const themeToggle = document.querySelector(".theme-toggle");
