@@ -4,11 +4,12 @@
   height: 50px;
   border: 1px solid var(--main-color);
   border-radius: 50%;
+  left: 0;
+  top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
+  transition: 0.1s;
   z-index: 1000;
-  background-color: transparent;
-  opacity: 1;
 }
 
 .cursor2 {
@@ -17,10 +18,12 @@
   height: 15px;
   background-color: #ffffff;
   border-radius: 50%;
+  left: 0;
+  top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
+  transition: 0.15s;
   z-index: 1000;
-  opacity: 1;
 }
 
 .content:hover ~ .cursor {
