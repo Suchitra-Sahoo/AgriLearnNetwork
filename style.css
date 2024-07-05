@@ -1073,7 +1073,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-content {
-  background-color: #ffffff;
+    background: linear-gradient(to right, rgb(173, 186, 73),  rgb(80, 135, 34) ,rgb(22, 152, 96));
   /* margin: 10% auto; */
   padding: 50px;
   border-radius: 10px;
@@ -1098,7 +1098,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
-  color:black;
+  color:rgb(15, 45, 32);
   font-size: 24px;
 }
 /* .modal-content label {
@@ -1135,7 +1135,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #bbb;
+    color: #2d2d2d;
 }
 .form-group textarea {
   height: 80px;
@@ -1144,7 +1144,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-content button[type="submit"] {
   background: linear-gradient(to right, #8a2be2, #f163ed);
-  background: linear-gradient(to right, rgb(75, 179, 75), rgb(42, 228, 42));
+  background: linear-gradient(to right, rgb(58, 101, 32), rgb(20, 65, 41));
     color: white;
     border: none;
     border-radius: 5px;
@@ -1156,7 +1156,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-content button[type="submit"]:hover {
   background: linear-gradient(to right, #f55ef0, #8a2be2);
-  background: linear-gradient(to right, rgb(63, 220, 63), rgb(20, 124, 20));
+  background: linear-gradient(to right, rgb(187, 233, 126), rgb(20, 124, 20));
 }
 
 
@@ -1171,6 +1171,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
   cursor: pointer;
 }
+
 /* rating stars */
 .rating {
   display: flex;
@@ -1193,6 +1194,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .rating__star.active {
     color: #ffc107;
 }
+
+.text-green-500 {
+    margin-top: 20px; 
+  }
 .footer {
   display: flex;
   justify-content: space-between;
