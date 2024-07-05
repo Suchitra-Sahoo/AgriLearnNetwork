@@ -590,7 +590,7 @@
       </div>
     </footer>
     <div id="backtoTop">
-      <a href="./buy_products.html"
+      <a href="#buy_products"
         ><i class="bx bx-up-arrow-alt" id="go-to-top" title="Go to top"></i
       ></a>
     </div>
@@ -634,10 +634,25 @@
     </script>
 
     <script type="text/javascript">
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 10);
-      });
+      window.addEventListener('scroll', function () {
+        var scrollPosition = window.scrollY;
+        var backToTopButton = document.getElementById('backtoTop');
+    
+        if (scrollPosition > 300) { 
+            backToTopButton.style.display = 'flex'; 
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+    
+    // Scroll to top when the button is clicked
+    document.getElementById('backtoTop').addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
     </script>
     <script src="./buy_products.js"></script>
   </body>
