@@ -1906,14 +1906,14 @@ font-size: 36px;
 
 .icon-bar a {
   width: 19rem;
+  color: #fff !important;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1rem;
   font-size: 1.7rem;
+  padding: 1rem;
   transition: all 0.5s linear;
   transform: translateX(-14.5rem);
-  color: #fff !important;
   text-shadow: 2px 2px 4px #B19222;
 }
 
@@ -1932,66 +1932,78 @@ font-size: 36px;
     transform: scale(0.6);
   }
   to {
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
-}
-
-.icon-bar .discord {
-  background: #7289da;
-}
-
-.icon-bar .discord i {
-  padding-right: 2.5rem;
-  padding-left: 4rem;
-  width: 1rem;
 }
 
 .icon-bar .instagram {
   background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
-  padding-right: 1rem;
-  padding-left: 5rem;
 }
 
 .icon-bar .twitter {
   background: #4267B2;
-  padding-right: 0.7rem;
-  padding-left: 5rem;
 }
 
 .icon-bar .linkedIn {
   background: #0a66c2;
-  padding-right: 0.9rem;
-  padding-left: 5rem;
 }
 
 .icon-bar .facebook {
   background: #4267B2;
-  padding-right: 0.8rem;
-  padding-left: 5rem;
 }
 
 @media (max-width: 480px) {
-  .icon-bar a {
-    width: 12rem;
+.icon-bar a {
+    width: 13rem;
     font-size: 1.2rem;
     transform: translateX(-9.5rem);
+}
+
+.icon-bar a .fab {
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    text-shadow: 2px 2px 4px #B19222;
+    animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+.icon-bar a:hover {
+  transform: translateX(0);
+}
+
+@keyframes letszoom {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+}
+
+@media (max-width: 768px) {
+  .icon-bar a {
+    width: 15rem;
+    font-size: 1.5rem;
+    transform: translateX(-11.5rem);
   }
 
   .icon-bar a .fab {
     font-size: 2rem;
-    padding-left: 0.5rem;
+    padding-left: 1.2rem;
+    text-shadow: 2px 2px 4px #B19222;
+    animation: letszoom 3s linear alternate-reverse infinite;
   }
 
-  .icon-bar .discord i {
-    padding-right: 1.5rem;
-    padding-left: 0.5rem;
+  .icon-bar a:hover {
+    transform: translateX(0);
   }
 
-  .icon-bar .instagram,
-  .icon-bar .twitter,
-  .icon-bar .linkedIn,
-  .icon-bar .facebook {
-    padding-left: 2.5rem;
-    padding-right: 0.5rem;
+  @keyframes letszoom {
+    from {
+      transform: scale(0.6);
+    }
+    to {
+      transform: scale(0.9);
+    }
   }
 }
