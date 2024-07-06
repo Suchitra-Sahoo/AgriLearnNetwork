@@ -81,17 +81,9 @@ section {
   font-size: 2vmax;
   color: var(--txt-color);
   font-weight: 600;
-  /* margin-right: 40px; */
+  margin-right: 0;
   cursor: default;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-.logo > h3{
-  margin-right: 50px;
-}
-
 .navbar a {
   font-size: 1.5vmax;
 
@@ -108,8 +100,7 @@ section {
    top: 0;
    left: 0;
    width:100%;
-   padding: 2rem 2%;
-   padding-right: 120px;
+   padding:2rem 9%;
    background-color: var(--bg-color);
    display: flex;
    justify-content: space-between;
