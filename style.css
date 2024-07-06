@@ -1870,6 +1870,47 @@ font-size: 36px;
     transition: all 0.3s ease-out;
 }
 
+/* Testimonials Section Hover Effect */
+.card {
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Clip the child elements inside the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
+}
+
+.card:hover {
+  transform: scale(1.05) rotate(1deg); /* Slight rotation */
+  background-color: #f9f9f9; /* Lighter gray background color on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  color: #333; /* Darker text color */
+}
+
+.card .img img {
+  border-radius: 10px 10px 0 0; /* Rounded corners for the image at the top */
+  transition: transform 0.3s ease;
+}
+
+.card:hover .img img {
+  transform: scale(1.1); /* Slightly zoom in the image on hover */
+}
+
+.card h2, .card span {
+  transition: color 0.3s ease;
+}
+
+.card:hover h2 {
+  color: #007BFF; /* Change heading color on hover */
+}
+
+.card:hover span {
+  color: #555; /* Change text color on hover */
+}
+
+.card.shrink {
+  transform: scale(0.9); /* Shrink effect for non-hovered cards */
+  opacity: 0.7; /* Slight transparency to make it less prominent */
+}
+
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
