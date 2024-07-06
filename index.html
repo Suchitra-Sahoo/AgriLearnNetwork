@@ -284,6 +284,27 @@
     <h1 id="testi">OUR TESTIMONIALS</h1>
     <div class="wrapper">
       <script src="./testimonials/testimonials.js" defer></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const cards = document.querySelectorAll('.card');
+      
+          cards.forEach(card => {
+            card.addEventListener('mouseover', () => {
+              cards.forEach(otherCard => {
+                if (otherCard !== card) {
+                  otherCard.classList.add('shrink'); 
+                }
+              });
+            });
+      
+            card.addEventListener('mouseout', () => {
+              cards.forEach(otherCard => {
+                otherCard.classList.remove('shrink');
+              });
+            });
+          });
+        });
+      </script>
       <i id="left" class="fa-solid fa-angle-left"></i>
       
       <ul class="carousel">
