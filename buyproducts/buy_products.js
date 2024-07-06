@@ -293,3 +293,95 @@ const typed=new Typed('.multiple-text',{
     loop:true
 
 });
+
+$("#searchInput").focus(function () {
+  
+  $("#searchInput").css({
+    "display": "inline",
+    "width": "40%",
+    "border": "1px solid #40585d",
+    "opacity": "1",
+    "padding": "8px 20px 8px 20px",
+    "background-image": "none",
+    "box-shadow": "0 0 1px black"
+  });
+  $("#submitsearch").css("display", "inline");
+ 
+  $("#searchInput").prop("placeholder", "");
+});
+
+
+const button = document.querySelector(".submitsearch");
+
+button.addEventListener("mousedown", () => button.classList.add("clicked"));
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('products.json')
+    .then(response => response.json())
+    .then(data => {
+      const productList = document.getElementById('product-list');
+
+      data.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.classList.add('product');
+
+        // Left section with image
+        const leftDiv = document.createElement('div');
+        leftDiv.classList.add('left');
+        const img = document.createElement('img');
+        img.src = product.image;
+        img.alt = product.name;
+        leftDiv.appendChild(img);
+
+        // Right section with product details
+        const rightDiv = document.createElement('div');
+        rightDiv.classList.add('right');
+        const topDiv = document.createElement('div');
+        topDiv.classList.add('top');
+        const productName = document.createElement('h1');
+        productName.textContent = product.name;
+        const productPrice = document.createElement('p');
+        productPrice.innerHTML = `<span class="price">Rs. ${product.price}</span> /month`;
+        topDiv.appendChild(productName);
+        topDiv.appendChild(productPrice);
+
+        // Buttons
+        const buttonsDiv = document.createElement('div');
+        buttonsDiv.classList.add('buttons');
+        const addToCartBtn = document.createElement('button');
+        addToCartBtn.classList.add('btn', 'btn-primary');
+        addToCartBtn.textContent = 'Add to Cart';
+        const wishlistBtn = document.createElement('button');
+        wishlistBtn.classList.add('btn', 'btn-ghost');
+        wishlistBtn.innerHTML = '<i class="far fa-heart"></i>';
+        buttonsDiv.appendChild(addToCartBtn);
+        buttonsDiv.appendChild(wishlistBtn);
+
+        // Highlights
+        const infoDiv = document.createElement('div');
+        infoDiv.classList.add('info');
+        const highlightsDiv = document.createElement('div');
+        highlightsDiv.textContent = 'HIGHLIGHTS';
+        const highlightsList = document.createElement('ul');
+        product.highlights.forEach(highlight => {
+          const highlightItem = document.createElement('li');
+          highlightItem.textContent = highlight;
+          highlightsList.appendChild(highlightItem);
+        });
+        infoDiv.appendChild(highlightsDiv);
+        infoDiv.appendChild(highlightsList);
+
+        rightDiv.appendChild(topDiv);
+        rightDiv.appendChild(buttonsDiv);
+        rightDiv.appendChild(infoDiv);
+
+        productDiv.appendChild(leftDiv);
+        productDiv.appendChild(rightDiv);
+
+        productList.appendChild(productDiv);
+      });
+    })
+    .catch(error => console.error('Error fetching products:', error));
+});
+

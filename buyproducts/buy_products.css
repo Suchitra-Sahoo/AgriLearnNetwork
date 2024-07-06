@@ -11,6 +11,71 @@
   font-family: "Playfair Display", serif;
 }
 
+input:focus {
+  outline-offset: -2px;
+}
+
+.search {
+  position:relative;
+  top: 50%;
+  left: 50%;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  
+  margin-bottom: 0px;
+  margin-top: 12em; 
+  margin-left: -19em; /*set to a negative number 1/2 of your width*/
+}
+
+#submitsearch{
+border: 1px solid rgb(138, 134, 134);
+/* margin-left: -82px; */
+padding: 5px;
+border-radius: 19px;
+cursor: pointer;
+padding-left: 10px;
+padding-right: 8px; 
+padding-top: 4px;
+
+display: none;
+box-shadow: 0 0 1px black;     
+margin-right:110px;
+}
+
+#searchInput {
+    width: 25%;
+    height:35px;
+
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: white;
+    background-image:url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-24.png');
+
+    background-position: 10px 7px;
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 40px;
+    -webkit-transition: width 0.8s ease-in-out;
+    transition: width 0.8s ease-in-out;
+    outline: none;
+    opacity: 0.9;
+
+  }
+
+  .searchicon{
+    /* text-align: center; */
+    top:50%;
+    margin-top: 8px;
+  }
+  .searchicon i {
+    font-size: 17px;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+  }
+
+
 /* Customizing the title */
 .swal-title {
   color: #000000 !important; /* Change title color */
@@ -46,6 +111,8 @@ html {
 body {
   background-image: url('https://c1.wallpaperflare.com/preview/456/986/357/pumpkin-vegetable-garden-plant-blurred-background.jpg');
   background-size:contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--txt-color);
 }
 body::-webkit-scrollbar {
@@ -181,6 +248,7 @@ section {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
     background-color: rgb(137, 137, 18);
     border-radius: 50%;
     width: 60px;
@@ -255,8 +323,9 @@ section {
   position: fixed;
     bottom: 200px;
     right: 10px;
-    border: 1px solid #ddd;
-    background-color: #46785f;
+    border: 1px solid #28a745;
+    background-color: #01280e;
+    border-radius: 7px;
     padding: 12px;
     border-radius: 4px;
     width: 300px;
@@ -264,11 +333,22 @@ section {
     max-height: 70%;
     overflow-y: auto;
     height: 150px;
+    box-shadow: 0 1px 1px 2px #121212be;
     /* Initial height */
     border-width: 4px;
     font-size: 13px;
 }
 
+.checkout{
+ 
+  padding: 5px;
+  background-color: #f1c40f;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+  color:#01280e;
+  margin: 3px auto;
+}
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
@@ -960,10 +1040,21 @@ font-size: 36px;
     padding: 20px;
     justify-content: space-around;
     position:relative;
-    top:70px;
+    top:20px;
+}
+.price{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 120px;
+  margin: 5px auto;
+  text-align: center;
+  background-color: #01280e;
+  padding: 5px 10px;
 }
 
 .product {
+  background-color: rgba(65, 103, 0, 0.526);
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 10px;
@@ -991,6 +1082,7 @@ font-size: 36px;
 /*ADD TO CART CSS*/
 
 .add-to-cart {
+    margin-top: 5px;
     background-color: #28a745;
     color: white;
     border: none;
@@ -998,6 +1090,30 @@ font-size: 36px;
     cursor: pointer;
     border-radius: 5px;
 }
+.highlights {
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: #01280e;
+  color: white;
+  text-align: justify;
+  font-size: 14px;
+  z-index: 1000000;
+  max-width: 150px;
+  padding: 20px;
+  padding-left: 30px;
+  margin-left: 50%;
+  box-shadow: 0 0 1px 2px rgb(14, 14, 14);
+}
+.heart{
+  background-color: transparent;
+  color:white;
+  size:15px;
+}
+.highlights:hover {
+  opacity: 1;
+ 
+}
+
 
 .add-to-cart:hover {
     background-color: #218838;
@@ -1062,3 +1178,4 @@ p{
 h3{
     font-size: large;
 }
+
