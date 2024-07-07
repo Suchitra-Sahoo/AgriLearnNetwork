@@ -273,11 +273,11 @@ section {
   padding: 1rem;
   cursor: pointer;
   font-weight: bold;
-  background-color: #e0e0e0;
+  background-color: #006a0969;
 }
 
 .faq .accordion-header:hover {
-  background-color: #d0d0d0;
+  background-color: #006a0969;
 }
 
 .faq .accordion-header span {
@@ -300,7 +300,7 @@ section {
   line-height: 1.5;
   font-size: 1.6rem;
   color: #000;
-  background-color: #fff;
+  background-color: #006a091e;
   transition: color 0.3s ease;
 }
 
