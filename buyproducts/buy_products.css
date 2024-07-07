@@ -1027,6 +1027,7 @@ font-size: 36px;
 }
 
 .product {
+    /* display: flex; */
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 10px;

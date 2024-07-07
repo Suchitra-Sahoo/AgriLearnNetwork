@@ -336,7 +336,7 @@ console.log((componentName.toUpperCase().indexOf(filter)));
 // If the component name contains the filter value, show the component
 if(componentName.toUpperCase().indexOf(filter) > -1){
     console.log(`Showing card ${i}: ${componentName}`);
-    component.style.display = "flex";
+    component.style.display = "inline";
 }
 // If the component name does not contain the filter value, hide the component
 else{
