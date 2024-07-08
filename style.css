@@ -1874,12 +1874,11 @@ font-size: 36px;
 .card {
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
   border-radius: 10px; /* Rounded corners */
-  overflow: hidden; /* Clip the child elements inside the card */
+  clip-path: inset(0 round 10px); /* Clip the corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
 }
 
 .card:hover {
-  transform: scale(1.05) rotate(1deg); /* Slight rotation */
   background-color: #f9f9f9; /* Lighter gray background color on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
   color: #333; /* Darker text color */
