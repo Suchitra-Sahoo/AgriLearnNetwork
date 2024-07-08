@@ -293,3 +293,56 @@ const typed=new Typed('.multiple-text',{
     loop:true
 
 });
+
+
+// SCRIPT FOR THE SEARCH BAR BUTTON
+
+
+const searchinput =document.getAnimations('searchbar');
+searchinput.addEventListener('input', searchProducts);
+function searchProducts(){
+// Select all elements with the class 'fcard' and convert the NodeList to an array
+let box = [...document.querySelectorAll(".product")];
+
+// Get the input element by its ID 'input'
+let val = document.getElementById('searchbar');
+
+// Retrieve the value from the input, convert it to uppercase, and trim any extra whitespace
+let filter = val.value.toUpperCase().trim();
+
+// Log the filtered search value for debugging purposes
+console.log(filter);
+
+// Log the array of elements with class 'fcard' for debugging purposes
+console.log(box);
+
+// Loop through each element in the 'box' array
+for(let i = 0; i < box.length; i++){
+// Get the current element in the loop
+let component = box[i];
+
+// Select the <h2> element within the current component
+let h3 = component.querySelector('h3');
+
+// Get the text content of the <h2> element
+let componentName = h3.textContent || h3.innerText;
+
+// Log the component name for debugging purposes
+console.log(componentName);
+
+// Check if the component name contains the filter value
+console.log((componentName.toUpperCase().indexOf(filter)));
+
+// If the component name contains the filter value, show the component
+if(componentName.toUpperCase().indexOf(filter) > -1){
+    console.log(`Showing card ${i}: ${componentName}`);
+    component.style.display = "inline";
+}
+// If the component name does not contain the filter value, hide the component
+else{
+    console.log(`Hiding card ${i}: ${componentName}`);
+    component.style.display = "none";
+}
+}
+}
+

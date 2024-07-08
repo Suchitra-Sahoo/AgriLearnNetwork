@@ -172,6 +172,69 @@ section {
   display: none;
 }
 
+/* styling the search bar */
+.searchbar 
+{
+  width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    /* transition: border-color 0.3s ease, box-shadow 0.3s ease; */
+    /* z-index: -1; */
+    
+    /* position: absolute;
+    top: 150px;
+    left: 550px; */
+}
+.productsearch
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  top: 200px;
+  /* background-color: green; */
+}
+.glass{
+  background-color: #28a745;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50px;
+  /* position: relative; */
+  position: absolute;
+  left: 85%;
+  padding: 9px 15px;
+  font-size: large;
+}
+.glass:hover
+{
+  color: red;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* cart button  */
 .cart {
     position: fixed;
@@ -964,6 +1027,7 @@ font-size: 36px;
 }
 
 .product {
+    /* display: flex; */
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 10px;
