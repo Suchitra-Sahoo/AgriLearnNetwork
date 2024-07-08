@@ -190,6 +190,20 @@ section {
     z-index: 1000;
 }
 
+.cart-image {
+  position: absolute; 
+  top: 15px; 
+  width: 40px; 
+  height: auto;
+  border-radius: 100px;
+  transition: transform 0.1s;
+}
+
+.cart:hover .cart-image {
+  transform: scale(1.05); 
+  border-radius: 100px;
+}
+
 .mini-cart {
   display: none;
 }
