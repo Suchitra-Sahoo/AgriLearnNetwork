@@ -84,31 +84,55 @@ section {
   margin-right: 2rem;
 }
 
-.logo {
-  font-size: 2.3rem;
-  color: var(--txt-color);
-  font-weight: 600;
-  cursor: default;
+nav{
+  margin-right: 30px;
+  display: flex;
 }
-.navbar a {
-  font-size: 1.5rem;
-  color: var(--txt-color);
-  margin-right: 3.4rem;
-  transition: 0.3s;
+
+ .logo
+ {
+    font-size: 2.5rem;
+    color: var(--txt-color);
+    font-weight: 600;
+    cursor: default;
  }
- .navbar a:hover {
-  color: var(--main-color);
+ .navbar a {
+  /* position: relative; */
+  font-size: 1.5rem;
+  /* left: 118px; */
+  color: var(--txt-color);
+  margin-right: 4rem;
+  transition: 0.3s;
 }
+.navbar a:hover {
+  color: var(--main-color);
+  animation: blink 1s infinite;
+  transform: scale(1.1);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
+}
+
+@keyframes blink {
+  0%, 100% {
+    color: var(--main-color);
+  }
+  50% {
+    color: transparent;
+  }
+}
+
 .navbar a:not(.active):hover {
   color: var(--main-color);
-}.navbar a.active,
+}
+
+
+.navbar a.active,
 .navbar a.active:hover {
   color: var(--main-color);
 }
   .navbar.active {
   display: block;
 }
-.navbar a {
+  .navbar a {
     position: relative;
     font-size: 1.5rem;
     color: var(--txt-color);
@@ -140,6 +164,7 @@ section {
   .navbar a:hover::after {
     width: 100%;
   }
+
 .logoImg {
   width: 80px;
   height: auto; /* Use auto to maintain aspect ratio */
