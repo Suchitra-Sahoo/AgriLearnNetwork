@@ -149,8 +149,10 @@ section {
   font-weight: 600;
   transition: 0.5s ease;
   position: fixed;
-  margin-top: -5px;
+  margin-top: -10px;
   margin-left:auto;
+  cursor: pointer;
+  transition: 5s;
 }
 .login-btn:hover {
   box-shadow: none;
