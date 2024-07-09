@@ -24,7 +24,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-
+    <link rel="stylesheet" href="./cursor/style.css">
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
@@ -59,7 +59,7 @@
             width: 67%;
             margin: 0px auto;
             padding: 20px;
-            margin-bottom: 0px;
+            margin-bottom: 29px;
             background: linear-gradient(135deg, rgb(249, 249, 187), rgb(75, 186, 75));
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -254,7 +254,13 @@
       <script src="script.js"></script>
       <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
   
-     
+      <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove",function(e){
+          cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+      </script>
 
 </body>
 </html>

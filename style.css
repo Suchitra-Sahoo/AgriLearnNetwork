@@ -112,12 +112,12 @@ section {
  {
   opacity: 0.9;
   padding: 2rem 10% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
-  background-color: rgb(4, 125, 18);
+  background-color: --main-color;
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
  }
 
  nav{
-  margin-right: 30px;
+  margin-right: 10px;
   display: flex;
 }
  .logo
@@ -163,6 +163,39 @@ section {
   .navbar.active {
   display: block;
 }
+  .navbar a {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--txt-color);
+    margin-right: 3.1rem;
+    transition: 0.3s;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Change to the desired color */
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+  }
+
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Change to the desired color */
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+    transition: width 0.5s;
+  }
+
+  .navbar a:hover::after {
+    width: 100%;
+  }
+
 .logoImg {
   width: 80px;
   height: auto; /* Use auto to maintain aspect ratio */
@@ -1758,7 +1791,7 @@ font-size: 36px;
   font-weight: 600;
   transition: 0.5s ease;
   position: fixed;
-  margin-top: -5px;
+  margin-top: -10px;
   margin-left:auto;
   cursor: pointer;
   transition: 5s;
@@ -2007,6 +2040,7 @@ font-size: 36px;
     }
   }
 }
+<<<<<<< HEAD
 .socialIcons #mail:hover{
 background: #bd4b39;
 }
@@ -2031,3 +2065,5 @@ background: #bd4b39;
 #fb:hover i{
   color: white;
 }
+=======
+>>>>>>> c6fe5e41ff57fac24aaf526610f6ee0bd6344504
