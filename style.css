@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins";
 }
 
 /* Customizing the title */
@@ -129,7 +129,7 @@ section {
  }
  .navbar a {
   /* position: relative; */
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   /* left: 118px; */
   color: var(--txt-color);
   margin-right: 3.1rem;
@@ -1785,7 +1785,7 @@ font-size: 36px;
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
