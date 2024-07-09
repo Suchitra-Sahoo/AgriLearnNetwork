@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Poppins";
+  font-family: "Playfair Display", serif;
 }
 
 /* Customizing the title */
@@ -81,17 +81,9 @@ section {
   font-size: 2vmax;
   color: var(--txt-color);
   font-weight: 600;
-  margin-right: 40px;
+  margin-right: 0;
   cursor: default;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-.logo > h3{
-  margin-right: 50px;
-}
-
 .navbar a {
   font-size: 1.5vmax;
 

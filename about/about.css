@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
     padding: 0;
@@ -9,7 +8,7 @@
     font-weight: 400;
     outline: none;
     list-style-type: none;
-    font-family: "Poppins";
+    font-family: "Playfair Display", serif;
 }
 
 :root {
