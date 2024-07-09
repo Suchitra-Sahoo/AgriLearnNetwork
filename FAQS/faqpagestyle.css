@@ -566,6 +566,39 @@ font-size: 36px;
       color: var(--main-color);
       font-size: 2.5vmax;
     }  
+      .navbar a {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--txt-color);
+    margin-right: 3.1rem;
+    transition: 0.3s;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Change to the desired color */
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+  }
+
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Change to the desired color */
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+    transition: width 0.5s;
+  }
+
+  .navbar a:hover::after {
+    width: 100%;
+  }
+
    .slide_viewer {
     display: none; 
    } 
