@@ -4,6 +4,13 @@ const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".wrapper i");
 const carouselChildrens = [...carousel.children];
 let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+// Add event listeners for the arrow buttons to scroll the carousel left and right
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const direction = btn.dataset.direction; // Get direction from data-direction attribute
+        carousel.scrollLeft += direction === "left" ? -firstCardWidth : firstCardWidth;
+    });
+});
 // Get the number of cards that can fit in the carousel at once
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 // Insert copies of the last few cards to beginning of carousel for infinite scrolling

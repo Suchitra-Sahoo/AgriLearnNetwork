@@ -2,10 +2,11 @@
 
 .wrapper {
     padding-top: 80px;
-    padding-left: 300px;
     max-width: 1300px;
     width: 100%;
+    margin: 0 auto;
     position: relative;
+    overflow: hidden; 
 }
 
 .wrapper i {
@@ -29,25 +30,28 @@
 }
 
 .wrapper i:first-child {
-    left: -22px;
-    /* background-image: url("https://cdn.icon-icons.com/icons2/1238/PNG/512/scrollarrowtoleft_83879.png");
-} */
-}
-#left{
-    left: 280px;
-    background-image: url(https://cdn.icon-icons.com/icons2/1238/PNG/512/scrollarrowtoleft_83879.png);
-    color: black;
-   /* background-size: 50%; */
-}
-#right{
-    
-    top: 200px;
-    background-image: url(https://cdn.icon-icons.com/icons2/1238/PNG/512/scrollarrowtoright1_83720.png);
-    color: black;
+    left: 50px; 
 }
 
 .wrapper i:last-child {
-    right: -22px;
+    right: 50px; 
+}
+#left {
+    left: 4px; 
+    top: 60%; 
+    transform: translateY(-50%);
+    background-image: url(https://cdn.icon-icons.com/icons2/1238/PNG/512/scrollarrowtoleft_83879.png);
+    color: black;
+    z-index: 1; 
+}
+
+#right {
+    right: 4px; 
+    top: 60%; 
+    transform: translateY(-50%);
+    background-image: url(https://cdn.icon-icons.com/icons2/1238/PNG/512/scrollarrowtoright1_83720.png);
+    color: black;
+    z-index: 1; 
 }
 
 
@@ -132,21 +136,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 900px) {
-    .wrapper .carousel {
-        grid-auto-columns: calc((100% / 2) - 9px);
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .wrapper .carousel {
-        grid-auto-columns: 100%;
-    }
-}
 
 #testi {
     font-family: "Poppins", sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     color: yellowgreen;
     text-align: center;
     margin: 4rem 0;
@@ -164,41 +157,62 @@
 }
 
 #testi::before {
-    left: 20%;
+    left: 10%;
 }
 
 #testi::after {
-    right: 20%;
+    right: 10%;
 }
 
-@media (max-width: 600px) {
-    #testi {
-        font-size: 2rem;
-    }
-
-    #testi::before, #testi::after {
-        width: 30px;
-    }
-}
 #testnames{
     color: black;
     font-weight: 300;
     font-size: x-large;
     font-family: poppins;
 }
-::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-}
+@media (max-width: 768px) {
+    .wrapper {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
 
-::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the track */
-}
+    .wrapper .carousel {
+        grid-auto-columns: 98%;
+    }
 
-::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the thumb */
-    border-radius: 6px; /* Rounded corners */
-}
+    #left {
+        left: 0;
+        top:200px;
+    }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #431a1a; /* Color of the thumb on hover */
+    #right {
+        right: 0;
+        top:200px;
+    }
+
+    #testi {
+        font-size: 3rem;
+    }
+
+    #testi::before, #testi::after {
+        width: 30px;
+    }
+
+    .carousel .card span {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
 }
+/* testnames */ 
+  @media (max-width: 992px) {
+    #testnames {
+      font-size: 1.5rem; 
+    }
+  }
+  .legal-page a {
+    text-decoration: none;
+    color: white;
+  }
+  .legal-page a:hover {
+    color: rgb(192, 223, 100);;
+  }
