@@ -129,6 +129,39 @@ nav{
   transform: scale(1.1);
   text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
 }
+  .navbar a {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--txt-color);
+    margin-right: 3.1rem;
+    transition: 0.3s;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Change to the desired color */
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+  }
+
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Change to the desired color */
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+    transition: width 0.5s;
+  }
+
+  .navbar a:hover::after {
+    width: 100%;
+  }
+
 #menu-icon {
   font-size: 3.6rem;
   color: var(--txt-color);
@@ -150,21 +183,22 @@ nav{
   font-size: 50px;
 }
 
-.login-btn {
-  display: inline-block;
+.login-btn{
+  display:inline-block;
   padding: 1rem 2rem;
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
   position: fixed;
-  margin-top: -5px;
-  margin-left: auto;
-  margin-right: 10px;
+  margin-top: -10px;
+  margin-left:auto;
+  cursor: pointer;
+  transition: 5s;
 }
 .login-btn:hover {
   box-shadow: none;
@@ -896,5 +930,118 @@ font-size: 36px;
   #search-icon:hover {
     transform: rotate(90deg); /* Rotate the icon 90 degrees */
     color: #218838; /* Change icon color on hover */
+  }
+}
+.theme-toggle {
+  position: fixed;
+  top: 26px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.theme-toggle i {
+  font-size: 20px;
+  color: rgb(3, 3, 38);
+}
+
+.theme-toggle .fa-moon {
+  display: none;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-theme .header,
+body.dark-theme .footer,
+body.dark-theme .navbar {
+  background-color: black;
+  color: #ffffff;
+}
+
+
+body.dark-theme .theme-toggle {
+  background-color: rgb(3, 3, 38);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .theme-toggle .fa-sun {
+  display: none;
+}
+
+body.dark-theme .theme-toggle .fa-moon {
+  display: inline;
+  color: #f1c40f;
+}
+
+body.dark-theme a {
+  color: #f1c40f;
+}
+
+body.dark-theme button {
+  background-color: black;
+  color: #ffffff;
+}
+
+body.dark-theme input, body.dark-theme textarea {
+  background-color: black;
+  color: #ffffff;
+  border: 1px solid black;
+}
+
+body.dark-theme .contact #mobileNumber,
+body.dark-theme .contact #fullname,
+body.dark-theme .contact #emailaddress,
+body.dark-theme .contact #emailsubject,
+body.dark-theme .contact #message {
+  background-color: #555555;
+  color: white;
+  border: 1px solid black;
+  box-shadow: 0 4px 6px rgba(100, 100, 100, 0.4);
+}
+
+
+/* body.dark-theme .contact input,
+body.dark-theme .contact textarea {
+  background-color: #555555;
+  color: #000000;
+  border: 1px solid #555555;
+} */
+
+/* .home {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  gap: 2vmax;
+  flex-wrap: wrap;
+  padding-top: 14vmax;
+} */
+/* .home-img img {
+  width: 70%;
+  padding-left: 5vmax
+  animation: floatImage 4s ease-in-out infinite;
+} */
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
