@@ -112,12 +112,12 @@ section {
  {
   opacity: 0.9;
   padding: 2rem 10% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
-  background-color: rgb(4, 125, 18);
+  background-color: --main-color;
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
  }
 
  nav{
-  margin-right: 30px;
+  margin-right: 10px;
   display: flex;
 }
  .logo
