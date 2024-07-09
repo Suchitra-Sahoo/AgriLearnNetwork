@@ -209,3 +209,10 @@
       font-size: 1.5rem; 
     }
   }
+  .legal-page a {
+    text-decoration: none;
+    color: white;
+  }
+  .legal-page a:hover {
+    color: rgb(192, 223, 100);;
+  }

@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins";
 }
 
 :root {
@@ -143,7 +143,7 @@ section {
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
