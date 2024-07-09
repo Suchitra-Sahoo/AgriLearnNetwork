@@ -34,7 +34,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
- 
+    <link rel="stylesheet" href="./cursor/style.css">
      <style>
       .legal-page a {
         text-decoration: none;
@@ -57,6 +57,7 @@
             border-radius: 21px;
             width: 67%;
             margin: 0px auto;
+            margin-bottom: 29px;
             padding: 20px;background: linear-gradient(135deg, rgb(250, 250, 167), rgb(75, 186, 75));
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -242,7 +243,14 @@
   
       <script src="script.js"></script>
       <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-  
+      
+      <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove",function(e){
+          cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+      </script>
      
 
 </body>
