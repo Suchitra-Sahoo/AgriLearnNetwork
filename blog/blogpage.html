@@ -16,9 +16,28 @@
     <link rel="stylesheet" href="../cursor/style.css">
     <link rel="stylesheet" href="../testimonials/testimonials.css">
     <title>AgroBlogs</title>
+    <style>#progressBar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 8px;
+      background-color: #bf9605;
+      z-index: 9999;
+  
+    }</style>
 
   </head>
   <body>
+    <div id="progressBar"></div>
+    <script>
+      window.onscroll = function () {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      };
+    </script>
     <div class="cursor"></div>
     <div class="cursor2"></div>
 
@@ -37,12 +56,8 @@
       <a href="#" class="logo" style="margin-inline-end: auto"
         ><h3>AgriLearnNetwork</h3>
       </a>
-<a>
-        <div class="theme-toggle">
-          <i class="fas fa-sun"></i>
-          <i class="fas fa-moon"></i>
-        </div>
-       </a>
+    
+
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="../index.html" 
@@ -66,6 +81,7 @@
           <button id="log-in-btn" class="login-btn">Login</button>
         </a>
       </nav>
+      
      
     </header>
     

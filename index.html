@@ -50,9 +50,29 @@
         color: rgb(192, 223, 100);;
       }
      </style>
+      <style>#progressBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 8px;
+        background-color: #bf9605;
+        z-index: 9999;
+    
+      }</style>
+
   </head>
 
   <body>
+    <div id="progressBar"></div>
+    <script>
+      window.onscroll = function () {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      };
+    </script>
   
     <div id="loader-wrapper">
       <div id="loader"></div>
