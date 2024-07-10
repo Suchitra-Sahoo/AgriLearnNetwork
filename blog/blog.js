@@ -49,4 +49,11 @@ function search(){
       }
     }
     }
-    
+    window.addEventListener('scroll', function() {
+      const themeToggleButton = document.querySelector('.theme-toggle');
+      if (window.scrollY > 50) { // Adjust the scroll position as needed
+        themeToggleButton.style.right = '3px'; // New position when scrolled
+      } else {
+        themeToggleButton.style.right = '20px'; // Original position
+      }
+    });
