@@ -483,11 +483,11 @@ span {
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5sec ease;
 }
-.socialIcons a:hover {
+/* .socialIcons a:hover {
   background: var(--main-color);
   color: var(--second-color);
   box-shadow: 0 0 1rem var(--main-color);
-}
+} */
 
 .btn {
   display: inline-block;
@@ -2040,3 +2040,29 @@ font-size: 36px;
     }
   }
 }
+
+.socialIcons #mail:hover{
+background: #bd4b39;
+}
+#mail:hover i{
+  color: white;
+}
+.socialIcons #inst:hover{
+  background: linear-gradient(45deg, #833ab4, #e1306c, #fd1d1d, #fdcb5d);
+}
+#inst:hover i{
+  color: white;
+}
+.socialIcons #twit:hover{
+  background: black;
+}
+#twit:hover i{
+  color: white;
+}
+.socialIcons #fb:hover{
+  background: #1877f2;
+}
+#fb:hover i{
+  color: white;
+}
+

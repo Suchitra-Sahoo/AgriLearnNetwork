@@ -932,6 +932,32 @@ font-size: 36px;
     color: #218838; /* Change icon color on hover */
   }
 }
+<<<<<<< HEAD
+.socialIcons #mail:hover{
+  background: #bd4b39;
+  }
+  #mail:hover i{
+    color: white;
+  }
+  .socialIcons #inst:hover{
+    background: linear-gradient(45deg, #833ab4, #e1306c, #fd1d1d, #fdcb5d);
+  }
+  #inst:hover i{
+    color: white;
+  }
+  .socialIcons #twit:hover{
+    background: black;
+  }
+  #twit:hover i{
+    color: white;
+  }
+  .socialIcons #fb:hover{
+    background: #1877f2;
+  }
+  #fb:hover i{
+    color: white;
+  }
+=======
 .theme-toggle {
   position: fixed;
   top: 26px;
@@ -1045,3 +1071,4 @@ body.dark-theme .contact textarea {
     transform: translateY(0);
   }
 }
+>>>>>>> c6fe5e41ff57fac24aaf526610f6ee0bd6344504
