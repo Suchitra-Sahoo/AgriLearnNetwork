@@ -932,7 +932,6 @@ font-size: 36px;
     color: #218838; /* Change icon color on hover */
   }
 }
-<<<<<<< HEAD
 .socialIcons #mail:hover{
   background: #bd4b39;
   }
@@ -957,7 +956,6 @@ font-size: 36px;
   #fb:hover i{
     color: white;
   }
-=======
 .theme-toggle {
   position: fixed;
   top: 26px;
@@ -1071,4 +1069,3 @@ body.dark-theme .contact textarea {
     transform: translateY(0);
   }
 }
->>>>>>> c6fe5e41ff57fac24aaf526610f6ee0bd6344504
