@@ -15,6 +15,7 @@ function show() {
 const cartToggle = document.querySelector(".cart");
 const minicart = document.querySelector(".mini-cart")
 const savedTheme = localStorage.getItem("cart");
+const checkout = document.getElementById("checkout");
 if (savedTheme && savedTheme === "see") {
   minicart.classList.add("cart-see");
 }
@@ -28,6 +29,9 @@ cartToggle.addEventListener("click", function () {
       localStorage.setItem("cart", "not");
     }
 });
+checkout.addEventListener('click',()=>{
+  minicart.classList.remove("cart-see");
+})
 
 // mode toggle function
 document.addEventListener("DOMContentLoaded", function () {
