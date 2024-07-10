@@ -15,29 +15,14 @@
  
   <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
 
-  <style>#progressBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 8px;
-    background-color: #bf9605;
-    z-index: 9999;
-
-  }</style>
+  <link rel="stylesheet" href="/Scrollbar/scrollbar.css">
 
 </head>
 
 <body>
   <div id="progressBar"></div>
-    <script>
-      window.onscroll = function () {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("progressBar").style.width = scrolled + "%";
-      };
-    </script>
+    <script src="/Scrollbar/scrollbar.js"></script>
+
   <header class="header">
     <img src="../icon.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px" />
     <a href="#" class="logo" style="margin-inline-end: auto">
