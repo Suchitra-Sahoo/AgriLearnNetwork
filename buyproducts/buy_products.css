@@ -179,6 +179,54 @@ section {
     bottom: -5px; /* Adjust position as needed */
     transition: width 0.5s;
   }
+/* styling the search bar */
+.searchbar 
+{
+  width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    /* transition: border-color 0.3s ease, box-shadow 0.3s ease; */
+    /* z-index: 1; */
+    
+    /* position: absolute;
+    top: 150px;
+    left: 550px; */
+}
+.productsearch
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  top: 200px;
+  /* background-color: green; */
+}
+.glass{
+  background-color: #28a745;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50px;
+  /* position: relative; */
+  position: absolute;
+  left: 85%;
+  padding: 9px 15px;
+  font-size: large;
+}
+.glass:hover
+{
+  color: red;
+  cursor: pointer;
+}
+
+
+
 
   .navbar a:hover::after {
     width: 100%;
@@ -479,15 +527,16 @@ body.dark-theme .add-to-cart{
   align-items: center;
   flex: wrap;
   flex-direction: column;
-  padding: 1rem 0;
-  background: #0e4b16;
+  padding: 1rem ;
+  background: #053314;
   min-height: 25rem;
 }
 
 .footer p {
   font-size: 1.6rem;
+  font-weight: bold;
 }
-.footerUpperPart {
+/* .footerUpperPart {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -495,7 +544,7 @@ body.dark-theme .add-to-cart{
   width: 90vw;
   min-height: 15rem;
   margin-top: 15px;
-}
+} */
 
 .footer-title{
   font-weight: 500;
@@ -706,11 +755,18 @@ body.dark-theme .add-to-cart{
 
 
 .footer-grid {
-  display: grid;
+  /* display: grid;
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px; */
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .footer-title,
@@ -1050,6 +1106,14 @@ font-size: 36px;
     background-color: #218838;
 }
 
+#no-results-message {
+  display: none;
+  color: rgb(226, 241, 152);
+  text-align: center;
+  margin: 70px 0;
+  font-size: large;
+}
+    
 /* .mini-cart {
     position: fixed;
     bottom: 200px;

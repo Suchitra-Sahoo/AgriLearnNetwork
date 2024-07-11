@@ -70,11 +70,31 @@
         <a href="../login/login.html">
           <button id="log-in-btn" class="login-btn">Login</button>
         </a>
+
+      </nav><br><br><br><br>
+      
+    </header><center>
+    <h2 style="color: #053314;font-size: 50px;position:absolute;top:100px;left:550px;text-shadow:2px 2px 8px rgb(249, 249, 238)">Agro<span style="color: #0c891f;"> Products</span> </h2></center>
+  <!-- adding searchbar at the top of the page -->
+   <div class="productsearch">
+    <input type="text" class="searchbar" placeholder="Search..." id="searchbar" name="searchbar" type="text" oninput="searchProducts()">
+    <i class="fa-solid fa-magnifying-glass glass"></i>
+
+
+   </div>
+   <!-- <div id="no-results-message" style="display:none;"></div> -->
+   
+   <br><br><br><br><br><br><br><br><br><br><br><br>
+ 
+
       </nav>
     </header>
 
+
     <div class="container" id="products">
+      <div id="no-results-message"><h1>No search results found....</h1></div>
       <!-- Product Divisions (21 products) -->
+      <!-- <div id="no-results-message" style="display: none;"></div> -->
       <div class="product">
         <img
           src="https://imgs.search.brave.com/C0kR0ZD3syOLiv-dt8S_Rk6dyKcmB8zVgEXP2uoXa1k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVlcmUuY29tL2Fz/c2V0cy9pbWFnZXMv/aGF5LWZvcmFnZS9i/YWxpbmcvcm91bmQt/YmFsZXIvNTYxLUJh/bGVyLWhheS1mb3Jh/Z2UtYmFsaW5nLXBh/Z2UtMTAyNHg1NzYu/anBn"
@@ -517,18 +537,21 @@
       </div>
     </div>
 
-    <div class="mini-cart id="mini-cart">
+    <div class="mini-cart" id="mini-cart">
       <h1><center>CART</center></h1>
       <ul id="cart-items"></ul>
       <br />
-      <center><button id="checkout" style="cursor: pointer;">Checkout</button></center>
+      <center><button id="checkout">Checkout</button></center>
       <center>
         <h2>Total price : <span id="dyna">0</span></h2>
       </center>
     </div>
     <br /><br /><br /><br />
-    <br /><br />
-
+    <br /><br /> <br /><br /><br /><br />
+    <br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <br /><br>
+  
     <footer class="footer">
       <div class="footer-grid">
         <div class="footer-title">
@@ -537,22 +560,21 @@
         <div class="footer-icons">
           <p><b>Follow us on our socials:</b></p>
           <div class="socialIcons">
-            <a id="mail"
+            <a
               href="mailto:AgriLearnNetwork@gmail.com"
               class="email-link"
               data-tooltip="AgriLearnNetwork@gmail.com"
               ><i class="fas fa-envelope"></i
             ></a>
-            <a id="inst"
+            <a
               href="https://www.instagram.com/your_username_here"
               target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
-            <a id="twit"
-             href="https://twitter.com/your_username_here" target="_blank"
+            <a href="https://twitter.com/your_username_here" target="_blank"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
-            <a id="fb"
+            <a
               href="https://www.facebook.com/your_page_or_profile_here"
               target="_blank"
               ><i class="fab fa-facebook"></i
