@@ -96,24 +96,24 @@ section {
  .header
  {
   position: fixed;
-  opacity: 0.8;
-   top: 0;
-   left: 0;
-   width:100%;
-   padding:2rem 9%;
-   background-color: var(--bg-color);
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   z-index: 100;
-   transition: all 0.8s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: all 0.8s;
+  box-shadow: none; /* Remove shadow */
  }
  .header.sticky
  {
   opacity: 0.9;
   padding: 2rem 10% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
-  background-color: --main-color;
-  box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
+  background-color: transparent;
+  box-shadow: none; /* Remove shadow */
  }
 
  nav{
@@ -122,10 +122,11 @@ section {
 }
  .logo
  {
-    font-size: 2.5rem;
-    color: var(--txt-color);
-    font-weight: 600;
-    cursor: default;
+   font-size: 2.5rem;
+  color: var(--txt-color);
+  font-weight: 600;
+  cursor: default;
+  margin-right: auto;    
  }
  .navbar a {
   /* position: relative; */
@@ -133,7 +134,7 @@ section {
   /* left: 118px; */
   color: var(--txt-color);
   margin-right: 3.1rem;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 .navbar a:hover {
   color: var(--main-color);
@@ -219,7 +220,7 @@ section {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: yellow;
+  background-color: white;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -262,11 +263,11 @@ body.dark-theme .theme-toggle .fa-sun {
 
 body.dark-theme .theme-toggle .fa-moon {
   display: inline;
-  color: #f1c40f;
+  color: #D7B32F;
 }
 
 body.dark-theme a {
-  color: #f1c40f;
+  color: #D7B32F;
 }
 
 body.dark-theme button {
@@ -1001,7 +1002,7 @@ a {
   text-align: center;
   margin-bottom: 3rem;
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.42);
+  background: white(0, 0, 0, 0.42);
   border-radius: 1rem; 
   box-shadow: 0 0 15px rgba(235, 232, 232, 0.5); 
 }
@@ -1789,12 +1790,12 @@ font-size: 36px;
   color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   position: fixed;
   margin-top: -10px;
-  margin-left:auto;
+  margin-left:-4px;
   cursor: pointer;
-  transition: 5s;
+  transition: 3s;
 }
 .login-btn:hover {
   box-shadow: none;
