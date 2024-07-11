@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins";
 }
 
 body {
@@ -186,8 +186,6 @@ body::before {
   margin: 20px 0;
 }
 .social-icons a {
-  border: 1px solid #ccc;
-  border-radius: 20%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -195,11 +193,11 @@ body::before {
   width: 40px;
   height: 40px;
 }
-.social-icons a:hover {
+/* .social-icons a:hover {
   font-size: 25px;
   background-color: #053314;
   color: #fff;
-}
+} */
 
 .toggle-container {
   position: absolute;
@@ -281,3 +279,41 @@ body::before {
   color: #666;
   margin-left: -50px;
 }
+.mail{
+  transition:  transform 0.3s ease-in-out;
+  border: 1px solid #ccc;
+  border-radius: 20%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+}
+.mail:hover{
+  transform: scale(1.2);
+}
+.social-icons #ma:hover{
+  background-color: #DD4B39;
+  color: WHITE;
+  height: 100%;
+  width: 100%;
+}
+.social-icons #gi:hover{
+  background-color: #181717;
+  color: WHITE;
+  height: 100%;
+  width: 100%;
+}
+.social-icons #li:hover{
+  background-color:#0077b5;
+  color: WHITE;
+  height: 100%;
+  width: 100%;
+}
+ .social-icons i{
+  transition:transform 0.3s ease-in-out ;
+}
+ .mail:hover i{
+  transform: scale(1.5);
+} 

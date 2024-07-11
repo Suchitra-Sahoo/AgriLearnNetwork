@@ -1,3 +1,25 @@
+let menuIcon = document.querySelectorAll('#menu-icon');
+let navbar = document.querySelectorAll('.navbar');
+menuIcon.forEach(icon => {
+  icon.onclick = () => {
+    icon.classList.toggle('bx-x');
+    navbar.forEach(nav => nav.classList.toggle('active'));
+  }
+});
+
+// Add an event listener to navbar links
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', () => {
+    // Remove 'active' class from navbar
+    document.querySelectorAll('.navbar').forEach(nav => {
+      nav.classList.remove('active');
+    });
+    // Toggle the menu icon
+    document.querySelectorAll('#menu-icon').forEach(icon => {
+      icon.classList.remove('bx-x'); // Remove the 'bx-x' class to close the hamburger menu
+    });
+  });
+});
 function search(){
     let box=[...document.querySelectorAll(".fcard")]
     let val=document.getElementById('input');
@@ -27,4 +49,11 @@ function search(){
       }
     }
     }
-    
+    window.addEventListener('scroll', function() {
+      const themeToggleButton = document.querySelector('.theme-toggle');
+      if (window.scrollY > 50) { // Adjust the scroll position as needed
+        themeToggleButton.style.right = '3px'; // New position when scrolled
+      } else {
+        themeToggleButton.style.right = '20px'; // Original position
+      }
+    });

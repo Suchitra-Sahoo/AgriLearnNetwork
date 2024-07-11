@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins";
 }
 
 /* Customizing the title */
@@ -112,12 +112,12 @@ section {
  {
   opacity: 0.9;
   padding: 2rem 10% 2rem 5%; /* Adjusted padding to ensure space for the sign-in button */
-  background-color: rgb(4, 125, 18);
+  background-color: --main-color;
   box-shadow: 0 0 1.5px 2px rgb(14, 14, 14,0.8);
  }
 
  nav{
-  margin-right: 30px;
+  margin-right: 10px;
   display: flex;
 }
  .logo
@@ -129,7 +129,7 @@ section {
  }
  .navbar a {
   /* position: relative; */
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   /* left: 118px; */
   color: var(--txt-color);
   margin-right: 3.1rem;
@@ -163,6 +163,39 @@ section {
   .navbar.active {
   display: block;
 }
+  .navbar a {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--txt-color);
+    margin-right: 3.1rem;
+    transition: 0.3s;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Change to the desired color */
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+  }
+
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Change to the desired color */
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+    transition: width 0.5s;
+  }
+
+  .navbar a:hover::after {
+    width: 100%;
+  }
+
 .logoImg {
   width: 80px;
   height: auto; /* Use auto to maintain aspect ratio */
@@ -450,11 +483,11 @@ span {
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5sec ease;
 }
-.socialIcons a:hover {
+/* .socialIcons a:hover {
   background: var(--main-color);
   color: var(--second-color);
   box-shadow: 0 0 1rem var(--main-color);
-}
+} */
 
 .btn {
   display: inline-block;
@@ -1599,6 +1632,7 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  padding-top : 8rem; 
 }
 
 .footer-title,
@@ -1723,6 +1757,11 @@ font-size: 36px;
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px; /* Increase padding to make the footer taller */
+    background-size: cover; /* Ensure the background image covers the entire container */
+  }
+
   .footer-grid {
     grid-template-columns: 1fr; /* Single column layout for smaller screens */
   }
@@ -1746,13 +1785,13 @@ font-size: 36px;
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
   position: fixed;
-  margin-top: -5px;
+  margin-top: -10px;
   margin-left:auto;
   cursor: pointer;
   transition: 5s;
@@ -1889,3 +1928,141 @@ font-size: 36px;
 }
 
 /* Preloader Css Ends */
+
+/* Floating Icon Bar */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.icon-bar a {
+  width: 19rem;
+  color: #fff !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.7rem;
+  padding: 1rem;
+  transition: all 0.5s linear;
+  transform: translateX(-14.5rem);
+  text-shadow: 2px 2px 4px #B19222;
+}
+
+.icon-bar a:hover {
+  transform: translateX(0);
+}
+
+.icon-bar a .fab {
+  padding-left: 1.5rem;
+  font-size: 3rem;
+  animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+.icon-bar .instagram {
+  background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.icon-bar .twitter {
+  background: #4267B2;
+}
+
+.icon-bar .linkedIn {
+  background: #0a66c2;
+}
+
+.icon-bar .facebook {
+  background: #4267B2;
+}
+
+@media (max-width: 480px) {
+.icon-bar a {
+    width: 13rem;
+    font-size: 1.2rem;
+    transform: translateX(-9.5rem);
+}
+
+.icon-bar a .fab {
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    text-shadow: 2px 2px 4px #B19222;
+    animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+.icon-bar a:hover {
+  transform: translateX(0);
+}
+
+@keyframes letszoom {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+}
+
+@media (max-width: 768px) {
+  .icon-bar a {
+    width: 15rem;
+    font-size: 1.5rem;
+    transform: translateX(-11.5rem);
+  }
+
+  .icon-bar a .fab {
+    font-size: 2rem;
+    padding-left: 1.2rem;
+    text-shadow: 2px 2px 4px #B19222;
+    animation: letszoom 3s linear alternate-reverse infinite;
+  }
+
+  .icon-bar a:hover {
+    transform: translateX(0);
+  }
+
+  @keyframes letszoom {
+    from {
+      transform: scale(0.6);
+    }
+    to {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.socialIcons #mail:hover{
+background: #bd4b39;
+}
+#mail:hover i{
+  color: white;
+}
+.socialIcons #inst:hover{
+  background: linear-gradient(45deg, #833ab4, #e1306c, #fd1d1d, #fdcb5d);
+}
+#inst:hover i{
+  color: white;
+}
+.socialIcons #twit:hover{
+  background: black;
+}
+#twit:hover i{
+  color: white;
+}
+.socialIcons #fb:hover{
+  background: #1877f2;
+}
+#fb:hover i{
+  color: white;
+}
+

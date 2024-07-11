@@ -1,0 +1,10 @@
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 8px;
+    background-color: #bf9605;
+    z-index: 9999;
+
+  }

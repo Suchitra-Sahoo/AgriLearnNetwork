@@ -144,7 +144,8 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
  
  Welcome to AgriLearnNetwork! Step into a world where agriculture meets innovation. Our captivating landing page invites you to embark on a journey towards agricultural excellence. Be inspired to take the first step towards a prosperous and sustainable farming future.
  
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/522bc4a9-f54c-48ba-92fb-7d54b4a22c9a)
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/20a852bb-e657-4750-90ea-f6139ec8b93c)
+
 
 <br>
 
@@ -152,7 +153,8 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
  
  Discover the heart and soul of AgriLearnNetwork. Learn about our mission to revolutionize agriculture education and support farmers worldwide. Explore how our platform equips you with the tools and knowledge needed to thrive in the ever-evolving world of farming.
 
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/2392b9e9-0954-48c5-9a57-b806bd099b09)
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/704a5fc7-3d63-4654-a74b-145f70fa9fc9)
+
 
 <br>
 
@@ -160,7 +162,8 @@ Agrilearn Network serves as an indispensable resource, offering farmers a holist
  
 Dive into a treasure trove of insightful blog posts covering a myriad of topics relevant to modern agriculture. Our curated collection of articles delves into various aspects of farming, offering valuable advice, tips, and solutions to common challenges faced by farmers today.
 
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/f9860021-eb7b-4b2e-a459-d8f77f2e5dbc)
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/df849284-c0f3-40e3-8307-9adcf9f6fa9d)
+
 
  
 <br>
@@ -169,8 +172,9 @@ Dive into a treasure trove of insightful blog posts covering a myriad of topics 
 **Resource Library**
  
  Explore our extensive collection of tutorials covering a wide range of crucial topics in agriculture and farming. Our resource library is your go-to destination for in-depth guidance and expert insights on various aspects of agricultural practices. Whether you're looking to enhance your knowledge in crop management, soil health, pest control, irrigation techniques, or livestock care, our tutorials offer comprehensive information to help you succeed in your farming endeavors. 
+ 
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/4fbdf018-57fc-4b60-a9c1-80ed5a88e1b2)
 
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/blob/main/components/Screenshot%202024-05-04%20210212.png)
 
 <br>
 
@@ -178,13 +182,16 @@ Dive into a treasure trove of insightful blog posts covering a myriad of topics 
 
 Have questions or need assistance? Our dedicated team is here to help. Reach out to us through our contact page, and we'll be happy to provide support and guidance tailored to your needs.
 
-![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/e0def232-335e-4b4d-881f-5494f5679c64)
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/9fdb39d0-f191-4d29-82a5-b0fd21fea998)
 
 <br>
   
 **AI Chat Bot**
 
 Introducing our AI-powered chatbot, your virtual agricultural assistant. Have questions about farming techniques, crop management, or agricultural practices? Simply chat with our AI bot, and get instant answers to all your agriculture-related queries. Experience the convenience of personalized support at your fingertips, 24/7.
+
+![image](https://github.com/Suchitra-Sahoo/AgriLearnNetwork/assets/123376847/1a159ad6-a3fb-4bc1-bfc1-1e6e4a60d635)
+
 
 <br>
 

@@ -1,4 +1,38 @@
 
+
+const notify = document.querySelector(".notify")
+function show() {
+    let note = document.createElement("div");
+    note.classList.add('note');
+    note.innerHTML = '<i class="fa-solid fa-circle-check"></i> Item added to cart';
+    notify.appendChild(note)
+    setTimeout(()=>{
+      note.remove();
+    },2000)
+};
+
+//cart toggle button
+const cartToggle = document.querySelector(".cart");
+const minicart = document.querySelector(".mini-cart")
+const savedTheme = localStorage.getItem("cart");
+const checkout = document.getElementById("checkout");
+if (savedTheme && savedTheme === "see") {
+  minicart.classList.add("cart-see");
+}
+cartToggle.addEventListener("click", function () {
+    minicart.classList.toggle("cart-see");
+
+    // Save the current theme in local storage
+    if (minicart.classList.contains("cart-see")) {
+      localStorage.setItem("cart", "see");
+    } else {
+      localStorage.setItem("cart", "not");
+    }
+});
+checkout.addEventListener('click',()=>{
+  minicart.classList.remove("cart-see");
+})
+
 // mode toggle function
 document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.querySelector(".theme-toggle");
@@ -47,18 +81,27 @@ document.addEventListener("DOMContentLoaded", function () {
             existingItem.quantity += 1;
         } else {
             cartItems.push({ product, image,price, quantity: 1 });
-            dyna.innerHTML-=Number(dyna.innerHTML);
+            dyna.innerHTML=Number(dyna.innerHTML)+Number(price);
+            // updatePrice();
         }
+        updateCart();
+        // updatePrice();
     }
     function updatePrice(){
-        cartItems.forEach(item=>{
-          const itemPrice= Number(item.price);
-          console.log(itemPrice);
-          console.log(dyna.innerHTML);
-          dyna.innerHTML = Number(dyna.innerHTML)+itemPrice;
-          console.log(dyna.innerHTML);
-        })
-    }
+        // cartItems.forEach(item=>{
+        //   const itemPrice= Number(item.price);
+        //   console.log(itemPrice);
+        //   console.log(dyna.innerHTML);
+        //   dyna.innerHTML = Number(dyna.innerHTML)+itemPrice;
+        //   console.log(dyna.innerHTML);
+        let totalPrice = 0;
+  cartItems.forEach(item => {
+    totalPrice += item.price * item.quantity;
+  });
+  dyna.innerHTML = totalPrice;
+  console.log(dyna.innerHTML);
+        }
+      
     function updateCart() {
         cartItemsList.innerHTML = '';
         cartItems.forEach(item => {
@@ -85,13 +128,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 const itemSub= Number(item.price);
                 dyna.innerHTML = Number(dyna.innerHTML)-itemSub;
-                updateCart();
+                 updateCart();
+                updatePrice();
             });
             plusButton.addEventListener('click', () => {
                 item.quantity += 1;
                 const itemAdd= Number(item.price);
                 dyna.innerHTML = Number(dyna.innerHTML)+itemAdd;
+
                 updateCart();
+                updatePrice();
             });
         });
 
@@ -251,3 +297,72 @@ const typed=new Typed('.multiple-text',{
     loop:true
 
 });
+
+
+
+
+// SCRIPT FOR THE SEARCH BAR BUTTON
+
+
+const searchinput =document.getAnimations('searchbar');
+searchinput.addEventListener('input', searchProducts);
+function searchProducts(){
+// Select all elements with the class 'fcard' and convert the NodeList to an array
+let box = [...document.querySelectorAll(".product")];
+
+// Get the input element by its ID 'input'
+let val = document.getElementById('searchbar');
+
+// Retrieve the value from the input, convert it to uppercase, and trim any extra whitespace
+let filter = val.value.toUpperCase().trim();
+
+// Log the filtered search value for debugging purposes
+console.log(filter);
+
+// Log the array of elements with class 'fcard' for debugging purposes
+console.log(box);
+// Initialize a flag to check if any results were found
+let resultsFound = false;
+
+// Loop through each element in the 'box' array
+for(let i = 0; i < box.length; i++){
+// Get the current element in the loop
+let component = box[i];
+
+// Select the <h2> element within the current component
+let h3 = component.querySelector('h3');
+
+// Get the text content of the <h2> element
+let componentName = h3.textContent || h3.innerText;
+
+// Log the component name for debugging purposes
+console.log(componentName);
+
+// Check if the component name contains the filter value
+console.log((componentName.toUpperCase().indexOf(filter)));
+
+// If the component name contains the filter value, show the component
+if(componentName.toUpperCase().indexOf(filter) > -1){
+    console.log(`Showing card ${i}: ${componentName}`);
+    component.style.display = "inline";
+    resultsFound = true;
+}
+// If the component name does not contain the filter value, hide the component
+else{
+    console.log(`Hiding card ${i}: ${componentName}`);
+    component.style.display = "none";
+}
+}
+
+// Select the 'no-results-message' element
+let noResultsMessage = document.getElementById('no-results-message');
+
+// If no results were found, display a message
+if (!resultsFound) {
+    noResultsMessage.style.display = "block";
+} 
+// If results were found, hide the message
+else {
+    noResultsMessage.style.display = "none";
+}
+}

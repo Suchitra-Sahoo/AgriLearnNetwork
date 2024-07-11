@@ -11,14 +11,18 @@
   <!-- <link rel="stylesheet" href="style.css" /> -->
   <link rel="stylesheet" href="./faqpagestyle.css" />
   <link rel="icon" href="../icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../testimonials/testimonials.css">
  
   <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
 
-
+  <link rel="stylesheet" href="/Scrollbar/scrollbar.css">
 
 </head>
 
 <body>
+  <div id="progressBar"></div>
+    <script src="../Scrollbar/scrollbar.js"></script>
+
   <header class="header">
     <img src="../icon.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px" />
     <a href="#" class="logo" style="margin-inline-end: auto">
@@ -52,7 +56,7 @@
       <div class="faq_heading" data-aos="fade-up">Frequently Asked Questions (FAQ)</div>
       <div class="faq_box">
         <div class="image" data-aos="fade-right">
-          <img class="faq-img" src="../faq/FAQ.png" alt="FAQ">
+          <img class="faq-img" src="../faq/7 (1).png" alt="FAQ">
         </div>
         <div class="accordion-container" data-aos="fade-left">
           <!-- Question-1 -->
@@ -184,12 +188,26 @@
       <div class="footer-icons">
         <p><b>Follow us on our socials:</b></p>
         <div class="socialIcons">
-          <a href="mailto:AgriLearnNetwork@gmail.com" class="email-link" data-tooltip="AgriLearnNetwork@gmail.com"><i
-              class="fas fa-envelope"></i></a>
-          <a href="https://www.instagram.com/your_username_here" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/your_username_here" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.facebook.com/your_page_or_profile_here" target="_blank"><i
-              class="fab fa-facebook"></i></a>
+          <a id="mail"
+            href="mailto:AgriLearnNetwork@gmail.com"
+            class="email-link"
+            data-tooltip="AgriLearnNetwork@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a id="inst"
+            href="https://www.instagram.com/your_username_here"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a id="twit"
+           href="https://twitter.com/your_username_here" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a id="fb"
+            href="https://www.facebook.com/your_page_or_profile_here"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
         </div>
       </div>
     </div>
@@ -238,6 +256,8 @@
           document.write(new Date().getFullYear());
         </script>
         by AgriLearnNetwork | All Rights Reserved.
+        <span class="legal-page"><a href="../testimonials/termsandconditions.html">| Terms and Conditions</a></span>
+          <span class="legal-page"><a href="../testimonials/privacypolicy.html">| Privacy Policy</a></span>
       </p>
     </div>
   </footer>

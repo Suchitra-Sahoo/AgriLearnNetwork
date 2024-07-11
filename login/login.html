@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../testimonials/testimonials.css">
 
     <link rel="icon" href="../icon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
@@ -23,8 +24,11 @@
       src="https://kit.fontawesome.com/b08b6de27e.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="/Scrollbar/scrollbar.css">
   </head>
   <body>
+    <div id="progressBar"></div>
+    <script src="../Scrollbar/scrollbar.js"></script>
     <header class="header">
       <img
         src="../icon.png"
@@ -64,12 +68,12 @@
           <h1>Create Account</h1>
           <div class="social-icons">
             <a href="#" class="icon"
-              ><i class="fa-brands fa-google-plus-g"></i
-            ></a>
-            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+              ><div class="mail" id="ma"><i class="fa-brands fa-google-plus-g"></i
+            ></div></a>
+            <a href="#" class="icon"><div class="mail" id="gi"><i class="fa-brands fa-github"></i></div></a>
             <a href="#" class="icon"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
+              ><div class="mail" id="li"><i class="fa-brands fa-linkedin-in"></i
+            ></div></a>
           </div>
           <span>or use your email for registeration</span>
           <input type="text" id="signup-Name" placeholder="Enter your Name" required/>
@@ -97,12 +101,12 @@
           <h1>Sign In</h1>
           <div class="social-icons">
             <a href="#" class="icon"
-              ><i class="fa-brands fa-google-plus-g"></i
-            ></a>
-            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+              ><div class="mail" id="ma"><i class="fa-brands fa-google-plus-g"></i
+            ></div></a>
+            <a href="#" class="icon"><div class="mail" id="gi"><i class="fa-brands fa-github"></i></div></a>
             <a href="#" class="icon"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
+              ><div class="mail" id="li"><i class="fa-brands fa-linkedin-in"></i
+            ></div></a>
           </div>
           <span>or use your email password</span>
           <div class="input-password">
@@ -141,22 +145,23 @@
         </div>
         <div class="footer-icons">
           <p><b>Follow us on our socials:</b></p>
-          <div class="socialIcons">
-            <a
+          < <div class="socialIcons">
+            <a id="mail"
               href="mailto:AgriLearnNetwork@gmail.com"
               class="email-link"
               data-tooltip="AgriLearnNetwork@gmail.com"
               ><i class="fas fa-envelope"></i
             ></a>
-            <a
+            <a id="inst"
               href="https://www.instagram.com/your_username_here"
               target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
-            <a href="https://twitter.com/your_username_here" target="_blank"
+            <a id="twit"
+             href="https://twitter.com/your_username_here" target="_blank"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
-            <a
+            <a id="fb"
               href="https://www.facebook.com/your_page_or_profile_here"
               target="_blank"
               ><i class="fab fa-facebook"></i
@@ -191,6 +196,8 @@
             document.write(new Date().getFullYear());
           </script>
           by AgriLearnNetwork | All Rights Reserved.
+          <span class="legal-page"><a href="../testimonials/termsandconditions.html">| Terms and Conditions</a></span>
+          <span class="legal-page"><a href="../testimonials/privacypolicy.html">| Privacy Policy</a></span>
         </p>
       </div>
       <div class="cursor"></div>

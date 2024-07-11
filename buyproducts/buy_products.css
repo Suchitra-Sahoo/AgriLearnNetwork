@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins";
 }
 
 /* Customizing the title */
@@ -151,6 +151,87 @@ section {
   .navbar.active {
   display: block;
 }
+  .navbar a {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--txt-color);
+    margin-right: 3.1rem;
+    transition: 0.3s;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Change to the desired color */
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+  }
+
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust height as needed */
+    background-color: rgb(255, 255, 255); /* Change to the desired color */
+    left: 0;
+    bottom: -5px; /* Adjust position as needed */
+    transition: width 0.5s;
+  }
+/* styling the search bar */
+.searchbar 
+{
+  width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    /* transition: border-color 0.3s ease, box-shadow 0.3s ease; */
+    /* z-index: 1; */
+    
+    /* position: absolute;
+    top: 150px;
+    left: 550px; */
+}
+.productsearch
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  top: 200px;
+  /* background-color: green; */
+}
+.glass{
+  background-color: #28a745;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50px;
+  /* position: relative; */
+  position: absolute;
+  left: 85%;
+  padding: 9px 15px;
+  font-size: large;
+}
+.glass:hover
+{
+  color: red;
+  cursor: pointer;
+}
+
+
+
+
+  .navbar a:hover::after {
+    width: 100%;
+  }
+
 .logoImg {
   width: 80px;
   height: auto; /* Use auto to maintain aspect ratio */
@@ -170,6 +251,117 @@ section {
   font-size: 3.6rem;
   color: var(--txt-color);
   display: none;
+}
+
+/* cart button  */
+.cart {
+    position: fixed;
+    right: 20px;
+    top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(137, 137, 18);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+.cart-image {
+  position: absolute; 
+  top: 15px; 
+  width: 40px; 
+  height: auto;
+  border-radius: 100px;
+  transition: transform 0.1s;
+}
+
+.cart:hover .cart-image {
+  transform: scale(1.05); 
+  border-radius: 100px;
+}
+
+.mini-cart {
+  display: none;
+}
+
+.note {
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  color: #000000;
+  font-weight: 500;
+  font-size: large;
+  display: flex;  
+  margin: 15px 0;
+  z-index: 255;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards;
+}
+
+@keyframes moveleft{
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.note i{
+  color: green;
+}
+
+.note::after{
+  content: "";
+  position: absolute;
+  left: 00;
+  bottom: 0;
+  width: 80%;
+  height: 5px;
+  background: green;
+  animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+  100%{
+    width: 0;
+  }
+}
+
+.notify {
+  position: absolute;
+  bottom: 230px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.cart-see {
+  display: block;
+  position: fixed;
+    bottom: 200px;
+    right: 10px;
+    border: 1px solid #ddd;
+    background-color: #46785f;
+    padding: 12px;
+    border-radius: 4px;
+    width: 300px;
+    cursor: move;
+    max-height: 70%;
+    overflow-y: auto;
+    height: 150px;
+    /* Initial height */
+    border-width: 4px;
+    font-size: 13px;
 }
 
 /* Theme Toggle Button */
@@ -335,15 +527,16 @@ body.dark-theme .add-to-cart{
   align-items: center;
   flex: wrap;
   flex-direction: column;
-  padding: 1rem 0;
-  background: #0e4b16;
+  padding: 1rem ;
+  background: #053314;
   min-height: 25rem;
 }
 
 .footer p {
   font-size: 1.6rem;
+  font-weight: bold;
 }
-.footerUpperPart {
+/* .footerUpperPart {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -351,7 +544,7 @@ body.dark-theme .add-to-cart{
   width: 90vw;
   min-height: 15rem;
   margin-top: 15px;
-}
+} */
 
 .footer-title{
   font-weight: 500;
@@ -562,11 +755,18 @@ body.dark-theme .add-to-cart{
 
 
 .footer-grid {
-  display: grid;
+  /* display: grid;
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px; */
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .footer-title,
@@ -720,7 +920,7 @@ font-size: 36px;
   font-weight: 600;
   transition: 0.5s ease;
   position: fixed;
-  margin-top: -5px;
+  margin-top: -10px;
   margin-left:auto;
   cursor: pointer;
   transition: 5s;
@@ -906,7 +1106,15 @@ font-size: 36px;
     background-color: #218838;
 }
 
-.mini-cart {
+#no-results-message {
+  display: none;
+  color: rgb(226, 241, 152);
+  text-align: center;
+  margin: 70px 0;
+  font-size: large;
+}
+    
+/* .mini-cart {
     position: fixed;
     bottom: 200px;
     right: 10px;
@@ -918,10 +1126,11 @@ font-size: 36px;
     cursor: move;
     max-height: 70%;
     overflow-y: auto;
-    height: 150px; /* Initial height */
+    height: 150px; 
+    Initial height 
     border-width:4px ;
     font-size: 13px;
-}
+} */
 .mini-cart h3 {
     margin-top: 0;
 }
@@ -964,3 +1173,27 @@ p{
 h3{
     font-size: large;
 }
+.socialIcons #mail:hover{
+  background: #bd4b39;
+  }
+  #mail:hover i{
+    color: white;
+  }
+  .socialIcons #inst:hover{
+    background: linear-gradient(45deg, #833ab4, #e1306c, #fd1d1d, #fdcb5d);
+  }
+  #inst:hover i{
+    color: white;
+  }
+  .socialIcons #twit:hover{
+    background: black;
+  }
+  #twit:hover i{
+    color: white;
+  }
+  .socialIcons #fb:hover{
+    background: #1877f2;
+  }
+  #fb:hover i{
+    color: white;
+  }
