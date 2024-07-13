@@ -275,7 +275,7 @@ span {
   position: relative;
   /* width: 290px; */
   max-width: 290px;
-  max-height: 516px;
+  max-height: 500px;
   background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
   background: -webkit-linear-gradient(
     90deg,
@@ -331,11 +331,9 @@ span {
   text-align: justify;
   display: flex;
   flex-direction: column;
-  height: 130%;
+  height: 100%;
 }
-.fixed{
-  margin-bottom: 12px;
-}
+
 a {
   text-decoration: none;
 }
