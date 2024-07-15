@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     // Dynamically adjust cart height
     const itemHeight = 60;
-    const initialHeight = 100;
+    const initialHeight = 300;
     const cartHeight = Math.min(
       cartItems.length * itemHeight + initialHeight,
       window.innerHeight * 0.7
