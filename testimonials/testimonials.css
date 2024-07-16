@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 .wrapper {
-    padding-top: 80px;
+    padding: 60px 0;
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
@@ -18,9 +18,10 @@
     position: absolute;
     text-align: center;
     line-height: 50px;
-    background: #fff;
+    background: #f5f5dc;
+    color: #B19222;
     border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
 }
@@ -36,12 +37,12 @@
 .wrapper i:last-child {
     right: 50px; 
 }
+
 #left {
     left: 4px; 
     top: 60%; 
     transform: translateY(-50%);
     background-image: url(https://cdn.icon-icons.com/icons2/1238/PNG/512/scrollarrowtoleft_83879.png);
-    color: black;
     z-index: 1; 
 }
 
@@ -50,10 +51,8 @@
     top: 60%; 
     transform: translateY(-50%);
     background-image: url(https://cdn.icon-icons.com/icons2/1238/PNG/512/scrollarrowtoright1_83720.png);
-    color: black;
     z-index: 1; 
 }
-
 
 .wrapper .carousel {
     display: grid;
@@ -95,15 +94,21 @@
     scroll-snap-align: start;
     height: 342px;
     list-style: none;
-    background: #b0f4c3;
+    background: #B19222;
     cursor: pointer;
-    padding-bottom: 15px;
+    padding: 20px;
     flex-direction: column;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.carousel .card:hover {
+    transform: translateY(-5px);
 }
 
 .carousel .card .img {
-    background: #53ffb2;
+    background: #B19222;
     height: 148px;
     width: 148px;
     border-radius: 50%;
@@ -114,19 +119,20 @@
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid yellowgreen;
+    border: 4px solid #d2d2b0;
 }
 
 .carousel .card h2 {
     font-weight: 500;
     font-size: 1.56rem;
     margin: 30px 0 5px;
+    color: #CBB89D;
 }
 
 .carousel .card span {
     margin-left: 10%;
     margin-right: 10%;
-    color: #6A6D78;
+    color: #5D2510;
     font-size: 1.31rem;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
@@ -136,11 +142,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 #testi {
     font-family: "Poppins", sans-serif;
     font-size: 4rem;
-    color: yellowgreen;
+    color:  white;
     text-align: center;
     margin: 4rem 0;
     position: relative;
@@ -150,7 +155,7 @@
     content: "";
     width: 120px;
     height: 2px;
-    background-color: #28a745;
+    background-color: #8B4513;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -164,16 +169,16 @@
     right: 10%;
 }
 
-#testnames{
-    color: black;
+#testnames {
+    color: #8B4513;
     font-weight: 300;
     font-size: x-large;
     font-family: poppins;
 }
+
 @media (max-width: 768px) {
     .wrapper {
-        padding-left: 20px;
-        padding-top: 20px;
+        padding: 40px 20px;
     }
 
     .wrapper .carousel {
@@ -182,20 +187,26 @@
 
     #left {
         left: 0;
-        top:200px;
+        top: 200px;
     }
 
     #right {
         right: 0;
-        top:200px;
+        top: 200px;
     }
 
     #testi {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        margin: 2rem 0;
     }
 
     #testi::before, #testi::after {
         width: 30px;
+    }
+
+    .carousel .card {
+        height: auto;
+        padding: 15px;
     }
 
     .carousel .card span {
@@ -203,16 +214,18 @@
         padding: 0.5rem;
     }
 }
-/* testnames */ 
-  @media (max-width: 992px) {
+
+@media (max-width: 992px) {
     #testnames {
-      font-size: 1.5rem; 
+        font-size: 1.5rem; 
     }
-  }
-  .legal-page a {
+}
+
+.legal-page a {
     text-decoration: none;
     color: white;
-  }
-  .legal-page a:hover {
-    color: rgb(192, 223, 100);;
-  }
+}
+
+.legal-page a:hover {
+    color: rgb(192, 223, 100);
+}
