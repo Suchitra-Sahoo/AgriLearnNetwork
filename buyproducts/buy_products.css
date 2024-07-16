@@ -242,7 +242,7 @@ nav {
 
 /* cart button  */
 .cart {
-  position: fixed;
+position: fixed;
   right: 20px;
   top: 110px;
   display: flex;
@@ -337,6 +337,8 @@ nav {
   position: fixed;
   bottom: 200px;
   right: 10px;
+  right: 90px;
+  top: 150px;
   border: 1px solid #ddd;
   background-color: #46785f;
   padding: 12px;
@@ -344,6 +346,9 @@ nav {
   width: 400px;
   cursor: move;
   max-height: 70%;
+  width: 300px;
+  cursor: move;
+  max-height: 380px;
   overflow-y: auto;
   height: 150px;
   /* Initial height */
@@ -354,7 +359,7 @@ nav {
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 26px;
+  top: 32px;
   right: 30px;
   display: flex;
   align-items: center;
