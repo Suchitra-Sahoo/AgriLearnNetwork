@@ -336,8 +336,7 @@ position: fixed;
   display: block;
   position: fixed;
   bottom: 200px;
-  right: 10px;
-  right: 90px;
+  right: 30px;
   top: 150px;
   border: 1px solid #ddd;
   background-color: #46785f;
@@ -346,14 +345,36 @@ position: fixed;
   width: 400px;
   cursor: move;
   max-height: 70%;
-  width: 300px;
   cursor: move;
   max-height: 380px;
   overflow-y: auto;
-  height: 150px;
-  /* Initial height */
   border-width: 4px;
   font-size: 13px;
+}
+
+.minus{
+  background: rgb(179, 185, 179);
+  padding: 3px 10px;
+  margin-inline: 5px;
+  border-radius: 50px;
+}
+
+.minus:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+
+.plus:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.plus{
+  background: rgb(179, 185, 179);
+  border-radius: 50px;
+  padding: 3px 10px;
+  margin-inline: 5px;
 }
 
 /* Theme Toggle Button */
@@ -1151,13 +1172,7 @@ body.dark-theme .add-to-cart {
   font-weight: bold;
 }
 
-.mini-cart ul li .quantity-controls button {
-  background-color: #ccc;
-  border: none;
-  padding: 5px;
-  cursor: pointer;
-  margin: 0 5px;
-}
+
 p {
   font-size: medium;
 }
