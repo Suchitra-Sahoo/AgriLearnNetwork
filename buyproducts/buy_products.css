@@ -257,7 +257,7 @@ section {
 .cart {
     position: fixed;
     right: 20px;
-    top: 110px;
+    top: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,6 +269,7 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, box-shadow 0.3s;
     z-index: 1000;
+   
 }
 
 .cart-image {
@@ -348,26 +349,28 @@ section {
 .cart-see {
   display: block;
   position: fixed;
-    bottom: 200px;
-    right: 10px;
-    border: 1px solid #ddd;
-    background-color: #46785f;
-    padding: 12px;
-    border-radius: 4px;
-    width: 300px;
-    cursor: move;
-    max-height: 70%;
-    overflow-y: auto;
-    height: 150px;
-    /* Initial height */
-    border-width: 4px;
-    font-size: 13px;
+  bottom: 200px;
+  right: 90px;
+  top: 150px;
+  border: 1px solid #ddd;
+  background-color: #46785f;
+  padding: 12px;
+  border-radius: 4px;
+  width: 300px;
+  cursor: move;
+  max-height: 380px;
+  overflow-y: auto;
+  height: 150px;
+  /* Initial height */
+  border-width: 4px;
+  font-size: 13px;
+  
 }
 
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 26px;
+  top: 32px;
   right: 30px;
   display: flex;
   align-items: center;
