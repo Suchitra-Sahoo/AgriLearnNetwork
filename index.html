@@ -465,22 +465,39 @@ function closePopup() {
 }
 
 // Handling star ratings
+// Handling star ratings
 const stars = document.querySelectorAll('.star');
 
-stars.forEach(star => {
+stars.forEach((star, index) => {
+  star.addEventListener('mouseover', function() {
+    // Remove active class from all stars
+    stars.forEach(s => s.classList.remove('hover'));
+
+    // Add hover class to the hovered star and all previous stars
+    for (let i = 0; i <= index; i++) {
+      stars[i].classList.add('hover');
+    }
+  });
+
   star.addEventListener('click', function() {
     const value = parseInt(this.getAttribute('data-value'));
     document.getElementById('rating-value-input').value = value;
 
     // Remove active class from all stars
     stars.forEach(s => s.classList.remove('active'));
-    
-    // Add active class to clicked star and previous stars
+
+    // Add active class to clicked star and all previous stars
     for (let i = 0; i < value; i++) {
       stars[i].classList.add('active');
     }
   });
 });
+
+// Remove hover class when mouse leaves the star container
+document.querySelector('.stars').addEventListener('mouseleave', function() {
+  stars.forEach(star => star.classList.remove('hover'));
+});
+
 
 // Close modal
 document.querySelector('.close').addEventListener('click', () => {
