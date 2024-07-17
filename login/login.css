@@ -73,6 +73,7 @@ body::before {
 }
 
 .container {
+  margin-top: 10%;
   background-color: #fff;
   border-radius: 30px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
@@ -269,7 +270,6 @@ body::before {
   display: flex;
   width: 100%;
   /* align-items: center; */
-
 }
 
 #toggle-signup-password,
@@ -281,8 +281,8 @@ body::before {
   color: #666;
   margin-left: -50px;
 }
-.mail{
-  transition:  transform 0.3s ease-in-out;
+.mail {
+  transition: transform 0.3s ease-in-out;
   border: 1px solid #ccc;
   border-radius: 20%;
   width: 40px;
@@ -292,30 +292,30 @@ body::before {
   align-items: center;
   margin: 0 3px;
 }
-.mail:hover{
+.mail:hover {
   transform: scale(1.2);
 }
-.social-icons #ma:hover{
-  background-color: #DD4B39;
+.social-icons #ma:hover {
+  background-color: #dd4b39;
   color: WHITE;
   height: 100%;
   width: 100%;
 }
-.social-icons #gi:hover{
+.social-icons #gi:hover {
   background-color: #181717;
   color: WHITE;
   height: 100%;
   width: 100%;
 }
-.social-icons #li:hover{
-  background-color:#0077b5;
+.social-icons #li:hover {
+  background-color: #0077b5;
   color: WHITE;
   height: 100%;
   width: 100%;
 }
- .social-icons i{
-  transition:transform 0.3s ease-in-out ;
+.social-icons i {
+  transition: transform 0.3s ease-in-out;
 }
- .mail:hover i{
+.mail:hover i {
   transform: scale(1.5);
-} 
+}
