@@ -20,6 +20,7 @@ if (savedTheme && savedTheme === "see") {
 }
 cartToggle.addEventListener("click", function () {
   minicart.classList.toggle("cart-see");
+  minicart.style.transition='0.3s';
 
   // Save the current theme in local storage
   if (minicart.classList.contains("cart-see")) {
@@ -29,7 +30,7 @@ cartToggle.addEventListener("click", function () {
   }
 });
 checkout.addEventListener("click", () => {
-  minicart.classList.remove("cart-see");
+  minicart.classList.remove("open-popup");
 });
 
 // mode toggle function
