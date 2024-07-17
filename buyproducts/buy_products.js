@@ -71,13 +71,13 @@ document.addEventListener("DOMContentLoaded", () => {
       addItemToCart(product, image, price);
       updateCart();
       updatePrice();
-      localStorage.setItem("CARTS", JSON.stringify(cartItems));
+      localStorage.setItem('CARTS', JSON.stringify(cartItems));
     });
   });
-  document.addEventListener("DOMContentLoaded", () => {
-    let getCard = localStorage.getItem("CARTS", CARTS);
-    console.log("get", getCard);
-  });
+document.addEventListener("DOMContentLoaded",()=>{
+  let getCard=localStorage.getItem("CARTS",CARTS)
+  console.log("get",getCard)
+})
   function addItemToCart(product, image, price) {
     const existingItem = cartItems.find((item) => item.product === product);
     if (existingItem) {
@@ -112,17 +112,13 @@ document.addEventListener("DOMContentLoaded", () => {
     cartItems.forEach((item) => {
       const li = document.createElement("li");
       li.innerHTML = `
-      <div style="display:flex; justify-content: space-between; gap: 110px">
-      <div class="item-info" style="display:flex">
-      <img src="${item.image}" alt="${item.product}">
-      <p style="text-aling:"start";">${item.product}</p>
-      </div>
-      <div class="quantity-controls">
-      <button class="minus">-</button>
-      <span>${item.quantity}</span>
-      <button class="plus">+</button>
-      </div>
-      </div>
+                <img src="${item.image}" alt="${item.product}">
+                <span>${item.product}</span>
+                <div class="quantity-controls">
+                    <button class="minus">-</button>
+                    <span>${item.quantity}</span>
+                    <button class="plus">+</button>
+                </div>
             `;
       cartItemsList.appendChild(li);
       // dyna.innerHTML='';
@@ -139,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
         dyna.innerHTML = Number(dyna.innerHTML) - itemSub;
         updateCart();
         updatePrice();
-        localStorage.setItem("CARTS", JSON.stringify(cartItems));
+        localStorage.setItem('CARTS', JSON.stringify(cartItems));
       });
       plusButton.addEventListener("click", () => {
         item.quantity += 1;
@@ -148,13 +144,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         updateCart();
         updatePrice();
-        localStorage.setItem("CARTS", JSON.stringify(cartItems));
+        localStorage.setItem('CARTS', JSON.stringify(cartItems));
       });
     });
 
     // Dynamically adjust cart height
     const itemHeight = 60;
-    const initialHeight = 300;
+    const initialHeight = 100;
     const cartHeight = Math.min(
       cartItems.length * itemHeight + initialHeight,
       window.innerHeight * 0.7
@@ -162,6 +158,10 @@ document.addEventListener("DOMContentLoaded", () => {
     miniCart.style.height = `${cartHeight}px`;
   }
 
+
+
+
+  
   // Drag and Drop functionality for mini cart
   let isDragging = false;
   let offsetX, offsetY;
@@ -383,3 +383,8 @@ function searchProducts() {
     noResultsMessage.style.display = "none";
   }
 }
+
+
+
+
+
