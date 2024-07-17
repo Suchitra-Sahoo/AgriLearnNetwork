@@ -1124,28 +1124,57 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 10px;
   font-size: 16px;
   margin-bottom: 4px;
+  color: #000;
+  letter-spacing: 2px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 1%;
+    color: rgb(13, 24, 10);
+    outline: none;
+    text-align: center;
 }
+
+.modal .rate-para:hover {
+    font-variation-settings: "wght" 782;
+    letter-spacing: 3px;
+}
+
+/* Updated close button styles */
 .close {
-  color: #818181;
-  font-size: 24px;
-  padding: 0;
+  color: #175600;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  position: relative;
-  left: 21px;
-  bottom: 21px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00e10017;
+  border-radius: 50%;
+  border: 2px solid #009a03;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .close:hover,
 .close:focus {
+  background-color: #04ff043d;
   color: #000;
+  transform: rotate(90deg);
 }
+
+
+
 .modal-content h2 {
   margin-top: 4px;
   text-align: center;
   color: rgb(0, 28, 6);
   font-size: 28px;
 }
+
 .form-group {
   position: relative;
   margin-bottom: 20px;
@@ -1197,6 +1226,9 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
+  box-shadow: 0 0 0 rgba(97, 218, 251, 0.7);
+  animation: pulse 2s infinite;
+  transition: background-color 0.3s, transform 0.3s;
   width: 100%;
 }
 .modal-content button[type="submit"]:hover {
@@ -1219,17 +1251,19 @@ input[type="number"]::-webkit-inner-spin-button {
   transition: transform 0.4s ease-in-out; 
 }
 
-.star:hover
- {
+.star:hover,
+.star.hover {
   color: #fdd835;
   transform: scale(1.4);
 }
-.star.active {
+
+.star.active,
+.star.active:hover {
   color: #fdd835;
 }
 
 .star.active:hover ~ .star {
-  transform: scale(1.2); /* Scale up active star and all preceding stars */
+  transform: scale(1.2);
 }
 
 .form-group .block {
@@ -1294,6 +1328,27 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 0;
   position: relative;
   bottom: 17px;
+}
+/* Adding glow effect to the whole modal box */
+.modal-content {
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.367);
+}
+.modal-content:hover {
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.242);
+  transition: 0.35s;
+}
+/* Adding glow effect to the input fields and textarea */
+
+.form-group input:hover,
+.form-group textarea:hover{
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.6);
+  transition: 0.35s;
+}
+
+/* Adding glow effect to the feedback button */
+.modal-content button[type="submit"]:hover {
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.6);
+  transition: 0.35s;
 }
 
 
