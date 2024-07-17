@@ -6,7 +6,7 @@
     <title>Agricultural Tools Store</title>
     <link rel="stylesheet" href="./buy_products.css" />
     <link rel="stylesheet" href="../testimonials/testimonials.css">
- 
+    <link rel="stylesheet" href="../cursor/style.css"
 
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -47,7 +47,7 @@
         </div>
       </a>
       <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar active">
+      <nav class="navbar">
         <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
         <a href="../about/about.html"
           ><i class="fa-solid fa-circle-info"></i> About</a
@@ -59,7 +59,7 @@
           ><i class="fa-solid fa-book"></i> Resource Library</a
         >
         <a href="../FAQS/faqpage.html" target="_self"
-          ><i class="fas fa-question-circle"></i>FAQ</a
+          ><i class="fas fa-question-circle"></i>FAQs</a
         >
         <a href="../index.html#contact" id="nav--contact"
           ><i class="fa-solid fa-phone"></i> Contact</a
@@ -71,7 +71,7 @@
           <button id="log-in-btn" class="login-btn">Login</button>
         </a>
 
-      </nav><br><br><br><br>
+      </nav>
       
     </header><center>
     <h2 style="color: #053314;font-size: 50px;position:absolute;top:100px;left:550px;text-shadow:2px 2px 8px rgb(249, 249, 238)">Agro<span style="color: #0c891f;"> Products</span> </h2></center>
@@ -87,8 +87,7 @@
    <br><br><br><br><br><br><br><br><br><br><br><br>
  
 
-      </nav>
-    </header>
+      
 
 
     <div class="container" id="products">
@@ -687,5 +686,14 @@
     
     </script>
     <script src="./buy_products.js"></script>
+
+    <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove",function(e){
+        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
+    
   </body>
 </html>
