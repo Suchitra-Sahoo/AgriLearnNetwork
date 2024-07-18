@@ -538,15 +538,26 @@
     </div>
 
     <div class="mini-cart" id="mini-cart">
-        <h1 style="display: flex; font-size: 30px; font-weight: 800; justify-content: center;"><center>CART</center></h1>
-        <ul id="cart-items"></ul>
-        <br>
-        <div class="" style="margin-top: 26%;">
-          <center><a href="./checkout.html">
-            <button id="checkout" >Checkout</button>
-          </a></center>
-          <center><h2>Total price : ₹<span id="dyna">0</span></h2></center>
-        </div>
+      <h1 style="display: flex; font-size: 30px; font-weight: 800; justify-content: center;">
+        <center>CART</center>
+      </h1>
+      <ul id="cart-items"></ul>
+      <div id="empty-cart-message" style="display: none; text-align: center;">
+        <img src="./empty_cart1.png" height="200px" width="200px" alt="empty">
+        <h2>No products in the cart</h2>
+      </div>
+      <br>
+      <div class="" style="margin-top: 26%;">
+        <center>
+          <a href="./checkout.html">
+            <button id="checkout" disabled>Checkout</button>
+          </a>
+        </center>
+        <center><h2>Total price: ₹<span id="dyna">0</span></h2></center>
+      </div>
+      
+    </div>
+  
 
     </div>
     <br /><br /><br /><br />

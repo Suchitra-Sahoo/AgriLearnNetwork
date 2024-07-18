@@ -1215,3 +1215,8 @@ h3 {
   background: #000;
   color: white;
 }
+
+#checkout:disabled:hover{
+  background: white;
+  color: gray;
+}
