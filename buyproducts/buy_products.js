@@ -1,3 +1,4 @@
+
 const notify = document.querySelector(".notify");
 function show() {
   let note = document.createElement("div");
@@ -328,3 +329,4 @@ function searchProducts() {
     noResultsMessage.style.display = "none";
   }
 }
+
