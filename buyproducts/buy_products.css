@@ -342,11 +342,10 @@ nav {
   background-color: #46785f;
   padding: 12px;
   border-radius: 4px;
-  width: 300px;
+  width: 400px;
   cursor: move;
   max-height: 380px;
   overflow-y: auto;
-  height: 150px;
   /* Initial height */
   border-width: 4px;
   font-size: 13px;
