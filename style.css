@@ -100,7 +100,6 @@ section {
    top: 0;
    left: 0;
    width:100%;
-   padding:2rem 9%;
    background-color: var(--bg-color);
    display: flex;
    justify-content: space-between;
@@ -212,17 +211,17 @@ section {
 
 /* Theme Toggle Button */
 .theme-toggle {
-  position: fixed;
-  top: 26px;
-  right: 30px;
+ position: relative;
+ left: 48px;
+ bottom:7px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   background-color: yellow;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, box-shadow 0.3s;
   z-index: 1000;
