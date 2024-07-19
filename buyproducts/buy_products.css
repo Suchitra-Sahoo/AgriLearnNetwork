@@ -211,6 +211,7 @@ section {
   background-color: #28a745;
   height: 40px;
   width: 40px;
+  justify-content: center;
   text-align: center;
   border-radius: 50px;
   /* position: relative; */
@@ -224,8 +225,6 @@ section {
   color: red;
   cursor: pointer;
 }
-
-
 
 
   .navbar a:hover::after {
