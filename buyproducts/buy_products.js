@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItems.forEach((item) => {
           const li = document.createElement("li");
           li.innerHTML = `
-              <div style="display:flex; justify-content: space-between; gap: 110px">
+              <div style="display:flex; justify-content: space-between; width: 100%;">
                   <div class="item-info" style="display:flex">
                       <img src="${item.image}" alt="${item.product}">
                       <p>${item.product}</p>
