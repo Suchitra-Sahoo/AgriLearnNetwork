@@ -44,5 +44,4 @@ document.querySelector('.sign-in form').addEventListener('submit', (e) => {
   showSuccessBanner('Signed in successfully');
 });
 
-// Handle sign-up form submission
 
