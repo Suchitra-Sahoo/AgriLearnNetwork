@@ -459,6 +459,7 @@
     </section>
 
     <!-- Modal -->
+
     <div
       id="modal"
       class="modal fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center"
@@ -489,6 +490,22 @@
           <input type="hidden" name="rating" id="rating-value-input" required />
         </div>
 
+    <div id="modal" class="modal fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center" style="display: none;">
+      <div class="modal-content bg-white p-6 rounded shadow-lg relative">
+        <h2 class="text-2xl font-bold mb-4">WE'D LOVE YOUR FEEDBACK! <span class="close cursor-pointer text-gray-500 absolute text-xl">&times;</span></h2>
+        <p class="main-para mb-4">Let us know how we're doing and how we can improve. <br><strong>AgriLearn Network</strong></p>
+        <div class="rating mb-4">
+          <h3 class="rate-para text-xl font-semibold mb-2">Rate Your Experience</h3>
+          <div class="stars" id="stars">
+            <span class="star cursor-pointer" data-value="1">&#9733;</span>
+            <span class="star cursor-pointer" data-value="2">&#9733;</span>
+            <span class="star cursor-pointer" data-value="3">&#9733;</span>
+            <span class="star cursor-pointer" data-value="4">&#9733;</span>
+            <span class="star cursor-pointer" data-value="5">&#9733;</span>
+          </div>
+          <input type="hidden" name="rating" id="rating-value-input" required>
+        </div>
+        
         <form id="feedback-form">
           <div class="form-group mb-4">
             <label for="name" class="block text-left mb-2">Your Name</label>
@@ -496,6 +513,7 @@
               <div class="icon mr-2">
                 <i class="fas fa-user"></i>
               </div>
+
               <input
                 id="name"
                 class="border p-2 w-full"
@@ -507,6 +525,11 @@
             </div>
           </div>
 
+
+              <input id="name" class="border p-2 w-full" type="text" placeholder="Your Name" name="name" required>
+            </div>
+          </div>
+          
           <div class="form-group mb-4">
             <label for="email" class="block text-left mb-2">Your Email</label>
             <div class="form-group flex items-center mb-4">
@@ -569,6 +592,41 @@
       </div>
     </div>
 
+              <input id="email" class="border p-2 w-full" type="email" placeholder="Your Email" name="email" required>
+            </div>
+          </div>
+          
+          <div class="form-group mb-4">
+            <label for="feedback" class="block text-left mb-2">Your Feedback</label>
+            <textarea id="feedback" class="border p-2 w-full" cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+          </div>
+          
+          <button class="bg-blue-500 text-white px-4 py-2 rounded" type="submit">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="thank-you-popup" class="popup fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center" style="display: none;">
+      <div class="popup-content bg-white p-6 rounded shadow-lg text-center">
+        <h2>Thank You for your Feedback!💚</h2>
+        <div class="popup-icon">
+          <img src="./images/feedback-tick.png" alt="✅" height="160" width="180">
+        </div>
+        <p class="pop-para">Your feedback has been received!<br> We appreciate the input you provide.</p>
+        <button class="popup-button bg-blue-500 text-white px-4 py-2 rounded" onclick="closePopup()">Back to Home</button>
+      </div>
+    </div>
+    
+   <div id="rating-popup" class="popup fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center" style="display: none;">
+      <div class="popup-content bg-white p-8 rounded shadow-lg text-center">
+        <h2>Please Give a Rating!⭐</h2>
+      <div class="popup-icon">
+        <img src="./images/Warning.webp" alt="⚠️" height="100" width="120" class="my-4" style="margin-top: 20px;margin-bottom: 20px;">
+      </div>
+        <p class="pop-para">Your feedback is important to us.<br> Please select a rating before submitting.</p>
+        <button class="popup-button bg-blue-500 text-white px-4 py-2 rounded mt-4" onclick="closeRatingPopup()">OK</button>
+      </div>
+   </div>
     <script>
       // Function to handle form submission
       document
@@ -625,6 +683,58 @@
       document.querySelector(".close").addEventListener("click", () => {
         document.getElementById("modal").style.display = "none";
       });
+
+//RATING MODAL
+document.addEventListener('DOMContentLoaded', function() 
+{
+  const stars = document.querySelectorAll('.star');
+  const ratingInput = document.getElementById('rating-value-input');
+  const modal = document.getElementById('modal');
+  const closeModal = document.querySelector('.close');
+
+  stars.forEach(star => {
+    star.addEventListener('click', function() {
+      const ratingValue = this.getAttribute('data-value');
+      ratingInput.value = ratingValue;
+      stars.forEach(star => {
+        if (star.getAttribute('data-value') <= ratingValue) {
+          star.classList.add('text-yellow-500');
+        } else {
+          star.classList.remove('text-yellow-500');
+        }
+      });
+    });
+  });
+
+  document.getElementById('feedback-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    if (!ratingInput.value) {
+      document.getElementById('rating-popup').style.display = 'flex';
+      return;
+    }
+
+    document.getElementById('thank-you-popup').style.display = 'flex';
+  });
+
+  closeModal.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+});
+
+function closePopup() {
+  document.getElementById('thank-you-popup').style.display = 'none';
+}
+
+function closeRatingPopup() {
+  document.getElementById('rating-popup').style.display = 'none';
+}
+
+// To open the modal
+function openModal() {
+  document.getElementById('modal').style.display = 'flex';
+}
+
     </script>
 
     <footer class="footer">

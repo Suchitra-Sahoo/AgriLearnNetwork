@@ -328,26 +328,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 500)
 });
 
-const loginRegisterBtn = document.getElementById('log-in-btn');
-  let islogInMode = true;
-
-  // Change text on hover
-loginRegisterBtn.addEventListener('mouseover', () => {
-  if (islogInMode) {
-    loginRegisterBtn.textContent = 'Register';
-  } else {
-    loginRegisterBtn.textContent = 'Login In';
-  }
-});
-
-loginRegisterBtn.addEventListener('mouseout', () => {
-  if (islogInMode) {
-    loginRegisterBtn.textContent = 'Login';
-  } else {
-    loginRegisterBtn.textContent = 'Register';
-  }
-});
-
 
 // new faq
 function toggleAccordion(header) {

@@ -104,7 +104,7 @@ section {
  }
 
  nav{
-  margin-right: 30px;
+  margin-right: 10px;
   display: flex;
 }
 
@@ -117,10 +117,10 @@ section {
  }
  .navbar a {
   /* position: relative; */
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   /* left: 118px; */
   color: var(--txt-color);
-  margin-right: 4rem;
+  margin-right: 3.1rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -370,7 +370,7 @@ section {
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 32px;
+  top: 26px;
   right: 30px;
   display: flex;
   align-items: center;
@@ -917,7 +917,7 @@ font-size: 36px;
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
@@ -1173,7 +1173,7 @@ font-size: 36px;
 p{
     font-size:medium;
 }
-h3{
+.info h3{
     font-size: large;
 }
 .socialIcons #mail:hover{
