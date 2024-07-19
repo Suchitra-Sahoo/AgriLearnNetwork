@@ -25,22 +25,24 @@ loginBtn.addEventListener("click", () => {
   container.classList.remove("active");
 });
 
-
-const passwordInput = document.getElementById('signup-password');
-const confirmPasswordInput = document.getElementById('signup-confirm-password');
-const passwordMatchError = document.getElementById('signup-password-match-error');
-const signUpBtn = document.getElementById('signup-button');
-
-function validatePasswords() {
-  if (passwordInput.value !== confirmPasswordInput.value) {
-    passwordMatchError.style.display = 'block';
-    signUpBtn.disabled = true;
-  } else {
-    passwordMatchError.style.display = 'none';
-    signUpBtn.disabled = false;
-  }
+function showSuccessBanner(message) {
+  const banner = document.getElementById('success-banner');
+  const bannerText = document.getElementById('banner-text');
+  bannerText.textContent = message;
+  banner.style.display = 'block';
+  setTimeout(() => {
+    banner.style.display = 'none';
+  }, 3000);
 }
+document.querySelector('.sign-up form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  showSuccessBanner('Signed up successfully');
+});
+// Handle sign-in form submission
+document.querySelector('.sign-in form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  showSuccessBanner('Signed in successfully');
+});
 
-passwordInput.addEventListener('input', validatePasswords);
-confirmPasswordInput.addEventListener('input', validatePasswords);
+// Handle sign-up form submission
 
