@@ -1,4 +1,3 @@
-
 const notify = document.querySelector(".notify");
 function show() {
   let note = document.createElement("div");
@@ -61,93 +60,144 @@ document.addEventListener("DOMContentLoaded", () => {
   let cartItems = JSON.parse(localStorage.getItem("CARTS")) || [];
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
   const cartItemsList = document.getElementById("cart-items");
-  const checkoutButton = document.getElementById("checkout");
-  const emptyCartMessage = document.getElementById("empty-cart-message");
+  const miniCart = document.getElementById("mini-cart");
+  const goToTopButton = document.getElementById("go-to-top");
   const dyna = document.getElementById("dyna");
-
   addToCartButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-          const product = button.getAttribute("data-product");
-          const image = button.getAttribute("data-image");
-          const price = button.getAttribute("data-price");
-          addItemToCart(product, image, price);
-          updateCart();
-          updatePrice();
-          localStorage.setItem("CARTS", JSON.stringify(cartItems));
-      });
-  });
-
-  function addItemToCart(product, image, price) {
-      const existingItem = cartItems.find((item) => item.product === product);
-      if (existingItem) {
-          existingItem.quantity += 1;
-      } else {
-          cartItems.push({ product, image, price, quantity: 1 });
-          dyna.innerHTML = Number(dyna.innerHTML) + Number(price);
-      }
+    button.addEventListener("click", () => {
+      const product = button.getAttribute("data-product");
+      const image = button.getAttribute("data-image");
+      const price = button.getAttribute("data-price");
+      addItemToCart(product, image, price);
       updateCart();
-  }
+      updatePrice();
+      localStorage.setItem("CARTS", JSON.stringify(cartItems));
+    });
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    let getCard = localStorage.getItem("CARTS", CARTS);
+    console.log("get", getCard);
+  });
+  function addItemToCart(product, image, price) {
+    const existingItem = cartItems.find((item) => item.product === product);
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cartItems.push({ product, image, price, quantity: 1 });
+      dyna.innerHTML = Number(dyna.innerHTML) + Number(price);
+      localStorage.setItem("CARTS", cartItems);
 
+      // updatePrice();
+    }
+    updateCart();
+    // updatePrice();
+  }
   function updatePrice() {
-      let totalPrice = 0;
-      cartItems.forEach((item) => {
-          totalPrice += item.price * item.quantity;
-      });
-      dyna.innerHTML = totalPrice;
+    // cartItems.forEach(item=>{
+    //   const itemPrice= Number(item.price);
+    //   console.log(itemPrice);
+    //   console.log(dyna.innerHTML);
+    //   dyna.innerHTML = Number(dyna.innerHTML)+itemPrice;
+    //   console.log(dyna.innerHTML);
+    let totalPrice = 0;
+    cartItems.forEach((item) => {
+      totalPrice += item.price * item.quantity;
+    });
+    dyna.innerHTML = totalPrice;
+    console.log(dyna.innerHTML);
   }
 
   function updateCart() {
-      cartItemsList.innerHTML = "";
-      if (cartItems.length === 0) {
-          emptyCartMessage.style.display = "block";
-          checkoutButton.disabled = true;
-      } else {
-          emptyCartMessage.style.display = "none";
-          checkoutButton.disabled = false;
-      }
-
-      cartItems.forEach((item) => {
-          const li = document.createElement("li");
-          li.innerHTML = `
-              <div style="display:flex; justify-content: space-between; width: 100%;">
-                  <div class="item-info" style="display:flex">
-                      <img src="${item.image}" alt="${item.product}">
-                      <p>${item.product}</p>
-                  </div>
-                  <div class="quantity-controls">
-                      <button class="minus">-</button>
-                      <span>${item.quantity}</span>
-                      <button class="plus">+</button>
-                  </div>
-              </div>`;
-          cartItemsList.appendChild(li);
-
-          const minusButton = li.querySelector(".minus");
-          const plusButton = li.querySelector(".plus");
-          minusButton.addEventListener("click", () => {
-              if (item.quantity > 1) {
-                  item.quantity -= 1;
-              } else {
-                  cartItems.splice(cartItems.indexOf(item), 1);
-              }
-              dyna.innerHTML = Number(dyna.innerHTML) - Number(item.price);
-              updateCart();
-              updatePrice();
-              localStorage.setItem("CARTS", JSON.stringify(cartItems));
-          });
-          plusButton.addEventListener("click", () => {
-              item.quantity += 1;
-              dyna.innerHTML = Number(dyna.innerHTML) + Number(item.price);
-              updateCart();
-              updatePrice();
-              localStorage.setItem("CARTS", JSON.stringify(cartItems));
-          });
+    cartItemsList.innerHTML = "";
+    cartItems.forEach((item) => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+                <img src="${item.image}" alt="${item.product}">
+                <span>${item.product}</span>
+                <div class="quantity-controls">
+                    <button class="minus">-</button>
+                    <span>${item.quantity}</span>
+                    <button class="plus">+</button>
+                </div>
+            `;
+      cartItemsList.appendChild(li);
+      // dyna.innerHTML='';
+      const minusButton = li.querySelector(".minus");
+      const plusButton = li.querySelector(".plus");
+      minusButton.addEventListener("click", () => {
+        if (item.quantity > 1) {
+          item.quantity -= 1;
+        } else {
+          item.quantity = 0;
+          cartItems.splice(cartItems.indexOf(item), 1);
+        }
+        const itemSub = Number(item.price);
+        dyna.innerHTML = Number(dyna.innerHTML) - itemSub;
+        updateCart();
+        updatePrice();
+        localStorage.setItem("CARTS", JSON.stringify(cartItems));
       });
+      plusButton.addEventListener("click", () => {
+        item.quantity += 1;
+        const itemAdd = Number(item.price);
+        dyna.innerHTML = Number(dyna.innerHTML) + itemAdd;
+
+        updateCart();
+        updatePrice();
+        localStorage.setItem("CARTS", JSON.stringify(cartItems));
+      });
+    });
+
+    // Dynamically adjust cart height
+    const itemHeight = 60;
+    const initialHeight = 100;
+    const cartHeight = Math.min(
+      cartItems.length * itemHeight + initialHeight,
+      window.innerHeight * 0.7
+    );
+    miniCart.style.height = `${cartHeight}px`;
   }
 
-  updateCart();
-});
+  // Drag and Drop functionality for mini cart
+  let isDragging = false;
+  let offsetX, offsetY;
 
+  miniCart.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    offsetX = e.clientX - miniCart.offsetLeft;
+    offsetY = e.clientY - miniCart.offsetTop;
+    miniCart.style.cursor = "grabbing";
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    if (isDragging) {
+      miniCart.style.left = e.clientX - offsetX + "px";
+      miniCart.style.top = e.clientY - offsetY + "px";
+    }
+  });
+
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+    miniCart.style.cursor = "move";
+  });
+
+  // Go to Top Button functionality
+  window.addEventListener("scroll", () => {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      goToTopButton.style.display = "block";
+    } else {
+      goToTopButton.style.display = "none";
+    }
+  });
+
+  goToTopButton.addEventListener("click", () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  });
+});
 
 //navbar for small screen
 let menuIcon = document.querySelectorAll("#menu-icon");
@@ -329,4 +379,3 @@ function searchProducts() {
     noResultsMessage.style.display = "none";
   }
 }
-

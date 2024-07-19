@@ -6,7 +6,7 @@
     <title>Agricultural Tools Store</title>
     <link rel="stylesheet" href="./buy_products.css" />
     <link rel="stylesheet" href="../testimonials/testimonials.css">
- 
+    <link rel="stylesheet" href="../cursor/style.css"
 
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -23,9 +23,9 @@
     <div id="progressBar"></div>
     <script src="../Scrollbar/scrollbar.js"></script>
 
-      <div class="cart">
-        <img class="cart-image" src="../images/cart.png" alt="Cart Image">
-      </div>
+    <div class="cart">
+      <img class="cart-image" src="../images/cart.png" alt="Cart Image">
+    </div>
     <div class="notify">
 
     </div>
@@ -47,7 +47,7 @@
         </div>
       </a>
       <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar active">
+      <nav class="navbar">
         <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
         <a href="../about/about.html"
           ><i class="fa-solid fa-circle-info"></i> About</a
@@ -59,7 +59,7 @@
           ><i class="fa-solid fa-book"></i> Resource Library</a
         >
         <a href="../FAQS/faqpage.html" target="_self"
-          ><i class="fas fa-question-circle"></i>FAQ</a
+          ><i class="fas fa-question-circle"></i>FAQs</a
         >
         <a href="../index.html#contact" id="nav--contact"
           ><i class="fa-solid fa-phone"></i> Contact</a
@@ -71,7 +71,7 @@
           <button id="log-in-btn" class="login-btn">Login</button>
         </a>
 
-      </nav><br><br><br><br>
+      </nav>
       
     </header><center>
     <h2 style="color: #053314;font-size: 50px;position:absolute;top:100px;left:550px;text-shadow:2px 2px 8px rgb(249, 249, 238)">Agro<span style="color: #0c891f;"> Products</span> </h2></center>
@@ -87,8 +87,7 @@
    <br><br><br><br><br><br><br><br><br><br><br><br>
  
 
-      </nav>
-    </header>
+      
 
 
     <div class="container" id="products">
@@ -538,27 +537,14 @@
     </div>
 
     <div class="mini-cart" id="mini-cart">
-      <h1 style="display: flex; font-size: 30px; font-weight: 800; justify-content: center;">
-        <center>CART</center>
-      </h1>
-      <ul id="cart-items"></ul>
-      <div id="empty-cart-message" style="display: none; text-align: center;">
-        <img src="./empty_cart1.png" height="200px" width="200px" alt="empty">
-        <h2>No products in the cart</h2>
-      </div>
-      <br>
-      <div class="" style="margin-top: 26%;">
-        <center>
-          <a href="./checkout.html">
-            <button id="checkout" disabled>Checkout</button>
-          </a>
-        </center>
-        <center><h2>Total price: ₹<span id="dyna">0</span></h2></center>
-      </div>
-      
-    </div>
-  
+        <h1><center>CART</center></h1>
+        <ul id="cart-items"></ul>
+        <br>
+        <center><a href="./checkout.html">
+          <button id="checkout" >Checkout</button>
 
+        </a></center>
+        <center><h2>Total price : <span id="dyna">0</span></h2></center>
     </div>
     <br /><br /><br /><br />
     <br /><br /> <br /><br /><br /><br />
@@ -700,7 +686,14 @@
     
     </script>
     <script src="./buy_products.js"></script>
+
+    <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove",function(e){
+        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
+    
   </body>
 </html>
-
-
