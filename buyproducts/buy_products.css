@@ -1200,3 +1200,13 @@ p{
   #fb:hover i{
     color: white;
   }
+
+  #checkout{
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  #checkout:hover{
+    background-color: #000;
+    color: #fff;
+  }
