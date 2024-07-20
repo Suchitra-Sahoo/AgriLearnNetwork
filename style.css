@@ -58,6 +58,11 @@ section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
+
+ .separation {
+    height: 7px;
+    background-color: rgb(35, 53, 40);
+}
 /* .header {
   position: fixed;
   top: 0;
