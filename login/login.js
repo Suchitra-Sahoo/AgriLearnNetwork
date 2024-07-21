@@ -2,6 +2,18 @@ const container = document.getElementById("container");
 const registerBtn = document.getElementById("register");
 const loginBtn = document.getElementById("login");
 
+
+const passwordInput = document.getElementById('signup-password');
+const confirmPasswordInput = document.getElementById('signup-confirm-password');
+const passwordMatchError = document.getElementById('signup-password-match-error');
+const signUpBtn = document.getElementById('signup-button');
+
+const forgotPasswordLink = document.getElementById("forgot-password-link");
+const forgotPasswordForm = document.getElementById("forgot-password-form");
+const signInForm = document.getElementById("signin-form");
+const signUpForm = document.getElementById("signup-form");
+const backToLoginLink =document.getElementById("back-to-login-page");
+
 const togglePasswordVisibility = (inputId, buttonId) => {
   const passwordInput = document.getElementById(inputId);
   const toggleButton = document.getElementById(buttonId);
@@ -19,17 +31,14 @@ togglePasswordVisibility('signin-password', 'toggle-signin-password');
 
 registerBtn.addEventListener("click", () => {
   container.classList.add("active");
+  forgotPasswordForm.style.display = 'none';
+
 });
 
 loginBtn.addEventListener("click", () => {
   container.classList.remove("active");
+  forgotPasswordForm.style.display = 'none';
 });
-
-
-const passwordInput = document.getElementById('signup-password');
-const confirmPasswordInput = document.getElementById('signup-confirm-password');
-const passwordMatchError = document.getElementById('signup-password-match-error');
-const signUpBtn = document.getElementById('signup-button');
 
 function validatePasswords() {
   if (passwordInput.value !== confirmPasswordInput.value) {
@@ -44,3 +53,12 @@ function validatePasswords() {
 passwordInput.addEventListener('input', validatePasswords);
 confirmPasswordInput.addEventListener('input', validatePasswords);
 
+forgotPasswordLink.addEventListener('click', () => {
+forgotPasswordForm.style.display = 'block';
+signInForm.style.display = 'none';
+});
+
+backToLoginLink.addEventListener('click', () => {
+forgotPasswordForm.style.display = 'none';
+signInForm.style.display = 'block';
+});
