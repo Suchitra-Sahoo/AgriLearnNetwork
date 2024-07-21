@@ -275,7 +275,7 @@ span {
   position: relative;
   /* width: 290px; */
   max-width: 290px;
-  max-height: 500px;
+  max-height: 680px;
   background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
   background: -webkit-linear-gradient(
     90deg,
@@ -318,7 +318,7 @@ span {
 }
 
 .agrblg {
-  height: 290px;
+  height: 250px;
   width: 100%;
   overflow: hidden;
   border-top-left-radius: 10px;
@@ -331,7 +331,8 @@ span {
   text-align: justify;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 130%;
+  margin-bottom: 12px;
 }
 
 a {
@@ -345,6 +346,7 @@ a {
   justify-content: space-between;
   bottom: 0;
   padding: 0;
+  height: 65px;
 }
 
 .day ul {
