@@ -152,6 +152,13 @@ body::before {
   height: 100%;
   transition: all 0.6s ease-in-out;
 }
+
+.forgot-password-form{
+  left: 0;
+  width: 50%;
+  z-index: 1;
+}
+
 .sign-in {
   left: 0;
   width: 50%;
@@ -271,8 +278,6 @@ body::before {
 .input-password {
   display: flex;
   width: 100%;
-  /* align-items: center; */
-
 }
 
 #toggle-signin-password{
