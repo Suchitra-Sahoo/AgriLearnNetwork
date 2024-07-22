@@ -15,16 +15,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../testimonials/testimonials.css">
+    <link rel="stylesheet" href="../testimonials/testimonials.css" />
 
     <link rel="icon" href="../icon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
-    <link rel="stylesheet" href="../cursor/style.css">
+    <link rel="stylesheet" href="../cursor/style.css" />
     <script
       src="https://kit.fontawesome.com/b08b6de27e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../Scrollbar/scrollbar.css">
+    <link rel="stylesheet" href="../Scrollbar/scrollbar.css" />
   </head>
   <body>
     <div id="progressBar"></div>
@@ -68,31 +68,66 @@
           <h1>Create Account</h1>
           <div class="social-icons">
             <a href="#" class="icon"
-              ><div class="mail" id="ma"><i class="fa-brands fa-google-plus-g"></i
-            ></div></a>
-            <a href="#" class="icon"><div class="mail" id="gi"><i class="fa-brands fa-github"></i></div></a>
+              ><div class="mail" id="ma">
+                <i class="fa-brands fa-google-plus-g"></i></div
+            ></a>
             <a href="#" class="icon"
-              ><div class="mail" id="li"><i class="fa-brands fa-linkedin-in"></i
-            ></div></a>
+              ><div class="mail" id="gi">
+                <i class="fa-brands fa-github"></i></div
+            ></a>
+            <a href="#" class="icon"
+              ><div class="mail" id="li">
+                <i class="fa-brands fa-linkedin-in"></i></div
+            ></a>
           </div>
           <span>or use your email for registeration</span>
-          <input type="text" id="signup-Name" placeholder="Enter your Name" required/>
-          <input type="email" id="signup-email" title="email: abcd123@yahoo.com" pattern="^[a-zA-Z0-9._]+@[a-zA-Z]+\.[a-zA-Z]{2,}$" placeholder="Enter your Email" required/>
-          
+          <input
+            type="text"
+            id="signup-Name"
+            placeholder="Enter your Name"
+            required
+          />
+          <input
+            type="email"
+            id="signup-email"
+            title="email: abcd123@yahoo.com"
+            pattern="^[a-zA-Z0-9._]+@[a-zA-Z]+\.[a-zA-Z]{2,}$"
+            placeholder="Enter your Email"
+            required
+          />
+
           <div class="input-password">
-            <input type="password" id="signup-password" title="password format: alteast 8 chars length, should contain 1 Capital, 1 small letter, 1 number, 1 special symbol" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$&])[A-Za-z\d@$&]{8,}" placeholder="Enter Password" required/>
+            <input
+              type="password"
+              id="signup-password"
+              title="password format: alteast 8 chars length, should contain 1 Capital, 1 small letter, 1 number, 1 special symbol"
+              pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$&])[A-Za-z\d@$&]{8,}"
+              placeholder="Enter Password"
+              required
+            />
             <button type="button" id="toggle-signup-password">
               <i class="fas fa-eye"></i>
             </button>
           </div>
-          
+
           <div class="input-password">
-            <input type="password" id="signup-confirm-password" title="password format: alteast 8 chars length, should contain 1 Capital, 1 small letter, 1 number, 1 special symbol" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$&])[A-Za-z\d@$&]{8,}" placeholder="Re-Enter Password" required/>
+            <input
+              type="password"
+              id="signup-confirm-password"
+              title="password format: alteast 8 chars length, should contain 1 Capital, 1 small letter, 1 number, 1 special symbol"
+              pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$&])[A-Za-z\d@$&]{8,}"
+              placeholder="Re-Enter Password"
+              required
+            />
             <button type="button" id="toggle-signup-confirm-password">
               <i class="fas fa-eye"></i>
             </button>
           </div>
-          <span id="signup-password-match-error" style="color: red; display: none;">Passwords don't match</span>
+          <span
+            id="signup-password-match-error"
+            style="color: red; display: none"
+            >Passwords don't match</span
+          >
           <button id="signup-button" disabled>Sign Up</button>
         </form>
       </div>
@@ -101,40 +136,55 @@
           <h1>Sign In</h1>
           <div class="social-icons">
             <a href="#" class="icon"
-              ><div class="mail" id="ma"><i class="fa-brands fa-google-plus-g"></i
-            ></div></a>
-            <a href="#" class="icon"><div class="mail" id="gi"><i class="fa-brands fa-github"></i></div></a>
+              ><div class="mail" id="ma">
+                <i class="fa-brands fa-google-plus-g"></i></div
+            ></a>
             <a href="#" class="icon"
-              ><div class="mail" id="li"><i class="fa-brands fa-linkedin-in"></i
-            ></div></a>
+              ><div class="mail" id="gi">
+                <i class="fa-brands fa-github"></i></div
+            ></a>
+            <a href="#" class="icon"
+              ><div class="mail" id="li">
+                <i class="fa-brands fa-linkedin-in"></i></div
+            ></a>
           </div>
           <span>or use your email password</span>
           <div class="input-password">
-          <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Email" />
           </div>
           <div class="input-password">
-            <input type="password" id="signin-password" placeholder="Password" />
+            <input
+              type="password"
+              id="signin-password"
+              placeholder="Password"
+            />
             <button type="button" id="toggle-signin-password">
               <i class="fas fa-eye"></i>
             </button>
           </div>
-               
-          <a href="#forgot-password-form" id="forgot-password-link">Forget Your Password?</a>
+
+          <a href="#forgot-password-form" id="forgot-password-link"
+            >Forget Your Password?</a
+          >
           <button>Sign In</button>
         </form>
       </div>
-      
-      
+
       <!-- Forget Password Form-->
-      <div class="form-container forgot-password-form" id="forgot-password-form">
+      <div
+        class="form-container forgot-password-form"
+        id="forgot-password-form"
+      >
         <form>
-          <h1 style="font-size: 30px;">Forgot Password? No Worries!</h1>
+          <h1 style="font-size: 30px">Forgot Password? No Worries!</h1>
           <div>
-            <br/>
-          <label style="color: black; font-size: medium;">Enter your email to receive password reset link.</label>
-          <input type="email" placeholder="Email" required/>
+            <br />
+            <label style="color: black; font-size: medium"
+              >Enter your email to receive password reset link.</label
+            >
+            <input type="email" placeholder="Email" required />
           </div>
-          <button type="reset"> Send a mail</button>
+          <button type="reset">Send a mail</button>
           <a href="#signin-form" id="back-to-login-page"> Back to Login page</a>
         </form>
       </div>
@@ -160,23 +210,28 @@
         </div>
         <div class="footer-icons">
           <p><b>Follow us on our socials:</b></p>
-           <div class="socialIcons">
-            <a id="mail"
+          <div class="socialIcons">
+            <a
+              id="mail"
               href="mailto:AgriLearnNetwork@gmail.com"
               class="email-link"
               data-tooltip="AgriLearnNetwork@gmail.com"
               ><i class="fas fa-envelope"></i
             ></a>
-            <a id="inst"
+            <a
+              id="inst"
               href="https://www.instagram.com/your_username_here"
               target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
-            <a id="twit"
-             href="https://twitter.com/your_username_here" target="_blank"
+            <a
+              id="twit"
+              href="https://twitter.com/your_username_here"
+              target="_blank"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
-            <a id="fb"
+            <a
+              id="fb"
               href="https://www.facebook.com/your_page_or_profile_here"
               target="_blank"
               ><i class="fab fa-facebook"></i
@@ -202,6 +257,9 @@
           <li>
             <a href="../index.html#contact"><p>Contact Us</p></a>
           </li>
+          <li>
+            <a href="../Contributors/contributor.html"><p>Contributor</p></a>
+          </li>
         </ul>
       </div>
       <div class="footer-text footer-right">
@@ -211,20 +269,29 @@
             document.write(new Date().getFullYear());
           </script>
           by AgriLearnNetwork | All Rights Reserved.
-          <span class="legal-page"><a href="../testimonials/termsandconditions.html">| Terms and Conditions</a></span>
-          <span class="legal-page"><a href="../testimonials/privacypolicy.html">| Privacy Policy</a></span>
+          <span class="legal-page"
+            ><a href="../testimonials/termsandconditions.html"
+              >| Terms and Conditions</a
+            ></span
+          >
+          <span class="legal-page"
+            ><a href="../testimonials/privacypolicy.html"
+              >| Privacy Policy</a
+            ></span
+          >
         </p>
       </div>
       <div class="cursor"></div>
-    <div class="cursor2"></div>
+      <div class="cursor2"></div>
     </footer>
     <script src="./login.js"></script>
     <script src="../script.js"></script>
     <script>
       var cursor = document.querySelector(".cursor");
       var cursor2 = document.querySelector(".cursor2");
-      document.addEventListener("mousemove",function(e){
-        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      document.addEventListener("mousemove", function (e) {
+        cursor.style.cssText = cursor2.style.cssText =
+          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
       });
     </script>
   </body>

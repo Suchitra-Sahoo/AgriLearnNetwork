@@ -1,435 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <link rel="stylesheet" href="../cursor/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./faqpagestyle.css" />
+    <link rel="icon" href="../icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../testimonials/testimonials.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FAQs</title>
-  <link rel="stylesheet" href="../cursor/style.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <!-- <link rel="stylesheet" href="style.css" /> -->
-  <link rel="stylesheet" href="./faqpagestyle.css" />
-  <link rel="icon" href="../icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="../testimonials/testimonials.css">
- 
-  <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/b08b6de27e.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <link rel="stylesheet" href="../Scrollbar/scrollbar.css">
+    <link rel="stylesheet" href="../Scrollbar/scrollbar.css" />
+  </head>
 
-</head>
-
-<body>
-  <div id="progressBar"></div>
+  <body>
+    <div id="progressBar"></div>
     <script src="../Scrollbar/scrollbar.js"></script>
 
-  <header class="header">
-    <img src="../icon.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px" />
-    <a href="#" class="logo" style="margin-inline-end: auto">
-      <h3>AgriLearnNetwork</h3>
-    </a>
-
-    <div class="theme-toggle">
-      <i class="fas fa-sun"></i>
-      <i class="fas fa-moon"></i>
-    </div>
-
-    <i class="bx bx-menu" id="menu-icon"></i>
-    <nav class="navbar">
-      <a href="../index.html#home"><i class="fa-solid fa-house"></i> Home</a>
-      <a href="../about/about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-      <a href="../blog/blogpage.html" target="_self"><i class="fa-solid fa-blog"></i> Blogs</a>
-      <a href="../index.html#Resource Library"><i class="fa-solid fa-book"></i> Resource Library</a>
-      <a href="./faqpage.html" class="active"><i class="fas fa-question-circle"></i>FAQs</a>
-      <a href="../index.html#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
-      <a href="../buyproducts/buy_products.html"><i class="fa fa-shopping-cart"></i>Buy Products</a>
-      <a href="../login/login.html">
-        <button id="log-in-btn" class="login-btn">Login</button>
+    <header class="header">
+      <img
+        src="../icon.png"
+        alt="logo"
+        style="height: 50px; width: 50px; margin-right: 10px"
+      />
+      <a href="#" class="logo" style="margin-inline-end: auto">
+        <h3>AgriLearnNetwork</h3>
       </a>
 
-    </nav>
-  </header>
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </div>
 
-  <!--FAQ Section-->
-  <div class="faq_container">
-    <section id="faq" class="faq">
-      <div class="faq_heading" data-aos="fade-up">Frequently Asked Questions (FAQ)</div>
-      <div class="faq_box">
-        <div class="image" data-aos="fade-right">
-          <img class="faq-img" src="../faq/7 (1).png" alt="FAQ">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="../index.html#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="../about/about.html"
+          ><i class="fa-solid fa-circle-info"></i> About</a
+        >
+        <a href="../blog/blogpage.html" target="_self"
+          ><i class="fa-solid fa-blog"></i> Blogs</a
+        >
+        <a href="../index.html#Resource Library"
+          ><i class="fa-solid fa-book"></i> Resource Library</a
+        >
+        <a href="./faqpage.html" class="active"
+          ><i class="fas fa-question-circle"></i>FAQs</a
+        >
+        <a href="../index.html#contact" id="nav--contact"
+          ><i class="fa-solid fa-phone"></i> Contact</a
+        >
+        <a href="../buyproducts/buy_products.html"
+          ><i class="fa fa-shopping-cart"></i>Buy Products</a
+        >
+        <a href="../login/login.html">
+          <button id="log-in-btn" class="login-btn">Login</button>
+        </a>
+      </nav>
+    </header>
+
+    <!--FAQ Section-->
+    <div class="faq_container">
+      <section id="faq" class="faq">
+        <div class="faq_heading" data-aos="fade-up">
+          Frequently Asked Questions (FAQ)
         </div>
-        <div class="accordion-container" data-aos="fade-left">
-          <!-- Question-1 -->
-          <div class="accordion">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="../faq/Expand-more.svg" alt="Expand" data-light-icon="../faq/Expand-more.svg" data-dark-icon="../faq/Expand-more-dark.svg"></span>
-              <h3>What is AgriLearnNetwork?</h3>
+        <div class="faq_box">
+          <div class="image" data-aos="fade-right">
+            <img class="faq-img" src="../faq/7 (1).png" alt="FAQ" />
+          </div>
+          <div class="accordion-container" data-aos="fade-left">
+            <!-- Question-1 -->
+            <div class="accordion">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span
+                  ><img
+                    src="../faq/Expand-more.svg"
+                    alt="Expand"
+                    data-light-icon="../faq/Expand-more.svg"
+                    data-dark-icon="../faq/Expand-more-dark.svg"
+                /></span>
+                <h3>What is AgriLearnNetwork?</h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  AgriLearnNetwork is a comprehensive platform dedicated to
+                  empowering farmers by providing essential insights, resources,
+                  and strategic management approaches for successful agriculture
+                  practices. Our platform offers detailed guidance and in-depth
+                  knowledge across various facets of farming.
+                </p>
+              </div>
             </div>
-            <div class="accordion-body">
-              <p>AgriLearnNetwork is a comprehensive platform dedicated to empowering farmers by providing essential
-                insights, resources, and strategic management approaches for successful agriculture practices. Our
-                platform offers detailed guidance and in-depth knowledge across various facets of farming.
-              </p>
+            <!-- Question-2 -->
+            <div class="accordion">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span
+                  ><img
+                    src="../faq/Expand-more.svg"
+                    alt="Expand"
+                    data-light-icon="../faq/Expand-more.svg"
+                    data-dark-icon="../faq/Expand-more-dark.svg"
+                /></span>
+                <h3>Who can benefit from AgriLearnNetwork?</h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  AgriLearnNetwork is designed for farmers of all scales,
+                  agricultural enthusiasts, researchers, and anyone involved in
+                  the agriculture industry. It caters to both beginners and
+                  experienced farmers looking to enhance their farming
+                  practices.
+                </p>
+              </div>
+            </div>
+            <!--Question-3-->
+            <div class="accordion">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span
+                  ><img
+                    src="../faq/Expand-more.svg"
+                    alt="Expand"
+                    data-light-icon="../faq/Expand-more.svg"
+                    data-dark-icon="../faq/Expand-more-dark.svg"
+                /></span>
+                <h3>What features does AgriLearnNetwork offer?</h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  AgriLearnNetwork offers a wide range of features,
+                  including:<br />
+                  1.Detailed farming guides<br />
+                  2.Crop and livestock management tips<br />
+                  3.Weather forecasting tools<br />
+                  4.Market price updates<br />
+                  5.Expert advice and consultancy services<br />
+                  6.Community forums for peer support<br />
+                  7.Access to research and best practices in agriculture<br />
+                </p>
+              </div>
+            </div>
+            <!--Question-6-->
+            <div class="accordion">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span
+                  ><img
+                    src="../faq/Expand-more.svg"
+                    alt="Expand"
+                    data-light-icon="../faq/Expand-more.svg"
+                    data-dark-icon="../faq/Expand-more-dark.svg"
+                /></span>
+                <h3>What types of farming does AgriLearnNetwork support?</h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  AgriLearnNetwork supports a wide range of farming practices,
+                  including crop farming, livestock farming, aquaculture, and
+                  agroforestry. We provide tailored resources and guidance for
+                  each type of farming.
+                </p>
+              </div>
+            </div>
+            <!--Question-7-->
+            <div class="accordion">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span
+                  ><img
+                    src="../faq/Expand-more.svg"
+                    alt="Expand"
+                    data-light-icon="../faq/Expand-more.svg"
+                    data-dark-icon="../faq/Expand-more-dark.svg"
+                /></span>
+                <h3>Is AgriLearnNetwork free to use?</h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  Yes, AgriLearnNetwork offers free access to most of our
+                  resources and tools. However, we also provide premium content
+                  and services which are available for a subscription fee.
+                </p>
+              </div>
+            </div>
+            <!--Question-8-->
+            <div class="accordion">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span
+                  ><img
+                    src="../faq/Expand-more.svg"
+                    alt="Expand"
+                    data-light-icon="../faq/Expand-more.svg"
+                    data-dark-icon="../faq/Expand-more-dark.svg"
+                /></span>
+                <h3>
+                  Can I get personalized advice from experts on Agrilearn
+                  Network?
+                </h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  Yes, AgriLearnNetwork offers personalized advice from
+                  agricultural experts. You can book one-on-one consultation
+                  sessions to discuss specific issues and get tailored
+                  solutions.
+                </p>
+              </div>
+            </div>
+            <!--Question-9-->
+            <div class="accordion">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span
+                  ><img
+                    src="../faq/Expand-more.svg"
+                    alt="Expand"
+                    data-light-icon="../faq/Expand-more.svg"
+                    data-dark-icon="../faq/Expand-more-dark.svg"
+                /></span>
+                <h3>
+                  How can I stay updated with the latest agricultural trends and
+                  news?
+                </h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  To stay updated with the latest agricultural trends and news,
+                  you can subscribe to our newsletter. Additionally, our
+                  platform regularly updates its blog and news section with
+                  relevant articles and information.
+                </p>
+              </div>
+            </div>
+            <!--Question-10-->
+            <div class="accordion">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span
+                  ><img
+                    src="../faq/Expand-more.svg"
+                    alt="Expand"
+                    data-light-icon="../faq/Expand-more.svg"
+                    data-dark-icon="../faq/Expand-more-dark.svg"
+                /></span>
+                <h3>
+                  Does AgriLearnNetwork offer any training programs or courses?
+                </h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  Yes, AgriLearnNetwork offers a variety of training programs
+                  and courses covering different aspects of farming. These
+                  programs are designed to enhance your knowledge and skills in
+                  agriculture.
+                </p>
+              </div>
+            </div>
+            <!--Question-11-->
+            <div class="accordion">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span
+                  ><img
+                    src="../faq/Expand-more.svg"
+                    alt="Expand"
+                    data-light-icon="../faq/Expand-more.svg"
+                    data-dark-icon="../faq/Expand-more-dark.svg"
+                /></span>
+                <h3>
+                  How do I participate in community forums on AgriLearnNetwork?
+                </h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  To participate in community forums, you need to log in to your
+                  AgriLearnNetwork account and navigate to the forums section.
+                  You can post questions, share experiences, and engage with
+                  other community members.
+                </p>
+              </div>
             </div>
           </div>
-          <!-- Question-2 -->
-          <div class="accordion">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="../faq/Expand-more.svg" alt="Expand" data-light-icon="../faq/Expand-more.svg" data-dark-icon="../faq/Expand-more-dark.svg"></span>
-              <h3>Who can benefit from AgriLearnNetwork?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>AgriLearnNetwork is designed for farmers of all scales, agricultural enthusiasts, researchers, and
-                anyone involved in the agriculture industry. It caters to both beginners and experienced farmers looking
-                to enhance their farming practices.
-              </p>
-            </div>
-          </div>
-          <!--Question-3-->
-          <div class="accordion">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="../faq/Expand-more.svg" alt="Expand" data-light-icon="../faq/Expand-more.svg" data-dark-icon="../faq/Expand-more-dark.svg"></span>
-              <h3>What features does AgriLearnNetwork offer?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>AgriLearnNetwork offers a wide range of features, including:<br>
-                1.Detailed farming guides<br>
-                2.Crop and livestock management tips<br>
-                3.Weather forecasting tools<br>
-                4.Market price updates<br>
-                5.Expert advice and consultancy services<br>
-                6.Community forums for peer support<br>
-                7.Access to research and best practices in agriculture<br>
-              </p>
-            </div>
-          </div>
-          <!--Question-6-->
-          <div class="accordion">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="../faq/Expand-more.svg" alt="Expand" data-light-icon="../faq/Expand-more.svg" data-dark-icon="../faq/Expand-more-dark.svg"></span>
-              <h3>What types of farming does AgriLearnNetwork support?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>AgriLearnNetwork supports a wide range of farming practices, including crop farming, livestock
-                farming,
-                aquaculture, and agroforestry. We provide tailored resources and guidance for each type of farming.</p>
-            </div>
-          </div>
-          <!--Question-7-->
-          <div class="accordion">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="../faq/Expand-more.svg" alt="Expand" data-light-icon="../faq/Expand-more.svg" data-dark-icon="../faq/Expand-more-dark.svg"></span>
-              <h3>Is AgriLearnNetwork free to use?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>Yes, AgriLearnNetwork offers free access to most of our resources and tools. However, we also provide
-                premium content and services which are available for a subscription fee.</p>
-            </div>
-          </div>
-          <!--Question-8-->
-          <div class="accordion">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="../faq/Expand-more.svg" alt="Expand" data-light-icon="../faq/Expand-more.svg" data-dark-icon="../faq/Expand-more-dark.svg"></span>
-              <h3>Can I get personalized advice from experts on Agrilearn Network?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>Yes, AgriLearnNetwork offers personalized advice from agricultural experts. You can book one-on-one
-                consultation sessions to discuss specific issues and get tailored solutions.</p>
-            </div>
-          </div>
-          <!--Question-9-->
-          <div class="accordion">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="../faq/Expand-more.svg" alt="Expand" data-light-icon="../faq/Expand-more.svg" data-dark-icon="../faq/Expand-more-dark.svg"></span>
-              <h3>How can I stay updated with the latest agricultural trends and news?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>To stay updated with the latest agricultural trends and news, you can subscribe to our newsletter.
-                Additionally, our platform regularly updates its blog and news section with relevant articles and
-                information.</p>
-            </div>
-          </div>
-          <!--Question-10-->
-          <div class="accordion">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="../faq/Expand-more.svg" alt="Expand" data-light-icon="../faq/Expand-more.svg" data-dark-icon="../faq/Expand-more-dark.svg"></span>
-              <h3>Does AgriLearnNetwork offer any training programs or courses?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>Yes, AgriLearnNetwork offers a variety of training programs and courses covering different aspects of
-                farming. These programs are designed to enhance your knowledge and skills in agriculture.</p>
-            </div>
-          </div>
-          <!--Question-11-->
-          <div class="accordion">
-            <div class="accordion-header" onclick="toggleAccordion(this)">
-              <span><img src="../faq/Expand-more.svg" alt="Expand" data-light-icon="../faq/Expand-more.svg" data-dark-icon="../faq/Expand-more-dark.svg"></span>
-              <h3>How do I participate in community forums on AgriLearnNetwork?</h3>
-            </div>
-            <div class="accordion-body">
-              <p>To participate in community forums, you need to log in to your AgriLearnNetwork account and navigate
-                to
-                the forums section. You can post questions, share experiences, and engage with other community members.
-              </p>
-            </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-title">
+          <h2>AgriLearnNetwork</h2>
+        </div>
+        <div class="footer-icons">
+          <p><b>Follow us on our socials:</b></p>
+          <div class="socialIcons">
+            <a
+              id="mail"
+              href="mailto:AgriLearnNetwork@gmail.com"
+              class="email-link"
+              data-tooltip="AgriLearnNetwork@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              id="inst"
+              href="https://www.instagram.com/your_username_here"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              id="twit"
+              href="https://twitter.com/your_username_here"
+              target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              id="fb"
+              href="https://www.facebook.com/your_page_or_profile_here"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
           </div>
         </div>
       </div>
-    </section>
-  </div>
-
-
-  <!--Footer -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-title">
-        <h2>AgriLearnNetwork</h2>
+      <div class="quick-links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li>
+            <a href="../index.html">
+              <p>Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="../about/about.html">
+              <p>About Us</p>
+            </a>
+          </li>
+          <li>
+            <a href="../blog/blogpage.html">
+              <p>Blogs</p>
+            </a>
+          </li>
+          <li>
+            <a href="./faqpage.html">
+              <p>FAQs</p>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html#Resource Library">
+              <p>Resource Library</p>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html#contact">
+              <p>Contact Us</p>
+            </a>
+          </li>
+          <li>
+            <a href="../buyproducts/buy_products.html"><p>Buy Products</p></a>
+          </li>
+          <li>
+            <a href="../Contributors/contributor.html"><p>Contributor</p></a>
+          </li>
+        </ul>
       </div>
-      <div class="footer-icons">
-        <p><b>Follow us on our socials:</b></p>
-        <div class="socialIcons">
-          <a id="mail"
-            href="mailto:AgriLearnNetwork@gmail.com"
-            class="email-link"
-            data-tooltip="AgriLearnNetwork@gmail.com"
-            ><i class="fas fa-envelope"></i
-          ></a>
-          <a id="inst"
-            href="https://www.instagram.com/your_username_here"
-            target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a id="twit"
-           href="https://twitter.com/your_username_here" target="_blank"
-            ><i class="fa-brands fa-x-twitter"></i
-          ></a>
-          <a id="fb"
-            href="https://www.facebook.com/your_page_or_profile_here"
-            target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
-        </div>
+      <div class="footer-text footer-right">
+        <p style="font-weight: 600; font-size: 15px">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          by AgriLearnNetwork | All Rights Reserved.
+          <span class="legal-page"
+            ><a href="../testimonials/termsandconditions.html"
+              >| Terms and Conditions</a
+            ></span
+          >
+          <span class="legal-page"
+            ><a href="../testimonials/privacypolicy.html"
+              >| Privacy Policy</a
+            ></span
+          >
+        </p>
       </div>
+    </footer>
+    <div id="backtoTop">
+      <a href="faqpage.html"><i class="bx bx-up-arrow-alt"></i></a>
     </div>
-<div class="quick-links">
-      <h2>Quick Links</h2>
-      <ul>
-        <li>
-          <a href="../index.html">
-            <p>Home</p>
-          </a>
-        </li>
-        <li>
-          <a href="../about/about.html">
-            <p>About Us</p>
-          </a>
-        </li>
-        <li>
-          <a href="../blog/blogpage.html">
-            <p>Blogs</p>
-          </a>
-        </li>
-        <li>
-          <a href="./faqpage.html">
-            <p>FAQs</p>
-          </a>
-        </li>
-        <li>
-          <a href="../index.html#Resource Library">
-            <p>Resource Library</p>
-          </a>
-        </li>
-        <li>
-          <a href="../index.html#contact">
-            <p>Contact Us</p>
-          </a>
-        </li>
-        <li>
-          <a href="../buyproducts/buy_products.html"><p>Buy Products</p></a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-text footer-right">
-      <p style="font-weight: 600; font-size: 15px">
-        Copyright &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        by AgriLearnNetwork | All Rights Reserved.
-        <span class="legal-page"><a href="../testimonials/termsandconditions.html">| Terms and Conditions</a></span>
-          <span class="legal-page"><a href="../testimonials/privacypolicy.html">| Privacy Policy</a></span>
-      </p>
-    </div>
-  </footer>
-  <div id="backtoTop">
-    <a href="faqpage.html"><i class="bx bx-up-arrow-alt"></i></a>
-  </div>
-  <div class="cursor"></div>
+    <div class="cursor"></div>
     <div class="cursor2"></div>
 
+    <script src="../script.js"></script>
 
-  <script src="../script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeToggle = document.querySelector(".theme-toggle");
+        const body = document.body;
+        const accordions = document.querySelectorAll(".accordion-header img");
 
+        // Check for saved user preference, if any, on load of the website
+        const currentTheme = localStorage.getItem("theme");
+        if (currentTheme) {
+          body.classList.add(currentTheme);
 
-  <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const themeToggle = document.querySelector('.theme-toggle');
-  const body = document.body;
-  const accordions = document.querySelectorAll('.accordion-header img');
-  
-  // Check for saved user preference, if any, on load of the website
-  const currentTheme = localStorage.getItem('theme');
-  if (currentTheme) {
-    body.classList.add(currentTheme);
+          if (currentTheme === "dark-theme") {
+            themeToggle.querySelector(".fa-sun").style.display = "none";
+            themeToggle.querySelector(".fa-moon").style.display = "inline";
+            toggleIcons(true);
+          }
+        }
 
-    if (currentTheme === 'dark-theme') {
-      themeToggle.querySelector('.fa-sun').style.display = 'none';
-      themeToggle.querySelector('.fa-moon').style.display = 'inline';
-      toggleIcons(true);
-    }
-  }
+        themeToggle.addEventListener("click", function () {
+          const isDarkMode = body.classList.toggle("dark-theme");
 
-  themeToggle.addEventListener('click', function () {
-    const isDarkMode = body.classList.toggle('dark-theme');
+          if (isDarkMode) {
+            themeToggle.querySelector(".fa-sun").style.display = "none";
+            themeToggle.querySelector(".fa-moon").style.display = "inline";
+            localStorage.setItem("theme", "dark-theme");
+          } else {
+            themeToggle.querySelector(".fa-sun").style.display = "inline";
+            themeToggle.querySelector(".fa-moon").style.display = "none";
+            localStorage.setItem("theme", "light-theme");
+          }
 
-    if (isDarkMode) {
-      themeToggle.querySelector('.fa-sun').style.display = 'none';
-      themeToggle.querySelector('.fa-moon').style.display = 'inline';
-      localStorage.setItem('theme', 'dark-theme');
-    } else {
-      themeToggle.querySelector('.fa-sun').style.display = 'inline';
-      themeToggle.querySelector('.fa-moon').style.display = 'none';
-      localStorage.setItem('theme', 'light-theme');
-    }
+          toggleIcons(isDarkMode);
+        });
 
-    toggleIcons(isDarkMode);
-  });
+        function toggleAccordion(header) {
+          const accordionBody = header.nextElementSibling;
+          const icon = header.querySelector("img");
+          const isOpen = accordionBody.style.display === "block";
 
-  function toggleAccordion(header) {
-    const accordionBody = header.nextElementSibling;
-    const icon = header.querySelector('img');
-    const isOpen = accordionBody.style.display === "block";
+          accordionBody.style.display = isOpen ? "none" : "block";
 
-    accordionBody.style.display = isOpen ? "none" : "block";
+          if (isOpen) {
+            icon.src = icon.getAttribute("data-light-icon");
+          } else {
+            icon.src = icon.getAttribute("data-dark-icon");
+          }
+        }
 
-    if (isOpen) {
-      icon.src = icon.getAttribute('data-light-icon');
-    } else {
-      icon.src = icon.getAttribute('data-dark-icon');
-    }
-  }
+        function toggleIcons(isDarkMode) {
+          accordions.forEach((icon) => {
+            icon.src = isDarkMode
+              ? icon.getAttribute("data-dark-icon")
+              : icon.getAttribute("data-light-icon");
+          });
+        }
 
-  function toggleIcons(isDarkMode) {
-    accordions.forEach(icon => {
-      icon.src = isDarkMode ? icon.getAttribute('data-dark-icon') : icon.getAttribute('data-light-icon');
-    });
-  }
+        // Initialize the icons based on the current theme
+        toggleIcons(body.classList.contains("dark-theme"));
+      });
+    </script>
 
-  // Initialize the icons based on the current theme
-  toggleIcons(body.classList.contains('dark-theme'));
-});
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-  </script>
-  
-  
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-  <script src="script.js"></script>
-  <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/1cfb7415-d4fc-4477-8d00-3717d30c975b/webchat/config.js" defer></script> -->
 
-  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 
-  <script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY;
+        var backToTopButton = document.getElementById("backtoTop");
 
-    window.addEventListener('scroll', function () {
-      var scrollPosition = window.scrollY;
-      var backToTopButton = document.getElementById('backtoTop');
-
-      if (scrollPosition > 300) { // Adjust this value as needed to show the button at the desired scroll position
-        backToTopButton.style.display = 'block';
-      } else {
-        backToTopButton.style.display = 'none';
-      }
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const slideGroup = document.querySelector(".slide_group");
-      let currentSlide = 0;
-      const images = [
-        "./images/carousel-img-2.jpg",
-        "./images/carousel-img-1.jpg",
-        "./images/carousel-img-3.jpg",
-        "./images/carousel-img-4.jpg",
-      ];
-
-      function showSlide(n) {
-        slideGroup.style.left = `${-n * 100}%`; // Adjust left property based on current slide
-        currentSlide = n;
-      }
-
-      function nextSlide() {
-        currentSlide = (currentSlide + 1) % images.length; // Move to the next slide
-        showSlide(currentSlide);
-      }
-
-      setInterval(nextSlide, 2000); // Automatically change slide every 2 seconds
-
-      // Preload images for smoother transition
-      images.forEach((src) => {
-        const img = new Image();
-        img.src = src;
+        if (scrollPosition > 300) {
+          // Adjust this value as needed to show the button at the desired scroll position
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
       });
-    });
 
-    // mobile no validation @dhruv8433
-    const mobileNumberInput = document.getElementById("mobileNumber");
+      document.addEventListener("DOMContentLoaded", function () {
+        const slideGroup = document.querySelector(".slide_group");
+        let currentSlide = 0;
+        const images = [
+          "./images/carousel-img-2.jpg",
+          "./images/carousel-img-1.jpg",
+          "./images/carousel-img-3.jpg",
+          "./images/carousel-img-4.jpg",
+        ];
 
-    mobileNumberInput.addEventListener("input", () => {
-      const maxLength = 10;
-      const value = mobileNumberInput.value;
+        function showSlide(n) {
+          slideGroup.style.left = `${-n * 100}%`; // Adjust left property based on current slide
+          currentSlide = n;
+        }
 
-      if (value.length > maxLength) {
-        mobileNumberInput.value = value.slice(0, maxLength);
-      }
-    });
-  </script>
-  <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
-  <script type="text/javascript">
-    (function (d, t) {
-      var v = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-      v.onload = function () {
-        window.voiceflow.chat.load({
-          verify: { projectID: "664632efd181ce0921d32ed5" },
-          url: "https://general-runtime.voiceflow.com",
-          versionID: "production",
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % images.length; // Move to the next slide
+          showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 2000); // Automatically change slide every 2 seconds
+
+        // Preload images for smoother transition
+        images.forEach((src) => {
+          const img = new Image();
+          img.src = src;
         });
-      };
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-      v.type = "text/javascript";
-      s.parentNode.insertBefore(v, s);
-    })(document, "script");
-  </script>
+      });
 
-  <script type="text/javascript">
-    window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 10)
-    })
-  </script>
-   <script>
-    var cursor = document.querySelector(".cursor");
-    var cursor2 = document.querySelector(".cursor2");
-    document.addEventListener("mousemove",function(e){
-      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-    });
-  </script>
+      // mobile no validation @dhruv8433
+      const mobileNumberInput = document.getElementById("mobileNumber");
 
+      mobileNumberInput.addEventListener("input", () => {
+        const maxLength = 10;
+        const value = mobileNumberInput.value;
 
-  
-</body>
+        if (value.length > maxLength) {
+          mobileNumberInput.value = value.slice(0, maxLength);
+        }
+      });
+    </script>
+    <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat.load({
+            verify: { projectID: "664632efd181ce0921d32ed5" },
+            url: "https://general-runtime.voiceflow.com",
+            versionID: "production",
+          });
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
+    </script>
 
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 10);
+      });
+    </script>
+    <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove", function (e) {
+        cursor.style.cssText = cursor2.style.cssText =
+          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
+  </body>
 </html>
