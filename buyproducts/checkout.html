@@ -44,7 +44,7 @@
             cartItemsCheckout.appendChild(itemElement);
           });
 
-          totalPriceElement.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
+          totalPriceElement.textContent = `Total Price: ₹${totalPrice.toFixed(2)}`;
           // Update total price
           dyna.textContent = `Total Price: ₹${totalPrice.toFixed(2)}`;
         }
@@ -452,4 +452,10 @@ body {
       </div>
     </div>
   </body>
+  <script>
+    document.getElementById('make-payment-btn').addEventListener('click', function() {
+        window.location.href = 'buy_products.html';
+    });
+</script>
+
 </html>
