@@ -1,321 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="../icon.png"  type="image/png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../icon.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- custom styles -->
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="./about.css">
-    <link rel="stylesheet" href="../cursor/style.css">
-    <link rel="stylesheet" href="../testimonials/testimonials.css">
-
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="../cursor/style.css" />
+    <link rel="stylesheet" href="../testimonials/testimonials.css" />
 
     <!-- font family -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/c732ec9339.js" crossorigin="anonymous"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c732ec9339.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>About Us | AgriLearnNetwork</title>
-    <link rel="stylesheet" href="/Scrollbar/scrollbar.css">
-</head>
+    <link rel="stylesheet" href="/Scrollbar/scrollbar.css" />
+  </head>
 
-<body>
+  <body>
     <div id="progressBar"></div>
     <script src="../Scrollbar/scrollbar.js"></script>
 
     <!-- header -->
     <header class="header">
-        <img src="../icon.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px;" />
+      <img
+        src="../icon.png"
+        alt="logo"
+        style="height: 50px; width: 50px; margin-right: 10px"
+      />
 
-        <a href="#" class="logo" style="margin-inline-end: auto">
-            <h3 style="font-weight: bold;">AgriLearnNetwork</h3>
-        </a>
+      <a href="#" class="logo" style="margin-inline-end: auto">
+        <h3 style="font-weight: bold">AgriLearnNetwork</h3>
+      </a>
 
-        <a>
-            <div class="theme-toggle">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-            </div>
-        </a>
+      <a>
+        <div class="theme-toggle">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </div>
+      </a>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-        <nav class="navbar">
-            <a href="../index.html" class="content"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="./about.html" class="active"><i class="fa-solid fa-circle-info"></i> About</a>
-            <a href="../blog/blogpage.html" target="_self"><i class="fa-solid fa-blog"></i> Blogs</a>
-            <a href="../index.html#Resource Library"><i class="fa-solid fa-book"></i> Resource Library</a>
-            <a href="../FAQS/faqpage.html" target="_self"><i class="fas fa-question-circle"></i>FAQs</a>
-            <a href="../index.html#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
-            <a href="../buyproducts/buy_products.html"><i class="fa fa-shopping-cart"></i>Buy Products</a>
-            <a href="../login/login.html"><button id="log-in-btn" class="login-btn">Login</button></a>
-        </nav>
+      <nav class="navbar">
+        <a href="../index.html" class="content"
+          ><i class="fa-solid fa-house"></i> Home</a
+        >
+        <a href="./about.html" class="active"
+          ><i class="fa-solid fa-circle-info"></i> About</a
+        >
+        <a href="../blog/blogpage.html" target="_self"
+          ><i class="fa-solid fa-blog"></i> Blogs</a
+        >
+        <a href="../index.html#Resource Library"
+          ><i class="fa-solid fa-book"></i> Resource Library</a
+        >
+        <a href="../FAQS/faqpage.html" target="_self"
+          ><i class="fas fa-question-circle"></i>FAQs</a
+        >
+        <a href="../index.html#contact" id="nav--contact"
+          ><i class="fa-solid fa-phone"></i> Contact</a
+        >
+        <a href="../buyproducts/buy_products.html"
+          ><i class="fa fa-shopping-cart"></i>Buy Products</a
+        >
+        <a href="../login/login.html"
+          ><button id="log-in-btn" class="login-btn">Login</button></a
+        >
+      </nav>
     </header>
-
 
     <!-- about us content -->
     <div class="hero">
-
-        <video class="hero-video" autoplay muted loop>
-            <source src="./Agriculturevideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="hero-content">
-            <div class="left">
-                <h1 class="hero-title">About Us</h1>
-                <p class="hero-subtitle">In Agrilearn Network, we're dedicated to empowering farmers with the knowledge
-                    and tools they need to thrive in today's agricultural landscape. From expert guidance on
-                    cutting-edge farming techniques to comprehensive insights into seed varieties and efficient tool
-                    usage, we're here to support every step of your farming journey. Whether you're looking to enhance
-                    your harvest methods or optimize farm management practices, Agrilearn Network is your trusted
-                    partner for success in modern agriculture.</p>
-                <a href="../index.html#home" class="hero-btn">Learn More</a>
-            </div>
-            <div class="right">
-                <h3>What we do</h3>
-                <div class="cards-wrapper">
-                    <div class="card">
-                        <i class="fa fa-certificate" aria-hidden="true"></i>
-                        <div class="service-content">
-                            <h4>Agriculture Techniques Guidance</h4>
-                            <small>From soil management to irrigation strategies, farmers gain comprehensive knowledge
-                                to optimize their farming practices.</small>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <i class="fa fa-cogs" aria-hidden="true"></i>
-                        <div class="service-content">
-                            <h4>Tool Usage Recommendations</h4>
-                            <small>Agrilearn Network advises farmers on the optimal usage of agricultural tools and
-                                machinery.</small>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <i class="fa fa-leaf" aria-hidden="true"></i>
-                        <div class="service-content">
-                            <h4>Seed Variety Knowledge</h4>
-                            <small>Make farmers informed decisions about selecting the right seeds for their specific
-                                crops and environmental conditions.</small>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <i class="fa fa-recycle" aria-hidden="true"></i>
-                        <div class="service-content">
-                            <h4>Harvesting and Farm Management</h4>
-                            <small>Focusing on streamlined harvesting methods and effective farm management
-                                practices.</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <video class="hero-video" autoplay muted loop>
+        <source src="./Agriculturevideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-content">
+        <div class="left">
+          <h1 class="hero-title">About Us</h1>
+          <p class="hero-subtitle">
+            In Agrilearn Network, we're dedicated to empowering farmers with the
+            knowledge and tools they need to thrive in today's agricultural
+            landscape. From expert guidance on cutting-edge farming techniques
+            to comprehensive insights into seed varieties and efficient tool
+            usage, we're here to support every step of your farming journey.
+            Whether you're looking to enhance your harvest methods or optimize
+            farm management practices, Agrilearn Network is your trusted partner
+            for success in modern agriculture.
+          </p>
+          <a href="../index.html#home" class="hero-btn">Learn More</a>
         </div>
-
+        <div class="right">
+          <h3>What we do</h3>
+          <div class="cards-wrapper">
+            <div class="card">
+              <i class="fa fa-certificate" aria-hidden="true"></i>
+              <div class="service-content">
+                <h4>Agriculture Techniques Guidance</h4>
+                <small
+                  >From soil management to irrigation strategies, farmers gain
+                  comprehensive knowledge to optimize their farming
+                  practices.</small
+                >
+              </div>
+            </div>
+            <div class="card">
+              <i class="fa fa-cogs" aria-hidden="true"></i>
+              <div class="service-content">
+                <h4>Tool Usage Recommendations</h4>
+                <small
+                  >Agrilearn Network advises farmers on the optimal usage of
+                  agricultural tools and machinery.</small
+                >
+              </div>
+            </div>
+            <div class="card">
+              <i class="fa fa-leaf" aria-hidden="true"></i>
+              <div class="service-content">
+                <h4>Seed Variety Knowledge</h4>
+                <small
+                  >Make farmers informed decisions about selecting the right
+                  seeds for their specific crops and environmental
+                  conditions.</small
+                >
+              </div>
+            </div>
+            <div class="card">
+              <i class="fa fa-recycle" aria-hidden="true"></i>
+              <div class="service-content">
+                <h4>Harvesting and Farm Management</h4>
+                <small
+                  >Focusing on streamlined harvesting methods and effective farm
+                  management practices.</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- footer -->
     <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-title">
-                <h2>AgriLearnNetwork</h2>
-            </div>
-            <div class="footer-icons">
-                <p><b>Follow us on our socials:</b></p>
-                <div class="socialIcons">
-                    <a id="mail"
-                      href="mailto:AgriLearnNetwork@gmail.com"
-                      class="email-link"
-                      data-tooltip="AgriLearnNetwork@gmail.com"
-                      ><i class="fas fa-envelope"></i
-                    ></a>
-                    <a id="inst"
-                      href="https://www.instagram.com/your_username_here"
-                      target="_blank"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                    <a id="twit"
-                     href="https://twitter.com/your_username_here" target="_blank"
-                      ><i class="fa-brands fa-x-twitter"></i
-                    ></a>
-                    <a id="fb"
-                      href="https://www.facebook.com/your_page_or_profile_here"
-                      target="_blank"
-                      ><i class="fab fa-facebook"></i
-                    ></a>
-                  </div>
-            </div>
+      <div class="footer-grid">
+        <div class="footer-title">
+          <h2>AgriLearnNetwork</h2>
         </div>
-        <div class="quick-links">
-            <h2>Quick Links</h2>
-            <ul>
-                <li>
-                    <a href="../index.html">
-                        <p>Home</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./about.html">
-                        <p>About Us</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../blog/blogpage.html">
-                        <p>Blogs</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../FAQS/faqpage.html">
-                        <p>FAQ</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../index.html#Resource Library">
-                        <p>Resource Library</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../index.html#contact">
-                        <p>Contact Us</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../buyproducts/buy_products.html">
-                        <p>Buy Products</p>
-                    </a>
-                </li>
-            </ul>
+        <div class="footer-icons">
+          <p><b>Follow us on our socials:</b></p>
+          <div class="socialIcons">
+            <a
+              id="mail"
+              href="mailto:AgriLearnNetwork@gmail.com"
+              class="email-link"
+              data-tooltip="AgriLearnNetwork@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              id="inst"
+              href="https://www.instagram.com/your_username_here"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              id="twit"
+              href="https://twitter.com/your_username_here"
+              target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              id="fb"
+              href="https://www.facebook.com/your_page_or_profile_here"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
         </div>
-        <div class="footer-text footer-right">
-            <p style="font-weight: 600; font-size: 15px">
-                Copyright &copy;
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>
-                by AgriLearnNetwork | All Rights Reserved.
-                <span class="legal-page"><a href="../testimonials/termsandconditions.html">| Terms and Conditions</a></span>
-          <span class="legal-page"><a href="../testimonials/privacypolicy.html">| Privacy Policy</a></span>
-            </p>
-        </div>
+      </div>
+      <div class="quick-links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li>
+            <a href="../index.html">
+              <p>Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html">
+              <p>About Us</p>
+            </a>
+          </li>
+          <li>
+            <a href="../blog/blogpage.html">
+              <p>Blogs</p>
+            </a>
+          </li>
+          <li>
+            <a href="../FAQS/faqpage.html">
+              <p>FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html#Resource Library">
+              <p>Resource Library</p>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html#contact">
+              <p>Contact Us</p>
+            </a>
+          </li>
+          <li>
+            <a href="../buyproducts/buy_products.html">
+              <p>Buy Products</p>
+            </a>
+          </li>
+          <li>
+            <a href="../Contributors/contributor.html">
+              <p>Contributor</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-text footer-right">
+        <p style="font-weight: 600; font-size: 15px">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          by AgriLearnNetwork | All Rights Reserved.
+          <span class="legal-page"
+            ><a href="../testimonials/termsandconditions.html"
+              >| Terms and Conditions</a
+            ></span
+          >
+          <span class="legal-page"
+            ><a href="../testimonials/privacypolicy.html"
+              >| Privacy Policy</a
+            ></span
+          >
+        </p>
+      </div>
     </footer>
     <div id="backtoTop">
-        <a href="#about"><i class="bx bx-up-arrow-alt" id="go-to-top" title="Go to top"></i></a>
+      <a href="#about"
+        ><i class="bx bx-up-arrow-alt" id="go-to-top" title="Go to top"></i
+      ></a>
     </div>
     <div class="cursor"></div>
     <div class="cursor2"></div>
 
-
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 
     <script>
+      // back to top control
+      window.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY;
+        var backToTopButton = document.getElementById("backtoTop");
 
-        // back to top control
-        window.addEventListener('scroll', function () {
-            var scrollPosition = window.scrollY;
-            var backToTopButton = document.getElementById('backtoTop');
-        
-            if (scrollPosition > 300) { 
-                backToTopButton.style.display = 'flex'; 
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        });
-        
-        // Scroll to top when the button is clicked
-        document.getElementById('backtoTop').addEventListener('click', function () {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // theme toggle control
-        document.addEventListener("DOMContentLoaded", function () {
-            const themeToggle = document.querySelector(".theme-toggle");
-            const body = document.body;
-            console.log(themeToggle)
+        if (scrollPosition > 300) {
+          backToTopButton.style.display = "flex";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
 
-            // Load the saved theme from local storage and apply it
-            const savedTheme = localStorage.getItem("theme");
-            if (savedTheme && savedTheme === "dark") {
-                body.classList.add("dark-theme");
-            }
-
-            themeToggle.addEventListener("click", function () {
-                body.classList.toggle("dark-theme");
-
-                // Save the current theme in local storage
-                if (body.classList.contains("dark-theme")) {
-                    localStorage.setItem("theme", "dark");
-                } else {
-                    localStorage.setItem("theme", "light");
-                }
-            });
+      // Scroll to top when the button is clicked
+      document
+        .getElementById("backtoTop")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         });
 
-        // navbar control
-        let menuIcon = document.querySelectorAll('#menu-icon');
-        let navbar = document.querySelectorAll('.navbar');
-        let navContact = document.querySelectorAll('#nav--contact');
+      // theme toggle control
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeToggle = document.querySelector(".theme-toggle");
+        const body = document.body;
+        console.log(themeToggle);
 
-        const password = document.getElementById('password');
+        // Load the saved theme from local storage and apply it
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme && savedTheme === "dark") {
+          body.classList.add("dark-theme");
+        }
 
-        menuIcon.forEach(icon => {
-            icon.onclick = () => {
-                icon.classList.toggle('bx-x');
-                navbar.forEach(nav => nav.classList.toggle('active'));
-            }
+        themeToggle.addEventListener("click", function () {
+          body.classList.toggle("dark-theme");
+
+          // Save the current theme in local storage
+          if (body.classList.contains("dark-theme")) {
+            localStorage.setItem("theme", "dark");
+          } else {
+            localStorage.setItem("theme", "light");
+          }
         });
+      });
 
-        // Navbar links control
-        document.querySelectorAll('.navbar a').forEach(link => {
-            link.addEventListener('click', () => {
-                // Remove 'active' class from navbar
-                document.querySelectorAll('.navbar').forEach(nav => {
-                    nav.classList.remove('active');
-                });
-                // Toggle the menu icon
-                document.querySelectorAll('#menu-icon').forEach(icon => {
-                    icon.classList.remove('bx-x'); // Remove the 'bx-x' class to close the hamburger menu
-                });
-            });
+      // navbar control
+      let menuIcon = document.querySelectorAll("#menu-icon");
+      let navbar = document.querySelectorAll(".navbar");
+      let navContact = document.querySelectorAll("#nav--contact");
+
+      const password = document.getElementById("password");
+
+      menuIcon.forEach((icon) => {
+        icon.onclick = () => {
+          icon.classList.toggle("bx-x");
+          navbar.forEach((nav) => nav.classList.toggle("active"));
+        };
+      });
+
+      // Navbar links control
+      document.querySelectorAll(".navbar a").forEach((link) => {
+        link.addEventListener("click", () => {
+          // Remove 'active' class from navbar
+          document.querySelectorAll(".navbar").forEach((nav) => {
+            nav.classList.remove("active");
+          });
+          // Toggle the menu icon
+          document.querySelectorAll("#menu-icon").forEach((icon) => {
+            icon.classList.remove("bx-x"); // Remove the 'bx-x' class to close the hamburger menu
+          });
         });
+      });
 
-        var cursor = document.querySelector(".cursor");
-        var cursor2 = document.querySelector(".cursor2");
-        document.addEventListener("mousemove", function (e) {
-            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-        });
-
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove", function (e) {
+        cursor.style.cssText = cursor2.style.cssText =
+          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
     </script>
     <script type="text/javascript">
-        (function (d, t) {
-            var v = d.createElement(t),
-                s = d.getElementsByTagName(t)[0];
-            v.onload = function () {
-                window.voiceflow.chat.load({
-                    verify: { projectID: "664632efd181ce0921d32ed5" },
-                    url: "https://general-runtime.voiceflow.com",
-                    versionID: "production",
-                });
-            };
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-            v.type = "text/javascript";
-            s.parentNode.insertBefore(v, s);
-        })(document, "script");
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat.load({
+            verify: { projectID: "664632efd181ce0921d32ed5" },
+            url: "https://general-runtime.voiceflow.com",
+            versionID: "production",
+          });
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
     </script>
 
     <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 10)
-        })
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 10);
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
