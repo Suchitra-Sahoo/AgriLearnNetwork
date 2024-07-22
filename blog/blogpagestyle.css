@@ -291,7 +291,7 @@ body.dark-theme .article {
   position: relative;
   /* width: 290px; */
   max-width: 290px;
-  max-height: 500px;
+  max-height: 680px;
   background: linear-gradient(90deg, rgb(31, 102, 31), rgb(231, 231, 121));
   background: -webkit-linear-gradient(
     90deg,
@@ -334,7 +334,7 @@ body.dark-theme .article {
 }
 
 .agrblg {
-  height: 290px;
+  height: 250px;
   width: 100%;
   overflow: hidden;
   border-top-left-radius: 10px;
@@ -347,7 +347,8 @@ body.dark-theme .article {
   text-align: justify;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 130%;
+  margin-bottom: 12px;
 }
 
 a {
@@ -361,6 +362,7 @@ a {
   justify-content: space-between;
   bottom: 0;
   padding: 0;
+  height: 65px;
 }
 
 .day ul {
@@ -634,13 +636,16 @@ a {
   text-align: center;
   width: 50vw;
   padding: 20px;
-  font-weight: 700;
+  p {
+    font-weight: bold;
+  }
 }
 
 .quick-links h2 {
   font-size: 20px;
   margin-bottom: 15px;
 }
+
 .quick-links ul {
   list-style-type: none;
   padding: 0;
@@ -648,6 +653,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+
 .quick-links li {
   margin-bottom: 8px;
 }
@@ -863,7 +869,7 @@ section {
   } */
 
   .quick-links ul {
-    flex-direction: row;
+    flex-direction: column;
   }
   #scrollToTopBtn {
     display: none; /* Hidden by default */
