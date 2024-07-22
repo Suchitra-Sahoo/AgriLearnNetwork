@@ -386,3 +386,14 @@ body::before {
     bottom: -95%;
   }
 }
+
+.footer-grid{
+  grid-template-columns: none !important;
+}
+
+@media (max-width: 768px) {
+  .quick-links ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
