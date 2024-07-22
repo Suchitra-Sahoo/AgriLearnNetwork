@@ -24,7 +24,7 @@
       src="https://kit.fontawesome.com/b08b6de27e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/Scrollbar/scrollbar.css">
+    <link rel="stylesheet" href="../Scrollbar/scrollbar.css">
   </head>
   <body>
     <div id="progressBar"></div>
@@ -54,7 +54,7 @@
           ><i class="fa-solid fa-book"></i> Resource Library</a
         >
         <a href="../FAQS/faqpage.html" target="_self"
-          ><i class="fas fa-question-circle"></i>FAQ</a
+          ><i class="fas fa-question-circle"></i> FAQ</a
         >
         <a href="../index.html#contact" id="nav--contact"
           ><i class="fa-solid fa-phone"></i> Contact</a
@@ -63,7 +63,7 @@
     </header>
 
     <div class="container" id="container">
-      <div class="form-container sign-up">
+      <div class="form-container sign-up" id="signup-form">
         <form>
           <h1>Create Account</h1>
           <div class="social-icons">
@@ -96,7 +96,7 @@
           <button id="signup-button" disabled>Sign Up</button>
         </form>
       </div>
-      <div class="form-container sign-in">
+      <div class="form-container sign-in" id="signin-form">
         <form>
           <h1>Sign In</h1>
           <div class="social-icons">
@@ -119,8 +119,23 @@
             </button>
           </div>
                
-          <a href="#">Forget Your Password?</a>
+          <a href="#forgot-password-form" id="forgot-password-link">Forget Your Password?</a>
           <button>Sign In</button>
+        </form>
+      </div>
+      
+      
+      <!-- Forget Password Form-->
+      <div class="form-container forgot-password-form" id="forgot-password-form">
+        <form>
+          <h1 style="font-size: 30px;">Forgot Password? No Worries!</h1>
+          <div>
+            <br/>
+          <label style="color: black; font-size: medium;">Enter your email to receive password reset link.</label>
+          <input type="email" placeholder="Email" required/>
+          </div>
+          <button type="reset"> Send a mail</button>
+          <a href="#signin-form" id="back-to-login-page"> Back to Login page</a>
         </form>
       </div>
 
@@ -145,7 +160,7 @@
         </div>
         <div class="footer-icons">
           <p><b>Follow us on our socials:</b></p>
-          < <div class="socialIcons">
+           <div class="socialIcons">
             <a id="mail"
               href="mailto:AgriLearnNetwork@gmail.com"
               class="email-link"

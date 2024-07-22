@@ -104,7 +104,7 @@ section {
  }
 
  nav{
-  margin-right: 30px;
+  margin-right: 10px;
   display: flex;
 }
 
@@ -117,10 +117,10 @@ section {
  }
  .navbar a {
   /* position: relative; */
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   /* left: 118px; */
   color: var(--txt-color);
-  margin-right: 4rem;
+  margin-right: 3.1rem;
   transition: 0.3s;
 }
 .navbar a:hover {
@@ -257,7 +257,7 @@ section {
 .cart {
     position: fixed;
     right: 20px;
-    top: 110px;
+    top: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,6 +269,7 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, box-shadow 0.3s;
     z-index: 1000;
+   
 }
 
 .cart-image {
@@ -348,20 +349,22 @@ section {
 .cart-see {
   display: block;
   position: fixed;
-    bottom: 200px;
-    right: 10px;
-    border: 1px solid #ddd;
-    background-color: #46785f;
-    padding: 12px;
-    border-radius: 4px;
-    width: 300px;
-    cursor: move;
-    max-height: 70%;
-    overflow-y: auto;
-    height: 150px;
-    /* Initial height */
-    border-width: 4px;
-    font-size: 13px;
+  bottom: 200px;
+  right: 90px;
+  top: 150px;
+  border: 1px solid #ddd;
+  background-color: #46785f;
+  padding: 12px;
+  border-radius: 4px;
+  width: 300px;
+  cursor: move;
+  max-height: 380px;
+  overflow-y: auto;
+  height: 150px;
+  /* Initial height */
+  border-width: 4px;
+  font-size: 13px;
+  
 }
 
 /* Theme Toggle Button */
@@ -914,7 +917,7 @@ font-size: 36px;
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--second-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
@@ -1170,7 +1173,7 @@ font-size: 36px;
 p{
     font-size:medium;
 }
-h3{
+.info h3{
     font-size: large;
 }
 .socialIcons #mail:hover{
@@ -1196,4 +1199,14 @@ h3{
   }
   #fb:hover i{
     color: white;
+  }
+
+  #checkout{
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  #checkout:hover{
+    background-color: #000;
+    color: #fff;
   }

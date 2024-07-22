@@ -36,8 +36,8 @@
                 <div>
                   <p class="mb-0 fw-bold">${product}</p>
                   <p class="mb-0">Quantity: ${quantity}</p>
-                  <p class="mb-0">Price: $${price}</p>
-                  <p class="mb-0">Total: $${itemTotal.toFixed(2)}</p>
+                  <p class="mb-0">Price: ₹${price}</p>
+                  <p class="mb-0">Total: ₹${itemTotal.toFixed(2)}</p>
                 </div>
               </div>
             `;
@@ -45,6 +45,8 @@
           });
 
           totalPriceElement.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
+          // Update total price
+          dyna.textContent = `Total Price: ₹${totalPrice.toFixed(2)}`;
         }
 
         updateCheckoutCart();

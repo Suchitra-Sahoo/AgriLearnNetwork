@@ -375,112 +375,198 @@
     </section>
 
     <!-- Modal -->
-
-    <div id="modal" class="modal fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+    <div id="modal" class="modal fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center" style="display: none;">
       <div class="modal-content bg-white p-6 rounded shadow-lg relative">
-        <span class="close cursor-pointer text-gray-500 absolute top-4 right-4 text-xl">&times;</span>
-        <h2 class="text-2xl font-bold mb-4">FEEDBACK FORM</h2>
-        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <h2 class="text-2xl font-bold mb-4">WE'D LOVE YOUR FEEDBACK! <span class="close cursor-pointer text-gray-500 absolute text-xl">&times;</span></h2>
+        <p class="main-para mb-4">Let us know how we're doing and how we can improve. <br><strong>AgriLearn Network</strong></p>
+        <div class="rating mb-4">
+          <h3 class="rate-para text-xl font-semibold mb-2">Rate Your Experience</h3>
+          <div class="stars" id="stars">
+            <span class="star cursor-pointer" data-value="1">&#9733;</span>
+            <span class="star cursor-pointer" data-value="2">&#9733;</span>
+            <span class="star cursor-pointer" data-value="3">&#9733;</span>
+            <span class="star cursor-pointer" data-value="4">&#9733;</span>
+            <span class="star cursor-pointer" data-value="5">&#9733;</span>
+          </div>
+          <input type="hidden" name="rating" id="rating-value-input" required>
+        </div>
+        
         <form id="feedback-form">
-          <div class="form-group flex items-center mb-4">
-            <div class="icon mr-2">
-              <i class="fas fa-user"></i>
-            </div>
-            <input class="border p-2 w-full" type="text" placeholder="Your Name" name="name" required>
-          </div>
-          <div class="form-group flex items-center mb-4">
-            <div class="icon mr-2">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <input class="border p-2 w-full" type="email" placeholder="Email Id" name="email" required>
-          </div>
           <div class="form-group mb-4">
-            <textarea class="border p-2 w-full" cols="30" rows="5" placeholder="Your Feedback" required></textarea>
-          </div>
-          <div class="rating mb-4">
-            <h2 class="text-xl font-semibold mb-2">Rate us:</h2>
-            <div class="flex space-x-2">
-              <span class="emoji" role="img" aria-label="terrible" data-value="😡">😡</span>
-              <span class="emoji" role="img" aria-label="bad" data-value="😞">😞</span>
-              <span class="emoji" role="img" aria-label="okay" data-value="😐">😐</span>
-              <span class="emoji" role="img" aria-label="good" data-value="😊">😊</span>
-              <span class="emoji" role="img" aria-label="excellent" data-value="😍">😍</span>
+            <label for="name" class="block text-left mb-2">Your Name</label>
+            <div class="form-group flex items-center mb-4">
+              <div class="icon mr-2">
+                <i class="fas fa-user"></i>
+              </div>
+              <input id="name" class="border p-2 w-full" type="text" placeholder="Your Name" name="name" required>
             </div>
           </div>
-          <input type="hidden" name="rating" id="rating-value" required>
-          <button class="bg-blue-500 text-white px-4 py-2 rounded" type="submit">Submit</button>
+          
+          <div class="form-group mb-4">
+            <label for="email" class="block text-left mb-2">Your Email</label>
+            <div class="form-group flex items-center mb-4">
+              <div class="icon mr-2">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <input id="email" class="border p-2 w-full" type="email" placeholder="Your Email" name="email" required>
+            </div>
+          </div>
+          
+          <div class="form-group mb-4">
+            <label for="feedback" class="block text-left mb-2">Your Feedback</label>
+            <textarea id="feedback" class="border p-2 w-full" cols="30" rows="5" placeholder="Your Feedback" required></textarea>
+          </div>
+          
+          <button class="bg-blue-500 text-white px-4 py-2 rounded" type="submit">Submit Feedback</button>
         </form>
-        <div id="thank-you-message" class="text-green-500 text-xl mt-4 hidden">
-          Thank you for your feedback!
-        </div>
-        <div id="error-message" class="text-red-500 text-xl mt-4 hidden">
-          Please fill in all fields before submitting.
-        </div>
       </div>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <div id="thank-you-popup" class="popup fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center" style="display: none;">
+      <div class="popup-content bg-white p-6 rounded shadow-lg text-center">
+        <h2>Thank You for your Feedback!💚</h2>
+        <div class="popup-icon">
+          <img src="./images/feedback-tick.png" alt="✅" height="160" width="180">
+        </div>
+        <p class="pop-para">Your feedback has been received!<br> We appreciate the input you provide.</p>
+        <button class="popup-button bg-blue-500 text-white px-4 py-2 rounded" onclick="closePopup()">Back to Home</button>
+      </div>
+    </div>
+    
+   <div id="rating-popup" class="popup fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center" style="display: none;">
+      <div class="popup-content bg-white p-8 rounded shadow-lg text-center">
+        <h2>Please Give a Rating!⭐</h2>
+      <div class="popup-icon">
+        <img src="./images/Warning.webp" alt="⚠️" height="100" width="120" class="my-4" style="margin-top: 20px;margin-bottom: 20px;">
+      </div>
+        <p class="pop-para">Your feedback is important to us.<br> Please select a rating before submitting.</p>
+        <button class="popup-button bg-blue-500 text-white px-4 py-2 rounded mt-4" onclick="closeRatingPopup()">OK</button>
+      </div>
+   </div>
     <script>
-      document.querySelectorAll('.emoji').forEach(emoji => {
-        emoji.addEventListener('click', () => {
-          document.querySelectorAll('.emoji').forEach(e => {
-            e.classList.remove('selected');
-            e.style.backgroundColor = 'transparent'; // Reset all emojis to transparent background
-          });
-          emoji.classList.add('selected');
-          emoji.style.backgroundColor = '#f0f0f0'; // Set selected emoji's background color
-          document.getElementById('rating-value').value = emoji.getAttribute('data-value');
-        });
-      });
+
+// Function to handle form submission
+document.getElementById('feedback-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+  
+  // Retrieve form values
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const feedback = document.getElementById('feedback').value.trim();
+  const rating = document.getElementById('rating-value-input').value.trim();
+  
+  // Check if all fields are filled
+  if (name && email && feedback && rating) {
+    // Show the popup
+    document.getElementById('popup').style.display = 'flex';
     
-      document.getElementById('feedback-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const name = this.elements['name'].value.trim();
-        const email = this.elements['email'].value.trim();
-        const feedback = this.querySelector('textarea').value.trim();
-        const rating = this.elements['rating'].value;
-    
-        if (name && email && feedback && rating) {
-          // Show toast notification
-          Toastify({
-            text: 'Thanks for your Feedback',
-            duration: 3000,
-            gravity: 'bottom', // Display toast notifications at the bottom
-            backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
-          }).showToast();
-    
-          // Clear form fields
-          this.reset();
-          document.querySelectorAll('.emoji').forEach(e => {
-            e.classList.remove('selected');
-            e.style.backgroundColor = 'transparent'; // Reset all emojis to transparent background
-          });
-          document.getElementById('rating-value').value = '';
+    // Reset the form
+    this.reset();
+
+    // Clear the rating stars
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => star.classList.remove('active'));
+  }
+});
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+
+// Handling star ratings
+// Handling star ratings
+const stars = document.querySelectorAll('.star');
+
+stars.forEach((star, index) => {
+  star.addEventListener('mouseover', function() {
+    // Remove active class from all stars
+    stars.forEach(s => s.classList.remove('hover'));
+
+    // Add hover class to the hovered star and all previous stars
+    for (let i = 0; i <= index; i++) {
+      stars[i].classList.add('hover');
+    }
+  });
+
+  star.addEventListener('click', function() {
+    const value = parseInt(this.getAttribute('data-value'));
+    document.getElementById('rating-value-input').value = value;
+
+    // Remove active class from all stars
+    stars.forEach(s => s.classList.remove('active'));
+
+    // Add active class to clicked star and all previous stars
+    for (let i = 0; i < value; i++) {
+      stars[i].classList.add('active');
+    }
+  });
+});
+
+// Remove hover class when mouse leaves the star container
+document.querySelector('.stars').addEventListener('mouseleave', function() {
+  stars.forEach(star => star.classList.remove('hover'));
+});
+
+
+// Close modal
+document.querySelector('.close').addEventListener('click', () => {
+  document.getElementById('modal').style.display = 'none';
+});
+
+//RATING MODAL
+document.addEventListener('DOMContentLoaded', function() 
+{
+  const stars = document.querySelectorAll('.star');
+  const ratingInput = document.getElementById('rating-value-input');
+  const modal = document.getElementById('modal');
+  const closeModal = document.querySelector('.close');
+
+  stars.forEach(star => {
+    star.addEventListener('click', function() {
+      const ratingValue = this.getAttribute('data-value');
+      ratingInput.value = ratingValue;
+      stars.forEach(star => {
+        if (star.getAttribute('data-value') <= ratingValue) {
+          star.classList.add('text-yellow-500');
         } else {
-          document.getElementById('thank-you-message').style.display = 'none';
-          document.getElementById('error-message').style.display = 'block';
+          star.classList.remove('text-yellow-500');
         }
       });
-    
-      document.querySelector('.close').addEventListener('click', () => {
-        document.getElementById('modal').style.display = 'none';
-      });
+    });
+  });
+
+  document.getElementById('feedback-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    if (!ratingInput.value) {
+      document.getElementById('rating-popup').style.display = 'flex';
+      return;
+    }
+
+    document.getElementById('thank-you-popup').style.display = 'flex';
+  });
+
+  closeModal.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+});
+
+function closePopup() {
+  document.getElementById('thank-you-popup').style.display = 'none';
+}
+
+function closeRatingPopup() {
+  document.getElementById('rating-popup').style.display = 'none';
+}
+
+// To open the modal
+function openModal() {
+  document.getElementById('modal').style.display = 'flex';
+}
+
     </script>
-    
-    <style>
-      .emoji {
-        font-size: 3rem;
-        cursor: pointer;
-        transition: transform 0.2s, background-color 0.2s;
-        border-radius: 50%; /* Make emojis circular */
-      }
-      .emoji.selected {
-        transform: scale(1.75);
-        background-color: #f0f0f0; /* Light gray background color for selected emoji */
-        filter: brightness(150%); /* Increase brightness of the emoji */
-        /* You can adjust the brightness percentage to achieve desired brightness */
-      }
-    </style>
+
     
     <footer class="footer">
       <div class="footer-grid">
@@ -562,7 +648,7 @@
     <div class="icon-bar">
       <a href="https://www.instagram.com/" class="instagram" target="_blank">Instagram<i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/" class="facebook" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
-      <a href="https://x.com/" class="twitter" target="_blank">Twitter<i class="fab fa-twitter"></i></a>
+      <a href="https://x.com/" class="twitter" target="_blank">Twitter<i class="fab fa-x-twitter"></i></a>
       <a href="https://www.linkedin.com/" class="linkedIn" target="_blank">LinkedIn<i class="fab fa-linkedin"></i></a>
     </div>
 
