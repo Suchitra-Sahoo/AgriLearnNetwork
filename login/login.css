@@ -20,7 +20,7 @@ body::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 130%;
   background: url("../images/carousel-img-1.jpg");
   background-position: center;
   background-size: cover;
@@ -80,9 +80,10 @@ body::before {
   overflow: hidden;
   width: 768px;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 490px;
   display: flex;
   justify-content: center;
+  margin-top: 10rem;
 }
 
 .container p {
@@ -120,6 +121,7 @@ body::before {
   background-color: transparent;
   border-color: #fff;
 }
+
 .container form {
   background-color: #fff;
   display: flex;
@@ -150,6 +152,13 @@ body::before {
   height: 100%;
   transition: all 0.6s ease-in-out;
 }
+
+.forgot-password-form{
+  left: 0;
+  width: 50%;
+  z-index: 1;
+}
+
 .sign-in {
   left: 0;
   width: 50%;
@@ -170,6 +179,7 @@ body::before {
   z-index: 5;
   animation: move 0.6s;
 }
+
 
 @keyframes move {
   0%,
@@ -261,15 +271,23 @@ body::before {
 }
 .footer {
   position: absolute;
-  bottom: -40%;
+  bottom: -70%;
   width: 100%;
 }
 
 .input-password {
   display: flex;
   width: 100%;
-  /* align-items: center; */
+}
 
+#toggle-signin-password{
+  height: 40px;
+  margin: 8px 8px 0 0;
+}
+
+#signup-password,
+#signup-confirm-password{
+  margin: 8px 0;
 }
 
 #toggle-signup-password,
@@ -319,3 +337,52 @@ body::before {
  .mail:hover i{
   transform: scale(1.5);
 } 
+
+@media (min-width: 1124px){
+  body{
+    height: 100vh;
+  }
+  .container{
+    margin-top: 5rem;
+  }
+  .footer{
+    bottom: -73%;
+  }
+}
+
+@media (min-width: 786px) and (max-width: 1123px){
+  body{
+    height: 105vh;
+  }
+  .container{
+    margin-top: 5rem;
+  }
+
+  .footer{
+    bottom: -85%;
+  }
+}
+
+@media (max-width: 785px){
+  body{
+    height: 110vh;
+  }
+  .container{
+    margin-top: 5rem;
+  }
+  .footer{
+    bottom: -90%;
+  }
+}
+
+@media (max-width: 388px){
+  body{
+    height: 115vh;
+  }
+  .container{
+    margin-top: 5rem;
+  }
+  .footer{
+    bottom: -95%;
+  }
+}
