@@ -387,6 +387,7 @@ body::before {
   }
 }
 
+
 .footer-grid{
   grid-template-columns: none !important;
 }
@@ -396,4 +397,20 @@ body::before {
       flex-direction: column;
       gap: 10px;
   }
+
+.success-banner {
+  position: absolute;
+  bottom: 25px;
+  width: 60%;
+  left: 20%;
+  border-radius: 4px;
+  border: 2px solid #14810a;
+  text-align: center;
+  z-index: 1000;
+  font-size:1rem;
+}
+#banner-text{
+  color:#0b8835;
+  margin: 4px;
+
 }
