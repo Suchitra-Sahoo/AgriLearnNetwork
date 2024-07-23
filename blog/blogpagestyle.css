@@ -950,7 +950,7 @@ section {
 .theme-toggle {
   position: fixed;
   top: 26px;
-  left:1368px;
+  right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -981,16 +981,11 @@ body.dark-theme {
 
 body.dark-theme .header,
 body.dark-theme .footer,
-body.dark-theme .navbar
-{
+body.dark-theme .navbar {
   background-color: black;
   color: #ffffff;
 }
-body.dark-theme .article 
-{
-  background-color: rgba(0, 0, 0, 0.736);
-  color: #ffffff;
-}
+
 body.dark-theme .theme-toggle {
   background-color: rgb(3, 3, 38);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
