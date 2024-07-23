@@ -42,14 +42,6 @@
       </a>
     
 
-      <!-- adding the toggle mode button -->
-      <a>
-        <div class="theme-toggle">
-          <i class="fas fa-sun"></i>
-          <i class="fas fa-moon"></i>
-        </div>
-      </a>
-
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="../index.html" 
@@ -72,6 +64,7 @@
         <a href="../login/login.html">
           <button id="log-in-btn" class="login-btn">Login</button>
         </a>
+      </nav>
       
      
     </header>
@@ -511,32 +504,7 @@
       document.addEventListener("mousemove",function(e){
         cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
       });
-
-      // mode toggle function
-      document.addEventListener("DOMContentLoaded", function () {
-        const themeToggle = document.querySelector(".theme-toggle");
-        const body = document.body;
-
-        // Load the saved theme from local storage and apply it
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme && savedTheme === "dark") {
-          body.classList.add("dark-theme");
-        }
-
-        themeToggle.addEventListener("click", function () {
-          body.classList.toggle("dark-theme");
-
-          // Save the current theme in local storage
-          if (body.classList.contains("dark-theme")) {
-            localStorage.setItem("theme", "dark");
-          } else {
-            localStorage.setItem("theme", "light");
-          }
-        });
-      });
-
     </script>
-    
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./scrollreveal.js"></script>
 
