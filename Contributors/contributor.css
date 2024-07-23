@@ -2,13 +2,6 @@
   margin-right: 100px;
 }
 
-body {
-  background-image: url("../blog/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 .container {
   margin-top: 100px;
 }
@@ -23,12 +16,16 @@ body {
 .heroes {
   font-family: Arial, sans-serif;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 25px;
   font-size: 45px;
-  color: black;
+  color: var(--light);
   text-align: center;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
+}
+
+h1:hover {
+  color: var(--primary);
 }
 
 #contributor {
@@ -54,10 +51,6 @@ body {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-}
-
-.placeholder:hover {
-  box-shadow: rgb(9, 8, 8, 0.9);
 }
 
 .placeholder::after {
