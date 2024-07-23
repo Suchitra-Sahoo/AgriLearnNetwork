@@ -165,6 +165,9 @@ nav {
   color: var(--txt-color);
   display: none;
 }
+
+/* Toggle button */
+
 .navoptions a {
   display: flex;
   color: #fff;
@@ -223,6 +226,21 @@ span {
   color: azure;
 }
 
+/* dark-mode */
+
+body.dark-theme {
+  background-image: url(darkmode_bg.jpg);
+}
+body.dark-theme .navtitle h2 {
+  color: #ffffff;
+}
+
+body.dark-theme .navtitle span {
+  color: #f1c40f;
+}
+body.dark-theme .article {
+  background-color: #121212;
+}
 .services-container .services-box {
   flex: 1 1 30rem;
   background: var(--second-color);
@@ -527,7 +545,7 @@ a {
   align-items: center;
   flex: wrap;
   flex-direction: column;
-  padding: 1 rem;
+  padding: 1 rem 0;
   background: #053314;
   min-height: 25rem;
 }
@@ -543,7 +561,7 @@ a {
   text-align: center;
 }
 .footer-grid {
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
