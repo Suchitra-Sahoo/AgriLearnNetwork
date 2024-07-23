@@ -40,6 +40,16 @@ loginBtn.addEventListener("click", () => {
   forgotPasswordForm.style.display = 'none';
 });
 
+
+function showSuccessBanner(message) {
+  const banner = document.getElementById('success-banner');
+  const bannerText = document.getElementById('banner-text');
+  bannerText.textContent = message;
+  banner.style.display = 'block';
+  setTimeout(() => {
+    banner.style.display = 'none';
+  }, 3000);
+}
 function validatePasswords() {
   if (passwordInput.value !== confirmPasswordInput.value) {
     passwordMatchError.style.display = 'block';
@@ -49,9 +59,16 @@ function validatePasswords() {
     signUpBtn.disabled = false;
   }
 }
+document.querySelector('.sign-up form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  showSuccessBanner('Signed up successfully');
+});
+// Handle sign-in form submission
+document.querySelector('.sign-in form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  showSuccessBanner('Signed in successfully');
+});
 
-passwordInput.addEventListener('input', validatePasswords);
-confirmPasswordInput.addEventListener('input', validatePasswords);
 
 forgotPasswordLink.addEventListener('click', () => {
 forgotPasswordForm.style.display = 'block';
