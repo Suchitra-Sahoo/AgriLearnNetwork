@@ -7,6 +7,8 @@
    
     <link rel="icon" href="../icon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons/css/boxicons.min.css">
+
   
     <link
       rel="stylesheet"
@@ -46,13 +48,20 @@
      </style>
 
     <style>
-    body {
-      background-color: #023b1a !important;
-            padding: 0;
-            margin-top: 120px;
-            background-color: #f9f9f9;
-            color: #a9dfc8;
-        }
+
+      :root {
+        --background-color: #023b1a;
+        --text-color: #013b23;
+        --container-bg: linear-gradient(135deg, rgb(250, 250, 167), rgb(75, 186, 75));
+        --container-text-color: #000;
+    }
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        padding: 0;
+        margin-top: 120px;
+        font-family: 'Poppins', sans-serif;
+    }
     .terms-container  {
       
         border-radius: 21px;
@@ -98,6 +107,12 @@
             font-size: 14px;
           }
       }
+      body.dark-theme {
+        --background-color: #121212;
+        --text-color: #ffffff;
+        --container-bg: linear-gradient(135deg, rgb(250, 250, 250), rgb(75, 186, 75));
+        --container-text-color: #ffffff;
+    }
     
     </style>
     <link rel="stylesheet" href="/Scrollbar/scrollbar.css">
@@ -183,78 +198,93 @@
     </div>
 
     <footer class="footer">
-        <div class="footer-grid">
-          <div class="footer-title">
-            <h2>AgriLearnNetwork</h2>
+      <div class="footer-grid">
+        <div class="footer-title">
+          <h2>AgriLearnNetwork</h2>
+        </div>
+        <div class="footer-icons">
+          <p><b>Follow us on our socials:</b></p>
+          <div class="socialIcons">
+            <a
+              id="mail"
+              href="mailto:AgriLearnNetwork@gmail.com"
+              class="email-link"
+              data-tooltip="AgriLearnNetwork@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              id="inst"
+              href="https://www.instagram.com/your_username_here"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              id="twit"
+              href="https://twitter.com/your_username_here"
+              target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              id="fb"
+              href="https://www.facebook.com/your_page_or_profile_here"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
           </div>
-          <div class="footer-icons">
-            <p><b>Follow us on our socials:</b></p>
-            <div class="socialIcons">
-              <a id="mail"
-                href="mailto:AgriLearnNetwork@gmail.com"
-                class="email-link"
-                data-tooltip="AgriLearnNetwork@gmail.com"
-                ><i class="fas fa-envelope"></i
-              ></a>
-              <a id="inst"
-                href="https://www.instagram.com/your_username_here"
-                target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a id="twit"
-               href="https://twitter.com/your_username_here" target="_blank"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
-              <a id="fb"
-                href="https://www.facebook.com/your_page_or_profile_here"
-                target="_blank"
-                ><i class="fab fa-facebook"></i
-              ></a>
-            </div>
-          </div>
         </div>
-        <div class="quick-links">
-          <h2>Quick Links</h2>
-          <ul>
-            <li>
-              <a href="../index.html#home"><p>Home</p></a>
-            </li>
-            <li>
-              <a href="../about/about.html"><p>About Us</p></a>
-            </li>
-            <li>
-              <a href="../blog/blogpage.html"><p>Blogs</p></a>
-            </li>
-            <li>
-              <a href="../FAQS/faqpage.html"><p>FAQs</p></a>
-            </li>
-            <li>
-              <a href="../index.html#Resource Library"><p>Resource Library</p></a>
-            </li>
-            <li>
-              <a href="../index.html#contact"><p>Contact Us</p></a>
-            </li>
-            <li>
-              <a href="../buyproducts/buy_products.html"><p>Buy Products</p></a>
-            </li>
-            
-          </ul>
-        </div>
-        <div class="footer-text footer-right">
-          <p style="font-weight: 600; font-size: 15px">
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            by AgriLearnNetwork | All Rights Reserved
-            <span class="legal-page"><a href="termsandconditions.html">| Terms and Conditions</a></span>
-            <span class="legal-page"><a href="privacypolicy.html">| Privacy Policy</a></span>
-          </p>
-        </div>
-      </footer>
-      <div  id="backtoTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
+      <div class="quick-links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li>
+            <a href="#home"><p>Home</p></a>
+          </li>
+          <li>
+            <a href="./about/about.html"><p>About Us</p></a>
+          </li>
+          <li>
+            <a href="./blog/blogpage.html"><p>Blogs</p></a>
+          </li>
+          <li>
+            <a href="./FAQS/faqpage.html"><p>FAQs</p></a>
+          </li>
+          <li>
+            <a href="#Resource Library"><p>Resource Library</p></a>
+          </li>
+          <li>
+            <a href="#contact"><p>Contact Us</p></a>
+          </li>
+          <li>
+            <a href="./buyproducts/buy_products.html"><p>Buy Products</p></a>
+          </li>
+          <li>
+            <a href="../Contributors/contributor.html"><p>Contributor</p></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-text footer-right">
+        <p style="font-weight: 600; font-size: 15px">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          by AgriLearnNetwork | All Rights Reserved
+          <span class="legal-page"
+            ><a href="./termsandconditions.html"
+              >| Terms and Conditions</a
+            ></span
+          >
+          <span class="legal-page"
+            ><a href="./privacypolicy.html"
+              >| Privacy Policy</a
+            ></span
+          >
+        </p>
+      </div>
+    </footer>
+    <div id="backtoTop">
+      <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
       <div class="cursor"></div>
       <div class="cursor2"></div>
   
@@ -277,6 +307,79 @@
         var cursor2 = document.querySelector(".cursor2");
         document.addEventListener("mousemove",function(e){
           cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+      </script>
+      <script>
+        window.addEventListener("scroll", function () {
+          var scrollPosition = window.scrollY;
+          var backToTopButton = document.getElementById("backtoTop");
+  
+          if (scrollPosition > 300) {
+            // Adjust this value as needed to show the button at the desired scroll position
+            backToTopButton.style.display = "block";
+          } else {
+            backToTopButton.style.display = "none";
+          }
+        });
+  
+        document.addEventListener("DOMContentLoaded", function () {
+          const slideGroup = document.querySelector(".slide_group");
+          let currentSlide = 0;
+          const images = [
+            "./images/carousel-img-2.jpg",
+            "./images/carousel-img-1.jpg",
+            "./images/carousel-img-3.jpg",
+            "./images/carousel-img-4.jpg",
+          ];
+  
+          function showSlide(n) {
+            slideGroup.style.left = `${-n * 100}%`; // Adjust left property based on current slide
+            currentSlide = n;
+          }
+  
+          function nextSlide() {
+            currentSlide = (currentSlide + 1) % images.length; // Move to the next slide
+            showSlide(currentSlide);
+          }
+  
+          setInterval(nextSlide, 2000); // Automatically change slide every 2 seconds
+  
+          // Preload images for smoother transition
+          images.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+          });
+        });
+  
+        // mobile no validation @dhruv8433
+        const mobileNumberInput = document.getElementById("mobileNumber");
+  
+        mobileNumberInput.addEventListener("input", () => {
+          const maxLength = 10;
+          const value = mobileNumberInput.value;
+  
+          if (value.length > maxLength) {
+            mobileNumberInput.value = value.slice(0, maxLength);
+          }
+        });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeToggle = document.querySelector('.theme-toggle');
+            const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+    
+            if (currentTheme) {
+                document.body.classList.add(currentTheme);
+            }
+    
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-theme');
+                let theme = 'light';
+                if (document.body.classList.contains('dark-theme')) {
+                    theme = 'dark';
+                }
+                localStorage.setItem('theme', theme);
+            });
         });
       </script>
 
