@@ -6,13 +6,8 @@
     <title>Agricultural Tools Store</title>
     <link rel="stylesheet" href="./buy_products.css" />
     <link rel="stylesheet" href="../testimonials/testimonials.css" />
-    <link
-      rel="stylesheet"
-      href="../cursor/style.css"
-      <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../cursor/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <script
       src="https://kit.fontawesome.com/b08b6de27e.js"
       crossorigin="anonymous"
@@ -649,9 +644,7 @@
       </div>
     </footer>
     <div id="backtoTop">
-      <a href="#buy_products"
-        ><i class="bx bx-up-arrow-alt" id="go-to-top" title="Go to top"></i
-      ></a>
+      <a href="#buy_products"><i class="bx bx-up-arrow-alt" id="go-to-top" title="Go to top"></i></a>
     </div>
     <div class="cursor"></div>
     <div class="cursor2"></div>
@@ -668,11 +661,21 @@
 
         if (scrollPosition > 300) {
           // Adjust this value as needed to show the button at the desired scroll position
-          backToTopButton.style.display = "block";
+          backToTopButton.style.display = "flex";
         } else {
           backToTopButton.style.display = "none";
         }
       });
+
+      // Scroll to top when the button is clicked
+      document
+        .getElementById("backtoTop")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
     </script>
     <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
     <script type="text/javascript">
