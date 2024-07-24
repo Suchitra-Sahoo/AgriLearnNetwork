@@ -7,268 +7,309 @@
    
     <link rel="icon" href="../icon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
-  
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../cursor/style.css">
     <link rel="stylesheet" href="./testimonials.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <script
-      src="https://kit.fontawesome.com/b08b6de27e.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
-      crossorigin="anonymous"
-    ></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./cursor/style.css">
-     <style>
+    <link rel="stylesheet" href="/Scrollbar/scrollbar.css">
+    <style>
       .legal-page a {
         text-decoration: none;
         color: white;
       }
       .legal-page a:hover {
-        color: rgb(192, 223, 100);;
+        color: rgb(192, 223, 100);
       }
      </style>
-
     <style>
+      :root {
+        --background-color: #023b1a;
+        --text-color: #013b23;
+        --container-bg: linear-gradient(135deg, rgb(250, 250, 167), rgb(75, 186, 75));
+        --container-text-color: #000;
+    }
+    
     body {
-        background-color: #023b1a !important;
-            padding: 0;
-            margin-top: 120px;
-            background-color: #f9f9f9;
-            color: #013b23;
-        }
+        background-color: var(--background-color);
+        color: var(--text-color);
+        padding: 0;
+        margin-top: 120px;
+    }
+    
     .privacy-container {
-            border-radius: 21px;
-            width: 67%;
-            margin: 0px auto;
-            margin-bottom: 29px;
-            padding: 20px;background: linear-gradient(135deg, rgb(250, 250, 167), rgb(75, 186, 75));
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 21px;
+        width: 67%;
+        margin: 0 auto;
+        margin-bottom: 29px;
+        padding: 20px;
+        background: var(--container-bg);
+        color: var(--container-text-color);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .privacy-heading {
+        font-family: 'Segoe UI', sans-serif !important;
+        font-size: 49px;
+        color: #0c5e0a;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .privacy-subheading {
+        font-size: 2.65em;
+        margin-top: 20px;
+        color: rgb(22, 93, 15);
+        margin-bottom: 10px;
+    }
+    
+    .privacy-para {
+        font-family: 'Segoe UI', sans-serif !important;
+        margin-bottom: 15px;
+        font-size: 17.5px;
+        text-align: justify;
+        color: var(--container-text-color);
+    }
+    
+    @media (max-width: 768px) {
+        .privacy-heading {
+            font-size: 20px;
         }
-    .privacy-container .privacy-heading{
-            font-family: 'Segoe UI' !important;
-            font-size: 49px;
-            color: #0c5e0a;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
+        .privacy-subheading {
+            font-size: 16px;
         }
-    .privacy-container .privacy-subheading {
-            font-size: 2.65em;
-            margin-top: 20px;
-            color: rgb(22, 93, 15);
-            margin-bottom: 10px;
+        .privacy-para {
+            font-size: 14px;
         }
-    .privacy-container .privacy-para {
-            font-family: 'Segoe UI' !important;
-            margin-bottom: 15px;
-            font-size: 17.5px;
-            text-align: justify;
-            color: #000;
-        }
-
-        @media (max-width: 768px) {
-          .privacy-container .privacy-heading {
-                font-size: 20px;
-            }
-            .privacy-container .privacy-subheading
-            {
-              font-size: 16px;
-            }
-            .privacy-container .privacy-para
-            {
-              font-size: 14px;
-            }
-        }
-
+    }
+    
+    body.dark-theme {
+        --background-color: #121212;
+        --text-color: #ffffff;
+        --container-bg: linear-gradient(135deg, rgb(250, 250, 167), rgb(75, 186, 75));
+        --container-text-color: #000;
+    }
+                
     </style>
-<link rel="stylesheet" href="/Scrollbar/scrollbar.css">
 </head>
 <body>
   <div id="progressBar"></div>
-    <script src="/Scrollbar/scrollbar.js"></script>
-    <header class="header">
-        <img
-          src="../icon.png"
-          alt="logo"
-          style="height: 50px; width: 50px; margin-right: 10px;"
-        />
-        <a href="#" class="logo" style="margin-inline-end: auto"
-          ><h3>AgriLearnNetwork</h3>
-        </a>
-        
-        <!-- adding the toggle mode button -->
-        <a>
-          <div class="theme-toggle">
-            <i class="fas fa-sun"></i>
-            <i class="fas fa-moon"></i>
-          </div>
-         </a>
-  
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
-          <a href="../index.html#home" class="active content"
-          ><i class="fa-solid fa-house"></i> Home</a
-        >
-        <a href="../about/about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-        <a href="../blog/blogpage.html" target="_self">
-          <i class="fa-solid fa-blog"></i> Blogs</a
-        >
-        <a href="../index.html#Resource Library"
-          ><i class="fa-solid fa-book"></i> Resource Library</a
-        >
-        <a href="../FAQS/faqpage.html" target="_self"><i class="fas fa-question-circle"></i>FAQs</a>
-        <a href="../index.html#contact" id="nav--contact"
-          ><i class="fa-solid fa-phone"></i> Contact</a
-        >
-        <a href="../buyproducts/buy_products.html"
-            ><i class="fa fa-shopping-cart"></i>Buy Products</a
-          >
-        <a href="../login/login.html">
-          <button id="log-in-btn" class="login-btn">Login</button>
-        </a>
-        </nav>
-      </header>
-
-      <div class="privacy-container">
-        <h1 class="privacy-heading">PRIVACY POLICY</h1>
-        
-        <h2 class="privacy-subheading">Introduction</h2>
-        <p class="privacy-para">Welcome to AgriLearnNetwork's Privacy Policy. This privacy policy outlines how we collect, use, and protect your personal information. By accessing this website, we assume you agree to the terms of this privacy policy. If you do not agree with any part of this policy, please do not continue to use our website.</p>
-
-        <h2 class="privacy-subheading">Information Collection and Use</h2>
-        <p class="privacy-para">We collect several different types of information for various purposes to provide and improve our Service to you. Types of data collected may include personal information such as name, email address, and phone number.</p>
-
-        <h2 class="privacy-subheading">Use of Cookies</h2>
-        <p class="privacy-para">Our website uses cookies to improve your experience. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer.</p>
-
-        <h2 class="privacy-subheading">Data Security</h2>
-        <p class="privacy-para">We value your trust in providing us your personal information, thus we are striving to use commercially acceptable means of protecting it. However, remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
-
-        <h2 class="privacy-subheading">Third-Party Disclosure</h2>
-        <p class="privacy-para">We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential.</p>
-
-        <h2 class="privacy-subheading">Changes to Privacy Policy</h2>
-        <p class="privacy-para">AgriLearnNetwork reserves the right to update or change our Privacy Policy at any time. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-
-        <h2 class="privacy-subheading">Contact Us</h2>
-        <p class="privacy-para">If you have any questions about this Privacy Policy, please contact us through our official communication channels provided on the website.</p>
+  <script src="/Scrollbar/scrollbar.js"></script>
+  <header class="header">
+    <img src="../icon.png" alt="logo" style="height: 50px; width: 50px; margin-right: 10px;" />
+    <a href="#" class="logo" style="margin-inline-end: auto"><h3>AgriLearnNetwork</h3></a>
+    <a>
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </div>
+    </a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="../index.html#home" class="active content"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="../about/about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a href="../blog/blogpage.html" target="_self"><i class="fa-solid fa-blog"></i> Blogs</a>
+      <a href="../index.html#Resource Library"><i class="fa-solid fa-book"></i> Resource Library</a>
+      <a href="../FAQS/faqpage.html" target="_self"><i class="fas fa-question-circle"></i> FAQs</a>
+      <a href="../index.html#contact" id="nav--contact"><i class="fa-solid fa-phone"></i> Contact</a>
+      <a href="../buyproducts/buy_products.html"><i class="fa fa-shopping-cart"></i> Buy Products</a>
+      <a href="../login/login.html"><button id="log-in-btn" class="login-btn">Login</button></a>
+    </nav>
+  </header>
+  <div class="privacy-container">
+    <h1 class="privacy-heading">PRIVACY POLICY</h1>
+    <h2 class="privacy-subheading">Introduction</h2>
+    <p class="privacy-para">Welcome to AgriLearnNetwork's Privacy Policy. This privacy policy outlines how we collect, use, and protect your personal information. By accessing this website, we assume you agree to the terms of this privacy policy. If you do not agree with any part of this policy, please do not continue to use our website.</p>
+    <h2 class="privacy-subheading">Information Collection and Use</h2>
+    <p class="privacy-para">We collect several different types of information for various purposes to provide and improve our Service to you. Types of data collected may include personal information such as name, email address, and phone number.</p>
+    <h2 class="privacy-subheading">Use of Cookies</h2>
+    <p class="privacy-para">Our website uses cookies to improve your experience. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer.</p>
+    <h2 class="privacy-subheading">Data Security</h2>
+    <p class="privacy-para">We value your trust in providing us your personal information, thus we are striving to use commercially acceptable means of protecting it. However, remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+    <h2 class="privacy-subheading">Third-Party Disclosure</h2>
+    <p class="privacy-para">We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential.</p>
+    <h2 class="privacy-subheading">Changes to This Privacy Policy</h2>
+    <p class="privacy-para">We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</p>
+    <h2 class="privacy-subheading">Contact Us</h2>
+    <p class="privacy-para">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at agrilearnnetwork@gmail.com.</p>
+  </div>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-title">
+        <h2>AgriLearnNetwork</h2>
+      </div>
+      <div class="footer-icons">
+        <p><b>Follow us on our socials:</b></p>
+        <div class="socialIcons">
+          <a
+            id="mail"
+            href="mailto:AgriLearnNetwork@gmail.com"
+            class="email-link"
+            data-tooltip="AgriLearnNetwork@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            id="inst"
+            href="https://www.instagram.com/your_username_here"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            id="twit"
+            href="https://twitter.com/your_username_here"
+            target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            id="fb"
+            href="https://www.facebook.com/your_page_or_profile_here"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+      </div>
     </div>
+    <div class="quick-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li>
+          <a href="#home"><p>Home</p></a>
+        </li>
+        <li>
+          <a href="./about/about.html"><p>About Us</p></a>
+        </li>
+        <li>
+          <a href="./blog/blogpage.html"><p>Blogs</p></a>
+        </li>
+        <li>
+          <a href="./FAQS/faqpage.html"><p>FAQs</p></a>
+        </li>
+        <li>
+          <a href="#Resource Library"><p>Resource Library</p></a>
+        </li>
+        <li>
+          <a href="#contact"><p>Contact Us</p></a>
+        </li>
+        <li>
+          <a href="./buyproducts/buy_products.html"><p>Buy Products</p></a>
+        </li>
+        <li>
+          <a href="../Contributors/contributor.html"><p>Contributor</p></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-text footer-right">
+      <p style="font-weight: 600; font-size: 15px">
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        by AgriLearnNetwork | All Rights Reserved
+        <span class="legal-page"
+          ><a href="./testimonials/termsandconditions.html"
+            >| Terms and Conditions</a
+          ></span
+        >
+        <span class="legal-page"
+          ><a href="./testimonials/privacypolicy.html"
+            >| Privacy Policy</a
+          ></span
+        >
+      </p>
+    </div>
+  </footer>
+  <div id="backtoTop">
+    <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+  </div>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const themeToggle = document.querySelector('.theme-toggle');
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
-    <footer class="footer">
-        <div class="footer-grid">
-          <div class="footer-title">
-            <h2>AgriLearnNetwork</h2>
-          </div>
-          <div class="footer-icons">
-            <p><b>Follow us on our socials:</b></p>
-            <div class="socialIcons">
-              <a id="mail"
-                href="mailto:AgriLearnNetwork@gmail.com"
-                class="email-link"
-                data-tooltip="AgriLearnNetwork@gmail.com"
-                ><i class="fas fa-envelope"></i
-              ></a>
-              <a id="inst"
-                href="https://www.instagram.com/your_username_here"
-                target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a id="twit"
-               href="https://twitter.com/your_username_here" target="_blank"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
-              <a id="fb"
-                href="https://www.facebook.com/your_page_or_profile_here"
-                target="_blank"
-                ><i class="fab fa-facebook"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="quick-links">
-          <h2>Quick Links</h2>
-          <ul>
-            <li>
-              <a href="../index.html#home"><p>Home</p></a>
-            </li>
-            <li>
-              <a href="../about/about.html"><p>About Us</p></a>
-            </li>
-            <li>
-              <a href="../blog/blogpage.html"><p>Blogs</p></a>
-            </li>
-            <li>
-              <a href="../FAQS/faqpage.html"><p>FAQs</p></a>
-            </li>
-            <li>
-              <a href="../index.html#Resource Library"><p>Resource Library</p></a>
-            </li>
-            <li>
-              <a href="../index.html#contact"><p>Contact Us</p></a>
-            </li>
-            <li>
-              <a href="../buyproducts/buy_products.html"><p>Buy Products</p></a>
-            </li>
-            
-          </ul>
-        </div>
-        <div class="footer-text footer-right">
-          <p style="font-weight: 600; font-size: 15px">
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            by AgriLearnNetwork | All Rights Reserved
-            <span class="legal-page"><a href="termsandconditions.html">| Terms and Conditions</a></span>
-            <span class="legal-page"><a href="privacypolicy.html">| Privacy Policy</a></span>
-          </p>
-        </div>
-      </footer>
-      <div  id="backtoTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
-      <div class="cursor"></div>
-      <div class="cursor2"></div>
-  
-      <!--Floating Iconbar-->
-      <div class="icon-bar">
-        <a href="https://www.instagram.com/" class="instagram" target="_blank">Instagram<i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/" class="facebook" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
-        <a href="https://x.com/" class="twitter" target="_blank">Twitter<i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/" class="linkedIn" target="_blank">LinkedIn<i class="fab fa-linkedin"></i></a>
-      </div>
-  
-      <script src="https://unpkg.com/scrollreveal"></script>
-      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  
-      <script src="script.js"></script>
-      <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-      
-      <script>
-        var cursor = document.querySelector(".cursor");
-        var cursor2 = document.querySelector(".cursor2");
-        document.addEventListener("mousemove",function(e){
-          cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        if (currentTheme) {
+            document.body.classList.add(currentTheme);
+        }
+
+        themeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+            let theme = 'light';
+            if (document.body.classList.contains('dark-theme')) {
+                theme = 'dark';
+            }
+            localStorage.setItem('theme', theme);
         });
-      </script>
-     
+    });
+  </script>
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      var scrollPosition = window.scrollY;
+      var backToTopButton = document.getElementById("backtoTop");
 
+      if (scrollPosition > 300) {
+        // Adjust this value as needed to show the button at the desired scroll position
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const slideGroup = document.querySelector(".slide_group");
+      let currentSlide = 0;
+      const images = [
+        "./images/carousel-img-2.jpg",
+        "./images/carousel-img-1.jpg",
+        "./images/carousel-img-3.jpg",
+        "./images/carousel-img-4.jpg",
+      ];
+
+      function showSlide(n) {
+        slideGroup.style.left = `${-n * 100}%`; // Adjust left property based on current slide
+        currentSlide = n;
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % images.length; // Move to the next slide
+        showSlide(currentSlide);
+      }
+
+      setInterval(nextSlide, 2000); // Automatically change slide every 2 seconds
+
+      // Preload images for smoother transition
+      images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    });
+
+    // mobile no validation @dhruv8433
+    const mobileNumberInput = document.getElementById("mobileNumber");
+
+    mobileNumberInput.addEventListener("input", () => {
+      const maxLength = 10;
+      const value = mobileNumberInput.value;
+
+      if (value.length > maxLength) {
+        mobileNumberInput.value = value.slice(0, maxLength);
+      }
+    });
+  </script>
 </body>
 </html>

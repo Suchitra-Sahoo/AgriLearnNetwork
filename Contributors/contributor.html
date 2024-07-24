@@ -29,6 +29,27 @@
     ></script>
 
     <title>About Us | AgriLearnNetwork</title>
+    <style>
+      :root {
+        --background-color: #023b1a;
+        --text-color: #013b23;
+        --container-bg: linear-gradient(135deg, rgb(250, 250, 167), rgb(75, 186, 75));
+        --container-text-color: #000;
+        }
+
+        body {
+            background-color: var(--background-color);
+            /* color: var(--text-color); */
+            padding: 0;
+            margin-top: 120px;
+        }
+        body.dark-theme {
+            --background-color: #121212;
+            --text-color: #ffffff;
+            --container-bg: linear-gradient(135deg, rgb(250, 250, 167), rgb(75, 186, 75));
+            --container-text-color: #000;
+        }
+    </style>
   </head>
   <body>
     <div id="progressBar"></div>
@@ -217,7 +238,25 @@
     </div>
     <div class="cursor"></div>
     <div class="cursor2"></div>
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const themeToggle = document.querySelector('.theme-toggle');
+          const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+  
+          if (currentTheme) {
+              document.body.classList.add(currentTheme);
+          }
+  
+          themeToggle.addEventListener('click', function() {
+              document.body.classList.toggle('dark-theme');
+              let theme = 'light';
+              if (document.body.classList.contains('dark-theme')) {
+                  theme = 'dark';
+              }
+              localStorage.setItem('theme', theme);
+          });
+      });
+    </script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script src="./script.js"></script>
     <script src="./contributor.js"></script>
