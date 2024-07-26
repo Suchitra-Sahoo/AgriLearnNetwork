@@ -73,6 +73,13 @@ section {
 .navbar a {
   font-size: 1.5vmax;
 }
+@media (max-width : 768px) {
+  .navbar.active{
+  display: block;
+  height: 60vh !important;
+}
+}
+
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
