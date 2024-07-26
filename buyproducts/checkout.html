@@ -37,18 +37,16 @@
                 <div>
                   <p class="mb-0 fw-bold">${product}</p>
                   <p class="mb-0">Quantity: ${quantity}</p>
-                  <p class="mb-0">Price: Rs.${price}</p>
-                  <p class="mb-0">Total: Rs.${itemTotal.toFixed(2)}</p>
+                  <p class="mb-0">Price: ₹${price}</p>
+                  <p class="mb-0">Total: ₹${itemTotal.toFixed(2)}</p>
                 </div>
               </div>
             `;
             cartItemsCheckout.appendChild(itemElement);
           });
 
-          totalPriceElement.textContent = `Total Price: Rs.${totalPrice.toFixed(2)}`;
-
           // Update total price
-          dyna.textContent = `Total Price: Rs.${totalPrice.toFixed(2)}`;
+          dyna.textContent = `Total Price: ₹${totalPrice.toFixed(2)}`;
         }
 
         // Call the updateCheckoutCart function to display initial cart items
@@ -276,10 +274,4 @@
       </div>
     </div>
   </body>
-  <script>
-    document.getElementById('make-payment-btn').addEventListener('click', function() {
-        window.location.href = 'buy_products.html';
-    });
-</script>
-
 </html>
