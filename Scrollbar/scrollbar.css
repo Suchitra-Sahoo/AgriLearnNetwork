@@ -1,9 +1,21 @@
 #progressBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 8px;
-    background-color: #bf9605;
-    z-index: 9999;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 8px;
+  background-color: #bf9605;
+  z-index: 9999;
+  transition: width 0.4s ease-in-out; /* Smooth transition */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Optional: Add animation for a loading effect */
+@keyframes progressAnimation {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+#progressBar.loading {
+  animation: progressAnimation 2s infinite; /* Adjust duration and timing as needed */
+}
