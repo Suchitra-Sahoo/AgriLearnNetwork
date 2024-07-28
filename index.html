@@ -417,41 +417,19 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Us!</span></h2>
-      <form action="#" id="contact-form">
+      <form id="contact-form">
         <div class="input-box">
           <input type="text" placeholder="Full Name" id="fullname" required />
-          <input
-            type="email"
-            placeholder="Email Address"
-            id="emailaddress"
-            required
-          />
+          <input type="email" placeholder="Email Address" id="emailaddress" required />
         </div>
-
+    
         <div class="input-box">
-          <input
-            type="number"
-            placeholder="Mobile Number"
-            required
-            id="mobileNumber"
-          />
-          <input
-            type="text"
-            placeholder="Email Subject"
-            id="emailsubject"
-            required
-          />
+          <input type="number" placeholder="Mobile Number" id="mobileNumber" required />
+          <input type="text" placeholder="Email Subject" id="emailsubject" required />
         </div>
-
-        <textarea
-          name=""
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <input type="submit" class="btn" id="contact-btn" /><br />
+    
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" class="btn" id="contact-btn" value="Submit" /><br />
       </form>
       <div class="button-container">
         <button id="review-btn">Give feedback</button>
@@ -733,6 +711,40 @@
         document.getElementById("modal").style.display = "flex";
       }
     </script>
+    <!-- Contact form Backend -->
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', async function(e) {
+        e.preventDefault(); // Prevent the default form submission
+      
+        // Gather form data
+        const fullname = document.getElementById('fullname').value;
+        const emailaddress = document.getElementById('emailaddress').value;
+        const mobileNumber = document.getElementById('mobileNumber').value;
+        const emailsubject = document.getElementById('emailsubject').value;
+        const message = document.getElementById('message').value;
+      
+        try {
+          // Send data to backend
+          const response = await fetch('http://localhost:3000/contact', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ fullname, emailaddress, mobileNumber, emailsubject, message })
+          });
+      
+          if (response.ok) {
+            alert('Thank you for contacting us! We will get back to you soon.');
+            document.getElementById('contact-form').reset(); // Clear form
+          } else {
+            alert('There was an error submitting your request. Please try again.');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          alert('An unexpected error occurred. Please try again later.');
+        }
+      });
+      </script>
 
     <footer class="footer">
       <div class="footer-grid">
