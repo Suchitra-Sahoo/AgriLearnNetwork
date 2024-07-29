@@ -1967,18 +1967,20 @@ font-size: 36px;
 }
 
 .quick-links {
- text-align: center;
- width: 50vw;
- padding: 20px;
- p{
-  font-weight: bold;
+  text-align: center;
+  width: 80vw;
+  padding: 20px;
 }
+
+.quick-links p {
+  font-weight: bold;
 }
 
 .quick-links h2 {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 15px;
 }
+
 
 .quick-links ul {
   list-style-type: none;
@@ -1986,10 +1988,23 @@ font-size: 36px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
 }
 
 .quick-links li {
-  margin-bottom: 8px;
+  position: relative; /* To position the vertical line */
+  padding: 0 20px; /* Add horizontal padding to create space for the vertical line */
+}
+
+.quick-links li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff; 
+  font-size: 1.5rem; 
+  padding-left: 10px; 
 }
 
 .quick-links a {
