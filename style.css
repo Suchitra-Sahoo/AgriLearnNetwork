@@ -433,7 +433,7 @@ body.dark-theme .contact textarea {
   margin-bottom: 2rem;
 }
 span {
-  color: var(--main-color);
+  color: #0c891f;
 }
 .glow {    /*Added glow to the welcome div */
   /* font-size: 80px; */
