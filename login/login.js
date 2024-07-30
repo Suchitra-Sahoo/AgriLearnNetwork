@@ -47,15 +47,6 @@ loginBtn.addEventListener("click", () => {
   forgotPasswordForm.style.display = "none";
 });
 
-function showSuccessBanner(message) {
-  const banner = document.getElementById("success-banner");
-  const bannerText = document.getElementById("banner-text");
-  bannerText.textContent = message;
-  banner.style.display = "block";
-  setTimeout(() => {
-    banner.style.display = "none";
-  }, 3000);
-}
 function validatePasswords() {
   if (passwordInput.value !== confirmPasswordInput.value) {
     passwordMatchError.style.display = "block";
@@ -66,16 +57,26 @@ function validatePasswords() {
   }
 }
 
+function showSuccessBanner(bannerId, message) {
+  const banner = document.getElementById(bannerId);
+  const bannerText = banner.querySelector("p");
+  bannerText.textContent = message;
+  banner.style.display = "block";
+  setTimeout(() => {
+    banner.style.display = "none";
+  }, 3000);
+}
+
 // Handle sign-up form submission
 document.getElementById("signup-form").addEventListener("submit", (e) => {
   e.preventDefault();
-  showSuccessBanner("Signed up successfully");
+  showSuccessBanner("signup-success-banner", "Signed up successfully");
 });
 
 // Handle sign-in form submission
 document.getElementById("signin-form").addEventListener("submit", (e) => {
   e.preventDefault();
-  showSuccessBanner("Signed in successfully");
+  showSuccessBanner("signin-success-banner", "Signed in successfully");
 });
 
 forgotPasswordLink.addEventListener("click", () => {
