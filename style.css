@@ -1968,7 +1968,7 @@ font-size: 36px;
 
 .quick-links {
  text-align: center;
- width: 50vw;
+ width: 100%;
  padding: 20px;
  p{
   font-weight: bold;
@@ -1985,11 +1985,13 @@ font-size: 36px;
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 
 .quick-links li {
   margin-bottom: 8px;
+  /*margin-right: 15px;*/
 }
 
 .quick-links a {
