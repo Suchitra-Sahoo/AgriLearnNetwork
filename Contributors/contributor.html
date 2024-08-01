@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./contributor.css" />
     <link rel="stylesheet" href="../cursor/style.css" />
     <link rel="stylesheet" href="../testimonials/testimonials.css" />
-    <link rel="stylesheet" href="/Scrollbar/scrollbar.css" />
+    <link rel="stylesheet" href="../Scrollbar/scrollbar.css" />
 
     <!-- Font family -->
     <link
@@ -257,8 +257,15 @@
           });
       });
     </script>
+    <script type="text/javascript">
+          window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 10);
+          });
+    </script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <script src="../script.js"></script>
     <script src="./contributor.js"></script>
   </body>
 </html>
