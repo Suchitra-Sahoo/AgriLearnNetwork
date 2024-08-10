@@ -56,13 +56,20 @@
   color: #ffffff;
 }
 
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px;
 }
 
-.text-center {
+.text-center, {
+.heroes 
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 45px;
+  color: var(--light);
   text-align: center;
 }
 
@@ -197,4 +204,7 @@
   .contributor-card {
     max-width: calc(100% - 100px); 
   }
+}
+.login-btn{
+  margin-top: 0px;
 }

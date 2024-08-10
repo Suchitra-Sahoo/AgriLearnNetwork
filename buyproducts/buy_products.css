@@ -44,9 +44,13 @@ html {
 }
 
 body {
-  background-image: url("https://c1.wallpaperflare.com/preview/456/986/357/pumpkin-vegetable-garden-plant-blurred-background.jpg");
+  background-image: url(https://wallpaperbat.com/img/323465-wallpapermisc-green-grass-hd-wallpaper-13-2560-x-1600-free-top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   color: var(--txt-color);
+  background-attachment: fixed;
+  background-size: cover;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -73,11 +77,11 @@ section {
 .navbar a {
   font-size: 1.5vmax;
 }
-@media (max-width : 768px) {
-  .navbar.active{
-  display: block;
-  height: 60vh !important;
-}
+@media (max-width: 768px) {
+  .navbar.active {
+    display: block;
+    height: 60vh !important;
+  }
 }
 
 section {
@@ -256,7 +260,7 @@ nav {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: rgb(137, 137, 18);
+  background-color: rgb(42, 137, 18);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -346,7 +350,7 @@ nav {
   right: 90px;
   top: 150px;
   border: 1px solid #ddd;
-  background-color: #46785f;
+  background-color: #064b10;
   padding: 12px;
   border-radius: 4px;
   width: 300px;
@@ -389,6 +393,7 @@ nav {
 /* Dark Theme Styles */
 body.dark-theme {
   background-color: #121212;
+  background-image: url(https://img.freepik.com/premium-photo/green-field-background-night-sky-elements-this-image-furnished-by-nasa_180633-3322.jpg);
   color: #ffffff;
 }
 
@@ -432,11 +437,15 @@ body.dark-theme .mini-cart {
   background-color: black;
 }
 body.dark-theme .product:hover {
-  background-color: #000000;
+  background-color: #000000c3;
 }
 body.dark-theme .add-to-cart {
   background-color: white;
   color: #000000;
+}
+body.dark-theme .add-to-cart:hover {
+  background-color: rgb(0, 177, 74);
+  color: #ffffff;
 }
 @keyframes floatImage {
   0% {
@@ -1058,22 +1067,22 @@ body.dark-theme .add-to-cart {
 .product {
   border: 1px solid #ddd;
   border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
-  width: 420px;
-  height: 330px;
+  margin: 20px;
+  width: 300px;
+  height: 350px;
   text-align: center;
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth uplift transition */
 }
 .product:hover {
   transform: translateY(-10px); /* Uplift effect on hover */
-  background-color: #134b20;
+  background-color: #064b10;
 }
 
 .product img {
-  max-width: 450px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 300px;
   height: 180px;
-  border-radius: 10px;
 }
 
 .product .info {
@@ -1193,6 +1202,15 @@ p {
 }
 
 #checkout:hover {
-  background-color: #000;
+  background-color: #28a745;
+  color: #fff;
+}
+
+body.dark-theme #checkout {
+  background-color: #fff;
+  color: #000;
+}
+body.dark-theme #checkout:hover {
+  background-color: var(--second-color);
   color: #fff;
 }
