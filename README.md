@@ -1,21 +1,6 @@
 # AgriLearnNetwork
 
 <div align = "center">
- <img src="https://camo.githubusercontent.com/dd5e3080a7adc2ead8f86cbbd6577cee0a38439c0ebf195021ce41587b0a405f/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a633459675258595161794f5657785633376f757272772e706e67" >
- <div>
-<table>
-
-   <tr>
-      <th>Event Name</th>
-      <th>Event Description</th>
-   </tr>
-   <tr>
-      <td>GirlScript Summer of Code 2024</td>
-      <td>GirlScript Summer of Code is a three-month-long Open Source Program conducted every summer by GirlScript Foundation. It is an initiative to bring more beginners to Open-Source Software Development.</td>
-   </tr>
-
-</table>
-<div align = "center">
  <img src="https://emojiisland.com/cdn/shop/products/26_large.png?v=1571606116" >
  <div>
   
