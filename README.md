@@ -4,7 +4,7 @@
  <img src="https://emojiisland.com/cdn/shop/products/26_large.png?v=1571606116" >
  <div>
   
-**Check the Website [here](https://suchitra-sahoo.github.io/AgriLearnNetwork//)**.
+**Check the Website [here](https://agri-learn-network-iota.vercel.app/)**.
 
 ## TABLE OF CONTENTS
 
