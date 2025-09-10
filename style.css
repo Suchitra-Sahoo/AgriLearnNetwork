@@ -2196,7 +2196,6 @@ font-size: 36px;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 .icon-bar a {
